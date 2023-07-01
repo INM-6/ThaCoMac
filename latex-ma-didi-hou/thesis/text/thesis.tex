@@ -1,0 +1,29 @@
+\documentclass[a4paper,BCOR5mm,11pt,pointlessnumbers,twoside,openany]{scrbook}
+
+\input{../../preamble/preamble}
+%\newcommand*{\PROPOSAL}{Proposal}
+\begin{document}
+	\frontmatter
+
+	\input{../../preamble/title}
+	\thispagestyle{empty}
+	\tableofcontents
+
+	\thispagestyle{empty}
+	\addtolength{\parskip}{-.5\parskip}
+	\mainmatter{}
+
+	\include{content/1_introduction}
+	\include{content/2_relatedwork}
+	\include{content/3_concept}
+	\include{content/4_realization}
+	\include{content/5_evaluation}
+	\include{content/6_future_work}
+	\input{../../bibliography/bibliography}
+	\ifdefined\PROPOSAL{}
+	\else
+	\listoffigures
+	\fi
+	\include{content/appendix}
+	\backmatter{}
+\end{document}

@@ -1,0 +1,10 @@
+# Custom Dictionary Words
+betweenness
+Chatbots
+CITAVI
+dbis
+Kubernetes
+mediabase
+Moodle
+rwth
+triplestore

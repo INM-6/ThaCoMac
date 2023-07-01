@@ -1,0 +1,136 @@
+% This file provides an example Beamer presentation using the RWTH theme
+% showcasing some of the more common options, similar to the Powerpoint version
+% 12.11.2014: Revision 1 (Harold Bruintjes, Tim Lange)
+
+% For RWTH, beamer should be loaded with class option t (top)
+\documentclass[aspectratio=169]{beamer}
+\newcommand{\PROPOSAL}{Proposal}
+
+% Use fontspec to get Arial font
+% Requires use of XeLaTeX
+%\usepackage{fontspec}
+%\setmainfont{Arial}
+%\setsansfont{Arial}
+% Also force Arial for math for a more consistent look
+%\usepackage{unicode-math}
+%\setmathfont{Arial}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{lmodern}%
+\usepackage{MnSymbol}%
+\usepackage[utf8]{inputenc} % Allows inpit in utf8
+% German style date formatting (footer)
+\usepackage[ddmmyyyy]{datetime}
+
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+\renewcommand{\dateseparator}{.}
+
+% Format the captions used for figures etc.
+\usepackage[compatibility=false]{caption}
+%\captionsetup{singlelinecheck=off,justification=raggedleft,labelformat=empty,labelsep=none}
+
+% PGFPlots is used for drawing some of the charts
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\input{plot_commands.tex}
+
+% Load the actual RWTH theme. Suggested is to load the full theme,
+% as it requires some specific dimensions
+\usetheme{rwth}
+\input{../../preamble/config}
+\graphicspath{{../../figures/}}
+
+% Setup presentation information
+\author[\firstname]{\firstname~\lastname~\email}
+\institute[RWTH]{RWTH Aachen University}
+
+
+
+% Set the logo to the file `logo`
+% It will be scaled automatically
+\logo{\includegraphics{rwth_i5_en_rgb}}
+
+% Uncomment this if you want a TOC at every section start
+%\AtBeginSection{\frame{
+%    \frametitle{Content}
+%    \tableofcontents[currentsection]
+%}}
+
+% Use this to control some aspects of the footer
+\setbeamertemplate{footertextextra}{\ifdefined\BACHELOR Bachelor \else Master \fi Thesis \ifdefined\PROPOSAL
+\PROPOSAL
+\fi}
+%\setbeamertemplate{footertext}{Example of an overridden footer}
+
+\begin{document}
+
+% Note: Title pages should be created as plain
+% Title page with a blue bar
+\setbeamercolor{title page bar}{fg=rwth}
+\setbeamertemplate{title page}[rwth]{}
+\begin{frame}[plain]
+\titlepage
+
+\parbox{0cm}{
+  \vspace{-5.5em}
+  \begin{tabbing}
+    \=\textbf{\firstname~\lastname}\=\\[0.5em]
+    \=Study Program: \studyProgram~~~\=Matr.-Nr.:\matrNo\\[0.5em]
+    \=Chair of Computer Science 5 Information Systems \& Databases \=\\[0.5em]
+    \={Supervisors}:~~~\=\firstsupervisor\\
+    \>                 \>\secondsupervisor\\[0.5em]
+    \>{Advisor}:       \>\firstadvisor\ifdefined\secondadvisor\\
+    \>                 \>\secondadvisor\\[0.5em]
+    \fi
+  \end{tabbing}
+}
+\end{frame}
+
+% Title page with a 1/3rd size picture
+\setbeamercolor{title page bar}{fg=white}
+\setbeamertemplate{title page}[rwth][title_small]{}
+\begin{frame}[plain]
+\vspace{1cm}
+\titlepage
+
+\vspace{-6em}
+\parbox{0cm}{
+  \begin{tabbing}
+    \=\textbf{\firstname~\lastname}\=\\[0.4em]
+    \=Study Program: \studyProgram~~~\=Matr.-Nr.:\matrNo\\[0.4em]
+    \=Chair of Computer Science 5 Information Systems \& Databases \=\\[0.4em]
+    \={Supervisors}:~~~\=\firstsupervisor\\
+    \>                 \>\secondsupervisor\\[0.4em]
+    \>{Advisor}:       \>\firstadvisor\ifdefined\secondadvisor\\
+    \>                 \>\secondadvisor\\[0.4em]
+    \fi
+  \end{tabbing}
+}
+\end{frame}
+
+% Frame with items
+\section*{Overview}
+\begin{frame}
+  \tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+\input{content}
+
+% Final frame, subtext is optional
+% Note: should be plain
+%\setbeamertemplate{final page}[rwth][Any questions?]{Thank you for your attention}
+%\begin{frame}[plain]
+%\usebeamertemplate{final page}
+%\end{frame}
+
+\section*{References}
+\begin{frame}[allowframebreaks]
+  \Large{
+    \bibliographystyle{apalike}
+    \bibliography{../../bibliography/bibliography}
+  }
+  \end{frame}
+
+\end{document}
