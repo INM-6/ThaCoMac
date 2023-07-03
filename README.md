@@ -1,6 +1,7 @@
 # didihou_master_project
 
-
+# This is some test text for using vscode and git together
+This the text it self
 
 ## Getting started
 
