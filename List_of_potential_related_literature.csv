@@ -1,1 +1,5 @@
-﻿DOI;Publication link;Title;num_of_keywords1;num_of_keywords1;num_of_keywords1;num_of_keywords1;num_of_keywords1;num_of_keywords1;probability 
+DOI,url,title,thalamocortical,thalamo-cortical,corticothalamic,cortico-thalamic,tracing,tracer,tract tracing,tract-tracing,axonal tracing,neural anatomical tracing,connection,projection,connectivity,connectome,thalamus,cortex
+https://doi.org/10.1016/j.neuron.2020.01.005,https://pubmed.ncbi.nlm.nih.gov/32053769/,Thalamus modulates consciousness via layer-specific control of cortex,2,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4
+https://doi.org/10.1007/s00429-021-02377-7,https://pubmed.ncbi.nlm.nih.gov/34524542/,Vision for action: thalamic and cortical inputs to the macaque superior parietal lobule,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+https://doi.org/10.1113/jp282626,https://pubmed.ncbi.nlm.nih.gov/35851953/,"Cortico-thalamocortical interactions for learning, memory and decision-making",1,0,0,0,0,0,0,0,0,0,0,0,0,0,7,5
+https://doi.org/10.1111/ejn.13910,https://pubmed.ncbi.nlm.nih.gov/29542210/,Corticothalamic axon morphologies and network architecture,1,0,3,0,0,0,0,0,0,0,0,0,1,0,2,0
