@@ -45,13 +45,13 @@ def search_google_scholar(init_url, headers):
                 print("error")
         print("Searching Google Scholar complated!")
 
-def search_webofscience(init_url):
+def search_webofscience(iinit_url, headers):
     None
 
-def search_PubMed_Central_PMC(init_url):
+def search_PubMed_Central_PMC(iinit_url, headers):
     None
 
-def search_Europe_PMC(init_url):
+def search_Europe_PMC(init_url, headers):
     None
 
 # search academic databases, record the urls as a line in a .txt file from the webpages
