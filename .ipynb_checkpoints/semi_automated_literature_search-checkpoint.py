@@ -43,7 +43,6 @@ def search_google_scholar(init_url, headers):
             try: 
                 with open('google_scholar_poten_urls.txt', 'a') as url_file:
                     # append text at the end of file
-                    url_file.seek(0)
                     url_file.write(f'{add_url}\n')
             except Exception as e: 
                 print("Error when trying to write in google_scholar_poten_urls.txt")
