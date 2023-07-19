@@ -12,7 +12,7 @@ def search_google_scholar(init_url, headers):
     # request the first page and extract the number of pages of the search results
     first_page = init_url
     time.sleep(2)
-    response = requests.get(first_page, headers = headers, proxies = proxy)
+    response = requests.get(first_page, headers = headers)
     soup = BeautifulSoup(response.content,'lxml')
     print(soup)
     num_results_str = soup.find_all('div', {'class': 'gs_ab_mdw'})# [1].get_text().split()[1]
@@ -23,14 +23,14 @@ def search_google_scholar(init_url, headers):
     # print(pages)
     
     # iterate all pages and record the results
-    pages = 10
+    pages = 2
     for page in range(pages):
         time.sleep(2)
         start = page * 10
         # google scholar
         page_url = init_url.split('?start=')[0] + '?start=' + str(start) + '&q=' + init_url.split('?start=')[1].split('&q=')[1]
         # search a page
-        response = requests.get(page_url, headers = headers, proxies = proxy)
+        response = requests.get(page_url, headers = headers)
         # print(url)
         soup = BeautifulSoup(response.content,'lxml') 
         # print(soup.select('[data-lid]')) 
