@@ -1,6 +1,3 @@
-# import required packages
-import pandas as pd
-
 # write the information of a literature as a row to .csv file 'summary_table_of_related_studies.csv'
 def add_rows_to_df(df_liter, i, doi, pub_link, authors, title):
     new_row = {'order': i,

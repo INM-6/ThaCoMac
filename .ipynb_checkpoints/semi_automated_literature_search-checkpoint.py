@@ -1,3 +1,4 @@
+'''
 from serpapi import GoogleSearch
 params = {
   "engine": "google_scholar",
@@ -8,6 +9,9 @@ params = {
 search = GoogleSearch(params)
 results = search.get_dict()
 organic_results = results["organic_results"]
+'''
+
+headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9'}
 
 # method 1: searching academic databases using searching keyword lexicon
 def search_acad_db(keywords, acad_db):
@@ -39,94 +43,6 @@ doi_or_url = 'http://cocomac.g-node.org/main/index.php'
 for i in range(10):
     record_liter(doi_or_url)
 '''
-
-def search_acad_dbs(acad_db_name, path_urls):
-    if acad_db_name == 'Google Scholar':
-        url = 'https://scholar.google.com/scholar?start=0&q=macaque+thalamus+OR+thalamocortical+OR+thalamo-cortical&hl=en&as_sdt=1,5'
-        response = requests.get(url, headers = headers)
-        soup = BeautifulSoup(response.content,'lxml')
-        num_results_str = soup.find_all('div', {'class': 'gs_ab_mdw'})[1].get_text().split()[1]
-        # print(int(num_results_str))
-        num_results = int(re.sub(r'[^\w\s]', '', num_results_str))
-        pages = int(num_results/10)
-        pages = 10
-        # print(pages)
-        # search all pages
-        for page in range(pages):
-            time.sleep(2)
-            start = page * 10
-            # google scholar
-            page_url = 'https://scholar.google.com/scholar?start=' + str(start) + '&q=macaque+thalamus+OR+thalamocortical+OR+thalamo-cortical&hl=en&as_sdt=1,5'
-            # search a page
-            response = requests.get(page_url, headers = headers)
-            # print(url)
-            soup = BeautifulSoup(response.content,'lxml') 
-            # print(soup.select('[data-lid]')) 
-            for item in soup.select('[data-lid]'): 
-                try: 
-                    with open(path_urls, 'a+') as url_file:
-                        # append text at the end of file
-                        url_file.write(item.select('h3')[0].find_all('a', href=True)[0]['href'])
-                        url_file.write('\n')
-                except Exception as e: 
-                    #raise e
-                    print("error")
-    elif acad_db_name == 'PubMed':
-        url = 'https://pubmed.ncbi.nlm.nih.gov/?term=macaque%20AND%20(thalamus%20OR%20cortex%20OR%20thalamocortical%20OR%20thalamo-cortical%20or%20corticothalamic%20OR%20cortico-thalamic)&page=1'
-        response = requests.get(url, headers = headers)
-        soup = BeautifulSoup(response.content,'lxml')
-        # print(soup)
-        num_results_str = soup.find_all('span', {'class': 'value'})[0].get_text()
-        print(num_results_str)
-        num_results = int(re.sub(r'[^\w\s]', '', num_results_str))
-        pages = int(num_results/10)
-        print(pages)
-    else:
-        None
-    
-    '''
-    for page in range(pages):
-        time.sleep(2)
-        start = page * 10
-        # google scholar
-        url = 'https://scholar.google.com/scholar?start=' + str(start) + '&q=macaque+thalamus+OR+thalamocortical+OR+thalamo-cortical&hl=en&as_sdt=1,5'
-        # pubmed
-        url = 'https://pubmed.ncbi.nlm.nih.gov/?term=macaque%20AND%20(thalamus%20OR%20cortex%20OR%20thalamocortical%20OR%20thalamo-cortical%20or%20corticothalamic%20OR%20cortico-thalamic)&page=1
-        response = requests.get(url,headers = headers)
-        # print(url)
-        soup = BeautifulSoup(response.content,'lxml') 
-        #print(soup.select('[data-lid]')) 
-        for item in soup.select('[data-lid]'): 
-            try: 
-                # print('----------------------------------------') 
-                # print(item)  
-                # print(item.select('h3')[0])
-                with open(path_urls, 'a+') as url_file:
-                    url_file.seek(0)
-                    # If file is not empty then append '\n'
-                    data = url_file.read(100)
-                    if len(data) > 0 :
-                        url_file.write('\n')
-                        # Append text at the end of file
-                    url_file.write('----------------------------------------\n')
-                    url_file.write(item.select('h3')[0].get_text())
-                    url_file.write('\n')
-                    # print(item.select('h3')[0].get_text())
-                    for a in item.select('h3')[0].find_all('a', href=True):
-                        # print(a['href'])
-                        url_file.write(a['href'])
-                        url_file.write('\n')
-                        # print(item.select('a'))
-                        # print("PDF link:")
-                    url_file.write(item.select('a')[0]['href'])
-                    url_file.write('\n')
-                    # print(item.select('a')[0]['href'])
-                    # print(item.select('.gs_rs')[0].get_text()) 
-                    # print('----------------------------------------') 
-            except Exception as e: 
-                #raise e 
-                print('')
-    '''
     
 # test code
 acad_db_name = 'Google Scholar'
@@ -281,3 +197,99 @@ def scan_record_download(path_urls, on_topic_kws, pdf_folder_path, columns):
             add_rows_to_csv(path_potential, info_json, columns)
             # download_pdf_file(info_json['pdf_link'], pdf_folder_path, str(file_index))
             file_index += 1
+            
+columns = ['DOI', 'url', 'title'] + on_topic_kws
+
+
+scan_record_download(path_urls, on_topic_kws, pdf_folder_path, columns)
+
+search_acad_db(acad_dbs, on_topic_kws, path_poten_urls, pdf_folder_path, columns)
+
+def search_acad_db(acad_dbs, on_topic_kws, path_poten_urls, pdf_folder_path, columns):
+    for acad_db in acad_dbs:
+    if acad_db_name == 'Google Scholar':
+        url = 'https://scholar.google.com/scholar?start=0&q=macaque+thalamus+OR+thalamocortical+OR+thalamo-cortical&hl=en&as_sdt=1,5'
+        response = requests.get(url, headers = headers)
+        soup = BeautifulSoup(response.content,'lxml')
+        num_results_str = soup.find_all('div', {'class': 'gs_ab_mdw'})[1].get_text().split()[1]
+        # print(int(num_results_str))
+        num_results = int(re.sub(r'[^\w\s]', '', num_results_str))
+        pages = int(num_results/10)
+        pages = 10
+        # print(pages)
+        # search all pages
+        for page in range(pages):
+            time.sleep(2)
+            start = page * 10
+            # google scholar
+            page_url = 'https://scholar.google.com/scholar?start=' + str(start) + '&q=macaque+thalamus+OR+thalamocortical+OR+thalamo-cortical&hl=en&as_sdt=1,5'
+            # search a page
+            response = requests.get(page_url, headers = headers)
+            # print(url)
+            soup = BeautifulSoup(response.content,'lxml') 
+            # print(soup.select('[data-lid]')) 
+            for item in soup.select('[data-lid]'): 
+                try: 
+                    with open(path_urls, 'a+') as url_file:
+                        # append text at the end of file
+                        url_file.write(item.select('h3')[0].find_all('a', href=True)[0]['href'])
+                        url_file.write('\n')
+                except Exception as e: 
+                    #raise e
+                    print("error")
+    elif acad_db_name == 'PubMed':
+        url = 'https://pubmed.ncbi.nlm.nih.gov/?term=macaque%20AND%20(thalamus%20OR%20cortex%20OR%20thalamocortical%20OR%20thalamo-cortical%20or%20corticothalamic%20OR%20cortico-thalamic)&page=1'
+        response = requests.get(url, headers = headers)
+        soup = BeautifulSoup(response.content,'lxml')
+        # print(soup)
+        num_results_str = soup.find_all('span', {'class': 'value'})[0].get_text()
+        print(num_results_str)
+        num_results = int(re.sub(r'[^\w\s]', '', num_results_str))
+        pages = int(num_results/10)
+        print(pages)
+    else:
+        None
+    
+    '''
+    for page in range(pages):
+        time.sleep(2)
+        start = page * 10
+        # google scholar
+        url = 'https://scholar.google.com/scholar?start=' + str(start) + '&q=macaque+thalamus+OR+thalamocortical+OR+thalamo-cortical&hl=en&as_sdt=1,5'
+        # pubmed
+        url = 'https://pubmed.ncbi.nlm.nih.gov/?term=macaque%20AND%20(thalamus%20OR%20cortex%20OR%20thalamocortical%20OR%20thalamo-cortical%20or%20corticothalamic%20OR%20cortico-thalamic)&page=1
+        response = requests.get(url,headers = headers)
+        # print(url)
+        soup = BeautifulSoup(response.content,'lxml') 
+        #print(soup.select('[data-lid]')) 
+        for item in soup.select('[data-lid]'): 
+            try: 
+                # print('----------------------------------------') 
+                # print(item)  
+                # print(item.select('h3')[0])
+                with open(path_urls, 'a+') as url_file:
+                    url_file.seek(0)
+                    # If file is not empty then append '\n'
+                    data = url_file.read(100)
+                    if len(data) > 0 :
+                        url_file.write('\n')
+                        # Append text at the end of file
+                    url_file.write('----------------------------------------\n')
+                    url_file.write(item.select('h3')[0].get_text())
+                    url_file.write('\n')
+                    # print(item.select('h3')[0].get_text())
+                    for a in item.select('h3')[0].find_all('a', href=True):
+                        # print(a['href'])
+                        url_file.write(a['href'])
+                        url_file.write('\n')
+                        # print(item.select('a'))
+                        # print("PDF link:")
+                    url_file.write(item.select('a')[0]['href'])
+                    url_file.write('\n')
+                    # print(item.select('a')[0]['href'])
+                    # print(item.select('.gs_rs')[0].get_text()) 
+                    # print('----------------------------------------') 
+            except Exception as e: 
+                #raise e 
+                print('')
+    '''
