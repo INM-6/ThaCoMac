@@ -3,7 +3,7 @@ import time
 from bs4 import BeautifulSoup
 import requests
 
-def search_google_scholar(init_url, headers, proxy):
+def search_google_scholar(init_url, headers):
     # create a .txt file to record the urls of google scholar search results, clear the file if already exists
     f = open('google_scholar_poten_urls.txt', 'w')
     f.truncate()
@@ -62,7 +62,7 @@ def search_acad_dbs(acad_dbs, init_urls, headers, proxy):
     for acad_db in acad_dbs:
         if acad_db == 'Google Scholar':
             print("Searching Google Scholar...")
-            search_google_scholar(init_urls['gs'], headers, proxy)
+            search_google_scholar(init_urls['gs'], headers)
         elif acad_db == 'Web of Science':
             print("Searching Web of Science...")
             search_webofscience(init_urls['wos'], headers, proxy)
