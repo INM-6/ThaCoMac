@@ -154,7 +154,7 @@ def merge_search_results():
     doi_df.to_csv(FPM.path_poten_csv)
     
     # process wos_poten_urls
-    doi_df = pd.read_excel(FPM.wos_poten_urls)
+    doi_df = pd.read_excel(FPM.wos_poten_urls, engine = 'xlrd')
     doi_df = doi_df[['DOI']]
     doi_df.to_csv(FPM.path_poten_csv)
     
