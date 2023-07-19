@@ -3,7 +3,6 @@ import time
 from bs4 import BeautifulSoup
 import requests
 
-
 def search_google_scholar(init_url, headers):
     # create a .txt file to record the urls of google scholar search results, clear the file if already exists
     f = open('google_scholar_poten_urls.txt', 'w')
@@ -44,6 +43,7 @@ def search_google_scholar(init_url, headers):
             except Exception as e: 
                 #raise e
                 print("error")
+        print("Searching Google Scholar complated!")
 
 def search_webofscience(init_url):
     None
@@ -70,7 +70,7 @@ def search_acad_dbs(acad_dbs, init_urls, headers):
             print("Searching Europe PMC...")
             search_Europe_PMC(init_urls['pubmed'], headers)
         else:
-            print("The specified academic database:" + acad_db + "is not supported by this function, plese choose one of the following databases:", '\n')
+            print("The specified academic database: " + acad_db + " is not supported by this function, plese choose one of the following databases:", '\n')
             for db in ['Google Scholar', 'Web of Science', 'PubMed_Central_PMC', 'Europe_PMC']:
                 print(db, '\n')
         
