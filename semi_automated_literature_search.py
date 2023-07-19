@@ -11,6 +11,7 @@ def search_google_scholar(init_url, headers):
 
     # request the first page and extract the number of pages of the search results
     first_page = init_url
+    time.sleep(2)
     response = requests.get(first_page, headers = headers)
     soup = BeautifulSoup(response.content,'lxml')
     print(soup)
