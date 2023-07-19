@@ -48,7 +48,10 @@ def search_google_scholar(init_url, headers, proxy):
                 print("error")
     print("Searching Google Scholar complated!")
 
-def search_webofscience(iinit_url, headers):
+def search_google_scholar(init_url, headers, proxy):
+    None
+
+def search_webofscience(init_url, headers):
     None
 
 def search_PubMed_Central_PMC(iinit_url, headers):
