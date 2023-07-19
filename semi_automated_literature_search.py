@@ -131,7 +131,7 @@ def search_conne_db(connec_db, connec_db_quries):
     
 def merge_search_results():
     # process gs_poten_urls
-    with open(FMP.gs_poten_urls, 'r') as file:
+    with open(FPM.gs_poten_urls, 'r') as file:
         lines = []
         for line in file:
             line = line.strip()
