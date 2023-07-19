@@ -39,13 +39,10 @@ def search_google_scholar(init_url, headers):
                 with open('google_scholar_poten_urls.txt', 'a') as url_file:
                     # append text at the end of file
                     add_url = item.select('h3')[0].find_all('a', href=True)[0]['href']
-                    url_file.write(f'\n{add_url}')
-                    '''
                     if len(url_file.readlines()) == 0:
-                        url_file.write(item.select('h3')[0].find_all('a', href=True)[0]['href'])
+                        url_file.write(f'{add_url}')
                     else:
-                        url_file.write('\n')
-                        url_file.write(item.select('h3')[0].find_all('a', href=True)[0]['href']) 
+                        url_file.write(f'\n{add_url}')
                     '''  
             except Exception as e: 
                 #raise e
