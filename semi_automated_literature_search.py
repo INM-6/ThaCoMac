@@ -37,10 +37,11 @@ def search_google_scholar(init_url, headers):
         response = requests.get(page_url, headers = headers)
         # print(url)
         soup = BeautifulSoup(response.content,'lxml')
-        print(soup)
+        # print(soup)
         # print(soup.select('[data-lid]')) 
         for item in soup.select('[data-lid]'):
-            add_url = item.select('h3')[0].find_all('a', href=True)[0]['href']
+            print(item)
+            add_url = item.find_all('h3')[0].find_all('a', href = True)[0]['href']
             print(add_url)
             try: 
                 with open(FPM.gs_poten_urls, 'a') as url_file:
