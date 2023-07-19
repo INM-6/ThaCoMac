@@ -1,3 +1,4 @@
+import random
 import re
 import time
 from bs4 import BeautifulSoup
@@ -11,21 +12,20 @@ def search_google_scholar(init_url, headers):
 
     # request the first page and extract the number of pages of the search results
     first_page = init_url
-    time.sleep(2)
     response = requests.get(first_page, headers = headers)
     soup = BeautifulSoup(response.content,'lxml')
-    print(soup)
+    # print(soup)
     num_results_str = soup.find_all('div', {'class': 'gs_ab_mdw'})[1].get_text().split()[1]
-    print(num_results_str)
+    # print(num_results_str)
     # print(int(num_results_str))
     num_results = int(re.sub(r'[^\w\s]', '', num_results_str))
     pages = int(num_results/10)
     # print(pages)
     
     # iterate all pages and record the results
-    pages = 2
+    pages = 5
     for page in range(pages):
-        time.sleep(2)
+        time.sleep(random.randint(1, 10))
         start = page * 10
         # google scholar
         page_url = init_url.split('?start=')[0] + '?start=' + str(start) + '&q=' + init_url.split('?start=')[1].split('&q=')[1]
@@ -36,26 +36,30 @@ def search_google_scholar(init_url, headers):
         # print(soup.select('[data-lid]')) 
         for item in soup.select('[data-lid]'): 
             try: 
-                with open('google_scholar_poten_urls.txt', 'a+') as url_file:
+                with open('google_scholar_poten_urls.txt', 'a') as url_file:
                     # append text at the end of file
+                    add_url = item.select('h3')[0].find_all('a', href=True)[0]['href']
+                    url_file.write(f'{add_url}\n')
+                    '''
                     if len(url_file.readlines()) == 0:
                         url_file.write(item.select('h3')[0].find_all('a', href=True)[0]['href'])
                     else:
                         url_file.write('\n')
-                        url_file.write(item.select('h3')[0].find_all('a', href=True)[0]['href'])   
+                        url_file.write(item.select('h3')[0].find_all('a', href=True)[0]['href']) 
+                    '''  
             except Exception as e: 
                 #raise e
                 print("error")
     print("Searching Google Scholar complated!")
 
-def search_webofscience(init_url, headers, proxy):
-    None
+def search_webofscience(init_url, headers):
+    print("Searching Web of Science complated!")
 
-def search_PubMed_Central_PMC(iinit_url, headers, proxy):
-    None
+def search_PubMed_Central_PMC(iinit_url, headers):
+    print("Searching PubMedd Central PMC complated!")
 
-def search_Europe_PMC(init_url, headers, proxy):
-    None
+def search_Europe_PMC(init_url, headers):
+    print("Searching Europe PMC complated!")
 
 # search academic databases, record the urls as a line in a .txt file from the webpages
 def search_acad_dbs(acad_dbs, init_urls, headers, proxy):
@@ -65,13 +69,13 @@ def search_acad_dbs(acad_dbs, init_urls, headers, proxy):
             search_google_scholar(init_urls['gs'], headers)
         elif acad_db == 'Web of Science':
             print("Searching Web of Science...")
-            search_webofscience(init_urls['wos'], headers, proxy)
+            search_webofscience(init_urls['wos'], headers)
         elif acad_db == 'PubMed_Central_PMC':
             print("Searching PubMed Central PMC...")
-            search_PubMed_Central_PMC(init_urls['pubmed'], headers, proxy)
+            search_PubMed_Central_PMC(init_urls['pubmed'], headers)
         elif acad_db == 'Europe_PMC':
             print("Searching Europe PMC...")
-            search_Europe_PMC(init_urls['pubmed'], headers, proxy)
+            search_Europe_PMC(init_urls['pubmed'], headers)
         else:
             print("The specified academic database: " + acad_db + " is not supported by this function.")
             print("Plese choose one of the following databases:",)
