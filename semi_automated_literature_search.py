@@ -125,6 +125,7 @@ def span_citations(seed_papers, num_span_time, headers, proxy):
     
 def search_conne_db(connec_db, connec_db_quries):
     None
+    # end of search_conne_db
     
 def merge_search_results():
     '''
@@ -172,8 +173,7 @@ def merge_search_results():
     # eliminate duplicates
     doi_df = pd.read_excel(path_poten_csv)
     print(doi_df.head())
-    
-    
+    # end of merge_search_results
 
 
 if __name__ == "__main__":
