@@ -48,16 +48,13 @@ def search_google_scholar(init_url, headers, proxy):
                 print("error")
     print("Searching Google Scholar complated!")
 
-def search_google_scholar(init_url, headers, proxy):
+def search_webofscience(init_url, headers, proxy):
     None
 
-def search_webofscience(init_url, headers):
+def search_PubMed_Central_PMC(iinit_url, headers, proxy):
     None
 
-def search_PubMed_Central_PMC(iinit_url, headers):
-    None
-
-def search_Europe_PMC(init_url, headers):
+def search_Europe_PMC(init_url, headers, proxy):
     None
 
 # search academic databases, record the urls as a line in a .txt file from the webpages
