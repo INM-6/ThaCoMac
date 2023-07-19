@@ -72,7 +72,7 @@ def search_acad_dbs(acad_dbs, init_urls, headers):
         else:
             print("The specified academic database: " + acad_db + " is not supported by this function, plese choose one of the following databases:", '\n')
             for db in ['Google Scholar', 'Web of Science', 'PubMed_Central_PMC', 'Europe_PMC']:
-                print(db, '\n')
+                print(db)
         
 '''
         for page in range(pages):
