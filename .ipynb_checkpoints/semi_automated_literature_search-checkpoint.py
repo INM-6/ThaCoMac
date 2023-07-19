@@ -18,7 +18,7 @@ def search_google_scholar(init_url, headers):
     first_page = init_url
     response = requests.get(first_page, headers = headers)
     soup = BeautifulSoup(response.content,'lxml')
-    print(soup)
+    # print(soup)
     num_results_str = soup.find_all('div', {'class': 'gs_ab_mdw'})[1].get_text().split()[1]
     # print(num_results_str)
     # print(int(num_results_str))
@@ -36,7 +36,8 @@ def search_google_scholar(init_url, headers):
         # search a page
         response = requests.get(page_url, headers = headers)
         # print(url)
-        soup = BeautifulSoup(response.content,'lxml') 
+        soup = BeautifulSoup(response.content,'lxml')
+        print(soup)
         # print(soup.select('[data-lid]')) 
         for item in soup.select('[data-lid]'):
             add_url = item.select('h3')[0].find_all('a', href=True)[0]['href']
