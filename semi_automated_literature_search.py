@@ -58,16 +58,20 @@ def search_Europe_PMC(init_url):
 def search_acad_dbs(acad_dbs, init_urls, headers):
     for acad_db in acad_dbs:
         if acad_db == 'Google Scholar':
+            print("Searching Google Scholar...")
             search_google_scholar(init_urls['gs'], headers)
         elif acad_db == 'Web of Science':
+            print("Searching Web of Science...")
             search_webofscience(init_urls['wos'], headers)
         elif acad_db == 'PubMed_Central_PMC':
+            print("Searching PubMed Central PMC...")
             search_PubMed_Central_PMC(init_urls['pubmed'], headers)
         elif acad_db == 'Europe_PMC':
+            print("Searching Europe PMC...")
             search_Europe_PMC(init_urls['pubmed'], headers)
         else:
-            print("The specified academic database is not supported by this function, plese choose one of the following databases:", '\n')
-            for db in ['Semantic Scholar', 'Google Scholar', 'Web of Science', 'PubMed_Central_PMC', 'Europe_PMC']:
+            print("The specified academic database:" + acad_db + "is not supported by this function, plese choose one of the following databases:", '\n')
+            for db in ['Google Scholar', 'Web of Science', 'PubMed_Central_PMC', 'Europe_PMC']:
                 print(db, '\n')
         
 '''
