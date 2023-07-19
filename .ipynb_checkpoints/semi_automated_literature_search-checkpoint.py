@@ -6,6 +6,7 @@ import requests
 import pandas as pd
 
 import file_path_management as FPM
+import public_library as PL
 
 def search_google_scholar(init_url, headers):
     # create a .txt file to record the urls of google scholar search results, clear the file if already exists
