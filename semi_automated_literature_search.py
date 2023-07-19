@@ -127,6 +127,13 @@ def search_conne_db(connec_db, connec_db_quries):
     None
     
 def merge_search_results():
+    '''
+    gs_poten_urls
+    wos_poten_urls
+    pubmed_pmc_poten_urls
+    eupmc_poten_urls
+    path_poten_csv
+    '''
     None
 
 
