@@ -13,7 +13,8 @@ def search_google_scholar(init_url, headers):
     first_page = init_url
     response = requests.get(first_page, headers = headers)
     soup = BeautifulSoup(response.content,'lxml')
-    num_results_str = soup.find_all('div', {'class': 'gs_ab_mdw'})[1].get_text().split()[1]
+    num_results_str = soup.find_all('div', {'class': 'gs_ab_mdw'})# [1].get_text().split()[1]
+    print(num_results_str)
     # print(int(num_results_str))
     num_results = int(re.sub(r'[^\w\s]', '', num_results_str))
     pages = int(num_results/10)
@@ -118,6 +119,7 @@ def search_acad_dbs(acad_dbs, init_urls, headers):
                     #raise e 
                     print('')
 '''
+
 if __name__ == "__main__":
     # test code: search_acad_dbs(acad_dbs, init_urls, headers)
     acad_dbs = ['Semantic Scholar', 'Google Scholar', 'Web of Science', 'PubMed_Central_PMC', 'Europe_PMC']
