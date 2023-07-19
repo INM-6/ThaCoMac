@@ -34,18 +34,16 @@ def search_google_scholar(init_url, headers):
         # print(url)
         soup = BeautifulSoup(response.content,'lxml') 
         # print(soup.select('[data-lid]')) 
-        for item in soup.select('[data-lid]'): 
+        for item in soup.select('[data-lid]'):
+            add_url = item.select('h3')[0].find_all('a', href=True)[0]['href']
             try: 
                 with open('google_scholar_poten_urls.txt', 'a') as url_file:
                     # append text at the end of file
-                    add_url = item.select('h3')[0].find_all('a', href=True)[0]['href']
-                    if len(url_file.readlines()) == 0:
-                        url_file.write(f'{add_url}')
-                    else:
-                        url_file.write(f'\n{add_url}')
+                    url_file.seek(0)
+                    url_file.write(f'{add_url}\n')
             except Exception as e: 
-                #raise e
-                print("error")
+                print("Error when trying to write in google_scholar_poten_urls.txt")
+                raise e
     print("Searching Google Scholar complated!")
 
 def search_webofscience(init_url, headers):
