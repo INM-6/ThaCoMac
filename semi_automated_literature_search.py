@@ -3,7 +3,7 @@ import time
 from bs4 import BeautifulSoup
 import requests
 
-def search_google_scholar(init_url, headers):
+def search_google_scholar(init_url, headers, proxy):
     # create a .txt file to record the urls of google scholar search results, clear the file if already exists
     f = open('google_scholar_poten_urls.txt', 'w')
     f.truncate()
@@ -12,7 +12,7 @@ def search_google_scholar(init_url, headers):
     # request the first page and extract the number of pages of the search results
     first_page = init_url
     time.sleep(2)
-    response = requests.get(first_page, headers = headers)
+    response = requests.get(first_page, headers = headers, proxies = proxy)
     soup = BeautifulSoup(response.content,'lxml')
     print(soup)
     num_results_str = soup.find_all('div', {'class': 'gs_ab_mdw'})# [1].get_text().split()[1]
@@ -30,7 +30,7 @@ def search_google_scholar(init_url, headers):
         # google scholar
         page_url = init_url.split('?start=')[0] + '?start=' + str(start) + '&q=' + init_url.split('?start=')[1].split('&q=')[1]
         # search a page
-        response = requests.get(page_url, headers = headers)
+        response = requests.get(page_url, headers = headers, proxies = proxy)
         # print(url)
         soup = BeautifulSoup(response.content,'lxml') 
         # print(soup.select('[data-lid]')) 
@@ -58,20 +58,20 @@ def search_Europe_PMC(init_url, headers):
     None
 
 # search academic databases, record the urls as a line in a .txt file from the webpages
-def search_acad_dbs(acad_dbs, init_urls, headers):
+def search_acad_dbs(acad_dbs, init_urls, headers, proxy):
     for acad_db in acad_dbs:
         if acad_db == 'Google Scholar':
             print("Searching Google Scholar...")
-            search_google_scholar(init_urls['gs'], headers)
+            search_google_scholar(init_urls['gs'], headers, proxy)
         elif acad_db == 'Web of Science':
             print("Searching Web of Science...")
-            search_webofscience(init_urls['wos'], headers)
+            search_webofscience(init_urls['wos'], headers, proxy)
         elif acad_db == 'PubMed_Central_PMC':
             print("Searching PubMed Central PMC...")
-            search_PubMed_Central_PMC(init_urls['pubmed'], headers)
+            search_PubMed_Central_PMC(init_urls['pubmed'], headers, proxy)
         elif acad_db == 'Europe_PMC':
             print("Searching Europe PMC...")
-            search_Europe_PMC(init_urls['pubmed'], headers)
+            search_Europe_PMC(init_urls['pubmed'], headers, proxy)
         else:
             print("The specified academic database: " + acad_db + " is not supported by this function.")
             print("Plese choose one of the following databases:",)
