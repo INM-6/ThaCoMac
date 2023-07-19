@@ -1,127 +1,125 @@
-'''
-from serpapi import GoogleSearch
-params = {
-  "engine": "google_scholar",
-  "q": "macaque thalamus OR thalamocortical OR thalamo-cortical",
-  "api_key": "c397fc278e5a3483e64735af275a21bf6f78b17a8084ea7f507d933bb4d4b90a"
-}
+import re
+import time
+from bs4 import BeautifulSoup
+import requests
 
-search = GoogleSearch(params)
-results = search.get_dict()
-organic_results = results["organic_results"]
-'''
 
-'''
-# searching for related literature and write them into file 'list_of_potential_related_literature.txt'
-def record_liter(doi_or_url, path):
-    with open(path, 'a+') as url_file:
-        url_file.seek(0)
-        # If file is not empty then append '\n'
-        data = url_file.read(100)
-        if len(data) > 0 :
-            url_file.write('\n')
-        # Append text at the end of file
-        url_file.write(doi_or_url)
+def search_google_scholar(init_url, headers):
+    # create a .txt file to record the urls of google scholar search results, clear the file if already exists
+    f = open('google_scholar_poten_urls.txt', 'w')
+    f.truncate()
+    f.close()
+
+    # request the first page and extract the number of pages of the search results
+    first_page = init_url
+    response = requests.get(first_page, headers = headers)
+    soup = BeautifulSoup(response.content,'lxml')
+    num_results_str = soup.find_all('div', {'class': 'gs_ab_mdw'})[1].get_text().split()[1]
+    # print(int(num_results_str))
+    num_results = int(re.sub(r'[^\w\s]', '', num_results_str))
+    pages = int(num_results/10)
+    # print(pages)
     
-# test code
-acad_db_name = 'Google Scholar'
-search_acad_dbs(acad_db_name, path_urls)
-'''
-
-# headers simulating a broswer so that the web scraping won't get blocked
-headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9'}
-
-# search academic databases, record the urls as a line in a .txt file from the webpages
-def search_acad_dbs(acad_dbs, on_topic_kws, path_poten_urls, pdf_folder_path, columns):
-    for acad_db in acad_dbs:
-    if acad_db_name == 'Google Scholar':
-        url = 'https://scholar.google.com/scholar?start=0&q=macaque+thalamus+OR+thalamocortical+OR+thalamo-cortical&hl=en&as_sdt=1,5'
-        response = requests.get(url, headers = headers)
-        soup = BeautifulSoup(response.content,'lxml')
-        num_results_str = soup.find_all('div', {'class': 'gs_ab_mdw'})[1].get_text().split()[1]
-        # print(int(num_results_str))
-        num_results = int(re.sub(r'[^\w\s]', '', num_results_str))
-        pages = int(num_results/10)
-        pages = 10
-        # print(pages)
-        # search all pages
-        for page in range(pages):
-            time.sleep(2)
-            start = page * 10
-            # google scholar
-            page_url = 'https://scholar.google.com/scholar?start=' + str(start) + '&q=macaque+thalamus+OR+thalamocortical+OR+thalamo-cortical&hl=en&as_sdt=1,5'
-            # search a page
-            response = requests.get(page_url, headers = headers)
-            # print(url)
-            soup = BeautifulSoup(response.content,'lxml') 
-            # print(soup.select('[data-lid]')) 
-            for item in soup.select('[data-lid]'): 
-                try: 
-                    with open(path_urls, 'a+') as url_file:
-                        # append text at the end of file
-                        url_file.write(item.select('h3')[0].find_all('a', href=True)[0]['href'])
-                        url_file.write('\n')
-                except Exception as e: 
-                    #raise e
-                    print("error")
-    elif acad_db_name == 'PubMed':
-        url = 'https://pubmed.ncbi.nlm.nih.gov/?term=macaque%20AND%20(thalamus%20OR%20cortex%20OR%20thalamocortical%20OR%20thalamo-cortical%20or%20corticothalamic%20OR%20cortico-thalamic)&page=1'
-        response = requests.get(url, headers = headers)
-        soup = BeautifulSoup(response.content,'lxml')
-        # print(soup)
-        num_results_str = soup.find_all('span', {'class': 'value'})[0].get_text()
-        print(num_results_str)
-        num_results = int(re.sub(r'[^\w\s]', '', num_results_str))
-        pages = int(num_results/10)
-        print(pages)
-    else:
-        None
-    
-    '''
+    # iterate all pages and record the results
+    pages = 10
     for page in range(pages):
         time.sleep(2)
         start = page * 10
         # google scholar
-        url = 'https://scholar.google.com/scholar?start=' + str(start) + '&q=macaque+thalamus+OR+thalamocortical+OR+thalamo-cortical&hl=en&as_sdt=1,5'
-        # pubmed
-        url = 'https://pubmed.ncbi.nlm.nih.gov/?term=macaque%20AND%20(thalamus%20OR%20cortex%20OR%20thalamocortical%20OR%20thalamo-cortical%20or%20corticothalamic%20OR%20cortico-thalamic)&page=1
-        response = requests.get(url,headers = headers)
+        page_url = init_url.split('?start=')[0] + '?start=' + str(start) + '&q=' + init_url.split('?start=')[1].split('&q=')[1]
+        # search a page
+        response = requests.get(page_url, headers = headers)
         # print(url)
         soup = BeautifulSoup(response.content,'lxml') 
-        #print(soup.select('[data-lid]')) 
+        # print(soup.select('[data-lid]')) 
         for item in soup.select('[data-lid]'): 
             try: 
-                # print('----------------------------------------') 
-                # print(item)  
-                # print(item.select('h3')[0])
-                with open(path_urls, 'a+') as url_file:
-                    url_file.seek(0)
-                    # If file is not empty then append '\n'
-                    data = url_file.read(100)
-                    if len(data) > 0 :
+                with open('google_scholar_poten_urls.txt', 'a+') as url_file:
+                    # append text at the end of file
+                    if len(url_file.readlines()) == 0:
+                        url_file.write(item.select('h3')[0].find_all('a', href=True)[0]['href'])
+                    else:
                         url_file.write('\n')
-                        # Append text at the end of file
-                    url_file.write('----------------------------------------\n')
-                    url_file.write(item.select('h3')[0].get_text())
-                    url_file.write('\n')
-                    # print(item.select('h3')[0].get_text())
-                    for a in item.select('h3')[0].find_all('a', href=True):
-                        # print(a['href'])
-                        url_file.write(a['href'])
-                        url_file.write('\n')
-                        # print(item.select('a'))
-                        # print("PDF link:")
-                    url_file.write(item.select('a')[0]['href'])
-                    url_file.write('\n')
-                    # print(item.select('a')[0]['href'])
-                    # print(item.select('.gs_rs')[0].get_text()) 
-                    # print('----------------------------------------') 
+                        url_file.write(item.select('h3')[0].find_all('a', href=True)[0]['href'])   
             except Exception as e: 
-                #raise e 
-                print('')
-    '''
-'''
-# test code: search_acad_dbs(acad_dbs, on_topic_kws, path_poten_urls, pdf_folder_path)
+                #raise e
+                print("error")
 
-search_acad_dbs(acad_dbs, on_topic_kws, path_poten_urls, pdf_folder_path)
+def search_webofscience(init_url):
+    None
+
+def search_PubMed_Central_PMC(init_url):
+    None
+
+def search_Europe_PMC(init_url):
+    None
+
+# search academic databases, record the urls as a line in a .txt file from the webpages
+def search_acad_dbs(acad_dbs, init_urls, headers):
+    for acad_db in acad_dbs:
+        if acad_db == 'Google Scholar':
+            search_google_scholar(init_urls['gs'], headers)
+        elif acad_db == 'Web of Science':
+            search_webofscience(init_urls['wos'], headers)
+        elif acad_db == 'PubMed_Central_PMC':
+            search_PubMed_Central_PMC(init_urls['pubmed'], headers)
+        elif acad_db == 'Europe_PMC':
+            search_Europe_PMC(init_urls['pubmed'], headers)
+        else:
+            print("The specified academic database is not supported by this function, plese choose one of the following databases:", '\n')
+            for db in ['Semantic Scholar', 'Google Scholar', 'Web of Science', 'PubMed_Central_PMC', 'Europe_PMC']:
+                print(db, '\n')
+        
 '''
+        for page in range(pages):
+            time.sleep(2)
+            start = page * 10
+            # google scholar
+            url = 'https://scholar.google.com/scholar?start=' + str(start) + '&q=macaque+thalamus+OR+thalamocortical+OR+thalamo-cortical&hl=en&as_sdt=1,5'
+            # pubmed
+            url = 'https://pubmed.ncbi.nlm.nih.gov/?term=macaque%20AND%20(thalamus%20OR%20cortex%20OR%20thalamocortical%20OR%20thalamo-cortical%20or%20corticothalamic%20OR%20cortico-thalamic)&page=1
+            response = requests.get(url,headers = headers)
+            # print(url)
+            soup = BeautifulSoup(response.content,'lxml') 
+            #print(soup.select('[data-lid]')) 
+            for item in soup.select('[data-lid]'): 
+                try: 
+                    # print('----------------------------------------') 
+                    # print(item)  
+                    # print(item.select('h3')[0])
+                    with open(path_urls, 'a+') as url_file:
+                        url_file.seek(0)
+                        # If file is not empty then append '\n'
+                        data = url_file.read(100)
+                        if len(data) > 0 :
+                            url_file.write('\n')
+                            # Append text at the end of file
+                        url_file.write('----------------------------------------\n')
+                        url_file.write(item.select('h3')[0].get_text())
+                        url_file.write('\n')
+                        # print(item.select('h3')[0].get_text())
+                        for a in item.select('h3')[0].find_all('a', href=True):
+                            # print(a['href'])
+                            url_file.write(a['href'])
+                            url_file.write('\n')
+                            # print(item.select('a'))
+                            # print("PDF link:")
+                        url_file.write(item.select('a')[0]['href'])
+                        url_file.write('\n')
+                        # print(item.select('a')[0]['href'])
+                        # print(item.select('.gs_rs')[0].get_text()) 
+                        # print('----------------------------------------') 
+                except Exception as e: 
+                    #raise e 
+                    print('')
+'''
+if __name__ == "__main__":
+    # test code: search_acad_dbs(acad_dbs, init_urls, headers)
+    acad_dbs = ['Semantic Scholar', 'Google Scholar', 'Web of Science', 'PubMed_Central_PMC', 'Europe_PMC']
+    init_urls = {'gs': 'https://scholar.google.com/scholar?start=0&q=%22thalamus%22+OR+%22thalamocortical%22+OR+%22thalamo-cortical%22+%22macaque%22&hl=en&as_sdt=1,5',
+                'wos': '',
+                'pubmed': '',
+                'eupmc': ''
+                }
+    headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9'}
+    search_acad_dbs(acad_dbs, init_urls, headers)

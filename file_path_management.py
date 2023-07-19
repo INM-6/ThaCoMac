@@ -1,4 +1,5 @@
 # annoucing all file paths
+project_folder = '/Users/didihou/myProjects/didihou_master_project'
 path_poten_urls = '/Users/didihou/myProjects/didihou_master_project/list_of_literature_urls.txt'
 path_poten_csv = '/Users/didihou/myProjects/didihou_master_project/list_of_potential_related_literature.csv'
 path_related_urls = '/Users/didihou/myProjects/didihou_master_project/list_of_related_literature.txt'
