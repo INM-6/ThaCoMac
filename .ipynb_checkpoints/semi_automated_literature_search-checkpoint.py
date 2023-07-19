@@ -4,6 +4,8 @@ import time
 from bs4 import BeautifulSoup
 import requests
 
+import file_path_management
+
 def search_google_scholar(init_url, headers):
     # create a .txt file to record the urls of google scholar search results, clear the file if already exists
     f = open('google_scholar_poten_urls.txt', 'w')
@@ -128,13 +130,6 @@ def search_conne_db(connec_db, connec_db_quries):
     # end of search_conne_db
     
 def merge_search_results():
-    '''
-    gs_poten_urls
-    wos_poten_urls
-    pubmed_pmc_poten_urls
-    eupmc_poten_urls
-    path_poten_csv
-    '''
     # process gs_poten_urls
     with open(gs_poten_urls, 'r') as file:
         lines = []
