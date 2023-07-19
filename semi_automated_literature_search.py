@@ -43,7 +43,6 @@ def search_google_scholar(init_url, headers):
                         url_file.write(f'{add_url}')
                     else:
                         url_file.write(f'\n{add_url}')
-                    '''  
             except Exception as e: 
                 #raise e
                 print("error")
