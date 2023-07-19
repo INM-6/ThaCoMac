@@ -134,7 +134,46 @@ def merge_search_results():
     eupmc_poten_urls
     path_poten_csv
     '''
-    None
+    # process gs_poten_urls
+    with open(gs_poten_urls, 'r') as file:
+        lines = []
+        for line in file:
+            line = line.strip()
+            lines.append(line)
+    print(lines[-1])
+    doi_list = []
+    for url in lines:
+        response = requests.get(url, headers = headers)
+        soup = BeautifulSoup(response.content,'lxml')
+        # print(soup)
+        num_results_str = soup.find_all('a', href = True)
+        for href in num_results_str:
+            if '//doi.org/' in href:
+                doi_list.append(href)
+    doi_df = pd.DataFrame({'DOI': doi_list})
+    PL.clear_file(path_poten_csv)
+    doi_df.to_csv(path_poten_csv)
+    
+    # process wos_poten_urls
+    doi_df = pd.read_excel(wos_poten_urls)
+    doi_df = doi_df[['DOI']]
+    doi_df.to_csv(path_poten_csv)
+    
+    # process pubmed_pmc_poten_urls
+    doi_df = pd.read_csv(pubmed_pmc_poten_urls)
+    doi_df = doi_df[['DOI']]
+    doi_df.to_csv(path_poten_csv)
+    
+    # process eupmc_poten_urls
+    doi_df = pd.read_excel(eupmc_poten_urls)
+    doi_df = doi_df[['DOI']]
+    doi_df.to_csv(path_poten_csv)
+    
+    # eliminate duplicates
+    doi_df = pd.read_excel(path_poten_csv)
+    print(doi_df.head())
+    
+    
 
 
 if __name__ == "__main__":
