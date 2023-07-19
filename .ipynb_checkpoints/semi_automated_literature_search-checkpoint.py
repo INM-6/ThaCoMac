@@ -136,7 +136,7 @@ def merge_search_results():
         for line in file:
             line = line.strip()
             lines.append(line)
-    print(lines[-1])
+    print(len(lines))
     doi_list = []
     for url in lines:
         response = requests.get(url, headers = headers)
