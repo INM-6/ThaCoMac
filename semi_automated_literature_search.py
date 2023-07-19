@@ -10,7 +10,7 @@ import public_library as PL
 
 def search_google_scholar(init_url, headers):
     # create a .txt file to record the urls of google scholar search results, clear the file if already exists
-    f = open('google_scholar_poten_urls.txt', 'w')
+    f = open(FPM.gs_poten_urls, 'w')
     f.truncate()
     f.close()
 
@@ -41,7 +41,7 @@ def search_google_scholar(init_url, headers):
         for item in soup.select('[data-lid]'):
             add_url = item.select('h3')[0].find_all('a', href=True)[0]['href']
             try: 
-                with open('google_scholar_poten_urls.txt', 'a') as url_file:
+                with open(FPM.gs_poten_urls, 'a') as url_file:
                     # append text at the end of file
                     url_file.write(f'{add_url}\n')
             except Exception as e: 
