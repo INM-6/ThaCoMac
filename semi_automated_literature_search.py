@@ -120,6 +120,16 @@ def search_acad_dbs(acad_dbs, init_urls, headers, proxy):
                     print('')
 '''
 
+def span_citations(seed_papers, num_span_time, headers, proxy):
+    None
+    
+def search_conne_db(connec_db, connec_db_quries):
+    None
+    
+def merge_search_results():
+    None
+
+
 if __name__ == "__main__":
     # test code: search_acad_dbs(acad_dbs, init_urls, headers)
     acad_dbs = ['Semantic Scholar', 'Google Scholar', 'Web of Science', 'PubMed_Central_PMC', 'Europe_PMC']
