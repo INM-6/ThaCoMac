@@ -3,6 +3,7 @@ import re
 import time
 from bs4 import BeautifulSoup
 import requests
+import pandas as pd
 
 import file_path_management as FPM
 
