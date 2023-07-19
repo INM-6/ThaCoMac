@@ -136,6 +136,7 @@ def merge_search_results():
     with open(FPM.gs_poten_urls, 'r') as file:
         lines = []
         for line in file:
+            print(line)
             line = line.strip()
             lines.append(line)
     print(len(lines))
@@ -149,26 +150,26 @@ def merge_search_results():
             if '//doi.org/' in href:
                 doi_list.append(href)
     doi_df = pd.DataFrame({'DOI': doi_list})
-    PL.clear_file(path_poten_csv)
-    doi_df.to_csv(path_poten_csv)
+    PL.clear_file(FPM.path_poten_csv)
+    doi_df.to_csv(FPM.path_poten_csv)
     
     # process wos_poten_urls
-    doi_df = pd.read_excel(wos_poten_urls)
+    doi_df = pd.read_excel(FPM.wos_poten_urls)
     doi_df = doi_df[['DOI']]
-    doi_df.to_csv(path_poten_csv)
+    doi_df.to_csv(FPM.path_poten_csv)
     
     # process pubmed_pmc_poten_urls
-    doi_df = pd.read_csv(pubmed_pmc_poten_urls)
+    doi_df = pd.read_csv(FPM.pubmed_pmc_poten_urls)
     doi_df = doi_df[['DOI']]
-    doi_df.to_csv(path_poten_csv)
+    doi_df.to_csv(FPM.path_poten_csv)
     
     # process eupmc_poten_urls
-    doi_df = pd.read_excel(eupmc_poten_urls)
+    doi_df = pd.read_csv(FPM.eupmc_poten_urls)
     doi_df = doi_df[['DOI']]
-    doi_df.to_csv(path_poten_csv)
+    doi_df.to_csv(FPM.path_poten_csv)
     
     # eliminate duplicates
-    doi_df = pd.read_excel(path_poten_csv)
+    doi_df = pd.read_excel(FPM.path_poten_csv)
     print(doi_df.head())
     # end of merge_search_results
 
