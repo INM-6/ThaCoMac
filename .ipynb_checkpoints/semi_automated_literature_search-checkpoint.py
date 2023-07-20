@@ -157,8 +157,8 @@ def merge_search_results(headers):
     
     # process wos_poten_urls
     doi_df = pd.read_csv(FPM.wos_poten_urls, sep=';')
-    print(doi_df.columns)
-    print(doi_df.head())
+    # print(doi_df.columns)
+    # print(doi_df.head())
     doi_df = doi_df[['DOI']]
     doi_df.to_csv(FPM.path_poten_csv)
     
@@ -173,7 +173,7 @@ def merge_search_results(headers):
     doi_df.to_csv(FPM.path_poten_csv)
     
     # eliminate duplicates
-    doi_df = pd.read_excel(FPM.path_poten_csv)
+    doi_df = pd.read_csv(FPM.path_poten_csv)
     print(doi_df.head())
     # end of merge_search_results
 
