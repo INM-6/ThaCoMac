@@ -2,7 +2,7 @@
 project_folder = '/Users/didihou/myProjects/didihou_master_project'
 
 gs_poten_urls = '/Users/didihou/myProjects/didihou_master_project/google_scholar_poten_urls.txt'
-wos_poten_urls = '/Users/didihou/myProjects/didihou_master_project/webofscience_poten_urls.xls'
+wos_poten_urls = '/Users/didihou/myProjects/didihou_master_project/webofscience_poten_urls.csv'
 pubmed_pmc_poten_urls = '/Users/didihou/myProjects/didihou_master_project/pubmed_pmc_poten_urls.csv'
 eupmc_poten_urls = '/Users/didihou/myProjects/didihou_master_project/eupmc_poten_urls.csv'
 
