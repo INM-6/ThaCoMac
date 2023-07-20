@@ -39,7 +39,7 @@ def search_google_scholar(init_url, headers):
         soup = BeautifulSoup(response.content,'lxml')
         # print(soup)
         # print(soup.select('[data-lid]')) 
-        for item in soup.select('[data-lid]'):
+        for item in soup.find_all('[data-lid]'):
             print(item)
             add_url = item.find_all('h3')[0].find_all('a', href = True)[0]['href']
             print(add_url)
