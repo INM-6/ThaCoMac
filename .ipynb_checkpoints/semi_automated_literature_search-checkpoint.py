@@ -157,7 +157,7 @@ def merge_search_results(headers):
     
     # process wos_poten_urls
     doi_df = pd.read_csv(FPM.wos_poten_urls, sep='delimiter')
-    print(df.columns)
+    print(doi_df.columns)
     print(doi_df.head())
     doi_df = doi_df[['DOI']]
     doi_df.to_csv(FPM.path_poten_csv)
