@@ -21,10 +21,10 @@ def search_google_scholar(init_url, headers):
     # print(soup)
     num_results_str = soup.find_all('div', {'class': 'gs_ab_mdw'})[1].get_text().split()[1]
     # print(num_results_str)
-    # print(int(num_results_str))
+    print(int(num_results_str))
     num_results = int(re.sub(r'[^\w\s]', '', num_results_str))
     pages = int(num_results/10)
-    # print(pages)
+    print(pages)
     
     # iterate all pages and record the results
     pages = 5
@@ -33,12 +33,12 @@ def search_google_scholar(init_url, headers):
         start = page * 10
         # google scholar
         page_url = init_url.split('?start=')[0] + '?start=' + str(start) + '&q=' + init_url.split('?start=')[1].split('&q=')[1]
+        # print(page_url)
         # search a page
         response = requests.get(page_url, headers = headers)
-        # print(url)
         soup = BeautifulSoup(response.content,'lxml')
         # print(soup)
-        # print(soup.select('[data-lid]')) 
+        print(soup.select('[data-lid]')) 
         for item in soup.find_all('[data-lid]'):
             print(item)
             add_url = item.find_all('h3')[0].find_all('a', href = True)[0]['href']
