@@ -153,31 +153,31 @@ def merge_search_results(headers):
                 doi_list.append(href)
     doi_df = pd.DataFrame({'DOI': doi_list})
     PL.clear_file(FPM.path_poten_csv)
-    doi_df.to_csv(FPM.path_poten_csv)
+    doi_df.to_csv(FPM.path_poten_csv, index=False)
     
     # process wos_poten_urls
     doi_df = pd.read_csv(FPM.wos_poten_urls, sep=';')
     # print(doi_df.columns)
     # print(doi_df.head())
     doi_df = doi_df[['DOI']]
-    doi_df.to_csv(FPM.path_poten_csv)
+    doi_df.to_csv(FPM.path_poten_csv, mode='a', index=False, header=False)
     
     # process pubmed_pmc_poten_urls
     doi_df = pd.read_csv(FPM.pubmed_pmc_poten_urls)
     doi_df = doi_df[['DOI']]
-    doi_df.to_csv(FPM.path_poten_csv)
+    doi_df.to_csv(FPM.path_poten_csv, mode='a', index=False, header=False)
     
     # process eupmc_poten_urls
     doi_df = pd.read_csv(FPM.eupmc_poten_urls)
     doi_df = doi_df[['DOI']]
-    doi_df.to_csv(FPM.path_poten_csv)
+    doi_df.to_csv(FPM.path_poten_csv, mode='a', index=False, header=False)
     
     # eliminate duplicates
     doi_df = pd.read_csv(FPM.path_poten_csv)
     print(len(doi_df))
     doi_df.drop_duplicates(subset = 'DOI')
     print(len(doi_df))
-    doi_df.to_csv(FPM.path_poten_csv)
+    doi_df.to_csv(FPM.path_poten_csv, index=False)
     
     # end of merge_search_results
 
