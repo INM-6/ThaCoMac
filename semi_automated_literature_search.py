@@ -133,7 +133,7 @@ def search_conne_db(connec_db, connec_db_quries):
     None
     # end of search_conne_db
     
-def merge_search_results():
+def merge_search_results(headers):
     # process gs_poten_urls
     with open(FPM.gs_poten_urls, 'r') as file:
         lines = []
