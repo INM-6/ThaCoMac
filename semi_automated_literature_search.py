@@ -175,7 +175,7 @@ def merge_search_results(headers):
     # eliminate duplicates
     doi_df = pd.read_csv(FPM.path_poten_csv)
     print(len(doi_df))
-    doi_df.drop_duplicates(subset = 'DOI')
+    doi_df = doi_df.drop_duplicates(subset = 'DOI')
     print(len(doi_df))
     doi_df.to_csv(FPM.path_poten_csv, index=False)
     
