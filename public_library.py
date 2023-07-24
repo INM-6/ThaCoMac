@@ -7,7 +7,7 @@ import public_library as plib
 # import packages
 import csv
 import pandas as pd
-import PyPDF
+import PyPDF2
 import requests
 import time
 
@@ -71,7 +71,7 @@ def add_row_to_csv(csv_path, new_row, columns):
 # extract text from given .pdf file
 def pdf2text(pdf_path):
     # creating a pdf reader object
-    reader = PyPDF.PdfReader(pdf_path)
+    reader = PyPDF2.PdfReader(pdf_path)
     
     # printing number of pages in pdf file
     print(len(reader.pages))
