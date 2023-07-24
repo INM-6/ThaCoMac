@@ -37,13 +37,13 @@ def ask_ChatGPT(context, queries):
 #     print(answers, '\n')
 
 def add_row_to_csv(csv_path, new_row, columns):
-    df_new_row = pd.DataFrame(new_row, columns = columns)
+    df_new_row = pd.DataFrame(data = new_row, columns = columns)
     with open(csv_path, 'r') as csvfile:
         csv_dict = [row for row in csv.DictReader(csvfile)]
         if len(csv_dict) == 0:
             df_new_row.to_csv(csv_path, index = False, header = True)
         else:
-            df_new_row.to_csv(csv_path, mode = 'a', index = False, header = False)
+            df_new_row.to_csv(csv_path, mode = 'a', index = False, header = False, encoding='utf-8-sig', sep = ",")
 
 
 # test code: add_rows_to_csv(path_potential, info_json, columns)
