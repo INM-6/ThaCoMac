@@ -1,20 +1,22 @@
 # annoucing all file paths
 project_folder = '/Users/didihou/myProjects/didihou_master_project'
+litera_pdf_folder = '/Users/didihou/myProjects/litera_pdfs'
+datasets_folder = '/Users/didihou/myProjects/didihou_master_project/datasets'
 
-seed_paper_urls = '/Users/didihou/myProjects/didihou_master_project/seed_paper_list.txt'
-connec_db_urls = '/Users/didihou/myProjects/didihou_master_project/connectome_database_paper_list.txt'
 
-gs_poten_urls = '/Users/didihou/myProjects/didihou_master_project/google_scholar_poten_urls.txt'
-wos_poten_urls = '/Users/didihou/myProjects/didihou_master_project/webofscience_poten_urls.csv'
-pubmed_pmc_poten_urls = '/Users/didihou/myProjects/didihou_master_project/pubmed_pmc_poten_urls.csv'
-eupmc_poten_urls = '/Users/didihou/myProjects/didihou_master_project/eupmc_poten_urls.csv'
+seed_paper_list = '/Users/didihou/myProjects/didihou_master_project/datasets/seed_literature_list.txt'
+cocomac_paper_list = '/Users/didihou/myProjects/didihou_master_project/datasets/cocomac_literature_list.txt'
 
-path_poten_csv = '/Users/didihou/myProjects/didihou_master_project/list_of_potential_related_literature.csv'
 
-path_related_urls = '/Users/didihou/myProjects/didihou_master_project/list_of_related_literature.txt'
-path_related_csv = '/Users/didihou/myProjects/didihou_master_project/summary_table_of_related_studies.csv'
+poten_litera_gs = '/Users/didihou/myProjects/didihou_master_project/datasets/potential_literature_google_scholar.txt'
+poten_litera_wos = '/Users/didihou/myProjects/didihou_master_project/datasets/potential_literature_webofscience.csv'
+poten_litera_pmc = '/Users/didihou/myProjects/didihou_master_project/datasets/potential_literature_pmc.csv'
+poten_litera_eupmc = '/Users/didihou/myProjects/didihou_master_project/datasets/potential_literature_europepmc.csv'
 
-pdf_folder_path = '/Users/didihou/myProjects/liter_pdfs'
+
+poten_litera_csv = '/Users/didihou/myProjects/didihou_master_project/datasets/potential_related_literature.csv'
+
+
 
 
 
