@@ -9,6 +9,7 @@ import csv
 import pandas as pd
 from PyPDF2 import PdfReader
 import requests
+import time
 
 
 # setting headers and proxies
