@@ -1,5 +1,4 @@
 # annoucing all file paths
-
 project_folder = "/Users/didihou/myProjects/didihou_master_project"
 litera_pdf_folder = "/Users/didihou/myProjects/litera_pdfs"
 datasets_folder = "/Users/didihou/myProjects/didihou_master_project/datasets"
