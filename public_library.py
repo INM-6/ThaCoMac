@@ -10,17 +10,30 @@ import pandas as pd
 import PyPDF2
 import requests
 import time
+import os
+import random
 
 
 # setting headers and proxies
 headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9'}
-http_proxy  = "http://103.148.39.50:83"
-https_proxy = "https://47.254.158.115:20201"
-proxy = {
-    "http": http_proxy, 
-    "https": https_proxy
-}
-# end of setting header and proxies
+
+def get_proxies():
+    with open(fpath.http_proxy, "r") as f:
+        lines = f.readlines()
+    random_num = random.int(0, len(lines) - 1)
+    http_proxy  = "http://" + lines[random_num]
+    random_num = random.int(0, len(lines) - 1)
+    https_proxy = "http://" + lines[random_num]
+    proxies = {
+        "http": http_proxy, 
+        "https": https_proxy
+    }
+    return proxies
+# end of get_proxies
+# --------------------start of test code--------------------
+proxies = get_proxies()
+pritn(proxies)
+# ---------------------end of test code---------------------
 
 
 # clear a file given file path
@@ -92,16 +105,43 @@ def pdf2text(pdf_path):
   
 # get the final url when the given url is redirected once or even multiple times
 def get_final_redirected_url(url):
-    r = requests.get(url, headers = plib.headers) 
+    response = requests.get(url, headers = plib.headers) 
     while(response.status_code != 200):
                 # sleep for 5 minutes
                 time.sleep(300)
                 response = requests.get(url, headers = plib.headers)
-    final_url = r.url
-    return final_url
+    final_url = response.url
+    history = response.history
+    return final_url, history
 # end of get_final_redirected_url
 # --------------------start of test code--------------------
-# url = ''
-# final_url = get_final_redirected_url(url)
+# url = "https://doi.org/10.1016/j.neuron.2020.01.005"
+# # url = "https://linkinghub.elsevier.com/retrieve/pii/S0896627320300052"
+# final_url, histo = get_final_redirected_url(url)
+# print(histo)
 # print(final_url)
+# ---------------------end of test code---------------------
+
+
+# download pdf to specified folder given pdf_url and file name
+def download_pdf(pdf_url: str, pdf_folder_path: str, file_name: str) -> bool:    
+    response = requests.get(pdf_url, stream=True, headers = plib.headers)
+    
+    # download the .pdf file to the pdf_file_path folder
+    # write content in pdf file
+    pdf_path = os.path.join(pdf_folder_path, file_name + '.pdf')
+    if response.status_code == 200:
+        with open(pdf_path, 'wb') as pdf_object:
+            pdf_object.write(response.content)
+            # print(f'{file_name} was successfully saved!')
+            return True
+    else:
+        print(f'Failed downloading PDF:' + 'pdf_url')
+        print(f'HTTP response status code: {response.status_code}')
+        return False
+# end of gdownload_pdf
+# --------------------start of test code--------------------
+# pdf_url = 'https://www.sciencedirect.com/science/article/pii/S0896627320300052/pdfft?md5=3f0648c6385e6fae3a5a73b053903014&pid=1-s2.0-S0896627320300052-main.pdf'
+# file_name = 'test_pdf'
+# download_pdf(pdf_url, file_name)
 # ---------------------end of test code---------------------

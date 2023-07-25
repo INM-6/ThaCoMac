@@ -4,6 +4,7 @@ project_folder = "/Users/didihou/myProjects/didihou_master_project"
 litera_pdf_folder = "/Users/didihou/myProjects/litera_pdfs"
 datasets_folder = "/Users/didihou/myProjects/didihou_master_project/datasets"
 
+http_proxy = "/Users/didihou/myProjects/didihou_master_project/http.txt"
 
 seed_paper_list = "/Users/didihou/myProjects/didihou_master_project/datasets/seed_literature_list.txt"
 cocomac_paper_list = "/Users/didihou/myProjects/didihou_master_project/datasets/cocomac_literature_list.txt"
