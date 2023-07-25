@@ -20,10 +20,10 @@ headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWe
 def get_proxies():
     with open(fpath.http_proxy, "r") as f:
         lines = f.readlines()
-    random_num = random.int(0, len(lines) - 1)
-    http_proxy  = "http://" + lines[random_num]
-    random_num = random.int(0, len(lines) - 1)
-    https_proxy = "http://" + lines[random_num]
+    random_num = random.randint(0, len(lines) - 1)
+    http_proxy  = "http://" + lines[random_num].strip()
+    random_num = random.randint(0, len(lines) - 1)
+    https_proxy = "http://" + lines[random_num].strip()
     proxies = {
         "http": http_proxy, 
         "https": https_proxy
