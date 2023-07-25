@@ -22,8 +22,10 @@ def get_proxies():
         lines = f.readlines()
     random_num = random.randint(0, len(lines) - 1)
     http_proxy  = "http://" + lines[random_num].strip()
+    # http_proxy = "http://96.80.45.1:80"
     random_num = random.randint(0, len(lines) - 1)
-    https_proxy = "http://" + lines[random_num].strip()
+    https_proxy = "https://" + lines[random_num].strip()
+    # https_proxy = "https://207.91.10.234:8080"
     proxies = {
         "http": http_proxy, 
         "https": https_proxy
