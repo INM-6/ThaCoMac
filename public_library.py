@@ -31,8 +31,8 @@ def get_proxies():
     return proxies
 # end of get_proxies
 # --------------------start of test code--------------------
-proxies = get_proxies()
-pritn(proxies)
+# proxies = get_proxies()
+# print(proxies)
 # ---------------------end of test code---------------------
 
 
