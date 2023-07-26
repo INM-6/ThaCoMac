@@ -12,6 +12,7 @@ import requests
 import time
 import os
 import random
+import subprocess
 
 
 # setting headers and proxies
