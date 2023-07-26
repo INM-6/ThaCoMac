@@ -16,6 +16,7 @@ poten_litera_eupmc = "/Users/didihou/myProjects/didihou_master_project/datasets/
 
 
 poten_litera_csv = "/Users/didihou/myProjects/didihou_master_project/datasets/potential_related_literature.csv"
+auto_filtered = "/Users/didihou/myProjects/didihou_master_project/datasets/auto_filtered.csv"
 
 related_litera_csv = "/Users/didihou/myProjects/didihou_master_project/datasets/related_literature.csv"
 
