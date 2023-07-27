@@ -31,8 +31,7 @@ def get_proxies():
     i = random.randint(0, len(http1)-1)
     j = random.randint(0, len(http2)-1)
     proxies = { 
-        "http1": http1[i],
-        "http2": http2[j]
+        "http": http1[i]
     }
     auth = HTTPProxyAuth("didihou", "KqpKtsynqI")
     return proxies, auth
