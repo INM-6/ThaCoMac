@@ -16,8 +16,7 @@ from requests.auth import HTTPProxyAuth
 
 
 # setting headers and proxies
-headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9'}
-
+headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9', "Retry-After": 3600}
 def get_proxies():
     http1 = ["https://23.165.240.230:14414",
              "https://23.165.240.230:14415",
@@ -32,8 +31,7 @@ def get_proxies():
     i = random.randint(0, len(http1)-1)
     j = random.randint(0, len(http2)-1)
     proxies = { 
-        "http1": http1[i],
-        "http2": http2[j]
+        "http1": http1[i]
     }
     auth = HTTPProxyAuth("didihou", "KqpKtsynqI")
     return proxies, auth
