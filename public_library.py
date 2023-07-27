@@ -19,16 +19,22 @@ import subprocess
 headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9'}
 
 def get_proxies():
-    with open(fpath.http_proxy, "r") as f:
-        lines = f.readlines()
-    random_num = random.randint(0, len(lines) - 1)
-    # http_proxy  = "http://" + lines[random_num].strip()
-    http_proxy = "http://96.80.45.1:80"
-    random_num = random.randint(0, len(lines) - 1)
-    # https_proxy = "https://" + lines[random_num].strip()
-    https_proxy = "https://207.91.10.234:8080"
-    proxies = {
-        "http": http_proxy, 
+    https = ["https://23.165.240.230:14414",
+             "https://23.165.240.230:14415",
+             "https://23.165.240.230:14416",
+             "https://23.165.240.230:14417",
+             "https://23.165.240.230:14418"]
+    http = ["http://23.165.240.230:14409", 
+            "http://23.165.240.230:14410",
+            "http://23.165.240.230:14411",
+            "http://23.165.240.230:14412",
+            "http://23.165.240.230:14413"]
+    i = random.randint(0, len(https)-1)
+    https_proxy = https[i]
+    j = random.randint(0, len(http)-1)
+    http_proxy = http[j]
+    proxies = { 
+        "http": http_proxy,
         "https": https_proxy
     }
     return proxies
