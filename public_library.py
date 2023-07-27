@@ -32,8 +32,8 @@ def get_proxies():
              "http://23.165.240.230:14411",
              "http://23.165.240.230:14412",
              "http://23.165.240.230:14413"]
-    i = random.randint(0, len(http1))
-    j = random.randint(0, len(http2))
+    i = random.randint(0, len(http1)-1)
+    j = random.randint(0, len(http2)-1)
     proxies = { 
         "http": http1[i],
         "http": http2[j]
