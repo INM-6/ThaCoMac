@@ -12,32 +12,34 @@ import requests
 import time
 import os
 import random
-import subprocess
+from requests.auth import HTTPProxyAuth
 
 
 # setting headers and proxies
 headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9'}
 
+# from proxy_seller_user_api import Api
+# api = Api({'key':'YOUR_API_KEY'})
+# print(api.proxyList())
 def get_proxies():
-    https = ["https://23.165.240.230:14414",
+    http1 = ["https://23.165.240.230:14414",
              "https://23.165.240.230:14415",
              "https://23.165.240.230:14416",
              "https://23.165.240.230:14417",
              "https://23.165.240.230:14418"]
-    http = ["http://23.165.240.230:14409", 
-            "http://23.165.240.230:14410",
-            "http://23.165.240.230:14411",
-            "http://23.165.240.230:14412",
-            "http://23.165.240.230:14413"]
-    i = random.randint(0, len(https)-1)
-    https_proxy = https[i]
-    j = random.randint(0, len(http)-1)
-    http_proxy = http[j]
+    http2 = ["http://23.165.240.230:14409", 
+             "http://23.165.240.230:14410",
+             "http://23.165.240.230:14411",
+             "http://23.165.240.230:14412",
+             "http://23.165.240.230:14413"]
+    i = random.randint(0, len(http1))
+    j = random.randint(0, len(http2))
     proxies = { 
-        "http": http_proxy,
-        "https": https_proxy
+        "http": http1[i],
+        "http": http2[j]
     }
-    return proxies
+    auth = HTTPProxyAuth("didihou", "KqpKtsynqI")
+    return proxies, auth
 # end of get_proxies
 # --------------------start of test code--------------------
 # proxies = get_proxies()
