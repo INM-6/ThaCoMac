@@ -24,7 +24,6 @@ def get_proxies():
     proxies = { 
         "http": "http://" + proxy_list[i]
     }
-    # auth = HTTPProxyAuth("didihou", "KqpKtsynqI")
     return proxies
 # --------------------start of test code--------------------
 # page_url = "https://scholar.google.com/scholar?start=0&q=(macaque+OR+macaca+OR+%22rhesus+monkey%22)+(thalamus+OR+thalamic+OR+thalamocortical+OR+%22thalamo-cortical%22)&hl=en&as_sdt=0,5"
