@@ -84,8 +84,9 @@ def add_row_to_csv(csv_path, new_row, columns):
     try:
         df_new_row = pd.DataFrame(data = new_row, columns = columns)
         df_new_row.to_csv(csv_path, mode = 'a', index = False, header = False, encoding='utf-8', sep = ",")
+        return True
     except:
-         print("Error detected when adding a row to csv!")
+        return False
 # --------------------start of test code--------------------
 # add_rows_to_csv(path_potential, info_json, columns)
 # ---------------------end of test code---------------------
