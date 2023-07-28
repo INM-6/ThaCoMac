@@ -19,29 +19,28 @@ from requests.auth import HTTPProxyAuth
 headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9'}
 def get_proxies():
     with open(fpath.proxy_list) as f:
-        proxy_list = f.readlines
+        proxy_list = f.readlines()
+        # print(proxy_list)
         i = random.randint(0, len(proxy_list)-1)
     proxies = { 
-        "http": "http://" + proxy_list[i]
+        "http": "http://" + proxy_list[i].strip()
     }
     return proxies
 # --------------------start of test code--------------------
 # page_url = "https://scholar.google.com/scholar?start=0&q=(macaque+OR+macaca+OR+%22rhesus+monkey%22)+(thalamus+OR+thalamic+OR+thalamocortical+OR+%22thalamo-cortical%22)&hl=en&as_sdt=0,5"
-# proxies, auth = get_proxies()
+# proxies = get_proxies()
 # page = 2
 # if(page%10 == 0):
 #     time.sleep(5*60)
-#     proxies, auth = get_proxies()
+#     proxies = get_proxies()
 # print(proxies)
-# print(auth)
-# response = requests.get(page_url, headers = headers, proxies = proxies, auth = auth)
+# response = requests.get(page_url, headers = plib.headers, proxies = proxies)
 # page = 5
 # if(page%5 == 0):
 #     time.sleep(5)
-#     proxies, auth = get_proxies()
+#     proxies = get_proxies()
 # print(proxies)
-# print(auth)
-# response = requests.get(page_url, headers = headers, proxies = proxies, auth = auth)
+# response = requests.get(page_url, headers = plib.headers, proxies = proxies)
 # ---------------------end of test code---------------------
 
 
