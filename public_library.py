@@ -18,22 +18,14 @@ from requests.auth import HTTPProxyAuth
 # setting headers and proxies
 headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9'}
 def get_proxies():
-    http = ["https://23.165.240.230:14414",
-             "https://23.165.240.230:14415",
-             "https://23.165.240.230:14416",
-             "https://23.165.240.230:14417",
-             "https://23.165.240.230:14418",
-             "http://23.165.240.230:14409", 
-             "http://23.165.240.230:14410",
-             "http://23.165.240.230:14411",
-             "http://23.165.240.230:14412",
-             "http://23.165.240.230:14413"]
-    i = random.randint(0, len(http)-1)
+    with open(fpath.proxy_list) as f:
+        proxy_list = f.readlines
+        i = random.randint(0, len(proxy_list)-1)
     proxies = { 
-        "http": http[i]
+        "http": "http://" + proxy_list[i]
     }
-    auth = HTTPProxyAuth("didihou", "KqpKtsynqI")
-    return proxies, auth
+    # auth = HTTPProxyAuth("didihou", "KqpKtsynqI")
+    return proxies
 # --------------------start of test code--------------------
 # page_url = "https://scholar.google.com/scholar?start=0&q=(macaque+OR+macaca+OR+%22rhesus+monkey%22)+(thalamus+OR+thalamic+OR+thalamocortical+OR+%22thalamo-cortical%22)&hl=en&as_sdt=0,5"
 # proxies, auth = get_proxies()
@@ -83,7 +75,7 @@ def ask_ChatGPT(context, queries):
 def add_row_to_csv(csv_path, new_row, columns):
     try:
         df_new_row = pd.DataFrame(data = new_row, columns = columns)
-        df_new_row.to_csv(csv_path, mode = 'a', index = False, header = False, encoding='utf-8', sep = ",")
+        df_new_row.to_csv(csv_path, mode = 'a', index = False, header = False, encoding='utf-8')
         return True
     except:
         return False
