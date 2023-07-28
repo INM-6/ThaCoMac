@@ -24,7 +24,6 @@ def get_proxies():
         i = random.randint(0, len(proxy_list)-1)
     proxies = { 
         "http": "http://" + proxy_list[i].strip(),
-        'https': "https://" + proxy_list[i].strip()
     }
     return proxies
 # --------------------start of test code--------------------
