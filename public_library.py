@@ -107,9 +107,10 @@ def pdf2text(pdf_path):
 def get_final_redirected_url(url):
     response = requests.get(url, headers = plib.headers) 
     while(response.status_code != 200):
-                # sleep for 5 minutes
-                time.sleep(300)
-                response = requests.get(url, headers = plib.headers)
+        print(response.status_code)
+        # sleep for 5 minutes
+        time.sleep(300)
+        response = requests.get(url, headers = plib.headers)
     final_url = response.url
     history = response.history
     return final_url, history
