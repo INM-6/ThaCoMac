@@ -1,6 +1,7 @@
 # self-written public library
 
 # import internal .py modules
+from bs4 import BeautifulSoup
 import file_path_management as fpath
 import public_library as plib
 
@@ -41,6 +42,23 @@ def get_proxies():
 #     proxies = get_proxies()
 # print(proxies)
 # response = requests.get(page_url, headers = plib.headers, proxies = proxies)
+# ---------------------end of test code---------------------
+
+
+# request a webpage
+def request_webpage(url, proxies):
+    response = requests.get(url, headers = plib.headers, proxies = proxies)
+    while(response.status_code != 200):
+            print("Error ", response.status_code, " when searching page: ", url)
+            time.sleep(random.randint(5, 10)*60)
+            response = requests.get(url, headers = plib.headers, proxies = proxies)
+    soup = BeautifulSoup(response.content, "lxml")
+    return soup
+# --------------------start of test code--------------------
+# url = "https://pubmed.ncbi.nlm.nih.gov/35851953/"
+# proxies = get_proxies()
+# soup = request_webpage(url, proxies)
+# print(soup)
 # ---------------------end of test code---------------------
 
 
