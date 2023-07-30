@@ -169,7 +169,6 @@ def download_pdf(pdf_url: str, pdf_folder_path: str, file_name: str) -> bool:
 def doi2pmid(doi):
     url = "http://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?tool=org-ref&email=didi.hou@outlook.com&ids=" + str(doi).strip()
     soup = request_webpage(url)
-    print(soup)
     pmid = str(soup.record["pmid"]).strip()
     pmcid = str(soup.record["pmcid"]).strip()
     return pmid, pmcid
