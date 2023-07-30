@@ -14,6 +14,7 @@ import time
 import os
 import random
 from requests.auth import HTTPProxyAuth
+import metapub
 
 
 # setting headers and proxies
@@ -46,12 +47,12 @@ def get_proxies():
 
 
 # request a webpage
-def request_webpage(url, proxies):
-    response = requests.get(url, headers = plib.headers, proxies = proxies)
+def request_webpage(url):
+    response = requests.get(url, headers = plib.headers)
     while(response.status_code != 200):
-            print("Error ", response.status_code, " when searching page: ", url)
+            print("Error", response.status_code, "when searching page:", url)
             time.sleep(random.randint(5, 10)*60)
-            response = requests.get(url, headers = plib.headers, proxies = proxies)
+            response = requests.get(url, headers = plib.headers)
     soup = BeautifulSoup(response.content, "lxml")
     return soup
 # --------------------start of test code--------------------
@@ -162,3 +163,19 @@ def download_pdf(pdf_url: str, pdf_folder_path: str, file_name: str) -> bool:
 # file_name = 'test_pdf'
 # download_pdf(pdf_url, file_name)
 # ---------------------end of test code---------------------
+
+
+# get pmid, pmcid from doi
+def doi2pmid(doi):
+    url = "http://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?tool=org-ref&email=didi.hou@outlook.com&ids=" + str(doi).strip()
+    soup = request_webpage(url)
+    print(soup)
+    pmid = str(soup.record["pmid"]).strip()
+    pmcid = str(soup.record["pmcid"]).strip()
+    return pmid, pmcid
+
+
+# get doi from pmid
+def pmid2doi(pmid):
+    doi = metapub.FindIt(pmid).doi
+    return doi
