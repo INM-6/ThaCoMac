@@ -202,6 +202,7 @@ def doi2pmid(doi):
                 print("Waiting for clicking button timeout")
             error_label = 1
         except:
+            print("DOI to PMID transformation failed, retrying... This might take longer than 5 minutes...")
             time.sleep(5*60)
             error_label = 0
 
