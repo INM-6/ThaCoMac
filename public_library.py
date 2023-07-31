@@ -177,7 +177,7 @@ def id_converter_in_pubmed(input, output):
             print("Error", response.status_code, "when searching page:", url)
             time.sleep(random.randint(5, 10)*60)
             response = requests.get(url, headers = plib.headers)
-    soup = BeautifulSoup(response.content, "json")
+    soup = BeautifulSoup(response.content, "html")
     print(soup)
     records = soup.select("p")[0].get_text()
     try:
