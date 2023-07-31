@@ -16,6 +16,14 @@ import os
 import random
 from requests.auth import HTTPProxyAuth
 from metapub import FindIt
+from selenium import webdriver
+from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.service import Service
+from selenium.common.exceptions import TimeoutException, WebDriverException, NoSuchElementException
+import os
 
 
 # setting headers and proxies
@@ -167,44 +175,47 @@ def download_pdf(pdf_url: str, pdf_folder_path: str, file_name: str) -> bool:
 
 
 # get pmid from doi
-def id_converter_in_pubmed(input, output):
-    service_root = "https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/"
-    org_ref = "rwth-aachen"
-    email = "didi.hou@outlook.com"
-    url = service_root + "?tool=my_tool&email=didi.hou@outlook.com&ids=" + str(input).strip() + "&format=json"
-    response = requests.get(url, headers = plib.headers)
-    while(response.status_code != 200):
-            print("Error", response.status_code, "when searching page:", url)
-            time.sleep(random.randint(5, 10)*60)
-            response = requests.get(url, headers = plib.headers)
-    soup = BeautifulSoup(response.content, "html")
-    print(soup)
-    records = soup.select("p")[0].get_text()
+def doi2pmid(doi):
+    doi = str(doi).strip()
+
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Firefox(options, service=Service(GeckoDriverManager().install()))
+            driver.get("https://www.pmid2cite.com/doi-to-pmid-converter")
+
+            WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//p[text()='Consent']"))).click()
+
+            try:
+                WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#formInput"))).send_keys(str(doi).strip())
+            except TimeoutException:
+                print("Waiting for clicking consent timeout")
+            try:
+                # WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div[2]/form/button"))).click()
+                WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, '//button[text()="Get PMID"]'))).click()
+            except TimeoutException:
+                print("Waiting for clicking button timeout")
+            error_label = 1
+        except:
+            time.sleep(5*60)
+            error_label = 0
+
     try:
-        output = str(records.split("records")[1].split("{")[1].split(str(output).strip())[1].split(":")[1].split("\"")[1]).strip()
-    except: 
-        output = np.nan
-    return output
-# --------------------start of test code--------------------
-# input = "34524542"
-# input = str(input).strip()
-# output = id_converter_in_pubmed(input, "pmcid")
-# print(output)
-# ---------------------end of test code---------------------
-
-
-# get doi from pmid
-def pmid2doi(pmid):
-    doi = FindIt(pmid).doi
-    if doi == None:
-        return np.nan
-    else:
-        return doi
+        my_elem = driver.find_element(By.CLASS_NAME, 'output').find_element(By.TAG_NAME, "a")
+        pmid = str(my_elem.get_attribute("innerHTML")).strip()
+    except:
+        pmid = np.nan
+    driver.quit()
+    return pmid
 # --------------------start of test code--------------------
 # pmid = "35851953"
-# # doi = "10.1113/JP282626"
-# doi = plib.pmid2doi(pmid)
-# print(doi)
+# doi = "10.1093/cercor/bhn229"
+# pmid = doi2pmid(doi)
+# print(pmid)
 # ---------------------end of test code---------------------
 
 
