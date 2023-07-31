@@ -223,13 +223,18 @@ def doi2pmid(doi):
 
 # get doi from pmid
 def pmid2doi(pmid):
-    doi = FindIt(pmid).doi
-    if doi == None:
-        return np.nan
-    else:
-        return doi
+    # request the webpage
+    url = "https://pubmed.ncbi.nlm.nih.gov/" + pmid + "/"
+    # proxies = plib.get_proxies()
+    soup = plib.request_webpage(url)
+    # print(soup)
+    try:
+        doi = soup.find_all("span", {"class": "identifier doi"})[0].find_all("a", {"class": "id-link"})[0].get_text().strip()
+    except:
+        doi = np.nan
+    return doi
 # --------------------start of test code--------------------
-# pmid = "35851953"
+# pmid = "7424595"
 # # doi = "10.1113/JP282626"
 # doi = plib.pmid2doi(pmid)
 # print(doi)
