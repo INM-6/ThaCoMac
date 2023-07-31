@@ -2,6 +2,7 @@
 
 # import internal .py modules
 from bs4 import BeautifulSoup
+import numpy as np
 import file_path_management as fpath
 import public_library as plib
 
@@ -14,7 +15,7 @@ import time
 import os
 import random
 from requests.auth import HTTPProxyAuth
-import metapub
+from metapub import FindIt
 
 
 # setting headers and proxies
@@ -165,16 +166,58 @@ def download_pdf(pdf_url: str, pdf_folder_path: str, file_name: str) -> bool:
 # ---------------------end of test code---------------------
 
 
-# get pmid, pmcid from doi
-def doi2pmid(doi):
-    url = "http://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?tool=org-ref&email=didi.hou@outlook.com&ids=" + str(doi).strip()
-    soup = request_webpage(url)
-    pmid = str(soup.record["pmid"]).strip()
-    pmcid = str(soup.record["pmcid"]).strip()
-    return pmid, pmcid
+# get pmid from doi
+def id_converter_in_pubmed(input, output):
+    service_root = "https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/"
+    org_ref = "rwth-aachen"
+    email = "didi.hou@outlook.com"
+    url = service_root + "?tool=my_tool&email=didi.hou@outlook.com&ids=" + str(input).strip() + "&format=json"
+    response = requests.get(url, headers = plib.headers)
+    while(response.status_code != 200):
+            print("Error", response.status_code, "when searching page:", url)
+            time.sleep(random.randint(5, 10)*60)
+            response = requests.get(url, headers = plib.headers)
+    soup = BeautifulSoup(response.content, "json")
+    print(soup)
+    records = soup.select("p")[0].get_text()
+    try:
+        output = str(records.split("records")[1].split("{")[1].split(str(output).strip())[1].split(":")[1].split("\"")[1]).strip()
+    except: 
+        output = np.nan
+    return output
+# --------------------start of test code--------------------
+# input = "34524542"
+# input = str(input).strip()
+# output = id_converter_in_pubmed(input, "pmcid")
+# print(output)
+# ---------------------end of test code---------------------
 
 
 # get doi from pmid
 def pmid2doi(pmid):
-    doi = metapub.FindIt(pmid).doi
-    return doi
+    doi = FindIt(pmid).doi
+    if doi == None:
+        return np.nan
+    else:
+        return doi
+# --------------------start of test code--------------------
+# pmid = "35851953"
+# # doi = "10.1113/JP282626"
+# doi = plib.pmid2doi(pmid)
+# print(doi)
+# ---------------------end of test code---------------------
+
+
+# get doi from pmid
+def pmid2doi(pmid):
+    doi = FindIt(pmid).doi
+    if doi == None:
+        return np.nan
+    else:
+        return doi
+# --------------------start of test code--------------------
+# pmid = "35851953"
+# # doi = "10.1113/JP282626"
+# doi = plib.pmid2doi(pmid)
+# print(doi)
+# ---------------------end of test code---------------------
