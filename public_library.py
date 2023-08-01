@@ -57,12 +57,12 @@ def get_proxies():
 
 
 # request a webpage
-def request_webpage(url):
-    response = requests.get(url, headers = plib.headers)
+def request_webpage(url, proxies):
+    response = requests.get(url, headers=plib.headers, proxies=proxies)
     while(response.status_code != 200):
-            print("Error", response.status_code, "when searching page:", url)
-            time.sleep(random.randint(5, 10)*60)
-            response = requests.get(url, headers = plib.headers)
+        print("Error", response.status_code, "when searching page:", url)
+        time.sleep(random.randint(5, 10)*60)
+        response = requests.get(url, headers = plib.headers, proxies=proxies)
     soup = BeautifulSoup(response.content, "lxml")
     return soup
 # --------------------start of test code--------------------
