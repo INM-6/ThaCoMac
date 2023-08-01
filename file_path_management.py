@@ -16,6 +16,7 @@ poten_litera_gs_test = "/Users/didihou/myProjects/didihou_master_project/dataset
 poten_litera_gs_processed = "/Users/didihou/myProjects/didihou_master_project/datasets/potential_literature_google_scholar_processed.csv"
 poten_litera_wos_1 = "/Users/didihou/myProjects/didihou_master_project/datasets/potential_literature_webofscience_1.csv"
 poten_litera_wos_2 = "/Users/didihou/myProjects/didihou_master_project/datasets/potential_literature_webofscience_2.csv"
+poten_litera_wos = "/Users/didihou/myProjects/didihou_master_project/datasets/potential_literature_webofscience.csv"
 poten_litera_wos_processed = "/Users/didihou/myProjects/didihou_master_project/datasets/potential_literature_webofscience_processed.csv"
 poten_litera_pubmed = "/Users/didihou/myProjects/didihou_master_project/datasets/potential_literature_pubmed.csv"
 poten_litera_pubmed_processed = "/Users/didihou/myProjects/didihou_master_project/datasets/potential_literature_pubmed_processed.csv"
