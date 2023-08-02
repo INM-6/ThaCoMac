@@ -141,8 +141,8 @@ def get_final_redirected_url(url):
         time.sleep(300)
         response = requests.get(url, headers = plib.headers)
     final_url = response.url
-    history = response.history
-    return final_url, history
+    # history = response.history
+    return final_url
 # --------------------start of test code--------------------
 # url = "https://doi.org/10.1016/j.neuron.2020.01.005"
 # # url = "https://linkinghub.elsevier.com/retrieve/pii/S0896627320300052"
