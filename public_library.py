@@ -134,13 +134,18 @@ def pdf2text(pdf_path):
   
 # get the final url when the given url is redirected once or even multiple times
 def get_final_redirected_url(url):
-    response = requests.get(url, headers = plib.headers) 
-    while(response.status_code != 200):
-        print(response.status_code)
+    response = requests.get(url, headers = plib.headers)
+    if response.status_code == 403:
+        final_url = url
+    if response.status_code == 404:
+        final_url = np.nan
+    while(response.status_code != 200 and response.status_code != 403 and response.status_code != 404):
+        print(response.status_code)     
         # sleep for 5 minutes
         time.sleep(300)
         response = requests.get(url, headers = plib.headers)
-    final_url = response.url
+    if response.status_code == 200:
+        final_url = response.url
     # history = response.history
     return final_url
 # --------------------start of test code--------------------
