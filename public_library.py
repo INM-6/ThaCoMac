@@ -63,7 +63,7 @@ def request_webpage(url):
         print("Error", response.status_code, "when searching page:", url)
         time.sleep(random.randint(5)*60)
         response = requests.get(url, headers = plib.headers)
-    soup = BeautifulSoup(response.content, "lxml")
+    soup = BeautifulSoup(response.content, "html.parser")
     return soup
 # --------------------start of test code--------------------
 # url = "https://pubmed.ncbi.nlm.nih.gov/35851953/"
@@ -248,3 +248,12 @@ def pmid2doi(pmid):
 # doi = plib.pmid2doi(pmid)
 # print(doi)
 # ---------------------end of test code---------------------
+
+
+# extract information from websites
+websites = ["www.ncbi.nlm.nih.gov", "www.frontiersin.org", "europepmc", "biorxiv", "jneurosci", "orca.cardiff", "science", "thejns", "cambridge",
+            "wiley", "ahajournals", "mdpi", "sciencedirect", "pnas", "nature", "cell", "eneuro", "physiology", "springer",
+            "ieee", "plos", "jstage.jst", "biomedcentral", "jamanetwork", "psycnet.apa", "jnnp.bmj", "degruyter",
+            "karger", "pure.mpg", "elifesciences", "neurology", "pubs.asahq", "sagepub", "ekja", "liebertpub", "lww",
+            "tandfonline", "aspetjournals", "oup", "royalsocietypublishing", "psychiatryonline", "jpn", "open.bu.edu",
+            "agro.icm", "lib.wfu", "mirasmart", "jstor"]
