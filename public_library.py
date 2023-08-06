@@ -63,7 +63,7 @@ def request_webpage(url):
         print("Error", response.status_code, "when searching page:", url)
         time.sleep(random.randint(5)*60)
         response = requests.get(url, headers = plib.headers)
-    soup = BeautifulSoup(response.content, "html.parser")
+    soup = BeautifulSoup(response.content, "lxml")
     return soup
 # --------------------start of test code--------------------
 # url = "https://pubmed.ncbi.nlm.nih.gov/35851953/"
