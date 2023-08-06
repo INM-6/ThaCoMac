@@ -205,7 +205,6 @@ def doi2pmid(doi):
             except TimeoutException:
                 print("Waiting for clicking consent timeout")
             try:
-                # WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div[2]/form/button"))).click()
                 WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, '//button[text()="Get PMID"]'))).click()
             except TimeoutException:
                 print("Waiting for clicking button timeout")
@@ -251,8 +250,8 @@ def pmid2doi(pmid):
 
 
 # extract information from websites
-websites = ["www.ncbi.nlm.nih.gov", "www.frontiersin.org", "europepmc", "biorxiv", "jneurosci", "orca.cardiff", "science", "thejns", "cambridge",
-            "wiley", "ahajournals", "mdpi", "sciencedirect", "pnas", "nature", "cell", "eneuro", "physiology", "springer",
+websites = ["www.ncbi.nlm.nih.gov", "www.frontiersin.org", "www.sciencedirect.com", "europepmc", "biorxiv", "jneurosci", "orca.cardiff", "science", "thejns", "cambridge",
+            "wiley", "ahajournals", "mdpi", "pnas", "nature", "cell", "eneuro", "physiology", "springer",
             "ieee", "plos", "jstage.jst", "biomedcentral", "jamanetwork", "psycnet.apa", "jnnp.bmj", "degruyter",
             "karger", "pure.mpg", "elifesciences", "neurology", "pubs.asahq", "sagepub", "ekja", "liebertpub", "lww",
             "tandfonline", "aspetjournals", "oup", "royalsocietypublishing", "psychiatryonline", "jpn", "open.bu.edu",
@@ -318,6 +317,7 @@ def www_ncbi_nlm_nih_gov(url):
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
+# print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
 # print(info["introduction"])
@@ -325,7 +325,84 @@ def www_ncbi_nlm_nih_gov(url):
 # ---------------------end of test code---------------------
 
 
+# www.frontiersin.org
+def www_frontiersin_org(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome(options=options)
+            driver.get(url)
+            time.sleep(3)
+            # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    # extract information from loaded webpage
+    try:
+        doi = driver.find_element(By.XPATH, "/html/body/div[2]/div[1]/div/div/div[1]/main/div/div/div/div[1]/div[2]/div[1]/a").text.split("doi.org/")[1]
+    except:
+        doi = np.nan
+    pmid = np.nan
+    pmcid = np.nan
+    try:
+        title = driver.find_element(By.XPATH, '/html/body/div[2]/div[1]/div/div/div[1]/main/div/div/div/div[2]/h1').text
+    except:
+        title = np.nan
+    try:
+        abstract = driver.find_element(By.CLASS_NAME, "JournalAbstract").find_element(By.TAG_NAME, "p").text
+    except:
+        abstract = np.nan
+    keywords = np.nan
+    try:
+        intro = ""
+        # Get the starting element
+        after = driver.find_elements(By.TAG_NAME, 'h2')[1].find_elements(By.XPATH, './/following-sibling::p')
+        # Get the ending element
+        before = driver.find_elements(By.TAG_NAME, 'h2')[2].find_elements(By.XPATH, './/preceding-sibling::p')
+        # Get the middle (= the intercept)
+        middle = [elem for elem in after if elem in before]
+        for element in middle:
+            intro = intro + element.text
+    except:
+        intro = np.nan
+    try:
+        pdf_link = driver.find_element(By.XPATH, "//*[@id='download_article​']").get_attribute('href')
+    except:
+        pdf_link = np.nan
 
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://www.frontiersin.org/articles/10.3389/fncir.2015.00079/full"
+# info = www_frontiersin_org(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
 
 
 def extract_info_from_webpage(url):
