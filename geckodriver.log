@@ -6,3 +6,29 @@
 /snap/firefox/current/firefox.launcher: 60: exec: /snap/code/135/usr/lib/firefox/firefox: not found
 1691054314646	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/sna ... ss" "--remote-debugging-port" "52437" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileXEDSpY"
 /snap/firefox/current/firefox.launcher: 60: exec: /snap/code/135/usr/lib/firefox/firefox: not found
+1691344063661	geckodriver	INFO	Listening on 127.0.0.1:33349
+/snap/firefox/current/firefox.launcher: 60: exec: /snap/code/136/usr/lib/firefox/firefox: not found
+1691344064169	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/sna ... ss" "--remote-debugging-port" "50227" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileMQ5RNf"
+/snap/firefox/current/firefox.launcher: 60: exec: /snap/code/136/usr/lib/firefox/firefox: not found
+1691344215391	geckodriver	INFO	Listening on 127.0.0.1:36223
+/snap/firefox/current/firefox.launcher: 60: exec: /snap/code/136/usr/lib/firefox/firefox: not found
+1691344215901	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/sna ... ss" "--remote-debugging-port" "42203" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileke6a1G"
+/snap/firefox/current/firefox.launcher: 60: exec: /snap/code/136/usr/lib/firefox/firefox: not found
+1691344517496	geckodriver	INFO	Listening on 127.0.0.1:52013
+/snap/firefox/current/firefox.launcher: 60: exec: /snap/code/136/usr/lib/firefox/firefox: not found
+1691344518006	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/sna ... ss" "--remote-debugging-port" "53611" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilekEcIGy"
+/snap/firefox/current/firefox.launcher: 60: exec: /snap/code/136/usr/lib/firefox/firefox: not found
+1691344819258	geckodriver	INFO	Listening on 127.0.0.1:40497
+/snap/firefox/current/firefox.launcher: 60: exec: /snap/code/136/usr/lib/firefox/firefox: not found
+1691344819766	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/sna ... ss" "--remote-debugging-port" "39729" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilehL0vnv"
+/snap/firefox/current/firefox.launcher: 60: exec: /snap/code/136/usr/lib/firefox/firefox: not found
+1691344903894	geckodriver	INFO	Listening on 127.0.0.1:50241
+1691344904525	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "58021" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilebPb3cu"
+1691345061052	geckodriver	INFO	Listening on 127.0.0.1:43903
+1691345061700	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "48609" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilemN6wg0"
+1691345956333	geckodriver	INFO	Listening on 127.0.0.1:53721
+1691345956960	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "39043" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilet85bGV"
+1691346018447	geckodriver	INFO	Listening on 127.0.0.1:53607
+1691346019086	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "50479" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileCtt3Sc"
+1691346103768	geckodriver	INFO	Listening on 127.0.0.1:39431
+1691346104402	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "43971" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileWmjiCB"
