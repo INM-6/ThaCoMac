@@ -405,6 +405,83 @@ def www_frontiersin_org(url):
 # ---------------------end of test code---------------------
 
 
+# www.sciencedirect.com
+def www_sciencedirect_com(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome()
+            driver.get(url)
+            time.sleep(5)
+            # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        doi = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div/div/div/div[2]/article/div[3]/a[1]/span").text.split("doi.org/")[1]
+    except:
+        doi = np.nan
+    pmid = np.nan
+    pmcid = np.nan
+    try:
+        title = driver.find_element(By.TAG_NAME, 'h1').text
+    except:
+        title = np.nan
+    try:
+        abstract = driver.find_element(By.ID, "abstracts").find_element(By.TAG_NAME, "p").text
+    except:
+        abstract = np.nan
+    keywords = np.nan
+    try:
+        intro = ""
+        # Get the starting element
+        elements = driver.find_element(By.LINK_TEXT, 'Introduction').find_element(By.TAG_NAME, 'section').find_elements(By.XPATH, 'p')
+        for element in elements:
+            intro = intro + element.text
+    except:
+        intro = np.nan
+    try:
+        pdf_link = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div/div/div/div[1]/div[2]/ul/li[1]/a").get_attribute('href')
+    except:
+        pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://www.sciencedirect.com/science/article/pii/030439409512056A"
+# info = www_sciencedirect_com(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
 def extract_info_from_webpage(url):
     if url != url:
         raise Exception("The given url is np.nan")
