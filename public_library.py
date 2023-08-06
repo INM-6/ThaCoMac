@@ -257,3 +257,132 @@ websites = ["www.ncbi.nlm.nih.gov", "www.frontiersin.org", "europepmc", "biorxiv
             "karger", "pure.mpg", "elifesciences", "neurology", "pubs.asahq", "sagepub", "ekja", "liebertpub", "lww",
             "tandfonline", "aspetjournals", "oup", "royalsocietypublishing", "psychiatryonline", "jpn", "open.bu.edu",
             "agro.icm", "lib.wfu", "mirasmart", "jstor"]
+
+# www.ncbi.nlm.nih.gov/pmc/
+def www_ncbi_nlm_nih_gov(url):
+    soup = plib.request_webpage(url)
+    
+    # extract information from loaded webpage
+    try:
+        doi = soup.find_all("span", {"class": "doi"})[0].find_all("a")[0].get_text().strip()
+    except:
+        doi = np.nan
+    try:
+        pmid = soup.find_all("div", {"class": "fm-citation-pmid"})[0].find_all("a")[0].get_text().strip()
+    except:
+        pmid = np.nan
+    try:
+        pmcid = soup.find_all("div", {"class": "fm-citation-pmcid"})[0].find_all("span")[1].get_text().strip()
+    except:
+        pmcid = np.nan
+    try:
+        title = soup.find_all("h1", {"class": "content-title"})[0].get_text().strip()
+    except:
+        title = np.nan
+    try:
+        abstract = soup.find_all("div", {"id": "abstract-1"})[0].find_all("p", {"class": "p p-first-last"})[0].get_text().strip()
+    except:
+        abstract = np.nan
+    try:
+        keywords = soup.find_all("div", {"id": "abstract-1"})[0].find_all("span", {"class": "kwd-text"})[0].get_text().strip()
+    except:
+        keywords = np.nan
+    try:
+        intro = ""
+        elements = soup.find_all("div", {"id": "S1"})[0].find_all("p")
+        for element in elements:
+            intro = intro + element.get_text().strip()
+    except:
+        intro = np.nan
+    try:
+        pdf_link = soup.find_all("li", {"class": "pdf-link other_item"})[0].find_all("a")[0]["href"]
+        pdf_link = "https://www.ncbi.nlm.nih.gov" + pdf_link
+    except:
+        pdf_link = np.nan
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
+# info = www_ncbi_nlm_nih_gov(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+
+
+
+def extract_info_from_webpage(url):
+    if url != url:
+        raise Exception("The given url is np.nan")
+    
+    url = plib.get_final_redirected_url(url)
+    source = url.split("://")[1].split("/")[0]
+    
+    for website in plib.websites:
+        if website in source:
+            # Get the function name by replacing "." with "_" and use globals() to call it
+            func_name = website.replace(".", "_")
+            func = globals().get(func_name)
+            return func(url)
+        else:
+            print("The url:" + url + " is not included in our websites database yet!")
+            return None
+# --------------------start of test code--------------------
+# websites = ["PMC", "frontiersin", "europepmc", "biorxiv", "jneurosci", "orca.cardiff", "science", "thejns", "cambridge",
+#                 "wiley", "ahajournals", "mdpi", "sciencedirect", "pnas", "nature", "cell", "eneuro", "physiology", "springer",
+#                 "ieee", "plos", "jstage.jst", "biomedcentral", "jamanetwork", "psycnet.apa", "jnnp.bmj", "degruyter",
+#                 "karger", "pure.mpg", "elifesciences", "neurology", "pubs.asahq", "sagepub", "ekja", "liebertpub", "lww",
+#                 "tandfonline", "aspetjournals", "oup", "royalsocietypublishing", "psychiatryonline", "jpn", "open.bu.edu",
+#                 "agro.icm", "lib.wfu", "mirasmart", "jstor"]
+# if len(websites) == len(set(websites)):
+#     print("There are no duplicates in the list.")
+# else:
+#     print("There are duplicates in the list.")
+# ---------------------end of test code---------------------
+
+# --------------------start of test code--------------------
+# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
+# info = extract_info_from_webpage(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# get doi from url
+def url2doi(url):
+    if url != url:
+        raise Exception("The url given is np.nan")
+    
+    url = str(url).strip()
+    info = plib.extract_info_from_webpage(url) # dictionary
+    if info == None:
+        return np.nan
+    else:
+        return info["doi"]
+# --------------------start of test code--------------------
+# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
+# doi = url2doi(url)
+# print(doi)
+# ---------------------end of test code---------------------
