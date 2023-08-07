@@ -307,6 +307,17 @@ def url2doi(url):
     if url != url:
         raise Exception("The url given is np.nan")
     
+    info = {
+        "doi": np.nan,
+        "pmid": np.nan,
+        "pmcid": np.nan,
+        "title": np.nan,
+        "abstract": np.nan,
+        "keywords": np.nan,
+        "introduction": np.nan,
+        "pdf_link": np.nan
+    }
+
     url = str(url).strip()
     info = plib.extract_info_from_webpage(url) # dictionary
 
