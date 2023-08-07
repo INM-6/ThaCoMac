@@ -251,12 +251,512 @@ def pmid2doi(pmid):
 
 # extract information from websites
 websites = ["www.ncbi.nlm.nih.gov", "www.frontiersin.org", "www.sciencedirect.com", "onlinelibrary.wiley.com", 
-            "springer.com", "europepmc.org", "biorxiv", "jneurosci", "orca.cardiff", "science", "thejns", "cambridge",
-            "ahajournals", "mdpi", "pnas", "nature", "cell", "eneuro", "physiology",
+            "springer.com", "europepmc.org", "www.biorxiv.org", "www.jneurosci.org", "orca.cardiff.ac.uk", "www.science.org", 
+            "thejns.org", "www.cambridge.org", "www.ahajournals.org", "www.mdpi.com", "www.pnas.org", "nature", "cell", "eneuro", "physiology",
             "ieee", "plos", "jstage.jst", "biomedcentral", "jamanetwork", "psycnet.apa", "jnnp.bmj", "degruyter",
             "karger", "pure.mpg", "elifesciences", "neurology", "pubs.asahq", "sagepub", "ekja", "liebertpub", "lww",
             "tandfonline", "aspetjournals", "oup", "royalsocietypublishing", "psychiatryonline", "jpn", "open.bu.edu",
             "agro.icm", "lib.wfu", "mirasmart", "jstor"]
+
+
+# www.pnas.org
+def www_pnas_org(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome()
+            driver.get(url)
+            time.sleep(3)
+            # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        doi = driver.find_element(By.XPATH, "//div[contains(@class, 'doi')]").find_element(By.TAG_NAME, "a").text.split("doi.org/")[1]
+    except:
+        doi = np.nan
+
+    pmid = np.nan
+    pmcid = np.nan
+    title = np.nan
+    abstract = np.nan
+    keywords = np.nan
+    intro = np.nan
+    pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://www.pnas.org/doi/abs/10.1073/pnas.1008054107"
+# info = www_pnas_org(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# www.mdpi.com
+def www_mdpi_com(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome()
+            driver.get(url)
+            time.sleep(3)
+            # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        doi = driver.find_element(By.XPATH, "//div[contains(@class, 'bib-identity')]").find_element(By.TAG_NAME, "a").text.split("doi.org/")[1]
+    except:
+        doi = np.nan
+
+    pmid = np.nan
+    pmcid = np.nan
+    title = np.nan
+    abstract = np.nan
+    keywords = np.nan
+    intro = np.nan
+    pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://www.mdpi.com/1422-0067/24/11/9643"
+# info = www_mdpi_com(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# www.ahajournals.org
+def www_ahajournals_org(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome()
+            driver.get(url)
+            time.sleep(3)
+            # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        doi = driver.find_element(By.XPATH, "//a[contains(@class, 'epub-section__doi__text')]").text.split("doi.org/")[1]
+    except:
+        doi = np.nan
+
+    pmid = np.nan
+    pmcid = np.nan
+    title = np.nan
+    abstract = np.nan
+    keywords = np.nan
+    intro = np.nan
+    pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://www.ahajournals.org/doi/full/10.1161/01.STR.0000087786.38997.9E"
+# info = www_ahajournals_org(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# www.cambridge.org
+def www_cambridge_org(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome()
+            driver.get(url)
+            time.sleep(3)
+            # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        doi = driver.find_element(By.XPATH, "//div[contains(@class, 'doi-data')]").find_element(By.TAG_NAME, 'div').find_element(By.TAG_NAME, 'span').text.split("doi.org/")[1]
+    except:
+        doi = np.nan
+
+    pmid = np.nan
+    pmcid = np.nan
+    title = np.nan
+    abstract = np.nan
+    keywords = np.nan
+    intro = np.nan
+    pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://www.cambridge.org/core/journals/thalamus-and-related-systems/article/abs/ascending-inputs-to-the-presupplementary-motor-area-in-the-macaque-monkey-cerebello-and-pallidothalamocortical-projections/7385CA29F413D1E0EFD21261B0010306"
+# info = www_cambridge_org(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# thejns.org
+def thejns_org(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome()
+            driver.get(url)
+            time.sleep(3)
+            # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        doi = driver.find_element(By.XPATH, "/html/body/div[2]/div[2]/div[2]/div/div[1]/div/div[1]/div/div[1]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[1]/div/div/div[3]/div/div/div/div/dl[3]/dd/span/a").text.split("doi.org/")[1]
+        # doi = driver.find_element(By.CLASS_NAME, "//a[contains(@class, 'c-Button--link')]").find_element(By.XPATH, 'a').text
+    except:
+        doi = np.nan
+
+    pmid = np.nan
+    pmcid = np.nan
+    title = np.nan
+    abstract = np.nan
+    keywords = np.nan
+    intro = np.nan
+    pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://thejns.org/view/journals/j-neurosurg/86/1/article-p77.xml"
+# info = thejns_org(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# www.science.org
+def www_science_org(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome()
+            driver.get(url)
+            time.sleep(3)
+            # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        doi = driver.find_element(By.XPATH, "//div[contains(@class, 'doi')]").find_element(By.XPATH, "a").text.split("DOI: ")[1]
+        # doi = driver.find_element(By.CLASS_NAME, "//span[contains(@class, 'metadata--doi')]").find_element(By.XPATH, 'a').text
+    except:
+        doi = np.nan
+
+    pmid = np.nan
+    pmcid = np.nan
+    title = np.nan
+    abstract = np.nan
+    keywords = np.nan
+    intro = np.nan
+    pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://www.science.org/doi/full/10.1126/science.282.5391.1117"
+# info = www_science_org(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# orca.cardiff.ac.uk
+def orca_cardiff_ac_uk(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome()
+            driver.get(url)
+            time.sleep(3)
+            # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        doi = driver.find_element(By.XPATH, "/html/body/div[1]/div[1]/div[4]/div/div[4]/div/a").text.split("doi.org/")[1]
+        # doi = driver.find_element(By.CLASS_NAME, "//span[contains(@class, 'metadata--doi')]").find_element(By.XPATH, 'a').text
+    except:
+        doi = np.nan
+
+    pmid = np.nan
+    pmcid = np.nan
+    title = np.nan
+    abstract = np.nan
+    keywords = np.nan
+    intro = np.nan
+    pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://orca.cardiff.ac.uk/id/eprint/11456/"
+# info = orca_cardiff_ac_uk(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# www.jneurosci.org
+def www_jneurosci_org(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome()
+            driver.get(url)
+            time.sleep(3)
+            # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        doi = driver.find_element(By.XPATH, "//span[@class='highwire-cite-metadata-doi highwire-cite-metadata']").text.split("doi.org/")[1]
+    except:
+        doi = np.nan
+
+    pmid = np.nan
+    pmcid = np.nan
+    title = np.nan
+    abstract = np.nan
+    keywords = np.nan
+    intro = np.nan
+    pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://www.jneurosci.org/content/30/25/8650.short"
+# info = www_jneurosci_org(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
 
 # www.ncbi.nlm.nih.gov/pmc/
 def www_ncbi_nlm_nih_gov(url):
@@ -618,6 +1118,160 @@ def springer_com(url):
 # --------------------start of test code--------------------
 # url = "https://link.springer.com/article/10.1007/PL00005713"
 # info = springer_com(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# europepmc.org
+def europepmc_org(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome()
+            driver.get(url)
+            time.sleep(3)
+            # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        doi = driver.find_element(By.XPATH, "//a[@id='article--doi--link-metadataSec']").text
+        # doi = driver.find_element(By.CLASS_NAME, "//span[contains(@class, 'metadata--doi')]").find_element(By.XPATH, 'a').text
+    except:
+        doi = np.nan
+    try:
+        pmid = driver.find_element(By.XPATH, "//span[contains(@class, 'metadata--pmid')]").text.split("PMID: ")[1]
+    except:
+        pmid = np.nan
+    try:
+        pmcid = driver.find_element(By.XPATH, "//span[contains(@class, 'metadata--pmcid')]").text.split("PMCID: ")[1]
+    except:
+        pmcid = np.nan
+    try:
+        title = driver.find_element(By.XPATH, "//h1[@id='article--current--title']").text
+    except:
+        title = np.nan
+    try:
+        abstract = driver.find_element(By.XPATH, "//div[contains(@class, 'abstract')]").text
+    except:
+        abstract = np.nan
+    keywords = np.nan
+    intro = np.nan
+    # try:
+    #     element = driver.find_element(By.XPATH, "//span[contains(@id, 'open_pdf')]")
+    #     element.click
+    #     time.sleep(3)
+    #     driver.switch_to.window(driver.window_handles[1])
+    #     time.sleep(3)
+    #     pdf_link = driver.current_url
+    # except:
+    #     pdf_link = np.nan
+    pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://europepmc.org/article/MED/37298594"
+# info = europepmc_org(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+# www.biorxiv.org
+def www_biorxiv_org(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome()
+            driver.get(url)
+            time.sleep(3)
+            # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        doi = driver.find_element(By.XPATH, "//span[@class='highwire-cite-metadata-doi highwire-cite-metadata']").text.split("doi.org/")[1]
+        # doi = driver.find_element(By.CLASS_NAME, "//span[contains(@class, 'metadata--doi')]").find_element(By.XPATH, 'a').text
+    except:
+        doi = np.nan
+
+    pmid = np.nan
+    pmcid = np.nan
+    try:
+        title = driver.find_element(By.XPATH, "//h1[@id='page-title']").text
+    except:
+        title = np.nan
+    try:
+        abstract = driver.find_element(By.XPATH, "//h2[contains(., 'ABSTRACT')]").find_element(By.XPATH, 'following-sibling::p').text
+    except:
+        abstract = np.nan
+    keywords = np.nan
+    intro = np.nan
+    try:
+        pdf_link = driver.find_element(By.XPATH, "//a[contains(@class, 'article-dl-pdf-link link-icon')]").get_attribute("href")
+    except:
+        pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://www.biorxiv.org/content/10.1101/398917v1.abstract"
+# info = www_biorxiv_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
