@@ -264,6 +264,17 @@ def extract_info_from_webpage(url):
     if url != url:
         raise Exception("The given url is np.nan")
     
+    info = {
+        "doi": np.nan,
+        "pmid": np.nan,
+        "pmcid": np.nan,
+        "title": np.nan,
+        "abstract": np.nan,
+        "keywords": np.nan,
+        "introduction": np.nan,
+        "pdf_link": np.nan
+    }
+
     url = plib.get_final_redirected_url(url)
     source = url.split("://")[1].split("/")[0]
     
@@ -273,9 +284,10 @@ def extract_info_from_webpage(url):
             func_name = website.replace(".", "_")
             func = globals().get(func_name)
             info = func(url)
-            return info
+            break
         else:
             continue
+    return info
 # --------------------start of test code--------------------
 # websites = ["PMC", "frontiersin", "europepmc", "biorxiv", "jneurosci", "orca.cardiff", "science", "thejns", "cambridge",
 #                 "wiley", "ahajournals", "mdpi", "sciencedirect", "pnas", "nature", "cell", "eneuro", "physiology", "springer",
@@ -306,17 +318,6 @@ def extract_info_from_webpage(url):
 def url2doi(url):
     if url != url:
         raise Exception("The url given is np.nan")
-    
-    info = {
-        "doi": np.nan,
-        "pmid": np.nan,
-        "pmcid": np.nan,
-        "title": np.nan,
-        "abstract": np.nan,
-        "keywords": np.nan,
-        "introduction": np.nan,
-        "pdf_link": np.nan
-    }
 
     url = str(url).strip()
     info = plib.extract_info_from_webpage(url) # dictionary
