@@ -274,7 +274,6 @@ def extract_info_from_webpage(url):
             func = globals().get(func_name)
             return plib.func(url)
         else:
-            print("The url:" + url + " is not included in our websites database yet!")
             return None
 # --------------------start of test code--------------------
 # websites = ["PMC", "frontiersin", "europepmc", "biorxiv", "jneurosci", "orca.cardiff", "science", "thejns", "cambridge",
