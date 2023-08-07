@@ -1530,7 +1530,7 @@ def bmj_com(url):
             error_label = 0
     
     try:
-        doi = driver.find_element(By.XPATH, "/html/body/div[3]/section[2]/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div[7]/div/div/div[2]/div/div/div/div[7]/div/p/a").text.split("doi.org/")[1]
+        doi = driver.find_element(By.XPATH, "//div[@class='panel-pane pane-custom pane-2']/div[1]/p/a").text.split("doi.org/")[1]
     except:
         doi = np.nan
     pmid = np.nan
@@ -2478,8 +2478,7 @@ def thejns_org(url):
             error_label = 0
     
     try:
-        doi = driver.find_element(By.XPATH, "/html/body/div[2]/div[2]/div[2]/div/div[1]/div/div[1]/div/div[1]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[1]/div/div/div[3]/div/div/div/div/dl[3]/dd/span/a").text.split("doi.org/")[1]
-        # doi = driver.find_element(By.CLASS_NAME, "//a[contains(@class, 'c-Button--link')]").find_element(By.XPATH, 'a').text
+        doi = driver.find_element(By.XPATH, "//dl[@class='doi c-List__items']/dd/span/a").text.split("doi.org/")[1]
     except:
         doi = np.nan
 
@@ -2604,7 +2603,7 @@ def orca_cardiff_ac_uk(url):
             error_label = 0
     
     try:
-        doi = driver.find_element(By.XPATH, "//div[text()=' Official URL: ']").find_element(By.TAG_NAME, "a").text.split("doi.org/")[1]
+        doi = driver.find_element(By.XPATH, "//div[@class='ep_summary_content_main']/div[1]/a").text.split("doi.org/")[1]
         # doi = driver.find_element(By.CLASS_NAME, "//span[contains(@class, 'metadata--doi')]").find_element(By.XPATH, 'a').text
     except:
         doi = np.nan
@@ -2785,7 +2784,7 @@ def frontiersin_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome(options=options)
+            driver = webdriver.Chrome()
             driver.get(url)
             time.sleep(3)
             # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
@@ -2797,34 +2796,21 @@ def frontiersin_org(url):
     
     # extract information from loaded webpage
     try:
-        doi = driver.find_element(By.XPATH, "//div[@class='header-bar-three']").find_element(By.TAG_NAME, "a']").text.split("doi.org/")[1]
+        
+        doi = driver.find_element(By.XPATH, "//div[@class='header-bar-three']/a").text.split("doi.org/")[1]
     except:
         doi = np.nan
     pmid = np.nan
     pmcid = np.nan
-    try:
-        title = driver.find_element(By.XPATH, '/html/body/div[2]/div[1]/div/div/div[1]/main/div/div/div/div[2]/h1').text
-    except:
-        title = np.nan
+    title = np.nan
     try:
         abstract = driver.find_element(By.CLASS_NAME, "JournalAbstract").find_element(By.TAG_NAME, "p").text
     except:
         abstract = np.nan
     keywords = np.nan
+    intro = np.nan
     try:
-        intro = ""
-        # Get the starting element
-        after = driver.find_elements(By.TAG_NAME, 'h2')[1].find_elements(By.XPATH, './/following-sibling::p')
-        # Get the ending element
-        before = driver.find_elements(By.TAG_NAME, 'h2')[2].find_elements(By.XPATH, './/preceding-sibling::p')
-        # Get the middle (= the intercept)
-        middle = [elem for elem in after if elem in before]
-        for element in middle:
-            intro = intro + element.text
-    except:
-        intro = np.nan
-    try:
-        pdf_link = driver.find_element(By.XPATH, "//*[@id='download_article​']").get_attribute('href')
+        pdf_link = driver.find_element(By.XPATH, "//ul[@class='dropdown-menu']/li[1]/a").get_attribute('href')
     except:
         pdf_link = np.nan
 
