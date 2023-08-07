@@ -1964,7 +1964,7 @@ def physiology_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome(options)
+            driver = webdriver.Chrome()
             driver.get(url)
             time.sleep(5)
             error_label = 1
