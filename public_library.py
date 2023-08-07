@@ -250,8 +250,9 @@ def pmid2doi(pmid):
 
 
 # extract information from websites
-websites = ["www.ncbi.nlm.nih.gov", "www.frontiersin.org", "www.sciencedirect.com", "europepmc", "biorxiv", "jneurosci", "orca.cardiff", "science", "thejns", "cambridge",
-            "wiley", "ahajournals", "mdpi", "pnas", "nature", "cell", "eneuro", "physiology", "springer",
+websites = ["www.ncbi.nlm.nih.gov", "www.frontiersin.org", "www.sciencedirect.com", "onlinelibrary.wiley.com", 
+            "springer.com", "europepmc.org", "biorxiv", "jneurosci", "orca.cardiff", "science", "thejns", "cambridge",
+            "ahajournals", "mdpi", "pnas", "nature", "cell", "eneuro", "physiology",
             "ieee", "plos", "jstage.jst", "biomedcentral", "jamanetwork", "psycnet.apa", "jnnp.bmj", "degruyter",
             "karger", "pure.mpg", "elifesciences", "neurology", "pubs.asahq", "sagepub", "ekja", "liebertpub", "lww",
             "tandfonline", "aspetjournals", "oup", "royalsocietypublishing", "psychiatryonline", "jpn", "open.bu.edu",
@@ -471,6 +472,152 @@ def www_sciencedirect_com(url):
 # --------------------start of test code--------------------
 # url = "https://www.sciencedirect.com/science/article/pii/030439409512056A"
 # info = www_sciencedirect_com(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# onlinelibrary.wiley.com
+def onlinelibrary_wiley_com(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome()
+            driver.get(url)
+            time.sleep(3)
+            # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        doi = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/main/div[1]/div/section/div/div/div/div[1]/article/div/div[1]/div[2]/div/div[6]/div[2]/a").text.split("doi.org/")[1]
+    except:
+        doi = np.nan
+    pmid = np.nan
+    pmcid = np.nan
+    try:
+        title = driver.find_element(By.TAG_NAME, 'h1').text
+    except:
+        title = np.nan
+    try:
+        abstract = ""
+        elems = driver.find_element(By.XPATH, "//h3[text()='Abstract']").find_element(By.XPATH, 'following-sibling::div').find_elements(By.XPATH, 'p')
+        for elem in elems:
+            abstract = abstract + elem.text
+    except:
+        abstract = np.nan
+    keywords = np.nan
+    intro = np.nan
+    try:
+        pdf_link = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/main/div[1]/div/section/div/div/div/div[1]/article/div/div[1]/div[3]/nav/div/div[2]/div[1]/a").get_attribute('href')
+    except:
+        pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.901980111"
+# info = onlinelibrary_wiley_com(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# springer.com
+def springer_com(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome()
+            driver.get(url)
+            time.sleep(3)
+            # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        doi = driver.find_element(By.XPATH, "//abbr[text()='DOI']").find_element(By.XPATH, 'following-sibling::span').find_element(By.XPATH, 'following-sibling::span').text.split("doi.org/")[1]
+    except:
+        doi = np.nan
+    pmid = np.nan
+    pmcid = np.nan
+    try:
+        title = driver.find_element(By.TAG_NAME, 'h1').text
+    except:
+        title = np.nan
+    try:
+        abstract = ""
+        elems = driver.find_element(By.XPATH, "//h2[text()='Abstract']").find_element(By.XPATH, 'following-sibling::div').find_elements(By.XPATH, 'p')
+        for elem in elems:
+            abstract = abstract + elem.text
+    except:
+        abstract = np.nan
+    keywords = np.nan
+    intro = np.nan
+    try:
+        pdf_link = driver.find_element(By.XPATH, "/html/body/div[2]/div[3]/div/aside/div[1]/div/div/a").get_attribute('href')
+    except:
+        pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://link.springer.com/article/10.1007/PL00005713"
+# info = springer_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
