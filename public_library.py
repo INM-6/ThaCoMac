@@ -216,8 +216,7 @@ def doi2pmid(doi):
             error_label = 0
 
     try:
-        my_elem = driver.find_element(By.CLASS_NAME, 'output').find_element(By.TAG_NAME, "a")
-        pmid = str(my_elem.text).strip()
+        pmid  = driver.find_element(By.XPATH, "//p[@class='output']").find_element(By.TAG_NAME, "a").text.strip()
     except:
         pmid = np.nan
     driver.quit()
