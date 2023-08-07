@@ -310,15 +310,12 @@ def url2doi(url):
     url = str(url).strip()
     info = plib.extract_info_from_webpage(url) # dictionary
 
-    if info == None:
-        return np.nan
+    if info["doi"] == info["doi"]:
+        return info["doi"]
+    elif info["pmid"] == info["pmid"]:
+        return pmid2doi(info["pmid"])
     else:
-        if info["doi"] == info["doi"]:
-            return info["doi"]
-        elif info["pmid"] == info["pmid"]:
-            return pmid2doi(info["pmid"])
-        else:
-            return np.nan
+        return np.nan
 # --------------------start of test code--------------------
 # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
 # doi = url2doi(url)
