@@ -272,9 +272,10 @@ def extract_info_from_webpage(url):
             # Get the function name by replacing "." with "_" and use globals() to call it
             func_name = website.replace(".", "_")
             func = globals().get(func_name)
-            return plib.func(url)
+            info = func(url)
+            return info
         else:
-            return None
+            continue
 # --------------------start of test code--------------------
 # websites = ["PMC", "frontiersin", "europepmc", "biorxiv", "jneurosci", "orca.cardiff", "science", "thejns", "cambridge",
 #                 "wiley", "ahajournals", "mdpi", "sciencedirect", "pnas", "nature", "cell", "eneuro", "physiology", "springer",
