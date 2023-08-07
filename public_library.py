@@ -195,7 +195,7 @@ def doi2pmid(doi):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Firefox(options, service=Service(GeckoDriverManager().install()))
+            driver = webdriver.Chrome(options, service=Service(ChromeDriverManager().install()))
             driver.get("https://www.pmid2cite.com/doi-to-pmid-converter")
 
             WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//p[text()='Consent']"))).click()
@@ -216,7 +216,7 @@ def doi2pmid(doi):
 
     try:
         my_elem = driver.find_element(By.CLASS_NAME, 'output').find_element(By.TAG_NAME, "a")
-        pmid = str(my_elem.get_attribute("innerHTML")).strip()
+        pmid = str(my_elem.text).strip()
     except:
         pmid = np.nan
     driver.quit()
