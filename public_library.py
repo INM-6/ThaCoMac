@@ -2604,7 +2604,7 @@ def orca_cardiff_ac_uk(url):
             error_label = 0
     
     try:
-        doi = driver.find_element(By.XPATH, "/html/body/div[1]/div[1]/div[4]/div/div[4]/div/a").text.split("doi.org/")[1]
+        doi = driver.find_element(By.XPATH, "//div[text()=' Official URL: ']").find_element(By.TAG_NAME, "a").text.split("doi.org/")[1]
         # doi = driver.find_element(By.CLASS_NAME, "//span[contains(@class, 'metadata--doi')]").find_element(By.XPATH, 'a').text
     except:
         doi = np.nan
@@ -2797,7 +2797,7 @@ def frontiersin_org(url):
     
     # extract information from loaded webpage
     try:
-        doi = driver.find_element(By.XPATH, "/html/body/div[2]/div[1]/div/div/div[1]/main/div/div/div/div[1]/div[2]/div[1]/a").text.split("doi.org/")[1]
+        doi = driver.find_element(By.XPATH, "//div[@class='header-bar-three']").find_element(By.TAG_NAME, "a']").text.split("doi.org/")[1]
     except:
         doi = np.nan
     pmid = np.nan
@@ -2877,7 +2877,7 @@ def sciencedirect_com(url):
             error_label = 0
     
     try:
-        doi = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div/div/div/div[2]/article/div[3]/a[1]/span").text.split("doi.org/")[1]
+        doi = driver.find_element(By.XPATH, "//a[@class='anchor doi anchor-default']").find_element(By.TAG_NAME, "span").text.split("doi.org/")[1]
     except:
         doi = np.nan
     pmid = np.nan
@@ -2954,7 +2954,7 @@ def wiley_com(url):
             error_label = 0
     
     try:
-        doi = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/main/div[1]/div/section/div/div/div/div[1]/article/div/div[1]/div[2]/div/div[6]/div[2]/a").text.split("doi.org/")[1]
+        doi = driver.find_element(By.XPATH, "//a[@class='epub-doi']").text.split("doi.org/")[1]
     except:
         doi = np.nan
     pmid = np.nan
@@ -2973,7 +2973,7 @@ def wiley_com(url):
     keywords = np.nan
     intro = np.nan
     try:
-        pdf_link = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/main/div[1]/div/section/div/div/div/div[1]/article/div/div[1]/div[3]/nav/div/div[2]/div[1]/a").get_attribute('href')
+        pdf_link = driver.find_element(By.XPATH, "//div[@class='coolBar__section coolBar--download PdfLink cloned']").find_element(By.TAG_NAME, "a").get_attribute('href')
     except:
         pdf_link = np.nan
 
