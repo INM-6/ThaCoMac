@@ -1284,7 +1284,8 @@ def neurology_org(url):
 
     return info
 # --------------------start of test code--------------------
-# url = "https://n.neurology.org/content/64/6/1014.short"
+url = "https://n.neurology.org/content/64/6/1014.short"
+# # url = "https://n.neurology.org/content/64/6/1014"
 # info = neurology_org(url)
 # print(info["doi"])
 # print(info["pmid"])
@@ -2187,10 +2188,7 @@ def www_nature_com(url):
             error_label = 0
     
     try:
-        elements = driver.find_element(By.XPATH, "//abbr[contains(@title, 'Digital Object Identifier')]").find_elements(By.XPATH, 'following-sibling::span')
-        for element in elements:
-            if "doi.org/" in element.text:
-                doi = element.text.split("doi.org/")[1]
+        elements = driver.find_element(By.XPATH, "//li[@class='Digital c-bibliographic-information__list-item c-bibliographic-information__list-item--doi')]/p/span[2]")
     except:
         doi = np.nan
     pmid = np.nan
