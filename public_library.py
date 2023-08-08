@@ -314,25 +314,25 @@ def extract_info_from_webpage(url):
 # ---------------------end of test code---------------------
 
 
-# get doi from url
-def url2doi(url):
-    if url != url:
-        raise Exception("The url given is np.nan")
+# # get doi from url
+# def url2doi(url):
+#     if url != url:
+#         raise Exception("The url given is np.nan")
 
-    url = str(url).strip()
-    info = plib.extract_info_from_webpage(url) # dictionary
+#     url = str(url).strip()
+#     info = plib.extract_info_from_webpage(url) # dictionary
 
-    if info["doi"] == info["doi"]:
-        return info["doi"]
-    elif info["pmid"] == info["pmid"]:
-        return pmid2doi(info["pmid"])
-    else:
-        return np.nan
-# --------------------start of test code--------------------
-# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
-# doi = url2doi(url)
-# print(doi)
-# ---------------------end of test code---------------------
+#     if info["doi"] == info["doi"]:
+#         return info["doi"]
+#     elif info["pmid"] == info["pmid"]:
+#         return pmid2doi(info["pmid"])
+#     else:
+#         return np.nan
+# # --------------------start of test code--------------------
+# # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
+# # doi = url2doi(url)
+# # print(doi)
+# # ---------------------end of test code---------------------
 
 
 # jstor.org
@@ -2694,7 +2694,8 @@ def www_jneurosci_org(url):
 
     return info
 # --------------------start of test code--------------------
-# url = "https://www.jneurosci.org/content/30/25/8650.short"
+# # url = "https://www.jneurosci.org/content/30/25/8650.short"
+# url = "https://www.jneurosci.org/content/20/10/3884.short"
 # info = www_jneurosci_org(url)
 # print(info["doi"])
 # print(info["pmid"])
@@ -2842,7 +2843,7 @@ def frontiersin_org(url):
 # ---------------------end of test code---------------------
 
 
-# ciencedirect.com
+# sciencedirect.com
 def sciencedirect_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
@@ -2855,7 +2856,6 @@ def sciencedirect_com(url):
             driver = webdriver.Chrome()
             driver.get(url)
             time.sleep(5)
-            # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
             error_label = 1
         except:
             print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
@@ -2863,7 +2863,7 @@ def sciencedirect_com(url):
             error_label = 0
     
     try:
-        doi = driver.find_element(By.XPATH, "//a[@class='anchor doi anchor-default']").find_element(By.TAG_NAME, "span").text.split("doi.org/")[1]
+        doi = driver.find_element(By.XPATH, "//a[@class='anchor doi anchor-default']/span").text.split("doi.org/")[1]
     except:
         doi = np.nan
     pmid = np.nan
@@ -2906,7 +2906,8 @@ def sciencedirect_com(url):
 
     return info
 # --------------------start of test code--------------------
-# url = "https://www.sciencedirect.com/science/article/pii/030439409512056A"
+# # url = "https://www.sciencedirect.com/science/article/pii/030439409512056A"
+# url = "https://www.sciencedirect.com/science/article/pii/0306452288900061"
 # info = sciencedirect_com(url)
 # print(info["doi"])
 # print(info["pmid"])
