@@ -238,10 +238,10 @@ def title2pmid(title):
     term = term + words[-1]
     # print(term)
     url = "https://pubmed.ncbi.nlm.nih.gov/?term=" + term
-    print(url)
+    # print(url)
     soup = plib.request_webpage(url)
     try:
-        pmid = soup.find_all("section", {"class": "matching-citations search-results-list"})[0].find_all("span", {"class": "docsum-pmid"})[0].get_text()
+        pmid = soup.find_all("div", {"class": "top-citations"})[0].find_all("span", {"class": "docsum-pmid"})[0].get_text()
     except:
         pmid = np.nan
     if pmid == pmid:
