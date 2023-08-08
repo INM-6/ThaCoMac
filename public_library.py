@@ -250,7 +250,8 @@ def title2pmid(title):
     return pmid
 # --------------------start of test code--------------------
 # # pmid = "21434138"
-# title = "… of GABAB antagonist [3H] CGP 62349 binding in the rhesus monkey thalamus and basal ganglia and the influence of lesions in the reticular thalamic nucleus"
+# title = "Distribution of the dopamine innervation in the macaque and human thalamus"
+# # title = "… of GABAB antagonist [3H] CGP 62349 binding in the rhesus monkey thalamus and basal ganglia and the influence of lesions in the reticular thalamic nucleus"
 # pmid = title2pmid(title)
 # print(pmid)
 # ---------------------end of test code---------------------
