@@ -248,6 +248,26 @@ def pmid2doi(pmid):
 # print(doi)
 # ---------------------end of test code---------------------
 
+# get doi and pmid from pmcid
+def pmcid2doi_pmid(pmcid):
+    url = "https://www.ncbi.nlm.nih.gov/pmc/articles/" + pmcid + "/"
+    soup = plib.request_webpage(url)
+    try:
+        doi = soup.find_all("span", {"class": "doi"})[0].find_all("a")[0].get_text().strip()
+    except:
+        doi = np.nan
+    try:
+        pmid = soup.find_all("div", {"class": "fm-citation-pmid"})[0].find_all("a")[0].get_text().strip()
+    except:
+        pmid = np.nan
+    return doi, pmid
+# --------------------start of test code--------------------
+pmcid = "PMC2753250"
+doi, pmid = pmcid2doi_pmid(pmcid)
+print(doi)
+print(pmid)
+# ---------------------end of test code---------------------
+
 
 # extract information from websites
 websites = ["ncbi.nlm.nih.gov", "frontiersin.org", "sciencedirect.com", "wiley.com", 
