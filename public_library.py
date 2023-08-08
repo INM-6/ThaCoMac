@@ -185,45 +185,88 @@ def download_pdf(pdf_url: str, pdf_folder_path: str, file_name: str) -> bool:
 # ---------------------end of test code---------------------
 
 
+# # get pmid from doi
+# def doi2pmid(doi):
+#     doi = str(doi).strip()
+
+#     os.environ['WDM_LOG'] = '0'
+#     options = Options()
+#     options.add_argument('--headless')
+    
+#     error_label = 0
+#     while(error_label == 0):
+#         try:
+#             driver = webdriver.Chrome(options, service=Service(ChromeDriverManager().install()))
+#             driver.get("https://www.pmid2cite.com/doi-to-pmid-converter")
+
+#             WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//p[text()='Consent']"))).click()
+
+#             try:
+#                 WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#formInput"))).send_keys(str(doi).strip())
+#             except TimeoutException:
+#                 print("Waiting for clicking consent timeout")
+#             try:
+#                 WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, '//button[text()="Get PMID"]'))).click()
+#             except TimeoutException:
+#                 print("Waiting for clicking button timeout")
+#             error_label = 1
+#         except:
+#             print("DOI to PMID transformation failed, retrying... This might take longer than 5 minutes...")
+#             time.sleep(5*60)
+#             error_label = 0
+
+#     try:
+#         pmid  = driver.find_element(By.XPATH, "//p[@class='output']").find_element(By.TAG_NAME, "a").text.strip()
+#     except:
+#         pmid = np.nan
+#     driver.quit()
+#     return pmid
+# # --------------------start of test code--------------------
+# # pmid = "35851953"
+# # doi = "10.1093/cercor/bhn229"
+# # pmid = doi2pmid(doi)
+# # print(pmid)
+# # ---------------------end of test code---------------------
+
+
+# get pmid from title
+def title2pmid(title):
+    title = str(title).strip()
+    words = title.split(" ")
+    # print(words)
+    term = ""
+    for i in range(len(words)-1):
+        term = term + words[i] + "+"
+    term = term + words[-1]
+    # print(term)
+    url = "https://pubmed.ncbi.nlm.nih.gov/?term=" + term
+    soup = plib.request_webpage(url)
+    try:
+        pmid = soup.find_all("span", {"class": "identifier pubmed"})[0].find_all("strong", {"class": "current-id"})[0].get_text()
+    except:
+        pmid = np.nan
+    return pmid
+# --------------------start of test code--------------------
+# # pmid = "21434138"
+# title = "… of GABAB antagonist [3H] CGP 62349 binding in the rhesus monkey thalamus and basal ganglia and the influence of lesions in the reticular thalamic nucleus"
+# pmid = title2pmid(title)
+# print(pmid)
+# ---------------------end of test code---------------------
+
+
 # get pmid from doi
 def doi2pmid(doi):
     doi = str(doi).strip()
-
-    os.environ['WDM_LOG'] = '0'
-    options = Options()
-    options.add_argument('--headless')
-    
-    error_label = 0
-    while(error_label == 0):
-        try:
-            driver = webdriver.Chrome(options, service=Service(ChromeDriverManager().install()))
-            driver.get("https://www.pmid2cite.com/doi-to-pmid-converter")
-
-            WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//p[text()='Consent']"))).click()
-
-            try:
-                WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#formInput"))).send_keys(str(doi).strip())
-            except TimeoutException:
-                print("Waiting for clicking consent timeout")
-            try:
-                WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, '//button[text()="Get PMID"]'))).click()
-            except TimeoutException:
-                print("Waiting for clicking button timeout")
-            error_label = 1
-        except:
-            print("DOI to PMID transformation failed, retrying... This might take longer than 5 minutes...")
-            time.sleep(5*60)
-            error_label = 0
-
+    url = "https://pubmed.ncbi.nlm.nih.gov/?term=" + doi
+    soup = plib.request_webpage(url)
     try:
-        pmid  = driver.find_element(By.XPATH, "//p[@class='output']").find_element(By.TAG_NAME, "a").text.strip()
+        pmid = soup.find_all("span", {"class": "identifier pubmed"})[0].find_all("strong", {"class": "current-id"})[0].get_text()
     except:
         pmid = np.nan
-    driver.quit()
     return pmid
 # --------------------start of test code--------------------
-# pmid = "35851953"
-# doi = "10.1093/cercor/bhn229"
+# # pmid = "35851953"
+# doi = "10.1016/j.neuroimage.2006.07.032"
 # pmid = doi2pmid(doi)
 # print(pmid)
 # ---------------------end of test code---------------------
@@ -241,7 +284,7 @@ def pmid2doi_pmcid(pmid):
     except:
         doi = np.nan
     try:
-        pmcid = soup.find_all("div", {"class": "fm-citation-pmcid"})[0].find_all("span")[1].get_text().strip()
+        pmcid = soup.find_all("span", {"class": "identifier pmc"})[0].find_all("a", {"class": "id-link"})[0].get_text().strip()
     except:
         pmcid = np.nan
     return doi, pmcid
