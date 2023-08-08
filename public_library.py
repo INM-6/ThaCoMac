@@ -62,7 +62,7 @@ def request_webpage(url):
     response = requests.get(url, headers=plib.headers)
     while(response.status_code != 200):
         print("Error", response.status_code, "when searching page:", url)
-        time.sleep(random.randint(5)*60)
+        time.sleep(5*60)
         response = requests.get(url, headers = plib.headers)
     soup = BeautifulSoup(response.content, "lxml")
     return soup
@@ -245,7 +245,9 @@ def title2pmid(title):
         pmid = soup.find_all("span", {"class": "identifier pubmed"})[0].find_all("strong", {"class": "current-id"})[0].get_text()
     except:
         pmid = np.nan
-    return str(pmid).strip()
+    if pmid == pmid:
+        pmid = pmid = str(pmid).strip()
+    return pmid
 # --------------------start of test code--------------------
 # # pmid = "21434138"
 # title = "… of GABAB antagonist [3H] CGP 62349 binding in the rhesus monkey thalamus and basal ganglia and the influence of lesions in the reticular thalamic nucleus"
@@ -263,6 +265,8 @@ def doi2pmid(doi):
         pmid = soup.find_all("span", {"class": "identifier pubmed"})[0].find_all("strong", {"class": "current-id"})[0].get_text()
     except:
         pmid = np.nan
+    if pmid == pmid:
+        pmid = pmid = str(pmid).strip()
     return pmid
 # --------------------start of test code--------------------
 # # pmid = "35851953"
@@ -287,6 +291,10 @@ def pmid2doi_pmcid(pmid):
         pmcid = soup.find_all("span", {"class": "identifier pmc"})[0].find_all("a", {"class": "id-link"})[0].get_text().strip()
     except:
         pmcid = np.nan
+    if doi == doi:
+        doi = str(doi).strip()
+    if pmcid == pmcid:
+        pmcid = str(pmcid).strip()
     return doi, pmcid
 # --------------------start of test code--------------------
 # pmid = "7424595"
@@ -307,6 +315,10 @@ def pmcid2doi_pmid(pmcid):
         pmid = soup.find_all("div", {"class": "fm-citation-pmid"})[0].find_all("a")[0].get_text().strip()
     except:
         pmid = np.nan
+    if doi == doi:
+        doi = str(doi).strip()
+    if pmid == pmid:
+        pmid = str(pmid).strip()
     return doi, pmid
 # --------------------start of test code--------------------
 # pmcid = "PMC2753250"
