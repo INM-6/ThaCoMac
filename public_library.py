@@ -3000,7 +3000,8 @@ def wiley_com(url):
 
     return info
 # --------------------start of test code--------------------
-# url = "https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.901980111"
+# # url = "https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.901980111"
+# url = "https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.902890211"
 # info = wiley_com(url)
 # print(info["doi"])
 # print(info["pmid"])
