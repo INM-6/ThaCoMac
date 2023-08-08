@@ -230,7 +230,7 @@ def doi2pmid(doi):
 
 
 # get doi from pmid
-def pmid2doi(pmid):
+def pmid2doi_pmcid(pmid):
     # request the webpage
     url = "https://pubmed.ncbi.nlm.nih.gov/" + pmid + "/"
     # proxies = plib.get_proxies()
@@ -240,7 +240,11 @@ def pmid2doi(pmid):
         doi = soup.find_all("span", {"class": "identifier doi"})[0].find_all("a", {"class": "id-link"})[0].get_text().strip()
     except:
         doi = np.nan
-    return doi
+    try:
+        pmcid = soup.find_all("div", {"class": "fm-citation-pmcid"})[0].find_all("span")[1].get_text().strip()
+    except:
+        pmcid = np.nan
+    return doi, pmcid
 # --------------------start of test code--------------------
 # pmid = "7424595"
 # # doi = "10.1113/JP282626"
@@ -262,10 +266,10 @@ def pmcid2doi_pmid(pmcid):
         pmid = np.nan
     return doi, pmid
 # --------------------start of test code--------------------
-pmcid = "PMC2753250"
-doi, pmid = pmcid2doi_pmid(pmcid)
-print(doi)
-print(pmid)
+# pmcid = "PMC2753250"
+# doi, pmid = pmcid2doi_pmid(pmcid)
+# print(doi)
+# print(pmid)
 # ---------------------end of test code---------------------
 
 
