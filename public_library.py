@@ -137,21 +137,21 @@ def pdf2text(pdf_path):
 def get_final_redirected_url(url):
     response = requests.get(url, headers = plib.headers)
     
-    while(response.status_code != 200):
+    while(True):
         if response.status_code == 403: # forbidden
             final_url = url
             break
         elif response.status_code == 404: # not found
             final_url = np.nan
             break
-        else:
-            print(response.status_code)     
+        elif response.status_code == 200 or 301 or 302 or 307 or 308:
+            final_url = response.url
+        else:    
+            print(response.status_code, "Retrying to get final redirected url...")
             # sleep for 5 minutes
             time.sleep(300)
             response = requests.get(url, headers = plib.headers)
-    if response.status_code == 200:
-        final_url = response.url
-        
+    
     return final_url
 # --------------------start of test code--------------------
 # url = "https://doi.org/10.1016/j.neuron.2020.01.005"
