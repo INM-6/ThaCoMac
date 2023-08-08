@@ -245,7 +245,7 @@ def title2pmid(title):
         pmid = soup.find_all("span", {"class": "identifier pubmed"})[0].find_all("strong", {"class": "current-id"})[0].get_text()
     except:
         pmid = np.nan
-    return pmid
+    return str(pmid).strip()
 # --------------------start of test code--------------------
 # # pmid = "21434138"
 # title = "… of GABAB antagonist [3H] CGP 62349 binding in the rhesus monkey thalamus and basal ganglia and the influence of lesions in the reticular thalamic nucleus"
