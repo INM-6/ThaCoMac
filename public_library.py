@@ -241,7 +241,7 @@ def title2pmid(title):
     # print(url)
     soup = plib.request_webpage(url)
     try:
-        pmid = soup.find_all("div", {"section": "matching-citations search-results-list"})[0].find_all("div", {"class": "top-citations"}).find_all("span", {"class": "docsum-pmid"})[0].get_text()
+        pmid = soup.find_all("div", {"section": "matching-citations search-results-list"})[0].find_all("span", {"class": "docsum-pmid"})[0].get_text()
     except:
         pmid = np.nan
     if pmid == pmid:
