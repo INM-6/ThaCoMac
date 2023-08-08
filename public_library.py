@@ -274,7 +274,7 @@ websites = ["ncbi.nlm.nih.gov", "frontiersin.org", "sciencedirect.com", "wiley.c
             "springer.com", "europepmc.org", "www.biorxiv.org", "www.jneurosci.org", "orca.cardiff.ac.uk", "www.science.org", 
             "thejns.org", "www.cambridge.org", "www.ahajournals.org", "www.mdpi.com", "www.pnas.org", "www.nature.com", 
             "www.cell.com", "www.eneuro.org", "physiology.org", "ieee.org", "plos.org", "jstage.jst.go.jp", "biomedcentral.com", 
-            "jamanetwork.com", "psycnet.apa.org", "bmj.com", "degruyter.com", "karger.com", "lifesciences.org", 
+            "jamanetwork.com", "psycnet.apa.org", "bmj.com", "degruyter.com", "karger.com", "elifesciences.org", 
             "neurology_org", "asahq.org", "sagepub.com", "ekja.org", "liebertpub.com", "lww.com", "tandfonline.com", 
             "aspetjournals.org", "oup.com", "royalsocietypublishing.org", "psychiatryonline.org", "jpn.ca", "bu.edu",
             "agro.icm.edu.pl", "lib.wfu.edu", "mirasmart.com", "jstor.org", "mpg.de"]
