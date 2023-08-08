@@ -143,6 +143,7 @@ def get_final_redirected_url(url):
             break
         elif response.status_code == 200 or 301 or 302 or 307 or 308 or 403:
             final_url = response.url
+            break
         else:    
             print(response.status_code, "Retrying to get final redirected url...")
             # sleep for 5 minutes
