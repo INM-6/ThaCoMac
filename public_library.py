@@ -138,13 +138,10 @@ def get_final_redirected_url(url):
     response = requests.get(url, headers = plib.headers)
     
     while(True):
-        if response.status_code == 403: # forbidden
-            final_url = url
-            break
-        elif response.status_code == 404: # not found
+        if response.status_code == 404: # not found
             final_url = np.nan
             break
-        elif response.status_code == 200 or 301 or 302 or 307 or 308:
+        elif response.status_code == 200 or 301 or 302 or 307 or 308 or 403:
             final_url = response.url
         else:    
             print(response.status_code, "Retrying to get final redirected url...")
