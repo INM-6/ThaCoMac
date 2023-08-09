@@ -60,6 +60,8 @@ def get_proxies():
 # request a webpage
 def request_webpage(url):
     response = requests.get(url, headers=plib.headers)
+    if response.status_code == 502:
+        return None
     while(response.status_code != 200):
         print("Error", response.status_code, "when searching page:", url)
         time.sleep(5*60)
@@ -290,6 +292,8 @@ def pmid2doi_pmcid(pmid):
     url = "https://pubmed.ncbi.nlm.nih.gov/" + pmid + "/"
     # proxies = plib.get_proxies()
     soup = plib.request_webpage(url)
+    if soup == None:
+        return np.nan, np.nan
     # print(soup)
     try:
         doi = soup.find_all("span", {"class": "identifier doi"})[0].find_all("a", {"class": "id-link"})[0].get_text().strip()
