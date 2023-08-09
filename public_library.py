@@ -254,12 +254,12 @@ def title2pmid(title):
     return pmid
 # --------------------start of test code--------------------
 # pmid = "21434138"
-title = "Thalamocortical connections of the parabelt auditory cortex in macaque monkeys"
-# https://pubmed.ncbi.nlm.nih.gov/?term=Thalamocortical+connections+of+the+parabelt+auditory+cortex+in+macaque+monkeys
-# title = "Independence and merger of thalamocortical channels within macaque monkey primary visual cortex: anatomy of interlaminar projections"
-# title = "… of GABAB antagonist [3H] CGP 62349 binding in the rhesus monkey thalamus and basal ganglia and the influence of lesions in the reticular thalamic nucleus"
-pmid = title2pmid(title)
-print(pmid)
+# title = "Thalamocortical connections of the parabelt auditory cortex in macaque monkeys"
+# # https://pubmed.ncbi.nlm.nih.gov/?term=Thalamocortical+connections+of+the+parabelt+auditory+cortex+in+macaque+monkeys
+# # title = "Independence and merger of thalamocortical channels within macaque monkey primary visual cortex: anatomy of interlaminar projections"
+# # title = "… of GABAB antagonist [3H] CGP 62349 binding in the rhesus monkey thalamus and basal ganglia and the influence of lesions in the reticular thalamic nucleus"
+# pmid = title2pmid(title)
+# print(pmid)
 # ---------------------end of test code---------------------
 
 
@@ -292,6 +292,7 @@ def pmid2doi_pmcid(pmid):
     # print(soup)
     try:
         doi = soup.find_all("span", {"class": "identifier doi"})[0].find_all("a", {"class": "id-link"})[0].get_text().strip()
+        print(doi)
     except:
         doi = np.nan
     try:
