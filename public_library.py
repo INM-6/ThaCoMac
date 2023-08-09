@@ -292,7 +292,7 @@ def pmid2doi_pmcid(pmid):
     # print(soup)
     try:
         doi = soup.find_all("span", {"class": "identifier doi"})[0].find_all("a", {"class": "id-link"})[0].get_text().strip()
-        print(doi)
+        # print(doi)
     except:
         doi = np.nan
     try:
