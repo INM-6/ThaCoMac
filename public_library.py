@@ -2251,7 +2251,10 @@ def www_nature_com(url):
             error_label = 0
     
     try:
-        elements = driver.find_element(By.XPATH, "//li[@class='Digital c-bibliographic-information__list-item c-bibliographic-information__list-item--doi')]/p/span[2]")
+        elems = driver.find_elements(By.XPATH, "//span[@class='c-bibliographic-information__value')]")
+        for elem in elems:
+            if "doi.org/" in elem.text:
+                doi = elem.text.split("doi.org/")[1]
     except:
         doi = np.nan
     pmid = np.nan
