@@ -31,7 +31,8 @@ poten_litera_eupmc_processed = os.path.join(datasets_folder, "potential_literatu
 
 poten_litera_combined = os.path.join(datasets_folder, "potential_related_literature_combined.csv")
 poten_litera_filled = os.path.join(datasets_folder, "potential_related_literature_filled.csv")
-filtered_poten_litra = os.path.join(datasets_folder, "potential_related_literature_filtered.csv")
+poten_litra_filtered = os.path.join(datasets_folder, "potential_related_literature_filtered.csv")
+poten_litera_with_text = os.path.join(datasets_folder, "potential_related_literature_with_text.csv")
 ranked_poten_litera = os.path.join(datasets_folder, "potential_related_literature_ranked.csv")
 
 
