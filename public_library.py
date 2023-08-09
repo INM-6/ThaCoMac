@@ -238,21 +238,28 @@ def title2pmid(title):
     term = term + words[-1]
     # print(term)
     url = "https://pubmed.ncbi.nlm.nih.gov/?term=" + term
-    # print(url)
+    print(url)
     soup = plib.request_webpage(url)
     try:
-        pmid = soup.find_all("div", {"section": "matching-citations search-results-list"})[0].find_all("span", {"class": "docsum-pmid"})[0].get_text()
+        pmid = soup.find_all("section", {"class": "matching-citations search-results-list"})[0].find_all("span", {"class": "docsum-pmid"})[0].get_text()
     except:
         pmid = np.nan
+    if pmid != pmid:
+        try:
+            pmid = soup.find_all("ul", {"id": "full-view-identifiers"})[0].find_all("span", {"class": "identifier pubmed"})[0].find_all("strong", {"class": "current-id"})[0].get_text()
+        except:
+            pmid = np.nan
     if pmid == pmid:
         pmid = str(pmid).strip()
     return pmid
 # --------------------start of test code--------------------
-# # pmid = "21434138"
-# title = "Distribution of the dopamine innervation in the macaque and human thalamus"
-# # title = "… of GABAB antagonist [3H] CGP 62349 binding in the rhesus monkey thalamus and basal ganglia and the influence of lesions in the reticular thalamic nucleus"
-# pmid = title2pmid(title)
-# print(pmid)
+# pmid = "21434138"
+title = "Thalamocortical connections of the parabelt auditory cortex in macaque monkeys"
+# https://pubmed.ncbi.nlm.nih.gov/?term=Thalamocortical+connections+of+the+parabelt+auditory+cortex+in+macaque+monkeys
+# title = "Independence and merger of thalamocortical channels within macaque monkey primary visual cortex: anatomy of interlaminar projections"
+# title = "… of GABAB antagonist [3H] CGP 62349 binding in the rhesus monkey thalamus and basal ganglia and the influence of lesions in the reticular thalamic nucleus"
+pmid = title2pmid(title)
+print(pmid)
 # ---------------------end of test code---------------------
 
 
