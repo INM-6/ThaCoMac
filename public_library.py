@@ -305,7 +305,7 @@ def pmid2doi_pmcid(pmid):
     except:
         pmcid = np.nan
     if doi == doi:
-        doi = str(doi).strip()
+        doi = str(doi).strip().lower()
     if pmcid == pmcid:
         pmcid = str(pmcid).strip()
     return doi, pmcid
