@@ -487,7 +487,7 @@ def func_ncbi_nlm_nih_gov(url):
 
 
 # elsevier.com
-def elsevier_com(url):
+def func_elsevier_com(url):
     # initialize
     info = {
         "doi": np.nan,
@@ -593,7 +593,7 @@ def elsevier_com(url):
 # url = "https://www.sciencedirect.com/science/article/pii/S0165017396000185?via%3Dihub#aep-section-id11"
 # # url = "https://linkinghub.elsevier.com/retrieve/pii/000689939190853N"
 # # url = "https://linkinghub.elsevier.com/retrieve/pii/S0891061898000222"
-# info = elsevier_com(url)
+# info = func_elsevier_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
