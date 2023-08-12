@@ -297,6 +297,27 @@ def pmcid2doi_pmid(pmcid):
 # ---------------------end of test code---------------------
 
 
+#==========================================================================================================================================================================
+# extract information from websites
+websites = [
+    'ncbi.nlm.nih.gov', 'elsevier.com', 'wiley.com', 'springer.com', 'physiology.org', 'oup.com'
+]
+# websites = [
+#     'ncbi.nlm.nih.gov', 'elsevier.com', 'wiley.com', 'springer.com', 'physiology.org', 'oup.com', 
+#     'cambridge.org', 'karger.com', 'lww.com', 'nature.com', 'science.org', 'tandfonline.com', 
+#     'sagepub.com', 'jamanetwork.com', 'neurology.org', 'biorxiv.org', 'royalsocietypublishing.org', 
+#     'psycnet.apa.org', 'arvojournals.org', 'jstage.jst.go.jp', 'psychiatryonline.org', 'europepmc.org', 
+#     'mit.edu', 'thejns.org', 'annualreviews.org', 'snmjournals.org', 'aspetjournals.org', 'elibrary.ru', 
+#     'books.google.de', 'architalbiol.org', 'ahajournals.org', 'liebertpub.com', 'acs.org', 'degruyter.com', 
+#     'worldscientific.com', 'iospress.com', 'asahq.org', 'thieme-connect.de', 'neurologia.com', 'mpg.de', 
+#     'opg.optica.org', 'mcgill.ca', 'rbojournal.org', 'taylorfrancis.com', 'ekja.org', 'www.imrpress.com', 
+#     'theses.fr', 'ieee.org', 'ssrn.com', 'open.bu.edu', 'journals.biologists.com', 'aip.org', 'lib.wfu.edu', 
+#     'literatumonline.com', 'scholarpedia.org', 'isho.jp', 'mirasmart.com', 'microbiologyresearch.org', 
+#     'aps.org', 'ujms.net', 'www.ingentaconnect.com', 'symposium.cshlp.org', 'cabdirect.org', 'ajtmh.org'
+# ]
+#==========================================================================================================================================================================
+
+
 def extract_info_from_webpage(url):
     if url != url:
         raise Exception("The given url is np.nan")
@@ -326,7 +347,7 @@ def extract_info_from_webpage(url):
     if func:
         info = func(url)
     else:
-        raise Exception("Function {func_name} does not exist.")
+        raise Exception("Function: " + func_name + " does not exist.")
     return info
 # --------------------start of test code--------------------
 # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
@@ -339,27 +360,6 @@ def extract_info_from_webpage(url):
 # print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
-
-
-#==========================================================================================================================================================================
-# extract information from websites
-websites = [
-    'ncbi.nlm.nih.gov', 'elsevier.com', 'wiley.com', 'springer.com', 'physiology.org', 'oup.com'
-]
-# websites = [
-#     'ncbi.nlm.nih.gov', 'elsevier.com', 'wiley.com', 'springer.com', 'physiology.org', 'oup.com', 
-#     'cambridge.org', 'karger.com', 'lww.com', 'nature.com', 'science.org', 'tandfonline.com', 
-#     'sagepub.com', 'jamanetwork.com', 'neurology.org', 'biorxiv.org', 'royalsocietypublishing.org', 
-#     'psycnet.apa.org', 'arvojournals.org', 'jstage.jst.go.jp', 'psychiatryonline.org', 'europepmc.org', 
-#     'mit.edu', 'thejns.org', 'annualreviews.org', 'snmjournals.org', 'aspetjournals.org', 'elibrary.ru', 
-#     'books.google.de', 'architalbiol.org', 'ahajournals.org', 'liebertpub.com', 'acs.org', 'degruyter.com', 
-#     'worldscientific.com', 'iospress.com', 'asahq.org', 'thieme-connect.de', 'neurologia.com', 'mpg.de', 
-#     'opg.optica.org', 'mcgill.ca', 'rbojournal.org', 'taylorfrancis.com', 'ekja.org', 'www.imrpress.com', 
-#     'theses.fr', 'ieee.org', 'ssrn.com', 'open.bu.edu', 'journals.biologists.com', 'aip.org', 'lib.wfu.edu', 
-#     'literatumonline.com', 'scholarpedia.org', 'isho.jp', 'mirasmart.com', 'microbiologyresearch.org', 
-#     'aps.org', 'ujms.net', 'www.ingentaconnect.com', 'symposium.cshlp.org', 'cabdirect.org', 'ajtmh.org'
-# ]
-#==========================================================================================================================================================================
 
 
 # ncbi.nlm.nih.gov
