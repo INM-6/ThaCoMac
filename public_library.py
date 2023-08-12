@@ -398,7 +398,7 @@ def func_ncbi_nlm_nih_gov(url):
         pmid = np.nan
     # print(pmid)
     if pmid == pmid:
-        pmid = str(pmid).strip()
+        pmid = str(int(pmid)).strip()
     # pmcid
     try:
         pmcid = soup.find_all("div", {"class": "fm-citation-pmcid"})[0].find_all("span")[1].get_text().strip()
