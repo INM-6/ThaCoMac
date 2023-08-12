@@ -397,7 +397,8 @@ def func_ncbi_nlm_nih_gov(url):
     except:
         pmid = np.nan
     # print(pmid)
-
+    if pmid == pmid:
+        pmid = str(pmid).strip()
     # pmcid
     try:
         pmcid = soup.find_all("div", {"class": "fm-citation-pmcid"})[0].find_all("span")[1].get_text().strip()
@@ -529,6 +530,8 @@ def func_elsevier_com(url):
     if doi == doi:
         doi = doi.lower()
     pmid = np.nan
+    if pmid == pmid:
+        pmid = str(pmid).strip()
     pmcid = np.nan
 
     # title
@@ -650,6 +653,8 @@ def func_wiley_com(url):
     if doi == doi:
         doi = doi.lower()
     pmid = np.nan
+    if pmid == pmid:
+        pmid = str(pmid).strip()
     pmcid = np.nan
 
     # title
