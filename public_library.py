@@ -297,17 +297,6 @@ def pmcid2doi_pmid(pmcid):
 # ---------------------end of test code---------------------
 
 
-# extract information from websites
-websites = ["ncbi.nlm.nih.gov", "frontiersin.org", "sciencedirect.com", "wiley.com", 
-            "springer.com", "europepmc.org", "www.biorxiv.org", "www.jneurosci.org", "orca.cardiff.ac.uk", "www.science.org", 
-            "thejns.org", "www.cambridge.org", "www.ahajournals.org", "www.mdpi.com", "www.pnas.org", "www.nature.com", 
-            "www.cell.com", "www.eneuro.org", "physiology.org", "ieee.org", "plos.org", "jstage.jst.go.jp", "biomedcentral.com", 
-            "jamanetwork.com", "psycnet.apa.org", "bmj.com", "degruyter.com", "karger.com", "elifesciences.org", 
-            "neurology_org", "asahq.org", "sagepub.com", "ekja.org", "liebertpub.com", "lww.com", "tandfonline.com", 
-            "aspetjournals.org", "oup.com", "royalsocietypublishing.org", "psychiatryonline.org", "jpn.ca", "bu.edu",
-            "agro.icm.edu.pl", "lib.wfu.edu", "mirasmart.com", "jstor.org", "mpg.de"]
-
-
 def extract_info_from_webpage(url):
     if url != url:
         raise Exception("The given url is np.nan")
@@ -362,8 +351,20 @@ def extract_info_from_webpage(url):
 # ---------------------end of test code---------------------
 
 
+#==========================================================================================================================================================================
+# extract information from websites
+websites = ["ncbi.nlm.nih.gov", "frontiersin.org", "sciencedirect.com", "wiley.com", 
+            "springer.com", "europepmc.org", "www.biorxiv.org", "www.jneurosci.org", "orca.cardiff.ac.uk", "www.science.org", 
+            "thejns.org", "www.cambridge.org", "www.ahajournals.org", "www.mdpi.com", "www.pnas.org", "www.nature.com", 
+            "www.cell.com", "www.eneuro.org", "physiology.org", "ieee.org", "plos.org", "jstage.jst.go.jp", "biomedcentral.com", 
+            "jamanetwork.com", "psycnet.apa.org", "bmj.com", "degruyter.com", "karger.com", "elifesciences.org", 
+            "neurology_org", "asahq.org", "sagepub.com", "ekja.org", "liebertpub.com", "lww.com", "tandfonline.com", 
+            "aspetjournals.org", "oup.com", "royalsocietypublishing.org", "psychiatryonline.org", "jpn.ca", "bu.edu",
+            "agro.icm.edu.pl", "lib.wfu.edu", "mirasmart.com", "jstor.org", "mpg.de"]
+
+
 # jstor.org
-def jstor_org(url):
+def func_jstor_org(url):
     doi = np.nan
     pmid = np.nan
     pmcid = np.nan
@@ -386,7 +387,7 @@ def jstor_org(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://www.jstor.org/stable/82698"
-# info = jstor_org(url)
+# info = func_jstor_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
