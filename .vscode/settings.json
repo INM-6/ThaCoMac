@@ -1,4 +1,4 @@
 {
     "notebook.output.textLineLimit": 10,
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "off"
 }
