@@ -322,10 +322,11 @@ def extract_info_from_webpage(url):
             # Get the function name by replacing "." with "_" and use globals() to call it
             func_name = "func_" + website.replace(".", "_")
             func = globals().get(func_name)
-            info = func(url)
             break
-        else:
-            continue
+    if func:
+        info = func(url)
+    else:
+        raise Exception("Function {func_name} does not exist.")
     return info
 # --------------------start of test code--------------------
 # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
