@@ -186,50 +186,6 @@ def download_pdf(pdf_url: str, pdf_folder_path: str, file_name: str) -> bool:
 # ---------------------end of test code---------------------
 
 
-# # get pmid from doi
-# def doi2pmid(doi):
-#     doi = str(doi).strip()
-
-#     os.environ['WDM_LOG'] = '0'
-#     options = Options()
-#     options.add_argument('--headless')
-    
-#     error_label = 0
-#     while(error_label == 0):
-#         try:
-#             driver = webdriver.Chrome(options, service=Service(ChromeDriverManager().install()))
-#             driver.get("https://www.pmid2cite.com/doi-to-pmid-converter")
-
-#             WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//p[text()='Consent']"))).click()
-
-#             try:
-#                 WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#formInput"))).send_keys(str(doi).strip())
-#             except TimeoutException:
-#                 print("Waiting for clicking consent timeout")
-#             try:
-#                 WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, '//button[text()="Get PMID"]'))).click()
-#             except TimeoutException:
-#                 print("Waiting for clicking button timeout")
-#             error_label = 1
-#         except:
-#             print("DOI to PMID transformation failed, retrying... This might take longer than 5 minutes...")
-#             time.sleep(5*60)
-#             error_label = 0
-
-#     try:
-#         pmid  = driver.find_element(By.XPATH, "//p[@class='output']").find_element(By.TAG_NAME, "a").text.strip()
-#     except:
-#         pmid = np.nan
-#     driver.quit()
-#     return pmid
-# # --------------------start of test code--------------------
-# # pmid = "35851953"
-# # doi = "10.1093/cercor/bhn229"
-# # pmid = doi2pmid(doi)
-# # print(pmid)
-# # ---------------------end of test code---------------------
-
-
 # get pmid from title
 def title2pmid(title):
     title = str(title).strip()
@@ -404,27 +360,6 @@ def extract_info_from_webpage(url):
 # print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
-
-
-# # get doi from url
-# def url2doi(url):
-#     if url != url:
-#         raise Exception("The url given is np.nan")
-
-#     url = str(url).strip()
-#     info = plib.extract_info_from_webpage(url) # dictionary
-
-#     if info["doi"] == info["doi"]:
-#         return info["doi"]
-#     elif info["pmid"] == info["pmid"]:
-#         return pmid2doi(info["pmid"])
-#     else:
-#         return np.nan
-# # --------------------start of test code--------------------
-# # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
-# # doi = url2doi(url)
-# # print(doi)
-# # ---------------------end of test code---------------------
 
 
 # jstor.org
