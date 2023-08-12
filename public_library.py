@@ -386,6 +386,8 @@ def func_ncbi_nlm_nih_gov(url):
         doi = doi.strip()
     except:
         doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
     # print(doi)
 
     # pmid
@@ -524,6 +526,8 @@ def func_elsevier_com(url):
         doi = doi.strip()
     except:
         doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
     pmid = np.nan
     pmcid = np.nan
 
@@ -643,6 +647,8 @@ def func_wiley_com(url):
         doi = doi.strip()
     except:
         doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
     pmid = np.nan
     pmcid = np.nan
 
@@ -756,6 +762,8 @@ def func_springer_com(url):
         doi = doi.strip()
     except:
         doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
     pmid = np.nan
     pmcid = np.nan
 
@@ -870,6 +878,8 @@ def func_physiology_org(url):
         doi = doi.strip()
     except:
         doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
     pmid = np.nan
     pmcid = np.nan
 
@@ -984,6 +994,8 @@ def func_oup_com(url):
         doi = doi.strip()
     except:
         doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
     pmid = np.nan
     pmcid = np.nan
 
