@@ -418,7 +418,14 @@ def func_ncbi_nlm_nih_gov(url):
     # abstract
     try:
         abstract = ""
-        elems = soup.find_all("div", {"id": ["abstract-1", "ABS1", "Abs1"]})[0].find_all("p")
+        elems = soup.find_all("div", {"id": "abstract-1"})
+        if elems == []:
+            elems = soup.find_all("div", {"id": "ABS1"})
+        if elems == []:
+            elems = soup.find_all("div", {"id": "Abs1"})
+        if elems == []:
+            raise Exception("No abstract found in " + url + "!")
+        elems = elems[0].find_all("p")
         for elem in elems:
             abstract = abstract + " " + elem.get_text().strip()
         abstract = abstract.strip()
@@ -428,7 +435,14 @@ def func_ncbi_nlm_nih_gov(url):
 
     # keywords
     try:
-        keywords = soup.find_all("div", {"id": ["abstract-1", "ABS1", "Abs1"]})[0].find_all("span", {"class": "kwd-text"})[0].get_text().strip()
+        elems = soup.find_all("div", {"id": "abstract-1"})
+        if elems == []:
+            elems = soup.find_all("div", {"id": "ABS1"})
+        if elems == []:
+            elems = soup.find_all("div", {"id": "Abs1"})
+        if elems == []:
+            raise Exception("No keywords found in " + url + "!")
+        keywords = elems[0].find_all("span", {"class": "kwd-text"})[0].get_text().strip()
         keywords = keywords.strip()
     except:
         keywords = np.nan
@@ -479,7 +493,8 @@ def func_ncbi_nlm_nih_gov(url):
 # --------------------start of test code--------------------
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2613515/"
-# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2722424/"
+# # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8328208/"
+# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8541979/"
 # info = func_ncbi_nlm_nih_gov(url)
 # print(info["doi"])
 # print(info["pmid"])
@@ -670,7 +685,7 @@ def func_wiley_com(url):
     # abstract
     try:
         abstract = ""
-        elems = driver.find_element(By.XPATH, "//div[@class='abstract-group  metis-abstract']").find_element(By.XPATH, "//div[@class='article-section__content en main']").find_elements(By.XPATH, 'p')
+        elems = driver.find_element(By.XPATH, "//div[contains(@class, 'abstract-group')]").find_element(By.XPATH, "//div[@class='article-section__content en main']").find_elements(By.XPATH, 'p')
         for elem in elems:
             abstract = abstract + elem.text + " "
         abstract = abstract.strip()
@@ -720,6 +735,8 @@ def func_wiley_com(url):
 # --------------------start of test code--------------------
 # url = "https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.901980111"
 # # url = "https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.902890211"
+# # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.21440"
+# # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.21155"
 # info = func_wiley_com(url)
 # print(info["doi"])
 # print(info["pmid"])
