@@ -419,21 +419,44 @@ def func_ncbi_nlm_nih_gov(url):
     # abstract
     try:
         abstract = ""
-        # elems = soup.find_all("div", {"id": "abstract-1"})
-        # if elems == []:
-        #     elems = soup.find_all("div", {"id": "ABS1"})
-        # if elems == []:
-        #     elems = soup.find_all("div", {"id": "Abs1"})
-        # if elems == []:
-        #     raise Exception("No abstract found in " + url + "!")
-        elems = soup.find("div", {"class": "tsec sec"}).find_all("p")
-        # elems = soup.find(lambda tag:tag.name=="h2" and ("Abstract" in tag.text or "Summary" in tag.text or "SUMMARY" in tag.text))
-        # elems = elems.findNext('div').find_all("p")
-        for elem in elems:
-            abstract = abstract + " " + elem.get_text().strip()
+        elems = soup.find_all("div", {"class": "tsec sec"})[0]
+        paragraphs = elems.find_all("p")
+        for paragraph in paragraphs:
+            abstract = abstract + " " + paragraph.get_text().strip()
         abstract = abstract.strip()
     except:
-        abstract = np.nan
+        try:
+            abstract = ""
+            elems = soup.find(lambda tag:tag.name=="h2" and ("Abstract" in tag.text or "ABSTRACT" in tag.text or "Summary" in tag.text or "SUMMARY" in tag.text))
+            elems = elems.findNextSiblings('p')
+            for elem in elems:
+                abstract = abstract + " " + elem.get_text().strip()
+            abstract = abstract.strip()
+        except:
+            abstract = np.nan
+    #     try:
+    #         elems = soup.find(lambda tag:tag.name=="h2" and ("Abstract" in tag.text or "Summary" in tag.text or "SUMMARY" in tag.text))
+    #         elems = elems.findNextSiblings('p')
+    #     except:
+    #         try:
+    #             elems = soup.find("div", {"id": "abstract-1"})
+    #         except:
+    #             try:
+    #                 elems = soup.find("div", {"id": "ABS1"})
+    #             except:
+    #                 try:
+    #                     elems = soup.find("div", {"id": "Abs1"})
+    #                 except:
+    #                     try:
+    #                         elems = soup.find("div", {"class": "tsec sec"})
+    #                     except:
+    #                         elems = soup.find("div", {"class": "sec"})
+    #         elems = elems.find_all("p")
+    #     for elem in elems:
+    #         abstract = abstract + " " + elem.get_text().strip()
+    #     abstract = abstract.strip()
+    # except:
+    #     abstract = np.nan
     # print(abstract)
 
     # keywords
@@ -452,10 +475,10 @@ def func_ncbi_nlm_nih_gov(url):
         keywords = np.nan
     # print(keywords)
 
-    # # introduction
+    # introduction
     # try:
     #     intro = ""
-    #     paragraphs = soup.find_all("div", {"id": "sec-1"})[0].find_all("p")
+    #     paragraphs = soup.find("div", {"class": "tsec sec"}).find_all("p")
     #     for paragraph in paragraphs:
     #         intro = intro + " " + paragraph.get_text().strip()
     #     intro = intro.strip()
@@ -470,7 +493,7 @@ def func_ncbi_nlm_nih_gov(url):
     #         intro = intro.strip()
     #     except:
     #         intro = np.nan
-    # # print(intro)
+    # print(intro)
     intro = np.nan
 
     # pdf_link
@@ -495,13 +518,14 @@ def func_ncbi_nlm_nih_gov(url):
 
     return info
 # --------------------start of test code--------------------
-# # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
+# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2613515/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8328208/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8541979/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4855639/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3140205/"
-# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4362213/"
+# # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4362213/"
+# # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC48909/"
 # info = func_ncbi_nlm_nih_gov(url)
 # print(info["doi"])
 # print(info["pmid"])
@@ -722,7 +746,11 @@ def func_wiley_com(url):
         title = driver.find_element(By.XPATH, "//h1[@class='citation__title']").text
         title = title.strip()
     except:
-        title = np.nan
+        try:
+            title = driver.find_element(By.XPATH, "//h2[@class='citation__title']").text
+            title = title.strip()
+        except:
+            title = np.nan
     
     # abstract
     try:
@@ -730,7 +758,13 @@ def func_wiley_com(url):
         try:
             elems = driver.find_element(By.XPATH, "//h3[text()='Abstract' or text()='ABSTRACT']").find_element(By.XPATH, "following-sibling::div").find_elements(By.XPATH, 'p')
         except:
-            elems = driver.find_element(By.XPATH, "//h2[text()='Abstract' or text()='ABSTRACT']").find_element(By.XPATH, "following-sibling::div").find_elements(By.XPATH, 'p')
+            try:
+                elems = driver.find_element(By.XPATH, "//h2[text()='Abstract' or text()='ABSTRACT']").find_element(By.XPATH, "following-sibling::div").find_elements(By.XPATH, 'p')
+            except:
+                try:
+                    elems = driver.find_element(By.XPATH, "//h2[text()='Summary' or text()='SUMMARY']").find_element(By.XPATH, "following-sibling::div").find_elements(By.XPATH, 'p')
+                except:
+                    elems = driver.find_element(By.XPATH, "//h3[text()='Summary' or text()='SUMMARY']").find_element(By.XPATH, "following-sibling::div").find_elements(By.XPATH, 'p')
         for elem in elems:
             abstract = abstract + elem.text + " "
         abstract = abstract.strip()
@@ -787,9 +821,10 @@ def func_wiley_com(url):
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.902360304"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.24389"
 
-# # url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19960805)371:4%3C513::AID-CNE2%3E3.0.CO;2-7"
+# url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19960805)371:4%3C513::AID-CNE2%3E3.0.CO;2-7"
 # # url = "https://nyaspubs.onlinelibrary.wiley.com/doi/full/10.1196/annals.1300.030"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.23436"
+# # url = "https://onlinelibrary.wiley.com/doi/10.1002/9780470513545.ch4"
 
 # info = func_wiley_com(url)
 # print(info["doi"])
@@ -3107,72 +3142,6 @@ def www_cell_com(url):
 # --------------------start of test code--------------------
 # url = "https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(18)30205-5"
 # info = www_cell_com(url)
-# print(info["doi"])
-# print(info["pmid"])
-# print(info["pmcid"])
-# print(info["title"])
-# print(info["abstract"])
-# print(info["keywords"])
-# print(info["introduction"])
-# print(info["pdf_link"])
-# ---------------------end of test code---------------------
-
-
-# www.nature.com
-def www_nature_com(url):
-    os.environ['WDM_LOG'] = '0'
-    options = Options()
-    options.add_argument('--headless')
-    
-    # load the webpage
-    error_label = 0
-    while(error_label == 0):
-        try:
-            driver = webdriver.Chrome()
-            driver.get(url)
-            time.sleep(5)
-            error_label = 1
-        except:
-            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
-            time.sleep(5*60)
-            error_label = 0
-    
-    try:
-        elems = driver.find_elements(By.XPATH, "//span[@class='c-bibliographic-information__value')]")
-        for elem in elems:
-            if "doi.org/" in elem.text:
-                doi = elem.text.split("doi.org/")[1]
-    except:
-        doi = np.nan
-    pmid = np.nan
-    pmcid = np.nan
-    try:
-        title = driver.find_element(By.XPATH, "//h1[contains(@class, 'c-article-title')]").text
-    except:
-        title = np.nan
-    abstract = np.nan
-    keywords = np.nan
-    intro = np.nan
-    pdf_link = np.nan
-
-    driver.quit()
-
-    info = {
-        "doi": doi,
-        "pmid": pmid,
-        "pmcid": pmcid,
-        "title": title,
-        "abstract": abstract,
-        "keywords": keywords,
-        "introduction": intro,
-        "pdf_link": pdf_link
-    }
-    driver.quit
-
-    return info
-# --------------------start of test code--------------------
-# url = "https://www.nature.com/articles/387281a0"
-# info = www_nature_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
