@@ -425,7 +425,7 @@ def func_ncbi_nlm_nih_gov(url):
         #     elems = soup.find_all("div", {"id": "Abs1"})
         # if elems == []:
         #     raise Exception("No abstract found in " + url + "!")
-        elems = soup.find(lambda tag:tag.name=="h2" and "Abstract" in tag.text)
+        elems = soup.find(lambda tag:tag.name=="h2" and ("Abstract" in tag.text or "Summary" in tag.text or "SUMMARY" in tag.text))
         elems = elems.findNext('div').find_all("p")
         for elem in elems:
             abstract = abstract + " " + elem.get_text().strip()
@@ -493,11 +493,12 @@ def func_ncbi_nlm_nih_gov(url):
 
     return info
 # --------------------start of test code--------------------
-# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
+# # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2613515/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8328208/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8541979/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4855639/"
+# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3140205/"
 # info = func_ncbi_nlm_nih_gov(url)
 # print(info["doi"])
 # print(info["pmid"])
@@ -565,7 +566,10 @@ def func_elsevier_com(url):
     # abstract
     try:
         abstract = ""
-        elems = driver.find_element(By.XPATH, "//h2[text()='Abstract']").find_element(By.XPATH, "following-sibling::div").find_elements(By.TAG_NAME, "p")
+        try:
+            elems = driver.find_element(By.XPATH, "//h2[text()='Abstract']").find_element(By.XPATH, "following-sibling::div").find_elements(By.TAG_NAME, "p")
+        except:
+            elems = driver.find_element(By.XPATH, "//h2[text()='Publisher Summary']").find_element(By.XPATH, "following-sibling::div").find_elements(By.TAG_NAME, "p")
         for elem in elems:
             abstract = abstract + elem.text + " "
         abstract = abstract.strip()
@@ -622,10 +626,11 @@ def func_elsevier_com(url):
 # --------------------start of test code--------------------
 # # url = "https://linkinghub.elsevier.com/retrieve/pii/0006899395013385"
 # # url = "https://www.sciencedirect.com/science/article/pii/S0165017396000185?via%3Dihub#aep-section-id11"
-# url = "https://linkinghub.elsevier.com/retrieve/pii/000689939190853N"
+# # url = "https://linkinghub.elsevier.com/retrieve/pii/000689939190853N"
 # # url = "https://linkinghub.elsevier.com/retrieve/pii/S0891061898000222"
 # # url = "https://www.sciencedirect.com/science/article/pii/S0165027017303631?via%3Dihub#abs0010"
 # url = "https://linkinghub.elsevier.com/retrieve/pii/S0165027017303631"
+# # url = "https://www.sciencedirect.com/science/article/pii/S0079612308626783?via%3Dihub"
 # info = func_elsevier_com(url)
 # print(info["doi"])
 # print(info["pmid"])
@@ -636,7 +641,6 @@ def func_elsevier_com(url):
 # print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
-
 
 
 # wiley.com
@@ -694,7 +698,10 @@ def func_wiley_com(url):
     # abstract
     try:
         abstract = ""
-        elems = driver.find_element(By.XPATH, "//div[contains(@class, 'abstract-group')]").find_element(By.XPATH, "//div[contains(@class, 'article-section__content')]").find_elements(By.XPATH, 'p')
+        try:
+            elems = driver.find_element(By.XPATH, "//h3[contains(text(), 'Abstract')]").find_element(By.XPATH, "following-sibling::div").find_elements(By.XPATH, 'p')
+        except:
+            elems = driver.find_element(By.XPATH, "//h2[contains(text(), 'Abstract')]").find_element(By.XPATH, "following-sibling::div").find_elements(By.XPATH, 'p')
         for elem in elems:
             abstract = abstract + elem.text + " "
         abstract = abstract.strip()
@@ -752,10 +759,10 @@ def func_wiley_com(url):
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.902820107"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19990726)410:2%3C211::AID-CNE4%3E3.0.CO;2-X"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.902940314"
-# # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.901990104"
+# url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.901990104"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19981019)400:2%3C271::AID-CNE8%3E3.0.CO;2-6"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.902360304"
-# url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19981019)400:2%3C271::AID-CNE8%3E3.0.CO;2-6"
+# # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.24389"
 
 # info = func_wiley_com(url)
 # print(info["doi"])
