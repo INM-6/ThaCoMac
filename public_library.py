@@ -748,9 +748,11 @@ def func_wiley_com(url):
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19981019)400:2%3C271::AID-CNE8%3E3.0.CO;2-6"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.902360304"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.902820107"
-# url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19990726)410:2%3C211::AID-CNE4%3E3.0.CO;2-X"
+# # url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19990726)410:2%3C211::AID-CNE4%3E3.0.CO;2-X"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.902940314"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.901990104"
+# url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19981019)400:2%3C271::AID-CNE8%3E3.0.CO;2-6"
+
 # info = func_wiley_com(url)
 # print(info["doi"])
 # print(info["pmid"])
