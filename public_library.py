@@ -418,14 +418,15 @@ def func_ncbi_nlm_nih_gov(url):
     # abstract
     try:
         abstract = ""
-        elems = soup.find_all("div", {"id": "abstract-1"})
-        if elems == []:
-            elems = soup.find_all("div", {"id": "ABS1"})
-        if elems == []:
-            elems = soup.find_all("div", {"id": "Abs1"})
-        if elems == []:
-            raise Exception("No abstract found in " + url + "!")
-        elems = elems[0].find_all("p")
+        # elems = soup.find_all("div", {"id": "abstract-1"})
+        # if elems == []:
+        #     elems = soup.find_all("div", {"id": "ABS1"})
+        # if elems == []:
+        #     elems = soup.find_all("div", {"id": "Abs1"})
+        # if elems == []:
+        #     raise Exception("No abstract found in " + url + "!")
+        elems = soup.find(lambda tag:tag.name=="h2" and "Abstract" in tag.text)
+        elems = elems.findNext('div').find_all("p")
         for elem in elems:
             abstract = abstract + " " + elem.get_text().strip()
         abstract = abstract.strip()
@@ -435,14 +436,15 @@ def func_ncbi_nlm_nih_gov(url):
 
     # keywords
     try:
-        elems = soup.find_all("div", {"id": "abstract-1"})
-        if elems == []:
-            elems = soup.find_all("div", {"id": "ABS1"})
-        if elems == []:
-            elems = soup.find_all("div", {"id": "Abs1"})
-        if elems == []:
-            raise Exception("No keywords found in " + url + "!")
-        keywords = elems[0].find_all("span", {"class": "kwd-text"})[0].get_text().strip()
+        # elems = soup.find_all("div", {"id": "abstract-1"})
+        # if elems == []:
+        #     elems = soup.find_all("div", {"id": "ABS1"})
+        # if elems == []:
+        #     elems = soup.find_all("div", {"id": "Abs1"})
+        # if elems == []:
+        #     raise Exception("No keywords found in " + url + "!")
+        elems = soup.find(lambda tag:tag.name=="strong" and "Keywords" in tag.text)
+        keywords = elems = elems.findNext('span').get_text().strip()
         keywords = keywords.strip()
     except:
         keywords = np.nan
@@ -491,10 +493,11 @@ def func_ncbi_nlm_nih_gov(url):
 
     return info
 # --------------------start of test code--------------------
-# # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
+# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2613515/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8328208/"
-# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8541979/"
+# # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8541979/"
+# # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4855639/"
 # info = func_ncbi_nlm_nih_gov(url)
 # print(info["doi"])
 # print(info["pmid"])
@@ -532,7 +535,7 @@ def func_elsevier_com(url):
     while(error_label == 0):
         try:
             driver.get(url)
-            time.sleep(3)
+            time.sleep(5)
             error_label = 1
         except:
             print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
@@ -561,7 +564,10 @@ def func_elsevier_com(url):
 
     # abstract
     try:
-        abstract = driver.find_element(By.ID, "abstracts").find_element(By.TAG_NAME, "p").text
+        abstract = ""
+        elems = driver.find_element(By.XPATH, "//h2[text()='Abstract']").find_element(By.XPATH, "following-sibling::div").find_elements(By.TAG_NAME, "p")
+        for elem in elems:
+            abstract = abstract + elem.text + " "
         abstract = abstract.strip()
     except:
         abstract = np.nan
@@ -615,9 +621,10 @@ def func_elsevier_com(url):
     return info
 # --------------------start of test code--------------------
 # # url = "https://linkinghub.elsevier.com/retrieve/pii/0006899395013385"
-# url = "https://www.sciencedirect.com/science/article/pii/S0165017396000185?via%3Dihub#aep-section-id11"
-# # url = "https://linkinghub.elsevier.com/retrieve/pii/000689939190853N"
+# # url = "https://www.sciencedirect.com/science/article/pii/S0165017396000185?via%3Dihub#aep-section-id11"
+# url = "https://linkinghub.elsevier.com/retrieve/pii/000689939190853N"
 # # url = "https://linkinghub.elsevier.com/retrieve/pii/S0891061898000222"
+# # url = "https://www.sciencedirect.com/science/article/pii/S0165027017303631?via%3Dihub#abs0010"
 # info = func_elsevier_com(url)
 # print(info["doi"])
 # print(info["pmid"])
@@ -655,7 +662,7 @@ def func_wiley_com(url):
     while(error_label == 0):
         try:
             driver.get(url)
-            time.sleep(3)
+            time.sleep(5)
             error_label = 1
         except:
             print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
@@ -685,7 +692,7 @@ def func_wiley_com(url):
     # abstract
     try:
         abstract = ""
-        elems = driver.find_element(By.XPATH, "//div[contains(@class, 'abstract-group')]").find_element(By.XPATH, "//div[@class='article-section__content en main']").find_elements(By.XPATH, 'p')
+        elems = driver.find_element(By.XPATH, "//div[contains(@class, 'abstract-group')]").find_element(By.XPATH, "//div[contains(@class, 'article-section__content')]").find_elements(By.XPATH, 'p')
         for elem in elems:
             abstract = abstract + elem.text + " "
         abstract = abstract.strip()
@@ -733,10 +740,17 @@ def func_wiley_com(url):
 
     return info
 # --------------------start of test code--------------------
-# url = "https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.901980111"
+# # url = "https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.901980111"
 # # url = "https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.902890211"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.21440"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.21155"
+
+# # url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19981019)400:2%3C271::AID-CNE8%3E3.0.CO;2-6"
+# # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.902360304"
+# # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.902820107"
+# url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19990726)410:2%3C211::AID-CNE4%3E3.0.CO;2-X"
+# # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.902940314"
+# # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.901990104"
 # info = func_wiley_com(url)
 # print(info["doi"])
 # print(info["pmid"])
@@ -774,7 +788,7 @@ def func_springer_com(url):
     while(error_label == 0):
         try:
             driver.get(url)
-            time.sleep(3)
+            time.sleep(5)
             error_label = 1
         except:
             print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
@@ -852,7 +866,9 @@ def func_springer_com(url):
 # --------------------start of test code--------------------
 # # url = "https://link.springer.com/article/10.1007/PL00005713"
 # # url = "https://link.springer.com/article/10.1007/BF00231734"
-# url = "https://link.springer.com/article/10.1007/BF00231444"
+# # url = "https://link.springer.com/article/10.1007/BF00231444"
+# # url = "https://link.springer.com/article/10.1007/BF00237252"
+# url = "https://link.springer.com/article/10.1007/BF00237252"
 # info = func_springer_com(url)
 # print(info["doi"])
 # print(info["pmid"])
@@ -890,7 +906,7 @@ def func_physiology_org(url):
     while(error_label == 0):
         try:
             driver.get(url)
-            time.sleep(3)
+            time.sleep(5)
             error_label = 1
         except:
             print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
@@ -1006,7 +1022,7 @@ def func_oup_com(url):
     while(error_label == 0):
         try:
             driver.get(url)
-            time.sleep(3)
+            time.sleep(5)
             error_label = 1
         except:
             print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
