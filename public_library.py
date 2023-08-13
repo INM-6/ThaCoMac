@@ -1133,11 +1133,378 @@ def func_oup_com(url):
 # ---------------------end of test code---------------------
 
 
+# cambridge.org
+def func_cambridge_org(url):
+    # initialize
+    info = {
+        "doi": np.nan,
+        "pmid": np.nan,
+        "pmcid": np.nan,
+        "title": np.nan,
+        "abstract": np.nan,
+        "keywords": np.nan,
+        "introduction": np.nan,
+        "pdf_link": np.nan
+    }
+
+    # set up the webdriver
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    driver = webdriver.Chrome()
+
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver.get(url)
+            time.sleep(5)
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    # doi, pmid, pmcid
+    try:
+        doi = driver.find_element(By.XPATH, "//div[contains(text(), 'DOI')]/a/span").text.split("doi.org/")[1]
+        doi = doi.strip()
+    except:
+        doi = np.nan
+    pmid = np.nan
+    pmcid = np.nan
+
+    # title
+    try:
+        title = driver.find_element(By.TAG_NAME, "h1").text
+        title = title.strip()
+    except:
+        title = np.nan
+    
+    # abstract
+    try:
+        abstract = ""
+        elems = driver.find_element(By.XPATH, "//div[@class='abstract']").find_elements(By.TAG_NAME, 'p')
+        for elem in elems:
+            abstract = abstract + elem.text + " "
+        abstract = abstract.strip()
+    except:
+        abstract = np.nan
+    
+    # keywords
+    try:
+        keywords = ""
+        elems = driver.find_element(By.XPATH, "//div[@class='keywords']").find_element(By.XPATH, "//div[@class='row keywords__pills']").find_elements(By.TAG_NAME, 'a')
+        for elem in elems:
+            keywords = keywords + elem.find_element(By.TAG_NAME, 'span').text + "; "
+        keywords = keywords.strip()
+    except:
+        keywords = np.nan
+    
+    # # introduction
+    # try:
+    #     intro = ""
+    #     elements = driver.find_elements(By.TAG_NAME, "h2")
+    #     for element in elements:
+    #         if "Introduction" in element.text:
+    #             ele_paren = element.find_element(By.XPATH, "..")
+    #             intros = ele_paren.find_elements(By.TAG_NAME, "p")
+    #             for intro_ele in intros:
+    #                 intro = intro + intro_ele.text + " "
+    #             break
+    #     intro = intro.strip()
+    # except:
+    #     intro = np.nan
+    intro = np.nan
+
+    # pdf_link
+    # try:
+    #     pdf_link = driver.find_element(By.XPATH, "//a[@class='al-link pdf article-pdfLink']").get_attribute('href')
+    #     pdf_link = pdf_link.strip()
+    # except:
+    #     pdf_link = np.nan
+    pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://www.cambridge.org/core/journals/thalamus-and-related-systems/article/abs/pathways-for-emotions-and-memory-i-input-and-output-zones-linking-the-anterior-thalamic-nuclei-with-prefrontal-cortices-in-the-rhesus-monkey/82C8F1BECABA367B0FBCD7E3EAACAAB3"
+# # url = "https://www.cambridge.org/core/journals/visual-neuroscience/article/abs/neuronal-organization-and-plasticity-in-adult-monkey-visual-cortex-immunoreactivity-for-microtubuleassociated-protein-2/B0317C6BF7C278292397F80735F19E54"
+# # url = "https://www.cambridge.org/core/journals/visual-neuroscience/article/abs/neuropeptide-ycontaining-neurons-are-situated-predominantly-outside-cytochrome-oxidase-puffs-in-macaque-visual-cortex/B66BA877CC63A9CA1AE958AC6433FC49"
+# # url = "https://www.cambridge.org/core/journals/visual-neuroscience/article/abs/subcortical-connections-of-visual-areas-mst-and-fst-in-macaques/2E765908869A8B03AD1D566D488A6D19"
+# info = func_cambridge_org(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
 
 
+# karger.com
+def func_karger_com(url):
+    # initialize
+    info = {
+        "doi": np.nan,
+        "pmid": np.nan,
+        "pmcid": np.nan,
+        "title": np.nan,
+        "abstract": np.nan,
+        "keywords": np.nan,
+        "introduction": np.nan,
+        "pdf_link": np.nan
+    }
+
+    # set up the webdriver
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    driver = webdriver.Chrome()
+
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver.get(url)
+            time.sleep(5)
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    # doi, pmid, pmcid
+    try:
+        doi = driver.find_element(By.XPATH, "//div[contains(@class, 'citation-doi')]").find_element(By.TAG_NAME, "a").text.split("doi.org/")[1]
+        doi = doi.strip()
+    except:
+        doi = np.nan
+    pmid = np.nan
+    pmcid = np.nan
+
+    # title
+    try:
+        title = driver.find_element(By.TAG_NAME, "h1").text
+        title = title.strip()
+    except:
+        title = np.nan
+    
+    # abstract
+    try:
+        abstract = ""
+        elems = driver.find_element(By.XPATH, "//section[@class='abstract']").find_elements(By.TAG_NAME, 'p')
+        for elem in elems:
+            abstract = abstract + elem.text + " "
+        abstract = abstract.strip()
+    except:
+        abstract = np.nan
+    
+    # keywords
+    try:
+        keywords = ""
+        elems = driver.find_element(By.XPATH, "//div[@class='content-metadata-keywords']").find_elements(By.TAG_NAME, 'a')
+        for elem in elems:
+            keywords = keywords + elem.text + "; "
+        keywords = keywords.strip()
+    except:
+        keywords = np.nan
+    
+    # # introduction
+    # try:
+    #     intro = ""
+    #     elements = driver.find_elements(By.TAG_NAME, "h2")
+    #     for element in elements:
+    #         if "Introduction" in element.text:
+    #             ele_paren = element.find_element(By.XPATH, "..")
+    #             intros = ele_paren.find_elements(By.TAG_NAME, "p")
+    #             for intro_ele in intros:
+    #                 intro = intro + intro_ele.text + " "
+    #             break
+    #     intro = intro.strip()
+    # except:
+    #     intro = np.nan
+    intro = np.nan
+
+    # pdf_link
+    try:
+        pdf_link = driver.find_element(By.XPATH, "//div[@class='pdf-notice']/div/a").get_attribute('href')
+        pdf_link = pdf_link.strip()
+    except:
+        pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+
+    return info
+# --------------------start of test code--------------------
+# # url = "https://karger.com/sfn/article/54-55/1-8/114/303620/Structural-and-Connectional-Diversity-of-the"
+# # url = "https://karger.com/sfn/article/60/1-3/70/291859/Cerebello-and-Pallido-Thalamic-Pathways-to-Areas-6"
+# url = "https://karger.com/sfn/article/60/1-3/104/291839/Action-of-the-Cerebello-Thalamo-Cortical"
+# # url = "https://karger.com/bbe/article/31/4/198/45901/Is-Binocular-Competition-Essential-for-Layer"
+# info = func_karger_com(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
 
 
+# lww.com
+def func_lww_com(url):
+    # initialize
+    info = {
+        "doi": np.nan,
+        "pmid": np.nan,
+        "pmcid": np.nan,
+        "title": np.nan,
+        "abstract": np.nan,
+        "keywords": np.nan,
+        "introduction": np.nan,
+        "pdf_link": np.nan
+    }
 
+    # set up the webdriver
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    driver = webdriver.Chrome()
+
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver.get(url)
+            time.sleep(5)
+            wait = WebDriverWait(driver, 30)
+            wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Accept All Cookies')]"))).click()
+            time.sleep(2)
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    # doi, pmid, pmcid
+    try:
+        doi = driver.find_element(By.XPATH, "//div[contains(@class, 'ej-journal-info')]").text.split("DOI: ")[1]
+        doi = doi.strip()
+    except:
+        doi = np.nan
+    pmid = np.nan
+    pmcid = np.nan
+
+    # title
+    try:
+        title = driver.find_element(By.XPATH, "//h1[@class='ejp-article-title']").text
+        title = title.strip()
+    except:
+        title = np.nan
+    
+    # abstract
+    try:
+        abstract = ""
+        elems = driver.find_element(By.XPATH, "//div[@class='ejp-article-text-abstract']").find_elements(By.TAG_NAME, 'p')
+        for elem in elems:
+            abstract = abstract + elem.text + " "
+        abstract = abstract.strip()
+    except:
+        abstract = np.nan
+    
+    # keywords
+    # try:
+    #     keywords = ""
+    #     elems = driver.find_element(By.XPATH, "//div[@class='ejp-article-text-abstract']").find_elements(By.TAG_NAME, 'a')
+    #     for elem in elems:
+    #         keywords = keywords + elem.text + "; "
+    #     keywords = keywords.strip()
+    # except:
+    #     keywords = np.nan
+    keywords = np.nan
+    
+    # # introduction
+    # try:
+    #     intro = ""
+    #     elements = driver.find_elements(By.TAG_NAME, "h2")
+    #     for element in elements:
+    #         if "Introduction" in element.text:
+    #             ele_paren = element.find_element(By.XPATH, "..")
+    #             intros = ele_paren.find_elements(By.TAG_NAME, "p")
+    #             for intro_ele in intros:
+    #                 intro = intro + intro_ele.text + " "
+    #             break
+    #     intro = intro.strip()
+    # except:
+    #     intro = np.nan
+    intro = np.nan
+
+    # pdf_link
+    # try:
+    #     pdf_link = driver.find_element(By.XPATH, "//button[contains(text(), 'PDF')]").click()
+    #     driver.switch_to_window(driver.window_handles[-1])
+    #     pdf_link = driver.current_url
+    #     pdf_link = pdf_link.strip()
+    # except:
+    #     pdf_link = np.nan
+    pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "introduction": intro,
+        "pdf_link": pdf_link
+    }
+
+    return info
+# --------------------start of test code--------------------
+# # url = "https://journals.lww.com/neuroreport/Fulltext/2018/04010/Change_of_information_represented_by_thalamic.5.aspx"
+# # url = "https://journals.lww.com/pain/Abstract/1989/06000/A_dorsolateral_spinothalamic_tract_in_macaque.10.aspx"
+# # url = "https://journals.lww.com/pain/Abstract/1994/03000/The_effect_oftrans_ACPD,_a_metabotropic_excitatory.2.aspx"
+# url = "https://journals.lww.com/pain/Abstract/2001/05000/Projections_from_the_marginal_zone_and_deep_dorsal.29.aspx"
+# info = func_lww_com(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
 
 
 
@@ -1662,70 +2029,6 @@ def aspetjournals_org(url):
 # ---------------------end of test code---------------------
 
 
-# lww.com
-def lww_com(url):
-    os.environ['WDM_LOG'] = '0'
-    options = Options()
-    options.add_argument('--headless')
-    
-    # load the webpage
-    error_label = 0
-    while(error_label == 0):
-        try:
-            driver = webdriver.Chrome()
-            driver.get(url)
-            time.sleep(5)
-            error_label = 1
-        except:
-            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
-            time.sleep(5*60)
-            error_label = 0
-    
-    try:
-        # doi = np.nan
-        doi = driver.find_element(By.XPATH, "//div[contains(@class, 'ej-journal-info')]").text.split("DOI: ")[1]
-        # for elem in elems:
-        #     if "doi.org/" in elem.text:
-        #         doi = elem.text.split("doi.org/")[1]
-    except:
-        doi = np.nan
-    pmid = np.nan
-    pmcid = np.nan
-    title = np.nan
-    abstract = np.nan
-    keywords = np.nan
-    intro = np.nan
-    pdf_link = np.nan
-
-    driver.quit()
-
-    info = {
-        "doi": doi,
-        "pmid": pmid,
-        "pmcid": pmcid,
-        "title": title,
-        "abstract": abstract,
-        "keywords": keywords,
-        "introduction": intro,
-        "pdf_link": pdf_link
-    }
-    driver.quit
-
-    return info
-# --------------------start of test code--------------------
-# url = "https://journals.lww.com/pain/Citation/1981/08001/Potentials_evoked_in_thalamic_nuclei_by_dental.298.aspx"
-# info = lww_com(url)
-# print(info["doi"])
-# print(info["pmid"])
-# print(info["pmcid"])
-# print(info["title"])
-# print(info["abstract"])
-# print(info["keywords"])
-# print(info["introduction"])
-# print(info["pdf_link"])
-# ---------------------end of test code---------------------
-
-
 # liebertpub.com
 def liebertpub_com(url):
     os.environ['WDM_LOG'] = '0'
@@ -2141,66 +2444,6 @@ def mpg_de(url):
 # --------------------start of test code--------------------
 # url = "https://pure.mpg.de/pubman/faces/ViewItemOverviewPage.jsp?itemId=item_1790170"
 # info = mpg_de(url)
-# print(info["doi"])
-# print(info["pmid"])
-# print(info["pmcid"])
-# print(info["title"])
-# print(info["abstract"])
-# print(info["keywords"])
-# print(info["introduction"])
-# print(info["pdf_link"])
-# ---------------------end of test code---------------------
-
-
-# karger.com
-def karger_com(url):
-    os.environ['WDM_LOG'] = '0'
-    options = Options()
-    options.add_argument('--headless')
-    
-    # load the webpage
-    error_label = 0
-    while(error_label == 0):
-        try:
-            driver = webdriver.Chrome()
-            driver.get(url)
-            time.sleep(5)
-            error_label = 1
-        except:
-            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
-            time.sleep(5*60)
-            error_label = 0
-    
-    try:
-        doi = driver.find_element(By.XPATH, "//div[contains(@class, 'citation-doi')]").find_element(By.TAG_NAME, "a").text.split("doi.org/")[1]
-    except:
-        doi = np.nan
-    pmid = np.nan
-    pmcid = np.nan
-    title = np.nan
-    abstract = np.nan
-    keywords = np.nan
-    intro = np.nan
-    pdf_link = np.nan
-
-    driver.quit()
-
-    info = {
-        "doi": doi,
-        "pmid": pmid,
-        "pmcid": pmcid,
-        "title": title,
-        "abstract": abstract,
-        "keywords": keywords,
-        "introduction": intro,
-        "pdf_link": pdf_link
-    }
-    driver.quit
-
-    return info
-# --------------------start of test code--------------------
-# url = "https://karger.com/sfn/article/54-55/1-8/114/303620/Structural-and-Connectional-Diversity-of-the"
-# info = karger_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
