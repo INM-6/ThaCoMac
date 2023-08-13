@@ -1198,6 +1198,8 @@ def func_cambridge_org(url):
         doi = doi.strip()
     except:
         doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
     pmid = np.nan
     pmcid = np.nan
 
@@ -1321,6 +1323,8 @@ def func_karger_com(url):
         doi = doi.strip()
     except:
         doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
     pmid = np.nan
     pmcid = np.nan
 
@@ -1446,6 +1450,8 @@ def func_lww_com(url):
         doi = doi.strip()
     except:
         doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
     pmid = np.nan
     pmcid = np.nan
 
