@@ -625,6 +625,7 @@ def func_elsevier_com(url):
 # url = "https://linkinghub.elsevier.com/retrieve/pii/000689939190853N"
 # # url = "https://linkinghub.elsevier.com/retrieve/pii/S0891061898000222"
 # # url = "https://www.sciencedirect.com/science/article/pii/S0165027017303631?via%3Dihub#abs0010"
+# url = "https://linkinghub.elsevier.com/retrieve/pii/S0165027017303631"
 # info = func_elsevier_com(url)
 # print(info["doi"])
 # print(info["pmid"])
@@ -635,6 +636,7 @@ def func_elsevier_com(url):
 # print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
+
 
 
 # wiley.com
@@ -751,6 +753,8 @@ def func_wiley_com(url):
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19990726)410:2%3C211::AID-CNE4%3E3.0.CO;2-X"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.902940314"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.901990104"
+# # url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19981019)400:2%3C271::AID-CNE8%3E3.0.CO;2-6"
+# # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.902360304"
 # url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19981019)400:2%3C271::AID-CNE8%3E3.0.CO;2-6"
 
 # info = func_wiley_com(url)
