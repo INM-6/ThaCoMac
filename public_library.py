@@ -417,7 +417,10 @@ def func_ncbi_nlm_nih_gov(url):
 
     # abstract
     try:
-        abstract = soup.find_all("div", {"id": "abstract-1"})[0].find_all("p", {"class": "p p-first-last"})[0].get_text().strip()
+        abstract = ""
+        elems = soup.find_all("div", {"id": ["abstract-1", "ABS1", "Abs1"]})[0].find_all("p")
+        for elem in elems:
+            abstract = abstract + " " + elem.get_text().strip()
         abstract = abstract.strip()
     except:
         abstract = np.nan
@@ -425,7 +428,7 @@ def func_ncbi_nlm_nih_gov(url):
 
     # keywords
     try:
-        keywords = soup.find_all("div", {"id": "abstract-1"})[0].find_all("span", {"class": "kwd-text"})[0].get_text().strip()
+        keywords = soup.find_all("div", {"id": ["abstract-1", "ABS1", "Abs1"]})[0].find_all("span", {"class": "kwd-text"})[0].get_text().strip()
         keywords = keywords.strip()
     except:
         keywords = np.nan
@@ -667,7 +670,7 @@ def func_wiley_com(url):
     # abstract
     try:
         abstract = ""
-        elems = driver.find_element(By.XPATH, "//h3[text()='Abstract']").find_element(By.XPATH, 'following-sibling::div').find_elements(By.XPATH, 'p')
+        elems = driver.find_element(By.XPATH, "//div[@class='abstract-group  metis-abstract']").find_element(By.XPATH, "//div[@class='article-section__content en main']").find_elements(By.XPATH, 'p')
         for elem in elems:
             abstract = abstract + elem.text + " "
         abstract = abstract.strip()
