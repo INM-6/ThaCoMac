@@ -319,7 +319,7 @@ websites = [
 #==========================================================================================================================================================================
 
 
-def extract_info_from_webpage(url):
+def extract_info_from_webpage(url, source):
     if url != url:
         raise Exception("The given url is np.nan")
     
@@ -331,15 +331,12 @@ def extract_info_from_webpage(url):
         "title": np.nan,
         "abstract": np.nan,
         "keywords": np.nan,
-        "introduction": np.nan,
-        "reference": np.nan,
         "pdf_link": np.nan
     }
 
     # url = plib.get_final_redirected_url(url)
-    try:
-        source = url.split("://")[1].split("/")[0]
-    except:
+    if source != url.split("://")[1].split("/")[0]:
+        print("Given source is not the same as the source of the given url.")
         return info
     
     for website in plib.websites:
