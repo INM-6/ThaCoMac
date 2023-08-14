@@ -4,7 +4,8 @@ import os
 
 # annoucing all file paths
 project_folder = Path.cwd()
-litera_pdf_folder = os.path.join(project_folder, "litera_pdfs")
+litera_pdf_folder = "/home/hou/myProjects/litera_pdfs"
+letera_text_folder = "/home/hou/myProjects/litera_texts"
 datasets_folder = os.path.join(project_folder, "datasets")
 
 
