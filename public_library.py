@@ -143,9 +143,11 @@ def get_final_redirected_url(url):
             if response.status_code == 404: # not found
                 final_url = np.nan
                 break
-            elif response.status_code == 200 or 301 or 302 or 307 or 308 or 403:
+            elif response.status_code == 200 or 301 or 302 or 307 or 308:
                 final_url = response.url
                 break
+            elif response.status_code == 403:
+                final_url = url.strip()
             else:    
                 print(response.status_code, "Retrying to get final redirected url...")
                 # sleep for 5 minutes
