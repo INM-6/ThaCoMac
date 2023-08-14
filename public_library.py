@@ -336,8 +336,11 @@ def extract_info_from_webpage(url):
         "pdf_link": np.nan
     }
 
-    url = plib.get_final_redirected_url(url)
-    source = url.split("://")[1].split("/")[0]
+    # url = plib.get_final_redirected_url(url)
+    try:
+        source = url.split("://")[1].split("/")[0]
+    except:
+        return info
     
     for website in plib.websites:
         if website in source:
@@ -891,7 +894,10 @@ def func_springer_com(url):
     # abstract
     try:
         abstract = ""
-        elems = driver.find_element(By.XPATH, "//div[@id='Abs1-content']").find_elements(By.TAG_NAME, 'p')
+        try:
+            elems = driver.find_element(By.XPATH, "//div[@id='Abs1-content']").find_elements(By.TAG_NAME, 'p')
+        except:
+            elems = driver.find_element(By.XPATH, "//div[@id='Abs1_2-content']").find_elements(By.TAG_NAME, 'p')
         for elem in elems:
             abstract = abstract + elem.text + " "
         abstract = abstract.strip()
@@ -899,7 +905,14 @@ def func_springer_com(url):
         abstract = np.nan
     
     # keywords
-    keywords = np.nan
+    try:
+        keywords = ""
+        elems = driver.find_element(By.XPATH, "//ul[@class='c-article-subject-list']").find_elements(By.TAG_NAME, 'li')
+        for elem in elems:
+            keywords = keywords + elem.find_element(By.TAG_NAME, 'span').text + " "
+        keywords = keywords.strip()
+    except:
+        keywords = np.nan
     
     # # introduction
     # try:
@@ -944,6 +957,7 @@ def func_springer_com(url):
 # # url = "https://link.springer.com/article/10.1007/BF00231444"
 # # url = "https://link.springer.com/article/10.1007/BF00237252"
 # url = "https://link.springer.com/article/10.1007/BF00237252"
+# # url = "https://link.springer.com/chapter/10.1007/978-1-4419-0754-7_2"
 # info = func_springer_com(url)
 # print(info["doi"])
 # print(info["pmid"])
