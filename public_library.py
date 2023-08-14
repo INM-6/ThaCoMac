@@ -302,8 +302,7 @@ def pmcid2doi_pmid(pmcid):
 #==========================================================================================================================================================================
 # extract information from websites
 websites = [
-    'ncbi.nlm.nih.gov', 'elsevier.com', 'wiley.com', 'springer.com', 'physiology.org', 'oup.com',
-    'cambridge.org', 'karger.com', 'lww.com'
+    'ncbi.nlm.nih.gov', 'elsevier.com', 'wiley.com', 'springer.com', 'physiology.org'
 ]
 # websites = [
 #     'ncbi.nlm.nih.gov', 'elsevier.com', 'wiley.com', 'springer.com', 'physiology.org', 'oup.com', 
