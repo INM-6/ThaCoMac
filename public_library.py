@@ -366,6 +366,7 @@ def extract_info_from_webpage(url, source):
 # ncbi.nlm.nih.gov
 def func_ncbi_nlm_nih_gov(url):
     # initialize
+    # initialize
     info = {
         "doi": np.nan,
         "pmid": np.nan,
@@ -373,7 +374,6 @@ def func_ncbi_nlm_nih_gov(url):
         "title": np.nan,
         "abstract": np.nan,
         "keywords": np.nan,
-        "introduction": np.nan,
         "pdf_link": np.nan
     }
 
@@ -419,82 +419,29 @@ def func_ncbi_nlm_nih_gov(url):
     # abstract
     try:
         abstract = ""
-        elems = soup.find_all("div", {"class": "tsec sec"})[0]
-        paragraphs = elems.find_all("p")
-        for paragraph in paragraphs:
-            abstract = abstract + " " + paragraph.get_text().strip()
+        elems = soup.find(lambda tag: tag.name=="h2" and ("Abstract" in tag.text or "ABSTRACT" in tag.text or "Summary" in tag.text or "SUMMARY" in tag.text)).find_next_sibling("div").find_all("p")
+        for elem in elems:
+            abstract = abstract + " " + elem.get_text().strip()
         abstract = abstract.strip()
     except:
         try:
             abstract = ""
-            elems = soup.find(lambda tag:tag.name=="h2" and ("Abstract" in tag.text or "ABSTRACT" in tag.text or "Summary" in tag.text or "SUMMARY" in tag.text))
-            elems = elems.findNextSiblings('p')
+            elems = soup.find(lambda tag: tag.name=="h2" and ("Abstract" in tag.text or "ABSTRACT" in tag.text or "Summary" in tag.text or "SUMMARY" in tag.text)).find_next_siblings("p")
             for elem in elems:
                 abstract = abstract + " " + elem.get_text().strip()
             abstract = abstract.strip()
         except:
             abstract = np.nan
-    #     try:
-    #         elems = soup.find(lambda tag:tag.name=="h2" and ("Abstract" in tag.text or "Summary" in tag.text or "SUMMARY" in tag.text))
-    #         elems = elems.findNextSiblings('p')
-    #     except:
-    #         try:
-    #             elems = soup.find("div", {"id": "abstract-1"})
-    #         except:
-    #             try:
-    #                 elems = soup.find("div", {"id": "ABS1"})
-    #             except:
-    #                 try:
-    #                     elems = soup.find("div", {"id": "Abs1"})
-    #                 except:
-    #                     try:
-    #                         elems = soup.find("div", {"class": "tsec sec"})
-    #                     except:
-    #                         elems = soup.find("div", {"class": "sec"})
-    #         elems = elems.find_all("p")
-    #     for elem in elems:
-    #         abstract = abstract + " " + elem.get_text().strip()
-    #     abstract = abstract.strip()
-    # except:
-    #     abstract = np.nan
-    # print(abstract)
+    # print(abstract) 
 
     # keywords
     try:
-        # elems = soup.find_all("div", {"id": "abstract-1"})
-        # if elems == []:
-        #     elems = soup.find_all("div", {"id": "ABS1"})
-        # if elems == []:
-        #     elems = soup.find_all("div", {"id": "Abs1"})
-        # if elems == []:
-        #     raise Exception("No keywords found in " + url + "!")
         elems = soup.find(lambda tag:tag.name=="strong" and "Keywords" in tag.text)
         keywords = elems.findNext('span').get_text().strip()
         keywords = keywords.strip()
     except:
         keywords = np.nan
     # print(keywords)
-
-    # introduction
-    # try:
-    #     intro = ""
-    #     paragraphs = soup.find("div", {"class": "tsec sec"}).find_all("p")
-    #     for paragraph in paragraphs:
-    #         intro = intro + " " + paragraph.get_text().strip()
-    #     intro = intro.strip()
-    # except:
-    #     intro = np.nan
-    # if intro != intro:
-    #     try:
-    #         intro = ""
-    #         paragraphs = soup.find_all("div", {"id": "S1"})[0].find_all("p")
-    #         for paragraph in paragraphs:
-    #             intro = intro + " "+ paragraph.get_text().strip()
-    #         intro = intro.strip()
-    #     except:
-    #         intro = np.nan
-    # print(intro)
-    intro = np.nan
 
     # pdf_link
     try:
@@ -512,18 +459,17 @@ def func_ncbi_nlm_nih_gov(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
 
     return info
 # --------------------start of test code--------------------
-# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
+# # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2613515/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8328208/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8541979/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4855639/"
-# # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3140205/"
+# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3140205/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4362213/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC48909/"
 # info = func_ncbi_nlm_nih_gov(url)
@@ -533,12 +479,10 @@ def func_ncbi_nlm_nih_gov(url):
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
-# elsevier.com
 def func_elsevier_com(url):
     # initialize
     info = {
@@ -548,7 +492,6 @@ def func_elsevier_com(url):
         "title": np.nan,
         "abstract": np.nan,
         "keywords": np.nan,
-        "introduction": np.nan,
         "pdf_link": np.nan
     }
 
@@ -578,9 +521,8 @@ def func_elsevier_com(url):
         doi = np.nan
     if doi == doi:
         doi = doi.lower()
+
     pmid = np.nan
-    if pmid == pmid:
-        pmid = str(pmid).strip()
     pmcid = np.nan
 
     # title
@@ -594,16 +536,6 @@ def func_elsevier_com(url):
     try:
         abstract = ""
         elems = driver.find_element(By.XPATH, "//div[@class='abstract author']/div[1]").find_elements(By.TAG_NAME, "p")
-        # try:
-        #     elems = driver.find_element(By.XPATH, "//h2[text()='Abstract']").find_element(By.XPATH, "following-sibling::div").find_elements(By.TAG_NAME, "p")
-        # except:
-        #     try:
-        #         elems = driver.find_element(By.XPATH, "//h2[text()='Publisher Summary']").find_element(By.XPATH, "following-sibling::div").find_elements(By.TAG_NAME, "p")
-        #     except:
-        #         try:
-        #             elems = driver.find_element(By.XPATH, "//h2[text()='Summary']").find_element(By.XPATH, "following-sibling::div").find_elements(By.TAG_NAME, "p")
-        #         except:
-        #             elems = driver.find_element(By.XPATH, "//h2[text()='SUMMARY']").find_element(By.XPATH, "following-sibling::div").find_elements(By.TAG_NAME, "p")
         for elem in elems:
             abstract = abstract + elem.text + " "
         abstract = abstract.strip()
@@ -619,22 +551,6 @@ def func_elsevier_com(url):
         keywords = keywords.strip()
     except:
         keywords = np.nan
-    
-    # # introduction
-    # try:
-    #     intro = ""
-    #     elements = driver.find_elements(By.TAG_NAME, "h2")
-    #     for element in elements:
-    #         if "Introduction" in element.text:
-    #             ele_paren = element.find_element(By.XPATH, "..")
-    #             intros = ele_paren.find_elements(By.TAG_NAME, "p")
-    #             for intro_ele in intros:
-    #                 intro = intro + intro_ele.text + " "
-    #             break
-    #     intro = intro.strip()
-    # except:
-        intro = np.nan
-    intro = np.nan
 
     # pdf_link
     try:
@@ -652,7 +568,6 @@ def func_elsevier_com(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
 
@@ -679,11 +594,11 @@ def func_elsevier_com(url):
 # # url = "https://www.sciencedirect.com/science/article/abs/pii/S1042368018302602?via%3Dihub"
 # # url = "https://www.sciencedirect.com/science/article/pii/0006899367900042?via%3Dihub"
 # # url = "https://www.sciencedirect.com/science/article/pii/0165017380900028?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/B9780124077942000092?via%3Dihub"
+# url = "https://www.sciencedirect.com/science/article/pii/B9780124077942000092?via%3Dihub"
 # # url = "https://www.sciencedirect.com/science/article/pii/0006899368900450?via%3Dihub"
 # # url = "https://www.sciencedirect.com/science/article/pii/S0959438805800431?via%3Dihub"
 # # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
-# url = "https://www.sciencedirect.com/science/article/pii/0006899377907806?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/0006899377907806?via%3Dihub"
 # info = func_elsevier_com(url)
 # print(info["doi"])
 # print(info["pmid"])
@@ -691,7 +606,6 @@ def func_elsevier_com(url):
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
@@ -706,7 +620,6 @@ def func_wiley_com(url):
         "title": np.nan,
         "abstract": np.nan,
         "keywords": np.nan,
-        "introduction": np.nan,
         "pdf_link": np.nan
     }
 
@@ -728,7 +641,7 @@ def func_wiley_com(url):
             time.sleep(5*60)
             error_label = 0
     
-    # doi, pmid, pmcid
+    # doi
     try:
         doi = driver.find_element(By.XPATH, "//a[@class='epub-doi']").text.split("doi.org/")[1]
         doi = doi.strip()
@@ -736,9 +649,9 @@ def func_wiley_com(url):
         doi = np.nan
     if doi == doi:
         doi = doi.lower()
+
+    # pmid, pmcid
     pmid = np.nan
-    if pmid == pmid:
-        pmid = str(pmid).strip()
     pmcid = np.nan
 
     # title
@@ -773,17 +686,6 @@ def func_wiley_com(url):
     
     # keywords
     keywords = np.nan
-    
-    # introduction
-    try:
-        intro = ""
-        elements = driver.find_element(By.XPATH, "//div[contains(@class, 'article__body')]").find_element(By.XPATH, "//section[@class='article-section article-section__full']/section[1]").find_elements(By.TAG_NAME, "p")
-        for element in elements:
-            intro = intro + element.text + " "
-        intro = intro.strip()
-    except:
-        intro = np.nan
-    # intro = np.nan
 
     # pdf_link
     try:
@@ -801,7 +703,6 @@ def func_wiley_com(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
 
@@ -819,9 +720,9 @@ def func_wiley_com(url):
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.901990104"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19981019)400:2%3C271::AID-CNE8%3E3.0.CO;2-6"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.902360304"
-# # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.24389"
+# url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.24389"
 
-# url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19960805)371:4%3C513::AID-CNE2%3E3.0.CO;2-7"
+# # url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19960805)371:4%3C513::AID-CNE2%3E3.0.CO;2-7"
 # # url = "https://nyaspubs.onlinelibrary.wiley.com/doi/full/10.1196/annals.1300.030"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.23436"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/9780470513545.ch4"
@@ -833,7 +734,6 @@ def func_wiley_com(url):
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
@@ -848,7 +748,6 @@ def func_springer_com(url):
         "title": np.nan,
         "abstract": np.nan,
         "keywords": np.nan,
-        "introduction": np.nan,
         "pdf_link": np.nan
     }
 
@@ -870,7 +769,7 @@ def func_springer_com(url):
             time.sleep(5*60)
             error_label = 0
     
-    # doi, pmid, pmcid
+    # doi
     try:
         doi = driver.find_element(By.XPATH, "//abbr[text()='DOI']").find_element(By.XPATH, 'following-sibling::span').find_element(By.XPATH, 'following-sibling::span').text.split("doi.org/")[1]
         doi = doi.strip()
@@ -878,6 +777,7 @@ def func_springer_com(url):
         doi = np.nan
     if doi == doi:
         doi = doi.lower()
+    # pmid, pmcid
     pmid = np.nan
     pmcid = np.nan
 
@@ -910,22 +810,6 @@ def func_springer_com(url):
         keywords = keywords.strip()
     except:
         keywords = np.nan
-    
-    # # introduction
-    # try:
-    #     intro = ""
-    #     elements = driver.find_elements(By.TAG_NAME, "h2")
-    #     for element in elements:
-    #         if "Introduction" in element.text:
-    #             ele_paren = element.find_element(By.XPATH, "..")
-    #             intros = ele_paren.find_elements(By.TAG_NAME, "p")
-    #             for intro_ele in intros:
-    #                 intro = intro + intro_ele.text + " "
-    #             break
-    #     intro = intro.strip()
-    # except:
-    #     intro = np.nan
-    intro = np.nan
 
     # pdf_link
     try:
@@ -943,7 +827,6 @@ def func_springer_com(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
 
@@ -952,8 +835,8 @@ def func_springer_com(url):
 # # url = "https://link.springer.com/article/10.1007/PL00005713"
 # # url = "https://link.springer.com/article/10.1007/BF00231734"
 # # url = "https://link.springer.com/article/10.1007/BF00231444"
-# # url = "https://link.springer.com/article/10.1007/BF00237252"
 # url = "https://link.springer.com/article/10.1007/BF00237252"
+# # url = "https://link.springer.com/article/10.1007/BF00237252"
 # # url = "https://link.springer.com/chapter/10.1007/978-1-4419-0754-7_2"
 # info = func_springer_com(url)
 # print(info["doi"])
@@ -962,7 +845,6 @@ def func_springer_com(url):
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
@@ -977,7 +859,6 @@ def func_physiology_org(url):
         "title": np.nan,
         "abstract": np.nan,
         "keywords": np.nan,
-        "introduction": np.nan,
         "pdf_link": np.nan
     }
 
@@ -999,7 +880,7 @@ def func_physiology_org(url):
             time.sleep(5*60)
             error_label = 0
     
-    # doi, pmid, pmcid
+    # doi
     try:
         doi = driver.find_element(By.XPATH, "//a[contains(@class, 'epub-section__doi__text')]").text.split("doi.org/")[1]
         doi = doi.strip()
@@ -1007,6 +888,8 @@ def func_physiology_org(url):
         doi = np.nan
     if doi == doi:
         doi = doi.lower()
+    
+    # pmid, pmcid
     pmid = np.nan
     pmcid = np.nan
 
@@ -1029,22 +912,6 @@ def func_physiology_org(url):
     
     # keywords
     keywords = np.nan
-    
-    # # introduction
-    # try:
-    #     intro = ""
-    #     elements = driver.find_elements(By.TAG_NAME, "h2")
-    #     for element in elements:
-    #         if "Introduction" in element.text:
-    #             ele_paren = element.find_element(By.XPATH, "..")
-    #             intros = ele_paren.find_elements(By.TAG_NAME, "p")
-    #             for intro_ele in intros:
-    #                 intro = intro + intro_ele.text + " "
-    #             break
-    #     intro = intro.strip()
-    # except:
-    #     intro = np.nan
-    intro = np.nan
 
     # pdf_link
     try:
@@ -1062,14 +929,13 @@ def func_physiology_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
 
     return info
 # --------------------start of test code--------------------
-# # url = "https://journals.physiology.org/doi/abs/10.1152/jn.1963.26.5.775"
-# url = "https://journals.physiology.org/doi/10.1152/jn.1994.72.3.1270"
+# url = "https://journals.physiology.org/doi/abs/10.1152/jn.1963.26.5.775"
+# # url = "https://journals.physiology.org/doi/10.1152/jn.1994.72.3.1270"
 # # url = "https://journals.physiology.org/doi/10.1152/jn.1981.46.5.901"
 # info = func_physiology_org(url)
 # print(info["doi"])
@@ -1078,7 +944,6 @@ def func_physiology_org(url):
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
