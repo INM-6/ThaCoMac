@@ -5,7 +5,7 @@ import os
 # annoucing all file paths
 project_folder = Path.cwd()
 litera_pdf_folder = "/home/hou/myProjects/litera_pdfs"
-letera_text_folder = "/home/hou/myProjects/litera_texts"
+litera_text_folder = "/home/hou/myProjects/litera_texts"
 datasets_folder = os.path.join(project_folder, "datasets")
 
 
@@ -34,6 +34,7 @@ poten_litera_combined = os.path.join(datasets_folder, "potential_related_literat
 poten_litera_filled = os.path.join(datasets_folder, "potential_related_literature_filled.csv")
 poten_litera_ids_filled = os.path.join(datasets_folder, "potential_related_literature_ids_filled.csv")
 poten_litra_filtered = os.path.join(datasets_folder, "potential_related_literature_filtered.csv")
+poten_litera_ids_ftl_filled = os.path.join(datasets_folder, "potential_related_literature_ids_ftl_filled.csv")
 poten_litera_litera_db = os.path.join(datasets_folder, "potential_related_literature_databse.csv")
 poten_litera_litera_db_ranked = os.path.join(datasets_folder, "potential_related_literature_database_ranked.csv")
 
