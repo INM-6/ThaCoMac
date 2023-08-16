@@ -160,12 +160,14 @@ def get_final_redirected_url(url):
                 response = requests.get(url, headers = plib.headers)    
     except:
         final_url = np.nan
-        raise Exception("Error when getting final redirected url.")
+        status_code = response.status_code
+        print("warning:", response.status_code, " when getting final redirected url: from ", url)
+        # raise Exception("Error when getting final redirected url.")
     return final_url, status_code
 # --------------------start of test code--------------------
-# # url = "https://doi.org/10.1016/j.neuron.2020.01.005"
+# url = "https://doi.org/10.1016/j.neuron.2020.01.005"
 # # url = "https://linkinghub.elsevier.com/retrieve/pii/S0896627320300052"
-# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9751134/"
+# # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9751134/"
 # final_url, statua_code= get_final_redirected_url(url)
 # # print(histo)
 # print(final_url)
