@@ -142,12 +142,17 @@ def get_final_redirected_url(url):
         while(True):
             if response.status_code == 404: # not found
                 final_url = np.nan
+                status_code = response.status_code
+                print("warning: 404 not found when getting final redirected url: from ", url)
                 break
-            elif response.status_code == 200 or 301 or 302 or 307 or 308 or 403:
+            elif response.status_code == 200 or 301 or 302 or 307 or 308:
                 final_url = response.url
+                status_code = response.status_code
                 break
-            # elif response.status_code == 403:
-            #     final_url = url.strip()
+            elif response.status_code == 403:
+                final_url = response.url
+                status_code = response.status_code
+                print("warning: 403 forbidden when getting final redirected url: from ", url)
             else:    
                 print(response.status_code, "Retrying to get final redirected url...")
                 # sleep for 5 minutes
@@ -155,13 +160,16 @@ def get_final_redirected_url(url):
                 response = requests.get(url, headers = plib.headers)    
     except:
         final_url = np.nan
-    return final_url
+        raise Exception("Error when getting final redirected url.")
+    return final_url, status_code
 # --------------------start of test code--------------------
 # # url = "https://doi.org/10.1016/j.neuron.2020.01.005"
-# url = "https://linkinghub.elsevier.com/retrieve/pii/S0896627320300052"
-# final_url= get_final_redirected_url(url)
+# # url = "https://linkinghub.elsevier.com/retrieve/pii/S0896627320300052"
+# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9751134/"
+# final_url, statua_code= get_final_redirected_url(url)
 # # print(histo)
 # print(final_url)
+# print(statua_code)
 # ---------------------end of test code---------------------
 
 
