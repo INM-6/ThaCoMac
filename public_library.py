@@ -153,6 +153,7 @@ def get_final_redirected_url(url):
                 final_url = response.url
                 status_code = response.status_code
                 print("warning: 403 forbidden when getting final redirected url: from ", url)
+                break
             else:    
                 print(response.status_code, "Retrying to get final redirected url...")
                 # sleep for 5 minutes
