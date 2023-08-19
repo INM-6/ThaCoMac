@@ -1,3 +1,14 @@
+import os
+import time
+import numpy as np
+import parameters as params
+import public_library as plib
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 
 def extract_info_from_webpage(url, source):
@@ -19,7 +30,7 @@ def extract_info_from_webpage(url, source):
         print("Given source is not the same as the source of the given url.")
         return info
     
-    for website in plib.websites:
+    for website in params.websites:
         if website in source:
             # Get the function name by replacing "." with "_" and use globals() to call it
             func_name = "func_" + website.replace(".", "_")
