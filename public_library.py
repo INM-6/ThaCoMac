@@ -1,9 +1,8 @@
-# self-written public library
-
-# import internal .py modules
+# import internal modules
 import file_path_management as fpath
 import public_library as plib
 import extract_info_from_webpage as extra_info
+import parameters as params
 
 # import packages
 from bs4 import BeautifulSoup
