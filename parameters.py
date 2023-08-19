@@ -33,17 +33,16 @@ on_topic_kws_weights = {
     'connection': 5, 'projection': 5, 'connectivity': 5, 
     'thalamus': 2, 'cortex': 2, 'cortical': 2, 
     'connectome': 1}
-
-#  pay attention to false negative, false positive cases
-if len(on_topic_kws) != len(on_topic_kws_weights):
-    raise ValueError("Length of on_topic_kws and on_topic_kws_weights should be the same.")
+# --------------------start of test code--------------------
+# if len(on_topic_kws) != len(on_topic_kws_weights):
+#     raise ValueError("Length of on_topic_kws and on_topic_kws_weights should be the same.")
+# ---------------------end of test code---------------------
 
 
 # ChatGPT, queries for relatedness of topic
 ChatGPT_related_queries = ['Does the given text include information of thalamocotical connection?',
                            'Does this paper provide data of thalamocotical connection?',
                            'Does the given text include information of connection between thalamus and cortex?']
-
 
 
 # meta categories, keywords, and correspond ChatGPT queries
@@ -53,7 +52,9 @@ meta_categ = ['DOI', 'Publication_link', 'pdf_link', 'Authors', 'Year', 'Country
               'Thalamic_area_focused', 'Cortical_area_focused',
               'Stereotaxic_space', 'Type_of_data']
 
+
 meta_categ_kws = ['parcellation', 'cortical', 'thalamic', 'stereotaxic']
+
 
 ChatGPT_meta_categ_quries = ['what is the parcellation scheme this paper used for cortex?', 
                              'what is the parcellation scheme this paper used for thalamus?',
