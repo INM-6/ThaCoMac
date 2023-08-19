@@ -1,4 +1,4 @@
-# extract information from websites
+# websites
 websites = [
     'ncbi.nlm.nih.gov', 'elsevier.com', 'wiley.com', 'springer.com', 'physiology.org'
 ]
