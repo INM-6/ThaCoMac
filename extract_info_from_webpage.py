@@ -1,9 +1,12 @@
+# import internal .py modules
+import file_path_management as fpath
+import public_library as plib
+import extract_info_from_webpage as extra_info
+
+# import packages
 import os
 import time
 import numpy as np
-import parameters as params
-import public_library as plib
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options

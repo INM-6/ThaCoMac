@@ -1,12 +1,13 @@
 # self-written public library
 
 # import internal .py modules
-from bs4 import BeautifulSoup
-import numpy as np
 import file_path_management as fpath
 import public_library as plib
+import extract_info_from_webpage as extra_info
 
 # import packages
+from bs4 import BeautifulSoup
+import numpy as np
 import csv
 import pandas as pd
 import PyPDF2
