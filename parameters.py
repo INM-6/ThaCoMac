@@ -1,3 +1,12 @@
+# search keywords lexicon
+# search in all fields
+# "" means exact match, otherwise the search engine will treat every word separately
+
+# search_kws_lexicon = 
+# (macaque OR macaca OR "rhesus monkey") AND 
+# (thalamus OR cortex OR thalamic OR cortical OR thalamocortical OR "thalamo-cortical" OR corticothalamic OR "cortico-thalamic")
+
+
 # websites
 websites = [
     'ncbi.nlm.nih.gov', 'elsevier.com', 'wiley.com', 'springer.com', 'physiology.org'
@@ -23,6 +32,7 @@ on_topic_kws = [
     "staining", "dye",
     'thalamus', 'cortex', 'thalamic', 'cortical',  
     'connection', 'projection', 'connectivity', 'connectome', "anterograde", "retrograde", "injection", "injected", "injecting", "inject"]
+# pathway
 
 on_topic_kws_weights = {
     'thalamocortical': 20, 'thalamo-cortical': 20, 'thalamic': 20, 'thalamus': 20,
