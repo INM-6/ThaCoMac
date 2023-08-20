@@ -4,7 +4,7 @@
 
 # search_kws_lexicon = 
 # (macaque OR macaca OR "rhesus monkey") AND 
-# (thalamus OR cortex OR thalamic OR cortical OR thalamocortical OR "thalamo-cortical" OR corticothalamic OR "cortico-thalamic")
+# (thalamus OR thalamic OR thalamocortical OR "thalamo-cortical" OR corticothalamic OR "cortico-thalamic")
 
 
 # websites
