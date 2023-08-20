@@ -58,6 +58,16 @@ def extract_info_from_webpage(url, source):
 # ---------------------end of test code---------------------
 
 
+# # {'elibrary.ru', 'neurology.org', 'bmj.com', 'wiley.com', 'oup.com', 'cir.nii.ac.jp', 'springer.com', 'mdpi.com', 'mpg.de', 
+# #  'biomedcentral.com', 'sagepub.com', 'cambridge.org', 'wfu.edu', nan, 'cell.com', 'europepmc.org', 'scholarpedia.org', 
+# #  'aspetjournals.org', 'psych.ac.cn', 'biorxiv.org', 'ieee.org', 'jstor.org', 'cabdirect.org', 'royalsocietypublishing.org', 
+# #  'bu.edu', 'lww.com', 'eneuro.org', 'jst.go.jp', 'plos.org', 'ncbi.nlm.nih.gov', 'liebertpub.com', 'psychiatryonline.org', 
+# #  'sciencedirect.com', 'psycnet.apa.org', 'taylorfrancis.com', 'degruyter.com', 'nature.com', 'jamanetwork.com', 
+# #  'karger.com', 'www.tandfonline.com', 'physiology.org', 'www.pnas.org', 'jneurosci.org', 'thejns.org', 
+# #  'pascal-francis.inist.fr', 'agro.icm.edu.pl', 'elifesciences.org', 'frontiersin.org', 'mcgill.ca', 
+# #  'science.org', 'books.google.de'}
+
+
 # ncbi.nlm.nih.gov
 def func_ncbi_nlm_nih_gov(url):
     # initialize
@@ -2023,7 +2033,7 @@ def asahq_org(url):
 
 
 # neurology.org
-def neurology_org(url):
+def fun_neurology_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -2045,12 +2055,13 @@ def neurology_org(url):
         doi = driver.find_element(By.XPATH, "//span[contains(@class, 'highwire-cite-metadata-doi highwire-cite-metadata')]").text.split("doi.org/")[1]
     except:
         doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
     pmid = np.nan
     pmcid = np.nan
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -2062,16 +2073,15 @@ def neurology_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
 
     return info
 # --------------------start of test code--------------------
-url = "https://n.neurology.org/content/64/6/1014.short"
+# url = "https://n.neurology.org/content/64/6/1014.short"
 # # url = "https://n.neurology.org/content/64/6/1014"
-# info = neurology_org(url)
+# info = fun_neurology_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
