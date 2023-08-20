@@ -242,11 +242,20 @@ def doi2pmid(doi):
     url = "https://pubmed.ncbi.nlm.nih.gov/?term=" + doi
     soup = plib.request_webpage(url)
     try:
-        pmid = soup.find_all("span", {"class": "identifier pubmed"})[0].find_all("strong", {"class": "current-id"})[0].get_text()
+        pmid_cadidate = soup.find_all("span", {"class": "identifier pubmed"})[0].find_all("strong", {"class": "current-id"})[0].get_text()
     except:
+        pmid_cadidate = np.nan
+    if pmid_cadidate == pmid_cadidate:
+        pmid_cadidate = str(pmid_cadidate).strip()
+        doi_validate, a = plib.pmid2doi_pmcid(pmid_cadidate)
+        if doi_validate.strip().lower() == doi.strip().lower():
+            pmid = str(pmid_cadidate).strip()
+        else:
+            print("doi and doi_cadidate are not consistent!")
+            pmid = np.nan
+    else:
         pmid = np.nan
-    if pmid == pmid:
-        pmid = pmid = str(pmid).strip()
+
     return pmid
 # --------------------start of test code--------------------
 # # pmid = "35851953"
