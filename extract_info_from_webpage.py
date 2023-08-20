@@ -15,9 +15,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-def extract_info_from_webpage(url, source):
+def extract_info_from_webpage(url, websites):
     if url != url:
         raise Exception("The given url is np.nan")
+    
+    source = url.split("://")[1].split("/")[0]
     
     # initialize
     info = {
@@ -29,17 +31,14 @@ def extract_info_from_webpage(url, source):
         "keywords": np.nan,
         "pdf_link": np.nan
     }
-
-    if source != url.split("://")[1].split("/")[0]:
-        print("Given source is not the same as the source of the given url.")
-        return info
     
-    for website in params.websites:
+    for website in websites:
         if website in source:
             # Get the function name by replacing "." with "_" and use globals() to call it
             func_name = "func_" + website.replace(".", "_")
             func = globals().get(func_name)
             break
+        print("The given url is not from a supported website: ", url)
     if func:
         info = func(url)
     else:
@@ -56,16 +55,6 @@ def extract_info_from_webpage(url, source):
 # print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
-
-
-# # {'elibrary.ru', 'neurology.org', 'bmj.com', 'wiley.com', 'oup.com', 'cir.nii.ac.jp', 'springer.com', 'mdpi.com', 'mpg.de', 
-# #  'biomedcentral.com', 'sagepub.com', 'cambridge.org', 'wfu.edu', nan, 'cell.com', 'europepmc.org', 'scholarpedia.org', 
-# #  'aspetjournals.org', 'psych.ac.cn', 'biorxiv.org', 'ieee.org', 'jstor.org', 'cabdirect.org', 'royalsocietypublishing.org', 
-# #  'bu.edu', 'lww.com', 'eneuro.org', 'jst.go.jp', 'plos.org', 'ncbi.nlm.nih.gov', 'liebertpub.com', 'psychiatryonline.org', 
-# #  'sciencedirect.com', 'psycnet.apa.org', 'taylorfrancis.com', 'degruyter.com', 'nature.com', 'jamanetwork.com', 
-# #  'karger.com', 'www.tandfonline.com', 'physiology.org', 'www.pnas.org', 'jneurosci.org', 'thejns.org', 
-# #  'pascal-francis.inist.fr', 'agro.icm.edu.pl', 'elifesciences.org', 'frontiersin.org', 'mcgill.ca', 
-# #  'science.org', 'books.google.de'}
 
 
 # ncbi.nlm.nih.gov
@@ -303,6 +292,132 @@ def func_elsevier_com(url):
 # # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
 # url = "https://www.sciencedirect.com/science/article/pii/0006899377907806?via%3Dihub"
 # info = func_elsevier_com(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# sciencedirect.com
+def func_sciencedirect_com(url):
+    # initialize
+    info = {
+        "doi": np.nan,
+        "pmid": np.nan,
+        "pmcid": np.nan,
+        "title": np.nan,
+        "abstract": np.nan,
+        "keywords": np.nan,
+        "pdf_link": np.nan
+    }
+
+    # set up the webdriver
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    driver = webdriver.Chrome()
+
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver.get(url)
+            time.sleep(10)
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    # doi
+    try:
+        doi = driver.find_element(By.XPATH, "//a[@class='anchor doi anchor-default']/span").text.split("doi.org/")[1]
+        doi = doi.strip()
+    except:
+        doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
+
+    # pmid, pmcid
+    pmid = np.nan
+    pmcid = np.nan
+
+    # title
+    try:
+        title = driver.find_element(By.TAG_NAME, 'h1').find_element(By.XPATH, "//span[@class='title-text']").text
+        title = title.strip()
+    except:
+        title = np.nan
+
+    # abstract
+    try:
+        abstract = ""
+        elems = driver.find_element(By.XPATH, "//div[@class='abstract author']").find_elements(By.TAG_NAME, "p")
+        for elem in elems:
+            abstract = abstract + elem.text + " "
+        abstract = abstract.strip()
+    except:
+        abstract = np.nan
+    
+    # keywords
+    try:
+        keywords = ""
+        elements = driver.find_element(By.XPATH, "//div[@class='keywords-section']").find_elements(By.XPATH, "//div[@class='keyword']")
+        for element in elements:
+            keywords = keywords + element.find_element(By.TAG_NAME, "span").text + ", "
+        keywords = keywords.strip()
+    except:
+        keywords = np.nan
+
+    # pdf_link
+    try:
+        pdf_link = driver.find_element(By.XPATH, "//li[@class='ViewPDF']/a").get_attribute('href')
+        pdf_link = pdf_link.strip()
+    except:
+        pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "pdf_link": pdf_link
+    }
+
+    return info
+# --------------------start of test code--------------------
+# # url = "https://linkinghub.elsevier.com/retrieve/pii/0006899395013385"
+# # url = "https://linkinghub.elsevier.com/retrieve/pii/S0891061898000222"
+# # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/S0165027017303631?via%3Dihub#abs0010"
+# # url = "https://linkinghub.elsevier.com/retrieve/pii/S0165027017303631"
+# # url = "https://www.sciencedirect.com/science/article/pii/S0079612308626783?via%3Dihub"
+# # url = "https://linkinghub.elsevier.com/retrieve/pii/0006899376902067"
+# # url = "https://www.sciencedirect.com/science/article/pii/0006899378911034?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/0006899377904747?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/0165017379900080?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/000689937990132X?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/S2211124723008550?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/S0960982215014190?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/0006899375905296?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/S0166432805800166?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/000689938690925X?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/abs/pii/S1042368018302602?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/0006899367900042?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/0165017380900028?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/B9780124077942000092?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/0006899368900450?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
+# url = "https://www.sciencedirect.com/science/article/pii/0006899377907806?via%3Dihub"
+# info = func_sciencedirect_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -713,22 +828,6 @@ def func_oup_com(url):
         keywords = keywords.strip()
     except:
         keywords = np.nan
-    
-    # # introduction
-    # try:
-    #     intro = ""
-    #     elements = driver.find_elements(By.TAG_NAME, "h2")
-    #     for element in elements:
-    #         if "Introduction" in element.text:
-    #             ele_paren = element.find_element(By.XPATH, "..")
-    #             intros = ele_paren.find_elements(By.TAG_NAME, "p")
-    #             for intro_ele in intros:
-    #                 intro = intro + intro_ele.text + " "
-    #             break
-    #     intro = intro.strip()
-    # except:
-    #     intro = np.nan
-    intro = np.nan
 
     # pdf_link
     try:
@@ -746,14 +845,13 @@ def func_oup_com(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
 
     return info
 # --------------------start of test code--------------------
-# # url = "https://academic.oup.com/biolreprod/article/24/1/44/2766870"
-# url = "https://academic.oup.com/cercor/article/22/6/1294/305674"
+# url = "https://academic.oup.com/biolreprod/article/24/1/44/2766870"
+# # url = "https://academic.oup.com/cercor/article/22/6/1294/305674"
 # # url = "https://academic.oup.com/brain/article/141/7/2142/5033684"
 # info = func_oup_com(url)
 # print(info["doi"])
@@ -762,7 +860,6 @@ def func_oup_com(url):
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
@@ -851,7 +948,7 @@ def func_cambridge_org(url):
     #     intro = intro.strip()
     # except:
     #     intro = np.nan
-    intro = np.nan
+    # intro = np.nan
 
     # pdf_link
     # try:
@@ -870,7 +967,6 @@ def func_cambridge_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
 
@@ -887,7 +983,6 @@ def func_cambridge_org(url):
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
@@ -961,22 +1056,6 @@ def func_karger_com(url):
         keywords = keywords.strip()
     except:
         keywords = np.nan
-    
-    # # introduction
-    # try:
-    #     intro = ""
-    #     elements = driver.find_elements(By.TAG_NAME, "h2")
-    #     for element in elements:
-    #         if "Introduction" in element.text:
-    #             ele_paren = element.find_element(By.XPATH, "..")
-    #             intros = ele_paren.find_elements(By.TAG_NAME, "p")
-    #             for intro_ele in intros:
-    #                 intro = intro + intro_ele.text + " "
-    #             break
-    #     intro = intro.strip()
-    # except:
-    #     intro = np.nan
-    intro = np.nan
 
     # pdf_link
     try:
@@ -994,7 +1073,6 @@ def func_karger_com(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
 
@@ -1011,7 +1089,6 @@ def func_karger_com(url):
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
@@ -1104,7 +1181,6 @@ def func_lww_com(url):
     #     intro = intro.strip()
     # except:
     #     intro = np.nan
-    intro = np.nan
 
     # pdf_link
     # try:
@@ -1125,7 +1201,6 @@ def func_lww_com(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
 
@@ -1142,13 +1217,12 @@ def func_lww_com(url):
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
-# nature.com
-def nature_com(url):
+# bmj.com
+def func_bmj_com(url):
     # initialize
     info = {
         "doi": np.nan,
@@ -1157,7 +1231,6 @@ def nature_com(url):
         "title": np.nan,
         "abstract": np.nan,
         "keywords": np.nan,
-        "introduction": np.nan,
         "pdf_link": np.nan
     }
 
@@ -1172,10 +1245,7 @@ def nature_com(url):
     while(error_label == 0):
         try:
             driver.get(url)
-            time.sleep(5)
-            wait = WebDriverWait(driver, 30)
-            wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Accept All Cookies')]"))).click()
-            time.sleep(2)
+            time.sleep(10)
             error_label = 1
         except:
             print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
@@ -1184,10 +1254,93 @@ def nature_com(url):
     
     # doi
     try:
-        elems = driver.find_elements(By.XPATH, "//span[@class='c-bibliographic-information__value')]")
-        for elem in elems:
-            if "doi.org/" in elem.text:
-                doi = elem.text.split("doi.org/")[1]
+        doi = driver.find_element(By.XPATH, "//div[@class='panel-pane pane-custom pane-2']/div[1]/p[1]/a[1]").text.split("doi.org/")[1]
+        doi = doi.strip()
+    except:
+        doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
+
+    # pmid, pmcid
+    pmid = np.nan
+    pmcid = np.nan
+    title = np.nan
+    abstract = np.nan
+    keywords = np.nan
+    pdf_link = np.nan
+
+    # # pdf_link
+    # try:
+    #     pdf_link = driver.find_element(By.XPATH, "//li[@class='ViewPDF']/a").get_attribute('href')
+    #     pdf_link = pdf_link.strip()
+    # except:
+    #     pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "pdf_link": pdf_link
+    }
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://jnnp.bmj.com/content/37/7/765.short"
+# info = func_bmj_com(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# nature.com
+def func_nature_com(url):
+    # initialize
+    info = {
+        "doi": np.nan,
+        "pmid": np.nan,
+        "pmcid": np.nan,
+        "title": np.nan,
+        "abstract": np.nan,
+        "keywords": np.nan,
+        "pdf_link": np.nan
+    }
+
+    # set up the webdriver
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    driver = webdriver.Chrome()
+
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome()
+            driver.get(url)
+            time.sleep(5)
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    # doi
+    try:
+        spans = driver.find_element(By.XPATH, "//abbr[@title='Digital Object Identifier']").find_elements(By.XPATH,'following-sibling::span')
+        for span in spans:
+            if "doi.org" in span.text:
+                doi = span.text.split("doi.org/")[1]
+                break
     except:
         doi = np.nan
 
@@ -1196,20 +1349,22 @@ def nature_com(url):
     pmcid = np.nan
 
     # title
-    try:
-        title = driver.find_element(By.XPATH, "//h1[contains(@class, 'c-article-title')]").text
-    except:
-        title = np.nan
+    # try:
+    #     title = driver.find_element(By.XPATH, "//h1[contains(@class, 'c-article-title')]").text
+    # except:
+    #     title = np.nan
+    title = np.nan
     
     # abstract
-    try:
-        abstract = ""
-        elems = driver.find_element(By.XPATH, "//div[@class='ejp-article-text-abstract']").find_elements(By.TAG_NAME, 'p')
-        for elem in elems:
-            abstract = abstract + elem.text + " "
-        abstract = abstract.strip()
-    except:
-        abstract = np.nan
+    # try:
+    #     abstract = ""
+    #     elems = driver.find_element(By.XPATH, "//div[@class='ejp-article-text-abstract']").find_elements(By.TAG_NAME, 'p')
+    #     for elem in elems:
+    #         abstract = abstract + elem.text + " "
+    #     abstract = abstract.strip()
+    # except:
+    #     abstract = np.nan
+    abstract = np.nan
     
     # keywords
     # try:
@@ -1221,22 +1376,6 @@ def nature_com(url):
     # except:
     #     keywords = np.nan
     keywords = np.nan
-    
-    # # introduction
-    # try:
-    #     intro = ""
-    #     elements = driver.find_elements(By.TAG_NAME, "h2")
-    #     for element in elements:
-    #         if "Introduction" in element.text:
-    #             ele_paren = element.find_element(By.XPATH, "..")
-    #             intros = ele_paren.find_elements(By.TAG_NAME, "p")
-    #             for intro_ele in intros:
-    #                 intro = intro + intro_ele.text + " "
-    #             break
-    #     intro = intro.strip()
-    # except:
-    #     intro = np.nan
-    intro = np.nan
 
     # pdf_link
     # try:
@@ -1257,26 +1396,22 @@ def nature_com(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
 
     return info
 # --------------------start of test code--------------------
 # url = "https://www.nature.com/articles/387281a0"
-# # url = 
-# # url = 
-# # url = 
-# info = nature_com(url)
+# info = func_nature_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
+
 
 # jstor.org
 def func_jstor_org(url):
@@ -1350,15 +1485,14 @@ def mirasmart_com(url):
 # ---------------------end of test code---------------------
 
 
-# lib.wfu.edu
-def lib_wfu_edu(url):
+# wfu.edu
+def func_wfu_edu(url):
     doi = np.nan
     pmid = np.nan
     pmcid = np.nan
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     info = {
@@ -1368,33 +1502,30 @@ def lib_wfu_edu(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     return info
 # --------------------start of test code--------------------
 # url = "https://wakespace.lib.wfu.edu/handle/10339/37434"
-# info = lib_wfu_edu(url)
+# info = func_wfu_edu(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
 # agro.icm.edu.pl
-def agro_icm_edu_pl(url):
+def func_agro_icm_edu_pl(url):
     doi = "10.1002/cne.902820107"
     pmid = "2468699"
     pmcid = np.nan
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     info = {
@@ -1404,20 +1535,18 @@ def agro_icm_edu_pl(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     return info
 # --------------------start of test code--------------------
 # url = "https://agro.icm.edu.pl/agro/element/bwmeta1.element.agro-3eefdf76-4976-454b-b43f-a2312ad21b00"
-# info = agro_icm_edu_pl(url)
+# info = func_agro_icm_edu_pl(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
@@ -1480,7 +1609,7 @@ def jpn_ca(url):
 
 
 # bu.edu
-def bu_edu(url):
+def func_bu_edu(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -1504,7 +1633,6 @@ def bu_edu(url):
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -1516,7 +1644,6 @@ def bu_edu(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -1524,20 +1651,73 @@ def bu_edu(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://open.bu.edu/handle/2144/12127"
-# info = bu_edu(url)
+# info = func_bu_edu(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# psych.ac.cn
+def func_psych_ac_cn(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome()
+            driver.get(url)
+            time.sleep(5)
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    doi = np.nan
+    pmid = np.nan
+    pmcid = np.nan
+    title = np.nan
+    abstract = np.nan
+    keywords = np.nan
+    pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://journal.psych.ac.cn/adps/EN/abstract/abstract3663.shtml"
+# info = func_psych_ac_cn(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
 # psychiatryonline.org
-def psychiatryonline_org(url):
+def func_psychiatryonline_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -1564,7 +1744,6 @@ def psychiatryonline_org(url):
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -1576,7 +1755,6 @@ def psychiatryonline_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -1584,20 +1762,19 @@ def psychiatryonline_org(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://ajp.psychiatryonline.org/doi/full/10.1176/appi.ajp.161.5.896"
-# info = psychiatryonline_org(url)
+# info = func_psychiatryonline_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
 # royalsocietypublishing.org
-def royalsocietypublishing_org(url):
+def func_royalsocietypublishing_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -1618,9 +1795,6 @@ def royalsocietypublishing_org(url):
     try:
         # doi = np.nan
         doi = driver.find_element(By.XPATH, "//a[contains(@class, 'epub-section__doi__text')]").text.split("doi.org/")[1]
-        # for elem in elems:
-        #     if "doi.org/" in elem.text:
-        #         doi = elem.text.split("doi.org/")[1]
     except:
         doi = np.nan
     pmid = np.nan
@@ -1628,7 +1802,6 @@ def royalsocietypublishing_org(url):
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -1640,28 +1813,26 @@ def royalsocietypublishing_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
 
     return info
 # --------------------start of test code--------------------
-# url = "https://royalsocietypublishing.org/doi/abs/10.1098/rstb.2002.1171"
-# info = royalsocietypublishing_org(url)
-# print(info["doi"])
-# print(info["pmid"])
-# print(info["pmcid"])
-# print(info["title"])
-# print(info["abstract"])
-# print(info["keywords"])
-# print(info["introduction"])
-# print(info["pdf_link"])
+url = "https://royalsocietypublishing.org/doi/abs/10.1098/rstb.2002.1171"
+info = func_royalsocietypublishing_org(url)
+print(info["doi"])
+print(info["pmid"])
+print(info["pmcid"])
+print(info["title"])
+print(info["abstract"])
+print(info["keywords"])
+print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
 # tandfonline.com
-def tandfonline_com(url):
+def func_tandfonline_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -1692,7 +1863,6 @@ def tandfonline_com(url):
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -1704,7 +1874,6 @@ def tandfonline_com(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -1712,20 +1881,19 @@ def tandfonline_com(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://www.tandfonline.com/doi/abs/10.1080/01616412.1985.11739692"
-# info = tandfonline_com(url)
+# info = func_tandfonline_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
 # aspetjournals.org
-def aspetjournals_org(url):
+def func_aspetjournals_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -1747,12 +1915,13 @@ def aspetjournals_org(url):
         doi = driver.find_element(By.XPATH, "//span[contains(@class, 'highwire-cite-metadata-doi highwire-cite-metadata')]").text.split("doi.org/")[1]
     except:
         doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
     pmid = np.nan
     pmcid = np.nan
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -1764,7 +1933,6 @@ def aspetjournals_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -1772,20 +1940,19 @@ def aspetjournals_org(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://jpet.aspetjournals.org/content/321/1/116.short"
-# info = aspetjournals_org(url)
+# info = func_aspetjournals_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
 # liebertpub.com
-def liebertpub_com(url):
+def func_liebertpub_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -1806,9 +1973,6 @@ def liebertpub_com(url):
     try:
         # doi = np.nan
         doi = driver.find_element(By.XPATH, "//a[contains(@class, 'epub-section__doi__text')]").text.split("doi.org/")[1]
-        # for elem in elems:
-        #     if "doi.org/" in elem.text:
-        #         doi = elem.text.split("doi.org/")[1]
     except:
         doi = np.nan
     pmid = np.nan
@@ -1816,7 +1980,6 @@ def liebertpub_com(url):
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -1828,7 +1991,6 @@ def liebertpub_com(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -1836,14 +1998,13 @@ def liebertpub_com(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://www.liebertpub.com/doi/abs/10.1089/brain.2013.0143"
-# info = liebertpub_com(url)
+# info = func_liebertpub_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
@@ -1913,7 +2074,7 @@ def ekja_org(url):
 
 
 # sagepub.com
-def sagepub_com(url):
+def func_sagepub_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -1932,15 +2093,16 @@ def sagepub_com(url):
             error_label = 0
     
     try:
-        doi = driver.find_element(By.XPATH, "//div[contains(@class, 'doi')]").find_element(By.TAG_NAME, "a").text.split("doi.org/")[1]
+        doi = driver.find_element(By.XPATH, "//div[@class='doi']").find_element(By.TAG_NAME, "a").text.split("doi.org/")[1]
     except:
         doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
     pmid = np.nan
     pmcid = np.nan
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -1952,7 +2114,6 @@ def sagepub_com(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -1960,14 +2121,13 @@ def sagepub_com(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://journals.sagepub.com/doi/full/10.1177/2398212819871205"
-# info = sagepub_com(url)
+# info = func_sagepub_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
@@ -2094,7 +2254,7 @@ def fun_neurology_org(url):
 
 
 # elifesciences.org
-def elifesciences_org(url):
+def func_elifesciences_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -2121,7 +2281,6 @@ def elifesciences_org(url):
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -2133,7 +2292,6 @@ def elifesciences_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -2141,14 +2299,74 @@ def elifesciences_org(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://elifesciences.org/articles/37325"
-# info = elifesciences_org(url)
+# info = func_elifesciences_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# frontiersin.org
+def func_frontiersin_org(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Chrome()
+            driver.get(url)
+            time.sleep(5)
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        t = driver.find_element(By.XPATH, "//div[@class='header-bar-three']").find_element(By.TAG_NAME, "a").text
+        if "doi.org/" in t:
+            doi = t.split("doi.org/")[1]
+        else:
+            doi = np.nan
+    except:
+        doi = np.nan
+    pmid = np.nan
+    pmcid = np.nan
+    title = np.nan
+    abstract = np.nan
+    keywords = np.nan
+    pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://www.frontiersin.org/articles/10.3389/fnbeh.2014.00073/full"
+# info = func_frontiersin_org(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
@@ -2211,7 +2429,7 @@ def mpg_de(url):
 
 
 # degruyter.com
-def degruyter_com(url):
+def func_degruyter_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -2238,7 +2456,6 @@ def degruyter_com(url):
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -2250,7 +2467,6 @@ def degruyter_com(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -2258,14 +2474,13 @@ def degruyter_com(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://www.degruyter.com/document/doi/10.1515/REVNEURO.2007.18.6.417/html"
-# info = degruyter_com(url)
+# info = func_degruyter_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
@@ -2331,7 +2546,7 @@ def bmj_com(url):
 
 
 # psycnet.apa.org
-def psycnet_apa_org(url):
+def func_psycnet_apa_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -2362,7 +2577,6 @@ def psycnet_apa_org(url):
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -2374,7 +2588,6 @@ def psycnet_apa_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -2382,20 +2595,19 @@ def psycnet_apa_org(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://psycnet.apa.org/record/1972-06153-001"
-# info = psycnet_apa_org(url)
+# info = func_psycnet_apa_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
 # jamanetwork.com
-def jamanetwork_com(url):
+def func_jamanetwork_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -2426,7 +2638,6 @@ def jamanetwork_com(url):
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -2438,7 +2649,6 @@ def jamanetwork_com(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -2446,20 +2656,19 @@ def jamanetwork_com(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://jamanetwork.com/journals/archneurpsyc/article-abstract/648966"
-# info = jamanetwork_com(url)
+# info = func_jamanetwork_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
 # biomedcentral.com
-def biomedcentral_com(url):
+def func_biomedcentral_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -2478,22 +2687,20 @@ def biomedcentral_com(url):
             error_label = 0
     
     try:
-        eles = driver.find_element(By.XPATH, "//abbr[contains(@title, 'Digital Object Identifier')]").find_elements(By.XPATH, "following-sibling::span")
+        eles = driver.find_element(By.XPATH, "//abbr[@title='Digital Object Identifier']").find_elements(By.XPATH, "following-sibling::span")
         doi = np.nan
         for ele in eles:
             if "doi.org/" in ele.text:
                 doi = ele.text.split("doi.org/")[1]
     except:
         doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
     pmid = np.nan
     pmcid = np.nan
-    try:
-        title = driver.find_element(By.XPATH, "//h1[contains(@class, 'c-article-title')]").text
-    except:
-        title = np.nan
+    title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -2505,7 +2712,6 @@ def biomedcentral_com(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -2513,20 +2719,19 @@ def biomedcentral_com(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://bmcneurosci.biomedcentral.com/articles/10.1186/1471-2202-6-67#article-info"
-# info = biomedcentral_com(url)
+# info = func_biomedcentral_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
 # jstage.jst.go.jp
-def jstage_jst_go_jp(url):
+def func_jstage_jst_go_jp(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -2550,13 +2755,9 @@ def jstage_jst_go_jp(url):
         doi = np.nan
     pmid = np.nan
     pmcid = np.nan
-    try:
-        title = driver.find_element(By.XPATH, "//h1[contains(@class, 'c-article-title')]").text
-    except:
-        title = np.nan
+    title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -2568,7 +2769,6 @@ def jstage_jst_go_jp(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -2576,20 +2776,19 @@ def jstage_jst_go_jp(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://www.jstage.jst.go.jp/article/pjab1945/43/8/43_8_822/_article/-char/ja/"
-# info = jstage_jst_go_jp(url)
+# info = func_jstage_jst_go_jp(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
 # plos.org
-def plos_org(url):
+def func_plos_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -2613,13 +2812,9 @@ def plos_org(url):
         doi = np.nan
     pmid = np.nan
     pmcid = np.nan
-    try:
-        title = driver.find_element(By.XPATH, "//h1[contains(@class, 'c-article-title')]").text
-    except:
-        title = np.nan
+    title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -2631,7 +2826,6 @@ def plos_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -2639,20 +2833,19 @@ def plos_org(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0000848"
-# info = plos_org(url)
+# info = func_plos_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
 # ieee.org
-def ieee_org(url):
+def func_ieee_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -2676,13 +2869,9 @@ def ieee_org(url):
         doi = np.nan
     pmid = np.nan
     pmcid = np.nan
-    try:
-        title = driver.find_element(By.XPATH, "//h1[contains(@class, 'c-article-title')]").text
-    except:
-        title = np.nan
+    title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -2694,7 +2883,6 @@ def ieee_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -2702,20 +2890,19 @@ def ieee_org(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://ieeexplore.ieee.org/abstract/document/5333751"
-# info = ieee_org(url)
+# info = func_ieee_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
-# www.eneuro.org
-def www_eneuro_org(url):
+# eneuro.org
+def func_eneuro_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -2739,13 +2926,9 @@ def www_eneuro_org(url):
         doi = np.nan
     pmid = np.nan
     pmcid = np.nan
-    try:
-        title = driver.find_element(By.XPATH, "//h1[contains(@class, 'c-article-title')]").text
-    except:
-        title = np.nan
+    title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -2757,7 +2940,6 @@ def www_eneuro_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -2765,20 +2947,19 @@ def www_eneuro_org(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://www.eneuro.org/content/5/3/ENEURO.0060-18.2018.abstract"
-# info = www_eneuro_org(url)
+# info = func_eneuro_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
-# www.cell.com
-def www_cell_com(url):
+# cell.com
+def func_cell_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -2802,13 +2983,13 @@ def www_cell_com(url):
         doi = np.nan
     pmid = np.nan
     pmcid = np.nan
-    try:
-        title = driver.find_element(By.XPATH, "//h1[contains(@class, 'c-article-title')]").text
-    except:
-        title = np.nan
+    # try:
+    #     title = driver.find_element(By.XPATH, "//h1[contains(@class, 'c-article-title')]").text
+    # except:
+    #     title = np.nan
+    title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -2820,7 +3001,6 @@ def www_cell_com(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -2828,20 +3008,19 @@ def www_cell_com(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(18)30205-5"
-# info = www_cell_com(url)
+# info = func_cell_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
-# www.pnas.org
-def www_pnas_org(url):
+# func.pnas.org
+def func_pnas_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -2870,7 +3049,6 @@ def www_pnas_org(url):
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -2882,7 +3060,6 @@ def www_pnas_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -2890,20 +3067,19 @@ def www_pnas_org(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://www.pnas.org/doi/abs/10.1073/pnas.1008054107"
-# info = www_pnas_org(url)
+# info = func_pnas_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
-# www.mdpi.com
-def www_mdpi_com(url):
+# mdpi.com
+def func_mdpi_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -2923,16 +3099,17 @@ def www_mdpi_com(url):
             error_label = 0
     
     try:
-        doi = driver.find_element(By.XPATH, "//div[contains(@class, 'bib-identity')]").find_element(By.TAG_NAME, "a").text.split("doi.org/")[1]
+        doi = driver.find_element(By.XPATH, "//div[@class='bib-identity']/a").text.split("doi.org/")[1]
     except:
         doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
 
     pmid = np.nan
     pmcid = np.nan
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -2944,7 +3121,6 @@ def www_mdpi_com(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -2952,14 +3128,13 @@ def www_mdpi_com(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://www.mdpi.com/1422-0067/24/11/9643"
-# info = www_mdpi_com(url)
+# info = func_mdpi_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
@@ -3027,7 +3202,7 @@ def www_ahajournals_org(url):
 
 
 # thejns.org
-def thejns_org(url):
+def func_thejns_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -3056,7 +3231,6 @@ def thejns_org(url):
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -3068,7 +3242,6 @@ def thejns_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -3076,20 +3249,19 @@ def thejns_org(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://thejns.org/view/journals/j-neurosurg/86/1/article-p77.xml"
-# info = thejns_org(url)
+# info = func_thejns_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
-# www.science.org
-def www_science_org(url):
+# science.org
+def func_science_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -3100,8 +3272,7 @@ def www_science_org(url):
         try:
             driver = webdriver.Chrome()
             driver.get(url)
-            time.sleep(3)
-            # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
+            time.sleep(5)
             error_label = 1
         except:
             print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
@@ -3110,7 +3281,6 @@ def www_science_org(url):
     
     try:
         doi = driver.find_element(By.XPATH, "//div[contains(@class, 'doi')]").find_element(By.XPATH, "a").text.split("DOI: ")[1]
-        # doi = driver.find_element(By.CLASS_NAME, "//span[contains(@class, 'metadata--doi')]").find_element(By.XPATH, 'a').text
     except:
         doi = np.nan
 
@@ -3119,7 +3289,6 @@ def www_science_org(url):
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -3131,7 +3300,6 @@ def www_science_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -3139,14 +3307,13 @@ def www_science_org(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://www.science.org/doi/full/10.1126/science.282.5391.1117"
-# info = www_science_org(url)
+# info = func_science_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
@@ -3214,8 +3381,8 @@ def orca_cardiff_ac_uk(url):
 # ---------------------end of test code---------------------
 
 
-# www.jneurosci.org
-def www_jneurosci_org(url):
+# jneurosci.org
+def func_jneurosci_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -3244,7 +3411,6 @@ def www_jneurosci_org(url):
     title = np.nan
     abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -3256,7 +3422,6 @@ def www_jneurosci_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -3265,20 +3430,19 @@ def www_jneurosci_org(url):
 # --------------------start of test code--------------------
 # # url = "https://www.jneurosci.org/content/30/25/8650.short"
 # url = "https://www.jneurosci.org/content/20/10/3884.short"
-# info = www_jneurosci_org(url)
+# info = func_jneurosci_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
 # europepmc.org
-def europepmc_org(url):
+def func_europepmc_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -3289,7 +3453,7 @@ def europepmc_org(url):
         try:
             driver = webdriver.Chrome()
             driver.get(url)
-            time.sleep(3)
+            time.sleep(5)
             # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
             error_label = 1
         except:
@@ -3299,9 +3463,10 @@ def europepmc_org(url):
     
     try:
         doi = driver.find_element(By.XPATH, "//a[@id='article--doi--link-metadataSec']").text
-        # doi = driver.find_element(By.CLASS_NAME, "//span[contains(@class, 'metadata--doi')]").find_element(By.XPATH, 'a').text
     except:
         doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
     try:
         pmid = driver.find_element(By.XPATH, "//span[contains(@class, 'metadata--pmid')]").text.split("PMID: ")[1]
     except:
@@ -3319,7 +3484,6 @@ def europepmc_org(url):
     except:
         abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     # try:
     #     element = driver.find_element(By.XPATH, "//span[contains(@id, 'open_pdf')]")
     #     element.click
@@ -3340,7 +3504,6 @@ def europepmc_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -3348,19 +3511,19 @@ def europepmc_org(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://europepmc.org/article/MED/37298594"
-# info = europepmc_org(url)
+# info = func_europepmc_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
-# www.biorxiv.org
-def www_biorxiv_org(url):
+
+# biorxiv.org
+def func_biorxiv_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -3396,7 +3559,6 @@ def www_biorxiv_org(url):
     except:
         abstract = np.nan
     keywords = np.nan
-    intro = np.nan
     try:
         pdf_link = driver.find_element(By.XPATH, "//a[contains(@class, 'article-dl-pdf-link link-icon')]").get_attribute("href")
     except:
@@ -3411,7 +3573,6 @@ def www_biorxiv_org(url):
         "title": title,
         "abstract": abstract,
         "keywords": keywords,
-        "introduction": intro,
         "pdf_link": pdf_link
     }
     driver.quit
@@ -3419,13 +3580,12 @@ def www_biorxiv_org(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://www.biorxiv.org/content/10.1101/398917v1.abstract"
-# info = www_biorxiv_org(url)
+# info = func_biorxiv_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
 # print(info["title"])
 # print(info["abstract"])
 # print(info["keywords"])
-# print(info["introduction"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
