@@ -61,8 +61,8 @@ def get_proxies():
 # request a webpage
 def request_webpage(url):
     response = requests.get(url, headers=plib.headers)
-    if response.status_code == 502:
-        return None
+    # if response.status_code == 502:
+    #     return None
     while(response.status_code != 200):
         print("Error", response.status_code, "when searching page:", url)
         time.sleep(5*60)
@@ -105,8 +105,8 @@ def ask_ChatGPT(context, queries):
 # add a new row to a given .csv file
 def add_row_to_csv(csv_path, new_row, columns):
     try:
-        df_new_row = pd.DataFrame(data = new_row, columns = columns)
-        df_new_row.to_csv(csv_path, mode = 'a', index = False, header = False, encoding='utf-8')
+        df_new_row = pd.DataFrame(data=new_row, columns=columns)
+        df_new_row.to_csv(csv_path, mode='a', index=False, header=False, encoding='utf-8')
         return True
     except:
         return False
