@@ -18,9 +18,9 @@ from selenium.webdriver.support import expected_conditions as EC
 def extract_info_from_webpage(url, websites):
     if url != url:
         raise Exception("The given url is np.nan")
-    print(url)
+    # print(url)
     source = url.split("://")[1].split("/")[0]
-    print(source)
+    # print(source)
     # initialize
     info = {
         "doi": np.nan,
