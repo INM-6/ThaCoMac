@@ -37,7 +37,9 @@ def extract_info_from_webpage(url, websites):
         if website in source:
             # Get the function name by replacing "." with "_" and use globals() to call it
             func_name = "func_" + website.replace(".", "_")
+            # print(func_name)
             func = globals().get(func_name)
+            # print(func)
             break
     if func != None:
         info = func(url)
@@ -2194,7 +2196,7 @@ def asahq_org(url):
 
 
 # neurology.org
-def fun_neurology_org(url):
+def func_neurology_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -2242,7 +2244,7 @@ def fun_neurology_org(url):
 # --------------------start of test code--------------------
 # url = "https://n.neurology.org/content/64/6/1014.short"
 # # url = "https://n.neurology.org/content/64/6/1014"
-# info = fun_neurology_org(url)
+# info = func_neurology_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
