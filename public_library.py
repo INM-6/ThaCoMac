@@ -255,7 +255,8 @@ def doi2pmid(doi):
             pmid = np.nan
     else:
         pmid = np.nan
-
+    if pmid == pmid:
+        pmid = str(pmid).strip()
     return pmid
 # --------------------start of test code--------------------
 # # pmid = "35851953"
