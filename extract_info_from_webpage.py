@@ -2641,8 +2641,6 @@ def func_jamanetwork_com(url):
     keywords = np.nan
     pdf_link = np.nan
 
-    driver.quit()
-
     info = {
         "doi": doi,
         "pmid": pmid,
@@ -2703,8 +2701,6 @@ def func_biomedcentral_com(url):
     abstract = np.nan
     keywords = np.nan
     pdf_link = np.nan
-
-    driver.quit()
 
     info = {
         "doi": doi,
