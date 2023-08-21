@@ -18,9 +18,9 @@ from selenium.webdriver.support import expected_conditions as EC
 def extract_info_from_webpage(url, websites):
     if url != url:
         raise Exception("The given url is np.nan")
-    
+    print(url)
     source = url.split("://")[1].split("/")[0]
-    
+    print(source)
     # initialize
     info = {
         "doi": np.nan,
@@ -33,16 +33,17 @@ def extract_info_from_webpage(url, websites):
     }
     
     for website in websites:
+        func = None
         if website in source:
             # Get the function name by replacing "." with "_" and use globals() to call it
             func_name = "func_" + website.replace(".", "_")
             func = globals().get(func_name)
             break
-        print("The given url is not from a supported website: ", url)
-    if func:
+    if func != None:
         info = func(url)
     else:
-        raise Exception("Function: " + func_name + " does not exist.")
+        print("The given url is not from a supported website: ", url)
+        raise Exception("Function does not exist for website:", url)
     return info
 # --------------------start of test code--------------------
 # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
