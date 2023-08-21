@@ -1820,15 +1820,15 @@ def func_royalsocietypublishing_org(url):
 
     return info
 # --------------------start of test code--------------------
-url = "https://royalsocietypublishing.org/doi/abs/10.1098/rstb.2002.1171"
-info = func_royalsocietypublishing_org(url)
-print(info["doi"])
-print(info["pmid"])
-print(info["pmcid"])
-print(info["title"])
-print(info["abstract"])
-print(info["keywords"])
-print(info["pdf_link"])
+# url = "https://royalsocietypublishing.org/doi/abs/10.1098/rstb.2002.1171"
+# info = func_royalsocietypublishing_org(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
 
