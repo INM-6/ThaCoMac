@@ -2727,8 +2727,8 @@ def func_biomedcentral_com(url):
 # ---------------------end of test code---------------------
 
 
-# jstage.jst.go.jp
-def func_jstage_jst_go_jp(url):
+# jst.go.jp
+def func_jst_go_jp(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -2773,7 +2773,7 @@ def func_jstage_jst_go_jp(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://www.jstage.jst.go.jp/article/pjab1945/43/8/43_8_822/_article/-char/ja/"
-# info = func_jstage_jst_go_jp(url)
+# info = func_jst_go_jp(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
