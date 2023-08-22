@@ -61,8 +61,8 @@ def get_proxies():
 # request a webpage
 def request_webpage(url):
     response = requests.get(url, headers=plib.headers)
-    # if response.status_code == 502:
-    #     return None
+    if response.status_code == 502:
+        raise Exception("502 when requesting ", url)
     while(response.status_code != 200):
         print("Error", response.status_code, "when searching page:", url)
         time.sleep(5*60)
