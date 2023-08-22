@@ -144,7 +144,7 @@ def get_final_redirected_url(url):
             if response.status_code == 404: # not found
                 final_url = np.nan
                 status_code = response.status_code
-                print("warning: 404 not found when getting final redirected url: from ", url)
+                print("Warning: 404 not found when getting final redirected url: from ", url)
                 break
             elif response.status_code == 200 or 301 or 302 or 307 or 308:
                 final_url = response.url
@@ -153,7 +153,7 @@ def get_final_redirected_url(url):
             elif response.status_code == 403:
                 final_url = response.url
                 status_code = response.status_code
-                print("warning: 403 forbidden when getting final redirected url: from ", url)
+                print("Warning: 403 forbidden when getting final redirected url: from ", url)
                 break
             else:    
                 print(response.status_code, "Retrying to get final redirected url...")
@@ -163,7 +163,7 @@ def get_final_redirected_url(url):
     except:
         final_url = np.nan
         status_code = response.status_code
-        print("warning:", response.status_code, " when getting final redirected url: from ", url)
+        print("Warning:", response.status_code, " when getting final redirected url: from ", url)
         # raise Exception("Error when getting final redirected url.")
     return final_url, status_code
 # --------------------start of test code--------------------
