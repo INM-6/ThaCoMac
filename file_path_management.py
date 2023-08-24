@@ -35,6 +35,7 @@ poten_litera_filled = os.path.join(datasets_folder, "potential_related_literatur
 poten_litera_ids_filled = os.path.join(datasets_folder, "potential_related_literature_ids_filled.csv")
 poten_litra_filtered = os.path.join(datasets_folder, "potential_related_literature_filtered.csv")
 poten_litera_ids_ftl_filled = os.path.join(datasets_folder, "potential_related_literature_ids_ftl_filled.csv")
+poten_litera_testing_set_300 = os.path.join(datasets_folder, "potential_related_literature_testing_set_300.csv")
 poten_litera_litera_db = os.path.join(datasets_folder, "potential_related_literature_databse.csv")
 poten_litera_litera_db_ranked = os.path.join(datasets_folder, "potential_related_literature_database_ranked.csv")
 
