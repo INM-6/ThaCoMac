@@ -2461,3 +2461,4 @@ Caused by: An identity was not set properly. Please verify that the org ID 1B6E3
 MESA: error: Failed to query drm device.
 libEGL warning: egl: failed to create dri2 screen
 JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=9D2B1F2EFD0FE34FB88D9B9BED509A24, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
