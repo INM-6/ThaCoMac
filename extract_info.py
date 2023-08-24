@@ -46,14 +46,15 @@ def extract_info_from_webpage(url, websites):
             # print(func)
             break
     if func != None:
+        print("1")
         info = func(url)
     else:
         print("The given url is not from a supported website: ", url)
         raise Exception("Function does not exist for website:", url)
-    
+    print("2")
     if info["doi"] == info["doi"]:
         info["doi"] = info["doi"].lower()
-    
+    print("3")
     return info
 # --------------------start of test code--------------------
 # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
