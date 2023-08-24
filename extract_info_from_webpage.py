@@ -9,10 +9,14 @@ import os
 import time
 import numpy as np
 from selenium import webdriver
+from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.firefox.service import Service
+from selenium.common.exceptions import TimeoutException, WebDriverException, NoSuchElementException
 
 
 def extract_info_from_webpage(url, websites):
@@ -190,6 +194,7 @@ def func_ncbi_nlm_nih_gov(url):
 # ---------------------end of test code---------------------
 
 
+# elsevier.com
 def func_elsevier_com(url):
     # initialize
     info = {
@@ -206,7 +211,7 @@ def func_elsevier_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox(options=options)
 
     # load the webpage
     error_label = 0
@@ -281,7 +286,7 @@ def func_elsevier_com(url):
 
     return info
 # --------------------start of test code--------------------
-# # url = "https://linkinghub.elsevier.com/retrieve/pii/0006899395013385"
+# url = "https://linkinghub.elsevier.com/retrieve/pii/0006899395013385"
 # # url = "https://linkinghub.elsevier.com/retrieve/pii/S0891061898000222"
 # # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
 # # url = "https://www.sciencedirect.com/science/article/pii/S0165027017303631?via%3Dihub#abs0010"
@@ -303,7 +308,7 @@ def func_elsevier_com(url):
 # # url = "https://www.sciencedirect.com/science/article/pii/B9780124077942000092?via%3Dihub"
 # # url = "https://www.sciencedirect.com/science/article/pii/0006899368900450?via%3Dihub"
 # # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
-# url = "https://www.sciencedirect.com/science/article/pii/0006899377907806?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/0006899377907806?via%3Dihub"
 # info = func_elsevier_com(url)
 # print(info["doi"])
 # print(info["pmid"])
@@ -332,7 +337,7 @@ def func_wiley_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox(options=options)
 
     # load the webpage
     error_label = 0
@@ -452,7 +457,7 @@ def func_springer_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox(options=options)
 
     # load the webpage
     error_label = 0
@@ -564,7 +569,7 @@ def func_physiology_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox(options=options)
 
     # load the webpage
     error_label = 0
@@ -663,7 +668,7 @@ def func_sciencedirect_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox(options=options)
 
     # load the webpage
     error_label = 0
@@ -790,7 +795,7 @@ def func_oup_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox(options=options)
 
     # load the webpage
     error_label = 0
@@ -895,7 +900,7 @@ def func_cambridge_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox(options=options)
 
     # load the webpage
     error_label = 0
@@ -1018,7 +1023,7 @@ def func_karger_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox(options=options)
 
     # load the webpage
     error_label = 0
@@ -1124,7 +1129,7 @@ def func_lww_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox(options=options)
 
     # load the webpage
     error_label = 0
@@ -1251,7 +1256,7 @@ def func_bmj_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox(options=options)
 
     # load the webpage
     error_label = 0
@@ -1332,13 +1337,13 @@ def func_nature_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox(options=options)
 
     # load the webpage
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -1574,7 +1579,7 @@ def jpn_ca(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -1631,7 +1636,7 @@ def func_bu_edu(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -1685,7 +1690,7 @@ def func_psych_ac_cn(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -1739,7 +1744,7 @@ def func_psychiatryonline_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -1796,7 +1801,7 @@ def func_royalsocietypublishing_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -1854,7 +1859,7 @@ def func_tandfonline_com(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -1915,7 +1920,7 @@ def func_aspetjournals_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -1974,7 +1979,7 @@ def func_liebertpub_com(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2032,7 +2037,7 @@ def ekja_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2096,7 +2101,7 @@ def func_sagepub_com(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2155,7 +2160,7 @@ def asahq_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2215,7 +2220,7 @@ def func_neurology_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2276,7 +2281,7 @@ def func_elifesciences_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2333,7 +2338,7 @@ def func_frontiersin_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2394,7 +2399,7 @@ def mpg_de(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2451,7 +2456,7 @@ def func_degruyter_com(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2508,7 +2513,7 @@ def bmj_com(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2568,7 +2573,7 @@ def func_psycnet_apa_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2629,7 +2634,7 @@ def func_jamanetwork_com(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2688,7 +2693,7 @@ def func_biomedcentral_com(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2749,7 +2754,7 @@ def func_jst_go_jp(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2806,7 +2811,7 @@ def func_plos_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2863,7 +2868,7 @@ def func_ieee_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2920,7 +2925,7 @@ def func_eneuro_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -2977,7 +2982,7 @@ def func_cell_com(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -3038,7 +3043,7 @@ def func_pnas_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(3)
             # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
@@ -3097,7 +3102,7 @@ def func_mdpi_com(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(3)
             # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
@@ -3158,7 +3163,7 @@ def www_ahajournals_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(3)
             # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
@@ -3220,7 +3225,7 @@ def func_thejns_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(3)
             # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
@@ -3279,7 +3284,7 @@ def func_science_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             error_label = 1
@@ -3337,7 +3342,7 @@ def orca_cardiff_ac_uk(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(3)
             # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
@@ -3400,7 +3405,7 @@ def func_jneurosci_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(3)
             # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
@@ -3460,7 +3465,7 @@ def func_europepmc_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(5)
             # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
@@ -3541,7 +3546,7 @@ def func_biorxiv_org(url):
     error_label = 0
     while(error_label == 0):
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox(options=options)
             driver.get(url)
             time.sleep(3)
             # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(By.XPATH, "//button[text()='Accept Cookies']")).click()
