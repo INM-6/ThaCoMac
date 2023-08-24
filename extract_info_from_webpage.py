@@ -46,6 +46,10 @@ def extract_info_from_webpage(url, websites):
     else:
         print("The given url is not from a supported website: ", url)
         raise Exception("Function does not exist for website:", url)
+    
+    if info["doi"] == info["doi"]:
+        info["doi"] = info["doi"].lower()
+    
     return info
 # --------------------start of test code--------------------
 # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
@@ -59,6 +63,11 @@ def extract_info_from_webpage(url, websites):
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
+
+# # websites
+# websites = [
+#     'ncbi.nlm.nih.gov', 'elsevier.com', 'wiley.com', 'springer.com', 'physiology.org'
+# ]
 
 # ncbi.nlm.nih.gov
 def func_ncbi_nlm_nih_gov(url):
@@ -97,6 +106,7 @@ def func_ncbi_nlm_nih_gov(url):
     # print(pmid)
     if pmid == pmid:
         pmid = str(int(pmid)).strip()
+        
     # pmcid
     try:
         pmcid = soup.find_all("div", {"class": "fm-citation-pmcid"})[0].find_all("span")[1].get_text().strip()
@@ -295,132 +305,6 @@ def func_elsevier_com(url):
 # # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
 # url = "https://www.sciencedirect.com/science/article/pii/0006899377907806?via%3Dihub"
 # info = func_elsevier_com(url)
-# print(info["doi"])
-# print(info["pmid"])
-# print(info["pmcid"])
-# print(info["title"])
-# print(info["abstract"])
-# print(info["keywords"])
-# print(info["pdf_link"])
-# ---------------------end of test code---------------------
-
-
-# sciencedirect.com
-def func_sciencedirect_com(url):
-    # initialize
-    info = {
-        "doi": np.nan,
-        "pmid": np.nan,
-        "pmcid": np.nan,
-        "title": np.nan,
-        "abstract": np.nan,
-        "keywords": np.nan,
-        "pdf_link": np.nan
-    }
-
-    # set up the webdriver
-    os.environ['WDM_LOG'] = '0'
-    options = Options()
-    options.add_argument('--headless')
-    driver = webdriver.Chrome()
-
-    # load the webpage
-    error_label = 0
-    while(error_label == 0):
-        try:
-            driver.get(url)
-            time.sleep(10)
-            error_label = 1
-        except:
-            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
-            time.sleep(5*60)
-            error_label = 0
-    
-    # doi
-    try:
-        doi = driver.find_element(By.XPATH, "//a[@class='anchor doi anchor-default']/span").text.split("doi.org/")[1]
-        doi = doi.strip()
-    except:
-        doi = np.nan
-    if doi == doi:
-        doi = doi.lower()
-
-    # pmid, pmcid
-    pmid = np.nan
-    pmcid = np.nan
-
-    # title
-    try:
-        title = driver.find_element(By.TAG_NAME, 'h1').find_element(By.XPATH, "//span[@class='title-text']").text
-        title = title.strip()
-    except:
-        title = np.nan
-
-    # abstract
-    try:
-        abstract = ""
-        elems = driver.find_element(By.XPATH, "//div[@class='abstract author']").find_elements(By.TAG_NAME, "p")
-        for elem in elems:
-            abstract = abstract + elem.text + " "
-        abstract = abstract.strip()
-    except:
-        abstract = np.nan
-    
-    # keywords
-    try:
-        keywords = ""
-        elements = driver.find_element(By.XPATH, "//div[@class='keywords-section']").find_elements(By.XPATH, "//div[@class='keyword']")
-        for element in elements:
-            keywords = keywords + element.find_element(By.TAG_NAME, "span").text + ", "
-        keywords = keywords.strip()
-    except:
-        keywords = np.nan
-
-    # pdf_link
-    try:
-        pdf_link = driver.find_element(By.XPATH, "//li[@class='ViewPDF']/a").get_attribute('href')
-        pdf_link = pdf_link.strip()
-    except:
-        pdf_link = np.nan
-
-    driver.quit()
-
-    info = {
-        "doi": doi,
-        "pmid": pmid,
-        "pmcid": pmcid,
-        "title": title,
-        "abstract": abstract,
-        "keywords": keywords,
-        "pdf_link": pdf_link
-    }
-
-    return info
-# --------------------start of test code--------------------
-# # url = "https://linkinghub.elsevier.com/retrieve/pii/0006899395013385"
-# # url = "https://linkinghub.elsevier.com/retrieve/pii/S0891061898000222"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0165027017303631?via%3Dihub#abs0010"
-# # url = "https://linkinghub.elsevier.com/retrieve/pii/S0165027017303631"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0079612308626783?via%3Dihub"
-# # url = "https://linkinghub.elsevier.com/retrieve/pii/0006899376902067"
-# # url = "https://www.sciencedirect.com/science/article/pii/0006899378911034?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0006899377904747?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0165017379900080?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/000689937990132X?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/S2211124723008550?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0960982215014190?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0006899375905296?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0166432805800166?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/000689938690925X?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/abs/pii/S1042368018302602?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0006899367900042?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0165017380900028?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/B9780124077942000092?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0006899368900450?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
-# url = "https://www.sciencedirect.com/science/article/pii/0006899377907806?via%3Dihub"
-# info = func_sciencedirect_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -752,6 +636,132 @@ def func_physiology_org(url):
 # # url = "https://journals.physiology.org/doi/10.1152/jn.1994.72.3.1270"
 # url = "https://journals.physiology.org/doi/10.1152/jn.1981.46.5.901"
 # info = func_physiology_org(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# sciencedirect.com
+def func_sciencedirect_com(url):
+    # initialize
+    info = {
+        "doi": np.nan,
+        "pmid": np.nan,
+        "pmcid": np.nan,
+        "title": np.nan,
+        "abstract": np.nan,
+        "keywords": np.nan,
+        "pdf_link": np.nan
+    }
+
+    # set up the webdriver
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    driver = webdriver.Chrome()
+
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver.get(url)
+            time.sleep(10)
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    # doi
+    try:
+        doi = driver.find_element(By.XPATH, "//a[@class='anchor doi anchor-default']/span").text.split("doi.org/")[1]
+        doi = doi.strip()
+    except:
+        doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
+
+    # pmid, pmcid
+    pmid = np.nan
+    pmcid = np.nan
+
+    # title
+    try:
+        title = driver.find_element(By.TAG_NAME, 'h1').find_element(By.XPATH, "//span[@class='title-text']").text
+        title = title.strip()
+    except:
+        title = np.nan
+
+    # abstract
+    try:
+        abstract = ""
+        elems = driver.find_element(By.XPATH, "//div[@class='abstract author']").find_elements(By.TAG_NAME, "p")
+        for elem in elems:
+            abstract = abstract + elem.text + " "
+        abstract = abstract.strip()
+    except:
+        abstract = np.nan
+    
+    # keywords
+    try:
+        keywords = ""
+        elements = driver.find_element(By.XPATH, "//div[@class='keywords-section']").find_elements(By.XPATH, "//div[@class='keyword']")
+        for element in elements:
+            keywords = keywords + element.find_element(By.TAG_NAME, "span").text + ", "
+        keywords = keywords.strip()
+    except:
+        keywords = np.nan
+
+    # pdf_link
+    try:
+        pdf_link = driver.find_element(By.XPATH, "//li[@class='ViewPDF']/a").get_attribute('href')
+        pdf_link = pdf_link.strip()
+    except:
+        pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "pdf_link": pdf_link
+    }
+
+    return info
+# --------------------start of test code--------------------
+# # url = "https://linkinghub.elsevier.com/retrieve/pii/0006899395013385"
+# # url = "https://linkinghub.elsevier.com/retrieve/pii/S0891061898000222"
+# # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/S0165027017303631?via%3Dihub#abs0010"
+# # url = "https://linkinghub.elsevier.com/retrieve/pii/S0165027017303631"
+# # url = "https://www.sciencedirect.com/science/article/pii/S0079612308626783?via%3Dihub"
+# # url = "https://linkinghub.elsevier.com/retrieve/pii/0006899376902067"
+# # url = "https://www.sciencedirect.com/science/article/pii/0006899378911034?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/0006899377904747?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/0165017379900080?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/000689937990132X?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/S2211124723008550?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/S0960982215014190?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/0006899375905296?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/S0166432805800166?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/000689938690925X?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/abs/pii/S1042368018302602?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/0006899367900042?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/0165017380900028?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/B9780124077942000092?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/0006899368900450?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
+# url = "https://www.sciencedirect.com/science/article/pii/0006899377907806?via%3Dihub"
+# info = func_sciencedirect_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
