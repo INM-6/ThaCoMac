@@ -15,22 +15,27 @@ websites_gs = {
     'karger.com', 'tandfonline.com', 'physiology.org', 'pnas.org', 'jneurosci.org', 'thejns.org', 
     'agro.icm.edu.pl', 'elifesciences.org', 'frontiersin.org', 'science.org'}
 
+
 # websites
 websites = [
     'ncbi.nlm.nih.gov', 'elsevier.com', 'wiley.com', 'springer.com', 'physiology.org'
 ]
 # websites = [
 #     'ncbi.nlm.nih.gov', 'elsevier.com', 'wiley.com', 'springer.com', 'physiology.org', 'oup.com', 
-#     'cambridge.org', 'karger.com', 'lww.com', 'nature.com', 'science.org', 'tandfonline.com', 
-#     'sagepub.com', 'jamanetwork.com', 'neurology.org', 'biorxiv.org', 'royalsocietypublishing.org', 
-#     'psycnet.apa.org', 'arvojournals.org', 'jstage.jst.go.jp', 'psychiatryonline.org', 'europepmc.org', 
-#     'mit.edu', 'thejns.org', 'annualreviews.org', 'snmjournals.org', 'aspetjournals.org', 'elibrary.ru', 
-#     'books.google.de', 'architalbiol.org', 'ahajournals.org', 'liebertpub.com', 'acs.org', 'degruyter.com', 
-#     'worldscientific.com', 'iospress.com', 'asahq.org', 'thieme-connect.de', 'neurologia.com', 'mpg.de', 
-#     'opg.optica.org', 'mcgill.ca', 'rbojournal.org', 'taylorfrancis.com', 'ekja.org', 'www.imrpress.com', 
-#     'theses.fr', 'ieee.org', 'ssrn.com', 'open.bu.edu', 'journals.biologists.com', 'aip.org', 'lib.wfu.edu', 
-#     'literatumonline.com', 'scholarpedia.org', 'isho.jp', 'mirasmart.com', 'microbiologyresearch.org', 
-#     'aps.org', 'ujms.net', 'www.ingentaconnect.com', 'symposium.cshlp.org', 'cabdirect.org', 'ajtmh.org']
+#     'pubmed.ncbi.nlm.nih.gov', 'cambridge.org', 'nature.com', 'karger.com', 'lww.com', 'nan', 
+#     'science.org', 'tandfonline.com', 'sagepub.com', 'frontiersin.org', 'jamanetwork.com', 
+#     'neurology.org', 'biorxiv.org', 'europepmc.org', 'royalsocietypublishing.org', 'arvojournals.org', 
+#     'psycnet.apa.org', 'psychiatryonline.org', 'mit.edu', 'jstage.jst.go.jp', 'mdpi.com', 'acs.org', 
+#     'annualreviews.org', 'thejns.org', 'snmjournals.org', 'aspetjournals.org', 'jneurosci.org', 
+#     'lib.umich.edu', 'plos.org', 'ahajournals.org', 'architalbiol.org', 'elifesciences.org', 
+#     'degruyter.com', 'liebertpub.com', 'iospress.com', 'asahq.org', 'worldscientific.com', 
+#     'opg.optica.org', 'thieme-connect.com', 'hindawi.com', 'neurologia.com', 'dovepress.com', 
+#     'springeropen.com', 'eneuro.org', 'ujms.net', 'microbiologyresearch.org', 'ieee.org', 'rbojournal.org', 
+#     'pnas.org', 'aps.org', 'ssrn.com', 'lib.wfu.edu', 'symposium.cshlp.org', 'taylorfrancis.com', 
+#     'em-consulte.com', 'biologists.com', 'asm.org', 'embopress.org', 'imrpress.com', 'aip.org', 
+#     'jstor.org', 'cdnsciencepub.com', 'birpublications.org', 'ajtmh.org', 'psych.ac.cn', 'open.bu.edu', 
+#     'researchsquare.com', 'ingentaconnect.com', 'isho.jp'
+# ]
 
 
 # on-topic keyword lexicon
