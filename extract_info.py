@@ -46,7 +46,8 @@ def extract_info_from_webpage(url, websites):
             # print(func)
             break
     if func != None:
-        print("1")
+        print(func)
+        print("11")
         info = func(url)
     else:
         print("The given url is not from a supported website: ", url)
@@ -555,6 +556,7 @@ def func_springer_com(url):
 
 # physiology.org
 def func_physiology_org(url):
+    print("hi3")
     # initialize
     info = {
         "doi": np.nan,
@@ -565,7 +567,7 @@ def func_physiology_org(url):
         "keywords": np.nan,
         "pdf_link": np.nan
     }
-
+    print("hi2")
     # set up the webdriver
     os.environ['WDM_LOG'] = '0'
     options = Options()
