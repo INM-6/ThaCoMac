@@ -573,7 +573,7 @@ def func_physiology_org(url):
     options = Options()
     options.add_argument('--headless')
     driver = webdriver.Firefox(options=options)
-
+    print("hi4")
     # load the webpage
     error_label = 0
     while(error_label == 0):
