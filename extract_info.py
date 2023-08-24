@@ -19,7 +19,6 @@ from selenium.common.exceptions import TimeoutException, WebDriverException, NoS
 
 
 def extract_info_from_webpage(url, websites):
-    print("2")
     if url != url:
         raise Exception("The given url is np.nan")
     # print(url)
@@ -46,16 +45,13 @@ def extract_info_from_webpage(url, websites):
             # print(func)
             break
     if func != None:
-        print(func)
-        print("11")
+        # print(func)
         info = func(url)
     else:
         print("The given url is not from a supported website: ", url)
         raise Exception("Function does not exist for website:", url)
-    print("2")
     if info["doi"] == info["doi"]:
         info["doi"] = info["doi"].lower()
-    print("3")
     return info
 # --------------------start of test code--------------------
 # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
@@ -556,7 +552,6 @@ def func_springer_com(url):
 
 # physiology.org
 def func_physiology_org(url):
-    print("hi3")
     # initialize
     info = {
         "doi": np.nan,
@@ -567,13 +562,13 @@ def func_physiology_org(url):
         "keywords": np.nan,
         "pdf_link": np.nan
     }
-    print("hi2")
+
     # set up the webdriver
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
     driver = webdriver.Firefox(options=options)
-    print("hi4")
+
     # load the webpage
     error_label = 0
     while(error_label == 0):
@@ -585,7 +580,7 @@ def func_physiology_org(url):
             print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
             time.sleep(5*60)
             error_label = 0
-    print("hi")
+
     # doi
     try:
         doi = driver.find_element(By.XPATH, "//a[contains(@class, 'epub-section__doi__text')]").text.split("doi.org/")[1]
