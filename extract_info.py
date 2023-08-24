@@ -1,7 +1,6 @@
 # import internal .py modules
 import file_path_management as fpath
 import public_library as plib
-import extract_info_from_webpage as extra_info
 import parameters as params
 
 # import packages
@@ -20,6 +19,7 @@ from selenium.common.exceptions import TimeoutException, WebDriverException, NoS
 
 
 def extract_info_from_webpage(url, websites):
+    print("2")
     if url != url:
         raise Exception("The given url is np.nan")
     # print(url)
