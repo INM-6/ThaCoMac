@@ -1173,3 +1173,1291 @@ JavaScript warning: https://pagead2.googlesyndication.com/bg/0w4HeoaYEDyr3MppZwi
 JavaScript warning: https://pagead2.googlesyndication.com/bg/0w4HeoaYEDyr3MppZwiwXJgG2WIOQk_JViOVQEuG4uU.js line 2 > eval line 3988 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript warning: https://pagead2.googlesyndication.com/bg/0w4HeoaYEDyr3MppZwiwXJgG2WIOQk_JViOVQEuG4uU.js line 2 > eval line 1889 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1692918642343	geckodriver	INFO	Listening on 127.0.0.1:42913
+1692918642851	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "48959" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileJCnDIl"
+*** You are running in headless mode.
+
+(firefox:48352): Gtk-WARNING **: 01:10:42.899: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918643124	Marionette	INFO	Marionette enabled
+1692918643177	Marionette	INFO	Listening on port 41447
+WebDriver BiDi listening on ws://127.0.0.1:48959
+Read port: 41447
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918643386	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:48959/devtools/browser/92384489-f248-4d9a-b0d9-0220f6d991fe
+JavaScript error: https://journals.physiology.org/products/physio/releasedAssets/js/main.bundle-fda5f4df33afe522c603.js, line 1: ChunkLoadError: Loading chunk 22 failed.
+(error: https://journals.physiology.org/products/physio/releasedAssets/js/requestidlecallback-polyfill-d727ee7162e5e0276299.js)
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://pagead2.googlesyndication.com/bg/0w4HeoaYEDyr3MppZwiwXJgG2WIOQk_JViOVQEuG4uU.js line 2 > eval line 2032 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/0w4HeoaYEDyr3MppZwiwXJgG2WIOQk_JViOVQEuG4uU.js line 2 > eval line 5349 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/0w4HeoaYEDyr3MppZwiwXJgG2WIOQk_JViOVQEuG4uU.js line 2 > eval line 2407 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918659948	Marionette	INFO	Stopped listening on port 41447
+JavaScript warning: https://js.trendmd.com/trendmd.min.js, line 1: Script terminated by timeout at:
+./src/app/EventLogger.js/log/this._stackInterval<@https://js.trendmd.com/trendmd.min.js:1:4769
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1692918660590	geckodriver	INFO	Listening on 127.0.0.1:50847
+1692918661096	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "50985" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilecTqqcW"
+*** You are running in headless mode.
+
+(firefox:48797): Gtk-WARNING **: 01:11:01.128: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918661332	Marionette	INFO	Marionette enabled
+1692918661400	Marionette	INFO	Listening on port 34981
+WebDriver BiDi listening on ws://127.0.0.1:50985
+Read port: 34981
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918661612	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:50985/devtools/browser/8940e90f-6c5b-4233-abb8-7dd5f935c436
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1692918673754	Marionette	INFO	Stopped listening on port 34981
+JavaScript warning: https://www.sciencedirect.com/science/article/pii/S1053811906007609?via%3Dihub line 1 > injectedScript, line 848: Script terminated by timeout at:
+nrWrapper@https://www.sciencedirect.com/science/article/pii/S1053811906007609?via%3Dihub line 1 > injectedScript:848:33
+
+1692918680473	geckodriver	INFO	Listening on 127.0.0.1:39741
+1692918680980	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "45431" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile1axnwu"
+*** You are running in headless mode.
+
+(firefox:49309): Gtk-WARNING **: 01:11:21.013: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918681261	Marionette	INFO	Marionette enabled
+1692918681336	Marionette	INFO	Listening on port 43089
+WebDriver BiDi listening on ws://127.0.0.1:45431
+Read port: 43089
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918681560	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:45431/devtools/browser/03fa6865-78c6-4878-bd12-271a26bcf138
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=4496DC2A169059BAE2655FC463E6C26D, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918695212	Marionette	INFO	Stopped listening on port 43089
+1692918695827	geckodriver	INFO	Listening on 127.0.0.1:33501
+1692918696329	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "41995" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileqv4Jmh"
+*** You are running in headless mode.
+
+(firefox:50147): Gtk-WARNING **: 01:11:36.347: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918696621	Marionette	INFO	Marionette enabled
+1692918696686	Marionette	INFO	Listening on port 35975
+WebDriver BiDi listening on ws://127.0.0.1:41995
+Read port: 35975
+1692918696895	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:41995/devtools/browser/d8079e5f-2dba-45cc-b0c7-2ecf78746758
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=3F16AEA5FF6DE59EE8F5AA7D799DE417, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918710205	Marionette	INFO	Stopped listening on port 35975
+1692918714640	geckodriver	INFO	Listening on 127.0.0.1:35957
+1692918715148	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "56661" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile4CxhWR"
+*** You are running in headless mode.
+
+(firefox:50543): Gtk-WARNING **: 01:11:55.189: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918715450	Marionette	INFO	Marionette enabled
+1692918715502	Marionette	INFO	Listening on port 43475
+WebDriver BiDi listening on ws://127.0.0.1:56661
+Read port: 43475
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918715752	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:56661/devtools/browser/c2bb1153-233d-405b-a146-0a1e0311102c
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=497AE8DEEF65BB90E5678C492A1F68C2, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918729112	Marionette	INFO	Stopped listening on port 43475
+1692918729893	geckodriver	INFO	Listening on 127.0.0.1:35331
+1692918730401	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "33441" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilexynbmk"
+*** You are running in headless mode.
+
+(firefox:50903): Gtk-WARNING **: 01:12:10.442: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918730695	Marionette	INFO	Marionette enabled
+1692918730750	Marionette	INFO	Listening on port 44723
+WebDriver BiDi listening on ws://127.0.0.1:33441
+Read port: 44723
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918730924	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:33441/devtools/browser/06bcefb4-04e0-4dbb-a165-78cc7ec8799a
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=ACF7DE534BC9BAF6832D050B25A1EAF5, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918744870	Marionette	INFO	Stopped listening on port 44723
+1692918745504	geckodriver	INFO	Listening on 127.0.0.1:45063
+1692918746011	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "33997" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilewN4JLy"
+*** You are running in headless mode.
+
+(firefox:51382): Gtk-WARNING **: 01:12:26.052: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918746329	Marionette	INFO	Marionette enabled
+1692918746381	Marionette	INFO	Listening on port 35457
+WebDriver BiDi listening on ws://127.0.0.1:33997
+Read port: 35457
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918746599	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:33997/devtools/browser/0764f349-6314-404f-8d39-7836e056d639
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1692918758830	Marionette	INFO	Stopped listening on port 35457
+1692918765597	geckodriver	INFO	Listening on 127.0.0.1:46135
+1692918766104	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "36661" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilemIq02W"
+*** You are running in headless mode.
+
+(firefox:51976): Gtk-WARNING **: 01:12:46.160: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918766492	Marionette	INFO	Marionette enabled
+1692918766545	Marionette	INFO	Listening on port 33665
+WebDriver BiDi listening on ws://127.0.0.1:36661
+Read port: 33665
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918766715	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:36661/devtools/browser/56f0d4d3-4ed3-4038-a5f4-bc80fa6d1348
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=F8FADC9C3A36E184AC358192DC6C80F8, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918780113	Marionette	INFO	Stopped listening on port 33665
+1692918780838	geckodriver	INFO	Listening on 127.0.0.1:45173
+1692918781345	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "47319" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileRIgWHM"
+*** You are running in headless mode.
+
+(firefox:52333): Gtk-WARNING **: 01:13:01.379: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918781674	Marionette	INFO	Marionette enabled
+1692918781740	Marionette	INFO	Listening on port 36783
+Read port: 36783
+WebDriver BiDi listening on ws://127.0.0.1:47319
+1692918781781	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:47319/devtools/browser/b99be558-b61f-48e3-9726-8768eae6eb25
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=8A197F693D253251AE7D33E744349063, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918796514	Marionette	INFO	Stopped listening on port 36783
+1692918797548	geckodriver	INFO	Listening on 127.0.0.1:38791
+1692918798051	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "57003" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileMHr46a"
+*** You are running in headless mode.
+
+(firefox:52698): Gtk-WARNING **: 01:13:18.074: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918798308	Marionette	INFO	Marionette enabled
+1692918798385	Marionette	INFO	Listening on port 43067
+WebDriver BiDi listening on ws://127.0.0.1:57003
+Read port: 43067
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918798605	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:57003/devtools/browser/8de86a23-7bd0-4d1d-995c-3379bdfd3363
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=891AE6D3C81891011FEDA09963A1FC4C, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918812929	Marionette	INFO	Stopped listening on port 43067
+1692918819845	geckodriver	INFO	Listening on 127.0.0.1:59649
+1692918820353	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "34571" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileCFaNor"
+*** You are running in headless mode.
+
+(firefox:53118): Gtk-WARNING **: 01:13:40.388: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918820621	Marionette	INFO	Marionette enabled
+1692918820682	Marionette	INFO	Listening on port 39383
+WebDriver BiDi listening on ws://127.0.0.1:34571
+Read port: 39383
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918820897	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:34571/devtools/browser/9f682ece-745f-4118-b865-d2163a65c1af
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=6A0466D42CEF3D5E9FE38810850E8C3F, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918834467	Marionette	INFO	Stopped listening on port 39383
+1692918835172	geckodriver	INFO	Listening on 127.0.0.1:41645
+1692918835679	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "56491" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileh1JZ3L"
+*** You are running in headless mode.
+
+(firefox:54025): Gtk-WARNING **: 01:13:55.711: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918835968	Marionette	INFO	Marionette enabled
+1692918836016	Marionette	INFO	Listening on port 33039
+WebDriver BiDi listening on ws://127.0.0.1:56491
+Read port: 33039
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918836225	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:56491/devtools/browser/24e1d8dd-c98a-4f9f-a75a-650676c04aac
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1692918848713	Marionette	INFO	Stopped listening on port 33039
+JavaScript warning: https://www.sciencedirect.com/science/article/pii/0006899377905364?via%3Dihub line 1 > injectedScript, line 848: Script terminated by timeout at:
+nrWrapper@https://www.sciencedirect.com/science/article/pii/0006899377905364?via%3Dihub line 1 > injectedScript:848:33
+
+1692918849313	geckodriver	INFO	Listening on 127.0.0.1:50595
+1692918849819	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "41041" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileJ7D67F"
+*** You are running in headless mode.
+
+(firefox:54512): Gtk-WARNING **: 01:14:09.854: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918850081	Marionette	INFO	Marionette enabled
+1692918850131	Marionette	INFO	Listening on port 37499
+WebDriver BiDi listening on ws://127.0.0.1:41041
+Read port: 37499
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918850328	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:41041/devtools/browser/aafd172b-f49f-48d5-93d5-0e81939d6d34
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://pagead2.googlesyndication.com/bg/0w4HeoaYEDyr3MppZwiwXJgG2WIOQk_JViOVQEuG4uU.js line 2 > eval line 1303 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918862367	Marionette	INFO	Stopped listening on port 37499
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1692918863074	geckodriver	INFO	Listening on 127.0.0.1:47537
+1692918863581	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "33037" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile0miWnz"
+*** You are running in headless mode.
+
+(firefox:54884): Gtk-WARNING **: 01:14:23.615: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918863818	Marionette	INFO	Marionette enabled
+1692918863879	Marionette	INFO	Listening on port 40411
+Read port: 40411
+WebDriver BiDi listening on ws://127.0.0.1:33037
+1692918864000	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:33037/devtools/browser/a444cc9e-a6cd-4a40-8f4d-dee5d889641c
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=FB003C7FFD8A4E5D5A19D1BF7B8C7194, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918877358	Marionette	INFO	Stopped listening on port 40411
+1692918878377	geckodriver	INFO	Listening on 127.0.0.1:32999
+1692918878883	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "36673" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilertmJTV"
+*** You are running in headless mode.
+
+(firefox:55283): Gtk-WARNING **: 01:14:38.927: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918879253	Marionette	INFO	Marionette enabled
+1692918879325	Marionette	INFO	Listening on port 33061
+WebDriver BiDi listening on ws://127.0.0.1:36673
+Read port: 33061
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918879548	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:36673/devtools/browser/536aa94b-f34c-4ea3-8285-065d1e301e96
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1692918891646	Marionette	INFO	Stopped listening on port 33061
+JavaScript warning: https://www.sciencedirect.com/science/article/pii/S0168010298000212?via%3Dihub line 1 > injectedScript, line 848: Script terminated by timeout at:
+nrWrapper@https://www.sciencedirect.com/science/article/pii/S0168010298000212?via%3Dihub line 1 > injectedScript:848:33
+
+1692918892351	geckodriver	INFO	Listening on 127.0.0.1:41497
+1692918892858	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "48263" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiledqi7Wa"
+*** You are running in headless mode.
+
+(firefox:55836): Gtk-WARNING **: 01:14:52.889: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918893098	Marionette	INFO	Marionette enabled
+1692918893154	Marionette	INFO	Listening on port 34817
+Read port: 34817
+WebDriver BiDi listening on ws://127.0.0.1:48263
+1692918893236	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:48263/devtools/browser/40cead5e-5f89-4531-a2aa-4276c9d5956a
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=1BE8CAC439A5B3324467E06B9783646C, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918906200	Marionette	INFO	Stopped listening on port 34817
+1692918906810	geckodriver	INFO	Listening on 127.0.0.1:40229
+1692918907316	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "38379" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileos8muA"
+*** You are running in headless mode.
+
+(firefox:56247): Gtk-WARNING **: 01:15:07.350: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918907568	Marionette	INFO	Marionette enabled
+1692918907623	Marionette	INFO	Listening on port 38885
+WebDriver BiDi listening on ws://127.0.0.1:38379
+Read port: 38885
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918907801	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:38379/devtools/browser/69ebf7ac-5b6d-4cb2-b07c-148d5a438cc5
+JavaScript error: https://journals.physiology.org/products/physio/releasedAssets/js/main.bundle-fda5f4df33afe522c603.js, line 1: ChunkLoadError: Loading chunk 22 failed.
+(error: https://journals.physiology.org/products/physio/releasedAssets/js/requestidlecallback-polyfill-d727ee7162e5e0276299.js)
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://pagead2.googlesyndication.com/bg/0w4HeoaYEDyr3MppZwiwXJgG2WIOQk_JViOVQEuG4uU.js line 2 > eval line 28 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/0w4HeoaYEDyr3MppZwiwXJgG2WIOQk_JViOVQEuG4uU.js line 2 > eval line 5955 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/0w4HeoaYEDyr3MppZwiwXJgG2WIOQk_JViOVQEuG4uU.js line 2 > eval line 6125 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918925775	Marionette	INFO	Stopped listening on port 38885
+JavaScript warning: https://cdn.feathr.co/js/boomerang.min.js, line 2: Script terminated by timeout at:
+t@https://cdn.feathr.co/js/boomerang.min.js:2:181890
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1692918926510	geckodriver	INFO	Listening on 127.0.0.1:33147
+1692918927014	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "46501" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileQSdNFA"
+*** You are running in headless mode.
+
+(firefox:56864): Gtk-WARNING **: 01:15:27.040: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918927218	Marionette	INFO	Marionette enabled
+1692918927264	Marionette	INFO	Listening on port 41179
+WebDriver BiDi listening on ws://127.0.0.1:46501
+Read port: 41179
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918927432	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:46501/devtools/browser/18857818-189a-4d66-89e3-023892a42998
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://pagead2.googlesyndication.com/bg/0w4HeoaYEDyr3MppZwiwXJgG2WIOQk_JViOVQEuG4uU.js line 2 > eval line 184 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918944205	Marionette	INFO	Stopped listening on port 41179
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1692918944932	geckodriver	INFO	Listening on 127.0.0.1:48571
+1692918945438	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "39269" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiledPcbg1"
+*** You are running in headless mode.
+
+(firefox:57253): Gtk-WARNING **: 01:15:45.481: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918945668	Marionette	INFO	Marionette enabled
+1692918945714	Marionette	INFO	Listening on port 43405
+WebDriver BiDi listening on ws://127.0.0.1:39269
+Read port: 43405
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918945928	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:39269/devtools/browser/afc1122c-77b6-4980-9ace-32407e5fc643
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=C9363D320063A23409012845EDD8F64B, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918963047	Marionette	INFO	Stopped listening on port 43405
+1692918963756	geckodriver	INFO	Listening on 127.0.0.1:52309
+1692918964262	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "35957" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileh7EUL5"
+*** You are running in headless mode.
+
+(firefox:57614): Gtk-WARNING **: 01:16:04.296: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918964507	Marionette	INFO	Marionette enabled
+1692918964554	Marionette	INFO	Listening on port 37985
+WebDriver BiDi listening on ws://127.0.0.1:35957
+Read port: 37985
+1692918964666	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:35957/devtools/browser/e3c66bbd-18f9-418a-8b02-d2fead88b12c
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=C8FD3B463452F2A689A9B45E0D94CEF2, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918978637	Marionette	INFO	Stopped listening on port 37985
+1692918979374	geckodriver	INFO	Listening on 127.0.0.1:47409
+1692918979881	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "47229" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilenxJpBw"
+*** You are running in headless mode.
+
+(firefox:57999): Gtk-WARNING **: 01:16:19.922: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918980131	Marionette	INFO	Marionette enabled
+1692918980184	Marionette	INFO	Listening on port 46407
+WebDriver BiDi listening on ws://127.0.0.1:47229
+Read port: 46407
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918980408	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:47229/devtools/browser/bddb2dac-09e2-4492-963a-ba346f4bd6ea
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://pagead2.googlesyndication.com/bg/0w4HeoaYEDyr3MppZwiwXJgG2WIOQk_JViOVQEuG4uU.js line 2 > eval line 96 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692918997472	Marionette	INFO	Stopped listening on port 46407
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1692918998181	geckodriver	INFO	Listening on 127.0.0.1:53225
+1692918998688	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "34959" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileziDPXx"
+*** You are running in headless mode.
+
+(firefox:58382): Gtk-WARNING **: 01:16:38.726: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692918998911	Marionette	INFO	Marionette enabled
+1692918998959	Marionette	INFO	Listening on port 45425
+WebDriver BiDi listening on ws://127.0.0.1:34959
+Read port: 45425
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692918999168	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:34959/devtools/browser/090e2510-b178-48e4-894a-e35707bf34c2
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=E888E481616317B86F63E455B824E547, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692919012083	Marionette	INFO	Stopped listening on port 45425
+1692919012849	geckodriver	INFO	Listening on 127.0.0.1:56663
+1692919013356	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "42507" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileRmSQVm"
+*** You are running in headless mode.
+
+(firefox:58757): Gtk-WARNING **: 01:16:53.394: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919013576	Marionette	INFO	Marionette enabled
+1692919013624	Marionette	INFO	Listening on port 43675
+WebDriver BiDi listening on ws://127.0.0.1:42507
+Read port: 43675
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692919013849	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:42507/devtools/browser/4f01cc2c-cd2a-429f-9b29-98144c7d191f
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1692919026121	Marionette	INFO	Stopped listening on port 43675
+JavaScript warning: https://www.sciencedirect.com/science/article/pii/0006899376904248?via%3Dihub line 1 > injectedScript, line 848: Script terminated by timeout at:
+nrWrapper@https://www.sciencedirect.com/science/article/pii/0006899376904248?via%3Dihub line 1 > injectedScript:848:33
+
+1692919026790	geckodriver	INFO	Listening on 127.0.0.1:41729
+1692919027299	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "33651" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilepQDRur"
+*** You are running in headless mode.
+
+(firefox:59214): Gtk-WARNING **: 01:17:07.351: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919027581	Marionette	INFO	Marionette enabled
+1692919027651	Marionette	INFO	Listening on port 33531
+WebDriver BiDi listening on ws://127.0.0.1:33651
+Read port: 33531
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692919027833	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:33651/devtools/browser/047d3e1e-74e4-4f99-83c2-d5062c4526f0
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=6962F586EB4F8522ACA85ABBE3E2F96A, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692919041281	Marionette	INFO	Stopped listening on port 33531
+1692919042001	geckodriver	INFO	Listening on 127.0.0.1:33809
+1692919042507	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "46641" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileI7INYs"
+*** You are running in headless mode.
+
+(firefox:59577): Gtk-WARNING **: 01:17:22.547: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919042750	Marionette	INFO	Marionette enabled
+1692919042796	Marionette	INFO	Listening on port 41547
+WebDriver BiDi listening on ws://127.0.0.1:46641
+Read port: 41547
+1692919042836	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:46641/devtools/browser/1cfe5e2b-f0d8-4f38-81ae-2e92404275e4
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://pagead2.googlesyndication.com/bg/0w4HeoaYEDyr3MppZwiwXJgG2WIOQk_JViOVQEuG4uU.js line 2 > eval line 2670 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692919055275	Marionette	INFO	Stopped listening on port 41547
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1692919073559	geckodriver	INFO	Listening on 127.0.0.1:37703
+1692919074089	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "37603" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileWM4XqG"
+*** You are running in headless mode.
+
+(firefox:59969): Gtk-WARNING **: 01:17:54.126: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919074351	Marionette	INFO	Marionette enabled
+1692919074400	Marionette	INFO	Listening on port 33811
+WebDriver BiDi listening on ws://127.0.0.1:37603
+Read port: 33811
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692919074612	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:37603/devtools/browser/8fbfa443-3f63-495c-b4fb-748f5b0eeb8a
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1692919087093	Marionette	INFO	Stopped listening on port 33811
+JavaScript warning: https://www.sciencedirect.com/science/article/pii/089106189500050H?via%3Dihub line 1 > injectedScript, line 848: Script terminated by timeout at:
+nrWrapper@https://www.sciencedirect.com/science/article/pii/089106189500050H?via%3Dihub line 1 > injectedScript:848:33
+
+1692919087826	geckodriver	INFO	Listening on 127.0.0.1:46577
+1692919088332	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "44979" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileoCbhye"
+*** You are running in headless mode.
+
+(firefox:60409): Gtk-WARNING **: 01:18:08.366: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919088555	Marionette	INFO	Marionette enabled
+1692919088623	Marionette	INFO	Listening on port 40497
+WebDriver BiDi listening on ws://127.0.0.1:44979
+Read port: 40497
+1692919088744	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:44979/devtools/browser/58399593-54cb-4f54-9663-dd7ffc5866f1
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=85D0E012D583C17F8DCF24565DB862AF, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692919102331	Marionette	INFO	Stopped listening on port 40497
+1692919103084	geckodriver	INFO	Listening on 127.0.0.1:39571
+1692919103592	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "37657" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilemHuCf2"
+*** You are running in headless mode.
+
+(firefox:60774): Gtk-WARNING **: 01:18:23.633: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919103859	Marionette	INFO	Marionette enabled
+1692919103907	Marionette	INFO	Listening on port 46491
+WebDriver BiDi listening on ws://127.0.0.1:37657
+Read port: 46491
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692919104102	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:37657/devtools/browser/619f40a0-b5ca-436e-ba92-e18508c0189e
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=0F79D1EAA585E85EFDEB7C4E95E7E440, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692919117365	Marionette	INFO	Stopped listening on port 46491
+1692919124404	geckodriver	INFO	Listening on 127.0.0.1:56383
+1692919124912	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "43929" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileLB1lAU"
+*** You are running in headless mode.
+
+(firefox:61153): Gtk-WARNING **: 01:18:44.958: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919125179	Marionette	INFO	Marionette enabled
+1692919125230	Marionette	INFO	Listening on port 34111
+WebDriver BiDi listening on ws://127.0.0.1:43929
+Read port: 34111
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692919125459	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:43929/devtools/browser/b95a73f9-a2ae-4bb0-81a8-b3099e8517f5
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=46172B3BBC9AC33E14C661D8E9549A30, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692919138738	Marionette	INFO	Stopped listening on port 34111
+1692919139477	geckodriver	INFO	Listening on 127.0.0.1:37667
+1692919139985	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "58701" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileX1mcyc"
+*** You are running in headless mode.
+
+(firefox:61525): Gtk-WARNING **: 01:19:00.019: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919140228	Marionette	INFO	Marionette enabled
+1692919140294	Marionette	INFO	Listening on port 39813
+WebDriver BiDi listening on ws://127.0.0.1:58701
+Read port: 39813
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692919140478	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:58701/devtools/browser/9694a1af-c962-4a53-acc7-fd1f0978da82
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1692919152565	Marionette	INFO	Stopped listening on port 39813
+JavaScript warning: https://www.sciencedirect.com/science/article/pii/0006899376902067?via%3Dihub line 1 > injectedScript, line 848: Script terminated by timeout at:
+nrWrapper@https://www.sciencedirect.com/science/article/pii/0006899376902067?via%3Dihub line 1 > injectedScript:848:33
+
+1692919153276	geckodriver	INFO	Listening on 127.0.0.1:38905
+1692919153782	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "35811" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileqkcIDP"
+*** You are running in headless mode.
+
+(firefox:61968): Gtk-WARNING **: 01:19:13.817: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919154032	Marionette	INFO	Marionette enabled
+1692919154082	Marionette	INFO	Listening on port 46201
+WebDriver BiDi listening on ws://127.0.0.1:35811
+Read port: 46201
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692919154277	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:35811/devtools/browser/ec763640-9fdb-47e9-b47e-8dd61ec11aab
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=FB12BD8157F47B009F397EF891D2A696, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692919167708	Marionette	INFO	Stopped listening on port 46201
+1692919168300	geckodriver	INFO	Listening on 127.0.0.1:56419
+1692919168807	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "51641" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFWTgfY"
+*** You are running in headless mode.
+
+(firefox:62346): Gtk-WARNING **: 01:19:28.840: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919169042	Marionette	INFO	Marionette enabled
+1692919169103	Marionette	INFO	Listening on port 43607
+Read port: 43607
+WebDriver BiDi listening on ws://127.0.0.1:51641
+1692919169149	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51641/devtools/browser/7bc42a40-e542-44fe-9e3e-870938128037
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=DDEBA566A9E265E7D016536909F61748, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692919184406	Marionette	INFO	Stopped listening on port 43607
+1692919185124	geckodriver	INFO	Listening on 127.0.0.1:39077
+1692919185630	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "54469" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileCR2fmR"
+*** You are running in headless mode.
+
+(firefox:62746): Gtk-WARNING **: 01:19:45.665: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919185850	Marionette	INFO	Marionette enabled
+1692919185898	Marionette	INFO	Listening on port 38047
+WebDriver BiDi listening on ws://127.0.0.1:54469
+Read port: 38047
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692919186120	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:54469/devtools/browser/2ee68025-62c6-4a28-a923-e028d852fdca
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=1EBE4402233CA41502834534BD829239, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692919199975	Marionette	INFO	Stopped listening on port 38047
+1692919200717	geckodriver	INFO	Listening on 127.0.0.1:36625
+1692919201225	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "55667" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileyO2hsi"
+*** You are running in headless mode.
+
+(firefox:63143): Gtk-WARNING **: 01:20:01.262: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919201531	Marionette	INFO	Marionette enabled
+1692919201589	Marionette	INFO	Listening on port 40857
+WebDriver BiDi listening on ws://127.0.0.1:55667
+Read port: 40857
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692919201771	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:55667/devtools/browser/3a4369ac-2ad8-4242-b4e5-a9e358390340
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1692919214816	Marionette	INFO	Stopped listening on port 40857
+1692919215539	geckodriver	INFO	Listening on 127.0.0.1:41727
+1692919216044	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "41953" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileyGLD6j"
+*** You are running in headless mode.
+
+(firefox:63592): Gtk-WARNING **: 01:20:16.081: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919216259	Marionette	INFO	Marionette enabled
+1692919216308	Marionette	INFO	Listening on port 41695
+WebDriver BiDi listening on ws://127.0.0.1:41953
+Read port: 41695
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692919216501	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:41953/devtools/browser/3da8a3a4-9cf2-4182-82d2-d6522c59414d
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=3F563515AC52B9592912C9D006B0A3B5, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692919234255	Marionette	INFO	Stopped listening on port 41695
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=3F563515AC52B9592912C9D006B0A3B5, line 7: Script terminated by timeout at:
+_0x49bb@https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=3F563515AC52B9592912C9D006B0A3B5:7:5333
+_0x5adf71@https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=3F563515AC52B9592912C9D006B0A3B5:7:24693
+
+1692919234979	geckodriver	INFO	Listening on 127.0.0.1:34011
+1692919235487	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "54563" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilebPPKvB"
+*** You are running in headless mode.
+
+(firefox:64017): Gtk-WARNING **: 01:20:35.527: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919235776	Marionette	INFO	Marionette enabled
+1692919235843	Marionette	INFO	Listening on port 36431
+WebDriver BiDi listening on ws://127.0.0.1:54563
+Read port: 36431
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692919236085	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:54563/devtools/browser/07e704fd-32f6-4e47-82da-a3518f3ed3be
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://sdfestaticassets-eu-west-1.sciencedirectassets.com/prod/f5f7a25fa59f8922c249939460b41635c75beb52/arp.js, line 1: Error: Network Error
+JavaScript error: https://sdfestaticassets-eu-west-1.sciencedirectassets.com/prod/f5f7a25fa59f8922c249939460b41635c75beb52/arp.js, line 1: Error: Network Error
+JavaScript error: https://sdfestaticassets-eu-west-1.sciencedirectassets.com/prod/f5f7a25fa59f8922c249939460b41635c75beb52/arp.js, line 1: Error: Network Error
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1692919248725	Marionette	INFO	Stopped listening on port 36431
+JavaScript warning: https://www.sciencedirect.com/science/article/pii/0306452288900061?via%3Dihub line 1 > injectedScript, line 848: Script terminated by timeout at:
+nrWrapper@https://www.sciencedirect.com/science/article/pii/0306452288900061?via%3Dihub line 1 > injectedScript:848:33
+
+1692919249472	geckodriver	INFO	Listening on 127.0.0.1:34503
+1692919249979	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "33963" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileGlNETR"
+*** You are running in headless mode.
+
+(firefox:64458): Gtk-WARNING **: 01:20:50.018: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919250194	Marionette	INFO	Marionette enabled
+1692919250241	Marionette	INFO	Listening on port 37385
+WebDriver BiDi listening on ws://127.0.0.1:33963
+Read port: 37385
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692919250451	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:33963/devtools/browser/bf368a32-389e-4727-81be-21a75224a084
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=1BB89BA2E71ACF3CC0BFA04457A48B68, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692919263222	Marionette	INFO	Stopped listening on port 37385
+1692919973151	geckodriver	INFO	Listening on 127.0.0.1:38441
+1692919973658	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "58885" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileEj8aEq"
+*** You are running in headless mode.
+
+(firefox:65312): Gtk-WARNING **: 01:32:53.696: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919973886	Marionette	INFO	Marionette enabled
+1692919973939	Marionette	INFO	Listening on port 42985
+WebDriver BiDi listening on ws://127.0.0.1:58885
+Read port: 42985
+1692919974052	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:58885/devtools/browser/4e9a8c28-1de7-4e93-8b57-2346ea05278d
+JavaScript error: https://journals.physiology.org/products/physio/releasedAssets/js/main.bundle-fda5f4df33afe522c603.js, line 1: ChunkLoadError: Loading chunk 22 failed.
+(error: https://journals.physiology.org/products/physio/releasedAssets/js/requestidlecallback-polyfill-d727ee7162e5e0276299.js)
+JavaScript error: , line 0: uncaught exception: undefined
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://pagead2.googlesyndication.com/bg/0w4HeoaYEDyr3MppZwiwXJgG2WIOQk_JViOVQEuG4uU.js line 2 > eval line 4697 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/0w4HeoaYEDyr3MppZwiwXJgG2WIOQk_JViOVQEuG4uU.js line 2 > eval line 6331 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/0w4HeoaYEDyr3MppZwiwXJgG2WIOQk_JViOVQEuG4uU.js line 2 > eval line 4315 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692919992916	Marionette	INFO	Stopped listening on port 42985
+JavaScript warning: https://cdn.feathr.co/js/boomerang.min.js, line 2: Script terminated by timeout at:
+t@https://cdn.feathr.co/js/boomerang.min.js:2:181890
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1692919993682	geckodriver	INFO	Listening on 127.0.0.1:46307
+1692919994190	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "44817" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilesEXrxk"
+*** You are running in headless mode.
+
+(firefox:65740): Gtk-WARNING **: 01:33:14.227: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692919994433	Marionette	INFO	Marionette enabled
+1692919994483	Marionette	INFO	Listening on port 44323
+Read port: 44323
+WebDriver BiDi listening on ws://127.0.0.1:44817
+1692919994528	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:44817/devtools/browser/7544c862-5dee-4930-a1df-21510593e33c
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1692920006985	Marionette	INFO	Stopped listening on port 44323
+1692920018659	geckodriver	INFO	Listening on 127.0.0.1:34653
+1692920019165	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "58507" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileehIeRR"
+*** You are running in headless mode.
+
+(firefox:66167): Gtk-WARNING **: 01:33:39.199: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692920019436	Marionette	INFO	Marionette enabled
+1692920019500	Marionette	INFO	Listening on port 37657
+WebDriver BiDi listening on ws://127.0.0.1:58507
+Read port: 37657
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692920019669	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:58507/devtools/browser/d04f440f-a646-41fc-9ef3-09b837de501e
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=08C63134F3BB0BEB5625FFD7CEF7BDB9, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692920037513	Marionette	INFO	Stopped listening on port 37657
+1692920038239	geckodriver	INFO	Listening on 127.0.0.1:49771
+1692920038746	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "56035" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile86nK58"
+*** You are running in headless mode.
+
+(firefox:66522): Gtk-WARNING **: 01:33:58.779: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692920038991	Marionette	INFO	Marionette enabled
+1692920039040	Marionette	INFO	Listening on port 42665
+Read port: 42665
+WebDriver BiDi listening on ws://127.0.0.1:56035
+1692920039082	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:56035/devtools/browser/a046da98-1b10-4d18-9dfa-c04109ff5182
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [DataCollector] An error occurred while executing the sendEvent command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=01F31C9718323642368AFF04E7584556, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692920052377	Marionette	INFO	Stopped listening on port 42665
+1692920058407	geckodriver	INFO	Listening on 127.0.0.1:39563
+1692920058914	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "50035" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilef0tmTT"
+*** You are running in headless mode.
+
+(firefox:66885): Gtk-WARNING **: 01:34:18.947: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692920059154	Marionette	INFO	Marionette enabled
+1692920059203	Marionette	INFO	Listening on port 46153
+WebDriver BiDi listening on ws://127.0.0.1:50035
+Read port: 46153
+1692920059319	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:50035/devtools/browser/a30f27cd-8871-4977-ab41-11ccc177c454
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=7A623C683DCD93E26ADCECCF2A4F53B7, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692920072743	Marionette	INFO	Stopped listening on port 46153
+1692920073454	geckodriver	INFO	Listening on 127.0.0.1:46269
+1692920073961	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "50631" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileVweBeV"
+*** You are running in headless mode.
+
+(firefox:67249): Gtk-WARNING **: 01:34:33.995: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692920074194	Marionette	INFO	Marionette enabled
+1692920074272	Marionette	INFO	Listening on port 32857
+WebDriver BiDi listening on ws://127.0.0.1:50631
+Read port: 32857
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692920074497	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:50631/devtools/browser/c073364f-c184-471a-8393-af682ba5feb9
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=1C861D38C27842B4876BDC8529E1BD94, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692920087705	Marionette	INFO	Stopped listening on port 32857
+1692920088406	geckodriver	INFO	Listening on 127.0.0.1:46745
+1692920088912	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "40257" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileo73w5X"
+*** You are running in headless mode.
+
+(firefox:67607): Gtk-WARNING **: 01:34:48.941: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692920089150	Marionette	INFO	Marionette enabled
+1692920089225	Marionette	INFO	Listening on port 41573
+WebDriver BiDi listening on ws://127.0.0.1:40257
+Read port: 41573
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692920089443	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:40257/devtools/browser/3b4be85a-6678-4fda-9f44-407e88aa593c
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1692920101813	Marionette	INFO	Stopped listening on port 41573
+JavaScript warning: https://www.sciencedirect.com/science/article/pii/0165017396000033?via%3Dihub line 1 > injectedScript, line 848: Script terminated by timeout at:
+nrWrapper@https://www.sciencedirect.com/science/article/pii/0165017396000033?via%3Dihub line 1 > injectedScript:848:33
+
+1692920113744	geckodriver	INFO	Listening on 127.0.0.1:36401
+1692920114251	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "52011" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileWNuRQy"
+*** You are running in headless mode.
+
+(firefox:68064): Gtk-WARNING **: 01:35:14.286: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692920114495	Marionette	INFO	Marionette enabled
+1692920114557	Marionette	INFO	Listening on port 40425
+WebDriver BiDi listening on ws://127.0.0.1:52011
+Read port: 40425
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692920114811	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52011/devtools/browser/7af66b73-dfc4-4c96-bb68-2fe24f87db35
+JavaScript error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/main.bundle-6592cf950c4f73756656.js, line 1: ChunkLoadError: Loading chunk 37 failed.
+(error: https://onlinelibrary.wiley.com/products/acropolis/pericles/releasedAssets/js/requestidlecallback-polyfill-358ab9209ac111cffbd8.js)
+JavaScript error: https://assets.adobedtm.com/59640f9fa510/591d3f748997/launch-1ff1f800248b.min.js, line 4: Error: [alloy] [Identity] An error occurred while executing the getIdentity command.
+Caused by: An identity was not set properly. Please verify that the org ID 1B6E34B85282A0AC0A490D44@AdobeOrg configured in Alloy matches the org ID specified in the edge configuration.
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=9D2B1F2EFD0FE34FB88D9B9BED509A24, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
