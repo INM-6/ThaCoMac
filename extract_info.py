@@ -583,7 +583,7 @@ def func_physiology_org(url):
             print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
             time.sleep(5*60)
             error_label = 0
-    
+    print("hi")
     # doi
     try:
         doi = driver.find_element(By.XPATH, "//a[contains(@class, 'epub-section__doi__text')]").text.split("doi.org/")[1]
