@@ -12127,3 +12127,12 @@ Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfset
 1692955956232	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.error: ({})
+DevTools listening on ws://127.0.0.1:44175/devtools/browser/0e07ca9f-6dc5-4ad6-b0f1-2cd1c8e100ac
+JavaScript error: https://journals.physiology.org/products/physio/releasedAssets/js/main.bundle-fda5f4df33afe522c603.js, line 1: ChunkLoadError: Loading chunk 22 failed.
+(error: https://journals.physiology.org/products/physio/releasedAssets/js/requestidlecallback-polyfill-d727ee7162e5e0276299.js)
+JavaScript error: , line 0: uncaught exception: undefined
+MESA: error: Failed to query drm device.
+libEGL warning: egl: failed to create dri2 screen
+JavaScript warning: https://pagead2.googlesyndication.com/bg/oGWEAOSy2FD_H6yXFafSznTTKo3y8yaW3jsvWQxT1M8.js line 2 > eval line 3955 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/oGWEAOSy2FD_H6yXFafSznTTKo3y8yaW3jsvWQxT1M8.js line 2 > eval line 1420 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/oGWEAOSy2FD_H6yXFafSznTTKo3y8yaW3jsvWQxT1M8.js line 2 > eval line 2098 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
