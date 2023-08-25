@@ -12106,3 +12106,24 @@ libEGL warning: egl: failed to create dri2 screen
 JavaScript warning: https://pagead2.googlesyndication.com/bg/oGWEAOSy2FD_H6yXFafSznTTKo3y8yaW3jsvWQxT1M8.js line 2 > eval line 183 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 1692955953787	Marionette	INFO	Stopped listening on port 37075
 console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1692955954331	geckodriver	INFO	Listening on 127.0.0.1:35063
+1692955954836	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "44175" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilePkpF6I"
+*** You are running in headless mode.
+
+(firefox:161709): Gtk-WARNING **: 11:32:34.853: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692955956023	Marionette	INFO	Marionette enabled
+1692955956073	Marionette	INFO	Listening on port 32981
+WebDriver BiDi listening on ws://127.0.0.1:44175
+Read port: 32981
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692955956232	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
