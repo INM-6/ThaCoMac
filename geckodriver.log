@@ -28934,3 +28934,27 @@ MESA: error: Failed to query drm device.
 libEGL warning: egl: failed to create dri2 screen
 JavaScript warning: https://beacon.riskified.com/?shop=https://onlinelibrary.wiley.com&sid=9AFFC4FFC1916E963EA78F7BEDBCDF48, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 1692965204557	Marionette	INFO	Stopped listening on port 37007
+1692965225869	geckodriver	INFO	Listening on 127.0.0.1:60013
+1692965226375	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "49233" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilekhH5N1"
+*** You are running in headless mode.
+
+(firefox:405626): Gtk-WARNING **: 14:07:06.389: Locale not supported by C library.
+	Using the fallback 'C' locale.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692965227545	Marionette	INFO	Marionette enabled
+1692965227586	Marionette	INFO	Listening on port 44585
+WebDriver BiDi listening on ws://127.0.0.1:49233
+Read port: 44585
+/home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so: cannot open shared object file: Permission denied
+Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfsettings.so
+1692965227755	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 229))
+console.error: ({})
+DevTools listening on ws://127.0.0.1:49233/devtools/browser/5aa4a53b-b1c3-4936-b72e-f409157382a1
+1692965228538	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 759))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 411))
