@@ -28958,3 +28958,5 @@ DevTools listening on ws://127.0.0.1:49233/devtools/browser/5aa4a53b-b1c3-4936-b
 1692965228538	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
 console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 759))
 console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 411))
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1692965277128	Marionette	INFO	Stopped listening on port 33463
