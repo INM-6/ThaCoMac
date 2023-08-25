@@ -12100,3 +12100,4 @@ Failed to load module: /home/hou/snap/code/common/.cache/gio-modules/libdconfset
 1692955942167	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.error: ({})
+DevTools listening on ws://127.0.0.1:39025/devtools/browser/9fff23f9-fc32-48b6-96c2-32cddd873e17
