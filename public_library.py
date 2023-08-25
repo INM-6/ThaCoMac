@@ -162,8 +162,8 @@ def get_final_redirected_url(url):
                 response = requests.get(url, headers = plib.headers)    
     except:
         final_url = np.nan
-        status_code = response.status_code
-        print("Warning:", response.status_code, " when getting final redirected url: from ", url)
+        # status_code = response.status_code
+        print("Warning:", " when getting final redirected url: from ", url)
         # raise Exception("Error when getting final redirected url.")
     return final_url, status_code
 # --------------------start of test code--------------------
