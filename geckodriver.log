@@ -28960,3 +28960,5 @@ console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "re
 console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 411))
 console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
 1692965277128	Marionette	INFO	Stopped listening on port 33463
+1693062141538	geckodriver	INFO	Listening on 127.0.0.1:53599
+1693062142346	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/sna ... ss" "--remote-debugging-port" "33265" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileV6zrW5"
