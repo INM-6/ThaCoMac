@@ -20,19 +20,20 @@ websites_gs = {
 websites = [
     'www.ncbi.nlm.nih.gov', 'linkinghub.elsevier.com', 'wiley.com', 'link.springer.com', 'journals.physiology.org'
 ]
+# # websites
 # websites = [
 #     'www.ncbi.nlm.nih.gov', 'linkinghub.elsevier.com', 'wiley.com', 'link.springer.com', 'journals.physiology.org', 
 #     'academic.oup.com', 'pubmed.ncbi.nlm.nih.gov', 'www.cambridge.org', 'karger.com', 'journals.lww.com', 
 #     'www.nature.com', 'nan', 'www.science.org', 'www.tandfonline.com', 'journals.sagepub.com', 'jamanetwork.com', 
-#     'neurology.org', 'www.biorxiv.org', 'europepmc.org', 'royalsocietypublishing.org', 'iovs.arvojournals.org', 
-#     'psychiatryonline.org', 'psycnet.apa.org', 'www.jstage.jst.go.jp', 'direct.mit.edu', 'thejns.org', 
-#     'www.annualreviews.org', 'aspetjournals.org', 'jnm.snmjournals.org', 'www.ahajournals.org', 'www.architalbiol.org', 
-#     'www.worldscientific.com', 'iospress.com', 'pubs.acs.org', 'www.liebertpub.com', 'neurologia.com', 
-#     'www.thieme-connect.de', 'opg.optica.org', 'pubs.asahq.org', 'literatumonline.com', 'www.researchsquare.com', 
-#     'www.rbojournal.org', 'www.degruyter.com', 'symposium.cshlp.org', 'open.bu.edu', 'www.taylorfrancis.com', 
-#     'journal.psych.ac.cn', 'papers.ssrn.com', 'www.ingentaconnect.com', 'journals.aps.org', 'www.imrpress.com', 
-#     'ieeexplore.ieee.org', 'www.ajtmh.org', 'ujms.net', 'webview.isho.jp', 'wakespace.lib.wfu.edu', 'pubs.aip.org', 
-#     'journals.biologists.com', 'www.microbiologyresearch.org', 'www.jstor.org'
+#     'neurology.org', 'www.biorxiv.org', 'europepmc.org', 'iovs.arvojournals.org', 'royalsocietypublishing.org', 
+#     'psycnet.apa.org', 'psychiatryonline.org', 'direct.mit.edu', 'www.jstage.jst.go.jp', 'thejns.org', 
+#     'www.annualreviews.org', 'aspetjournals.org', 'jnm.snmjournals.org', 'www.architalbiol.org', 'www.ahajournals.org', 
+#     'content.iospress.com', 'www.worldscientific.com', 'www.liebertpub.com', 'pubs.acs.org', 'www.thieme-connect.de', 
+#     'opg.optica.org', 'neurologia.com', 'pubs.asahq.org', 'www.ingentaconnect.com', 'pubs.aip.org', 'journal.psych.ac.cn', 
+#     'open.bu.edu', 'ujms.net', 'journals.biologists.com', 'wakespace.lib.wfu.edu', 'symposium.cshlp.org', 
+#     'www.microbiologyresearch.org', 'journals.aps.org', 'www.imrpress.com', 'www.jstor.org', 'www.researchsquare.com', 
+#     'ieeexplore.ieee.org', 'www.rbojournal.org', 'papers.ssrn.com', 'webview.isho.jp', 'www.degruyter.com', 
+#     'www.taylorfrancis.com', 'www.ajtmh.org', 'literatumonline.com'
 # ]
 
 
