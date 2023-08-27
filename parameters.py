@@ -22,21 +22,17 @@ websites = [
 ]
 # websites = [
 #     'www.ncbi.nlm.nih.gov', 'linkinghub.elsevier.com', 'wiley.com', 'link.springer.com', 'journals.physiology.org', 
-#     'academic.oup.com', 'pubmed.ncbi.nlm.nih.gov', 'www.frontiersin.org', 'www.nature.com', 'www.cambridge.org', 
-#     'www.jneurosci.org', 'journals.lww.com', 'karger.com', 'nan', 'www.tandfonline.com', 'journals.sagepub.com', 
-#     'www.science.org', 'journals.plos.org', 'royalsocietypublishing.org', 'pnas.org', 'jamanetwork.com', 
-#     'www.mdpi.com', 'n.neurology.org', 'www.biorxiv.org', 'arvojournals.org', 'europepmc.org', 'direct.mit.edu', 
-#     'psychiatryonline.org', 'psycnet.apa.org', 'elifesciences.org', 'www.jstage.jst.go.jp', 'bmj.com', 
-#     'www.annualreviews.org', 'pubs.acs.org', 'biomedcentral.com', 'aspetjournals.org', 'www.liebertpub.com', 
-#     'thejns.org', 'jnm.snmjournals.org', 'www.hindawi.com', 'www.eneuro.org', 'journals.asm.org', 'www.ahajournals.org', 
-#     'www.architalbiol.org', 'cshlp.org', 'ieeexplore.ieee.org', 'www.worldscientific.com', 'content.iospress.com', 
-#     'neurologia.com', 'www.thieme-connect.de', 'www.microbiologyresearch.org', 'www.dovepress.com', 'www.eurekaselect.com', 
-#     'pubs.asahq.org', 'journals.biologists.com', 'opg.optica.org', 'www.taylorfrancis.com', 'www.rbojournal.org', 
-#     'papers.ssrn.com', 'journals.aps.org', 'www.researchsquare.com', 'www.cpn.or.kr', 'www.degruyter.com', 'www.ajol.info', 
-#     'ujms.net', 'www.ajtmh.org', 'www.ingentaconnect.com', 'www.futuremedicine.com', 'wakespace.lib.wfu.edu', 
-#     'www.jstor.org', 'hcvalidate.perfdrive.com', 'www.embopress.org', 'www.imrpress.com', 'literatumonline.com', 
-#     'pubs.aip.org', 'open.bu.edu', 'jhk.termedia.pl', 'tremorjournal.org', 'www.thno.org', 'wwwnc.cdc.gov', 
-#     'webview.isho.jp', 'journal.psych.ac.cn'
+#     'academic.oup.com', 'pubmed.ncbi.nlm.nih.gov', 'www.cambridge.org', 'karger.com', 'journals.lww.com', 
+#     'www.nature.com', 'nan', 'www.science.org', 'www.tandfonline.com', 'journals.sagepub.com', 'jamanetwork.com', 
+#     'neurology.org', 'www.biorxiv.org', 'europepmc.org', 'royalsocietypublishing.org', 'iovs.arvojournals.org', 
+#     'psychiatryonline.org', 'psycnet.apa.org', 'www.jstage.jst.go.jp', 'direct.mit.edu', 'thejns.org', 
+#     'www.annualreviews.org', 'aspetjournals.org', 'jnm.snmjournals.org', 'www.ahajournals.org', 'www.architalbiol.org', 
+#     'www.worldscientific.com', 'iospress.com', 'pubs.acs.org', 'www.liebertpub.com', 'neurologia.com', 
+#     'www.thieme-connect.de', 'opg.optica.org', 'pubs.asahq.org', 'literatumonline.com', 'www.researchsquare.com', 
+#     'www.rbojournal.org', 'www.degruyter.com', 'symposium.cshlp.org', 'open.bu.edu', 'www.taylorfrancis.com', 
+#     'journal.psych.ac.cn', 'papers.ssrn.com', 'www.ingentaconnect.com', 'journals.aps.org', 'www.imrpress.com', 
+#     'ieeexplore.ieee.org', 'www.ajtmh.org', 'ujms.net', 'webview.isho.jp', 'wakespace.lib.wfu.edu', 'pubs.aip.org', 
+#     'journals.biologists.com', 'www.microbiologyresearch.org', 'www.jstor.org'
 # ]
 
 
