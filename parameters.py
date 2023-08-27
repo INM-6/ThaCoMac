@@ -18,23 +18,25 @@ websites_gs = {
 
 # websites
 websites = [
-    'ncbi.nlm.nih.gov', 'elsevier.com', 'wiley.com', 'springer.com', 'physiology.org'
+    'www.ncbi.nlm.nih.gov', 'linkinghub.elsevier.com', 'wiley.com', 'link.springer.com', 'journals.physiology.org'
 ]
 # websites = [
-#     'ncbi.nlm.nih.gov', 'elsevier.com', 'wiley.com', 'springer.com', 'physiology.org', 'oup.com', 
-#     'pubmed.ncbi.nlm.nih.gov', 'cambridge.org', 'nature.com', 'karger.com', 'lww.com', 'nan', 
-#     'science.org', 'tandfonline.com', 'sagepub.com', 'frontiersin.org', 'jamanetwork.com', 
-#     'neurology.org', 'biorxiv.org', 'europepmc.org', 'royalsocietypublishing.org', 'arvojournals.org', 
-#     'psycnet.apa.org', 'psychiatryonline.org', 'mit.edu', 'jstage.jst.go.jp', 'mdpi.com', 'acs.org', 
-#     'annualreviews.org', 'thejns.org', 'snmjournals.org', 'aspetjournals.org', 'jneurosci.org', 
-#     'lib.umich.edu', 'plos.org', 'ahajournals.org', 'architalbiol.org', 'elifesciences.org', 
-#     'degruyter.com', 'liebertpub.com', 'iospress.com', 'asahq.org', 'worldscientific.com', 
-#     'opg.optica.org', 'thieme-connect.com', 'hindawi.com', 'neurologia.com', 'dovepress.com', 
-#     'springeropen.com', 'eneuro.org', 'ujms.net', 'microbiologyresearch.org', 'ieee.org', 'rbojournal.org', 
-#     'pnas.org', 'aps.org', 'ssrn.com', 'lib.wfu.edu', 'symposium.cshlp.org', 'taylorfrancis.com', 
-#     'em-consulte.com', 'biologists.com', 'asm.org', 'embopress.org', 'imrpress.com', 'aip.org', 
-#     'jstor.org', 'cdnsciencepub.com', 'birpublications.org', 'ajtmh.org', 'psych.ac.cn', 'open.bu.edu', 
-#     'researchsquare.com', 'ingentaconnect.com', 'isho.jp'
+#     'www.ncbi.nlm.nih.gov', 'linkinghub.elsevier.com', 'wiley.com', 'link.springer.com', 'journals.physiology.org', 
+#     'academic.oup.com', 'pubmed.ncbi.nlm.nih.gov', 'www.frontiersin.org', 'www.nature.com', 'www.cambridge.org', 
+#     'www.jneurosci.org', 'journals.lww.com', 'karger.com', 'nan', 'www.tandfonline.com', 'journals.sagepub.com', 
+#     'www.science.org', 'journals.plos.org', 'royalsocietypublishing.org', 'pnas.org', 'jamanetwork.com', 
+#     'www.mdpi.com', 'n.neurology.org', 'www.biorxiv.org', 'arvojournals.org', 'europepmc.org', 'direct.mit.edu', 
+#     'psychiatryonline.org', 'psycnet.apa.org', 'elifesciences.org', 'www.jstage.jst.go.jp', 'bmj.com', 
+#     'www.annualreviews.org', 'pubs.acs.org', 'biomedcentral.com', 'aspetjournals.org', 'www.liebertpub.com', 
+#     'thejns.org', 'jnm.snmjournals.org', 'www.hindawi.com', 'www.eneuro.org', 'journals.asm.org', 'www.ahajournals.org', 
+#     'www.architalbiol.org', 'cshlp.org', 'ieeexplore.ieee.org', 'www.worldscientific.com', 'content.iospress.com', 
+#     'neurologia.com', 'www.thieme-connect.de', 'www.microbiologyresearch.org', 'www.dovepress.com', 'www.eurekaselect.com', 
+#     'pubs.asahq.org', 'journals.biologists.com', 'opg.optica.org', 'www.taylorfrancis.com', 'www.rbojournal.org', 
+#     'papers.ssrn.com', 'journals.aps.org', 'www.researchsquare.com', 'www.cpn.or.kr', 'www.degruyter.com', 'www.ajol.info', 
+#     'ujms.net', 'www.ajtmh.org', 'www.ingentaconnect.com', 'www.futuremedicine.com', 'wakespace.lib.wfu.edu', 
+#     'www.jstor.org', 'hcvalidate.perfdrive.com', 'www.embopress.org', 'www.imrpress.com', 'literatumonline.com', 
+#     'pubs.aip.org', 'open.bu.edu', 'jhk.termedia.pl', 'tremorjournal.org', 'www.thno.org', 'wwwnc.cdc.gov', 
+#     'webview.isho.jp', 'journal.psych.ac.cn'
 # ]
 
 

@@ -68,11 +68,11 @@ def extract_info_from_webpage(url, websites):
 
 # # websites
 # websites = [
-#     'ncbi.nlm.nih.gov', 'elsevier.com', 'wiley.com', 'springer.com', 'physiology.org'
+#     'www.ncbi.nlm.nih.gov', 'linkinghub.elsevier.com', 'wiley.com', 'link.springer.com', 'journals.physiology.org'
 # ]
 
-# ncbi.nlm.nih.gov
-def func_ncbi_nlm_nih_gov(url):
+# www.ncbi.nlm.nih.gov
+def func_www_ncbi_nlm_nih_gov(url):
     # initialize
     info = {
         "doi": np.nan,
@@ -181,7 +181,7 @@ def func_ncbi_nlm_nih_gov(url):
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3140205/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4362213/"
 # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC48909/"
-# info = func_ncbi_nlm_nih_gov(url)
+# info = func_www_ncbi_nlm_nih_gov(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -192,8 +192,8 @@ def func_ncbi_nlm_nih_gov(url):
 # ---------------------end of test code---------------------
 
 
-# elsevier.com
-def func_elsevier_com(url):
+# linkinghub.elsevier.com
+def func_linkinghub_elsevier_com(url):
     # initialize
     info = {
         "doi": np.nan,
@@ -307,7 +307,7 @@ def func_elsevier_com(url):
 # # url = "https://www.sciencedirect.com/science/article/pii/0006899368900450?via%3Dihub"
 # # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
 # # url = "https://www.sciencedirect.com/science/article/pii/0006899377907806?via%3Dihub"
-# info = func_elsevier_com(url)
+# info = func_linkinghub_elsevier_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -438,8 +438,8 @@ def func_wiley_com(url):
 # ---------------------end of test code---------------------
 
 
-# springer.com
-def func_springer_com(url):
+# link.springer.com
+def func_link_springer_com(url):
     # initialize
     info = {
         "doi": np.nan,
@@ -539,7 +539,7 @@ def func_springer_com(url):
 # # url = "https://link.springer.com/article/10.1007/BF00237252"
 # # url = "https://link.springer.com/article/10.1007/BF00237252"
 # # url = "https://link.springer.com/chapter/10.1007/978-1-4419-0754-7_2"
-# info = func_springer_com(url)
+# info = func_link_springer_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -550,8 +550,8 @@ def func_springer_com(url):
 # ---------------------end of test code---------------------
 
 
-# physiology.org
-def func_physiology_org(url):
+# journals.physiology.org
+def func_journals_physiology_org(url):
     # initialize
     info = {
         "doi": np.nan,
@@ -638,7 +638,7 @@ def func_physiology_org(url):
 # # url = "https://journals.physiology.org/doi/abs/10.1152/jn.1963.26.5.775"
 # # url = "https://journals.physiology.org/doi/10.1152/jn.1994.72.3.1270"
 # url = "https://journals.physiology.org/doi/10.1152/jn.1981.46.5.901"
-# info = func_physiology_org(url)
+# info = func_journals_physiology_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
