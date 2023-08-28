@@ -86,7 +86,7 @@ def func_www_ncbi_nlm_nih_gov(url):
 
     # load the webpage
     soup = plib.request_webpage(url)
-    time.sleep(3)
+    # time.sleep(3)
     
     # extract information from loaded webpage
     # doi
