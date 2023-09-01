@@ -20,22 +20,18 @@ websites_gs = {
 websites = [
     'www.ncbi.nlm.nih.gov', 'linkinghub.elsevier.com', 'wiley.com', 'link.springer.com', 'journals.physiology.org'
 ]
-# a total of 
+ 
 # # websites
-# websites = [
-#     'www.ncbi.nlm.nih.gov', 'linkinghub.elsevier.com', 'wiley.com', 'link.springer.com', 'journals.physiology.org', 
-#     'academic.oup.com', 'pubmed.ncbi.nlm.nih.gov', 'www.cambridge.org', 'karger.com', 'journals.lww.com', 
-#     'www.nature.com', 'nan', 'www.science.org', 'www.tandfonline.com', 'journals.sagepub.com', 'jamanetwork.com', 
-#     'neurology.org', 'www.biorxiv.org', 'europepmc.org', 'iovs.arvojournals.org', 'royalsocietypublishing.org', 
-#     'psycnet.apa.org', 'psychiatryonline.org', 'direct.mit.edu', 'www.jstage.jst.go.jp', 'thejns.org', 
-#     'www.annualreviews.org', 'aspetjournals.org', 'jnm.snmjournals.org', 'www.architalbiol.org', 'www.ahajournals.org', 
-#     'content.iospress.com', 'www.worldscientific.com', 'www.liebertpub.com', 'pubs.acs.org', 'www.thieme-connect.de', 
-#     'opg.optica.org', 'neurologia.com', 'pubs.asahq.org', 'www.ingentaconnect.com', 'pubs.aip.org', 'journal.psych.ac.cn', 
-#     'open.bu.edu', 'ujms.net', 'journals.biologists.com', 'wakespace.lib.wfu.edu', 'symposium.cshlp.org', 
-#     'www.microbiologyresearch.org', 'journals.aps.org', 'www.imrpress.com', 'www.jstor.org', 'www.researchsquare.com', 
-#     'ieeexplore.ieee.org', 'www.rbojournal.org', 'papers.ssrn.com', 'webview.isho.jp', 'www.degruyter.com', 
-#     'www.taylorfrancis.com', 'www.ajtmh.org', 'literatumonline.com'
-# ]
+websites = [
+    'www.ncbi.nlm.nih.gov', 'linkinghub.elsevier.com', 'wiley.com', 'link.springer.com', 'journals.physiology.org', 
+    'academic.oup.com', 'pubmed.ncbi.nlm.nih.gov', 'www.cambridge.org', 'karger.com', 'journals.lww.com', 'www.nature.com', 
+    'www.science.org', 'www.tandfonline.com', 'journals.sagepub.com', 'jamanetwork.com', 'neurology.org', 'www.biorxiv.org', 
+    'europepmc.org', 'iovs.arvojournals.org', 'royalsocietypublishing.org', 'psychiatryonline.org', 'direct.mit.edu', 
+    'thejns.org', 'www.annualreviews.org', 'aspetjournals.org', 'jnm.snmjournals.org', 'www.architalbiol.org', 
+    'www.ahajournals.org', 'pubs.acs.org', 'www.thieme-connect.de', 'pubs.asahq.org', 'www.ingentaconnect.com', 
+    'ujms.net', 'journals.biologists.com', 'www.microbiologyresearch.org', 'journals.aps.org', 'www.imrpress.com', 
+    'www.researchsquare.com', 'ieeexplore.ieee.org', 'papers.ssrn.com'
+    ]
 
 
 # on-topic keyword lexicon
