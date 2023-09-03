@@ -69,12 +69,6 @@ def extract_info_from_webpage(url, websites):
 # ---------------------end of test code---------------------
 
 
-# # websites
-# websites = [
-#     'www.ncbi.nlm.nih.gov', 'linkinghub.elsevier.com', 'wiley.com', 'link.springer.com', 'journals.physiology.org'
-# ]
-
-
 # www.ncbi.nlm.nih.gov
 def www_ncbi_nlm_nih_gov(url):
     # initialize
@@ -90,7 +84,6 @@ def www_ncbi_nlm_nih_gov(url):
 
     # load the webpage
     soup = plib.request_webpage(url)
-    # time.sleep(3)
     
     # extract information from loaded webpage
     # doi
@@ -197,7 +190,7 @@ def www_ncbi_nlm_nih_gov(url):
 
 
 # linkinghub.elsevier.com
-def func_linkinghub_elsevier_com(url):
+def linkinghub_elsevier_com(url):
     # initialize
     info = {
         "doi": np.nan,
@@ -220,7 +213,7 @@ def func_linkinghub_elsevier_com(url):
     while(error_label == 0):
         try:
             driver.get(url)
-            time.sleep(10)
+            time.sleep(5)
             error_label = 1
         except:
             print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
@@ -268,11 +261,12 @@ def func_linkinghub_elsevier_com(url):
         keywords = np.nan
 
     # pdf_link
-    try:
-        pdf_link = driver.find_element(By.XPATH, "//li[@class='ViewPDF']/a").get_attribute('href')
-        pdf_link = pdf_link.strip()
-    except:
-        pdf_link = np.nan
+    # try:
+    #     pdf_link = driver.find_element(By.XPATH, "//li[@class='ViewPDF']/a").get_attribute('href')
+    #     pdf_link = pdf_link.strip()
+    # except:
+    #     pdf_link = np.nan
+    pdf_link = np.nan
 
     driver.quit()
 
@@ -290,28 +284,9 @@ def func_linkinghub_elsevier_com(url):
 # --------------------start of test code--------------------
 # url = "https://linkinghub.elsevier.com/retrieve/pii/0006899395013385"
 # # url = "https://linkinghub.elsevier.com/retrieve/pii/S0891061898000222"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0165027017303631?via%3Dihub#abs0010"
 # # url = "https://linkinghub.elsevier.com/retrieve/pii/S0165027017303631"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0079612308626783?via%3Dihub"
 # # url = "https://linkinghub.elsevier.com/retrieve/pii/0006899376902067"
-# # url = "https://www.sciencedirect.com/science/article/pii/0006899378911034?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0006899377904747?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0165017379900080?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/000689937990132X?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/S2211124723008550?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0960982215014190?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0006899375905296?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0166432805800166?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/000689938690925X?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/abs/pii/S1042368018302602?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0006899367900042?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0165017380900028?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/B9780124077942000092?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0006899368900450?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0006899377907806?via%3Dihub"
-# info = func_linkinghub_elsevier_com(url)
+# info = linkinghub_elsevier_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -323,7 +298,7 @@ def func_linkinghub_elsevier_com(url):
 
 
 # wiley.com
-def func_wiley_com(url):
+def wiley_com(url):
     # initialize
     info = {
         "doi": np.nan,
@@ -346,7 +321,7 @@ def func_wiley_com(url):
     while(error_label == 0):
         try:
             driver.get(url)
-            time.sleep(10)
+            time.sleep(5)
             error_label = 1
         except:
             print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
@@ -415,9 +390,7 @@ def func_wiley_com(url):
     return info
 # --------------------start of test code--------------------
 # # url = "https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.901980111"
-# # url = "https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.902890211"
-# # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.21440"
-# # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.21155"
+# url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.21155"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19981019)400:2%3C271::AID-CNE8%3E3.0.CO;2-6"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.902360304"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.902820107"
@@ -430,8 +403,8 @@ def func_wiley_com(url):
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-9861(19960805)371:4%3C513::AID-CNE2%3E3.0.CO;2-7"
 # # url = "https://nyaspubs.onlinelibrary.wiley.com/doi/full/10.1196/annals.1300.030"
 # # url = "https://onlinelibrary.wiley.com/doi/10.1002/cne.23436"
-# url = "https://onlinelibrary.wiley.com/doi/10.1002/9780470513545.ch4"
-# info = func_wiley_com(url)
+# # url = "https://onlinelibrary.wiley.com/doi/10.1002/9780470513545.ch4"
+# info = wiley_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -443,7 +416,7 @@ def func_wiley_com(url):
 
 
 # link.springer.com
-def func_link_springer_com(url):
+def link_springer_com(url):
     # initialize
     info = {
         "doi": np.nan,
@@ -466,7 +439,7 @@ def func_link_springer_com(url):
     while(error_label == 0):
         try:
             driver.get(url)
-            time.sleep(10)
+            time.sleep(5)
             error_label = 1
         except:
             print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
@@ -543,7 +516,7 @@ def func_link_springer_com(url):
 # # url = "https://link.springer.com/article/10.1007/BF00237252"
 # # url = "https://link.springer.com/article/10.1007/BF00237252"
 # # url = "https://link.springer.com/chapter/10.1007/978-1-4419-0754-7_2"
-# info = func_link_springer_com(url)
+# info = link_springer_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -555,7 +528,7 @@ def func_link_springer_com(url):
 
 
 # journals.physiology.org
-def func_journals_physiology_org(url):
+def journals_physiology_org(url):
     # initialize
     info = {
         "doi": np.nan,
@@ -578,7 +551,7 @@ def func_journals_physiology_org(url):
     while(error_label == 0):
         try:
             driver.get(url)
-            time.sleep(10)
+            time.sleep(5)
             error_label = 1
         except:
             print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
@@ -640,9 +613,9 @@ def func_journals_physiology_org(url):
     return info
 # --------------------start of test code--------------------
 # # url = "https://journals.physiology.org/doi/abs/10.1152/jn.1963.26.5.775"
-# # url = "https://journals.physiology.org/doi/10.1152/jn.1994.72.3.1270"
-# url = "https://journals.physiology.org/doi/10.1152/jn.1981.46.5.901"
-# info = func_journals_physiology_org(url)
+# url = "https://journals.physiology.org/doi/10.1152/jn.1994.72.3.1270"
+# # url = "https://journals.physiology.org/doi/10.1152/jn.1981.46.5.901"
+# info = journals_physiology_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -653,134 +626,127 @@ def func_journals_physiology_org(url):
 # ---------------------end of test code---------------------
 
 
-# sciencedirect.com
-def func_sciencedirect_com(url):
-    # initialize
-    info = {
-        "doi": np.nan,
-        "pmid": np.nan,
-        "pmcid": np.nan,
-        "title": np.nan,
-        "abstract": np.nan,
-        "keywords": np.nan,
-        "pdf_link": np.nan
-    }
+# # sciencedirect.com
+# def sciencedirect_com(url):
+#     # initialize
+#     info = {
+#         "doi": np.nan,
+#         "pmid": np.nan,
+#         "pmcid": np.nan,
+#         "title": np.nan,
+#         "abstract": np.nan,
+#         "keywords": np.nan,
+#         "pdf_link": np.nan
+#     }
 
-    # set up the webdriver
-    os.environ['WDM_LOG'] = '0'
-    options = Options()
-    options.add_argument('--headless')
-    driver = webdriver.Firefox(options=options)
+#     # set up the webdriver
+#     os.environ['WDM_LOG'] = '0'
+#     options = Options()
+#     options.add_argument('--headless')
+#     driver = webdriver.Firefox(options=options)
 
-    # load the webpage
-    error_label = 0
-    while(error_label == 0):
-        try:
-            driver.get(url)
-            time.sleep(10)
-            error_label = 1
-        except:
-            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
-            time.sleep(5*60)
-            error_label = 0
+#     # load the webpage
+#     error_label = 0
+#     while(error_label == 0):
+#         try:
+#             driver.get(url)
+#             time.sleep(10)
+#             error_label = 1
+#         except:
+#             print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+#             time.sleep(5*60)
+#             error_label = 0
     
-    # doi
-    try:
-        doi = driver.find_element(By.XPATH, "//a[@class='anchor doi anchor-default']/span").text.split("doi.org/")[1]
-        doi = doi.strip()
-    except:
-        doi = np.nan
-    if doi == doi:
-        doi = doi.lower()
+#     # doi
+#     try:
+#         doi = driver.find_element(By.XPATH, "//a[@class='anchor doi anchor-default']/span").text.split("doi.org/")[1]
+#         doi = doi.strip()
+#     except:
+#         doi = np.nan
+#     if doi == doi:
+#         doi = doi.lower()
 
-    # pmid, pmcid
-    pmid = np.nan
-    pmcid = np.nan
+#     # pmid, pmcid
+#     pmid = np.nan
+#     pmcid = np.nan
 
-    # title
-    try:
-        title = driver.find_element(By.TAG_NAME, 'h1').find_element(By.XPATH, "//span[@class='title-text']").text
-        title = title.strip()
-    except:
-        title = np.nan
+#     # title
+#     try:
+#         title = driver.find_element(By.TAG_NAME, 'h1').find_element(By.XPATH, "//span[@class='title-text']").text
+#         title = title.strip()
+#     except:
+#         title = np.nan
 
-    # abstract
-    try:
-        abstract = ""
-        elems = driver.find_element(By.XPATH, "//div[@class='abstract author']").find_elements(By.TAG_NAME, "p")
-        for elem in elems:
-            abstract = abstract + elem.text + " "
-        abstract = abstract.strip()
-    except:
-        abstract = np.nan
+#     # abstract
+#     try:
+#         abstract = ""
+#         elems = driver.find_element(By.XPATH, "//div[@class='abstract author']").find_elements(By.TAG_NAME, "p")
+#         for elem in elems:
+#             abstract = abstract + elem.text + " "
+#         abstract = abstract.strip()
+#     except:
+#         abstract = np.nan
     
-    # keywords
-    try:
-        keywords = ""
-        elements = driver.find_element(By.XPATH, "//div[@class='keywords-section']").find_elements(By.XPATH, "//div[@class='keyword']")
-        for element in elements:
-            keywords = keywords + element.find_element(By.TAG_NAME, "span").text + ", "
-        keywords = keywords.strip()
-    except:
-        keywords = np.nan
+#     # keywords
+#     try:
+#         keywords = ""
+#         elements = driver.find_element(By.XPATH, "//div[@class='keywords-section']").find_elements(By.XPATH, "//div[@class='keyword']")
+#         for element in elements:
+#             keywords = keywords + element.find_element(By.TAG_NAME, "span").text + ", "
+#         keywords = keywords.strip()
+#     except:
+#         keywords = np.nan
 
-    # pdf_link
-    try:
-        pdf_link = driver.find_element(By.XPATH, "//li[@class='ViewPDF']/a").get_attribute('href')
-        pdf_link = pdf_link.strip()
-    except:
-        pdf_link = np.nan
+#     # pdf_link
+#     try:
+#         pdf_link = driver.find_element(By.XPATH, "//li[@class='ViewPDF']/a").get_attribute('href')
+#         pdf_link = pdf_link.strip()
+#     except:
+#         pdf_link = np.nan
 
-    driver.quit()
+#     driver.quit()
 
-    info = {
-        "doi": doi,
-        "pmid": pmid,
-        "pmcid": pmcid,
-        "title": title,
-        "abstract": abstract,
-        "keywords": keywords,
-        "pdf_link": pdf_link
-    }
+#     info = {
+#         "doi": doi,
+#         "pmid": pmid,
+#         "pmcid": pmcid,
+#         "title": title,
+#         "abstract": abstract,
+#         "keywords": keywords,
+#         "pdf_link": pdf_link
+#     }
 
-    return info
-# --------------------start of test code--------------------
-# # url = "https://linkinghub.elsevier.com/retrieve/pii/0006899395013385"
-# # url = "https://linkinghub.elsevier.com/retrieve/pii/S0891061898000222"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0165027017303631?via%3Dihub#abs0010"
-# # url = "https://linkinghub.elsevier.com/retrieve/pii/S0165027017303631"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0079612308626783?via%3Dihub"
-# # url = "https://linkinghub.elsevier.com/retrieve/pii/0006899376902067"
-# # url = "https://www.sciencedirect.com/science/article/pii/0006899378911034?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0006899377904747?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0165017379900080?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/000689937990132X?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/S2211124723008550?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0960982215014190?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0006899375905296?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0166432805800166?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/000689938690925X?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/abs/pii/S1042368018302602?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0006899367900042?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0165017380900028?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/B9780124077942000092?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/0006899368900450?via%3Dihub"
-# # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
-# url = "https://www.sciencedirect.com/science/article/pii/0006899377907806?via%3Dihub"
-# info = func_sciencedirect_com(url)
-# print(info["doi"])
-# print(info["pmid"])
-# print(info["pmcid"])
-# print(info["title"])
-# print(info["abstract"])
-# print(info["keywords"])
-# print(info["pdf_link"])
-# ---------------------end of test code---------------------
+#     return info
+# # --------------------start of test code--------------------
+# # # url = "https://www.sciencedirect.com/science/article/pii/0006899378911034?via%3Dihub"
+# # # url = "https://www.sciencedirect.com/science/article/pii/0006899377904747?via%3Dihub"
+# # # url = "https://www.sciencedirect.com/science/article/pii/0165017379900080?via%3Dihub"
+# # # url = "https://www.sciencedirect.com/science/article/pii/000689937990132X?via%3Dihub"
+# # # url = "https://www.sciencedirect.com/science/article/pii/S2211124723008550?via%3Dihub"
+# # # url = "https://www.sciencedirect.com/science/article/pii/S0960982215014190?via%3Dihub"
+# # # url = "https://www.sciencedirect.com/science/article/pii/0006899375905296?via%3Dihub"
+# # # url = "https://www.sciencedirect.com/science/article/pii/S0166432805800166?via%3Dihub"
+# # # url = "https://www.sciencedirect.com/science/article/pii/000689938690925X?via%3Dihub"
+# # # url = "https://www.sciencedirect.com/science/article/abs/pii/S1042368018302602?via%3Dihub"
+# # # url = "https://www.sciencedirect.com/science/article/pii/0006899367900042?via%3Dihub"
+# # # url = "https://www.sciencedirect.com/science/article/pii/0165017380900028?via%3Dihub"
+# # # url = "https://www.sciencedirect.com/science/article/pii/B9780124077942000092?via%3Dihub"
+# # # url = "https://www.sciencedirect.com/science/article/pii/0006899368900450?via%3Dihub"
+# # # url = "https://www.sciencedirect.com/science/article/pii/S0006322310010036?via%3Dihub"
+# # url = "https://www.sciencedirect.com/science/article/pii/0006899377907806?via%3Dihub"
+# # info = sciencedirect_com(url)
+# # print(info["doi"])
+# # print(info["pmid"])
+# # print(info["pmcid"])
+# # print(info["title"])
+# # print(info["abstract"])
+# # print(info["keywords"])
+# # print(info["pdf_link"])
+# # ---------------------end of test code---------------------
 
 
-# oup.com
-def func_oup_com(url):
+# academic.oup.com
+def academic_oup_com(url):
     # initialize
     info = {
         "doi": np.nan,
@@ -870,10 +836,10 @@ def func_oup_com(url):
 
     return info
 # --------------------start of test code--------------------
-# url = "https://academic.oup.com/biolreprod/article/24/1/44/2766870"
-# # url = "https://academic.oup.com/cercor/article/22/6/1294/305674"
+# # url = "https://academic.oup.com/biolreprod/article/24/1/44/2766870"
+# url = "https://academic.oup.com/cercor/article/22/6/1294/305674"
 # # url = "https://academic.oup.com/brain/article/141/7/2142/5033684"
-# info = func_oup_com(url)
+# info = academic_oup_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -884,8 +850,8 @@ def func_oup_com(url):
 # ---------------------end of test code---------------------
 
 
-# cambridge.org
-def func_cambridge_org(url):
+# www.cambridge.org
+def www_cambridge_org(url):
     # initialize
     info = {
         "doi": np.nan,
@@ -954,28 +920,6 @@ def func_cambridge_org(url):
     except:
         keywords = np.nan
     
-    # # introduction
-    # try:
-    #     intro = ""
-    #     elements = driver.find_elements(By.TAG_NAME, "h2")
-    #     for element in elements:
-    #         if "Introduction" in element.text:
-    #             ele_paren = element.find_element(By.XPATH, "..")
-    #             intros = ele_paren.find_elements(By.TAG_NAME, "p")
-    #             for intro_ele in intros:
-    #                 intro = intro + intro_ele.text + " "
-    #             break
-    #     intro = intro.strip()
-    # except:
-    #     intro = np.nan
-    # intro = np.nan
-
-    # pdf_link
-    # try:
-    #     pdf_link = driver.find_element(By.XPATH, "//a[@class='al-link pdf article-pdfLink']").get_attribute('href')
-    #     pdf_link = pdf_link.strip()
-    # except:
-    #     pdf_link = np.nan
     pdf_link = np.nan
 
     driver.quit()
@@ -992,11 +936,11 @@ def func_cambridge_org(url):
 
     return info
 # --------------------start of test code--------------------
-# url = "https://www.cambridge.org/core/journals/thalamus-and-related-systems/article/abs/pathways-for-emotions-and-memory-i-input-and-output-zones-linking-the-anterior-thalamic-nuclei-with-prefrontal-cortices-in-the-rhesus-monkey/82C8F1BECABA367B0FBCD7E3EAACAAB3"
+# # url = "https://www.cambridge.org/core/journals/thalamus-and-related-systems/article/abs/pathways-for-emotions-and-memory-i-input-and-output-zones-linking-the-anterior-thalamic-nuclei-with-prefrontal-cortices-in-the-rhesus-monkey/82C8F1BECABA367B0FBCD7E3EAACAAB3"
 # # url = "https://www.cambridge.org/core/journals/visual-neuroscience/article/abs/neuronal-organization-and-plasticity-in-adult-monkey-visual-cortex-immunoreactivity-for-microtubuleassociated-protein-2/B0317C6BF7C278292397F80735F19E54"
 # # url = "https://www.cambridge.org/core/journals/visual-neuroscience/article/abs/neuropeptide-ycontaining-neurons-are-situated-predominantly-outside-cytochrome-oxidase-puffs-in-macaque-visual-cortex/B66BA877CC63A9CA1AE958AC6433FC49"
-# # url = "https://www.cambridge.org/core/journals/visual-neuroscience/article/abs/subcortical-connections-of-visual-areas-mst-and-fst-in-macaques/2E765908869A8B03AD1D566D488A6D19"
-# info = func_cambridge_org(url)
+# url = "https://www.cambridge.org/core/journals/visual-neuroscience/article/abs/subcortical-connections-of-visual-areas-mst-and-fst-in-macaques/2E765908869A8B03AD1D566D488A6D19"
+# info = www_cambridge_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -1008,7 +952,7 @@ def func_cambridge_org(url):
 
 
 # karger.com
-def func_karger_com(url):
+def karger_com(url):
     # initialize
     info = {
         "doi": np.nan,
@@ -1079,7 +1023,7 @@ def func_karger_com(url):
 
     # pdf_link
     try:
-        pdf_link = driver.find_element(By.XPATH, "//div[@class='pdf-notice']/div/a").get_attribute('href')
+        pdf_link = driver.find_element(By.XPATH, "//li[@class='toolbar-item item-with-dropdown item-pdf']/a").get_attribute('href')
         pdf_link = pdf_link.strip()
     except:
         pdf_link = np.nan
@@ -1100,9 +1044,9 @@ def func_karger_com(url):
 # --------------------start of test code--------------------
 # # url = "https://karger.com/sfn/article/54-55/1-8/114/303620/Structural-and-Connectional-Diversity-of-the"
 # # url = "https://karger.com/sfn/article/60/1-3/70/291859/Cerebello-and-Pallido-Thalamic-Pathways-to-Areas-6"
-# url = "https://karger.com/sfn/article/60/1-3/104/291839/Action-of-the-Cerebello-Thalamo-Cortical"
-# # url = "https://karger.com/bbe/article/31/4/198/45901/Is-Binocular-Competition-Essential-for-Layer"
-# info = func_karger_com(url)
+# # url = "https://karger.com/sfn/article/60/1-3/104/291839/Action-of-the-Cerebello-Thalamo-Cortical"
+# url = "https://karger.com/bbe/article/31/4/198/45901/Is-Binocular-Competition-Essential-for-Layer"
+# info = karger_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -1113,8 +1057,8 @@ def func_karger_com(url):
 # ---------------------end of test code---------------------
 
 
-# lww.com
-def func_lww_com(url):
+# journals.lww.com
+def journals_lww_com(url):
     # initialize
     info = {
         "doi": np.nan,
@@ -1123,7 +1067,6 @@ def func_lww_com(url):
         "title": np.nan,
         "abstract": np.nan,
         "keywords": np.nan,
-        "introduction": np.nan,
         "pdf_link": np.nan
     }
 
@@ -1139,9 +1082,6 @@ def func_lww_com(url):
         try:
             driver.get(url)
             time.sleep(5)
-            wait = WebDriverWait(driver, 30)
-            wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Accept All Cookies')]"))).click()
-            time.sleep(2)
             error_label = 1
         except:
             print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
@@ -1176,41 +1116,8 @@ def func_lww_com(url):
     except:
         abstract = np.nan
     
-    # keywords
-    # try:
-    #     keywords = ""
-    #     elems = driver.find_element(By.XPATH, "//div[@class='ejp-article-text-abstract']").find_elements(By.TAG_NAME, 'a')
-    #     for elem in elems:
-    #         keywords = keywords + elem.text + "; "
-    #     keywords = keywords.strip()
-    # except:
-    #     keywords = np.nan
     keywords = np.nan
-    
-    # # introduction
-    # try:
-    #     intro = ""
-    #     elements = driver.find_elements(By.TAG_NAME, "h2")
-    #     for element in elements:
-    #         if "Introduction" in element.text:
-    #             ele_paren = element.find_element(By.XPATH, "..")
-    #             intros = ele_paren.find_elements(By.TAG_NAME, "p")
-    #             for intro_ele in intros:
-    #                 intro = intro + intro_ele.text + " "
-    #             break
-    #     intro = intro.strip()
-    # except:
-    #     intro = np.nan
-
-    # pdf_link
-    # try:
-    #     pdf_link = driver.find_element(By.XPATH, "//button[contains(text(), 'PDF')]").click()
-    #     driver.switch_to_window(driver.window_handles[-1])
-    #     pdf_link = driver.current_url
-    #     pdf_link = pdf_link.strip()
-    # except:
-    #     pdf_link = np.nan
-    pdf_link = np.nan
+    pdf_link = "://journals.lww.com/"
 
     driver.quit()
 
@@ -1227,10 +1134,291 @@ def func_lww_com(url):
     return info
 # --------------------start of test code--------------------
 # # url = "https://journals.lww.com/neuroreport/Fulltext/2018/04010/Change_of_information_represented_by_thalamic.5.aspx"
-# # url = "https://journals.lww.com/pain/Abstract/1989/06000/A_dorsolateral_spinothalamic_tract_in_macaque.10.aspx"
+# url = "https://journals.lww.com/pain/Abstract/1989/06000/A_dorsolateral_spinothalamic_tract_in_macaque.10.aspx"
 # # url = "https://journals.lww.com/pain/Abstract/1994/03000/The_effect_oftrans_ACPD,_a_metabotropic_excitatory.2.aspx"
-# url = "https://journals.lww.com/pain/Abstract/2001/05000/Projections_from_the_marginal_zone_and_deep_dorsal.29.aspx"
-# info = func_lww_com(url)
+# # url = "https://journals.lww.com/pain/Abstract/2001/05000/Projections_from_the_marginal_zone_and_deep_dorsal.29.aspx"
+# info = journals_lww_com(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# www.nature.com
+def www_nature_com(url):
+    # initialize
+    info = {
+        "doi": np.nan,
+        "pmid": np.nan,
+        "pmcid": np.nan,
+        "title": np.nan,
+        "abstract": np.nan,
+        "keywords": np.nan,
+        "pdf_link": np.nan
+    }
+
+    # set up the webdriver
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    driver = webdriver.Firefox(options=options)
+
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Firefox(options=options)
+            driver.get(url)
+            time.sleep(5)
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    # doi
+    try:
+        elems = driver.find_element(By.XPATH, "//abbr[@title='Digital Object Identifier']").find_elements(By.XPATH, "following-sibling::span")
+        for elem in elems:
+            text = elem.text
+            if "doi.org" in text:
+                break
+        doi = text.split("doi.org/")[1]
+    except:
+        doi = np.nan
+
+    # pmid, pmcid
+    pmid = np.nan
+    pmcid = np.nan
+
+    # title
+    try:
+        title = driver.find_element(By.XPATH, "//h1[contains(@class, 'c-article-title')]").text
+    except:
+        title = np.nan
+    # title = np.nan
+    
+    # abstract
+    try:
+        abstract = ""
+        elems = driver.find_element(By.XPATH, "//div[@class='c-article-section__content']").find_elements(By.TAG_NAME, 'p')
+        for elem in elems:
+            abstract = abstract + elem.text + " "
+        abstract = abstract.strip()
+    except:
+        abstract = np.nan
+    # abstract = np.nan
+    
+    # keywords
+    keywords = np.nan
+
+    # pdf_link
+    try:
+        pdf_link = driver.find_element(By.XPATH, "//div[@class='c-pdf-download u-clear-both js-pdf-download']").find_element(By.TAG_NAME, 'a').get_attribute("href")
+    except:
+        pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "pdf_link": pdf_link
+    }
+
+    return info
+# --------------------start of test code--------------------
+# # url = "https://www.nature.com/articles/387281a0"
+# # url = "https://www.nature.com/articles/s41583-019-0212-7"
+# url = "https://www.nature.com/articles/nn1318"
+# # url = "https://www.nature.com/articles/nn1544"
+# # url = "https://www.nature.com/articles/nrn3915"
+# info = www_nature_com(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# www.tandfonline.com
+def www_tandfonline_com(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Firefox(options=options)
+            driver.get(url)
+            time.sleep(5)
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        doi = driver.find_element(By.XPATH, "//li[contains(@class, 'dx-doi')]").find_element(By.TAG_NAME, "a").text.split("doi.org/")[1]
+    except:
+        doi = np.nan
+    pmid = np.nan
+    pmcid = np.nan
+    
+    # title
+    try:
+        title = driver.find_element(By.TAG_NAME, "h1").find_element(By.XPATH, "//span[@class='NLM_article-title hlFld-title']").text
+        title = title.strip()
+    except:        
+        title = np.nan
+    
+    # abstract
+    try:
+        elems = driver.find_elements(By.XPATH, "//div[@class='abstractSection abstractInFull']/p")
+        for elem in elems:
+            if len(elem.text) > 50:
+                abstract = elem.text
+                break
+        abstract = abstract.strip()
+    except:
+        abstract = np.nan
+    
+    # keywords
+    try:
+        keywords = ""
+        elems = driver.find_element(By.XPATH, "//div[@class='abstractKeywords']/div/div/ul").find_elements(By.TAG_NAME, "li")
+        for elem in elems:
+            keywords = keywords + elem.find_element(By.TAG_NAME, "a").text + "; "
+        keywords = keywords.strip()
+    except:
+        keywords = np.nan
+
+    # pdf_link
+    try:
+        pdf_link = driver.find_element(By.XPATH, "//a[@class='show-pdf']").get_attribute('href')
+        pdf_link = pdf_link.strip()
+    except:
+        pdf_link = np.nan
+    # pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# # url = "https://www.tandfonline.com/doi/abs/10.1080/01616412.1985.11739692"
+# # url = "https://www.tandfonline.com/doi/full/10.3109/00207458309148649"
+# # url = "https://www.tandfonline.com/doi/full/10.3109/00207458408990681"
+# url = "https://www.tandfonline.com/doi/full/10.3109/00207458009147579"
+# info = www_tandfonline_com(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# journals.sagepub.com
+def journals_sagepub_com(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Firefox(options=options)
+            driver.get(url)
+            time.sleep(5)
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        doi = driver.find_element(By.XPATH, "//div[@class='doi']").find_element(By.TAG_NAME, "a").text.split("doi.org/")[1]
+    except:
+        doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
+    
+    pmid = np.nan
+    pmcid = np.nan
+
+    # title
+    try:
+        title = driver.find_element(By.XPATH, "//h1[@property='name']").text
+        title = title.strip()
+    except:
+        title = np.nan
+    
+    # abstract
+    try:
+        abstract = driver.find_element(By.XPATH, "//h2[text()='Abstract']").find_element(By.XPATH, "following-sibling::div").text
+        abstract = abstract.strip()
+    except:
+        abstract = np.nan
+    
+    # keywords
+    keywords = np.nan
+
+    # pdf_link
+    try:
+        pdf_link = driver.find_element(By.XPATH, "//li[@class='collateral-middle']").find_element(By.XPATH, "//a[@title='PDF / ePub']").get_attribute('href')
+        pdf_link = pdf_link.strip()
+    except:
+        pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# # url = "https://journals.sagepub.com/doi/full/10.1177/2398212819871205"
+# # url = "https://journals.sagepub.com/doi/10.1177/0192623311436180"
+# # url = "https://journals.sagepub.com/doi/10.1038/jcbfm.1983.2"
+# url = "https://journals.sagepub.com/doi/10.1097/00004647-199810000-00010"
+# # url = "https://journals.sagepub.com/doi/10.1177/107385840100700408"
+# # url = "https://journals.sagepub.com/doi/10.1038/jcbfm.1992.141"
+# info = journals_sagepub_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -1312,117 +1500,6 @@ def func_bmj_com(url):
 # --------------------start of test code--------------------
 # url = "https://jnnp.bmj.com/content/37/7/765.short"
 # info = func_bmj_com(url)
-# print(info["doi"])
-# print(info["pmid"])
-# print(info["pmcid"])
-# print(info["title"])
-# print(info["abstract"])
-# print(info["keywords"])
-# print(info["pdf_link"])
-# ---------------------end of test code---------------------
-
-
-# nature.com
-def func_nature_com(url):
-    # initialize
-    info = {
-        "doi": np.nan,
-        "pmid": np.nan,
-        "pmcid": np.nan,
-        "title": np.nan,
-        "abstract": np.nan,
-        "keywords": np.nan,
-        "pdf_link": np.nan
-    }
-
-    # set up the webdriver
-    os.environ['WDM_LOG'] = '0'
-    options = Options()
-    options.add_argument('--headless')
-    driver = webdriver.Firefox(options=options)
-
-    # load the webpage
-    error_label = 0
-    while(error_label == 0):
-        try:
-            driver = webdriver.Firefox(options=options)
-            driver.get(url)
-            time.sleep(5)
-            error_label = 1
-        except:
-            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
-            time.sleep(5*60)
-            error_label = 0
-    
-    # doi
-    try:
-        spans = driver.find_element(By.XPATH, "//abbr[@title='Digital Object Identifier']").find_elements(By.XPATH,'following-sibling::span')
-        for span in spans:
-            if "doi.org" in span.text:
-                doi = span.text.split("doi.org/")[1]
-                break
-    except:
-        doi = np.nan
-
-    # pmid, pmcid
-    pmid = np.nan
-    pmcid = np.nan
-
-    # title
-    # try:
-    #     title = driver.find_element(By.XPATH, "//h1[contains(@class, 'c-article-title')]").text
-    # except:
-    #     title = np.nan
-    title = np.nan
-    
-    # abstract
-    # try:
-    #     abstract = ""
-    #     elems = driver.find_element(By.XPATH, "//div[@class='ejp-article-text-abstract']").find_elements(By.TAG_NAME, 'p')
-    #     for elem in elems:
-    #         abstract = abstract + elem.text + " "
-    #     abstract = abstract.strip()
-    # except:
-    #     abstract = np.nan
-    abstract = np.nan
-    
-    # keywords
-    # try:
-    #     keywords = ""
-    #     elems = driver.find_element(By.XPATH, "//div[@class='ejp-article-text-abstract']").find_elements(By.TAG_NAME, 'a')
-    #     for elem in elems:
-    #         keywords = keywords + elem.text + "; "
-    #     keywords = keywords.strip()
-    # except:
-    #     keywords = np.nan
-    keywords = np.nan
-
-    # pdf_link
-    # try:
-    #     pdf_link = driver.find_element(By.XPATH, "//button[contains(text(), 'PDF')]").click()
-    #     driver.switch_to_window(driver.window_handles[-1])
-    #     pdf_link = driver.current_url
-    #     pdf_link = pdf_link.strip()
-    # except:
-    #     pdf_link = np.nan
-    pdf_link = np.nan
-
-    driver.quit()
-
-    info = {
-        "doi": doi,
-        "pmid": pmid,
-        "pmcid": pmcid,
-        "title": title,
-        "abstract": abstract,
-        "keywords": keywords,
-        "pdf_link": pdf_link
-    }
-
-    return info
-# --------------------start of test code--------------------
-# url = "https://www.nature.com/articles/387281a0"
-# info = func_nature_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -1851,67 +1928,6 @@ def func_royalsocietypublishing_org(url):
 # ---------------------end of test code---------------------
 
 
-# tandfonline.com
-def func_tandfonline_com(url):
-    os.environ['WDM_LOG'] = '0'
-    options = Options()
-    options.add_argument('--headless')
-    
-    # load the webpage
-    error_label = 0
-    while(error_label == 0):
-        try:
-            driver = webdriver.Firefox(options=options)
-            driver.get(url)
-            time.sleep(5)
-            error_label = 1
-        except:
-            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
-            time.sleep(5*60)
-            error_label = 0
-    
-    try:
-        # doi = np.nan
-        doi = driver.find_element(By.XPATH, "//li[contains(@class, 'dx-doi')]").find_element(By.TAG_NAME, "a").text.split("doi.org/")[1]
-        # for elem in elems:
-        #     if "doi.org/" in elem.text:
-        #         doi = elem.text.split("doi.org/")[1]
-    except:
-        doi = np.nan
-    pmid = np.nan
-    pmcid = np.nan
-    title = np.nan
-    abstract = np.nan
-    keywords = np.nan
-    pdf_link = np.nan
-
-    driver.quit()
-
-    info = {
-        "doi": doi,
-        "pmid": pmid,
-        "pmcid": pmcid,
-        "title": title,
-        "abstract": abstract,
-        "keywords": keywords,
-        "pdf_link": pdf_link
-    }
-    driver.quit
-
-    return info
-# --------------------start of test code--------------------
-# url = "https://www.tandfonline.com/doi/abs/10.1080/01616412.1985.11739692"
-# info = func_tandfonline_com(url)
-# print(info["doi"])
-# print(info["pmid"])
-# print(info["pmcid"])
-# print(info["title"])
-# print(info["abstract"])
-# print(info["keywords"])
-# print(info["pdf_link"])
-# ---------------------end of test code---------------------
-
-
 # aspetjournals.org
 def func_aspetjournals_org(url):
     os.environ['WDM_LOG'] = '0'
@@ -2089,65 +2105,6 @@ def ekja_org(url):
 # print(info["abstract"])
 # print(info["keywords"])
 # print(info["introduction"])
-# print(info["pdf_link"])
-# ---------------------end of test code---------------------
-
-
-# sagepub.com
-def func_sagepub_com(url):
-    os.environ['WDM_LOG'] = '0'
-    options = Options()
-    options.add_argument('--headless')
-    
-    # load the webpage
-    error_label = 0
-    while(error_label == 0):
-        try:
-            driver = webdriver.Firefox(options=options)
-            driver.get(url)
-            time.sleep(5)
-            error_label = 1
-        except:
-            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
-            time.sleep(5*60)
-            error_label = 0
-    
-    try:
-        doi = driver.find_element(By.XPATH, "//div[@class='doi']").find_element(By.TAG_NAME, "a").text.split("doi.org/")[1]
-    except:
-        doi = np.nan
-    if doi == doi:
-        doi = doi.lower()
-    pmid = np.nan
-    pmcid = np.nan
-    title = np.nan
-    abstract = np.nan
-    keywords = np.nan
-    pdf_link = np.nan
-
-    driver.quit()
-
-    info = {
-        "doi": doi,
-        "pmid": pmid,
-        "pmcid": pmcid,
-        "title": title,
-        "abstract": abstract,
-        "keywords": keywords,
-        "pdf_link": pdf_link
-    }
-    driver.quit
-
-    return info
-# --------------------start of test code--------------------
-# url = "https://journals.sagepub.com/doi/full/10.1177/2398212819871205"
-# info = func_sagepub_com(url)
-# print(info["doi"])
-# print(info["pmid"])
-# print(info["pmcid"])
-# print(info["title"])
-# print(info["abstract"])
-# print(info["keywords"])
 # print(info["pdf_link"])
 # ---------------------end of test code---------------------
 
@@ -2616,65 +2573,6 @@ def func_psycnet_apa_org(url):
 # --------------------start of test code--------------------
 # url = "https://psycnet.apa.org/record/1972-06153-001"
 # info = func_psycnet_apa_org(url)
-# print(info["doi"])
-# print(info["pmid"])
-# print(info["pmcid"])
-# print(info["title"])
-# print(info["abstract"])
-# print(info["keywords"])
-# print(info["pdf_link"])
-# ---------------------end of test code---------------------
-
-
-# jamanetwork.com
-def func_jamanetwork_com(url):
-    os.environ['WDM_LOG'] = '0'
-    options = Options()
-    options.add_argument('--headless')
-    
-    # load the webpage
-    error_label = 0
-    while(error_label == 0):
-        try:
-            driver = webdriver.Firefox(options=options)
-            driver.get(url)
-            time.sleep(5)
-            error_label = 1
-        except:
-            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
-            time.sleep(5*60)
-            error_label = 0
-    
-    try:
-        doi = np.nan
-        elems = driver.find_element(By.XPATH, "//div[contains(@class, 'meta-citation-wrap')]").find_elements(By.TAG_NAME, "span")
-        for elem in elems:
-            if "doi:" in elem.text:
-                doi = elem.text.split("doi:")[1]
-    except:
-        doi = np.nan
-    pmid = np.nan
-    pmcid = np.nan
-    title = np.nan
-    abstract = np.nan
-    keywords = np.nan
-    pdf_link = np.nan
-
-    info = {
-        "doi": doi,
-        "pmid": pmid,
-        "pmcid": pmcid,
-        "title": title,
-        "abstract": abstract,
-        "keywords": keywords,
-        "pdf_link": pdf_link
-    }
-    driver.quit
-
-    return info
-# --------------------start of test code--------------------
-# url = "https://jamanetwork.com/journals/archneurpsyc/article-abstract/648966"
-# info = func_jamanetwork_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -3266,64 +3164,6 @@ def func_thejns_org(url):
 # --------------------start of test code--------------------
 # url = "https://thejns.org/view/journals/j-neurosurg/86/1/article-p77.xml"
 # info = func_thejns_org(url)
-# print(info["doi"])
-# print(info["pmid"])
-# print(info["pmcid"])
-# print(info["title"])
-# print(info["abstract"])
-# print(info["keywords"])
-# print(info["pdf_link"])
-# ---------------------end of test code---------------------
-
-
-# science.org
-def func_science_org(url):
-    os.environ['WDM_LOG'] = '0'
-    options = Options()
-    options.add_argument('--headless')
-    
-    # load the webpage
-    error_label = 0
-    while(error_label == 0):
-        try:
-            driver = webdriver.Firefox(options=options)
-            driver.get(url)
-            time.sleep(5)
-            error_label = 1
-        except:
-            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
-            time.sleep(5*60)
-            error_label = 0
-    
-    try:
-        doi = driver.find_element(By.XPATH, "//div[contains(@class, 'doi')]").find_element(By.XPATH, "a").text.split("DOI: ")[1]
-    except:
-        doi = np.nan
-
-    pmid = np.nan
-    pmcid = np.nan
-    title = np.nan
-    abstract = np.nan
-    keywords = np.nan
-    pdf_link = np.nan
-
-    driver.quit()
-
-    info = {
-        "doi": doi,
-        "pmid": pmid,
-        "pmcid": pmcid,
-        "title": title,
-        "abstract": abstract,
-        "keywords": keywords,
-        "pdf_link": pdf_link
-    }
-    driver.quit
-
-    return info
-# --------------------start of test code--------------------
-# url = "https://www.science.org/doi/full/10.1126/science.282.5391.1117"
-# info = func_science_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
