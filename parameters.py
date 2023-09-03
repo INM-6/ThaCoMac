@@ -20,18 +20,18 @@ websites_gs = {
 websites = [
     'www.ncbi.nlm.nih.gov', 'linkinghub.elsevier.com', 'wiley.com', 'link.springer.com', 'journals.physiology.org'
 ]
- 
+
 # # websites
-websites = [
-    'www.ncbi.nlm.nih.gov', 'linkinghub.elsevier.com', 'wiley.com', 'link.springer.com', 'journals.physiology.org', 
-    'academic.oup.com', 'pubmed.ncbi.nlm.nih.gov', 'www.cambridge.org', 'karger.com', 'journals.lww.com', 'www.nature.com', 
-    'www.science.org', 'www.tandfonline.com', 'journals.sagepub.com', 'jamanetwork.com', 'neurology.org', 'www.biorxiv.org', 
-    'europepmc.org', 'iovs.arvojournals.org', 'royalsocietypublishing.org', 'psychiatryonline.org', 'direct.mit.edu', 
-    'thejns.org', 'www.annualreviews.org', 'aspetjournals.org', 'jnm.snmjournals.org', 'www.architalbiol.org', 
-    'www.ahajournals.org', 'pubs.acs.org', 'www.thieme-connect.de', 'pubs.asahq.org', 'www.ingentaconnect.com', 
-    'ujms.net', 'journals.biologists.com', 'www.microbiologyresearch.org', 'journals.aps.org', 'www.imrpress.com', 
-    'www.researchsquare.com', 'ieeexplore.ieee.org', 'papers.ssrn.com'
-    ]
+# websites = [
+#     'www.ncbi.nlm.nih.gov', 'linkinghub.elsevier.com', 'wiley.com', 'link.springer.com', 'journals.physiology.org', 
+#     'academic.oup.com', 'pubmed.ncbi.nlm.nih.gov', 'www.cambridge.org', 'karger.com', 'journals.lww.com', 'www.nature.com', 
+#     'www.science.org', 'www.tandfonline.com', 'journals.sagepub.com', 'jamanetwork.com', 'neurology.org', 'www.biorxiv.org', 
+#     'europepmc.org', 'iovs.arvojournals.org', 'royalsocietypublishing.org', 'psychiatryonline.org', 'direct.mit.edu', 
+#     'thejns.org', 'www.annualreviews.org', 'aspetjournals.org', 'jnm.snmjournals.org', 'www.architalbiol.org', 
+#     'www.ahajournals.org', 'pubs.acs.org', 'www.thieme-connect.de', 'pubs.asahq.org', 'www.ingentaconnect.com', 
+#     'ujms.net', 'journals.biologists.com', 'www.microbiologyresearch.org', 'journals.aps.org', 'www.imrpress.com', 
+#     'www.researchsquare.com', 'ieeexplore.ieee.org', 'papers.ssrn.com'
+# ]
 
 
 # on-topic keyword lexicon
