@@ -22,8 +22,10 @@ def extract_info_from_webpage(url, websites):
     if url != url:
         raise Exception("The given url is np.nan")
     # print(url)
+
     source = url.split("://")[1].split("/")[0]
     # print(source)
+
     # initialize
     info = {
         "doi": np.nan,
@@ -39,7 +41,7 @@ def extract_info_from_webpage(url, websites):
         func = None
         if website in source:
             # Get the function name by replacing "." with "_" and use globals() to call it
-            func_name = "func_" + website.replace(".", "_")
+            func_name = website.replace(".", "_")
             # print(func_name)
             func = globals().get(func_name)
             # print(func)
@@ -50,6 +52,7 @@ def extract_info_from_webpage(url, websites):
     else:
         print("The given url is not from a supported website: ", url)
         raise Exception("Function does not exist for website:", url)
+    
     if info["doi"] == info["doi"]:
         info["doi"] = info["doi"].lower()
     return info
@@ -71,8 +74,9 @@ def extract_info_from_webpage(url, websites):
 #     'www.ncbi.nlm.nih.gov', 'linkinghub.elsevier.com', 'wiley.com', 'link.springer.com', 'journals.physiology.org'
 # ]
 
+
 # www.ncbi.nlm.nih.gov
-def func_www_ncbi_nlm_nih_gov(url):
+def www_ncbi_nlm_nih_gov(url):
     # initialize
     info = {
         "doi": np.nan,
@@ -174,14 +178,14 @@ def func_www_ncbi_nlm_nih_gov(url):
     return info
 # --------------------start of test code--------------------
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10133512/"
-# # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2613515/"
+# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2613515/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8328208/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8541979/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4855639/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3140205/"
 # # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4362213/"
-# url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC48909/"
-# info = func_www_ncbi_nlm_nih_gov(url)
+# # url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC48909/"
+# info = www_ncbi_nlm_nih_gov(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
