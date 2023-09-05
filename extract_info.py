@@ -2828,6 +2828,189 @@ def www_thieme_connect_de(url):
 # ---------------------end of test code---------------------
 
 
+# pubs.asahq.org
+def pubs_asahq_org(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Firefox(options=options)
+            driver.get(url)
+            time.sleep(5)
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    # doi
+    try:
+        doi = driver.find_element(By.XPATH, "//div[contains(@class, 'citation-doi')]").find_element(By.TAG_NAME, "a").text.split("doi.org/")[1]
+    except:
+        doi = np.nan
+
+    # pmid, pmcid
+    pmid = np.nan
+    pmcid = np.nan
+
+    # title
+    try:
+        title = driver.find_element(By.XPATH, "//h1[contains(@class,'article-title')]").text
+        title = title.strip()
+    except:
+        title = np.nan
+    
+    # abstract
+    try:
+        abstract = ""
+        elems = driver.find_element(By.XPATH, "//section[@class='abstract']").find_elements(By.TAG_NAME,"p")
+        for elem in elems:
+            abstract = abstract + elem.text + " "
+        abstract = abstract.strip()
+    except:
+        abstract = np.nan
+    
+    # keywords
+    try:
+        keywords = ""
+        elems = driver.find_element(By.XPATH, "//div[@class='content-metadata-topics']").find_elements(By.TAG_NAME, "a")
+        for elem in elems:
+            keywords = keywords + elem.text + "; "
+        keywords = keywords.strip()
+    except:
+        keywords = np.nan
+    # keywords = np.nan
+
+    # pdf_link
+    try:
+        pdf_link = driver.find_element(By.XPATH, "//a[contains(@class,'article-pdfLink')]").get_attribute('href')
+        pdf_link = pdf_link.strip()
+    except:
+        pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# # url = "https://pubs.asahq.org/anesthesiology/article/116/2/372/13001/Ketamine-induced-Neuroapoptosis-in-the-Fetal-and"
+# url = "https://pubs.asahq.org/anesthesiology/article/66/1/39/29057/The-Effects-of-Dextrose-Infusion-and-Head-Position"
+# # url = "https://pubs.asahq.org/anesthesiology/article/98/5/1101/40355/Neural-Mechanism-of-Propofol-Anesthesia-in-Severe"
+# info = pubs_asahq_org(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
+# www.ingentaconnect.com
+def www_ingentaconnect_com(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Firefox(options=options)
+            driver.get(url)
+            time.sleep(5)
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    # doi
+    # try:
+    #     doi = driver.find_element(By.XPATH, "//div[contains(@class, 'citation-doi')]").find_element(By.TAG_NAME, "a").text.split("doi.org/")[1]
+    # except:
+    #     doi = np.nan
+    doi = np.nan
+
+    # pmid, pmcid
+    pmid = np.nan
+    pmcid = np.nan
+
+    # title
+    try:
+        title = driver.find_element(By.XPATH, "//h1[contains(@class,'abstract-heading')]").text
+        title = title.strip()
+    except:
+        title = np.nan
+    
+    # abstract
+    try:
+        abstract = driver.find_element(By.XPATH, "//div[@id='Abst']").text
+        abstract = abstract.strip()
+    except:
+        abstract = np.nan
+    
+    # keywords
+    try:
+        keywords = ""
+        elems = driver.find_element(By.XPATH, "//div[@class='content-metadata-topics')]").find_elements(By.TAG_NAME, "a")
+        for elem in elems:
+            keywords = keywords + elem.text + "; "
+        keywords = keywords.strip()
+    except:
+        keywords = np.nan
+    # keywords = np.nan
+
+    # pdf_link
+    # try:
+    #     pdf_link = driver.find_element(By.XPATH, "//ul[contains(@class,'right-col-download contain']").get_attribute('href')
+    #     pdf_link = pdf_link.strip()
+    # except:
+    #     pdf_link = np.nan
+    pdf_link = "://www.ingentaconnect.com/"
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://www.ingentaconnect.com/content/aalas/cm/2000/00000050/00000002/art00006;jsessionid=9jxpglps7nq4.x-ic-live-03"
+# info = www_ingentaconnect_com(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
 # bmj.com
 def func_bmj_com(url):
     # initialize
@@ -3862,37 +4045,47 @@ def func_plos_org(url):
 # ---------------------end of test code---------------------
 
 
-# ieee.org
-def func_ieee_org(url):
-    os.environ['WDM_LOG'] = '0'
-    options = Options()
-    options.add_argument('--headless')
+# www.architalbiol.org
+def www_architalbiol_org(url):
+    # os.environ['WDM_LOG'] = '0'
+    # options = Options()
+    # options.add_argument('--headless')
     
-    # load the webpage
-    error_label = 0
-    while(error_label == 0):
-        try:
-            driver = webdriver.Firefox(options=options)
-            driver.get(url)
-            time.sleep(5)
-            error_label = 1
-        except:
-            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
-            time.sleep(5*60)
-            error_label = 0
+    # # load the webpage
+    # error_label = 0
+    # while(error_label == 0):
+    #     try:
+    #         driver = webdriver.Firefox(options=options)
+    #         driver.get(url)
+    #         time.sleep(5)
+    #         error_label = 1
+    #     except:
+    #         print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+    #         time.sleep(5*60)
+    #         error_label = 0
     
-    try:
-        doi = driver.find_element(By.XPATH, "//div[contains(@class, 'u-pb-1 stats-document-abstract-doi')]").find_element(By.TAG_NAME, "a").text
-    except:
-        doi = np.nan
+    # doi
+    doi = np.nan
+
+    # pmid, pmcid
     pmid = np.nan
     pmcid = np.nan
-    title = np.nan
-    abstract = np.nan
-    keywords = np.nan
-    pdf_link = np.nan
 
-    driver.quit()
+    # title
+    # try:
+    #     title = driver.find_element(By.XPATH, "//div[@id='articleTitle']").find_element(By.TAG_NAME, "h3").text
+    #     title = title.strip()
+    # except:
+    #     title = np.nan
+    title = np.nan
+
+    # abstract
+    abstract = np.nan
+    
+    # keywords
+    keywords = np.nan
+
+    pdf_link = "://www.architalbiol.org/"
 
     info = {
         "doi": doi,
@@ -3903,12 +4096,14 @@ def func_ieee_org(url):
         "keywords": keywords,
         "pdf_link": pdf_link
     }
-    driver.quit
+    # driver.quit
 
     return info
 # --------------------start of test code--------------------
-# url = "https://ieeexplore.ieee.org/abstract/document/5333751"
-# info = func_ieee_org(url)
+# # url = "http://www.architalbiol.org/index.php/aib/article/view/11423/"
+# url = "http://www.architalbiol.org/index.php/aib/article/view/140315/"
+# # url = "http://www.architalbiol.org/index.php/aib/article/view/122301/"
+# info = www_architalbiol_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
