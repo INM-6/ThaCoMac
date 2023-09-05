@@ -3011,6 +3011,104 @@ def www_ingentaconnect_com(url):
 # ---------------------end of test code---------------------
 
 
+# ujms.net
+def ujms_net(url):
+    # initialize
+    info = {
+        "doi": np.nan,
+        "pmid": np.nan,
+        "pmcid": np.nan,
+        "title": np.nan,
+        "abstract": np.nan,
+        "keywords": np.nan,
+        "pdf_link": np.nan
+    }
+
+    # set up the webdriver
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    driver = webdriver.Firefox(options=options)
+
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver.get(url)
+            time.sleep(5)
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    # doi
+    try:
+        doi = driver.find_element(By.XPATH, "//div[@class='item doi']").find_element(By.XPATH, "//span[@class='value']/a").text.split("doi.org/")[1]
+        doi = doi.strip()
+    except:
+        doi = np.nan
+    if doi == doi:
+        doi = doi.lower()
+
+    # pmid, pmcid
+    pmid = np.nan
+    pmcid = np.nan
+
+    # title
+    try:
+        title = driver.find_element(By.XPATH, "//h1[@class='page_title']").text
+        title = title.strip()
+    except:
+        title = np.nan
+    
+    # abstract
+    try:
+        abstract = ""
+        elems = driver.find_element(By.XPATH, "//div[@class='item abstract']").find_elements(By.TAG_NAME, "p")
+        for elem in elems:
+            abstract = abstract + elem.text + " "
+        abstract = abstract.strip()
+    except:
+        abstract = np.nan
+    
+    # keywords
+    keywords = np.nan
+
+    # pdf_link
+    try:
+        pdf_link = driver.find_element(By.XPATH, "//a[@class='obj_galley_link pdf']").get_attribute('href')
+        pdf_link = pdf_link.strip()
+        pdf_link = pdf_link.replace("view", "download")
+    except:
+        pdf_link = np.nan
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "pdf_link": pdf_link
+    }
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://ujms.net/index.php/ujms/article/view/6812"
+# info = ujms_net(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
 # bmj.com
 def func_bmj_com(url):
     # initialize
