@@ -1612,6 +1612,9 @@ def jamanetwork_com(url):
 # ---------------------end of test code---------------------
 
 
+
+
+
 # bmj.com
 def func_bmj_com(url):
     # initialize
