@@ -266,7 +266,7 @@ def linkinghub_elsevier_com(url):
     #     pdf_link = pdf_link.strip()
     # except:
     #     pdf_link = np.nan
-    pdf_link = np.nan
+    pdf_link = "://linkinghub.elsevier.com/"
 
     driver.quit()
 
