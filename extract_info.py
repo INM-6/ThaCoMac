@@ -3609,6 +3609,96 @@ def www_researchsquare_com(url):
 # ---------------------end of test code---------------------
 
 
+'www.jstage.jst.go.jp'
+def www_jstage_jst_go_jp(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Firefox(options=options)
+            driver.get(url)
+            time.sleep(5)
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    try:
+        doi = driver.find_element(By.XPATH, "//span[contains(@class, 'doi-icn')]").find_element(By.XPATH, "following-sibling::a").text.split("doi.org/")[1]
+    except:
+        doi = np.nan
+    
+    # pmid, pmcid
+    pmid = np.nan
+    pmcid = np.nan
+
+    # title
+    try:
+        title = driver.find_element(By.XPATH, "//div[@class='global-article-title']").text
+        title = title.strip()
+    except:
+        title = np.nan
+    
+    # abstract
+    # try:
+    #     abstract = ""
+    #     elems = driver.find_element(By.XPATH, "//div[@class='abstract-text']").find_elements(By.XPATH, 'p')
+    #     for elem in elems:
+    #         abstract = abstract + elem.text + " "
+    #     abstract = abstract.strip()
+    # except:
+    #     abstract = np.nan
+    abstract = np.nan
+    
+    # keywords
+    # try:
+    #     # keywords = ""
+    #     keywords = driver.find_element(By.XPATH, "//strong[contains(text(),'Keywords:')]/..").text
+    #     # for elem in elems:
+    #     #     keywords = keywords + elem.text + ", "
+    #     keywords = keywords.strip()
+    # except:
+    #     keywords = np.nan
+    keywords = np.nan
+
+    # pdf_link
+    try:
+        pdf_link = driver.find_element(By.XPATH, "//span[contains(@class,'download-file')]/..").get_attribute('href')
+        pdf_link = pdf_link.strip()
+    except:
+        pdf_link = np.nan
+    # pdf_link = "://papers.ssrn.com/"
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://www.jstage.jst.go.jp/article/pjab1945/43/8/43_8_822/_article/-char/ja/"
+# info = www_jstage_jst_go_jp(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
 # ieeexplore.ieee.org
 def ieeexplore_ieee_org(url):
     os.environ['WDM_LOG'] = '0'
@@ -3912,7 +4002,7 @@ def func_jstor_org(url):
 
 
 # mirasmart.com
-def mirasmart_com(url):
+def func_mirasmart_com(url):
     doi = np.nan
     pmid = np.nan
     pmcid = np.nan
@@ -3935,7 +4025,7 @@ def mirasmart_com(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://submissions.mirasmart.com/ISMRM2022/Itinerary/Files/PDFFiles/2200.html"
-# info = mirasmart_com(url)
+# info = func_mirasmart_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -4014,7 +4104,7 @@ def func_agro_icm_edu_pl(url):
 
 
 # jpn.ca
-def jpn_ca(url):
+def func_jpn_ca(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -4058,7 +4148,7 @@ def jpn_ca(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://www.jpn.ca/content/33/6/489/tab-article-info"
-# info = jpn_ca(url)
+# info = func_jpn_ca(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -4237,7 +4327,7 @@ def func_liebertpub_com(url):
 
 
 # ekja.org
-def ekja_org(url):
+def func_ekja_org(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -4288,7 +4378,7 @@ def ekja_org(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://ekja.org/journal/view.php?number=4940"
-# info = ekja_org(url)
+# info = func_ekja_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -4419,7 +4509,7 @@ def func_frontiersin_org(url):
 
 
 # mpg.de
-def mpg_de(url):
+def func_mpg_de(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -4463,7 +4553,7 @@ def mpg_de(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://pure.mpg.de/pubman/faces/ViewItemOverviewPage.jsp?itemId=item_1790170"
-# info = mpg_de(url)
+# info = func_mpg_de(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -4533,7 +4623,7 @@ def func_degruyter_com(url):
 
 
 # bmj.com
-def bmj_com(url):
+def func_bmj_com(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -4580,7 +4670,7 @@ def bmj_com(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://jnnp.bmj.com/content/37/7/765.short"
-# info = bmj_com(url)
+# info = func_bmj_com(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -4714,63 +4804,6 @@ def func_biomedcentral_com(url):
 # ---------------------end of test code---------------------
 
 
-# jst.go.jp
-def func_jst_go_jp(url):
-    os.environ['WDM_LOG'] = '0'
-    options = Options()
-    options.add_argument('--headless')
-    
-    # load the webpage
-    error_label = 0
-    while(error_label == 0):
-        try:
-            driver = webdriver.Firefox(options=options)
-            driver.get(url)
-            time.sleep(5)
-            error_label = 1
-        except:
-            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
-            time.sleep(5*60)
-            error_label = 0
-    
-    try:
-        doi = driver.find_element(By.XPATH, "//span[contains(@class, 'doi-icn')]").find_element(By.XPATH, "following-sibling::a").text.split("doi.org/")[1]
-    except:
-        doi = np.nan
-    pmid = np.nan
-    pmcid = np.nan
-    title = np.nan
-    abstract = np.nan
-    keywords = np.nan
-    pdf_link = np.nan
-
-    driver.quit()
-
-    info = {
-        "doi": doi,
-        "pmid": pmid,
-        "pmcid": pmcid,
-        "title": title,
-        "abstract": abstract,
-        "keywords": keywords,
-        "pdf_link": pdf_link
-    }
-    driver.quit
-
-    return info
-# --------------------start of test code--------------------
-# url = "https://www.jstage.jst.go.jp/article/pjab1945/43/8/43_8_822/_article/-char/ja/"
-# info = func_jst_go_jp(url)
-# print(info["doi"])
-# print(info["pmid"])
-# print(info["pmcid"])
-# print(info["title"])
-# print(info["abstract"])
-# print(info["keywords"])
-# print(info["pdf_link"])
-# ---------------------end of test code---------------------
-
-
 # plos.org
 def func_plos_org(url):
     os.environ['WDM_LOG'] = '0'
@@ -4829,7 +4862,7 @@ def func_plos_org(url):
 
 
 # www.architalbiol.org
-def www_architalbiol_org(url):
+def func_www_architalbiol_org(url):
     # os.environ['WDM_LOG'] = '0'
     # options = Options()
     # options.add_argument('--headless')
@@ -4886,7 +4919,7 @@ def www_architalbiol_org(url):
 # # url = "http://www.architalbiol.org/index.php/aib/article/view/11423/"
 # url = "http://www.architalbiol.org/index.php/aib/article/view/140315/"
 # # url = "http://www.architalbiol.org/index.php/aib/article/view/122301/"
-# info = www_architalbiol_org(url)
+# info = func_www_architalbiol_org(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
@@ -5136,7 +5169,7 @@ def func_mdpi_com(url):
 
 
 # orca.cardiff.ac.uk
-def orca_cardiff_ac_uk(url):
+def func_orca_cardiff_ac_uk(url):
     os.environ['WDM_LOG'] = '0'
     options = Options()
     options.add_argument('--headless')
@@ -5186,7 +5219,7 @@ def orca_cardiff_ac_uk(url):
     return info
 # --------------------start of test code--------------------
 # url = "https://orca.cardiff.ac.uk/id/eprint/11456/"
-# info = orca_cardiff_ac_uk(url)
+# info = func_orca_cardiff_ac_uk(url)
 # print(info["doi"])
 # print(info["pmid"])
 # print(info["pmcid"])
