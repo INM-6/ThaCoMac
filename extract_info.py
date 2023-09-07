@@ -46,6 +46,8 @@ def extract_info_from_webpage(url, websites):
             func = globals().get(func_name)
             # print(func)
             break
+    # print(func)
+
     if func != None:
         # print(func)
         info = func(url)
