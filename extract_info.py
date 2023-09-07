@@ -1612,6 +1612,89 @@ def jamanetwork_com(url):
 # ---------------------end of test code---------------------
 
 
+# www.jneurosci.org
+def www_jneurosci_org(url):
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    # load the webpage
+    error_label = 0
+    while(error_label == 0):
+        try:
+            driver = webdriver.Firefox(options=options)
+            driver.get(url)
+            time.sleep(5)
+            error_label = 1
+        except:
+            print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+            time.sleep(5*60)
+            error_label = 0
+    
+    # doi
+    try:
+        doi = driver.find_element(By.XPATH, "//span[contains(@class, 'metadata-doi')]").text.split("doi.org/")[1]
+    except:
+        doi = np.nan
+    
+    # pmid, pmcid
+    pmid = np.nan
+    pmcid = np.nan
+
+    # title
+    try:
+        title = driver.find_element(By.XPATH, "//h1[@id='page-title']").text
+        title = title.strip()
+    except:
+        title = np.nan
+    
+    # abstract
+    try:
+        abstract = ""
+        elems = driver.find_element(By.XPATH, "//div[@class='section abstract']").find_elements(By.XPATH, 'p')
+        for elem in elems:
+            abstract = abstract + elem.text + " "
+        abstract = abstract.strip()
+    except:
+        abstract = np.nan
+    
+    # keywords
+    keywords = np.nan
+
+    # pdf_link
+    try:
+        elem = driver.find_element(By.XPATH, "//ul[@class='tabs inline panels-ajax-tab']").find_element(By.XPATH, "//li[@class='last']/a")
+        pdf_link = elem.get_attribute("href").strip()
+    except:
+        pdf_link = "np.nan"
+
+    driver.quit()
+
+    info = {
+        "doi": doi,
+        "pmid": pmid,
+        "pmcid": pmcid,
+        "title": title,
+        "abstract": abstract,
+        "keywords": keywords,
+        "pdf_link": pdf_link
+    }
+    driver.quit
+
+    return info
+# --------------------start of test code--------------------
+# url = "https://www.jneurosci.org/content/11/8/2383"
+# info = www_jneurosci_org(url)
+# print(info["doi"])
+# print(info["pmid"])
+# print(info["pmcid"])
+# print(info["title"])
+# print(info["abstract"])
+# print(info["keywords"])
+# print(info["pdf_link"])
+# ---------------------end of test code---------------------
+
+
 # neurology.org
 def neurology_org(url):
     os.environ['WDM_LOG'] = '0'
