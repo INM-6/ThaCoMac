@@ -41,7 +41,7 @@ def extract_info_from_webpage(url, websites):
         func = None
         if website in source:
             # Get the function name by replacing "." with "_" and use globals() to call it
-            func_name = website.replace(".", "_")
+            func_name = website.replace(".", "_").replace("-", "_")
             # print(func_name)
             func = globals().get(func_name)
             # print(func)
