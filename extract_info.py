@@ -4946,73 +4946,73 @@ def func_plos_org(url):
 # ---------------------end of test code---------------------
 
 
-# www.architalbiol.org
-def func_www_architalbiol_org(url):
-    # os.environ['WDM_LOG'] = '0'
-    # options = Options()
-    # options.add_argument('--headless')
+# # www.architalbiol.org
+# def www_architalbiol_org(url):
+#     # os.environ['WDM_LOG'] = '0'
+#     # options = Options()
+#     # options.add_argument('--headless')
     
-    # # load the webpage
-    # error_label = 0
-    # while(error_label == 0):
-    #     try:
-    #         driver = webdriver.Firefox(options=options)
-    #         driver.get(url)
-    #         time.sleep(5)
-    #         error_label = 1
-    #     except:
-    #         print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
-    #         time.sleep(5*60)
-    #         error_label = 0
+#     # # load the webpage
+#     # error_label = 0
+#     # while(error_label == 0):
+#     #     try:
+#     #         driver = webdriver.Firefox(options=options)
+#     #         driver.get(url)
+#     #         time.sleep(5)
+#     #         error_label = 1
+#     #     except:
+#     #         print("Extracting content from:" + url + " failed, retrying... This might take longer than 5 minutes...")
+#     #         time.sleep(5*60)
+#     #         error_label = 0
     
-    # doi
-    doi = np.nan
+#     # doi
+#     doi = np.nan
 
-    # pmid, pmcid
-    pmid = np.nan
-    pmcid = np.nan
+#     # pmid, pmcid
+#     pmid = np.nan
+#     pmcid = np.nan
 
-    # title
-    # try:
-    #     title = driver.find_element(By.XPATH, "//div[@id='articleTitle']").find_element(By.TAG_NAME, "h3").text
-    #     title = title.strip()
-    # except:
-    #     title = np.nan
-    title = np.nan
+#     # title
+#     # try:
+#     #     title = driver.find_element(By.XPATH, "//div[@id='articleTitle']").find_element(By.TAG_NAME, "h3").text
+#     #     title = title.strip()
+#     # except:
+#     #     title = np.nan
+#     title = np.nan
 
-    # abstract
-    abstract = np.nan
+#     # abstract
+#     abstract = np.nan
     
-    # keywords
-    keywords = np.nan
+#     # keywords
+#     keywords = np.nan
 
-    pdf_link = "://www.architalbiol.org/"
+#     pdf_link = "://www.architalbiol.org/"
 
-    info = {
-        "doi": doi,
-        "pmid": pmid,
-        "pmcid": pmcid,
-        "title": title,
-        "abstract": abstract,
-        "keywords": keywords,
-        "pdf_link": pdf_link
-    }
-    # driver.quit
+#     info = {
+#         "doi": doi,
+#         "pmid": pmid,
+#         "pmcid": pmcid,
+#         "title": title,
+#         "abstract": abstract,
+#         "keywords": keywords,
+#         "pdf_link": pdf_link
+#     }
+#     # driver.quit
 
-    return info
-# --------------------start of test code--------------------
-# # url = "http://www.architalbiol.org/index.php/aib/article/view/11423/"
-# url = "http://www.architalbiol.org/index.php/aib/article/view/140315/"
-# # url = "http://www.architalbiol.org/index.php/aib/article/view/122301/"
-# info = func_www_architalbiol_org(url)
-# print(info["doi"])
-# print(info["pmid"])
-# print(info["pmcid"])
-# print(info["title"])
-# print(info["abstract"])
-# print(info["keywords"])
-# print(info["pdf_link"])
-# ---------------------end of test code---------------------
+#     return info
+# # --------------------start of test code--------------------
+# # # url = "http://www.architalbiol.org/index.php/aib/article/view/11423/"
+# # url = "http://www.architalbiol.org/index.php/aib/article/view/140315/"
+# # # url = "http://www.architalbiol.org/index.php/aib/article/view/122301/"
+# # info = www_architalbiol_org(url)
+# # print(info["doi"])
+# # print(info["pmid"])
+# # print(info["pmcid"])
+# # print(info["title"])
+# # print(info["abstract"])
+# # print(info["keywords"])
+# # print(info["pdf_link"])
+# # ---------------------end of test code---------------------
 
 
 # eneuro.org
