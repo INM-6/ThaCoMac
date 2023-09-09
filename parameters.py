@@ -26,7 +26,8 @@ websites = [
     'www.ahajournals.org', 'pubs.acs.org', 'www.thieme-connect.de', 'pubs.asahq.org', 
     'www.ingentaconnect.com', 'ujms.net', 'journals.biologists.com', 'www.microbiologyresearch.org', 
     'journals.aps.org', 'www.imrpress.com', 'www.researchsquare.com', 'ieeexplore.ieee.org', 'papers.ssrn.com', 
-    'www.jneurosci.org'
+    # newlly added
+    'www.jneurosci.org', 'biomedcentral.com'
 ]
 
 
