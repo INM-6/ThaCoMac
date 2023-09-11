@@ -55,9 +55,11 @@ download_from = [
 
 # 'linkinghub.elsevier.com'
 
+# 'physiology.org'
+
 download_not_possible = ['royalsocietypublishing.org', 'jamanetwork.com']
 
-download_pdf_by_a = ['wiley.com', 'www.science.org', 'physiology.org', 'tandfonline.com', 'sagepub.com', 'acs.org']
+download_pdf_by_a = ['wiley.com', 'www.science.org', 'tandfonline.com', 'sagepub.com', 'acs.org']
 
 download_pdf_by_driver = ['iovs.arvojournals.org', 'www.imrpress.com', 'www.hifo.uzh.ch', 'ujms.net', 'www.annualreviews.org', 'thejns.org']
 # ===================================================================================================================================

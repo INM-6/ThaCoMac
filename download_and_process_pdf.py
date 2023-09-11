@@ -91,6 +91,14 @@ def download_and_rename_pdf(pdf_url, doi, ind, pdf_folder):
         # print(func_name)
         func = globals().get(func_name)
         # print(func)
+
+    # 'journals.physiology.org'
+    if func == None and pdf_source == 'journals.physiology.org':
+        # Get the function name by replacing "." with "_" and use globals() to call it
+        func_name = "download_from_journals_physiology_org"
+        # print(func_name)
+        func = globals().get(func_name)
+        # print(func)
     
     # download_not_possible
     if func == None:
@@ -286,8 +294,94 @@ def download_from_linkinghub_elsevier_com(doi, ind, pdf_folder):
 # ---------------------end of test code---------------------
 
 
+# 'journals.physiology.org'
+def download_from_journals_physiology_org(url, ind, pdf_folder): 
+    try:
+        # set up the webdriver
+        os.environ['WDM_LOG'] = '0'
+        options = Options()
+        options.add_argument('--headless')
+        
+        driver1 = webdriver.Firefox(options=options)
+        driver1.get(url)
+        time.sleep(10)
+        url1 = driver1.find_element(By.XPATH, "//a[contains(@class,'navbar-download')]").get_attribute("href")
+        driver1.quit()
+
+        options.set_preference("browser.download.folderList", 2)
+        options.set_preference("browser.download.manager.showWhenStarting", False)
+        options.set_preference("browser.download.dir", pdf_folder)
+        options.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
+        options.set_preference("pdfjs.disabled", True)
+
+        driver2 = webdriver.Firefox(options=options)
+        driver2.set_page_load_timeout(10)
+
+        try:
+            driver2.get(url1)
+            rename_pdf(ind, pdf_folder, time_to_wait=60)
+            # return True
+        except TimeoutException:
+            # print("Page load timed out but that's okay!")
+            rename_pdf(ind, pdf_folder, time_to_wait=60)
+            # return True
+        except:
+            print(f'Failed downloading PDF:', ind, url)
+        finally:
+            driver2.quit()
+    except:
+        print(f'Failed downloading PDF:', ind, url)
+        print("Please manually download the pdf file")
+        # # try:
+        #     driver3 = webdriver.Firefox(options=options)
+        #     driver3.get(url)
+        #     time.sleep(10)
+        #     button = driver3.find_element(By.XPATH, "//button[contains(@id,'download')]")
+        #     button.click()
+        #     # driver3.execute_script("arguments[0].click();", button)
+        #     time.sleep(10)
+        #     rename_pdf(ind, pdf_folder, time_to_wait=60)
+        #     driver1.quit()
+        #     file_name = str(ind) + ".pdf"
+        #     time.sleep(2)
+        #     response = requests.get(url, headers=plib.headers)
+            
+        #     # download the .pdf file to the pdf_file_path folder
+        #     # write content in pdf file
+        #     pdf_path = os.path.join(pdf_folder, file_name)
+            
+        #     if response.status_code == 200:
+        #         with open(pdf_path, 'wb') as pdf_object:
+        #             pdf_object.write(response.content)
+        #         # print(f'Successfully downloaded PDF:', ind)
+        #         # return True
+        #     else:
+        #         print(f'Failed downloading PDF:', ind, url)
+        #         print(f'HTTP response status code: {response.status_code}')
+        #         # return False
+        # except:
+        #     print(f'Failed downloading PDF:', ind, url)
+        #     return False
+        # except TimeoutException:
+        #     # print("Page load timed out but that's okay!")
+        #     rename_pdf(ind, pdf_folder, time_to_wait=60)
+        #     # return True
+        # except:
+        #     print(f'Failed downloading PDF:', ind, url)
+        # finally:
+            # driver3.quit()
+# --------------------start of test code--------------------
+# # # journals.physiology.org
+# # # pdf_url = "https://journals.physiology.org/doi/epdf/10.1152/jn.2001.85.1.219"
+# pdf_url = "https://journals.physiology.org/doi/pdf/10.1152/jn.1977.40.6.1339"
+# ind = 100
+# pdf_folder = fpath.pdf_folder
+# download_from_journals_physiology_org(pdf_url, ind, pdf_folder)
+# ---------------------end of test code---------------------        
+
+
 # # "//a[@class='navbar-download btn btn--cta_roundedColored']"
-# ['wiley.com', 'www.science.org', 'physiology.org', 'tandfonline.com', 'sagepub.com', 'acs.org']
+# ['wiley.com', 'www.science.org', 'tandfonline.com', 'sagepub.com', 'acs.org']
 def download_pdf_by_a(url, ind, pdf_folder): 
     # set up the webdriver
     os.environ['WDM_LOG'] = '0'
