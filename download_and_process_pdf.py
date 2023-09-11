@@ -43,6 +43,7 @@ def rename_pdf(ind, pdf_folder, time_to_wait=60):
 # download and rename pdf
 def download_and_rename_pdf(pdf_url, doi, ind, pdf_folder):
     pdf_source = pdf_url.split("://")[1].split("/")[0]
+    func_name = None
     func = None
 
     # download_by_request
