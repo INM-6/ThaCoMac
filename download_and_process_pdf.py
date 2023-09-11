@@ -69,7 +69,7 @@ def download_and_rename_pdf(pdf_url, doi, ind, pdf_folder):
                 break
         
     # download_from
-    if func != None:
+    if func == None:
         for website in params.download_from:
             if website in pdf_source:
                 # Get the function name by replacing "." with "_" and use globals() to call it
@@ -80,7 +80,7 @@ def download_and_rename_pdf(pdf_url, doi, ind, pdf_folder):
                 break
     
     # 'linkinghub.elsevier.com'
-    if func != None and pdf_source == 'linkinghub.elsevier.com':
+    if func == None and pdf_source == 'linkinghub.elsevier.com':
         # Get the function name by replacing "." with "_" and use globals() to call it
         func_name = "download_from_linkinghub_elsevier_com"
         # print(func_name)
@@ -110,7 +110,7 @@ def download_and_rename_pdf(pdf_url, doi, ind, pdf_folder):
                 break
     
     # download_pdf_by_driver
-    if func != None:
+    if func == None:
         for website in params.download_pdf_by_driver:
             if website in pdf_source:
                 # Get the function name by replacing "." with "_" and use globals() to call it
@@ -121,7 +121,7 @@ def download_and_rename_pdf(pdf_url, doi, ind, pdf_folder):
                 break
     
     if func_name == "download_from_linkinghub_elsevier_com":
-        func(pdf_url, doi, ind, pdf_folder)
+        func(doi, ind, pdf_folder)
     elif func != None:
         # print(func)
         func(pdf_url, ind, pdf_folder)
@@ -348,7 +348,7 @@ def download_pdf_by_a(url, ind, pdf_folder):
 
 
 # www.microbiologyresearch.org
-def downalod_from_www_microbiologyresearch_org(url, ind, pdf_folder):
+def downaload_from_www_microbiologyresearch_org(url, ind, pdf_folder):
     os.environ['WDM_LOG'] = '0'
     options1 = Options()
     options1.add_argument('--headless')
@@ -387,7 +387,7 @@ def downalod_from_www_microbiologyresearch_org(url, ind, pdf_folder):
 # pdf_url = "https://www.microbiologyresearch.org/content/journal/jgv/10.1099/vir.0.79883-0"
 # ind = 32
 # pdf_folder = fpath.pdf_folder
-# if downalod_from_www_microbiologyresearch_org(pdf_url, ind, pdf_folder):
+# if downaload_from_www_microbiologyresearch_org(pdf_url, ind, pdf_folder):
 #     print(f'Successfully downloaded PDF:', ind)
 # else:
 #     print(f'Failed downloading PDF:', ind)
