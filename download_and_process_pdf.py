@@ -763,7 +763,7 @@ def download_pdf_by_driver(url, ind, pdf_folder):
 # ---------------------end of test code---------------------
 
 
-# download_not_possible = ['royalsocietypublishing.org', 'jamanetwork.com', 'www.cell.com', 'ieeexplore.ieee.org']
+# download_not_possible = ['royalsocietypublishing.org', 'jamanetwork.com', 'www.cell.com', 'ieeexplore.ieee.org', 'www.researchgate.net']
 def download_not_possible(url, ind, pdf_folder):
     # os.environ['WDM_LOG'] = '0'
     # options1 = Options()

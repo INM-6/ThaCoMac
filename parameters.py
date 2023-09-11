@@ -55,7 +55,7 @@ download_from = [
 
 # 'physiology.org'
 
-download_not_possible = ['royalsocietypublishing.org', 'jamanetwork.com', 'www.cell.com', 'ieeexplore.ieee.org']
+download_not_possible = ['royalsocietypublishing.org', 'jamanetwork.com', 'www.cell.com', 'ieeexplore.ieee.org', 'www.researchgate.net']
 
 download_pdf_by_a = ['wiley.com', 'www.science.org', 'tandfonline.com', 'sagepub.com', 'acs.org']
 
