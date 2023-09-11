@@ -42,6 +42,10 @@ def rename_pdf(ind, pdf_folder, time_to_wait=60):
 
 # download and rename pdf
 def download_and_rename_pdf(pdf_url, doi, ind, pdf_folder):
+    if pdf_url != pdf_url:
+        print("pdf_url is nan")
+        raise Exception("pdf_url is nan")
+    
     pdf_source = pdf_url.split("://")[1].split("/")[0]
     func_name = None
     func = None
@@ -148,6 +152,7 @@ def download_and_rename_pdf(pdf_url, doi, ind, pdf_folder):
 def download_by_request(url, ind, pdf_folder):
     try:
         file_name = str(ind) + ".pdf"
+        time.sleep(2)
         response = requests.get(url, headers=plib.headers)
         
         # download the .pdf file to the pdf_file_path folder
@@ -160,11 +165,11 @@ def download_by_request(url, ind, pdf_folder):
             # print(f'Successfully downloaded PDF:', ind)
             # return True
         else:
-            print(f'Failed downloading PDF:' + 'pdf_url')
+            print(f'Failed downloading PDF:', ind, url)
             print(f'HTTP response status code: {response.status_code}')
             # return False
     except:
-        print(f'Failed downloading PDF:', url)
+        print(f'Failed downloading PDF:', ind, url)
         # return False
 # --------------------start of test code--------------------
 # # pdf_url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6577493/pdf/jneuro_14_5_2485.pdf"
@@ -264,11 +269,11 @@ def download_from_linkinghub_elsevier_com(doi, ind, pdf_folder):
             pdf_object.close
             # print(f'Successfully downloaded PDF:', ind)
         else:
-            print(f'Failed downloading PDF:' + 'doi')
+            print(f'Failed downloading PDF:', ind, doi)
             print(f'HTTP response status code: {response.status_code}')
         # return True
     except:
-        print(f'Failed downloading PDF:' + 'doi')
+        print(f'Failed downloading PDF:', ind, doi)
         # return False
 # --------------------start of test code--------------------
 # # doi = "10.1016/0006-8993(95)01338-5"
@@ -292,6 +297,7 @@ def download_pdf_by_a(url, ind, pdf_folder):
     driver1.get(url)
     time.sleep(10)
     url = driver1.find_element(By.XPATH, "//a[contains(@class,'navbar-download')]").get_attribute("href")
+    driver1.quit()
 
     options.set_preference("browser.download.folderList", 2)
     options.set_preference("browser.download.manager.showWhenStarting", False)
@@ -311,7 +317,7 @@ def download_pdf_by_a(url, ind, pdf_folder):
         rename_pdf(ind, pdf_folder, time_to_wait=60)
         # return True
     except:
-        print(f'Failed downloading PDF:', url)
+        print(f'Failed downloading PDF:', ind, url)
     finally:
         driver2.quit()
 # --------------------start of test code--------------------
@@ -340,9 +346,9 @@ def download_pdf_by_a(url, ind, pdf_folder):
 # ind = 4
 # pdf_folder = fpath.pdf_folder
 # if download_pdf_by_a(pdf_url, ind, pdf_folder):
-#     print(f'Successfully downloaded PDF:', ind)
+#     print(f'Successfully downloaded PDF:', ind, url)
 # else:
-#     print(f'Failed downloading PDF:', ind)
+#     print(f'Failed downloading PDF:', ind, url)
 # ---------------------end of test code---------------------
 
 
@@ -377,7 +383,7 @@ def download_from_www_microbiologyresearch_org(url, ind, pdf_folder):
         rename_pdf(ind, pdf_folder, time_to_wait=60)
         # return True
     except:
-        print(f'Failed downloading PDF:', url)
+        print(f'Failed downloading PDF:', ind, url)
         return False
     finally:
         driver2.quit()
@@ -387,9 +393,9 @@ def download_from_www_microbiologyresearch_org(url, ind, pdf_folder):
 # ind = 32
 # pdf_folder = fpath.pdf_folder
 # if download_from_www_microbiologyresearch_org(pdf_url, ind, pdf_folder):
-#     print(f'Successfully downloaded PDF:', ind)
+#     print(f'Successfully downloaded PDF:', ind, url)
 # else:
-#     print(f'Failed downloading PDF:', ind)
+#     print(f'Failed downloading PDF:', ind, url)
 # ---------------------end of test code---------------------
 
 
@@ -411,7 +417,7 @@ def download_from_europepmc_org(url, ind, pdf_folder):
         rename_pdf(ind, pdf_folder, time_to_wait=60)
         # return True
     except:
-        print(f'Failed downloading PDF:', ind)
+        print(f'Failed downloading PDF:', ind, url)
         # return False
     finally:
         driver1.quit()
@@ -425,9 +431,9 @@ def download_from_europepmc_org(url, ind, pdf_folder):
 # ind = 3
 # pdf_folder = "/Users/didihou/Downloads"
 # if download_from_europepmc_org(pdf_url, ind, pdf_folder):
-#     print(f'Successfully downloaded PDF:', ind)
+#     print(f'Successfully downloaded PDF:', ind, url)
 # else:
-#     print(f'Failed downloading PDF:', ind)
+#     print(f'Failed downloading PDF:', ind, url)
 # ---------------------end of test code---------------------
 
 
@@ -449,7 +455,7 @@ def download_from_papers_ssrn_com(url, ind, pdf_folder):
         rename_pdf(ind, pdf_folder, time_to_wait=60)
         # return True
     except:
-        print(f'Failed downloading PDF:', ind)
+        print(f'Failed downloading PDF:', ind, url)
         # return False
     finally:
         driver1.quit()
@@ -459,9 +465,9 @@ def download_from_papers_ssrn_com(url, ind, pdf_folder):
 # ind = 5
 # pdf_folder = '/Users/didihou/Downloads'
 # if download_from_papers_ssrn_com(pdf_url, ind, pdf_folder):
-#     print(f'Successfully downloaded PDF:', ind)
+#     print(f'Successfully downloaded PDF:', ind, url)
 # else:
-#     print(f'Failed downloading PDF:', ind)
+#     print(f'Failed downloading PDF:', ind, url)
 # ---------------------end of test code---------------------
 
 
@@ -480,7 +486,6 @@ def download_from_www_ingentaconnect_com(url, ind, pdf_folder):
         url = driver1.find_element(By.XPATH, "//a[contains(@class,'fulltext pdf btn')]").get_attribute("data-popup")
         url = url.split("&host=")[1] + url.split("&host")[0]
         # print(url)
-        driver1.quit()
 
         response = requests.get(url, stream=True, headers=plib.headers)
         if response.status_code == 200:
@@ -488,23 +493,25 @@ def download_from_www_ingentaconnect_com(url, ind, pdf_folder):
                 for chunk in response.iter_content(chunk_size=1024*1024):
                     pdf_object.write(chunk)
             pdf_object.close
-            # print(f'Successfully downloaded PDF:', ind)
+            # print(f'Successfully downloaded PDF:', ind, url)
         else:
-            # print(f'Failed downloading PDF:', ind)
+            print(f'Failed downloading PDF:', ind, url)
             print(f'HTTP response status code: {response.status_code}')
         return True
     except:
-        # print(f'Failed downloading PDF:', ind)
+        # print(f'Failed downloading PDF:', ind, url)
         return False
+    finally:
+        driver1.quit()
 # --------------------start of test code--------------------
 # # "://www.ingentaconnect.com/"
 # pdf_url = "https://www.ingentaconnect.com/content/aalas/cm/2000/00000050/00000002/art00006"
 # ind = 6
 # pdf_folder = fpath.pdf_folder
 # if download_from_www_ingentaconnect_com(pdf_url, ind, pdf_folder):
-#     print(f'Successfully downloaded PDF:', ind)
+#     print(f'Successfully downloaded PDF:', ind, url)
 # else:
-#     print(f'Failed downloading PDF:', ind)
+#     print(f'Failed downloading PDF:', ind, url)
 # ---------------------end of test code---------------------
 
 
@@ -527,7 +534,7 @@ def download_from_journals_lww_com(url, ind, pdf_folder):
         rename_pdf(ind, pdf_folder, time_to_wait=60)
         # return True
     except:
-        print(f'Failed downloading PDF:', ind)
+        print(f'Failed downloading PDF:', ind, url)
         # return False
     finally:
         driver1.quit()
@@ -537,9 +544,9 @@ def download_from_journals_lww_com(url, ind, pdf_folder):
 # ind = 7
 # pdf_folder = fpath.pdf_folder
 # if download_from_journals_lww_com(pdf_url, ind, pdf_folder):
-#     print(f'Successfully downloaded PDF:', ind)
+#     print(f'Successfully downloaded PDF:', ind, url)
 # else:
-#     print(f'Failed downloading PDF:', ind)
+#     print(f'Failed downloading PDF:', ind, url)
 # ---------------------end of test code---------------------
 
 
@@ -578,7 +585,7 @@ def download_pdf_by_button(url, ind, pdf_folder):
         rename_pdf(ind, pdf_folder, time_to_wait=60)
         # return True
     except:
-        print(f'Failed downloading PDF:', url)
+        print(f'Failed downloading PDF:', ind, url)
         # return False
     finally:
         driver2.quit()
@@ -599,9 +606,9 @@ def download_pdf_by_button(url, ind, pdf_folder):
 #     raise Exception("pdf_url is not from a supported website: ", pdf_url)
 
 # if download_pdf_by_button(url, ind, pdf_folder):
-#     print(f'Successfully downloaded PDF:', ind)
+#     print(f'Successfully downloaded PDF:', ind, url)
 # else:
-#     print(f'Failed downloading PDF:', ind)
+#     print(f'Failed downloading PDF:', ind, url)
 # ---------------------end of test code---------------------
 
 
@@ -629,7 +636,7 @@ def download_pdf_by_driver(url, ind, pdf_folder):
         rename_pdf(ind, pdf_folder, time_to_wait=60)
         # return True
     except:
-        print(f'Failed downloading PDF:', url)
+        print(f'Failed downloading PDF:', ind, url)
         # return False
     finally:
         driver.quit()
@@ -649,9 +656,9 @@ def download_pdf_by_driver(url, ind, pdf_folder):
 # ind = 10
 # pdf_folder = fpath.pdf_folder
 # if download_pdf_by_driver(pdf_url, ind, pdf_folder):
-#     print(f'Successfully downloaded PDF:', ind)
+#     print(f'Successfully downloaded PDF:', ind, url)
 # else:
-#     print(f'Failed downloading PDF:', ind)
+#     print(f'Failed downloading PDF:', ind, url)
 # ---------------------end of test code---------------------
 
 # download_not_possible = ['royalsocietypublishing.org', 'jamanetwork.com']
@@ -703,3 +710,27 @@ def download_not_possible(url, ind, pdf_folder):
 # pdf_folder = fpath.pdf_folder
 # download_not_possible(pdf_url, ind, pdf_folder)
 # ---------------------end of test code---------------------
+
+
+# # test code for download_and_process_pdf.py
+# doi = ''
+# # pdf_url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6577493/pdf/jneuro_14_5_2485.pdf"
+# # "https://pharmrev.aspetjournals.org/content/pharmrev/24/1/31.full.pdf"
+# # "https://direct.mit.edu/jocn/article-pdf/19/1/13/1936104/jocn.2007.19.1.13.pdf"
+
+# # pdf_url = "https://jnm.snmjournals.org/content/jnumed/39/2/281.full.pdf"
+# # pdf_url = "://linkinghub.elsevier.com/"
+# # doi = "10.1016/0006-8993(95)01338-5"
+# # pdf_url = "https://physoc.onlinelibrary.wiley.com/doi/epdf/10.1113/JP280844"
+# # pdf_url = "https://www.microbiologyresearch.org/content/journal/jgv/10.1099/vir.0.79883-0"
+# # pdf_url = "https://europepmc.org/article/med/8784824"
+# # pdf_url = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3689615"
+# # pdf_url = "https://www.ingentaconnect.com/content/aalas/cm/2000/00000050/00000002/art00006"
+# # pdf_url = "https://journals.lww.com/neuroreport/abstract/1994/10000/further_evidence_for_two_types_of_corticopulvinar.6.aspx"
+# # pdf_url = "https://www.ahajournals.org/doi/reader/10.1161/01.STR.0000087786.38997.9E"
+# # pdf_url = "https://iovs.arvojournals.org//arvo/content_public/journal/iovs/934840/i1552-5783-57-1-1.pdf"
+# # pdf_url = "https://royalsocietypublishing.org/doi/10.1098/rspb.1953.0054"
+# pdf_url = "https://jamanetwork.com/journals/jamaneurology/article-abstract/565945"
+# ind = 5
+# pdf_folder = fpath.pdf_folder
+# dpp.download_and_rename_pdf(pdf_url, doi, ind, pdf_folder)
