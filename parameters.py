@@ -37,27 +37,26 @@ websites = [
 
 # download websites
 # ===================================================================================================================================
-download_by_request = [
-    'aspetjournals.org', 'citeseerx.ist.psu.edu', 'www.nature.com', 'karger.com', 'ahuman.org', 'ahuman.org', 'www.researchsquare.com',
-    'link.springer.com', 'www.ijpp.com', 'www.ijpp.com', 'www.cell.com', 'www.bu.edu', 'www.ncbi.nlm.nih.gov', 
-    'www.thieme-connect.de', 'deepblue.lib.umich.edu', 'bpb-us-e1.wpmucdn.com', 'www.researchgate.net', 'ieeexplore.ieee.org',
+pdf_download_by_request = [
+    'aspetjournals.org', 'citeseerx.ist.psu.edu', 'www.nature.com', 'karger.com', 'ahuman.org', 'www.researchsquare.com',
+    'link.springer.com', 'www.ijpp.com', 'www.bu.edu', 'www.ncbi.nlm.nih.gov', 
+    'www.thieme-connect.de', 'deepblue.lib.umich.edu', 'bpb-us-e1.wpmucdn.com',
     'zsp.com.pk', 'journals.biologists.com', 'journals.aps.org', 'academic.oup.com', 'www.biorxiv.org', 'enpubs.faculty.ucdavis.edu',
     'n.neurology.org', 'ruor.uottawa.ca', 'www.jstage.jst.go.jp', 'synapse.koreamed.org', 'www.jneurosci.org', 'pubs.asahq.org',
     'biomedcentral.com', 'direct.mit.edu', 'jnm.snmjournals.org'
-]
+ ]
 
 download_pdf_by_button = ['www.ahajournals.org', 'psychiatryonline.org']
 
 
 download_from = [
-    'www.microbiologyresearch.org', 'europepmc.org', 'papers.ssrn.com', 'www.ingentaconnect.com',
-    'journals.lww.com']
+    'www.microbiologyresearch.org', 'europepmc.org', 'papers.ssrn.com', 'www.ingentaconnect.com', 'journals.lww.com']
 
 # 'linkinghub.elsevier.com'
 
 # 'physiology.org'
 
-download_not_possible = ['royalsocietypublishing.org', 'jamanetwork.com']
+download_not_possible = ['royalsocietypublishing.org', 'jamanetwork.com', 'www.cell.com', 'ieeexplore.ieee.org']
 
 download_pdf_by_a = ['wiley.com', 'www.science.org', 'tandfonline.com', 'sagepub.com', 'acs.org']
 

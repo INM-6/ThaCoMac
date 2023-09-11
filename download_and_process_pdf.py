@@ -152,8 +152,8 @@ def download_and_rename_pdf(pdf_url, doi, ind, pdf_folder):
 # # .pdf
 # pdf_download_by_request = [
 #     'aspetjournals.org', 'citeseerx.ist.psu.edu', 'www.nature.com', 'karger.com', 'ahuman.org', 'ahuman.org', 'www.researchsquare.com',
-#     'link.springer.com', 'www.ijpp.com', 'www.ijpp.com', 'www.cell.com', 'www.bu.edu', 'www.ncbi.nlm.nih.gov', 
-#     'www.thieme-connect.de', 'deepblue.lib.umich.edu', 'bpb-us-e1.wpmucdn.com', 'www.researchgate.net', 'ieeexplore.ieee.org',
+#     'link.springer.com', 'www.ijpp.com', 'www.ijpp.com', 'www.bu.edu', 'www.ncbi.nlm.nih.gov', 
+#     'www.thieme-connect.de', 'deepblue.lib.umich.edu', 'bpb-us-e1.wpmucdn.com',
 #     'zsp.com.pk', 'journals.biologists.com', 'journals.aps.org', 'academic.oup.com', 'www.biorxiv.org', 'enpubs.faculty.ucdavis.edu',
 #     'n.neurology.org', 'ruor.uottawa.ca', 'www.jstage.jst.go.jp', 'synapse.koreamed.org', 'www.jneurosci.org', 'pubs.asahq.org',
 #     'biomedcentral.com', 'direct.mit.edu', 'jnm.snmjournals.org'
@@ -181,78 +181,75 @@ def download_by_request(url, ind, pdf_folder):
         print(f'Failed downloading PDF:', ind, url)
         return False
 # --------------------start of test code--------------------
-# # pdf_url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6577493/pdf/jneuro_14_5_2485.pdf"
-# # pdf_url = "https://pharmrev.aspetjournals.org/content/pharmrev/24/1/31.full.pdf"
-# pdf_url = "https://jnm.snmjournals.org/content/jnumed/39/2/281.full.pdf"
-# ind = 11
-# pdf_folder = fpath.pdf_folder
-# download_by_request(pdf_url, ind, pdf_folder)
-# ---------------------end of test code---------------------
 # # pharmrev.aspetjournals.org
 # # jpet.aspetjournals.org
-# "https://pharmrev.aspetjournals.org/content/pharmrev/24/1/31.full.pdf"
-# "https://jpet.aspetjournals.org/content/jpet/325/2/617.full.pdf"
-# "https://jpet.aspetjournals.org/content/jpet/321/1/116.full.pdf"
+# # pdf_url = "https://pharmrev.aspetjournals.org/content/pharmrev/24/1/31.full.pdf"
+# # pdf_url = "https://jpet.aspetjournals.org/content/jpet/325/2/617.full.pdf"
+# # pdf_url = "https://jpet.aspetjournals.org/content/jpet/321/1/116.full.pdf"
 # # citeseerx.ist.psu.edu
-# "https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=086111ccf8db5585f16a54ba754ea75ebac97d6c"
+# # pdf_url = "https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=086111ccf8db5585f16a54ba754ea75ebac97d6c"
 # # www.nature.com
-# "https://www.nature.com/articles/s41586-020-2914-4.pdf"
+# # pdf_url = "https://www.nature.com/articles/s41586-020-2914-4.pdf"
 # # karger.com
-# "https://karger.com/bbe/article-pdf/6/1-6/409/2259371/000315942.pdf"
+# # pdf_url = "https://karger.com/bbe/article-pdf/6/1-6/409/2259371/000315942.pdf"
 # # ahuman.org
-# "http://ahuman.org/svn/ahengine/research/articles/Biological/2002-Pathways-for-emotions-and-memory.PDF"
+# # pdf_url = "http://ahuman.org/svn/ahengine/research/articles/Biological/2002-Pathways-for-emotions-and-memory.PDF"
 # # www.researchsquare.com
-# "https://www.researchsquare.com/article/rs-2921649/v1.pdf?c=1687584387000"
+# # pdf_url = "https://www.researchsquare.com/article/rs-2921649/v1.pdf?c=1687584387000"
 # # link.springer.com
-# "https://link.springer.com/content/pdf/10.1007/BF00236173.pdf?pdf=button"
+# # pdf_url = "https://link.springer.com/content/pdf/10.1007/BF00236173.pdf?pdf=button"
 # # www.ijpp.com
-# "https://www.ijpp.com/IJPP%20archives/1981_25_3/201-208.pdf"
-# # www.cell.com
-# "https://www.cell.com/neuron/pdf/S0896-6273(11)00557-5.pdf"
+# # pdf_url = "https://www.ijpp.com/IJPP%20archives/1981_25_3/201-208.pdf"
 # # www.bu.edu
-# "https://www.bu.edu/neural/Final/Publications/2002/Thalamus%20%26%20Related%20Systems%2C%20Volume%202%2C%20Issue%201%2C%20December%202002%2C%20Pages%2021-32.pdf"
+# # pdf_url = "https://www.bu.edu/neural/Final/Publications/2002/Thalamus%20%26%20Related%20Systems%2C%20Volume%202%2C%20Issue%201%2C%20December%202002%2C%20Pages%2021-32.pdf"
 # # www.ncbi.nlm.nih.gov
-# "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6577493/pdf/jneuro_14_5_2485.pdf"
+# # pdf_url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6577493/pdf/jneuro_14_5_2485.pdf"
+# # pdf_url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9106894/pdf/nihms-1783060.pdf"
+# # pdf_url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2613515/pdf/zns11042.pdf"
+# # pdf_url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6577493/pdf/jneuro_14_5_2485.pdf"
 # # www.thieme-connect.de
-# "https://www.thieme-connect.de/products/ejournals/pdf/10.1055/s-2007-973495.pdf"
+# # pdf_url = "https://www.thieme-connect.de/products/ejournals/pdf/10.1055/s-2007-973495.pdf"
 # # deepblue.lib.umich.edu
-# "https://deepblue.lib.umich.edu/bitstream/handle/2027.42/74092/annals.1300.030.pdf?sequence=1"
+# # pdf_url = "https://deepblue.lib.umich.edu/bitstream/handle/2027.42/74092/annals.1300.030.pdf?sequence=1"
 # # bpb-us-e1.wpmucdn.com
-# "https://bpb-us-e1.wpmucdn.com/sites.northwestern.edu/dist/7/2577/files/2018/08/23-Mesulam-2oebbn3.pdf"
-# # www.researchgate.net
-# "https://www.researchgate.net/profile/James-Augustine-2/publication/20294840_Augustine_JR_The_insular_lobe_in_primates_including_humans_Neurol_Res_7_2-10/links/60651633299bf1252e1cf66d/Augustine-JR-The-insular-lobe-in-primates-including-humans-Neurol-Res-7-2-10.pdf"
-# # ieeexplore.ieee.org
-# "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5333751"
+# # pdf_url = "https://bpb-us-e1.wpmucdn.com/sites.northwestern.edu/dist/7/2577/files/2018/08/23-Mesulam-2oebbn3.pdf"
 # # zsp.com.pk
-# "http://zsp.com.pk/pdf48/575-581%20(38)%20QPJZ-0063-2015%2017-12-15%20Longitudinal%20Metabolic%20Changes%20in%20the%20Thalamus%20o_.pdf"
+# # pdf_url = "http://zsp.com.pk/pdf48/575-581%20(38)%20QPJZ-0063-2015%2017-12-15%20Longitudinal%20Metabolic%20Changes%20in%20the%20Thalamus%20o_.pdf"
 # # journals.biologists.com
-# "https://journals.biologists.com/dev/article-pdf/117/3/1031/3050703/develop_117_3_1031.pdf"
+# # pdf_url = "https://journals.biologists.com/dev/article-pdf/117/3/1031/3050703/develop_117_3_1031.pdf"
 # # journals.aps.org
-# "https://journals.aps.org/pre/pdf/10.1103/PhysRevE.106.054304"
+# # pdf_url = "https://journals.aps.org/pre/pdf/10.1103/PhysRevE.106.054304"
 # # academic.oup.com
-# "https://academic.oup.com/cercor/article-pdf/10/3/220/9751036/100220.pdf"
+# # pdf_url = "https://academic.oup.com/cercor/article-pdf/10/3/220/9751036/100220.pdf"
 # # www.biorxiv.org
-# "https://www.biorxiv.org/content/10.1101/2022.02.03.479036v2.full.pdf"
+# # pdf_url = "https://www.biorxiv.org/content/10.1101/2022.02.03.479036v2.full.pdf"
 # # enpubs.faculty.ucdavis.edu
-# "https://enpubs.faculty.ucdavis.edu/wp-content/uploads/sites/209/2015/03/Disbrow-et-al_2002-Thalamocoretical-connections-of-the-parietal-ventral-area-and-the-second.pdf"
+# # pdf_url = "https://enpubs.faculty.ucdavis.edu/wp-content/uploads/sites/209/2015/03/Disbrow-et-al_2002-Thalamocoretical-connections-of-the-parietal-ventral-area-and-the-second.pdf"
 # # n.neurology.org
-# "https://n.neurology.org/content/neurology/64/6/1014.full-text.pdf"
+# # pdf_url = "https://n.neurology.org/content/neurology/64/6/1014.full-text.pdf"
 # # ruor.uottawa.ca
-# "https://ruor.uottawa.ca/bitstream/10393/8164/1/NK25433.PDF"
+# # pdf_url = "https://ruor.uottawa.ca/bitstream/10393/8164/1/NK25433.PDF"
 # # www.jstage.jst.go.jp
-# "https://www.jstage.jst.go.jp/article/pjab1945/43/8/43_8_822/_pdf/-char/en"
+# # pdf_url = "https://www.jstage.jst.go.jp/article/pjab1945/43/8/43_8_822/_pdf/-char/en"
 # # synapse.koreamed.org
-# "https://synapse.koreamed.org/upload/synapsedata/pdfdata/0069ymj/ymj-55-709.pdf"
+# # pdf_url = "https://synapse.koreamed.org/upload/synapsedata/pdfdata/0069ymj/ymj-55-709.pdf"
 # # www.jneurosci.org
-# "https://www.jneurosci.org/content/jneuro/11/8/2383.full.pdf"
+# # pdf_url = "https://www.jneurosci.org/content/jneuro/11/8/2383.full.pdf"
 # # pubs.asahq.org
-# "https://pubs.asahq.org/anesthesiology/article-pdf/98/5/1101/407475/0000542-200305000-00012.pdf"
+# # pdf_url = "https://pubs.asahq.org/anesthesiology/article-pdf/98/5/1101/407475/0000542-200305000-00012.pdf"
 # # biomedcentral.com
-# "https://biomedical-engineering-online.biomedcentral.com/counter/pdf/10.1186/1475-925X-3-13.pdf"
+# # pdf_url = "https://biomedical-engineering-online.biomedcentral.com/counter/pdf/10.1186/1475-925X-3-13.pdf"
 # # direct.mit.edu
-# "https://direct.mit.edu/jocn/article-pdf/19/1/13/1936104/jocn.2007.19.1.13.pdf"
+# # pdf_url = "https://direct.mit.edu/jocn/article-pdf/19/1/13/1936104/jocn.2007.19.1.13.pdf"
 # # jnm.snmjournals.org
-# "https://jnm.snmjournals.org/content/jnumed/39/2/281.full.pdf"
+# # pdf_url = "https://jnm.snmjournals.org/content/jnumed/39/2/281.full.pdf"
+# ind = 1
+# pdf_folder = fpath.pdf_folder
+# if download_by_request(pdf_url, ind, pdf_folder):
+#     print('yes')
+# else:
+#     print('no')
+# ---------------------end of test code---------------------
 
 
 # linkinghub.elsevier.com
@@ -291,7 +288,10 @@ def download_from_linkinghub_elsevier_com(doi, ind, pdf_folder):
 # doi = "10.1016/0304-3940(82)90356-1"
 # ind = 2
 # pdf_folder = fpath.pdf_folder
-# download_from_linkinghub_elsevier_com(doi, ind, pdf_folder)
+# if download_from_linkinghub_elsevier_com(doi, ind, pdf_folder):
+#     print('yes')
+# else:
+#     print('no')
 # ---------------------end of test code---------------------
 
 
@@ -374,12 +374,15 @@ def download_from_journals_physiology_org(url, ind, pdf_folder):
         # finally:
             # driver3.quit()
 # --------------------start of test code--------------------
-# # # journals.physiology.org
-# # # pdf_url = "https://journals.physiology.org/doi/epdf/10.1152/jn.2001.85.1.219"
+# # journals.physiology.org
+# # pdf_url = "https://journals.physiology.org/doi/epdf/10.1152/jn.2001.85.1.219"
 # pdf_url = "https://journals.physiology.org/doi/pdf/10.1152/jn.1977.40.6.1339"
-# ind = 100
+# ind = 3
 # pdf_folder = fpath.pdf_folder
-# download_from_journals_physiology_org(pdf_url, ind, pdf_folder)
+# if download_from_journals_physiology_org(pdf_url, ind, pdf_folder):
+#     print('yes')
+# else:
+#     print('no')
 # ---------------------end of test code---------------------        
 
 
@@ -434,20 +437,18 @@ def download_pdf_by_a(url, ind, pdf_folder):
 # # pdf_url = "https://movementdisorders.onlinelibrary.wiley.com/doi/epdf/10.1002/mds.870060404"
 # # # www.science.org
 # # pdf_url = "https://www.science.org/doi/reader/10.1126/science.282.5391.1117"
-# # # journals.physiology.org
-# # pdf_url = "https://journals.physiology.org/doi/epdf/10.1152/jn.2001.85.1.219"
 # # # www.tandfonline.com
 # # pdf_url = "https://www.tandfonline.com/doi/epdf/10.3109/08990229109144753?needAccess=true&role=button"
 # # # journals.sagepub.com
 # # pdf_url = "https://journals.sagepub.com/doi/reader/10.1177/107385840100700408"
 # # # pubs.acs.org
-# pdf_url = "https://pubs.acs.org/doi/epdf/10.1021/jm030384e"
+# # pdf_url = "https://pubs.acs.org/doi/epdf/10.1021/jm030384e"
 # ind = 4
 # pdf_folder = fpath.pdf_folder
 # if download_pdf_by_a(pdf_url, ind, pdf_folder):
-#     print(f'Successfully downloaded PDF:', ind, url)
+#     print("yes")
 # else:
-#     print(f'Failed downloading PDF:', ind, url)
+#     print("no")
 # ---------------------end of test code---------------------
 
 
@@ -492,9 +493,9 @@ def download_from_www_microbiologyresearch_org(url, ind, pdf_folder):
 # ind = 32
 # pdf_folder = fpath.pdf_folder
 # if download_from_www_microbiologyresearch_org(pdf_url, ind, pdf_folder):
-#     print(f'Successfully downloaded PDF:', ind, url)
+#     print(f'Successfully downloaded PDF:', ind, pdf_url)
 # else:
-#     print(f'Failed downloading PDF:', ind, url)
+#     print(f'Failed downloading PDF:', ind, pdf_url)
 # ---------------------end of test code---------------------
 
 
@@ -523,16 +524,16 @@ def download_from_europepmc_org(url, ind, pdf_folder):
 # --------------------start of test code--------------------
 # # "://europepmc.org/"
 # # pdf_url = "https://europepmc.org/article/med/8784824"
-# pdf_url = "https://europepmc.org/article/MED/37298594"
-# # pdf_url = "https://europepmc.org/article/med/8784824"
+# # pdf_url = "https://europepmc.org/article/MED/37298594"
+# pdf_url = "https://europepmc.org/article/med/8784824"
 # # pdf_url = "https://europepmc.org/article/med/823649"
 # # pdf_url = "https://europepmc.org/article/med/4220147"
 # ind = 3
 # pdf_folder = "/Users/didihou/Downloads"
 # if download_from_europepmc_org(pdf_url, ind, pdf_folder):
-#     print(f'Successfully downloaded PDF:', ind, url)
+#     print("yes")
 # else:
-#     print(f'Failed downloading PDF:', ind, url)
+#     print("no")
 # ---------------------end of test code---------------------
 
 
@@ -564,9 +565,9 @@ def download_from_papers_ssrn_com(url, ind, pdf_folder):
 # ind = 5
 # pdf_folder = '/Users/didihou/Downloads'
 # if download_from_papers_ssrn_com(pdf_url, ind, pdf_folder):
-#     print(f'Successfully downloaded PDF:', ind, url)
+#     print("yes")
 # else:
-#     print(f'Failed downloading PDF:', ind, url)
+#     print("no")
 # ---------------------end of test code---------------------
 
 
@@ -609,9 +610,9 @@ def download_from_www_ingentaconnect_com(url, ind, pdf_folder):
 # ind = 6
 # pdf_folder = fpath.pdf_folder
 # if download_from_www_ingentaconnect_com(pdf_url, ind, pdf_folder):
-#     print(f'Successfully downloaded PDF:', ind, url)
+#     print("yes")
 # else:
-#     print(f'Failed downloading PDF:', ind, url)
+#     print("no")
 # ---------------------end of test code---------------------
 
 
@@ -644,9 +645,9 @@ def download_from_journals_lww_com(url, ind, pdf_folder):
 # ind = 7
 # pdf_folder = fpath.pdf_folder
 # if download_from_journals_lww_com(pdf_url, ind, pdf_folder):
-#     print(f'Successfully downloaded PDF:', ind, url)
+#     print("yes")
 # else:
-#     print(f'Failed downloading PDF:', ind, url)
+#     print("no")
 # ---------------------end of test code---------------------
 
 
@@ -694,8 +695,8 @@ def download_pdf_by_button(url, ind, pdf_folder):
 # # pdf_url = "https://www.ahajournals.org/doi/reader/10.1161/01.STR.0000087786.38997.9E"
 # # 'neuro.psychiatryonline.org'
 # # 'ajp.psychiatryonline.org'
-# pdf_url = "https://neuro.psychiatryonline.org/doi/reader/10.1176/jnp.16.2.127"
-# # pdf_url = "https://ajp.psychiatryonline.org/doi/reader/10.1176/appi.ajp.158.9.1411"
+# # pdf_url = "https://neuro.psychiatryonline.org/doi/reader/10.1176/jnp.16.2.127"
+# pdf_url = "https://ajp.psychiatryonline.org/doi/reader/10.1176/appi.ajp.158.9.1411"
 # ind = 10
 # pdf_folder = fpath.pdf_folder
 # if pdf_url.split("://")[1].split("/")[0] == 'www.ahajournals.org':
@@ -706,9 +707,9 @@ def download_pdf_by_button(url, ind, pdf_folder):
 #     raise Exception("pdf_url is not from a supported website: ", pdf_url)
 
 # if download_pdf_by_button(url, ind, pdf_folder):
-#     print(f'Successfully downloaded PDF:', ind, url)
+#     print("yes")
 # else:
-#     print(f'Failed downloading PDF:', ind, url)
+#     print("no")
 # ---------------------end of test code---------------------
 
 
@@ -741,27 +742,28 @@ def download_pdf_by_driver(url, ind, pdf_folder):
     finally:
         driver.quit()
 # --------------------start of test code--------------------
-# # # iovs.arvojournals.org
+# # iovs.arvojournals.org
 # # pdf_url = "https://iovs.arvojournals.org//arvo/content_public/journal/iovs/934840/i1552-5783-57-1-1.pdf"
-# # # www.imrpress.com
+# # www.imrpress.com
 # # pdf_url = "https://www.imrpress.com/journal/JIN/20/1/10.31083/j.jin.2021.01.334/pdf"
-# # # www.hifo.uzh.ch
+# # www.hifo.uzh.ch
 # # pdf_url = "https://www.hifo.uzh.ch/dam/jcr:00000000-2999-c151-ffff-ffffd9509b89/paper_CorticalArea8.pdf"
-# # # ujms.net
+# # ujms.net
 # # pdf_url = "https://ujms.net/index.php/ujms/article/download/6812/12603"
-# # # www.annualreviews.org
+# # www.annualreviews.org
 # # pdf_url = "https://www.annualreviews.org/doi/pdf/10.1146/annurev.ne.11.030188.001345"
-# # # thejns.org
+# # thejns.org
 # pdf_url = "https://thejns.org/downloadpdf/journals/j-neurosurg/86/1/article-p77.xml"
-# ind = 10
+# ind = 11
 # pdf_folder = fpath.pdf_folder
 # if download_pdf_by_driver(pdf_url, ind, pdf_folder):
-#     print(f'Successfully downloaded PDF:', ind, url)
+#     print("yes")
 # else:
-#     print(f'Failed downloading PDF:', ind, url)
+#     print("no")
 # ---------------------end of test code---------------------
 
-# download_not_possible = ['royalsocietypublishing.org', 'jamanetwork.com']
+
+# download_not_possible = ['royalsocietypublishing.org', 'jamanetwork.com', 'www.cell.com', 'ieeexplore.ieee.org']
 def download_not_possible(url, ind, pdf_folder):
     # os.environ['WDM_LOG'] = '0'
     # options1 = Options()
@@ -799,17 +801,20 @@ def download_not_possible(url, ind, pdf_folder):
     #     return False
     # finally:
     #     driver2.quit()
-    print("Download from", url, "is not possible, please download manually! ind is ", ind)
+    print("Download from", url, "is not possible, please download manually! ind is", ind)
     return False
 # --------------------start of test code--------------------
 # # "://royalsocietypublishing.org/"
-# pdf_url = "https://royalsocietypublishing.org/doi/10.1098/rspb.1953.0054"
+# # pdf_url = "https://royalsocietypublishing.org/doi/10.1098/rspb.1953.0054"
 # # jamanetwork.com
-# "://jamanetwork.com/"
-# "https://jamanetwork.com/journals/jamaneurology/article-abstract/565945"
-# ind = 3
+# # "://jamanetwork.com/"
+# pdf_url = "https://jamanetwork.com/journals/jamaneurology/article-abstract/565945"
+# ind = 12
 # pdf_folder = fpath.pdf_folder
-# download_not_possible(pdf_url, ind, pdf_folder)
+# if download_not_possible(pdf_url, ind, pdf_folder):
+#     print("yes")
+# else:
+#     print("no")
 # ---------------------end of test code---------------------
 
 
