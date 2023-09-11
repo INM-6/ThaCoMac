@@ -42,8 +42,10 @@ download_by_request = [
 
 download_pdf_by_button = ['www.ahajournals.org', 'psychiatryonline.org']
 
+# 'linkinghub.elsevier.com'
+
 download_from = [
-    'linkinghub.elsevier.com', 'www.microbiologyresearch.org', 'europepmc.org', 'papers.ssrn.com', 'www.ingentaconnect.com',
+    'www.microbiologyresearch.org', 'europepmc.org', 'papers.ssrn.com', 'www.ingentaconnect.com',
     'journals.lww.com']
 
 download_not_possible = ['royalsocietypublishing.org', 'jamanetwork.com']

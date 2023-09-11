@@ -41,7 +41,7 @@ def rename_pdf(ind, pdf_folder, time_to_wait=60):
         os.rename(os.path.join(pdf_folder, filename), os.path.join(pdf_folder, newname))
 
 # download and rename pdf
-def download_and_rename_pdf(pdf_url, ind, pdf_folder):
+def download_and_rename_pdf(pdf_url, doi, ind, pdf_folder):
     pdf_source = pdf_url.split("://")[1].split("/")[0]
     func = None
 
@@ -78,6 +78,14 @@ def download_and_rename_pdf(pdf_url, ind, pdf_folder):
                 # print(func)
                 break
     
+    # 'linkinghub.elsevier.com'
+    if func != None and pdf_source == 'linkinghub.elsevier.com':
+        # Get the function name by replacing "." with "_" and use globals() to call it
+        func_name = "download_from_linkinghub_elsevier_com"
+        # print(func_name)
+        func = globals().get(func_name)
+        # print(func)
+    
     # download_not_possible
     if func == None:
         for website in params.download_not_possible:
@@ -110,8 +118,10 @@ def download_and_rename_pdf(pdf_url, ind, pdf_folder):
                 func = globals().get(func_name)
                 # print(func)
                 break
-
-    if func != None:
+    
+    if func_name == "download_from_linkinghub_elsevier_com":
+        func(pdf_url, doi, ind, pdf_folder)
+    elif func != None:
         # print(func)
         func(pdf_url, ind, pdf_folder)
     else:
