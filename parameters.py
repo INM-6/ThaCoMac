@@ -37,13 +37,12 @@ websites = [
 
 # download websites
 # ===================================================================================================================================
-pdf_download_by_request = [
+download_by_request = [
     'aspetjournals.org', 'citeseerx.ist.psu.edu', 'www.nature.com', 'karger.com', 'ahuman.org', 'www.researchsquare.com',
-    'link.springer.com', 'www.ijpp.com', 'www.bu.edu', 'www.ncbi.nlm.nih.gov', 
-    'www.thieme-connect.de', 'deepblue.lib.umich.edu', 'bpb-us-e1.wpmucdn.com',
-    'zsp.com.pk', 'journals.biologists.com', 'journals.aps.org', 'academic.oup.com', 'www.biorxiv.org', 'enpubs.faculty.ucdavis.edu',
-    'n.neurology.org', 'ruor.uottawa.ca', 'www.jstage.jst.go.jp', 'synapse.koreamed.org', 'www.jneurosci.org', 'pubs.asahq.org',
-    'biomedcentral.com', 'direct.mit.edu', 'jnm.snmjournals.org'
+    'link.springer.com', 'www.ijpp.com', 'www.bu.edu', 'www.ncbi.nlm.nih.gov', 'www.thieme-connect.de', 'deepblue.lib.umich.edu', 
+    'bpb-us-e1.wpmucdn.com', 'zsp.com.pk', 'journals.biologists.com', 'journals.aps.org', 'academic.oup.com', 'www.biorxiv.org', 
+    'enpubs.faculty.ucdavis.edu', 'n.neurology.org', 'ruor.uottawa.ca', 'www.jstage.jst.go.jp', 'synapse.koreamed.org', 'www.jneurosci.org', 
+    'pubs.asahq.org', 'biomedcentral.com', 'direct.mit.edu', 'jnm.snmjournals.org'
  ]
 
 download_pdf_by_button = ['www.ahajournals.org', 'psychiatryonline.org']
