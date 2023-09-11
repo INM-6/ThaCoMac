@@ -18,16 +18,28 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service
 from selenium.common.exceptions import TimeoutException, WebDriverException, NoSuchElementException
 
+# rename downloaded pdf
+def rename_pdf(ind, pdf_folder, time_to_wait=60):
+    newname = str(ind) + ".pdf"
+    time_counter = 0
+    filename = max([f for f in os.listdir(pdf_folder)], key=lambda xa :   os.path.getctime(os.path.join(pdf_folder,xa)))
+    while '.part' in filename:
+        time.sleep(1)
+        time_counter += 1
+        if time_counter > time_to_wait:
+            raise Exception('Waited too long for file to download')
+    filename = max([f for f in os.listdir(pdf_folder)], key=lambda xa :   os.path.getctime(os.path.join(pdf_folder,xa)))
+    os.rename(os.path.join(pdf_folder, filename), os.path.join(pdf_folder, newname))
 
 # # .pdf
-pdf_download_by_request = [
-    'aspetjournals.org', 'citeseerx.ist.psu.edu', 'www.nature.com', 'karger.com', 'ahuman.org', 'ahuman.org', 'www.researchsquare.com',
-    'link.springer.com', 'www.ijpp.com', 'www.ijpp.com', 'www.cell.com', 'www.bu.edu', 'www.ncbi.nlm.nih.gov', 
-    'www.thieme-connect.de', 'deepblue.lib.umich.edu', 'bpb-us-e1.wpmucdn.com', 'www.researchgate.net', 'ieeexplore.ieee.org',
-    'zsp.com.pk', 'journals.biologists.com', 'journals.aps.org', 'academic.oup.com', 'www.biorxiv.org', 'enpubs.faculty.ucdavis.edu',
-    'n.neurology.org', 'ruor.uottawa.ca', 'www.jstage.jst.go.jp', 'synapse.koreamed.org', 'www.jneurosci.org', 'pubs.asahq.org',
-    'biomedcentral.com', 'direct.mit.edu', 'jnm.snmjournals.org'
- ]
+# pdf_download_by_request = [
+#     'aspetjournals.org', 'citeseerx.ist.psu.edu', 'www.nature.com', 'karger.com', 'ahuman.org', 'ahuman.org', 'www.researchsquare.com',
+#     'link.springer.com', 'www.ijpp.com', 'www.ijpp.com', 'www.cell.com', 'www.bu.edu', 'www.ncbi.nlm.nih.gov', 
+#     'www.thieme-connect.de', 'deepblue.lib.umich.edu', 'bpb-us-e1.wpmucdn.com', 'www.researchgate.net', 'ieeexplore.ieee.org',
+#     'zsp.com.pk', 'journals.biologists.com', 'journals.aps.org', 'academic.oup.com', 'www.biorxiv.org', 'enpubs.faculty.ucdavis.edu',
+#     'n.neurology.org', 'ruor.uottawa.ca', 'www.jstage.jst.go.jp', 'synapse.koreamed.org', 'www.jneurosci.org', 'pubs.asahq.org',
+#     'biomedcentral.com', 'direct.mit.edu', 'jnm.snmjournals.org'
+#  ]
 def download_by_request(url, ind, pdf_folder):
     try:
         file_name = str(ind) + ".pdf"
@@ -187,9 +199,11 @@ def download_pdf_by_a(url, ind, pdf_folder):
 
     try:
         driver2.get(url)
+        rename_pdf(ind, pdf_folder, time_to_wait=60)
         return True
     except TimeoutException:
         # print("Page load timed out but that's okay!")
+        rename_pdf(ind, pdf_folder, time_to_wait=60)
         return True
     except:
         return False
@@ -221,6 +235,52 @@ def download_pdf_by_a(url, ind, pdf_folder):
 # ind = 4
 # pdf_folder = fpath.pdf_folder
 # if download_pdf_by_a(pdf_url, ind, pdf_folder):
+#     print(f'Successfully downloaded PDF:', ind)
+# else:
+#     print(f'Failed downloading PDF:', ind)
+# ---------------------end of test code---------------------
+
+
+# www.microbiologyresearch.org
+def downalod_from_www_microbiologyresearch_org(url, ind, pdf_folder):
+    os.environ['WDM_LOG'] = '0'
+    options1 = Options()
+    options1.add_argument('--headless')
+    driver1 = webdriver.Firefox(options=options1)
+    # driver1.set_page_load_timeout(10)
+
+    driver1.get(url)
+    url = driver1.find_element(By.XPATH, "//div[contains(@class,'ft-download-content--pdf')]/form").get_attribute("action")
+    # print(url)
+    driver1.quit()
+
+    options2 = Options()
+    options2.add_argument('--headless')
+    options2.set_preference("browser.download.folderList", 2)
+    options2.set_preference("browser.download.manager.showWhenStarting", False)
+    options2.set_preference("browser.download.dir", pdf_folder)
+    options2.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
+    options2.set_preference("pdfjs.disabled", True)
+    driver2 = webdriver.Firefox(options=options2)
+    driver2.set_page_load_timeout(10)
+
+    try:
+        driver2.get(url)
+        rename_pdf(ind, pdf_folder, time_to_wait=60)
+        return True
+    except TimeoutException:
+        rename_pdf(ind, pdf_folder, time_to_wait=60)
+        return True
+    except:
+        return False
+    finally:
+        driver2.quit()
+# --------------------start of test code--------------------
+# # "://www.microbiologyresearch.org/"
+# pdf_url = "https://www.microbiologyresearch.org/content/journal/jgv/10.1099/vir.0.79883-0"
+# ind = 32
+# pdf_folder = fpath.pdf_folder
+# if downalod_from_www_microbiologyresearch_org(pdf_url, ind, pdf_folder):
 #     print(f'Successfully downloaded PDF:', ind)
 # else:
 #     print(f'Failed downloading PDF:', ind)
