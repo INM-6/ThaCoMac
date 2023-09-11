@@ -123,7 +123,6 @@ def download_and_rename_pdf(pdf_url, doi, ind, pdf_folder):
     if func_name == "download_from_linkinghub_elsevier_com":
         func(doi, ind, pdf_folder)
     elif func != None:
-        # print(func)
         func(pdf_url, ind, pdf_folder)
     else:
         print("The given url is not from a supported website: ", pdf_url)
@@ -348,7 +347,7 @@ def download_pdf_by_a(url, ind, pdf_folder):
 
 
 # www.microbiologyresearch.org
-def downaload_from_www_microbiologyresearch_org(url, ind, pdf_folder):
+def download_from_www_microbiologyresearch_org(url, ind, pdf_folder):
     os.environ['WDM_LOG'] = '0'
     options1 = Options()
     options1.add_argument('--headless')
@@ -387,7 +386,7 @@ def downaload_from_www_microbiologyresearch_org(url, ind, pdf_folder):
 # pdf_url = "https://www.microbiologyresearch.org/content/journal/jgv/10.1099/vir.0.79883-0"
 # ind = 32
 # pdf_folder = fpath.pdf_folder
-# if downaload_from_www_microbiologyresearch_org(pdf_url, ind, pdf_folder):
+# if download_from_www_microbiologyresearch_org(pdf_url, ind, pdf_folder):
 #     print(f'Successfully downloaded PDF:', ind)
 # else:
 #     print(f'Failed downloading PDF:', ind)
@@ -395,7 +394,7 @@ def downaload_from_www_microbiologyresearch_org(url, ind, pdf_folder):
 
 
 # europepmc.org
-def downalod_from_europepmc_org(url, ind, pdf_folder):
+def download_from_europepmc_org(url, ind, pdf_folder):
     os.environ['WDM_LOG'] = '0'
     options1 = Options()
     options1.add_argument('--headless')
@@ -425,7 +424,7 @@ def downalod_from_europepmc_org(url, ind, pdf_folder):
 # # pdf_url = "https://europepmc.org/article/med/4220147"
 # ind = 3
 # pdf_folder = "/Users/didihou/Downloads"
-# if downalod_from_europepmc_org(pdf_url, ind, pdf_folder):
+# if download_from_europepmc_org(pdf_url, ind, pdf_folder):
 #     print(f'Successfully downloaded PDF:', ind)
 # else:
 #     print(f'Failed downloading PDF:', ind)
@@ -433,7 +432,7 @@ def downalod_from_europepmc_org(url, ind, pdf_folder):
 
 
 # papers.ssrn.com
-def downalod_from_papers_ssrn_com(url, ind, pdf_folder):
+def download_from_papers_ssrn_com(url, ind, pdf_folder):
     os.environ['WDM_LOG'] = '0'
     options1 = Options()
     options1.add_argument('--headless')
@@ -459,7 +458,7 @@ def downalod_from_papers_ssrn_com(url, ind, pdf_folder):
 # pdf_url = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3689615"
 # ind = 5
 # pdf_folder = '/Users/didihou/Downloads'
-# if downalod_from_papers_ssrn_com(pdf_url, ind, pdf_folder):
+# if download_from_papers_ssrn_com(pdf_url, ind, pdf_folder):
 #     print(f'Successfully downloaded PDF:', ind)
 # else:
 #     print(f'Failed downloading PDF:', ind)
@@ -467,7 +466,7 @@ def downalod_from_papers_ssrn_com(url, ind, pdf_folder):
 
 
 # www.ingentaconnect.com
-def downalod_from_www_ingentaconnect_com(url, ind, pdf_folder):
+def download_from_www_ingentaconnect_com(url, ind, pdf_folder):
     file_name = str(ind) + ".pdf"
     pdf_path = os.path.join(pdf_folder, file_name)
 
@@ -502,7 +501,7 @@ def downalod_from_www_ingentaconnect_com(url, ind, pdf_folder):
 # pdf_url = "https://www.ingentaconnect.com/content/aalas/cm/2000/00000050/00000002/art00006"
 # ind = 6
 # pdf_folder = fpath.pdf_folder
-# if downalod_from_www_ingentaconnect_com(pdf_url, ind, pdf_folder):
+# if download_from_www_ingentaconnect_com(pdf_url, ind, pdf_folder):
 #     print(f'Successfully downloaded PDF:', ind)
 # else:
 #     print(f'Failed downloading PDF:', ind)
@@ -510,7 +509,7 @@ def downalod_from_www_ingentaconnect_com(url, ind, pdf_folder):
 
 
 # journals.lww.com
-def downalod_from_journals_lww_com(url, ind, pdf_folder):
+def download_from_journals_lww_com(url, ind, pdf_folder):
     os.environ['WDM_LOG'] = '0'
     options1 = Options()
     options1.add_argument('--headless')
@@ -537,7 +536,7 @@ def downalod_from_journals_lww_com(url, ind, pdf_folder):
 # pdf_url = "https://journals.lww.com/neuroreport/abstract/1994/10000/further_evidence_for_two_types_of_corticopulvinar.6.aspx"
 # ind = 7
 # pdf_folder = fpath.pdf_folder
-# if downalod_from_journals_lww_com(pdf_url, ind, pdf_folder):
+# if download_from_journals_lww_com(pdf_url, ind, pdf_folder):
 #     print(f'Successfully downloaded PDF:', ind)
 # else:
 #     print(f'Failed downloading PDF:', ind)

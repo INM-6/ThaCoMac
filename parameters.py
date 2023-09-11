@@ -6,6 +6,9 @@
 # (macaque OR macaca OR "rhesus monkey") AND 
 # (thalamus OR thalamic OR thalamocortical OR "thalamo-cortical" OR corticothalamic OR "cortico-thalamic")
 
+
+# extract info websites
+# ===================================================================================================================================
 websites_gs = {
     'neurology.org', 'bmj.com', 'wiley.com', 'oup.com', 'springer.com', 'mdpi.com', 
     'biomedcentral.com', 'sagepub.com', 'cambridge.org', 'wfu.edu', 'cell.com', 'europepmc.org', 
@@ -29,8 +32,11 @@ websites = [
     # newlly added
     'www.jneurosci.org', 'biomedcentral.com'
 ]
+# ===================================================================================================================================
+
 
 # download websites
+# ===================================================================================================================================
 download_by_request = [
     'aspetjournals.org', 'citeseerx.ist.psu.edu', 'www.nature.com', 'karger.com', 'ahuman.org', 'ahuman.org', 'www.researchsquare.com',
     'link.springer.com', 'www.ijpp.com', 'www.ijpp.com', 'www.cell.com', 'www.bu.edu', 'www.ncbi.nlm.nih.gov', 
@@ -42,19 +48,23 @@ download_by_request = [
 
 download_pdf_by_button = ['www.ahajournals.org', 'psychiatryonline.org']
 
-# 'linkinghub.elsevier.com'
 
 download_from = [
     'www.microbiologyresearch.org', 'europepmc.org', 'papers.ssrn.com', 'www.ingentaconnect.com',
     'journals.lww.com']
+
+# 'linkinghub.elsevier.com'
 
 download_not_possible = ['royalsocietypublishing.org', 'jamanetwork.com']
 
 download_pdf_by_a = ['wiley.com', 'www.science.org', 'physiology.org', 'tandfonline.com', 'sagepub.com', 'acs.org']
 
 download_pdf_by_driver = ['iovs.arvojournals.org', 'www.imrpress.com', 'www.hifo.uzh.ch', 'ujms.net', 'www.annualreviews.org', 'thejns.org']
+# ===================================================================================================================================
 
 
+# literature ranking
+# ===================================================================================================================================
 # on-topic keyword lexicon
 on_topic_kws = [
     'thalamocortical', 'thalamo-cortical', 'corticothalamic', 'cortico-thalamic',
@@ -78,14 +88,11 @@ on_topic_kws_weights = {
 # if len(on_topic_kws) != len(on_topic_kws_weights):
 #     raise ValueError("Length of on_topic_kws and on_topic_kws_weights should be the same.")
 # ---------------------end of test code---------------------
+# ===================================================================================================================================
 
 
-# ChatGPT, queries for relatedness of topic
-ChatGPT_related_queries = ['Does the given text include information of thalamocotical connection?',
-                           'Does this paper provide data of thalamocotical connection?',
-                           'Does the given text include information of connection between thalamus and cortex?']
-
-
+# extract metadata categories
+# ===================================================================================================================================
 # meta categories, keywords, and correspond ChatGPT queries
 meta_categ = ['DOI', 'Publication_link', 'pdf_link', 'Authors', 'Year', 'Country', 'Affiliation', 
               'Title', 'Abstract', 'Keywords', 
@@ -103,3 +110,4 @@ ChatGPT_meta_categ_quries = ['what is the parcellation scheme this paper used fo
                              'which areas of the cortex does this study include?',
                              'Does this paper mention stereotaxic space the studies used?',
                              'Does this paper']
+# ===================================================================================================================================
