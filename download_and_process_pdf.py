@@ -40,6 +40,7 @@ def rename_pdf(ind, pdf_folder, time_to_wait=60):
     else:
         os.rename(os.path.join(pdf_folder, filename), os.path.join(pdf_folder, newname))
 
+
 # download and rename pdf
 def download_and_rename_pdf(pdf_url, doi, ind, pdf_folder):
     if pdf_url != pdf_url:
