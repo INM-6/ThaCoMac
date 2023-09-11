@@ -134,9 +134,9 @@ def download_and_rename_pdf(pdf_url, doi, ind, pdf_folder):
                 break
     
     if func_name == "download_from_linkinghub_elsevier_com":
-        func(doi, ind, pdf_folder)
+        return func(doi, ind, pdf_folder)
     elif func != None:
-        func(pdf_url, ind, pdf_folder)
+        return func(pdf_url, ind, pdf_folder)
     else:
         print("The given url is not from a supported website: ", pdf_url)
         raise Exception("Function does not exist for website:", pdf_url)
@@ -172,14 +172,14 @@ def download_by_request(url, ind, pdf_folder):
             with open(pdf_path, 'wb') as pdf_object:
                 pdf_object.write(response.content)
             # print(f'Successfully downloaded PDF:', ind)
-            # return True
+            return True
         else:
             print(f'Failed downloading PDF:', ind, url)
             print(f'HTTP response status code: {response.status_code}')
-            # return False
+            return False
     except:
         print(f'Failed downloading PDF:', ind, url)
-        # return False
+        return False
 # --------------------start of test code--------------------
 # # pdf_url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6577493/pdf/jneuro_14_5_2485.pdf"
 # # pdf_url = "https://pharmrev.aspetjournals.org/content/pharmrev/24/1/31.full.pdf"
@@ -277,13 +277,14 @@ def download_from_linkinghub_elsevier_com(doi, ind, pdf_folder):
                     pdf_object.write(chunk)
             pdf_object.close
             # print(f'Successfully downloaded PDF:', ind)
+            return True
         else:
             print(f'Failed downloading PDF:', ind, doi)
             print(f'HTTP response status code: {response.status_code}')
-        # return True
+            return False
     except:
         print(f'Failed downloading PDF:', ind, doi)
-        # return False
+        return False
 # --------------------start of test code--------------------
 # # doi = "10.1016/0006-8993(95)01338-5"
 # # doi = "10.1016/s0079-6123(08)60384-2" # no pdf available
@@ -320,18 +321,20 @@ def download_from_journals_physiology_org(url, ind, pdf_folder):
         try:
             driver2.get(url1)
             rename_pdf(ind, pdf_folder, time_to_wait=60)
-            # return True
+            return True
         except TimeoutException:
             # print("Page load timed out but that's okay!")
             rename_pdf(ind, pdf_folder, time_to_wait=60)
-            # return True
+            return True
         except:
             print(f'Failed downloading PDF:', ind, url)
+            return False
         finally:
             driver2.quit()
     except:
         print(f'Failed downloading PDF:', ind, url)
         print("Please manually download the pdf file")
+        return False
         # # try:
         #     driver3 = webdriver.Firefox(options=options)
         #     driver3.get(url)
@@ -406,13 +409,14 @@ def download_pdf_by_a(url, ind, pdf_folder):
     try:
         driver2.get(url)
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        # return True
+        return True
     except TimeoutException:
         # print("Page load timed out but that's okay!")
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        # return True
+        return True
     except:
         print(f'Failed downloading PDF:', ind, url)
+        return False
     finally:
         driver2.quit()
 # --------------------start of test code--------------------
@@ -473,10 +477,10 @@ def download_from_www_microbiologyresearch_org(url, ind, pdf_folder):
     try:
         driver2.get(url)
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        # return True
+        return True
     except TimeoutException:
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        # return True
+        return True
     except:
         print(f'Failed downloading PDF:', ind, url)
         return False
@@ -507,13 +511,13 @@ def download_from_europepmc_org(url, ind, pdf_folder):
         driver1.execute_script("arguments[0].click();", button)
         time.sleep(10)
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        # return True
+        return True
     except TimeoutException:
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        # return True
+        return True
     except:
         print(f'Failed downloading PDF:', ind, url)
-        # return False
+        return False
     finally:
         driver1.quit()
 # --------------------start of test code--------------------
@@ -545,13 +549,13 @@ def download_from_papers_ssrn_com(url, ind, pdf_folder):
         driver1.execute_script("arguments[0].click();", button)
         time.sleep(10)
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        # return True
+        return True
     except TimeoutException:
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        # return True
+        return True
     except:
         print(f'Failed downloading PDF:', ind, url)
-        # return False
+        return False
     finally:
         driver1.quit()
 # --------------------start of test code--------------------
@@ -589,10 +593,11 @@ def download_from_www_ingentaconnect_com(url, ind, pdf_folder):
                     pdf_object.write(chunk)
             pdf_object.close
             # print(f'Successfully downloaded PDF:', ind, url)
+            return True
         else:
             print(f'Failed downloading PDF:', ind, url)
             print(f'HTTP response status code: {response.status_code}')
-        return True
+            return False
     except:
         # print(f'Failed downloading PDF:', ind, url)
         return False
@@ -624,13 +629,13 @@ def download_from_journals_lww_com(url, ind, pdf_folder):
         driver1.execute_script("arguments[0].click();", button)
         time.sleep(10)
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        # return True
+        return True
     except TimeoutException:
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        # return True
+        return True
     except:
         print(f'Failed downloading PDF:', ind, url)
-        # return False
+        return False
     finally:
         driver1.quit()
 # --------------------start of test code--------------------
@@ -675,13 +680,13 @@ def download_pdf_by_button(url, ind, pdf_folder):
     try:
         driver2.get(url)
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        # return True
+        return True
     except TimeoutException:
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        # return True
+        return True
     except:
         print(f'Failed downloading PDF:', ind, url)
-        # return False
+        return False
     finally:
         driver2.quit()
 # --------------------start of test code--------------------
@@ -726,13 +731,13 @@ def download_pdf_by_driver(url, ind, pdf_folder):
     try:
         driver.get(url)
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        # return True
+        return True
     except TimeoutException:
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        # return True
+        return True
     except:
         print(f'Failed downloading PDF:', ind, url)
-        # return False
+        return False
     finally:
         driver.quit()
 # --------------------start of test code--------------------
@@ -795,6 +800,7 @@ def download_not_possible(url, ind, pdf_folder):
     # finally:
     #     driver2.quit()
     print("Download from", url, "is not possible, please download manually! ind is ", ind)
+    return False
 # --------------------start of test code--------------------
 # # "://royalsocietypublishing.org/"
 # pdf_url = "https://royalsocietypublishing.org/doi/10.1098/rspb.1953.0054"
