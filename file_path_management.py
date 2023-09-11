@@ -5,7 +5,7 @@ import os
 project_folder = Path.cwd()
 datasets_folder = os.path.join(project_folder, "datasets")
 
-pdf_folder = "/Users/didihou/Downloads/pdfs"
+pdf_folder = "/Users/didihou/Downloads"
 text_folder = "/Users/didihou/Downloads/texts"
 
 proxy_list = os.path.join(project_folder, "list_proxyseller.txt")

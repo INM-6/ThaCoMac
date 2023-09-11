@@ -6,6 +6,7 @@ import parameters as params
 
 # import external modules
 import requests
+import re
 import os
 import time
 from selenium import webdriver
@@ -22,14 +23,108 @@ from selenium.common.exceptions import TimeoutException, WebDriverException, NoS
 def rename_pdf(ind, pdf_folder, time_to_wait=60):
     newname = str(ind) + ".pdf"
     time_counter = 0
-    filename = max([f for f in os.listdir(pdf_folder)], key=lambda xa :   os.path.getctime(os.path.join(pdf_folder,xa)))
+    filename = max([f for f in os.listdir(pdf_folder)], key=lambda xa: os.path.getctime(os.path.join(pdf_folder,xa)))
     while '.part' in filename:
+        # print(filename)
+        # print(time_counter)
         time.sleep(1)
         time_counter += 1
         if time_counter > time_to_wait:
             raise Exception('Waited too long for file to download')
-    filename = max([f for f in os.listdir(pdf_folder)], key=lambda xa :   os.path.getctime(os.path.join(pdf_folder,xa)))
-    os.rename(os.path.join(pdf_folder, filename), os.path.join(pdf_folder, newname))
+        filename = max([f for f in os.listdir(pdf_folder)], key=lambda xa: os.path.getctime(os.path.join(pdf_folder,xa)))
+    filename = max([f for f in os.listdir(pdf_folder)], key=lambda xa: os.path.getctime(os.path.join(pdf_folder,xa)))
+    # filename is not a number
+    if re.match(filename, "[0-9]+"):
+        print('yes')
+        raise Exception('File name is not a number')
+    else:
+        os.rename(os.path.join(pdf_folder, filename), os.path.join(pdf_folder, newname))
+
+# download and rename pdf
+def download_and_rename_pdf(pdf_url, ind, pdf_folder):
+    pdf_source = pdf_url.split("://")[1].split("/")[0]
+    func = None
+
+    # download_by_request
+    if func == None:
+        for website in params.download_by_request:
+            if website in pdf_source:
+                # Get the function name by replacing "." with "_" and use globals() to call it
+                func_name = "download_by_request"
+                # print(func_name)
+                func = globals().get(func_name)
+                # print(func)
+                break
+
+    # download_pdf_by_button
+    if func == None:
+        for website in params.download_pdf_by_button:
+            if website in pdf_source:
+                # Get the function name by replacing "." with "_" and use globals() to call it
+                func_name = "download_pdf_by_button"
+                # print(func_name)
+                func = globals().get(func_name)
+                # print(func)
+                break
+        
+    # download_from
+    if func != None:
+        for website in params.download_from:
+            if website in pdf_source:
+                # Get the function name by replacing "." with "_" and use globals() to call it
+                func_name = "download_from_" + website.replace(".", "_")
+                # print(func_name)
+                func = globals().get(func_name)
+                # print(func)
+                break
+    
+    # download_not_possible
+    if func == None:
+        for website in params.download_not_possible:
+            if website in pdf_source:
+                # Get the function name by replacing "." with "_" and use globals() to call it
+                func_name = "download_not_possible"
+                # print(func_name)
+                func = globals().get(func_name)
+                # print(func)
+                break
+    
+    # download_pdf_by_a
+    if func == None:
+        for website in params.download_pdf_by_a:
+            if website in pdf_source:
+                # Get the function name by replacing "." with "_" and use globals() to call it
+                func_name = "download_pdf_by_a"
+                # print(func_name)
+                func = globals().get(func_name)
+                # print(func)
+                break
+    
+    # download_pdf_by_driver
+    if func != None:
+        for website in params.download_pdf_by_driver:
+            if website in pdf_source:
+                # Get the function name by replacing "." with "_" and use globals() to call it
+                func_name = "download_pdf_by_driver"
+                # print(func_name)
+                func = globals().get(func_name)
+                # print(func)
+                break
+
+    if func != None:
+        # print(func)
+        func(pdf_url, ind, pdf_folder)
+    else:
+        print("The given url is not from a supported website: ", pdf_url)
+        raise Exception("Function does not exist for website:", pdf_url)
+# --------------------start of test code--------------------
+# pdf_url = "https://journals.physiology.org/doi/pdf/10.1152/jn.2001.85.1.219"
+# pdf_url = "https://journals.physiology.org/doi/10.1152/jn.2001.85.1.219"
+# ind = 10
+# pdf_folder = "/home/hou/myProjects/litera_pdfs"
+# download_and_rename_pdf(pdf_url, ind, pdf_folder)
+# ---------------------end of test code---------------------
+
 
 # # .pdf
 # pdf_download_by_request = [
@@ -52,15 +147,15 @@ def download_by_request(url, ind, pdf_folder):
         if response.status_code == 200:
             with open(pdf_path, 'wb') as pdf_object:
                 pdf_object.write(response.content)
-            print(f'Successfully downloaded PDF:', ind)
-            return True
+            # print(f'Successfully downloaded PDF:', ind)
+            # return True
         else:
             print(f'Failed downloading PDF:' + 'pdf_url')
             print(f'HTTP response status code: {response.status_code}')
-            return False
+            # return False
     except:
-        print(f'Failed downloading PDF:' + 'pdf_url')
-        return False
+        print(f'Failed downloading PDF:', url)
+        # return False
 # --------------------start of test code--------------------
 # # pdf_url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6577493/pdf/jneuro_14_5_2485.pdf"
 # # pdf_url = "https://pharmrev.aspetjournals.org/content/pharmrev/24/1/31.full.pdf"
@@ -140,7 +235,7 @@ def download_by_request(url, ind, pdf_folder):
 # "://linkinghub.elsevier.com/"
 # "10.1016/j.neures.2006.02.006"
 # "https://linkinghub.elsevier.com/retrieve/pii/S0168010206000423"
-def download_from_ELSEVIER(doi, ind, pdf_folder):
+def download_from_linkinghub_elsevier_com(doi, ind, pdf_folder):
     try:
         file_name = str(ind) + ".pdf"
         pdf_path = os.path.join(pdf_folder, file_name)
@@ -157,21 +252,21 @@ def download_from_ELSEVIER(doi, ind, pdf_folder):
                 for chunk in response.iter_content(chunk_size=1024*1024):
                     pdf_object.write(chunk)
             pdf_object.close
-            print(f'Successfully downloaded PDF:', ind)
+            # print(f'Successfully downloaded PDF:', ind)
         else:
             print(f'Failed downloading PDF:' + 'doi')
             print(f'HTTP response status code: {response.status_code}')
-        return True
+        # return True
     except:
         print(f'Failed downloading PDF:' + 'doi')
-        return False
+        # return False
 # --------------------start of test code--------------------
 # # doi = "10.1016/0006-8993(95)01338-5"
 # # doi = "10.1016/s0079-6123(08)60384-2" # no pdf available
 # doi = "10.1016/0304-3940(82)90356-1"
 # ind = 2
 # pdf_folder = fpath.pdf_folder
-# download_from_ELSEVIER(doi, ind, pdf_folder)
+# download_from_linkinghub_elsevier_com(doi, ind, pdf_folder)
 # ---------------------end of test code---------------------
 
 
@@ -200,13 +295,13 @@ def download_pdf_by_a(url, ind, pdf_folder):
     try:
         driver2.get(url)
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        return True
+        # return True
     except TimeoutException:
         # print("Page load timed out but that's okay!")
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        return True
+        # return True
     except:
-        return False
+        print(f'Failed downloading PDF:', url)
     finally:
         driver2.quit()
 # --------------------start of test code--------------------
@@ -267,11 +362,12 @@ def downalod_from_www_microbiologyresearch_org(url, ind, pdf_folder):
     try:
         driver2.get(url)
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        return True
+        # return True
     except TimeoutException:
         rename_pdf(ind, pdf_folder, time_to_wait=60)
-        return True
+        # return True
     except:
+        print(f'Failed downloading PDF:', url)
         return False
     finally:
         driver2.quit()
@@ -284,4 +380,316 @@ def downalod_from_www_microbiologyresearch_org(url, ind, pdf_folder):
 #     print(f'Successfully downloaded PDF:', ind)
 # else:
 #     print(f'Failed downloading PDF:', ind)
+# ---------------------end of test code---------------------
+
+
+# europepmc.org
+def downalod_from_europepmc_org(url, ind, pdf_folder):
+    os.environ['WDM_LOG'] = '0'
+    options1 = Options()
+    options1.add_argument('--headless')
+    driver1 = webdriver.Firefox(options=options1)
+    driver1.set_page_load_timeout(10)
+    try:
+        driver1.get(url)
+        button = driver1.find_element(By.XPATH, "//span[contains(@id,'open_pdf')]")
+        driver1.execute_script("arguments[0].click();", button)
+        time.sleep(10)
+        rename_pdf(ind, pdf_folder, time_to_wait=60)
+        # return True
+    except TimeoutException:
+        rename_pdf(ind, pdf_folder, time_to_wait=60)
+        # return True
+    except:
+        print(f'Failed downloading PDF:', ind)
+        # return False
+    finally:
+        driver1.quit()
+# --------------------start of test code--------------------
+# # "://europepmc.org/"
+# # pdf_url = "https://europepmc.org/article/med/8784824"
+# pdf_url = "https://europepmc.org/article/MED/37298594"
+# # pdf_url = "https://europepmc.org/article/med/8784824"
+# # pdf_url = "https://europepmc.org/article/med/823649"
+# # pdf_url = "https://europepmc.org/article/med/4220147"
+# ind = 3
+# pdf_folder = "/Users/didihou/Downloads"
+# if downalod_from_europepmc_org(pdf_url, ind, pdf_folder):
+#     print(f'Successfully downloaded PDF:', ind)
+# else:
+#     print(f'Failed downloading PDF:', ind)
+# ---------------------end of test code---------------------
+
+
+# papers.ssrn.com
+def downalod_from_papers_ssrn_com(url, ind, pdf_folder):
+    os.environ['WDM_LOG'] = '0'
+    options1 = Options()
+    options1.add_argument('--headless')
+    driver1 = webdriver.Firefox(options=options1)
+    driver1.set_page_load_timeout(10)
+    try:
+        driver1.get(url)
+        button = driver1.find_element(By.XPATH, "//a[contains(@class,'button-link primary')]")
+        driver1.execute_script("arguments[0].click();", button)
+        time.sleep(10)
+        rename_pdf(ind, pdf_folder, time_to_wait=60)
+        # return True
+    except TimeoutException:
+        rename_pdf(ind, pdf_folder, time_to_wait=60)
+        # return True
+    except:
+        print(f'Failed downloading PDF:', ind)
+        # return False
+    finally:
+        driver1.quit()
+# --------------------start of test code--------------------
+# # "://papers.ssrn.com/"
+# pdf_url = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3689615"
+# ind = 5
+# pdf_folder = '/Users/didihou/Downloads'
+# if downalod_from_papers_ssrn_com(pdf_url, ind, pdf_folder):
+#     print(f'Successfully downloaded PDF:', ind)
+# else:
+#     print(f'Failed downloading PDF:', ind)
+# ---------------------end of test code---------------------
+
+
+# www.ingentaconnect.com
+def downalod_from_www_ingentaconnect_com(url, ind, pdf_folder):
+    file_name = str(ind) + ".pdf"
+    pdf_path = os.path.join(pdf_folder, file_name)
+
+    os.environ['WDM_LOG'] = '0'
+    options1 = Options()
+    options1.add_argument('--headless')
+    driver1 = webdriver.Firefox(options=options1)
+    # driver1.set_page_load_timeout(10)
+    try:
+        driver1.get(url)
+        url = driver1.find_element(By.XPATH, "//a[contains(@class,'fulltext pdf btn')]").get_attribute("data-popup")
+        url = url.split("&host=")[1] + url.split("&host")[0]
+        # print(url)
+        driver1.quit()
+
+        response = requests.get(url, stream=True, headers=plib.headers)
+        if response.status_code == 200:
+            with open(pdf_path, 'wb') as pdf_object:
+                for chunk in response.iter_content(chunk_size=1024*1024):
+                    pdf_object.write(chunk)
+            pdf_object.close
+            # print(f'Successfully downloaded PDF:', ind)
+        else:
+            # print(f'Failed downloading PDF:', ind)
+            print(f'HTTP response status code: {response.status_code}')
+        return True
+    except:
+        # print(f'Failed downloading PDF:', ind)
+        return False
+# --------------------start of test code--------------------
+# # "://www.ingentaconnect.com/"
+# pdf_url = "https://www.ingentaconnect.com/content/aalas/cm/2000/00000050/00000002/art00006"
+# ind = 6
+# pdf_folder = fpath.pdf_folder
+# if downalod_from_www_ingentaconnect_com(pdf_url, ind, pdf_folder):
+#     print(f'Successfully downloaded PDF:', ind)
+# else:
+#     print(f'Failed downloading PDF:', ind)
+# ---------------------end of test code---------------------
+
+
+# journals.lww.com
+def downalod_from_journals_lww_com(url, ind, pdf_folder):
+    os.environ['WDM_LOG'] = '0'
+    options1 = Options()
+    options1.add_argument('--headless')
+    driver1 = webdriver.Firefox(options=options1)
+    driver1.set_page_load_timeout(10)
+    try:
+        driver1.get(url)
+        button = driver1.find_element(By.XPATH, "//button[contains(@class,'ejp-article-tools__dropdown-list-button')]")
+        # button.click()
+        driver1.execute_script("arguments[0].click();", button)
+        time.sleep(10)
+        rename_pdf(ind, pdf_folder, time_to_wait=60)
+        # return True
+    except TimeoutException:
+        rename_pdf(ind, pdf_folder, time_to_wait=60)
+        # return True
+    except:
+        print(f'Failed downloading PDF:', ind)
+        # return False
+    finally:
+        driver1.quit()
+# --------------------start of test code--------------------
+# # "://journals.lww.com/"
+# pdf_url = "https://journals.lww.com/neuroreport/abstract/1994/10000/further_evidence_for_two_types_of_corticopulvinar.6.aspx"
+# ind = 7
+# pdf_folder = fpath.pdf_folder
+# if downalod_from_journals_lww_com(pdf_url, ind, pdf_folder):
+#     print(f'Successfully downloaded PDF:', ind)
+# else:
+#     print(f'Failed downloading PDF:', ind)
+# ---------------------end of test code---------------------
+
+
+# # "//button[@class='dropdown-trigger btn btn--light btn--cta_roundedColored']"
+# ['www.ahajournals.org', 'psychiatryonline.org']
+# download pdf to specified folder given pdf_url and ind
+def download_pdf_by_button(url, ind, pdf_folder):  
+    os.environ['WDM_LOG'] = '0'
+    options1 = Options()
+    options1.add_argument('--headless')
+    driver1 = webdriver.Firefox(options=options1)
+
+    driver1.get(url)
+    time.sleep(10)
+    button = driver1.find_element(By.CSS_SELECTOR, ".dropdown-trigger.btn.btn--light")
+    driver1.execute_script("arguments[0].click();", button)
+    time.sleep(10)
+    url = driver1.find_element(By.XPATH, "//ul[contains(@class,'base-download-options')]/li[1]/a").get_attribute("href")
+    driver1.quit()
+
+    options2 = Options()
+    options2.add_argument('--headless')
+    options2.set_preference("browser.download.folderList", 2)
+    options2.set_preference("browser.download.manager.showWhenStarting", False)
+    options2.set_preference("browser.download.dir", pdf_folder)
+    options2.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
+    options2.set_preference("pdfjs.disabled", True)
+    driver2 = webdriver.Firefox(options=options2)
+    driver2.set_page_load_timeout(10)
+
+    try:
+        driver2.get(url)
+        rename_pdf(ind, pdf_folder, time_to_wait=60)
+        # return True
+    except TimeoutException:
+        rename_pdf(ind, pdf_folder, time_to_wait=60)
+        # return True
+    except:
+        print(f'Failed downloading PDF:', url)
+        # return False
+    finally:
+        driver2.quit()
+# --------------------start of test code--------------------
+# # 'www.ahajournals.org'
+# # pdf_url = "https://www.ahajournals.org/doi/reader/10.1161/01.STR.0000087786.38997.9E"
+# # 'neuro.psychiatryonline.org'
+# # 'ajp.psychiatryonline.org'
+# pdf_url = "https://neuro.psychiatryonline.org/doi/reader/10.1176/jnp.16.2.127"
+# # pdf_url = "https://ajp.psychiatryonline.org/doi/reader/10.1176/appi.ajp.158.9.1411"
+# ind = 10
+# pdf_folder = fpath.pdf_folder
+# if pdf_url.split("://")[1].split("/")[0] == 'www.ahajournals.org':
+#     url = "https://www.ahajournals.org/doi/epdf/" + pdf_url.split("reader/")[1]
+# elif "psychiatryonline.org" in pdf_url.split("://")[1].split("/")[0]:
+#     url = pdf_url
+# else:
+#     raise Exception("pdf_url is not from a supported website: ", pdf_url)
+
+# if download_pdf_by_button(url, ind, pdf_folder):
+#     print(f'Successfully downloaded PDF:', ind)
+# else:
+#     print(f'Failed downloading PDF:', ind)
+# ---------------------end of test code---------------------
+
+
+# driver.get(url)
+# ['iovs.arvojournals.org', 'www.imrpress.com', 'www.hifo.uzh.ch', 'ujms.net', 'www.annualreviews.org', 'thejns.org']
+def download_pdf_by_driver(url, ind, pdf_folder): 
+    # set up the webdriver
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    options.set_preference("browser.download.folderList", 2)
+    options.set_preference("browser.download.manager.showWhenStarting", False)
+    options.set_preference("browser.download.dir", pdf_folder)
+    options.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
+    options.set_preference("pdfjs.disabled", True)
+
+    driver = webdriver.Firefox(options=options)
+    driver.set_page_load_timeout(10)
+
+    try:
+        driver.get(url)
+        rename_pdf(ind, pdf_folder, time_to_wait=60)
+        # return True
+    except TimeoutException:
+        rename_pdf(ind, pdf_folder, time_to_wait=60)
+        # return True
+    except:
+        print(f'Failed downloading PDF:', url)
+        # return False
+    finally:
+        driver.quit()
+# --------------------start of test code--------------------
+# # # iovs.arvojournals.org
+# # pdf_url = "https://iovs.arvojournals.org//arvo/content_public/journal/iovs/934840/i1552-5783-57-1-1.pdf"
+# # # www.imrpress.com
+# # pdf_url = "https://www.imrpress.com/journal/JIN/20/1/10.31083/j.jin.2021.01.334/pdf"
+# # # www.hifo.uzh.ch
+# # pdf_url = "https://www.hifo.uzh.ch/dam/jcr:00000000-2999-c151-ffff-ffffd9509b89/paper_CorticalArea8.pdf"
+# # # ujms.net
+# # pdf_url = "https://ujms.net/index.php/ujms/article/download/6812/12603"
+# # # www.annualreviews.org
+# # pdf_url = "https://www.annualreviews.org/doi/pdf/10.1146/annurev.ne.11.030188.001345"
+# # # thejns.org
+# pdf_url = "https://thejns.org/downloadpdf/journals/j-neurosurg/86/1/article-p77.xml"
+# ind = 10
+# pdf_folder = fpath.pdf_folder
+# if download_pdf_by_driver(pdf_url, ind, pdf_folder):
+#     print(f'Successfully downloaded PDF:', ind)
+# else:
+#     print(f'Failed downloading PDF:', ind)
+# ---------------------end of test code---------------------
+
+# download_not_possible = ['royalsocietypublishing.org', 'jamanetwork.com']
+def download_not_possible(url, ind, pdf_folder):
+    # os.environ['WDM_LOG'] = '0'
+    # options1 = Options()
+    # options1.add_argument('--headless')
+    # driver1 = webdriver.Firefox(options=options1)
+    # # driver1.set_page_load_timeout(10)
+
+    # driver1.get(url)
+    # url = driver1.find_element(By.XPATH, "//i[contains(@class,'icon-pdf')]/..").get_attribute("href")
+    # driver1.quit()
+    
+
+    # driver1.get(url)
+    # url = driver1.find_element(By.XPATH, "//a[contains(@class,'navbar-download')]").get_attribute("href")
+    # driver1.quit()
+    
+    # options2 = Options()
+    # options2.add_argument('--headless')
+    # options2.set_preference("browser.download.folderList", 2)
+    # options2.set_preference("browser.download.manager.showWhenStarting", False)
+    # options2.set_preference("browser.download.dir", pdf_folder)
+    # options2.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
+    # options2.set_preference("pdfjs.disabled", True)
+    # driver2 = webdriver.Firefox(options=options2)
+    # driver2.set_page_load_timeout(10)
+
+    # try:
+    #     driver2.get(url)
+    #     rename_pdf(ind, pdf_folder, time_to_wait=60)
+    #     return True
+    # except TimeoutException:
+    #     rename_pdf(ind, pdf_folder, time_to_wait=60)
+    #     return True
+    # except:
+    #     return False
+    # finally:
+    #     driver2.quit()
+    print("Download from", url, "is not possible, please download manually! ind is ", ind)
+# --------------------start of test code--------------------
+# # "://royalsocietypublishing.org/"
+# pdf_url = "https://royalsocietypublishing.org/doi/10.1098/rspb.1953.0054"
+# # jamanetwork.com
+# "://jamanetwork.com/"
+# "https://jamanetwork.com/journals/jamaneurology/article-abstract/565945"
+# ind = 3
+# pdf_folder = fpath.pdf_folder
+# download_not_possible(pdf_url, ind, pdf_folder)
 # ---------------------end of test code---------------------
