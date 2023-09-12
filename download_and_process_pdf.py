@@ -99,6 +99,14 @@ def download_and_rename_pdf(pdf_url, doi, ind, pdf_folder):
         # print(func_name)
         func = globals().get(func_name)
         # print(func)
+
+    # 'journals.sagepub.com'
+    if func == None and pdf_source == 'journals.sagepub.com':
+        # Get the function name by replacing "." with "_" and use globals() to call it
+        func_name = "download_from_journals_sagepub_com"
+        # print(func_name)
+        func = globals().get(func_name)
+        # print(func)
     
     # download_not_possible
     if func == None:
@@ -385,6 +393,89 @@ def download_from_journals_physiology_org(url, ind, pdf_folder):
 #     print('no')
 # ---------------------end of test code---------------------        
 
+'journals.sagepub.com'
+def download_from_journals_sagepub_com(url, ind, pdf_folder):
+    try: 
+        os.environ['WDM_LOG'] = '0'
+        options1 = Options()
+        options1.add_argument('--headless')
+        driver1 = webdriver.Firefox(options=options1)
+
+        driver1.get(url)
+        time.sleep(10)
+        button = driver1.find_element(By.CSS_SELECTOR, ".dropdown-trigger.btn.btn--light")
+        driver1.execute_script("arguments[0].click();", button)
+        time.sleep(10)
+        url = driver1.find_element(By.XPATH, "//ul[contains(@class,'base-download-options')]/li[1]/a").get_attribute("href")
+        driver1.quit()
+
+        options2 = Options()
+        options2.add_argument('--headless')
+        options2.set_preference("browser.download.folderList", 2)
+        options2.set_preference("browser.download.manager.showWhenStarting", False)
+        options2.set_preference("browser.download.dir", pdf_folder)
+        options2.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
+        options2.set_preference("pdfjs.disabled", True)
+        driver2 = webdriver.Firefox(options=options2)
+        driver2.set_page_load_timeout(10)
+
+        try:
+            driver2.get(url)
+            rename_pdf(ind, pdf_folder, time_to_wait=60)
+            return True
+        except TimeoutException:
+            rename_pdf(ind, pdf_folder, time_to_wait=60)
+            return True
+        except:
+            print(f'Failed downloading PDF:', ind, url)
+            return False
+        finally:
+            driver2.quit()
+    except:
+        # set up the webdriver
+        os.environ['WDM_LOG'] = '0'
+        options = Options()
+        options.add_argument('--headless')
+        
+        driver1 = webdriver.Firefox(options=options)
+        driver1.get(url)
+        time.sleep(10)
+        url = driver1.find_element(By.XPATH, "//a[contains(@class,'navbar-download')]").get_attribute("href")
+        driver1.quit()
+
+        options.set_preference("browser.download.folderList", 2)
+        options.set_preference("browser.download.manager.showWhenStarting", False)
+        options.set_preference("browser.download.dir", pdf_folder)
+        options.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
+        options.set_preference("pdfjs.disabled", True)
+
+        driver2 = webdriver.Firefox(options=options)
+        driver2.set_page_load_timeout(5)
+
+        try:
+            driver2.get(url)
+            rename_pdf(ind, pdf_folder, time_to_wait=60)
+            return True
+        except TimeoutException:
+            # print("Page load timed out but that's okay!")
+            rename_pdf(ind, pdf_folder, time_to_wait=60)
+            return True
+        except:
+            print(f'Failed downloading PDF:', ind, url)
+            return False
+        finally:
+            driver2.quit()
+# --------------------start of test code--------------------
+# # journals.sagepub.com
+# # pdf_url = "https://journals.sagepub.com/doi/reader/10.1177/107385840100700408"
+# pdf_url = "https://journals.sagepub.com/doi/epub/10.1038/sj.jcbfm.9600381"
+# ind = 1000
+# pdf_folder = fpath.pdf_folder
+# if download_from_journals_sagepub_com(pdf_url, ind, pdf_folder):
+#     print('yes')
+# else:
+#     print('no')
+# ---------------------end of test code---------------------
 
 # # "//a[@class='navbar-download btn btn--cta_roundedColored']"
 # ['wiley.com', 'www.science.org', 'tandfonline.com', 'acs.org']
@@ -650,7 +741,7 @@ def download_from_journals_lww_com(url, ind, pdf_folder):
 
 
 # # "//button[@class='dropdown-trigger btn btn--light btn--cta_roundedColored']"
-# ['www.ahajournals.org', 'psychiatryonline.org', 'journals.sagepub.com']
+# ['www.ahajournals.org', 'psychiatryonline.org']
 # download pdf to specified folder given pdf_url and ind
 def download_pdf_by_button(url, ind, pdf_folder):  
     os.environ['WDM_LOG'] = '0'
@@ -695,8 +786,6 @@ def download_pdf_by_button(url, ind, pdf_folder):
 # # 'ajp.psychiatryonline.org'
 # # pdf_url = "https://neuro.psychiatryonline.org/doi/reader/10.1176/jnp.16.2.127"
 # pdf_url = "https://ajp.psychiatryonline.org/doi/reader/10.1176/appi.ajp.158.9.1411"
-# # journals.sagepub.com
-# # pdf_url = "https://journals.sagepub.com/doi/reader/10.1177/107385840100700408"
 # ind = 10
 # pdf_folder = fpath.pdf_folder
 # if pdf_url.split("://")[1].split("/")[0] == 'www.ahajournals.org':
