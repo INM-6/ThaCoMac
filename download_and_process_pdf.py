@@ -479,30 +479,32 @@ def download_from_journals_sagepub_com(url, ind, pdf_folder):
 
 # # "//a[@class='navbar-download btn btn--cta_roundedColored']"
 # ['wiley.com', 'www.science.org', 'tandfonline.com', 'acs.org']
-def download_pdf_by_a(url, ind, pdf_folder): 
+def download_pdf_by_a(url, ind, pdf_folder):
+    # set up the webdriver
+    os.environ['WDM_LOG'] = '0'
+    options = Options()
+    options.add_argument('--headless')
+    
+    driver1 = webdriver.Firefox(options=options)
+
+    options.set_preference("browser.download.folderList", 2)
+    options.set_preference("browser.download.manager.showWhenStarting", False)
+    options.set_preference("browser.download.dir", pdf_folder)
+    options.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
+    options.set_preference("pdfjs.disabled", True)
+
+    driver2 = webdriver.Firefox(options=options)
+    driver2.set_page_load_timeout(5)
+
     try:
-        # set up the webdriver
-        os.environ['WDM_LOG'] = '0'
-        options = Options()
-        options.add_argument('--headless')
-        
-        driver1 = webdriver.Firefox(options=options)
         driver1.get(url)
         time.sleep(10)
         url = driver1.find_element(By.XPATH, "//a[contains(@class,'navbar-download')]").get_attribute("href")
-        driver1.quit()
-
-        options.set_preference("browser.download.folderList", 2)
-        options.set_preference("browser.download.manager.showWhenStarting", False)
-        options.set_preference("browser.download.dir", pdf_folder)
-        options.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
-        options.set_preference("pdfjs.disabled", True)
-
-        driver2 = webdriver.Firefox(options=options)
-        driver2.set_page_load_timeout(5)
+        # driver1.quit()
 
         driver2.get(url)
         rename_pdf(ind, pdf_folder, time_to_wait=60)
+        # driver2.quit()
         return True
     except TimeoutException:
         # print("Page load timed out but that's okay!")
@@ -512,6 +514,7 @@ def download_pdf_by_a(url, ind, pdf_folder):
         print(f'Failed downloading PDF:', ind, url)
         return False
     finally:
+        driver1.quit()
         driver2.quit()
 # --------------------start of test code--------------------
 # # 'anatomypubs.onlinelibrary.wiley.com'
