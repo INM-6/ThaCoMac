@@ -432,27 +432,27 @@ def download_from_journals_sagepub_com(url, ind, pdf_folder):
         finally:
             driver2.quit()
     except:
-        # set up the webdriver
-        os.environ['WDM_LOG'] = '0'
-        options = Options()
-        options.add_argument('--headless')
-        
-        driver1 = webdriver.Firefox(options=options)
-        driver1.get(url)
-        time.sleep(10)
-        url = driver1.find_element(By.XPATH, "//a[contains(@class,'navbar-download')]").get_attribute("href")
-        driver1.quit()
-
-        options.set_preference("browser.download.folderList", 2)
-        options.set_preference("browser.download.manager.showWhenStarting", False)
-        options.set_preference("browser.download.dir", pdf_folder)
-        options.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
-        options.set_preference("pdfjs.disabled", True)
-
-        driver2 = webdriver.Firefox(options=options)
-        driver2.set_page_load_timeout(5)
-
         try:
+            # set up the webdriver
+            os.environ['WDM_LOG'] = '0'
+            options = Options()
+            options.add_argument('--headless')
+            
+            driver1 = webdriver.Firefox(options=options)
+            driver1.get(url)
+            time.sleep(10)
+            url = driver1.find_element(By.XPATH, "//a[contains(@class,'navbar-download')]").get_attribute("href")
+            driver1.quit()
+
+            options.set_preference("browser.download.folderList", 2)
+            options.set_preference("browser.download.manager.showWhenStarting", False)
+            options.set_preference("browser.download.dir", pdf_folder)
+            options.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
+            options.set_preference("pdfjs.disabled", True)
+
+            driver2 = webdriver.Firefox(options=options)
+            driver2.set_page_load_timeout(5)
+
             driver2.get(url)
             rename_pdf(ind, pdf_folder, time_to_wait=60)
             return True
@@ -480,27 +480,27 @@ def download_from_journals_sagepub_com(url, ind, pdf_folder):
 # # "//a[@class='navbar-download btn btn--cta_roundedColored']"
 # ['wiley.com', 'www.science.org', 'tandfonline.com', 'acs.org']
 def download_pdf_by_a(url, ind, pdf_folder): 
-    # set up the webdriver
-    os.environ['WDM_LOG'] = '0'
-    options = Options()
-    options.add_argument('--headless')
-    
-    driver1 = webdriver.Firefox(options=options)
-    driver1.get(url)
-    time.sleep(10)
-    url = driver1.find_element(By.XPATH, "//a[contains(@class,'navbar-download')]").get_attribute("href")
-    driver1.quit()
-
-    options.set_preference("browser.download.folderList", 2)
-    options.set_preference("browser.download.manager.showWhenStarting", False)
-    options.set_preference("browser.download.dir", pdf_folder)
-    options.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
-    options.set_preference("pdfjs.disabled", True)
-
-    driver2 = webdriver.Firefox(options=options)
-    driver2.set_page_load_timeout(5)
-
     try:
+        # set up the webdriver
+        os.environ['WDM_LOG'] = '0'
+        options = Options()
+        options.add_argument('--headless')
+        
+        driver1 = webdriver.Firefox(options=options)
+        driver1.get(url)
+        time.sleep(10)
+        url = driver1.find_element(By.XPATH, "//a[contains(@class,'navbar-download')]").get_attribute("href")
+        driver1.quit()
+
+        options.set_preference("browser.download.folderList", 2)
+        options.set_preference("browser.download.manager.showWhenStarting", False)
+        options.set_preference("browser.download.dir", pdf_folder)
+        options.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
+        options.set_preference("pdfjs.disabled", True)
+
+        driver2 = webdriver.Firefox(options=options)
+        driver2.set_page_load_timeout(5)
+
         driver2.get(url)
         rename_pdf(ind, pdf_folder, time_to_wait=60)
         return True
@@ -543,28 +543,27 @@ def download_pdf_by_a(url, ind, pdf_folder):
 
 # www.microbiologyresearch.org
 def download_from_www_microbiologyresearch_org(url, ind, pdf_folder):
-    os.environ['WDM_LOG'] = '0'
-    options1 = Options()
-    options1.add_argument('--headless')
-    driver1 = webdriver.Firefox(options=options1)
-    # driver1.set_page_load_timeout(10)
-
-    driver1.get(url)
-    url = driver1.find_element(By.XPATH, "//div[contains(@class,'ft-download-content--pdf')]/form").get_attribute("action")
-    # print(url)
-    driver1.quit()
-
-    options2 = Options()
-    options2.add_argument('--headless')
-    options2.set_preference("browser.download.folderList", 2)
-    options2.set_preference("browser.download.manager.showWhenStarting", False)
-    options2.set_preference("browser.download.dir", pdf_folder)
-    options2.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
-    options2.set_preference("pdfjs.disabled", True)
-    driver2 = webdriver.Firefox(options=options2)
-    driver2.set_page_load_timeout(10)
-
     try:
+        os.environ['WDM_LOG'] = '0'
+        options1 = Options()
+        options1.add_argument('--headless')
+        driver1 = webdriver.Firefox(options=options1)
+        # driver1.set_page_load_timeout(10)
+
+        driver1.get(url)
+        url = driver1.find_element(By.XPATH, "//div[contains(@class,'ft-download-content--pdf')]/form").get_attribute("action")
+        # print(url)
+        driver1.quit()
+
+        options2 = Options()
+        options2.add_argument('--headless')
+        options2.set_preference("browser.download.folderList", 2)
+        options2.set_preference("browser.download.manager.showWhenStarting", False)
+        options2.set_preference("browser.download.dir", pdf_folder)
+        options2.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
+        options2.set_preference("pdfjs.disabled", True)
+        driver2 = webdriver.Firefox(options=options2)
+        driver2.set_page_load_timeout(10)
         driver2.get(url)
         rename_pdf(ind, pdf_folder, time_to_wait=60)
         return True
@@ -590,12 +589,12 @@ def download_from_www_microbiologyresearch_org(url, ind, pdf_folder):
 
 # europepmc.org
 def download_from_europepmc_org(url, ind, pdf_folder):
-    os.environ['WDM_LOG'] = '0'
-    options1 = Options()
-    options1.add_argument('--headless')
-    driver1 = webdriver.Firefox(options=options1)
-    driver1.set_page_load_timeout(10)
     try:
+        os.environ['WDM_LOG'] = '0'
+        options1 = Options()
+        options1.add_argument('--headless')
+        driver1 = webdriver.Firefox(options=options1)
+        driver1.set_page_load_timeout(10)
         driver1.get(url)
         button = driver1.find_element(By.XPATH, "//span[contains(@id,'open_pdf')]")
         driver1.execute_script("arguments[0].click();", button)
@@ -628,12 +627,12 @@ def download_from_europepmc_org(url, ind, pdf_folder):
 
 # papers.ssrn.com
 def download_from_papers_ssrn_com(url, ind, pdf_folder):
-    os.environ['WDM_LOG'] = '0'
-    options1 = Options()
-    options1.add_argument('--headless')
-    driver1 = webdriver.Firefox(options=options1)
-    driver1.set_page_load_timeout(10)
     try:
+        os.environ['WDM_LOG'] = '0'
+        options1 = Options()
+        options1.add_argument('--headless')
+        driver1 = webdriver.Firefox(options=options1)
+        driver1.set_page_load_timeout(10)
         driver1.get(url)
         button = driver1.find_element(By.XPATH, "//a[contains(@class,'button-link primary')]")
         driver1.execute_script("arguments[0].click();", button)
@@ -744,30 +743,29 @@ def download_from_journals_lww_com(url, ind, pdf_folder):
 # ['www.ahajournals.org', 'psychiatryonline.org']
 # download pdf to specified folder given pdf_url and ind
 def download_pdf_by_button(url, ind, pdf_folder):  
-    os.environ['WDM_LOG'] = '0'
-    options1 = Options()
-    options1.add_argument('--headless')
-    driver1 = webdriver.Firefox(options=options1)
-
-    driver1.get(url)
-    time.sleep(10)
-    button = driver1.find_element(By.CSS_SELECTOR, ".dropdown-trigger.btn.btn--light")
-    driver1.execute_script("arguments[0].click();", button)
-    time.sleep(10)
-    url = driver1.find_element(By.XPATH, "//ul[contains(@class,'base-download-options')]/li[1]/a").get_attribute("href")
-    driver1.quit()
-
-    options2 = Options()
-    options2.add_argument('--headless')
-    options2.set_preference("browser.download.folderList", 2)
-    options2.set_preference("browser.download.manager.showWhenStarting", False)
-    options2.set_preference("browser.download.dir", pdf_folder)
-    options2.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
-    options2.set_preference("pdfjs.disabled", True)
-    driver2 = webdriver.Firefox(options=options2)
-    driver2.set_page_load_timeout(10)
-
     try:
+        os.environ['WDM_LOG'] = '0'
+        options1 = Options()
+        options1.add_argument('--headless')
+        driver1 = webdriver.Firefox(options=options1)
+
+        driver1.get(url)
+        time.sleep(10)
+        button = driver1.find_element(By.CSS_SELECTOR, ".dropdown-trigger.btn.btn--light")
+        driver1.execute_script("arguments[0].click();", button)
+        time.sleep(10)
+        url = driver1.find_element(By.XPATH, "//ul[contains(@class,'base-download-options')]/li[1]/a").get_attribute("href")
+        driver1.quit()
+
+        options2 = Options()
+        options2.add_argument('--headless')
+        options2.set_preference("browser.download.folderList", 2)
+        options2.set_preference("browser.download.manager.showWhenStarting", False)
+        options2.set_preference("browser.download.dir", pdf_folder)
+        options2.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
+        options2.set_preference("pdfjs.disabled", True)
+        driver2 = webdriver.Firefox(options=options2)
+        driver2.set_page_load_timeout(10)
         driver2.get(url)
         rename_pdf(ind, pdf_folder, time_to_wait=60)
         return True
