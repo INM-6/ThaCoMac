@@ -45,7 +45,7 @@ download_by_request = [
     'pubs.asahq.org', 'biomedcentral.com', 'direct.mit.edu', 'jnm.snmjournals.org'
  ]
 
-download_pdf_by_button = ['www.ahajournals.org', 'psychiatryonline.org']
+download_pdf_by_button = ['www.ahajournals.org', 'psychiatryonline.org', 'journals.sagepub.com']
 
 
 download_from = [
@@ -57,7 +57,7 @@ download_from = [
 
 download_not_possible = ['royalsocietypublishing.org', 'jamanetwork.com', 'www.cell.com', 'ieeexplore.ieee.org', 'www.researchgate.net']
 
-download_pdf_by_a = ['wiley.com', 'www.science.org', 'tandfonline.com', 'sagepub.com', 'acs.org']
+download_pdf_by_a = ['wiley.com', 'www.science.org', 'tandfonline.com', 'acs.org']
 
 download_pdf_by_driver = ['iovs.arvojournals.org', 'www.imrpress.com', 'www.hifo.uzh.ch', 'ujms.net', 'www.annualreviews.org', 'thejns.org']
 # ===================================================================================================================================

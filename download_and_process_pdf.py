@@ -387,7 +387,7 @@ def download_from_journals_physiology_org(url, ind, pdf_folder):
 
 
 # # "//a[@class='navbar-download btn btn--cta_roundedColored']"
-# ['wiley.com', 'www.science.org', 'tandfonline.com', 'sagepub.com', 'acs.org']
+# ['wiley.com', 'www.science.org', 'tandfonline.com', 'acs.org']
 def download_pdf_by_a(url, ind, pdf_folder): 
     # set up the webdriver
     os.environ['WDM_LOG'] = '0'
@@ -439,8 +439,6 @@ def download_pdf_by_a(url, ind, pdf_folder):
 # # pdf_url = "https://www.science.org/doi/reader/10.1126/science.282.5391.1117"
 # # # www.tandfonline.com
 # # pdf_url = "https://www.tandfonline.com/doi/epdf/10.3109/08990229109144753?needAccess=true&role=button"
-# # # journals.sagepub.com
-# # pdf_url = "https://journals.sagepub.com/doi/reader/10.1177/107385840100700408"
 # # # pubs.acs.org
 # # pdf_url = "https://pubs.acs.org/doi/epdf/10.1021/jm030384e"
 # ind = 4
@@ -652,7 +650,7 @@ def download_from_journals_lww_com(url, ind, pdf_folder):
 
 
 # # "//button[@class='dropdown-trigger btn btn--light btn--cta_roundedColored']"
-# ['www.ahajournals.org', 'psychiatryonline.org']
+# ['www.ahajournals.org', 'psychiatryonline.org', 'journals.sagepub.com']
 # download pdf to specified folder given pdf_url and ind
 def download_pdf_by_button(url, ind, pdf_folder):  
     os.environ['WDM_LOG'] = '0'
@@ -697,6 +695,8 @@ def download_pdf_by_button(url, ind, pdf_folder):
 # # 'ajp.psychiatryonline.org'
 # # pdf_url = "https://neuro.psychiatryonline.org/doi/reader/10.1176/jnp.16.2.127"
 # pdf_url = "https://ajp.psychiatryonline.org/doi/reader/10.1176/appi.ajp.158.9.1411"
+# # journals.sagepub.com
+# # pdf_url = "https://journals.sagepub.com/doi/reader/10.1177/107385840100700408"
 # ind = 10
 # pdf_folder = fpath.pdf_folder
 # if pdf_url.split("://")[1].split("/")[0] == 'www.ahajournals.org':
