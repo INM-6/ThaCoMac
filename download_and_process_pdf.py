@@ -35,8 +35,8 @@ def rename_pdf(ind, pdf_folder, time_to_wait=60):
     filename = max([f for f in os.listdir(pdf_folder)], key=lambda xa: os.path.getctime(os.path.join(pdf_folder,xa)))
     # filename is not a number
     if re.match(filename, "[0-9]+"):
-        print('yes')
-        raise Exception('File name is not a number')
+        # print('yes')
+        raise Exception('File name is a number:', filename)
     else:
         os.rename(os.path.join(pdf_folder, filename), os.path.join(pdf_folder, newname))
 

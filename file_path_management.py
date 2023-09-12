@@ -5,6 +5,7 @@ import os
 project_folder = Path.cwd()
 datasets_folder = os.path.join(project_folder, "datasets")
 
+
 pdf_folder = "/Users/didihou/Downloads"
 text_folder = "/Users/didihou/Downloads/texts"
 
@@ -40,6 +41,7 @@ poten_litera_testing_set_300_read = os.path.join(datasets_folder, "potential_rel
 poten_litera_litera_db = os.path.join(datasets_folder, "potential_related_literature_databse.csv")
 poten_litera_litera_db_ranked = os.path.join(datasets_folder, "potential_related_literature_database_ranked.csv")
 
+poten_litera_pdf_not_available = os.path.join(datasets_folder, "potential_related_literature_pdf_not_available.csv")
 
 related_litera = os.path.join(datasets_folder, "related_literature.csv")
 
