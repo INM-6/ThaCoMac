@@ -745,30 +745,30 @@ def download_from_journals_lww_com(url, ind, pdf_folder):
 # # "//button[@class='dropdown-trigger btn btn--light btn--cta_roundedColored']"
 # ['www.ahajournals.org', 'psychiatryonline.org']
 # download pdf to specified folder given pdf_url and ind
-def download_pdf_by_button(url, ind, pdf_folder):  
-    try:
-        os.environ['WDM_LOG'] = '0'
-        options1 = Options()
-        options1.add_argument('--headless')
-        driver1 = webdriver.Firefox(options=options1)
+def download_pdf_by_button(url, ind, pdf_folder): 
+    os.environ['WDM_LOG'] = '0'
+    options1 = Options()
+    options1.add_argument('--headless')
+    driver1 = webdriver.Firefox(options=options1)
 
+    options2 = Options()
+    options2.add_argument('--headless')
+    options2.set_preference("browser.download.folderList", 2)
+    options2.set_preference("browser.download.manager.showWhenStarting", False)
+    options2.set_preference("browser.download.dir", pdf_folder)
+    options2.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
+    options2.set_preference("pdfjs.disabled", True)
+    driver2 = webdriver.Firefox(options=options2)
+    driver2.set_page_load_timeout(10)
+
+    try:
         driver1.get(url)
         time.sleep(10)
         button = driver1.find_element(By.CSS_SELECTOR, ".dropdown-trigger.btn.btn--light")
         driver1.execute_script("arguments[0].click();", button)
         time.sleep(10)
         url = driver1.find_element(By.XPATH, "//ul[contains(@class,'base-download-options')]/li[1]/a").get_attribute("href")
-        driver1.quit()
-
-        options2 = Options()
-        options2.add_argument('--headless')
-        options2.set_preference("browser.download.folderList", 2)
-        options2.set_preference("browser.download.manager.showWhenStarting", False)
-        options2.set_preference("browser.download.dir", pdf_folder)
-        options2.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
-        options2.set_preference("pdfjs.disabled", True)
-        driver2 = webdriver.Firefox(options=options2)
-        driver2.set_page_load_timeout(10)
+        
         driver2.get(url)
         rename_pdf(ind, pdf_folder, time_to_wait=60)
         return True
@@ -779,6 +779,7 @@ def download_pdf_by_button(url, ind, pdf_folder):
         print(f'Failed downloading PDF:', ind, url)
         return False
     finally:
+        driver1.quit()
         driver2.quit()
 # --------------------start of test code--------------------
 # # 'www.ahajournals.org'
