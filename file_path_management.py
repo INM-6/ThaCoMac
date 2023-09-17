@@ -1,19 +1,25 @@
 from pathlib import Path
 import os
 
-# annoucing all file paths
+# file folder storing the pdfs of the potential relevant literature
+# it's stored in a external SSD of 500GB
+pdf_folder = "/media/hou/DIDIHOU/pdfs"
+# it's stored in a external SSD of 500GB
+# file folder storing the extracted texts of the potential relevant literature
+text_folder = "/media/hou/DIDIHOU/texts"
+
+
+# project folder and the root folder of the repository
 project_folder = Path.cwd()
+# path to the datasets
 datasets_folder = os.path.join(project_folder, "datasets")
-
-
-pdf_folder = "/Users/didihou/Downloads"
-text_folder = "/Users/didihou/Downloads/texts"
 
 
 seed_paper_list = os.path.join(datasets_folder, "seed_literature_list.txt")
 cocomac_paper_list = os.path.join(datasets_folder, "cocomac_literature_list.txt")
 
 
+# search results from the academic databases and the processed results
 poten_litera_gs = os.path.join(datasets_folder, "potential_literature_google_scholar.csv")
 poten_litera_gs_test = os.path.join(datasets_folder, "potential_literature_google_scholar_test.csv")
 poten_litera_gs_processed_step1 = os.path.join(datasets_folder, "potential_literature_google_scholar_processed_step1.csv")
