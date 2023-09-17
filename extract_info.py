@@ -1,8 +1,3 @@
-# import internal .py modules
-import file_path_management as fpath
-import public_library as plib
-import parameters as params
-
 # import packages
 import os
 import time
@@ -16,6 +11,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service
 from selenium.common.exceptions import TimeoutException, WebDriverException, NoSuchElementException
+
+# import internal .py modules
+import file_path_management as fpath
+import public_library as plib
+import parameters as params
 
 
 def extract_info_from_webpage(url, websites):

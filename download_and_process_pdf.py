@@ -1,9 +1,3 @@
-# import internal modules
-import file_path_management as fpath
-import public_library as plib
-import extract_info
-import parameters as params
-
 # import external modules
 import requests
 import re
@@ -18,6 +12,12 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service
 from selenium.common.exceptions import TimeoutException, WebDriverException, NoSuchElementException
+
+# import internal modules
+import file_path_management as fpath
+import public_library as plib
+import extract_info
+import parameters as params
 
 # rename downloaded pdf
 def rename_pdf(ind, pdf_folder, time_to_wait=60):

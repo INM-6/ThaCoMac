@@ -1,9 +1,3 @@
-# import internal modules
-import file_path_management as fpath
-import public_library as plib
-import extract_info as extra_info
-import parameters as params
-
 # import packages
 from bs4 import BeautifulSoup
 import numpy as np
@@ -26,6 +20,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import TimeoutException, WebDriverException, NoSuchElementException
 import re
+
+# import internal modules
+import file_path_management as fpath
+import public_library as plib
+import extract_info as extra_info
+import parameters as params
 
 
 # setting headers and proxies

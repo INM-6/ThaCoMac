@@ -9,8 +9,6 @@ datasets_folder = os.path.join(project_folder, "datasets")
 pdf_folder = "/Users/didihou/Downloads"
 text_folder = "/Users/didihou/Downloads/texts"
 
-proxy_list = os.path.join(project_folder, "list_proxyseller.txt")
-
 
 seed_paper_list = os.path.join(datasets_folder, "seed_literature_list.txt")
 cocomac_paper_list = os.path.join(datasets_folder, "cocomac_literature_list.txt")
