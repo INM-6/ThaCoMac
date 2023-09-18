@@ -266,20 +266,20 @@ def download_by_request(url, ind, pdf_folder):
 # "https://linkinghub.elsevier.com/retrieve/pii/S0168010206000423"
 def download_from_linkinghub_elsevier_com(doi, ind, pdf_folder):
     try:
-        file_name = str(ind) + ".pdf"
+        file_name = str(ind) + ".json"
         pdf_path = os.path.join(pdf_folder, file_name)
 
         url = 'http://api.elsevier.com/content/article/doi:'+doi+'?view=FULL'
         headers = {
             'X-ELS-APIKEY': "63f58b8b10cbc1bc923011c01c6301bb",
-            'Accept': 'application/pdf'
+            # 'Accept': 'application/pdf'
+            'Accept': 'application/json'
         }
         response = requests.get(url, stream=True, headers=headers)
 
         if response.status_code == 200:
             with open(pdf_path, 'wb') as pdf_object:
-                for chunk in response.iter_content(chunk_size=1024*1024):
-                    pdf_object.write(chunk)
+                pdf_object.write(response.content)
             pdf_object.close
             # print(f'Successfully downloaded PDF:', ind)
             return True
@@ -291,11 +291,11 @@ def download_from_linkinghub_elsevier_com(doi, ind, pdf_folder):
         print(f'Failed downloading PDF:', ind, doi)
         return False
 # --------------------start of test code--------------------
-# # doi = "10.1016/0006-8993(95)01338-5"
+# doi = "10.1016/0006-8993(95)01338-5"
 # # doi = "10.1016/s0079-6123(08)60384-2" # no pdf available
-# doi = "10.1016/0304-3940(82)90356-1"
-# ind = 2
-# pdf_folder = fpath.pdf_folder
+# # doi = "10.1016/0304-3940(82)90356-1"
+# ind = 3
+# pdf_folder = "/Users/didihou/Downloads/"
 # if download_from_linkinghub_elsevier_com(doi, ind, pdf_folder):
 #     print('yes')
 # else:
