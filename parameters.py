@@ -70,29 +70,14 @@ download_pdf_by_driver = ['iovs.arvojournals.org', 'www.imrpress.com', 'www.hifo
 text_length_to_extract = 1000
 
 # on-topic keyword lexicon
-on_topic_kws = [
-    'thalamocortical', 'thalamo-cortical', 'corticothalamic', 'cortico-thalamic',
-    'tracing', 'tracer', 'tract tracing', 'tract-tracing', 'axonal tracing', 'neural tracing', 'anatomical tracing', 'neuroanatomical tracing', 'anatomical neural tracing',
-    "staining", "dye",
-    'thalamus', 'cortex', 'thalamic', 'cortical',  
-    'connection', 'projection', 'connectivity', 'connectome', "anterograde", "retrograde", "injection", "injected", "injecting", "inject"]
-# pathway
-
-
 on_topic_kws_weights = {
-    'thalamocortical': 20, 'thalamo-cortical': 20, 'thalamic': 20, 'thalamus': 20,
+    'thalamocortical': 20, 'thalamo-cortical': 20, 'thalamic': 20, 'thalamus': 20, 'corticothalamic': 5, 'cortico-thalamic': 5, 
     'tracing': 15, 'tracer': 15, 'tract tracing': 15, 'tract-tracing': 15, 'axonal tracing': 15, 'neural tracing': 15, 
     'anatomical tracing': 15, 'anatomical neural tracing': 15, 'neuroanatomical tracing': 15, "anterograde": 15, "retrograde": 15,
     "injection": 10, "injected": 10, "injecting": 10, "inject": 10, 
-    'corticothalamic': 5, 'cortico-thalamic': 5, "staining": 5, "dye": 5,
-    'connection': 5, 'projection': 5, 'connectivity': 5, 
+    "staining": 5, "dye": 5, 'connection': 5, 'projection': 5, 'connectivity': 5, 
     'thalamus': 2, 'cortex': 2, 'cortical': 2, 
     'connectome': 1}
-# --------------------start of test code--------------------
-# if len(on_topic_kws) != len(on_topic_kws_weights):
-#     raise ValueError("Length of on_topic_kws and on_topic_kws_weights should be the same.")
-# ---------------------end of test code---------------------
-# ===================================================================================================================================
 
 
 # extract metadata categories
