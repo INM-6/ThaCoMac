@@ -3,8 +3,8 @@ import os
 
 # file folder storing the pdfs of the potential relevant literature
 # it's stored in a external SSD of 500GB
-# pdf_folder = "/media/hou/DIDIHOU/pdfs"
-pdf_folder = "/Users/didihou/Downloads/"
+pdf_folder = "/media/hou/DIDIHOU/pdfs"
+# pdf_folder = "/Users/didihou/Downloads/"
 # it's stored in a external SSD of 500GB
 # file folder storing the extracted texts of the potential relevant literature
 text_folder = "/media/hou/DIDIHOU/texts"
