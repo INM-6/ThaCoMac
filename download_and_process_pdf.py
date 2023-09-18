@@ -393,7 +393,7 @@ def download_from_journals_physiology_org(url, ind, pdf_folder):
 #     print('no')
 # ---------------------end of test code---------------------        
 
-'journals.sagepub.com'
+# 'journals.sagepub.com'
 def download_from_journals_sagepub_com(url, ind, pdf_folder):
     try: 
         os.environ['WDM_LOG'] = '0'
