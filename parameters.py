@@ -4,6 +4,7 @@ text_length_to_extract = 1000
 
 # on-topic keyword lexicon
 on_topic_kws_weights = {
+    "macaque": 30,
     'thalamocortical': 20, 'thalamo-cortical': 20, 'thalamic': 20, 'thalamus': 20, 'corticothalamic': 5, 'cortico-thalamic': 5, 
     'tracing': 15, 'tracer': 15, 'tract tracing': 15, 'tract-tracing': 15, 'axonal tracing': 15, 'neural tracing': 15, 
     'anatomical tracing': 15, 'anatomical neural tracing': 15, 'neuroanatomical tracing': 15, "anterograde": 15, "retrograde": 15,
