@@ -1,10 +1,30 @@
+# literature ranking
+# ===================================================================================================================================
+text_length_to_extract = 1000
+
+# on-topic keyword lexicon
+on_topic_kws_weights = {
+    'thalamocortical': 20, 'thalamo-cortical': 20, 'thalamic': 20, 'thalamus': 20, 'corticothalamic': 5, 'cortico-thalamic': 5, 
+    'tracing': 15, 'tracer': 15, 'tract tracing': 15, 'tract-tracing': 15, 'axonal tracing': 15, 'neural tracing': 15, 
+    'anatomical tracing': 15, 'anatomical neural tracing': 15, 'neuroanatomical tracing': 15, "anterograde": 15, "retrograde": 15,
+    "injection": 10, "injected": 10, "injecting": 10, "inject": 10, 
+    "staining": 5, "dye": 5, 'connection': 5, 'projection': 5, 'connectivity': 5, 
+    'thalamus': 2, 'cortex': 2, 'cortical': 2, 
+    'connectome': 1}
+# ===================================================================================================================================
+
+
+
+
 # search keywords lexicon
+# ===================================================================================================================================
+# search_kws_lexicon = (macaque OR macaca OR "rhesus monkey") AND (thalamus OR thalamic OR thalamocortical OR "thalamo-cortical" OR corticothalamic OR "cortico-thalamic")
+
 # search in all fields
 # "" means exact match, otherwise the search engine will treat every word separately
+# ===================================================================================================================================
 
-# search_kws_lexicon = 
-# (macaque OR macaca OR "rhesus monkey") AND 
-# (thalamus OR thalamic OR thalamocortical OR "thalamo-cortical" OR corticothalamic OR "cortico-thalamic")
+
 
 
 # extract info websites
@@ -33,6 +53,8 @@ websites = [
     'www.jneurosci.org', 'biomedcentral.com'
 ]
 # ===================================================================================================================================
+
+
 
 
 # download websites
@@ -65,19 +87,6 @@ download_pdf_by_driver = ['iovs.arvojournals.org', 'www.imrpress.com', 'www.hifo
 # ===================================================================================================================================
 
 
-# literature ranking
-# ===================================================================================================================================
-text_length_to_extract = 1000
-
-# on-topic keyword lexicon
-on_topic_kws_weights = {
-    'thalamocortical': 20, 'thalamo-cortical': 20, 'thalamic': 20, 'thalamus': 20, 'corticothalamic': 5, 'cortico-thalamic': 5, 
-    'tracing': 15, 'tracer': 15, 'tract tracing': 15, 'tract-tracing': 15, 'axonal tracing': 15, 'neural tracing': 15, 
-    'anatomical tracing': 15, 'anatomical neural tracing': 15, 'neuroanatomical tracing': 15, "anterograde": 15, "retrograde": 15,
-    "injection": 10, "injected": 10, "injecting": 10, "inject": 10, 
-    "staining": 5, "dye": 5, 'connection': 5, 'projection': 5, 'connectivity': 5, 
-    'thalamus': 2, 'cortex': 2, 'cortical': 2, 
-    'connectome': 1}
 
 
 # extract metadata categories
