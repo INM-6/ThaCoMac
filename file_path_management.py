@@ -7,7 +7,7 @@ pdf_folder = "/Volumes/DIDIHOU/pdfs"
 # pdf_folder = "/Users/didihou/Downloads/"
 # it's stored in a external SSD of 500GB
 # file folder storing the extracted texts of the potential relevant literature
-text_folder = "/media/hou/DIDIHOU/texts"
+text_folder = "/Volumes/DIDIHOU/texts"
 
 
 # project folder and the root folder of the repository
