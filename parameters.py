@@ -67,6 +67,8 @@ download_pdf_by_driver = ['iovs.arvojournals.org', 'www.imrpress.com', 'www.hifo
 
 # literature ranking
 # ===================================================================================================================================
+text_length_to_extract = 1000
+
 # on-topic keyword lexicon
 on_topic_kws = [
     'thalamocortical', 'thalamo-cortical', 'corticothalamic', 'cortico-thalamic',
