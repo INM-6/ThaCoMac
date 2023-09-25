@@ -9,6 +9,7 @@ pdf_folder = "/media/hou/DIDIHOU/pdfs"
 # file folder storing the extracted texts of the potential relevant literature
 text_folder = "/media/hou/DIDIHOU/texts"
 relevant_pdf_folder = "/media/hou/DIDIHOU/relevant_pdfs"
+not_relevant_pdf_folder = "/media/hou/DIDIHOU/not_relevant_pdfs"
 
 
 # project folder and the root folder of the repository
