@@ -20,28 +20,30 @@ cortex = 10
 method = 200
 connectivity = 50
 
-ranking_params = {
+ranking_params_weights = {
    'species': species, "tc_ct": tc_ct, "thalam": thalam, "cortex": cortex, "method": method, "connectivity": connectivity
    }
 
-species_related = {
+ranking_params = ["species", "tc_ct", "thalam", "cortex", "method", "connectivity"]
+
+species_related = [
    'rhesus', 'macaque', 'macaca'
-   }
-tc_ct_related = {
+   ]
+tc_ct_related = [
       'thalamocortical', 'thalamo-cortical', 'corticothalamic', 'cortico-thalamic'
-   }
-thalam_related = {
+   ]
+thalam_related = [
       'thalam', 'mediodorsal', 'MD', 'pulvinar', 'posteroventral', 'ventral lateral', 'ventral-lateral', 'ventrolateral', 'VLpv', 'anterior thalamic nuclei', 'laterodorsal', 'anteroventral', 'anteromedial', 'suprageniculate', 'SGN', 'medial geniculate', 'MG', 'MGv', 'MGd', 'MGm', 'ventroposterolateral', 'ventro-posterior lateral', 'VPL', 'subcortical', 'lateral geniculate nucleus', 'LGN'
-   }
-cortex_related = {
+   ]
+cortex_related = [
       'cortex', 'cortical', 'cortices', 'V1', 
-   }
-method_related = {
+   ]
+method_related = [
    'tract', 'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'inject', 'horseradish peroxidase', 'fluorescent', 'cholera toxin', 'PHA-L', 'WGA-HRP', 'BDA', 'amino acids', 'PHA-L', 'leucine', 'proline', 'lesion', 'autoradiographic', 'diﬀusion MRI', 'fMRI', 'staining', 'dye'
-   }
-connectivity_related = {
+   ]
+connectivity_related = [
       'connect', 'projection', 'projecting', 'projected', 'afferent', 'efferent', 'fibers', 'input', 'pathway', 
-   }
+   ]
 # ===================================================================================================================================
 
 
