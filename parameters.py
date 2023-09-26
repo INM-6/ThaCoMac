@@ -13,12 +13,12 @@
 
 text_length_to_extract = 1000
 
-species = 100
-tc_ct = 100
-thalam = 10
-cortex = 10
-method = 200
-connectivity = 50
+species = 10
+tc_ct = 10
+thalam = 5
+cortex = 5
+method = 20
+connectivity = 5
 
 ranking_params_weights = {
    'species': species, "tc_ct": tc_ct, "thalam": thalam, "cortex": cortex, "method": method, "connectivity": connectivity
