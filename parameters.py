@@ -1,17 +1,47 @@
 # literature ranking
 # ===================================================================================================================================
+# # on-topic keyword lexicon
+# on_topic_kws_weights = {
+#     "macaque": 30,
+#     'thalamocortical': 20, 'thalamo-cortical': 20, 'thalamic': 20, 'thalamus': 20, 'corticothalamic': 5, 'cortico-thalamic': 5, 
+#     'tracing': 15, 'tracer': 15, 'tract tracing': 15, 'tract-tracing': 15, 'axonal tracing': 15, 'neural tracing': 15, 
+#     'anatomical tracing': 15, 'anatomical neural tracing': 15, 'neuroanatomical tracing': 15, "anterograde": 15, "retrograde": 15,
+#     "injection": 10, "injected": 10, "injecting": 10, "inject": 10, 
+#     "staining": 5, "dye": 5, 'connection': 5, 'projection': 5, 'connectivity': 5, 
+#     'thalamus': 2, 'cortex': 2, 'cortical': 2, 
+#     'connectome': 1}
+
 text_length_to_extract = 1000
 
-# on-topic keyword lexicon
-on_topic_kws_weights = {
-    "macaque": 30,
-    'thalamocortical': 20, 'thalamo-cortical': 20, 'thalamic': 20, 'thalamus': 20, 'corticothalamic': 5, 'cortico-thalamic': 5, 
-    'tracing': 15, 'tracer': 15, 'tract tracing': 15, 'tract-tracing': 15, 'axonal tracing': 15, 'neural tracing': 15, 
-    'anatomical tracing': 15, 'anatomical neural tracing': 15, 'neuroanatomical tracing': 15, "anterograde": 15, "retrograde": 15,
-    "injection": 10, "injected": 10, "injecting": 10, "inject": 10, 
-    "staining": 5, "dye": 5, 'connection': 5, 'projection': 5, 'connectivity': 5, 
-    'thalamus': 2, 'cortex': 2, 'cortical': 2, 
-    'connectome': 1}
+species = 100
+tc_ct = 100
+thalam = 10
+cortex = 10
+method = 200
+connectivity = 50
+
+ranking_params = {
+   'species': species, "tc_ct": tc_ct, "thalam": thalam, "cortex": cortex, "method": method, "connectivity": connectivity
+   }
+
+species_related = {
+   'rhesus', 'macaque', 'macaca'
+   }
+tc_ct_related = {
+      'thalamocortical', 'thalamo-cortical', 'corticothalamic', 'cortico-thalamic'
+   }
+thalam_related = {
+      'thalam', 'mediodorsal', 'MD', 'pulvinar', 'posteroventral', 'ventral lateral', 'ventral-lateral', 'ventrolateral', 'VLpv', 'anterior thalamic nuclei', 'laterodorsal', 'anteroventral', 'anteromedial', 'suprageniculate', 'SGN', 'medial geniculate', 'MG', 'MGv', 'MGd', 'MGm', 'ventroposterolateral', 'ventro-posterior lateral', 'VPL', 'subcortical', 'lateral geniculate nucleus', 'LGN'
+   }
+cortex_related = {
+      'cortex', 'cortical', 'cortices', 'V1', 
+   }
+method_related = {
+   'tract', 'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'inject', 'horseradish peroxidase', 'fluorescent', 'cholera toxin', 'PHA-L', 'WGA-HRP', 'BDA', 'amino acids', 'PHA-L', 'leucine', 'proline', 'lesion', 'autoradiographic', 'diﬀusion MRI', 'fMRI', 'staining', 'dye'
+   }
+connectivity_related = {
+      'connect', 'projection', 'projecting', 'projected', 'afferent', 'efferent', 'fibers', 'input', 'pathway', 
+   }
 # ===================================================================================================================================
 
 
