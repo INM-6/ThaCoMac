@@ -13,11 +13,11 @@
 
 text_length_to_extract = 1000
 
-species = 10
+species = 20
 tc_ct = 10
-thalam = 5
-cortex = 5
-method = 20
+thalam = 2
+cortex = 2
+method = 10
 connectivity = 5
 
 ranking_params_weights = {
