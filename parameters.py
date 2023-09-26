@@ -20,6 +20,7 @@ cortex = 0.001
 method = 6
 connectivity = 5
 
+# 6 groups of keywords and their weights
 ranking_params_weights = {
    'species': species, "tc_ct": tc_ct, "thalam": thalam, "cortex": cortex, "method": method, "connectivity": connectivity
    }
