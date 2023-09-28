@@ -33,21 +33,19 @@ species_related = [
 tc_ct_related = [
       'thalamocortical', 'thalamo-cortical', 'corticothalamic', 'cortico-thalamic'
    ]
-thalam_related = [
+thalam_related = [ # thalamic neucleus
       'thalam', 'mediodorsal', 'MD', 'pulvinar', 'posteroventral', 'ventral lateral', 'ventral-lateral', 'ventrolateral', 'VLpv', 'anterior thalamic nuclei', 'laterodorsal', 'anteroventral', 'anteromedial', 'suprageniculate', 'SGN', 'medial geniculate', 'MG', 'MGv', 'MGd', 'MGm', 'ventroposterolateral', 'ventro-posterior lateral', 'VPL', 'subcortical', 'lateral geniculate nucleus', 'LGN'
    ]
-cortex_related = [
+cortex_related = [ # cortical areas
       'cortex', 'cortical', 'cortices', 'V1', 
    ]
-method_related = [
+method_related = [ # tracer substance
    'tract', 'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'inject', 'horseradish peroxidase', 'fluorescent', 'cholera toxin', 'PHA-L', 'WGA-HRP', 'BDA', 'amino acids', 'PHA-L', 'leucine', 'proline', 'lesion', 'autoradiographic', 'diﬀusion MRI', 'fMRI', 'staining', 'dye'
    ]
 connectivity_related = [
       'connect', 'projection', 'projecting', 'projected', 'afferent', 'efferent', 'fibers', 'input', 'pathway', 
    ]
 # ===================================================================================================================================
-
-
 
 
 # search keywords lexicon
@@ -57,8 +55,6 @@ connectivity_related = [
 # search in all fields
 # "" means exact match, otherwise the search engine will treat every word separately
 # ===================================================================================================================================
-
-
 
 
 # extract info websites
@@ -89,8 +85,6 @@ websites = [
 # ===================================================================================================================================
 
 
-
-
 # download websites
 # ===================================================================================================================================
 download_by_request = [
@@ -119,8 +113,6 @@ download_pdf_by_a = ['wiley.com', 'www.science.org', 'tandfonline.com', 'acs.org
 
 download_pdf_by_driver = ['iovs.arvojournals.org', 'www.imrpress.com', 'www.hifo.uzh.ch', 'ujms.net', 'www.annualreviews.org', 'thejns.org']
 # ===================================================================================================================================
-
-
 
 
 # extract metadata categories
