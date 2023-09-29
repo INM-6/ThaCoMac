@@ -37,13 +37,13 @@ thalam_related = [ # thalamic neucleus
       'thalam', 'mediodorsal', 'MD', 'pulvinar', 'posteroventral', 'ventral lateral', 'ventral-lateral', 'ventrolateral', 'VLpv', 'anterior thalamic nuclei', 'laterodorsal', 'anteroventral', 'anteromedial', 'suprageniculate', 'SGN', 'medial geniculate', 'MG', 'MGv', 'MGd', 'MGm', 'ventroposterolateral', 'ventro-posterior lateral', 'VPL', 'subcortical', 'lateral geniculate nucleus', 'LGN'
    ]
 cortex_related = [ # cortical areas
-      'cortex', 'cortical', 'cortices', 'V1', 
+      'cortex', 'cortical', 'cortices', 'V1'
    ]
 method_related = [ # tracer substance
    'tract', 'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'inject', 'horseradish peroxidase', 'fluorescent', 'cholera toxin', 'PHA-L', 'WGA-HRP', 'BDA', 'amino acids', 'PHA-L', 'leucine', 'proline', 'lesion', 'autoradiographic', 'diﬀusion MRI', 'fMRI', 'staining', 'dye'
    ]
 connectivity_related = [
-      'connect', 'projection', 'projecting', 'projected', 'afferent', 'efferent', 'fibers', 'input', 'pathway', 
+      'connect', 'project', 'afferent', 'efferent', 'fiber', 'input', 'pathway'
    ]
 # ===================================================================================================================================
 
