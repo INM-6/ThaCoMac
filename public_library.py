@@ -104,12 +104,12 @@ def ask_ChatGPT(context, queries):
 
 # add a new row to a given .csv file
 def add_row_to_csv(csv_path, new_row, columns):
-    # try:
+    try:
         df_new_row = pd.DataFrame(data=new_row, columns=columns)
-        df_new_row.to_csv(csv_path, mode='a', index=False, header=False, escapechar='\\', quoting=csv.QUOTE_NONE)
-    #     return True
-    # except:
-    #     return False
+        df_new_row.to_csv(csv_path, mode='a', index=False, header=False, encoding='utf-8')
+        return True
+    except:
+        return False
 # --------------------start of test code--------------------
 # add_rows_to_csv(path_potential, info_json, columns)
 # ---------------------end of test code---------------------
