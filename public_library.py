@@ -106,7 +106,7 @@ def ask_ChatGPT(context, queries):
 def add_row_to_csv(csv_path, new_row, columns):
     # try:
         df_new_row = pd.DataFrame(data=new_row, columns=columns)
-        df_new_row.to_csv(csv_path, mode='a', index=False, header=False)
+        df_new_row.to_csv(csv_path, mode='a', index=False, header=False, escapechar='\\', quoting=csv.QUOTE_NONE)
     #     return True
     # except:
     #     return False
