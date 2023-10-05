@@ -35,7 +35,7 @@ macaque_group = [
    'rhesus', 'macaque', 'macaca'
    ]
 other_spiecies_group = [
-    'cat', 'marmaset'
+    'cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'marmoset', 'marmosets'
 ]
 tc_ct_group = [
       'thalamocortical', 'thalamo-cortical', 'corticothalamic', 'cortico-thalamic'
@@ -47,10 +47,10 @@ cortex_group = [
       'cortex', 'cortical', 'cortices', 'V1'
    ]
 inject_group = [
-    'inject', 'neurophysiol'
+    'inject'
 ]
 method_group = [
-   'tract', 'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'horseradish peroxidase', 'fluorescent', 'cholera toxin', 'PHA-L', 'WGA-HRP', 'BDA', 'amino acids', 'PHA-L', 'leucine', 'proline', 'staining', 'dye'
+   'tract', 'tract-tracing', 'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'horseradish peroxidase', 'fluorescent', 'cholera toxin', 'PHA-L', 'WGA-HRP', 'BDA', 'amino acids', 'PHA-L', 'leucine', 'proline', 'staining', 'dye'
    ]
 connect_group = [
    'connect', 'project', 'afferent', 'efferent', 'fiber', 'input', 'pathway'
@@ -63,7 +63,7 @@ ranking_kw_groups = {
    "METHOD": method_group, "CONNECT": connect_group
     }
 
-token_word_list = ['cat', 'tract']
+token_word_list = ['cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'tract']
 # ===================================================================================================================================
 
 
