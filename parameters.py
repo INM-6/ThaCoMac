@@ -11,14 +11,14 @@
 #     'thalamus': 2, 'cortex': 2, 'cortical': 2, 
 #     'connectome': 1}
 
-text_length_to_extract = 1000
+text_length_to_extract = 500
 
 species = 3
 tc_ct = 6
 thalam = 6
 cortex = 0.001
 method = 6
-connectivity = 5
+connectivity = 3
 
 # 6 groups of keywords and their weights
 ranking_params_weights = {
