@@ -64,6 +64,8 @@ ranking_kw_groups = {
     }
 
 token_word_list = ['cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'tract']
+
+text_column_to_add = ["MACAQUE", "OTHER_SPIECIES", "TC_CT", "THALAM", "INJECT", "METHOD"]
 # ===================================================================================================================================
 
 
