@@ -47,7 +47,7 @@ cortex_group = [
       'cortex', 'cortical', 'cortices', 'V1'
    ]
 inject_group = [
-    'inject'
+    'inject', 'neurophysiol'
 ]
 method_group = [
    'tract', 'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'horseradish peroxidase', 'fluorescent', 'cholera toxin', 'PHA-L', 'WGA-HRP', 'BDA', 'amino acids', 'PHA-L', 'leucine', 'proline', 'staining', 'dye'
@@ -60,8 +60,10 @@ ranking_kw_groups = {
    "MACAQUE": macaque_group, "OTHER_SPIECIES": other_spiecies_group,
    "TC_CT": tc_ct_group, "THALAM": thalam_group, "CORTEX": cortex_group,
    "INJECT": inject_group,
-   "METHOD": method_group, "CONNECTIVITY": connect_group
+   "METHOD": method_group, "CONNECT": connect_group
     }
+
+token_word_list = ['cat', 'tract']
 # ===================================================================================================================================
 
 
