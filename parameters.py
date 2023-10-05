@@ -13,38 +13,55 @@
 
 text_length_to_extract = 500
 
-species = 3
-tc_ct = 6
-thalam = 6
-cortex = 0.001
-method = 6
-connectivity = 3
+macaque_weights = 3
+other_spiecies_weights = -2
+spiecies_weights = 3
+tc_ct_weights = 6
+thalam_weights = 6
+cortex_weights = 0.001
+inject_weights = 6
+method_weights = 6
+connec__weights = 3
 
 # 6 groups of keywords and their weights
-ranking_params_weights = {
-   'species': species, "tc_ct": tc_ct, "thalam": thalam, "cortex": cortex, "method": method, "connectivity": connectivity
+ranking_kw_groups_weights = {
+   'MACAQUE': macaque_weights, 'OTHER_SPIECIES': other_spiecies_weights, 'SPIECIES': spiecies_weights,
+   'TC_CT': tc_ct_weights, 'THALAM': thalam_weights, 'CORTEX': cortex_weights,
+   'INJECT': inject_weights,
+   'METHOD': method_weights, 'CONNECTIVITY': connec__weights
    }
 
-ranking_params = ["species", "tc_ct", "thalam", "cortex", "method", "connectivity"]
-
-species_related = [
+macaque_group = [
    'rhesus', 'macaque', 'macaca'
    ]
-tc_ct_related = [
+other_spiecies_group = [
+    'cat', 'marmaset'
+]
+tc_ct_group = [
       'thalamocortical', 'thalamo-cortical', 'corticothalamic', 'cortico-thalamic'
    ]
-thalam_related = [ # thalamic neucleus
+thalam_group = [
       'thalam', 'mediodorsal', 'MD', 'pulvinar', 'posteroventral', 'ventral lateral', 'ventral-lateral', 'ventrolateral', 'VLpv', 'anterior thalamic nuclei', 'laterodorsal', 'anteroventral', 'anteromedial', 'suprageniculate', 'SGN', 'medial geniculate', 'MG', 'MGv', 'MGd', 'MGm', 'ventroposterolateral', 'ventro-posterior lateral', 'VPL', 'subcortical', 'lateral geniculate nucleus', 'LGN'
    ]
-cortex_related = [ # cortical areas
+cortex_group = [
       'cortex', 'cortical', 'cortices', 'V1'
    ]
-method_related = [ # tracer substance
-   'tract', 'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'inject', 'horseradish peroxidase', 'fluorescent', 'cholera toxin', 'PHA-L', 'WGA-HRP', 'BDA', 'amino acids', 'PHA-L', 'leucine', 'proline', 'lesion', 'autoradiographic', 'diﬀusion MRI', 'fMRI', 'staining', 'dye'
+inject_group = [
+    'inject'
+]
+method_group = [
+   'tract', 'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'horseradish peroxidase', 'fluorescent', 'cholera toxin', 'PHA-L', 'WGA-HRP', 'BDA', 'amino acids', 'PHA-L', 'leucine', 'proline', 'staining', 'dye'
    ]
-connectivity_related = [
-      'connect', 'project', 'afferent', 'efferent', 'fiber', 'input', 'pathway'
+connect_group = [
+   'connect', 'project', 'afferent', 'efferent', 'fiber', 'input', 'pathway'
    ]
+
+ranking_kw_groups = {
+   "MACAQUE": macaque_group, "OTHER_SPIECIES": other_spiecies_group,
+   "TC_CT": tc_ct_group, "THALAM": thalam_group, "CORTEX": cortex_group,
+   "INJECT": inject_group,
+   "METHOD": method_group, "CONNECTIVITY": connect_group
+    }
 # ===================================================================================================================================
 
 
@@ -79,7 +96,7 @@ websites = [
     'www.ahajournals.org', 'pubs.acs.org', 'www.thieme-connect.de', 'pubs.asahq.org', 
     'www.ingentaconnect.com', 'ujms.net', 'journals.biologists.com', 'www.microbiologyresearch.org', 
     'journals.aps.org', 'www.imrpress.com', 'www.researchsquare.com', 'ieeexplore.ieee.org', 'papers.ssrn.com', 
-    # newlly added
+    # newly added
     'www.jneurosci.org', 'biomedcentral.com'
 ]
 # ===================================================================================================================================
