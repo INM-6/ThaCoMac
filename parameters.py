@@ -41,10 +41,10 @@ tc_ct_group = [
       'thalamocortical', 'thalamo-cortical', 'corticothalamic', 'cortico-thalamic'
    ]
 thalam_group = [
-      'thalam', 'mediodorsal', 'MD', 'pulvinar', 'posteroventral', 'ventral lateral', 'ventral-lateral', 'ventrolateral', 'VLpv', 'anterior thalamic nuclei', 'laterodorsal', 'anteroventral', 'anteromedial', 'suprageniculate', 'SGN', 'medial geniculate', 'MG', 'MGv', 'MGd', 'MGm', 'ventroposterolateral', 'ventro-posterior lateral', 'VPL', 'subcortical', 'lateral geniculate nucleus', 'LGN'
+      'thalam', 'mediodorsal', 'md', 'pulvinar', 'posteroventral', 'ventral lateral', 'ventral-lateral', 'ventrolateral', 'VLpv', 'anterior thalamic nuclei', 'laterodorsal', 'anteroventral', 'anteromedial', 'suprageniculate', 'SGN', 'medial geniculate', 'MG', 'MGv', 'MGd', 'MGm', 'ventroposterolateral', 'ventro-posterior lateral', 'VPL', 'subcortical', 'lateral geniculate nucleus', 'LGN'
    ]
 cortex_group = [
-      'cortex', 'cortical', 'cortices', 'V1'
+      'cortex', 'cortical', 'cortices', 'v1'
    ]
 inject_group = [
     'inject'
@@ -63,7 +63,7 @@ ranking_kw_groups = {
    "METHOD": method_group, "CONNECT": connect_group
     }
 
-token_word_list = ['cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'tract']
+exact_match_kw_list = ['cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'tract']
 
 text_column_to_add = ["MACAQUE", "OTHER_SPIECIES", "TC_CT", "THALAM", "INJECT", "METHOD"]
 # ===================================================================================================================================
