@@ -55,7 +55,12 @@ poten_litera_testing_set_1000_read = os.path.join(datasets_folder, "potential_re
 
 poten_litera_db = os.path.join(datasets_folder, "potential_related_literature_databse.csv")
 poten_litera_db_text_extract = os.path.join(datasets_folder, "potential_related_literature_database_final.csv")
+db_text_extract_columns = 
 poten_litera_db_kw_count = os.path.join(datasets_folder, "potential_related_literature_database_kw_count.csv")
+db_kw_count_columns = [
+    "INDEX", "DOI", "PMID", "PMCID", "FULL_TEXT_URL", "FULL_TEXT_SOURCE", "PDF_URL", "PDF_SOURCE", 
+    "TITLE", "ABSTRACT", "KEYWORDS", 
+    "SPECIES_RELATED", "TC_CT_RELATED", "THALAM_RELATED", "CORTEX_RELATED", "METHOD_RELATED", "CONNECTIVITY_RELATED"]
 poten_litera_db_ranked = os.path.join(datasets_folder, "potential_related_literature_database_ranked.csv")
 
 poten_litera_pdf_not_available = os.path.join(datasets_folder, "potential_related_literature_pdf_not_available.csv")
