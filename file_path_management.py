@@ -50,18 +50,17 @@ poten_litera_testing_set_300_read_index_corrected = os.path.join(datasets_folder
 poten_litera_testing_set_708 = os.path.join(datasets_folder, "potential_related_literature_testing_set_708.csv")
 poten_litera_testing_set_708_read = os.path.join(datasets_folder, "potential_related_literature_testing_set_708_read.csv")
 poten_litera_testing_set_1000 = os.path.join(datasets_folder, "potential_related_literature_testing_set_1000.csv")
+
 poten_litera_testing_set_1000_text_extract_and_count = os.path.join(datasets_folder, "potential_related_literature_testing_set_1000_text_extract_and_count.csv")
 poten_litera_testing_set_1000_read = os.path.join(datasets_folder, "potential_related_literature_testing_set_1000_read.csv")
 
 poten_litera_db = os.path.join(datasets_folder, "potential_related_literature_databse.csv")
 poten_litera_db_text_extract = os.path.join(datasets_folder, "potential_related_literature_database_final.csv")
-db_text_extract_columns = 
 poten_litera_db_kw_count = os.path.join(datasets_folder, "potential_related_literature_database_kw_count.csv")
-db_kw_count_columns = [
-    "INDEX", "DOI", "PMID", "PMCID", "FULL_TEXT_URL", "FULL_TEXT_SOURCE", "PDF_URL", "PDF_SOURCE", 
-    "TITLE", "ABSTRACT", "KEYWORDS", 
-    "SPECIES_RELATED", "TC_CT_RELATED", "THALAM_RELATED", "CORTEX_RELATED", "METHOD_RELATED", "CONNECTIVITY_RELATED"]
 poten_litera_db_ranked = os.path.join(datasets_folder, "potential_related_literature_database_ranked.csv")
+db_ranked_columns = [
+    "INDEX", "DOI", "PMID", "PMCID", "TITLE", "ABSTRACT", "KEYWORDS", "RANKED_INDEX"
+]
 
 poten_litera_pdf_not_available = os.path.join(datasets_folder, "potential_related_literature_pdf_not_available.csv")
 
