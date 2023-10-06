@@ -58,9 +58,6 @@ poten_litera_db = os.path.join(datasets_folder, "potential_related_literature_da
 poten_litera_db_text_extract = os.path.join(datasets_folder, "potential_related_literature_database_final.csv")
 poten_litera_db_kw_count = os.path.join(datasets_folder, "potential_related_literature_database_kw_count.csv")
 poten_litera_db_ranked = os.path.join(datasets_folder, "potential_related_literature_database_ranked.csv")
-db_ranked_columns = [
-    "INDEX", "DOI", "PMID", "PMCID", "TITLE", "ABSTRACT", "KEYWORDS", "RANKED_INDEX"
-]
 
 poten_litera_pdf_not_available = os.path.join(datasets_folder, "potential_related_literature_pdf_not_available.csv")
 
