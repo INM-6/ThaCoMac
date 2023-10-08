@@ -8,6 +8,7 @@ pdf_folder = "/media/hou/DIDIHOU/pdfs"
 # it's stored in a external SSD of 500GB
 # file folder storing the extracted texts of the potential relevant literature
 text_folder = "/media/hou/DIDIHOU/texts"
+processed_texts_of_length_500_folder = "/media/hou/DIDIHOU/processed_texts_of_length_500"
 relevant_pdf_folder = "/media/hou/DIDIHOU/relevant_pdfs"
 not_relevant_pdf_folder = "/media/hou/DIDIHOU/not_relevant_pdfs"
 
