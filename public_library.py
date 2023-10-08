@@ -327,6 +327,9 @@ def process_text(text, lower):
     text = ''.join(char for char in text if ord(char) < 128)
     # text = text.encode('ascii', 'ignore').decode('ascii') 
 
+    # remove SOH (start of heading)
+    text = text.replace("\x01", "")
+
     # remove extra spaces
     text = re.sub(r'\s+', ' ', text).strip() 
 
