@@ -11,16 +11,16 @@ relevance_index = ["RELEVANCE_INDEX"]
 
 relevance = ["RELEVANCE"]
 
-keys = list(params.ranking_kw_groups.keys())
+keys = list(params.text_column_to_add)
 
 text_columns_to_add = []
-for i in range(len(params.ranking_kw_groups.keys())):
-    text_columns_to_add.append(keys[i] + "TEXT")
+for key in keys:
+    text_columns_to_add.append(key + "TEXT")
 
 count_columns_to_add = []
-for i in range(len(params.ranking_kw_groups.keys())):
-    count_columns_to_add.append(keys[i] + "_COUNT_IN_500")
-    count_columns_to_add.append(keys[i] + "_COUNT_IN_FULL_TEXT")
+for key in keys:
+    count_columns_to_add.append(key + "_COUNT_IN_500")
+    count_columns_to_add.append(key + "_COUNT_IN_FULL_TEXT")
 # ==========================================================================================================
 db_columns = identifier + url_and_source + tak
 
