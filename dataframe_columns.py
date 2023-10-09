@@ -9,14 +9,21 @@ tak = ["TITLE", "ABSTRACT", "KEYWORDS"]
 
 relevance_index = ["RELEVANCE_INDEX"]
 
-relevant = ["RELEVANT"]
+relevance = ["RELEVANCE"]
 
-text_column_to_add = ["MACAQUE", "OTHER_SPIECIES", "TC_CT", "THALAM", "INJECT", "METHOD"]
+keys = list(params.ranking_kw_groups.keys())
 
-count_columns_to_add = [key+"_COUNT" for key in params.ranking_kw_groups.keys()]
+text_columns_to_add = []
+for i in range(len(params.ranking_kw_groups.keys())):
+    text_columns_to_add.append(keys[i] + "TEXT")
+
+count_columns_to_add = []
+for i in range(len(params.ranking_kw_groups.keys())):
+    count_columns_to_add.append(keys[i] + "_COUNT_IN_500")
+    count_columns_to_add.append(keys[i] + "_COUNT_IN_FULL_TEXT")
 # ==========================================================================================================
 db_columns = identifier + url_and_source + tak
 
-train_test_1000_path_columns = identifier + url_and_source + tak + relevance_index
+train_test_1000_path_columns = identifier + url_and_source + tak + relevance
 
-db_ranked_columns = identifier + title +  count_columns_to_add + relevance_index + relevant
+db_ranked_columns = identifier + title +  count_columns_to_add + relevance_index + relevance
