@@ -324,11 +324,11 @@ def pmcid2doi_pmid(pmcid):
 # process text
 def process_text(text, lower):
     # keep only non control characters of ascii characters
-    text = ''.join(ch for ch in text if 32 <= ord(ch) <= 126)
+    # text = ''.join(ch for ch in text if 32 <= ord(ch) <= 126)
     # text = text.encode('ascii', 'ignore').decode('ascii') 
 
     # remove SOH (start of heading)
-    text = text.replace("\x01", "")
+    # text = text.replace("\x01", "")
 
     # remove extra spaces
     text = re.sub(r'\s+', ' ', text).strip() 
