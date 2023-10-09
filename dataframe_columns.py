@@ -15,7 +15,7 @@ keys = list(params.text_column_to_add)
 
 text_columns_to_add = []
 for key in keys:
-    text_columns_to_add.append(key + "TEXT")
+    text_columns_to_add.append(key + "_TEXT")
 
 count_columns_to_add = []
 for key in keys:
