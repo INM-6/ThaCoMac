@@ -9,6 +9,8 @@ tak = ["TITLE", "ABSTRACT", "KEYWORDS"]
 
 relevance_index = ["RELEVANCE_INDEX"]
 
+relevant = ["RELEVANT"]
+
 text_column_to_add = ["MACAQUE", "OTHER_SPIECIES", "TC_CT", "THALAM", "INJECT", "METHOD"]
 
 count_columns_to_add = [key+"_COUNT" for key in params.ranking_kw_groups.keys()]
@@ -17,4 +19,4 @@ db_columns = identifier + url_and_source + tak
 
 train_test_1000_path_columns = identifier + url_and_source + tak + relevance_index
 
-db_ranked_columns = identifier + title +  count_columns_to_add + relevance_index
+db_ranked_columns = identifier + title +  count_columns_to_add + relevance_index + relevant

@@ -35,13 +35,13 @@ macaque_group = [
    'rhesus', 'macaque', 'macaca'
    ]
 other_spiecies_group = [
-    'cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'marmoset', 'marmosets'
+    'cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'marmoset'
 ]
 tc_ct_group = [
       'thalamocortical', 'thalamo-cortical', 'corticothalamic', 'cortico-thalamic'
    ]
 thalam_group = [
-      'thalam', 'mediodorsal', 'md', 'pulvinar', 'posteroventral', 'ventral lateral', 'ventral-lateral', 'ventrolateral', 'VLpv', 'anterior thalamic nuclei', 'laterodorsal', 'anteroventral', 'anteromedial', 'suprageniculate', 'SGN', 'medial geniculate', 'MG', 'MGv', 'MGd', 'MGm', 'ventroposterolateral', 'ventro-posterior lateral', 'VPL', 'subcortical', 'lateral geniculate nucleus', 'LGN'
+      'thalam', 'mediodorsal', 'md', 'pulvinar', 'posteroventral', 'ventral lateral', 'ventral-lateral', 'ventrolateral', 'vlpv', 'anterior thalam', 'laterodorsal', 'anteroventral', 'anteromedial', 'suprageniculate', 'sgn', 'medial geniculate', 'ventroposterolateral', 'ventro-posterior lateral', 'vpl', 'subcortical', 'lateral geniculate nucleus', 'lgn'
    ]
 cortex_group = [
       'cortex', 'cortical', 'cortices', 'v1'
@@ -63,7 +63,7 @@ ranking_kw_groups = {
    "METHOD": method_group, "CONNECT": connect_group
     }
 
-exact_match_kw_list = ['cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'tract']
+exact_match_kw_list = ['cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'tract', 'vpl', 'lgn']
 
 text_column_to_add = ["MACAQUE", "OTHER_SPIECIES", "TC_CT", "THALAM", "INJECT", "METHOD"]
 # ===================================================================================================================================
