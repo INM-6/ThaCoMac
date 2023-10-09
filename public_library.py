@@ -20,6 +20,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import TimeoutException, WebDriverException, NoSuchElementException
 import re
+import string
 
 # import internal modules
 import file_path_management as fpath
@@ -324,7 +325,8 @@ def pmcid2doi_pmid(pmcid):
 # process text
 def process_text(text, lower):
     # keep only non control characters of ascii characters
-    text = ''.join(ch for ch in text if 0 <= ord(ch) <= 126)
+    # text = ''.join(ch for ch in text if 0 <= ord(ch) <= 126)
+    text = ''.join(ch for ch in text if ch in string.printable)
     # text = ''.join(ch for ch in text if ord(ch) <= 126)
     # text = text.encode('ascii', errors='ignore').decode('ascii') 
     # text.encode('ascii', errors='ignore')
