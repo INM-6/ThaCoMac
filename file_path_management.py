@@ -9,6 +9,7 @@ pdf_folder = "/media/hou/DIDIHOU/pdfs"
 # file folder storing the extracted texts of the potential relevant literature
 text_folder = "/media/hou/DIDIHOU/texts"
 processed_texts_of_length_500_folder = "/media/hou/DIDIHOU/processed_texts_of_length_500"
+not_recog_articles_folder = "/media/hou/DIDIHOU/not_recognizable_articles"
 relevant_pdf_folder = "/media/hou/DIDIHOU/relevant_pdfs"
 not_relevant_pdf_folder = "/media/hou/DIDIHOU/not_relevant_pdfs"
 
