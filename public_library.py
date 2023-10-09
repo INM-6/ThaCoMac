@@ -326,7 +326,7 @@ def process_text(text, lower):
     # keep only non control characters of ascii characters
     # text = ''.join(ch for ch in text if 32 <= ord(ch) <= 126)
     # text = ''.join(ch for ch in text if ord(ch) <= 126)
-    text = text.encode('utf-8', errors='ignore').decode('utf-8') 
+    text = text.encode('ascii', errors='ignore').decode('ascii') 
     # text.encode('ascii', errors='ignore')
 
     # remove SOH (start of heading)
