@@ -324,7 +324,7 @@ def pmcid2doi_pmid(pmcid):
 
 # process text
 def process_text(text, lower):
-    # keep only non control characters of ascii characters
+    # keep only printable ascii characters
     # text = ''.join(ch for ch in text if 0 <= ord(ch) <= 126)
     text = ''.join(ch for ch in text if ch in string.printable)
     # text = ''.join(ch for ch in text if ord(ch) <= 126)
