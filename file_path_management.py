@@ -54,7 +54,7 @@ poten_litera_testing_set_708_read = os.path.join(datasets_folder, "potential_rel
 poten_litera_testing_set_1000 = os.path.join(datasets_folder, "potential_related_literature_testing_set_1000.csv")
 
 poten_litera_testing_set_1000_text_extract_and_count = os.path.join(datasets_folder, "potential_related_literature_testing_set_1000_text_extract_and_count.csv")
-poten_litera_testing_set_1000_read = os.path.join(datasets_folder, "potential_related_literature_testing_set_1000_read.csv")
+poten_litera_testing_set_1000_labeled = os.path.join(datasets_folder, "potential_related_literature_testing_set_1000_labeled.csv")
 
 poten_litera_db = os.path.join(datasets_folder, "potential_related_literature_databse.csv")
 poten_litera_db_text_extract = os.path.join(datasets_folder, "potential_related_literature_database_final.csv")
