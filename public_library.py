@@ -115,27 +115,6 @@ def add_row_to_csv(csv_path, new_row, columns):
 # add_rows_to_csv(path_potential, info_json, columns)
 # ---------------------end of test code---------------------
 
-
-# extract text from given .pdf file
-def pdf2text(pdf_path):
-    # creating a pdf reader object
-    reader = PyPDF2.PdfReader(pdf_path)
-    
-    # printing number of pages in pdf file
-    print(len(reader.pages))
-    
-    # getting a specific page from the pdf file
-    page = reader.pages[0]
-    
-    # extracting text from page
-    text = "".join(page.extract_text().splitlines())
-    return text
-# --------------------start of test code--------------------
-# pdf_path = ''
-# text = pdf2text(pdf_path)
-# print(text)
-# ---------------------end of test code---------------------
-
   
 # get the final url when the given url is redirected once or even multiple times
 def get_final_redirected_url(url):
@@ -323,7 +302,7 @@ def pmcid2doi_pmid(pmcid):
 # ---------------------end of test code---------------------
 
 # process text
-def process_text(text, lower):
+def process_text(text, lower=True):
     # keep only printable ascii characters
     # text = ''.join(ch for ch in text if 0 <= ord(ch) <= 126)
     text = ''.join(ch for ch in text if ch in string.printable)
