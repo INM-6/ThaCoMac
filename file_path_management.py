@@ -57,6 +57,7 @@ poten_litera_db_kw_count = os.path.join(datasets_folder, "potential_related_lite
 poten_litera_db_ranked = os.path.join(datasets_folder, "potential_related_literature_database_ranked.csv")
 
 poten_litera_pdf_not_available = os.path.join(datasets_folder, "potential_related_literature_pdf_not_available.csv")
+poten_litera_text_not_available = os.path.join(datasets_folder, "potential_related_literature_text_not_available.csv")
 
 related_litera = os.path.join(datasets_folder, "related_literature.csv")
 
