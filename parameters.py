@@ -67,7 +67,7 @@ ranking_kw_groups = {
    "METHOD": method_group, "CONNECT": connect_group
     }
 
-exact_match_kw_list = ['cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'tract', 'VLPV', 'VPL', 'LGN', 'VPM']
+exact_match_kw_list = ['cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'tract', 'vlpv', 'vpl', 'lgn', 'vpm']
 
 text_column_to_add = ["MACAQUE", "OTHER_SPIECIES", "TC_CT", "THALAM", "INJECT", "METHOD"]
 # ===================================================================================================================================
