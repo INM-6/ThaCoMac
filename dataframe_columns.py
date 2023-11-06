@@ -29,8 +29,8 @@ trans_count_columns_to_add = []
 for key in keys:
     trans_count_columns_to_add.append(key + "_TRANS_COUNT_IN_500")
 
-for key in keys:
-    trans_count_columns_to_add.append(key + "_TRANS_COUNT_IN_FULL_TEXT")
+# for key in keys:
+#     trans_count_columns_to_add.append(key + "_TRANS_COUNT_IN_FULL_TEXT")
 # ==========================================================================================================
 db_columns = identifier + url_and_source + tak
 
