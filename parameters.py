@@ -35,29 +35,36 @@ macaque_group = [
    'rhesus', 'macaque', 'macaca'
    ]
 other_spiecies_group = [
-    'cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'marmoset'
-]
+   'cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'marmoset', 'dog', 'dogs', 'rabbit', 'sheep', 'frog', 'frogs'
+   ]
 tc_ct_group = [
-      'thalamocortical', 'thalamo-cortical', 'corticothalamic', 'cortico-thalamic'
+   'thalamocortical', 'thalamo-cortical', 'corticothalamic', 'cortico-thalamic'
    ]
 thalam_group = [
-      'thalam', 'mediodorsal', 'MD', 'pulvinar', 'intralaminar nuclei', 'ventroanterior', 'ventromedial', 
-      'ventro-posterior medial', 'VPM', 'posteroventral', 'ventral lateral', 'ventral-lateral', 'ventrolateral', 'VLPV', 
-      'anterior thalam', 'laterodorsal', 'anteroventral', 'anteromedial', 'suprageniculate', 'SGN', 
-      'medial geniculate', 'ventroposterolateral', 'ventro-posterior lateral', 'VPL', 'subcortical', 
-      'lateral geniculate nucleus', 'LGN', 'reticular nucleus'
+   'anteroventral', 'anterodorsal', 'anteromedial', 
+   'ventral anterior', 'ventral lateral', 'ventral posterior', 'ventral anterior', 
+   'ventral lateral', 
+   'thalam', 'mediodorsal', 'medio-dorsal', 'medial dorsal', 'MD', 'pulvinar', 'intralaminar nuclei', 
+   'ventroanterior', 'ventral anterior', 'ventro-anterior', 
+   'ventromedial', 'ventro-medial', 'ventral medial'
+   'ventro-posterior', 'ventroposterior', 'ventral posterior', 'ventral posterolateral', 'VPM', 
+   'ventral posteromedial', 'ventral intermediate', 
+   'ventral lateral', 'ventral-lateral', 'ventrolateral', 'VLPV', 
+   'laterodorsal', 'suprageniculate', 'SGN', 
+   'medial geniculate', 'ventroposterolateral', 'ventro-posterior lateral', 'VPL', 
+   'lateral geniculate', 'LGN', 'reticular nucleus'
    ]
 cortex_group = [
-      'cortex', 'cortical', 'cortices', 'V1'
+   'cortex', 'cortical', 'cortices', 'V1', 'prefrontal', 'somatosensory', 'motor', 'visual cortex', 'frontal cortex'
    ]
 inject_group = [
     'inject'
 ]
 method_group = [
-   'tract', 'tract-tracing', 'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'horseradish peroxidase', 'fluorescent', 'cholera toxin', 'PHA-L', 'WGA-HRP', 'BDA', 'amino acids', 'PHA-L', 'leucine', 'proline', 'staining', 'dye'
+   'tract-tracing', 'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'horseradish peroxidase', 'fluorescent', 'cholera toxin', 'PHA-L', 'WGA-HRP', 'BDA', 'amino acids', 'PHA-L', 'leucine', 'proline', 'staining'
    ]
 connect_group = [
-   'connect', 'project', 'afferent', 'efferent', 'fiber', 'input', 'pathway'
+   'connect', 'project', 'afferent', 'efferent', 'fiber', 'input', 'pathway', 'tract'
    ]
 
 ranking_kw_groups = {
@@ -67,7 +74,7 @@ ranking_kw_groups = {
    "METHOD": method_group, "CONNECT": connect_group
     }
 
-exact_match_kw_list = ['cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'tract', 'vlpv', 'vpl', 'lgn', 'vpm']
+exact_match_kw_list = ['cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'dog', 'dogs', 'frog', 'frogs', 'tract', 'vlpv', 'vpl', 'lgn', 'vpm']
 
 # text_column_to_add = ["MACAQUE", "OTHER_SPIECIES", "TC_CT", "THALAM", "INJECT", "METHOD"]
 # ===================================================================================================================================
