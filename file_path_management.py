@@ -1,12 +1,7 @@
 from pathlib import Path
 import os
 
-# file folder storing the pdfs of the potential relevant literature
-# it's stored in a external SSD of 500GB
 pdf_folder = "/media/hou/DIDIHOU/pdfs"
-# pdf_folder = "/Users/didihou/Downloads/"
-# it's stored in a external SSD of 500GB
-# file folder storing the extracted texts of the potential relevant literature
 text_folder = "/media/hou/DIDIHOU/texts"
 processed_texts_of_length_500_folder = "/media/hou/DIDIHOU/processed_texts_of_length_500"
 not_recog_articles_folder = "/media/hou/DIDIHOU/not_recognizable_articles"
