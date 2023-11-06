@@ -69,7 +69,7 @@ ranking_kw_groups = {
 
 exact_match_kw_list = ['cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'tract', 'vlpv', 'vpl', 'lgn', 'vpm']
 
-text_column_to_add = ["MACAQUE", "OTHER_SPIECIES", "TC_CT", "THALAM", "INJECT", "METHOD"]
+# text_column_to_add = ["MACAQUE", "OTHER_SPIECIES", "TC_CT", "THALAM", "INJECT", "METHOD"]
 # ===================================================================================================================================
 
 
