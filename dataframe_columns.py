@@ -22,8 +22,8 @@ count_columns_to_add = []
 for key in keys:
     count_columns_to_add.append(key + "_COUNT_IN_500")
 
-for key in keys:
-    count_columns_to_add.append(key + "_COUNT_IN_FULL_TEXT")
+# for key in keys:
+#     count_columns_to_add.append(key + "_COUNT_IN_FULL_TEXT")
     
 trans_count_columns_to_add = []
 for key in keys:
@@ -39,3 +39,5 @@ train_test_1000_path_columns = identifier + url_and_source + tak + relevance
 db_count_columns = index + count_columns_to_add
 
 db_count_trans_columns = db_count_columns + trans_count_columns_to_add
+
+db_ranked_columns = db_count_columns + relevance_index
