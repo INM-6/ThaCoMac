@@ -68,7 +68,7 @@ inject_group = [
     'inject'
 ]
 method_group = [
-   'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'stain', 'Adeno-associated virus', 'AVV', 'amino acid', 'wheat germ agglutinin', 'wga', 'horseradish peroxidase', 'HRP', 'wga-hrp', 'hrp-wga', 'wgahrp', 'hrpwga', 'leucine', 'proline', 'Bromodeoxyuridine', 'BrdU', 'thymidine analog', 'pha-l', 'cholera toxin', 'ctb', 'fluorescent', 'biotinylated dextran amine', 'bda', 'biotin-coupled dextran amine', 'fucose', 'diamidino yellow', 'dy', 'lucifer yellow', 'ly', 'alexa fluor', 'fast blue', 'fb'
+   'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'stain', 'stained', 'staining', 'Adeno-associated virus', 'AVV', 'amino acid', 'wheat germ agglutinin', 'wga', 'horseradish peroxidase', 'HRP', 'wga-hrp', 'hrp-wga', 'wgahrp', 'hrpwga', 'leucine', 'proline', 'Bromodeoxyuridine', 'BrdU', 'thymidine analog', 'pha-l', 'cholera toxin', 'ctb', 'fluorescent', 'biotinylated dextran amine', 'bda', 'biotin-coupled dextran amine', 'fucose', 'diamidino yellow', 'dy', 'lucifer yellow', 'ly', 'alexa fluor', 'fast blue', 'fb'
 ]
 connect_group = [
    'connect', 'project', 'afferent', 'efferent', 'fiber', 'input', 'pathway', 'tract'
@@ -81,7 +81,7 @@ ranking_kw_groups = {
    "METHOD": method_group, "CONNECT": connect_group
     }
 
-exact_match_kw_list = ['cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'dog', 'dogs', 'frog', 'frogs', 'tract', 'md', 'vlpv', 'sgn', 'vpl', 'lgn', 'vpm', 'motor', 'hrp', 'wga', 'brdu', 'ctb', 'bda', 'dy', 'ly', 'fb']
+exact_match_kw_list = ['cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'dog', 'dogs', 'frog', 'frogs', 'tract', 'md', 'vlpv', 'sgn', 'vpl', 'lgn', 'vpm', 'motor', 'hrp', 'wga', 'brdu', 'ctb', 'bda', 'dy', 'ly', 'fb', 'stain']
 
 # keywords indicating tract tracing studies
 TT_keywords = ['inject', 'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'stain', 'Adeno-associated virus', 'AVV', 'amino acid', 'wheat germ agglutinin', 'wga', 'horseradish peroxidase', 'HRP', 'wga-hrp', 'hrp-wga', 'wgahrp', 'hrpwga', 'leucine', 'proline', 'Bromodeoxyuridine', 'BrdU', 'thymidine analog', 'pha-l', 'cholera toxin', 'ctb', 'fluorescent', 'biotinylated dextran amine', 'bda', 'biotin-coupled dextran amine', 'fucose', 'diamidino yellow', 'dy', 'lucifer yellow', 'ly', 'alexa fluor', 'fast blue', 'fb']
