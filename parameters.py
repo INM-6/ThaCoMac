@@ -62,14 +62,14 @@ thalam_group = [
    'reticular nucleus'
    ]
 cortex_group = [
-   'cortex', 'cortical', 'cortices', 'V1', 'prefrontal', 'somatosensory', 'motor', 'visual cortex', 'frontal cortex'
+   'cortex', 'cortical', 'cortices', 'V1'
    ]
 inject_group = [
     'inject'
 ]
 method_group = [
-   'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'horseradish peroxidase', 'HRP', 'fluorescent', 'cholera toxin', 'PHA-L', 'WGA-HRP', 'BDA', 'amino acids', 'leucine', 'proline', 'staining'
-   ]
+   'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'stain', 'Adeno-associated virus', 'AVV', 'amino acid', 'wheat germ agglutinin', 'wga', 'horseradish peroxidase', 'HRP', 'wga-hrp', 'hrp-wga', 'wgahrp', 'hrpwga', 'leucine', 'proline', 'Bromodeoxyuridine', 'BrdU', 'thymidine analog', 'pha-l', 'cholera toxin', 'ctb', 'fluorescent', 'biotinylated dextran amine', 'bda', 'biotin-coupled dextran amine', 'fucose', 'diamidino yellow', 'dy', 'lucifer yellow', 'ly', 'alexa fluor', 'fast blue', 'fb'
+]
 connect_group = [
    'connect', 'project', 'afferent', 'efferent', 'fiber', 'input', 'pathway', 'tract'
    ]
@@ -81,9 +81,10 @@ ranking_kw_groups = {
    "METHOD": method_group, "CONNECT": connect_group
     }
 
-exact_match_kw_list = ['cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'dog', 'dogs', 'frog', 'frogs', 'tract', 'md', 'vlpv', 'sgn', 'vpl', 'lgn', 'vpm', 'motor', 'hrp']
+exact_match_kw_list = ['cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'dog', 'dogs', 'frog', 'frogs', 'tract', 'md', 'vlpv', 'sgn', 'vpl', 'lgn', 'vpm', 'motor', 'hrp', 'wga', 'brdu', 'ctb', 'bda', 'dy', 'ly', 'fb']
 
-# text_column_to_add = ["MACAQUE", "OTHER_SPIECIES", "TC_CT", "THALAM", "INJECT", "METHOD"]
+# keywords indicating tract tracing studies
+TT_keywords = ['inject', 'tracing', 'traced', 'tracer', "anterograde", "retrograde", 'stain', 'Adeno-associated virus', 'AVV', 'amino acid', 'wheat germ agglutinin', 'wga', 'horseradish peroxidase', 'HRP', 'wga-hrp', 'hrp-wga', 'wgahrp', 'hrpwga', 'leucine', 'proline', 'Bromodeoxyuridine', 'BrdU', 'thymidine analog', 'pha-l', 'cholera toxin', 'ctb', 'fluorescent', 'biotinylated dextran amine', 'bda', 'biotin-coupled dextran amine', 'fucose', 'diamidino yellow', 'dy', 'lucifer yellow', 'ly', 'alexa fluor', 'fast blue', 'fb']
 # ===================================================================================================================================
 
 
