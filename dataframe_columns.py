@@ -1,5 +1,8 @@
 import parameters as params
 
+keys_list = list(params.ranking_kw_groups.keys())
+
+
 index = ["INDEX"]
 identifier = ["INDEX", "DOI", "PMID", "PMCID"]
 url = ["FULL_TEXT_URL", "PDF_URL"]
@@ -12,35 +15,41 @@ relevance_index = ["RELEVANCE_INDEX"]
 
 relevance = ["RELEVANCE"]
 
-keys = list(params.ranking_kw_groups.keys())
 
+# columns storing the sentences containing keywords in full text
 text_columns_to_add = []
-for key in keys:
+for key in keys_list:
     text_columns_to_add.append(key + "_TEXT")
 
+
+# columns storing the counts of keywords for different texts
 count_columns_to_add = []
-for key in keys:
+for key in keys_list:
+    count_columns_to_add.append(key + "_COUNT_IN_TAK")
+    
+for key in keys_list:
     count_columns_to_add.append(key + "_COUNT_IN_500")
 
-for key in keys:
+for key in keys_list:
     count_columns_to_add.append(key + "_COUNT_IN_FULL_TEXT")
-    
+
+
+# columns storing the transformed counts of keywords for different texts
 # trans_count_columns_to_add = []
+# for key in keys:
+#     trans_count_columns_to_add.append(key + "_TRANS_COUNT_IN_TAK")
+    
 # for key in keys:
 #     trans_count_columns_to_add.append(key + "_TRANS_COUNT_IN_500")
 
 # for key in keys:
 #     trans_count_columns_to_add.append(key + "_TRANS_COUNT_IN_FULL_TEXT")
 
-
-
-
-
-
+columns_to_fill = ['TT?(Y/N/MB/NA)', 'MACAQUE?(Y/N/MB/NA)', 'TC_OR_CT?(Y/N/MB/NA)', 'RELEVANT?(Y/N/MB/NA)', 'READ_BY(A/D/R)', 'COMMENT']
 # ==========================================================================================================
 db_columns = identifier + url_and_source + tak
 
-train_test_1000_path_columns = identifier + url_and_source + tak + relevance
+train_test_1000_path_columns = identifier + url_and_source + tak
 
 db_count_columns = index + count_columns_to_add
 
