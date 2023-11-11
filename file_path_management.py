@@ -1,14 +1,17 @@
 from pathlib import Path
 import os
 
-pdf_folder = "/media/hou/DIDIHOU/pdfs"
-text_folder = "/media/hou/DIDIHOU/texts"
-processed_texts_of_length_500_folder = "/media/hou/DIDIHOU/processed_texts_of_length_500"
-TT_text_folder = "/media/hou/DIDIHOU/TT_text"
-relevant_text_folder = "/media/hou/DIDIHOU/relevant_texts"
-not_recog_articles_folder = "/media/hou/DIDIHOU/not_recognizable_articles"
-relevant_pdf_folder = "/media/hou/DIDIHOU/relevant_pdfs"
-not_relevant_pdf_folder = "/media/hou/DIDIHOU/not_relevant_pdfs"
+device = "/Volumes/DIDIHOU"
+# device = "/media/hou/DIDIHOU"
+
+pdf_folder = device + "pdfs"
+text_folder = device + "texts"
+processed_texts_of_length_500_folder = device + "processed_texts_of_length_500"
+TT_text_folder = device + "TT_text"
+relevant_text_folder = device + "relevant_texts"
+not_recog_articles_folder = device + "not_recognizable_articles"
+relevant_pdf_folder = device + "relevant_pdfs"
+not_relevant_pdf_folder = device + "not_relevant_pdfs"
 
 
 # project folder and the root folder of the repository
