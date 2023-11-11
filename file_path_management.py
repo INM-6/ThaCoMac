@@ -1,8 +1,8 @@
 from pathlib import Path
 import os
 
-device = "/Volumes/DIDIHOU"
-# device = "/media/hou/DIDIHOU"
+device = "/Volumes/DIDIHOU/"
+# device = "/media/hou/DIDIHOU/"
 
 pdf_folder = device + "pdfs"
 text_folder = device + "texts"
