@@ -1,8 +1,8 @@
 from pathlib import Path
 import os
 
-device = "/Volumes/DIDIHOU/"
-# device = "/media/hou/DIDIHOU/"
+# device = "/Volumes/DIDIHOU/"
+device = "/media/hou/DIDIHOU/"
 
 pdf_folder = device + "pdfs"
 text_folder = device + "texts"
@@ -61,6 +61,7 @@ poten_litera_testing_set_1000_labeled = os.path.join(datasets_folder, "potential
 poten_litera_db = os.path.join(datasets_folder, "potential_related_literature_databse.csv")
 poten_litera_db_text_extract = os.path.join(datasets_folder, "potential_related_literature_database_final.csv")
 poten_litera_db_kw_count = os.path.join(datasets_folder, "potential_related_literature_database_kw_count.csv")
+poten_litera_db_relevance_index = os.path.join(datasets_folder, "potential_related_literature_database_relevance_index.csv")
 poten_litera_db_ranked = os.path.join(datasets_folder, "potential_related_literature_database_ranked.csv")
 
 poten_litera_pdf_not_available = os.path.join(datasets_folder, "potential_related_literature_pdf_not_available.csv")
