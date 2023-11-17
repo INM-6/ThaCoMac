@@ -14,18 +14,17 @@
 text_length_to_extract = 500
 
 macaque_weights = 10
-other_spiecies_weights = -1
-spiecies_weights = 3
-tc_ct_weights = 25
-thalam_weights = 10
-cortex_weights = 3
-inject_weights = 20
-method_weights = 10
+other_spiecies_weights = -5
+tc_ct_weights = 40
+thalam_weights = 20
+cortex_weights = 5
+inject_weights = 15
+method_weights = 15
 connect_weights = 5
 
 # 6 groups of keywords and their weights
 ranking_kw_groups_weights = {
-   'MACAQUE': macaque_weights, 'OTHER_SPIECIES': other_spiecies_weights, 'SPIECIES': spiecies_weights,
+   'MACAQUE': macaque_weights, 'OTHER_SPIECIES': other_spiecies_weights,
    'TC_CT': tc_ct_weights, 'THALAM': thalam_weights, 'CORTEX': cortex_weights,
    'INJECT': inject_weights,
    'METHOD': method_weights, 'CONNECT': connect_weights

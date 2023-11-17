@@ -67,6 +67,10 @@ poten_litera_db_ranked_by_tak = os.path.join(literature_datasets_folder, "potent
 poten_litera_db_ranked_by_500 = os.path.join(literature_datasets_folder, "potential_related_literature_database_ranked_by_500.csv")
 poten_litera_db_ranked_by_full_text = os.path.join(literature_datasets_folder, "potential_related_literature_database_ranked_by_full_text.csv")
 
+article_list_to_manually_read = os.path.join(literature_datasets_folder, "article_list_to_manually_read.txt")
+
+final_manually_read_csv = os.path.join(literature_datasets_folder, "final_manually_read_csv.csv")
+
 poten_litera_pdf_not_available = os.path.join(literature_datasets_folder, "potential_related_literature_pdf_not_available.csv")
 poten_litera_text_not_available = os.path.join(literature_datasets_folder, "potential_related_literature_text_not_available.csv")
 

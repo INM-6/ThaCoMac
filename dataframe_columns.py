@@ -56,3 +56,5 @@ db_count_columns = index + count_columns_to_add
 # db_count_trans_columns = db_count_columns + trans_count_columns_to_add
 
 db_ranked_columns = db_count_columns + relevance_index
+
+final_manually_read_df_columns = index + columns_to_fill + identifier + url + tak + text_columns_to_add + count_columns_to_add
