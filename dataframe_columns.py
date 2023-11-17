@@ -11,7 +11,7 @@ url_and_source = ["FULL_TEXT_URL", "FULL_TEXT_SOURCE", "PDF_URL", "PDF_SOURCE"]
 title = ["TITLE"]
 tak = ["TITLE", "ABSTRACT", "KEYWORDS"]
 
-relevance_index = ["RELEVANCE_INDEX_TAK", "RELEVANCE_INDEX_500", "RELEVANCE_INDEX_FULL_TEXT"]
+relevance_index = ["RELEVANCE_INDEX"]
 
 relevance = ["RELEVANCE"]
 
