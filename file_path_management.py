@@ -63,7 +63,9 @@ poten_litera_db = os.path.join(literature_datasets_folder, "potential_related_li
 poten_litera_db_text_extract = os.path.join(literature_datasets_folder, "potential_related_literature_database_final.csv")
 poten_litera_db_kw_count = os.path.join(literature_datasets_folder, "potential_related_literature_database_kw_count.csv")
 poten_litera_db_relevance_index = os.path.join(literature_datasets_folder, "potential_related_literature_database_relevance_index.csv")
-poten_litera_db_ranked = os.path.join(literature_datasets_folder, "potential_related_literature_database_ranked.csv")
+poten_litera_db_ranked_by_tak = os.path.join(literature_datasets_folder, "potential_related_literature_database_ranked_by_tak.csv")
+poten_litera_db_ranked_by_500 = os.path.join(literature_datasets_folder, "potential_related_literature_database_ranked_by_500.csv")
+poten_litera_db_ranked_by_full_text = os.path.join(literature_datasets_folder, "potential_related_literature_database_ranked_by_full_text.csv")
 
 poten_litera_pdf_not_available = os.path.join(literature_datasets_folder, "potential_related_literature_pdf_not_available.csv")
 poten_litera_text_not_available = os.path.join(literature_datasets_folder, "potential_related_literature_text_not_available.csv")
