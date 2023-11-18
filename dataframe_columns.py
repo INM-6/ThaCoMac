@@ -4,7 +4,7 @@ keys_list = list(params.ranking_kw_groups.keys())
 
 
 index = ["INDEX"]
-identifier = ["INDEX", "DOI", "PMID", "PMCID"]
+identifier = ["DOI", "PMID", "PMCID"]
 url = ["FULL_TEXT_URL", "PDF_URL"]
 source = ["FULL_TEXT_SOURCE", "PDF_SOURCE"]
 url_and_source = ["FULL_TEXT_URL", "FULL_TEXT_SOURCE", "PDF_URL", "PDF_SOURCE"]
@@ -47,9 +47,9 @@ for key in keys_list:
 
 columns_to_fill = ['TT?(Y/N/MB/NA)', 'MACAQUE?(Y/N/MB/NA)', 'TC_OR_CT?(Y/N/MB/NA)', 'RELEVANT?(Y/N/MB/NA)', 'READ_BY(A/D/R)', 'COMMENT']
 # ==========================================================================================================
-db_columns = identifier + url_and_source + tak
+db_columns = index + identifier + url_and_source + tak
 
-train_test_1000_path_columns = identifier + url_and_source + tak
+train_test_1000_path_columns = index + identifier + url_and_source + tak
 
 db_count_columns = index + count_columns_to_add
 
@@ -57,4 +57,4 @@ db_count_columns = index + count_columns_to_add
 
 db_ranked_columns = db_count_columns + relevance_index
 
-final_manually_read_df_columns = index + columns_to_fill + identifier - index  + url + tak + text_columns_to_add
+final_manually_read_df_columns = index + columns_to_fill + identifier  + url + tak + text_columns_to_add
