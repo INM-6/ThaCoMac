@@ -22,8 +22,8 @@ embedding_and_pca_folder = os.path.join(project_folder, "datasets", "embedding_a
 
 
 seed_paper_list = os.path.join(literature_datasets_folder, "seed_literature_list.txt")
-cocomac_paper_list = os.path.join(literature_datasets_folder, "cocomac_literature_list.txt")
-
+cocomac_literature_list = os.path.join(literature_datasets_folder, "cocomac_literature_list.csv")
+cocomac_literature_list_not_in_db = os.path.join(literature_datasets_folder, "cocomac_literature_list_not_in_db.csv")
 
 # search results from the academic databases and the processed results
 poten_litera_gs = os.path.join(literature_datasets_folder, "potential_literature_google_scholar.csv")
