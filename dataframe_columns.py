@@ -45,6 +45,8 @@ for key in keys_list:
 # for key in keys:
 #     trans_count_columns_to_add.append(key + "_TRANS_COUNT_IN_FULL_TEXT")
 
+columns_to_fill_0 = ['TT?(Y/N/MB/NA)', 'MACAQUE?(Y/N/MB/NA)', 'TC_OR_CT?(Y/N/MB/NA)', 'RELEVANT?(Y/N/MB/NA)', 'READ_BY(A/D/R)', 'COMMENT']
+
 columns_to_fill = ['TT?(Y/N/MB/NA)', 'MACAQUE?(Y/N/MB/NA)', 'TC_OR_CT?(Y/N/MB/NA)', 'RELEVANT?(Y/N/MB/NA)', 'REVIEW(Y/N)', 'READ_BY(A/D/R)', 'COMMENT']
 # ==========================================================================================================
 db_columns = index + identifier + url_and_source + tak
