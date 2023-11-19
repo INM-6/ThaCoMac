@@ -70,6 +70,11 @@ poten_litera_db_ranked_by_full_text = os.path.join(literature_datasets_folder, "
 article_list_to_manually_read = os.path.join(literature_datasets_folder, "article_list_to_manually_read.txt")
 
 final_manually_read_csv = os.path.join(literature_datasets_folder, "final_manually_read_csv.csv")
+final_manually_read_csv_1 = os.path.join(literature_datasets_folder, "final_manually_read_csv_1.csv")
+final_manually_read_csv_2 = os.path.join(literature_datasets_folder, "final_manually_read_csv_2.csv")
+final_manually_read_csv_3 = os.path.join(literature_datasets_folder, "final_manually_read_csv_3.csv")
+final_manually_read_csv_4 = os.path.join(literature_datasets_folder, "final_manually_read_csv_4.csv")
+
 
 poten_litera_pdf_not_available = os.path.join(literature_datasets_folder, "potential_related_literature_pdf_not_available.csv")
 poten_litera_text_not_available = os.path.join(literature_datasets_folder, "potential_related_literature_text_not_available.csv")
