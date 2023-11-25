@@ -31,7 +31,11 @@ ranking_kw_groups_weights = {
    }
 
 possible_macaque_group = [
-   'rhesus', 'macaque', 'macaca', ''
+   'rhesus', 'macaque', 'macaca', 'primate'
+]
+
+other_submonkey_species = [
+   'squirrel monkey', 'new World titi monkey', 'owl monkey', 'new world monkey', 'cebus monkey'
 ]
 
 macaque_group = [
