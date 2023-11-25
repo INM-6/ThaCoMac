@@ -155,7 +155,7 @@
 4077,"10.1016/j.neuroimage.2022.119096",35304264,"PMC9227740","Y","Y","N","N","A/D/A","Subiculum and BNST, which are not in the thalamus."
 2627,"10.1016/0304-3959(91)90015-p",1722895,,,,,"N","A","NMDA and SN effect on spinothalamic neurons"
 223,"10.1016/0304-3940(95)11273-y",7540266,,"Y","Y","N","N","A/D/A","Anterograde tracers to NRT, connections within thalamus instead of TC or CT"
-6658,"10.1073/pnas.1305062110",23924609,"PMC3752223","N",,,"MB","A/D","Cutting corpus callusum to compare functional and structural connectivity."
+6658,"10.1073/pnas.1305062110",23924609,"PMC3752223","N",,,"N","A/D","Cutting corpus callusum to compare functional and structural connectivity."
 8502,"10.1038/srep22427",26951756,"PMC4782073",,,,"N","A","Pharmacology"
 10834,"10.1155/np.2001.157",11783444,"PMC2565376",,,,"N","A","Collection of abstracts from a conference, not enough information to draw any conclusions, also no indication of thalamus TT"
 3673,"10.1016/0006-8993(89)90781-6",2478261,,,,,"N","A","New world monkey"
@@ -225,7 +225,7 @@
 9819,"10.1523/jneurosci.5563-09.2010",20685998,"PMC2927820",,,,"N","R","lamination of the mammalian cortex"
 2980,"10.1002/ajpa.1330380237",4632086,,,,,"N","R","degeneration study, no tract tracing"
 3659,"10.1073/pnas.110142097",10852945,"PMC16584",,,,"N","R","What parts of a visual stimulus produce the greatest neural signal?"
-1964,"10.1016/s0940-9602(11)80212-8",8297039,,"Y","Y","Y","Y","R/A/R","Review article about somatosensory cortex. I have a copy (RB); not original TT but contains very informative contents about the connection between thalamus and somatosensory cortex"
+1964,"10.1016/s0940-9602(11)80212-8",8297039,,"Y","Y","Y","Y","R/A/R","review article about somatosensory cortex. I have a copy (RB); not original TT but contains very informative contents about the connection between thalamus and somatosensory cortex"
 7108,"10.1124/pr.115.011478",26841800,"PMC4813425",,,,"N","R",
 5144,"10.3389/fnbeh.2020.548856",33328917,"PMC7732428",,,,"N","R",
 1147,"10.1017/s0952523800001656",7516176,,"Y","Y","Y","Y","R","corticogeniculate => layer 6 of V1"
@@ -553,9 +553,9 @@
 2788,"10.1016/j.neulet.2008.05.047",18539394,,,,,"N","D",
 3495,"10.1017/s0952523813000382",24103417,"PMC4150219",,,,"N","D",
 6017,"10.1109/tbme.2015.2492921",26529747,"PMC4716872",,,,"N","D",
-337,"10.1007/bf00237085",407094,,,,,"MB","D",
+337,"10.1007/bf00237085",407094,,,,,"Y","D",
 7600,"10.1186/s40478-017-0413-0",28148299,"PMC5289012",,,,"N","D",
-127,"10.1111/ejn.12389",24134130,"PMC4112842","Y","Y","Y","MB","D",
+127,"10.1111/ejn.12389",24134130,"PMC4112842","Y","Y","Y","Y","D",
 6004,"10.1093/geroni/igaa057.1582",,"PMC7743032",,,,"N","D",
 6388,"10.3389/fnins.2016.00131",27147942,"PMC4834347",,,,"N","D",
 9957,,819404,"PMC1231801",,,,"N","D",
@@ -724,7 +724,7 @@
 10331,"10.1093/schbul/sbq173",21355132,"PMC3044641",,,,"N","D",
 1777,"10.1016/j.nicl.2018.101628",30528957,"PMC6411779",,,,"N","D",
 712,"10.1152/jn.1999.82.4.1865",10515975,,,,,"N","D",
-2948,"10.1002/cne.901820108",100530,,"Y","Y","Y","MB","D","pathways between the dorsal lateral geniculate nucleus and visual cortex in old world and new world primates; Old World (Macaca, Papio, Erythrocebus, Cercopithecus) and New World (Saimiri, Cebus)"
+2948,"10.1002/cne.901820108",100530,,"Y","Y","Y","Y","D","pathways between the dorsal lateral geniculate nucleus and visual cortex in old world and new world primates; Old World (Macaca, Papio, Erythrocebus, Cercopithecus) and New World (Saimiri, Cebus)"
 1878,"10.1097/00006231-200405000-00014",15100512,,,,,"N","D",
 5622,"10.1073/pnas.1809833115",30545910,"PMC6310791",,,,"N","D",
 7548,"10.1152/jn.00347.2019",31693445,"PMC6985854",,,,"N","D",
@@ -765,7 +765,7 @@
 8751,"10.1371/journal.pone.0020912",21799730,"PMC3140472",,,,"N","D",
 3199,"10.1523/jneurosci.18-23-10090.1998",9822763,"PMC6793272",,,,"N","D",
 4402,"10.1016/j.isci.2020.101717",33196032,"PMC7645060",,,,"N","D",
-276,"10.1007/978-1-4899-0194-1_3",,,"Y","Y","Y","Y","D","Book chapter. RB: I'd like to count it in despite being a review article."
+276,"10.1007/978-1-4899-0194-1_3",,,"Y","Y","Y","Y","D","Book chapter as review. RB: I'd like to count it in despite being a review article."
 8057,"10.1038/npp.2014.280",,"PMC4261147",,,,"N","D",
 5560,"10.7554/elife.51144",32091390,"PMC7080407",,,,"N","D",
 484,"10.1523/jneurosci.0953-10.2010",20573910,"PMC2905633",,,,"N","D",
@@ -778,7 +778,7 @@
 7576,"10.1186/1744-9081-6-71",21106078,"PMC3009948",,,,"N","D",
 33,"10.1016/0891-0618(95)00050-h",7545406,,"Y","Y","Y","Y","D",
 9580,"10.1002/hbm.20739",19241418,"PMC6871153",,,,"N","D",
-1494,"10.1016/j.neuroscience.2011.06.080",21782903,,"Y","Y","Y","MB","D",
+1494,"10.1016/j.neuroscience.2011.06.080",21782903,,"Y","Y","Y","Y","D",
 8872,"10.1093/nar/gkt567",23804753,"PMC3763550",,,,"N","D",
 9295,"10.1371/journal.pbio.1000061",19296722,"PMC2656551",,,,"N","D",
 9337,"10.1371/journal.pcbi.1002890",23408877,"PMC3567170",,,,"N","D",
@@ -804,7 +804,7 @@
 4453,"10.1038/s41593-022-01197-0",36424430,"PMC10055353",,,,"N","D",
 6893,"10.1515/tnsci-2016-0016",28123829,"PMC5234525",,,,"N","D",
 7451,"10.1016/j.cub.2014.04.044",24881876,"PMC4698409",,,,"N","D",
-395,"10.2183/pjab1945.43.822",,,"N","Y","Y","MB","D",
+395,"10.2183/pjab1945.43.822",,,"N","Y","Y","N","D",
 8841,"10.1371/journal.pone.0035320",22563382,"PMC3338510",,,,"N","D",
 4480,"10.1111/epi.16089",31206636,"PMC6779127",,,,"N","D",
 3663,"10.1016/0042-6989(68)90050-3",4976817,,,,,"N","D",

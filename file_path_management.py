@@ -74,8 +74,8 @@ poten_litera_testing_set_1000_labeled_complete = os.path.join(potential_literatu
 poten_litera_db_kw_count = os.path.join(potential_literature_database_folder, "potential_related_literature_database_kw_count.csv")
 poten_litera_db_relevance_index = os.path.join(potential_literature_database_folder, "potential_related_literature_database_relevance_index.csv")
 poten_litera_db_ranked_by_tak = os.path.join(potential_literature_database_folder, "potential_related_literature_database_ranked_by_tak.csv")
-# poten_litera_db_ranked_by_500 = os.path.join(potential_literature_database_folder, "potential_related_literature_database_ranked_by_500.csv")
-# poten_litera_db_ranked_by_full_text = os.path.join(potential_literature_database_folder, "potential_related_literature_database_ranked_by_full_text.csv")
+poten_litera_db_ranked_by_500 = os.path.join(potential_literature_database_folder, "potential_related_literature_database_ranked_by_500.csv")
+poten_litera_db_ranked_by_full_text = os.path.join(potential_literature_database_folder, "potential_related_literature_database_ranked_by_full_text.csv")
 
 
 

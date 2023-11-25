@@ -30,6 +30,10 @@ ranking_kw_groups_weights = {
    'METHOD': method_weights, 'CONNECT': connect_weights
    }
 
+possible_macaque_group = [
+   'rhesus', 'macaque', 'macaca', ''
+]
+
 macaque_group = [
    'rhesus', 'macaque', 'macaca'
    ]
