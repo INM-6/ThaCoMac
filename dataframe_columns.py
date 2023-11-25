@@ -55,6 +55,8 @@ train_test_1000_path_columns = index + identifier + url_and_source + tak
 
 db_count_columns = index + count_columns_to_add
 
+db_ranked_columns_with_2_new_columns = db_count_columns + ["NOT_TT", "NOT_MACAQUE_BUT_OTHERS"]
+
 # db_count_trans_columns = db_count_columns + trans_count_columns_to_add
 
 db_ranked_columns = db_count_columns + relevance_index

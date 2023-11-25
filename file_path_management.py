@@ -72,6 +72,7 @@ poten_litera_testing_set_1000_labeled = os.path.join(potential_literature_databa
 poten_litera_testing_set_1000_labeled_complete = os.path.join(potential_literature_database_folder, "potential_related_literature_testing_set_1000_labeled_complete.csv")
 
 poten_litera_db_kw_count = os.path.join(potential_literature_database_folder, "potential_related_literature_database_kw_count.csv")
+poten_litera_db_kw_count_with_2_new_columns = os.path.join(potential_literature_database_folder, "potential_related_literature_database_kw_count_with_2_new_columns.csv")
 poten_litera_db_relevance_index = os.path.join(potential_literature_database_folder, "potential_related_literature_database_relevance_index.csv")
 poten_litera_db_ranked_by_tak = os.path.join(potential_literature_database_folder, "potential_related_literature_database_ranked_by_tak.csv")
 poten_litera_db_ranked_by_500 = os.path.join(potential_literature_database_folder, "potential_related_literature_database_ranked_by_500.csv")
@@ -87,11 +88,13 @@ final_manually_read_csv_1 = os.path.join(manually_read_and_confirm_folder, "fina
 final_manually_read_csv_2 = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_2.csv")
 final_manually_read_csv_3 = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_3.csv")
 final_manually_read_csv_4 = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_4.csv")
+final_manually_read_csv_abstract_full_text_not_available = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_abstract_full_text_not_available.csv")
 
 final_manually_read_csv_1_labeled = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_1_labeled.csv")
 final_manually_read_csv_2_labeled = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_2_labeled.csv")
 final_manually_read_csv_3_labeled = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_3_labeled.csv")
 final_manually_read_csv_4_labeled = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_4_labeled.csv")
+final_manually_read_csv_abstract_full_text_not_available_labeled = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_abstract_full_text_not_available_labeled.csv")
 
 final_manually_read_csv_1_aitor = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_1_aitor.csv")
 

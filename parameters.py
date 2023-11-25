@@ -14,11 +14,11 @@
 text_length_to_extract = 500
 
 macaque_weights = 10
-other_spiecies_weights = -5
+other_spiecies_weights = 0
 tc_ct_weights = 40
 thalam_weights = 20
 cortex_weights = 5
-inject_weights = 15
+inject_weights = 0
 method_weights = 15
 connect_weights = 5
 
