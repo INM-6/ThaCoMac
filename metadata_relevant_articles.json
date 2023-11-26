@@ -1,6 +1,6 @@
 {
-    "IDENTIFIER": {
-        "DB_INDEX": "1",
+    "Aiticle_IDENTIFIER": {
+        "DH_INDEX": "1",
         "DOI": "10.1016/j.neuron.2019.01.014",
         "PMID": "30737135",
         "PMCID": "PMC6396545",
@@ -13,10 +13,21 @@
         "Publication_Year": "2022",
         "First_Autor": "John Doe"
     },
-    "Species": "Mus musculus",
-    "Atlas": "Allen Mouse Brain Atlas",
-    "Cortex_Pacellation_Scheme": "Paxinos",
-    "Thalamus_Parcellation_Scheme": "Paxinos",
+    "Macaque_Species": {
+        "Macaque_Species_1": {
+            "Macaque_Species_ID": "Macaque Species 1",
+            "Macaque_Species_Full_Name": "Macaque Species 1"
+        },
+        "Macaque_Species_2": {
+            "Macaque_Species_ID": "Macaque Species 1",
+            "Macaque_Species_Full_Name": "Macaque Species 1"
+        }
+    },
+    "Parcellation_Scheme_and_Nomenclature": {
+        "Atlas": "Allen Mouse Brain Atlas",
+        "Cortex_Pacellation_Scheme": "Paxinos",
+        "Thalamus_Parcellation_Scheme": "Paxinos"
+    },
     "Injection_and_Label": {
         "Injection_1": {
             "Injection_ID": "Injection 1",
