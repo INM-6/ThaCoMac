@@ -34,23 +34,22 @@ possible_macaque_group = [
    'rhesus', 'macaque', 'macaca', 'primate', 'monkey'
 ]
 
-other_submonkey_species = [
-   'squirrel monkey', 'new world titi monkey', 'owl monkey', 'new world monkey', 'cebus monkey'
-]
-
 macaque_group = [
    'rhesus', 'macaque', 'macaca'
    ]
 other_spiecies_group = [
-   'cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'marmoset monkey', 'marmoset', 'human', 'humans', 'man', 'men',
-   'dog', 'dogs', 'rabbit', 'sheep', 'frog', 'frogs', 'squirrel monkey', 'saimiri sciureus',
-   'hedgehog', 'erinaceus europaeus', 'callithrix jacchus', 'hamster', 'phodopus sungorus',
+   'cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'marmoset monkey', 'marmoset', 
+   'human', 'humans', 'man', 'men', 'adults', 'patient',
+   'dog', 'dogs', 'rabbit', 'sheep', 'frog', 'frogs', 
+   'squirrel monkey', 'saimiri sciureus', 'hedgehog', 'erinaceus europaeus', 
+   'callithrix jacchus', 'hamster', 'phodopus sungorus',
    'pig', 'pigs', 'minipig', 'cavia aperta', 'wallaby', 'macropus eugenii', 'bat', 'bats', 
    'otolemur garnetti', 'new world titi monkey', 'callicebus moloch', 
    'owl monkey', 'aotus trivirgatus', 'new world monkey', 'ferret', 'ferrets', 'bush baby', 'galago',
    'galagos', 'rodent', 'rodents',
    'cebus apella', 'cebus monkey', 'chicken', 'possum', 'trichosurus vulpecula', 'prosimian',  
-   'antrozous pallidus', 'shrew', 'shrews', 'suncus murinus', 'gerbil', 'gerbils', 'swine', 'swines', 'adults'
+   'antrozous pallidus', 'shrew', 'shrews', 'suncus murinus', 'gerbil', 'gerbils', 
+   'swine', 'swines'
    ]
 
 sub_monkey_not_macaque = [
@@ -104,9 +103,9 @@ ranking_kw_groups = {
 
 exact_match_kw_list = [
    'cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'dog', 'dogs', 
-   'frog', 'frogs', 'human', 'humans', 'man', 'men', 'pig', 'pigs',
+   'frog', 'frogs', 'human', 'humans', 'man', 'men', 'adults', 'pig', 'pigs',
    'bat', 'bats', 'ferret', 'ferrets', 'galago','shrew', 'shrews',
-   'galagos', 'gerbil', 'gerbils', 'swine', 'swines', 
+   'galagos', 'gerbil', 'gerbils', 'swine', 'swines',
    'tract', 'md', 'vlpv', 'sgn', 'vpl', 'lgn', 'rodent', 'rodents',
    'vpm', 'motor', 'hrp', 'wga', 'brdu', 'ctb', 'bda', 'dy', 'ly', 
    'fb', 'stain', 'cortex', 'cortical', 'cortices', 'V1']
