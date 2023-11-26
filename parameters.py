@@ -50,7 +50,7 @@ other_spiecies_group = [
    'owl monkey', 'aotus trivirgatus', 'new world monkey', 'ferret', 'ferrets', 'bush baby', 'galago',
    'galagos', 'rodent', 'rodents',
    'cebus apella', 'cebus monkey', 'chicken', 'possum', 'trichosurus vulpecula', 'prosimian',  
-   'antrozous pallidus', 'shrew', 'shrews', 'suncus murinus', 'gerbil', 'gerbils', 'swine', 'swines'
+   'antrozous pallidus', 'shrew', 'shrews', 'suncus murinus', 'gerbil', 'gerbils', 'swine', 'swines', 'adults'
    ]
 
 sub_monkey_not_macaque = [
