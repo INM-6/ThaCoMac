@@ -1,1001 +1,1001 @@
-"INDEX","DOI","PMID","PMCID","TT?(Y/N/MB/NA)","MACAQUE?(Y/N/MB/NA)","TC_OR_CT?(Y/N/MB/NA)","RELEVANT?(Y/N/MB/NA)","READ_BY(A/D/R)","COMMENT"
-8563,"10.1155/2016/9745315",27069486,"PMC4812498",,,,"N","D",
-7378,"10.1111/j.1749-6632.2011.06001.x",21599696,"PMC3103088",,,,"N","D",
-9735,,11797318,"PMC1359021",,,,"N","D",
-2259,"10.1093/cercor/3.1.49",7679939,,,,,"N","D","cat"
-10784,"10.1136/jnnp.32.5.404",5360048,"PMC496549",,,,"N","D",
-6727,"10.1093/brain/awv312",26490335,"PMC4794619",,,,"N","D",
-10386,"10.1523/jneurosci.4206-04.2005",15800201,"PMC6724897",,,,"N","D",
-1103,"10.1073/pnas.1913092116",31685634,"PMC6876194",,,,"N","D",
-8771,"10.1523/jneurosci.5208-12.2013",23595745,"PMC6618877",,,,"N","D","Marmoset Monkeys; on receptive fields in the LGN and V1"
-5378,"10.1002/cne.25432",36413612,"PMC10100312",,,,"N","D",
-2783,"10.1007/978-1-4684-3860-4_6",7315601,,,,,"N","D",
-1931,"10.1006/nimg.1997.0262",9345547,,,,,"N","D",
-7641,"10.3389/fnhum.2013.00887",24399951,"PMC3870954",,,,"N","D",
-4525,"10.1038/gt.2017.14",28300083,"PMC5404203","Novel marker","Y","Y","Y","D/A","Species: Macaca fascicularis"
-625,"10.1080/01616412.1985.11739692",2860583,,,,,"N","D","not TT study, no specific cortical areas or thalamic neucli mentioned"
-10105,"10.1152/jn.00274.2015",26609111,"PMC4752305",,,,"N","D",
-7122,"10.1007/s12264-018-0210-1",29430586,"PMC5856726",,,,"N","D",
-605,,,,"Y","Y","N","N","R/D/A","seems a TT study on neurons in the basal forebrain of the monkey directly and without a thalamic relay to neocortex; R: Is a tracing study using HRP, but studies connections that bypass Thalamus"
-9785,"10.1523/jneurosci.14-04-02236.1994",8158267,"PMC6577120",,,,"N","D",
-1421,"10.1001/archneur.1992.00530340048017",1417510,,,,,"N","D",
-3532,"10.1016/0006-8993(80)90758-1",6773619,,,,,"N","R","R: Is a tracing study using HRP, but thalamus does not seem to be involved.; D: anterograde labeling of a prominent “prefrontal oculomotor bundle” which tranversed the medial subthalamic region at the diencephalic-mesencephalic junction to terminate directly in accessory and principal oculomotor nuclear groups"
-8077,"10.1016/j.ntt.2009.09.005",19799996,"PMC4436692",,,,"N","D",
-5758,"10.1038/s41386-021-01237-6",34857905,"PMC8637040",,,,"N","D",
-619,,,,"N","Y","Y","N","D/A",
-4780,"10.1523/jneurosci.0221-20.2020",33037076,"PMC7605414",,,,"N","D",
-3603,"10.1016/s0306-4522(99)00409-1",10619469,,,,,"N","D",
-428,"10.1093/cercor/bhq201",21045004,"PMC3097985","Y","Y","Y","Y","D/A",
-9826,"10.1016/j.pharmthera.2009.04.001",19393691,"PMC2724647",,,,"N","D",
-858,"10.1152/jn.1952.15.6.449",13000471,"PMC2956074",,,,"N","R","Not a tracing study, but very elaborate stimulation/recording experiments."
-2040,"10.1002/ar.a.20267",16411246,,,,,"N","D",
-2771,"10.1152/jn.1984.52.2.212",6481430,,,,,"N","D",
-9579,"10.1016/j.resp.2005.04.015",15927543,"PMC1351146",,,,"N","D",
-2643,"10.1002/cne.901740206",68041,,,,,"N","D",
-10468,"10.1523/jneurosci.02-09-01214.1982",7119874,"PMC6564312",,,,"N","D",
-5158,"10.1016/j.neuroscience.2017.06.052",28687313,"PMC6063080","Y","Y","Y","N","D","RB: Not sure how much thalamus is involved"
-6500,"10.3389/fnhum.2015.00606",26582984,"PMC4631821",,,,"N","D",
-9576,"10.3389/fpsyg.2011.00110",21713060,"PMC3114071",,,,"N","D",
-695,"10.1159/000103928",4163109,,,,,"N","D",
-2229,"10.1016/j.pneurobio.2006.02.004",16647799,,,,,"N","D",
-9619,"10.3389/fnhum.2013.00017",23378834,"PMC3561664",,,,"N","D",
-10082,"10.1073/pnas.0811168106",19188601,"PMC2634800",,,,"N","D",
-9912,"10.1098/rstb.1998.0289",9770228,"PMC1692334",,,,"N","D",
-372,"10.1098/rspb.1996.0138",8760494,,,,,"N","D",
-220,"10.1016/j.brainresbull.2008.09.013",18950692,"PMC4459637","Y","Y","Y","Y","D/R","review, https://pubmed.ncbi.nlm.nih.gov/12223566/ "
-3209,"10.1523/jneurosci.2603-16.2016",27927956,"PMC6601968",,,,"N","D","model; D: LGN inputs to V1, not original experiment report, https://pubmed.ncbi.nlm.nih.gov/14668866/, https://pubmed.ncbi.nlm.nih.gov/6747034/, https://pubmed.ncbi.nlm.nih.gov/1711175/, https://pubmed.ncbi.nlm.nih.gov/16871526/ "
-3003,"10.1016/0006-8993(81)90754-x",7306805,,,,,"N","D",
-6306,"10.1371/journal.pcbi.1009566",34843455,"PMC8629393",,,,"N","D",
-4696,"10.3389/fneur.2021.745159",34671313,"PMC8521139",,,,"N","D",
-5851,"10.1038/s41598-021-04684-9",35031628,"PMC8760251",,,,"N","D",
-7782,"10.1038/srep35809",27805010,"PMC5090965",,,,"N","D",
-7303,"10.1371/journal.pntd.0001567",22448291,"PMC3308941",,,,"N","D",
-7380,"10.1002/mds.25603",23852565,"PMC3825839",,,,"N","D",
-6712,"10.1371/journal.pcbi.1005785",29077710,"PMC5678733",,,,"N","D",
-8810,"10.1073/pnas.86.22.9015",2573073,"PMC298423",,,,"N","D",
-9317,"10.1152/jn.00749.2002",12574476,"PMC2633106",,,,"N","D",
-1544,"10.1002/syn.20382",17372973,,,,,"N","D",
-3013,"10.1016/j.nucmedbio.2008.03.002",18589296,,,,,"N","D",
-3251,"10.1093/brain/awn201",18772222,,"Y","Y","N","N","D","humans’ ipsilateral vestibulothalamic tract"
-10025,"10.1523/jneurosci.04-11-02830.1984",6209365,"PMC6564722","Y","Y","N","N","D","intrinsic connections in primary visual cortex in macaque, not TC or CT"
-10186,"10.1128/jvi.23.3.811-815.1977",197272,"PMC515892",,,,"N","D",
-582,"10.1152/jn.1985.53.6.1387",4009225,,,,,"N","D",
-2956,"10.1002/cne.25168",33950555,"PMC8568737",,,,"N","D",
-784,"10.1002/cne.903630308",8847410,,"Y","Y","Y","Y","D/A","from visually related areas of the cerebral cortex to the pretectal nuclear complex, the terminal nuclei of the accessory optic system (AOS), and the superior colliculus (SC), anterograde tracer H-leucine "
-6350,"10.1007/s40473-018-0149-6",30013890,"PMC6044438",,,,"N","D",
-3766,"10.1093/cercor/bhn069",18477689,,,,,"N","D",
-662,"10.7554/elife.13588",27136677,"PMC4887209",,,,"N","D",
-10450,,7400036,"PMC1233130",,,,"N","D",
-8907,"10.1002/hbm.20670",19235876,"PMC6870714",,,,"N","R",
-9086,"10.3389/fncir.2012.00088",23189041,"PMC3504312",,,,"N","R","study minicolumnar microcircuits"
-6867,"10.1523/jneurosci.0762-14.2014",25143603,"PMC4138334",,,,"N","R","population coding"
-7132,,18702454,"PMC2694714",,,,"N","R","viral pathogenesis study"
-4481,"10.3390/brainsci11091112",34573134,"PMC8471472",,,,"N","R","gene delivery"
-2387,"10.1046/j.0953-816x.2001.01739.x",11703463,,,,,"N","R","cat"
-5082,"10.3389/fnbeh.2016.00090",27252631,"PMC4877530",,,,"N","R","deep brain recording"
-8552,"10.1177/1089253213495923",23859832,"PMC3830670",,,,"N","R",
-3832,"10.1016/0306-4522(89)90057-2",2725859,,,,,"N","R","methods paper"
-7405,"10.1523/jneurosci.1266-11.2011",21832191,"PMC3163464",,,,"N","R","Study visual posterior sylvian area (VPS)"
-8365,"10.1073/pnas.1102780108",21876148,"PMC3174625",,,,"N","R","V1 and S1 responses during whisker tasks"
-4032,"10.3389/fnsys.2022.921468",36203745,"PMC9532056",,,,"N","R","variation of cortical columns across cortex"
-7842,"10.1146/annurev-pharmtox-011613-135947",24160694,"PMC3997216",,,,"N","R",
-674,"10.1016/0013-4694(49)90212-6",,,,,,"N","R","atlasing paper"
-3502,"10.1523/jneurosci.2268-11.2011",21880925,"PMC3172870",,,,"N","R","Corticogeniculate neurons were identified by antidromic activation following electrical stimulation"
-2983,"10.1523/jneurosci.0328-06.2006",16687510,"PMC6674245",,,,"N","R","retina recordings"
-8587,"10.3389/fnint.2012.00036",22754510,"PMC3385506",,,,"N","R","predictability of  human behavior"
-5468,"10.1038/s41467-020-17890-2",32792525,"PMC7426815",,,,"N","R","neural progenitors in the developing mammalian hypothalamus"
-10657,,,"PMC2169865",,,,"N","R",
-9549,"10.1523/jneurosci.08-03-00892.1988",3346727,"PMC6569229",,,,"N","R","Cat"
-7213,"10.3201/eid1509.090253",19788803,"PMC2819871",,,,"N","R",
-6694,"10.3389/fnana.2018.00009",29503610,"PMC5820353",,,,"N","R","human PFC"
-2756,"10.1016/0006-8993(80)90328-5",6769540,,"Y","Y","N","N","R/D/A","projections to S1; seems ePhys not TT?"
-9245,"10.1523/jneurosci.21-05-01580.2001",11222648,"PMC6762964",,,,"N","R",
-5283,"10.3390/foods10092034",34574144,"PMC8466623",,,,"N","R",
-10270,"10.1016/j.neuron.2005.05.020",15996553,"PMC1564381",,,,"N","R",
-8053,"10.1146/annurev-neuro-072116-031418",28471714,"PMC5697758",,,,"N","R",
-2654,"10.1016/0304-3959(91)90152-n",2038494,,,,,"N","R",
-6057,"10.1016/j.neuron.2022.05.011",35690063,"PMC9616801",,,,"N","R",
-8321,"10.1523/jneurosci.0828-12.2012",22875934,"PMC3465728",,,,"N","R","Deals with Caudate Nucleus (striatum)"
-8079,"10.1152/jn.90372.2008",18768645,"PMC2585404",,,,"N","R","Deals with GPi and GPe (basal ganglia)"
-4142,"10.2967/jnumed.122.263977",35710735,"PMC9730915",,,,"N","R","Deals with radiotracer evaluation"
-2366,"10.1023/a:1010990404833",11387548,,,,,"N","R","Glutamate receptor distribution"
-8374,"10.1038/nn.3541",24097039,"PMC4191718",,,,"N","R","Origin of cortical interneurons"
-5044,"10.3389/fpsyt.2022.832209",35463532,"PMC9020768",,,,"N","R","D2 receptor occupancy in humans"
-1662,"10.1002/(sici)1096-9861(19970512)381:3<320::aid-cne5>3.0.co;2-4",9133571,,,,,"N","R","Deals with RAT"
-1154,"10.1097/00001756-200111160-00012",11733686,,,,,"N","R","Human thalamus"
-9712,"10.1016/j.schres.2014.08.032",25306204,"PMC4394607",,,,"N","R","Schizophrenia conference"
-394,"10.1002/cne.902930210",19189717,,"Y","Y","N","N","R/A","Ventral striatum; striatum is not part of thalamus"
-5638,"10.1523/jneurosci.2348-16.2016",27911752,"PMC5125216",,,,"N","R","review about different frontal cortical areas directly project to the STN via so-called hyperdirect pathways"
-3520,"10.1002/cne.901730105",403206,,"Y","N","N","N","R/A","Corticostriatal projections; striatum is not part of thalamus"
-9230,"10.1016/j.schres.2006.10.004",17141476,"PMC1868481",,,,"N","R","Antipsychotic drugs test"
-5047,"10.1038/s41467-023-38675-3",37217510,"PMC10203257",,,,"N","R","beta oscillations"
-2264,"10.1016/j.heares.2009.06.018",19595755,"PMC2989528","N",,,"N","R","review; special issue of Hearing Research "
-7770,"10.1523/jneurosci.4089-08.2009",19176812,"PMC6665141",,,,"N","R","insula responds to certain sounds"
-2247,"10.1006/jmre.1998.1379",9571103,,,,,"N","R","fMRI study in humans"
-8299,"10.1073/pnas.96.10.5768",10318959,"PMC21935",,,,"N","R","adult neurogenesis"
-4521,"10.1007/s00429-020-02171-x",33180142,"PMC7817566",,,,"N","R","review about Red Nucleus"
-8156,"10.1016/j.neuroimage.2013.03.049",23558094,"PMC4132879",,,,"N","R","Pavlovian fear conditioning"
-10055,"10.3389/fncel.2014.00097",24772064,"PMC3982075",,,,"N","R","neuroimmune mechanisms"
-891,"10.1002/(sici)1096-9861(19980518)394:4<475::aid-cne6>3.0.co;2-z",9590556,,,,,"N","R","Subdivisions of auditory cortex"
-644,"10.1017/s0952523807070770",18093372,,,,,"N","R","Spot on, but deals with Marmoset monkey"
-820,,2411787,,"Y","Y","Y","Y","R","fronto-parietal operculum and the postcentral gyrus with the posterior ventral thalamic nucleus"
-8427,"10.3389/fnana.2012.00012",22514523,"PMC3322329",,,,"N","R","protein expression in LGN, squirrel"
-5789,"10.1080/87565641.2017.1334783",28885046,"PMC6232854",,,,"N","R","review on the function of cerebellum"
-2782,"10.1046/j.1460-9568.2000.00999.x",10762334,,,,,"N","R","we induced overactivity of the motor thalamus by injecting bicuculline "
-7664,"10.1039/c4md00240g",25584182,"PMC4288033",,,,"N","R","opioid receptors in rat"
-5731,"10.1038/s41593-018-0309-8",30643297,"PMC6348027",,,,"N","R","stop signal task"
-1139,"10.1016/j.irbm.2009.10.004",,,,,,"N","R","3d atlas of thalamus, could be of interest"
-10081,"10.1111/j.1750-3639.1998.tb00133.x",9458165,"PMC8098315",,,,"N","R","Borna disease rats"
-4947,"10.1177/0271678x211061050",34905986,"PMC8851538",,,,"N","R",
-2467,"10.1007/s002210050293",9497146,,"N",,,"N","R","single cell recordings, behavioral response"
-1462,"10.1007/978-3-319-70046-5_1",29116442,,,,,"N","R","pulvinar subdivisions"
-5521,"10.3389/fnana.2014.00009",24672434,"PMC3956368",,,,"N","R","movement of macromolecules"
-8545,"10.1152/jn.00233.2014",26133796,"PMC4725123",,,,"N","R","eye-hand coordination"
-3749,"10.1016/0006-291x(91)91440-n",1704223,,,,,"N","R","tissue specific expression of GLUT3"
-600,"10.1016/0304-3959(81)90503-0",,,,,,"N","R",
-4425,"10.1002/cne.25264",34636423,"PMC8957504",,,,"N","R","tectopulvinar projections in the mouse"
-10427,"10.1002/rth2.12393",,"PMC7419731",,,,"N","R",
-396,"10.1109/tbme.2008.2005973",19224730,"PMC5446893",,,,"N","R",
-8767,"10.1007/s11571-008-9044-2",19003478,"PMC2427063",,,,"N","R","resting state networks"
-4551,"10.1002/cne.25087",33314077,"PMC8053672",,,,"N","R","synapse types"
-2231,"10.1371/journal.pone.0110432",25337714,"PMC4206294",,,,"N","R",
-9173,"10.1038/nature07721",19158677,"PMC2700034",,,,"N","R",
-4506,"10.1093/cercor/bhaa229",32844170,"PMC7727342",,,,"N","R","population MRI atlas"
-7171,"10.1155/2018/6323901",29983707,"PMC6015683",,,,"N","R","gap junction proteins"
-3625,"10.1523/jneurosci.22-07-02885.2002",11923453,"PMC6758337","Y","Y","Y","Y","R","injection in LGN"
-8949,"10.1523/jneurosci.14-11-06796.1994",7965080,"PMC6577272",,,,"N","A","Squirrel monkey, not macaque"
-964,"10.1002/hbm.23429",27739612,"PMC6866740",,,,"N","A","human"
-3910,"10.1016/s0306-4522(99)00344-9",10579225,,,,,"N","A","they measure receptor types"
-1807,"10.1111/j.1460-9568.1997.tb01509.x",9240412,,,,,"N","A","Marmoset"
-4901,"10.1093/braincomms/fcaa196",33364600,"PMC7749795",,,,"N","A","Human"
-9207,"10.1210/er.2011-1039",22402194,"PMC3365851",,,,"N","A","Peptides in several animals"
-1217,"10.1016/j.neulet.2018.05.003",29729357,,,,,"N","A","Effects of AcH in food selection"
-851,"10.1093/brain/60.1.126",,,"N",,,"N","A/D/A","Lesion to some cortical areas and checking the resulting atrophy level in the Pulvinar. The methods were likely cutting edge back in 1937; lesion instead of TT"
-5905,"10.1523/jneurosci.0772-20.2020",32847963,"PMC7511188","N","Y","Y","N","A/D/A","Focus on STN, local injections of AMPA, NMDA and GABA antagonists to see effects."
-4077,"10.1016/j.neuroimage.2022.119096",35304264,"PMC9227740","Y","Y","N","N","A/D/A","Subiculum and BNST, which are not in the thalamus."
-2627,"10.1016/0304-3959(91)90015-p",1722895,,,,,"N","A","NMDA and SN effect on spinothalamic neurons"
-223,"10.1016/0304-3940(95)11273-y",7540266,,"Y","Y","N","N","A/D/A","Anterograde tracers to NRT, connections within thalamus instead of TC or CT"
-6658,"10.1073/pnas.1305062110",23924609,"PMC3752223","N",,,"N","A/D","Cutting corpus callusum to compare functional and structural connectivity."
-8502,"10.1038/srep22427",26951756,"PMC4782073",,,,"N","A","Pharmacology"
-10834,"10.1155/np.2001.157",11783444,"PMC2565376",,,,"N","A","Collection of abstracts from a conference, not enough information to draw any conclusions, also no indication of thalamus TT"
-3673,"10.1016/0006-8993(89)90781-6",2478261,,,,,"N","A","New world monkey"
-793,"10.1016/s0306-4522(00)00585-6",11274781,,"Y","Y","Y","N","A/D/A","Very exhaustive study of the prefrontal cortex connections."
-6979,"10.1016/j.omtm.2021.01.011",33665228,"PMC7895692",,,,"N","A","Retina"
-2406,"10.1016/0168-0102(92)90002-t",1341196,,,,,"N","A","Cat"
-1721,"10.1016/j.nicl.2015.11.004",26693399,"PMC4660379",,,,"N","A","Human"
-85,,814157,,,,,"N","A","Paper might not be available, maybe the library can provide it. The other work by the same author is also very relevant."
-10817,"10.1016/j.jneuroim.2012.10.001",,"PMC7119873",,,,"N","D",
-5799,"10.3389/fpsyt.2019.00122",30923504,"PMC6426783",,,,"N","D",
-941,"10.1002/(sici)1096-9861(19970526)382:1<89::aid-cne6>3.0.co;2-g",9136813,,"Y","Y","Y","Y","A","Auditory cortex and Medial geniculate nucleus"
-6845,"10.3389/fnins.2022.1010354",36340755,"PMC9630591",,,,"N","A/D",
-10264,"10.1093/schbul/sbt011",23620888,"PMC3633127",,,,"N","A","abstract collection"
-4,"10.1002/cne.903130106",1761756,,"Y","Y","Y","Y","A","Prefrontal and Mediodorsal nucleus"
-5725,"10.1159/000357753",24776993,"PMC4440552",,,,"N","A","Evolution of the cortex"
-377,,,,"Y","Y","Y","Y","A/D/R","Book review. RB: I'd like to count this review in, we can always decide to use the original articles. "
-3081,"10.1016/0361-9230(84)90017-0",6478263,,,,,"N","A","Pharmacology"
-6792,"10.1152/jn.00238.2010",21411564,"PMC3295207",,,,"N","A","Marmoset"
-1869,"10.1016/s0079-6123(03)43042-2",14653187,,,,,"N","A","Perfect type of study, but in Cebus monkey"
-134,"10.1002/cne.21674",18322920,,,,"N","N","A","Thalamus to Cerebellum connections"
-9436,"10.1136/jnnp.68.3.381",10675227,"PMC1736813",,,,"N","A","Stimulation of thalamus (STN) to treat parkinsons"
-10222,,6469858,"PMC1164442",,,,"N","A","human"
-1933,"10.1016/j.psyneuen.2009.09.007",19782476,,,,,"N","A","Human, testosterone, functional conn"
-3662,"10.1016/0006-8993(70)90132-0",4995199,,,,,"N","A",
-8976,"10.1186/1471-2202-6-56",16135243,"PMC1224856",,,,"N","A","Peripheral nervous system controling hands"
-1991,"10.1007/s00429-019-02023-3",31925518,,,,,"N","A","Review"
-8155,"10.3389/fnana.2012.00034",22952459,"PMC3429885",,,,"N","A","Human"
-3346,"10.1016/j.bmc.2013.08.019",24012376,,,,,"N","A","Study of markers for PET"
-5923,"10.1016/j.neuron.2020.03.024",32315603,"PMC7422923",,,,"N","A",
-5797,"10.1002/cne.24202",28295315,"PMC5686388",,,,"N","A","Single cell properties, no connectivity in results"
-9916,"10.1016/j.expneurol.2007.06.003",17658516,"PMC2042945",,,,"N","A","Rat, pharmacology"
-10661,,3067448,"PMC1026490",,,,"N","A","Interesting stuff about cocaine, irrelevant for us"
-8694,"10.1007/s00213-008-1273-x",18709359,"PMC2704616",,,,"N","A","Pharmacology"
-4986,"10.3390/jcm12062255",36983254,"PMC10054919",,,,"N","A","Aging"
-8417,"10.1098/rspb.2004.2925",15875575,"PMC1634937",,,,"N","A","reads like an opinion piece"
-5933,"10.1093/cercor/bhy114",29788295,"PMC6041950",,,,"N","A","Anesthesia and effects in functional conn"
-7136,"10.1016/j.neuroimage.2009.10.081",19896540,"PMC3073774",,,,"N","A","Human"
-1583,"10.1016/j.visres.2014.12.021",25615840,,,,,"N","A","Human"
-3980,"10.1016/0022-4731(85)90184-0",4068701,,,,,"N","A","Pharmacology"
-2225,"10.1016/s0074-7742(09)87027-x",19682656,,,,,"N","A","Book/review"
-10150,"10.1038/nn.2470",20023651,"PMC3412590",,,,"N","A","SC function, not structure"
-2217,"10.1002/(sici)1096-9861(20000131)417:1<115::aid-cne9>3.0.co;2-b",10660892,,,,,"N","A","Tracing in Chicken"
-2494,"10.1152/jn.1991.66.2.485",1774583,,,,,"N","A","Dynamics, not structure"
-4389,"10.1016/j.nbd.2019.104489",31175984,"PMC6689440",,,,"N","A","Pharmacology"
-229,"10.1006/taap.1995.1193",7570604,,,,,"N","A","Mercury toxicity for brain"
-9372,"10.1089/brain.2012.0120",23442172,"PMC3696923",,,,"N","A","Re-analysis of CoCoMac and others for TVB"
-3792,"10.1002/(sici)1096-9861(19990816)411:1<56::aid-cne5>3.0.co;2-3",10404107,,,,,"N","A","ISH locally, not connectivity"
-1356,"10.1016/s0028-3932(00)00044-0",10869583,,,,,"N","A","Human"
-4276,"10.3389/fncel.2022.1006703",36545653,"PMC9760692",,,,"N","D",
-7272,"10.1371/journal.pone.0026709",22053202,"PMC3203885",,,,"N","D",
-6169,"10.1021/jm4012017",24147864,"PMC3866693",,,,"N","D",
-691,"10.1016/s0079-6123(08)63413-5",3088672,,"N",,,"N","D","book chapter that reviews connectivity related to gaze control"
-5326,"10.4103/1673-5374.314294",34380877,"PMC8504395",,,,"N","D",
-1962,"10.1023/a:1024169925377",12815244,,,,,"N","D","looks at organization of incoming cortical projections into columns"
-2507,"10.1007/bf00247291",3653318,,,,,"N","D",
-1665,"10.1523/eneuro.0173-17.2017",28840189,"PMC5566798",,,,"N","D",
-3692,"10.1212/wnl.32.10.1198",6889707,,,,,"N","R","parietotemporal lesion"
-8072,"10.1038/nrn2719",19763105,"PMC2913577",,,,"N","R","cerebral neocortex during evolution"
-2405,"10.1002/cne.10096",11793349,,,,,"N","R","neuron types, not connectivity"
-4571,"10.3389/fncel.2023.1125785",37091923,"PMC10113633",,,,"N","R",
-3113,"10.1523/jneurosci.22-14-06158.2002",12122075,"PMC6757940",,,,"N","R","reverse correlation of a spike train"
-10505,"10.1177/003591577306600616",4205631,"PMC1644972",,,,"N","R",
-5915,"10.1002/syn.20578",18925657,"PMC2587077",,,,"N","R","methods paper"
-3451,,10845600,,,,,"N","R",
-1555,"10.1016/j.neuroscience.2012.07.054",22864184,"PMC3484682",,,,"N","R","recorded single neurons from both structures during vertical and horizontal rotation"
-9893,"10.1068/p6100",19065857,"PMC2801810",,,,"N","R",
-9819,"10.1523/jneurosci.5563-09.2010",20685998,"PMC2927820",,,,"N","R","lamination of the mammalian cortex"
-2980,"10.1002/ajpa.1330380237",4632086,,,,,"N","R","degeneration study, no tract tracing"
-3659,"10.1073/pnas.110142097",10852945,"PMC16584",,,,"N","R","What parts of a visual stimulus produce the greatest neural signal?"
-1964,"10.1016/s0940-9602(11)80212-8",8297039,,"Y","Y","Y","Y","R/A/R","review article about somatosensory cortex. I have a copy (RB); not original TT but contains very informative contents about the connection between thalamus and somatosensory cortex"
-7108,"10.1124/pr.115.011478",26841800,"PMC4813425",,,,"N","R",
-5144,"10.3389/fnbeh.2020.548856",33328917,"PMC7732428",,,,"N","R",
-1147,"10.1017/s0952523800001656",7516176,,"Y","Y","Y","Y","R","corticogeniculate => layer 6 of V1"
-10974,,,"PMC1934315",,,,"N","R",
-4266,"10.1016/j.jneumeth.2022.109530",35202614,"PMC8940704",,,,"N","R","methods paper"
-4283,"10.3390/brainsci12101273",36291207,"PMC9599395",,,,"N","R","pharmacotherapy in aphasia"
-6818,"10.1128/jvi.03441-13",24696472,"PMC4054374",,,,"N","R",
-3302,"10.1017/s0952523800002960",7918216,,,,,"N","R","lesion study LGN"
-5016,"10.1016/j.celrep.2021.110198",34986350,"PMC9608360",,,,"N","R",
-1522,"10.1093/cercor/bhh112",15217901,,,,,"N","R","retinol-binding protein"
-7315,"10.1007/s00429-017-1576-y",29181589,"PMC5884919",,,,"N","R",
-8638,"10.1371/journal.pcbi.1003548",24763382,"PMC3998884",,,,"N","R","cortical motifs"
-7457,"10.1016/j.neuropharm.2012.08.004",22921923,"PMC3586788",,,,"N","R","effects of chronic cocaine exposure"
-9381,"10.1523/jneurosci.21-12-04416.2001",11404428,"PMC6762731",,,,"N","R","specifically studies new world monkeys, rather than macaques"
-3798,"10.1152/jn.1984.51.3.450",6699675,,,,,"N","R","midbrain stimulation"
-8141,"10.3389/fncom.2015.00155",26834619,"PMC4717295",,,,"N","R","simulated the responses of a biomimetic spiking neural network model of the visual cortex"
-1912,"10.1152/jn.01156.2007",18684912,"PMC2576217",,,,"N","R",
-2787,"10.1152/jn.00198.2020",32965147,"PMC8356778",,,,"N","R","thalamic deep brain stimulation"
-2622,"10.1523/jneurosci.02-09-01275.1982",7119875,"PMC6564315",,,,"N","R",
-825,"10.1038/299439a0",7121580,,,,,"N","R",
-479,,,,"Y","Y","N","N","R/D/A","SC Inputs to the P-Thalamus"
-2228,"10.1016/s1053-8119(03)00148-4",12880805,,,,,"N","R",
-2514,"10.1016/0006-8993(87)90881-x",2446708,,,,,"N","R","Distribution of neuropeptides"
-5127,"10.1038/s42003-021-01804-z",33664430,"PMC7933420",,,,"N","R","V1 lesion"
-9273,"10.1111/eth.12236",25635152,"PMC4285966",,,,"N","R","how did this slip through?"
-8335,"10.1523/jneurosci.2825-10.2010",21084608,"PMC2995693",,,,"N","R","A Functional Magnetic Resonance Imaging Effective Connectivity Study on humans"
-6636,"10.1038/mp.2009.90",19721434,"PMC2861147",,,,"N","R","effect of serotonine on behavior"
-9244,"10.1038/mt.2012.44",22453766,"PMC3412498",,,,"N","R","degradation of LGN after eye removall"
-5078,"10.14802/jmd.16062",28122432,"PMC5288669",,,,"N","R","interesting overview Fig 1 on gait control"
-2440,"10.1113/jphysiol.1992.sp018909",1501128,"PMC1179967","Y","Y","Y","N","R/D/A","reveals connections on the basis of cell recordings; seems not TT study"
-6814,"10.3389/fnhum.2018.00337",30210323,"PMC6119810",,,,"N","R",
-5390,"10.1016/j.celrep.2021.110134",34936869,"PMC8721284",,,,"N","R","mice"
-9648,"10.1089/hum.2008.137",19203243,"PMC2767387",,,,"N","R","gene therapy"
-4689,"10.3389/fncir.2018.00067",30210306,"PMC6121028",,,,"N","R","cholinergic neurons"
-659,"10.1038/nn.3393",23666179,,,,,"N","R","cites relevant papers, like ""Topographic organization of medial pulvinar connections with the prefrontal cortex in the rhesus monkey"""
-6362,"10.1021/jm800817h",19067522,"PMC2746395",,,,"N","R","pet ligands"
-4364,"10.1007/s00429-021-02367-9",34518902,"PMC8541938",,,,"N","R","Marmosets"
-9070,"10.1111/nyas.12882",26348486,"PMC4563817",,,,"N","R","nicotine addiction"
-8287,"10.1371/journal.pcbi.1000239",19079571,"PMC2585056",,,,"N","R","LFP"
-10396,"10.4061/2010/859101",20953364,"PMC2952897",,,,"N","R",
-5768,"10.1016/j.jneumeth.2020.108965",33011185,"PMC7744337",,,,"N","R",
-5284,"10.1016/j.neuroimage.2021.118379",34252527,"PMC8429261",,,,"N","R","cites relevant papers, like ""Comparative Aspects of Amygdala Connectivity"""
-3344,"10.1523/jneurosci.22-08-03189.2002",11943820,"PMC6757536",,,,"N","R","visual response timing"
-4005,"10.3389/fmedt.2022.856412",35450154,"PMC9016146","N",,,"N","R","contains literature-derived LGN connectivity model"
-10001,"10.1523/jneurosci.19-21-09480.1999",10531451,"PMC6782891",,,,"N","R",
-8253,"10.1002/cne.21018",16739196,"PMC4139035",,,,"N","R","studies plasticity"
-3973,"10.1016/0006-8993(75)90973-7",803392,,,,,"N","R","lesion study in marmoset"
-108,"10.1002/(sici)1096-9861(19960916)373:2<271::aid-cne9>3.0.co;2-0",8889927,,,,,"N","R","focuses on very special type of neurons: Histamine-Immunoreactive Neurons"
-9804,"10.1038/sj.npp.1301420",17443127,"PMC2167630",,,,"N","R","psychostimulants"
-9852,"10.1016/b978-0-12-809841-7.00022-8",,"PMC7170210",,,,"N","R",
-8343,"10.1038/s41467-017-02791-8",29374153,"PMC5785952",,,,"N","R",
-8181,"10.1007/s00401-017-1670-5",28084518,"PMC5250673",,,,"N","R",
-4119,"10.1126/sciadv.abg4246",34162548,"PMC8221616",,,,"N","R","PFC (dlPFC) to the dorsal caudate (dCD) and lateral mediodorsal thalamus (MDl)"
-8711,"10.1002/jnr.23900",27557736,"PMC5513674",,,,"N","R",
-5684,"10.1016/j.stem.2016.03.003",27049876,"PMC4826446",,,,"N","R",
-3709,"10.1016/0006-8993(88)91283-8",3378164,,,,,"N","R","tree shrew, not macaque"
-307,"10.1016/s0306-4522(00)00368-7",11074162,,,,,"N","R","lesion study"
-9123,"10.1136/jnnp.2003.016782",15145996,"PMC1739042",,,,"N","R",
-7375,"10.1098/rstb.2013.0483",25267825,"PMC4186236",,,,"N","R",
-4910,"10.1007/s10827-021-00801-9",34931275,"PMC8687879",,,,"N","R",
-9634,"10.3389/neuro.01.034.2008",19225587,"PMC2622758",,,,"N","R",
-763,"10.1016/0304-3940(92)90750-2",1279485,,,,,"N","R","rat thalamus"
-8975,"10.1093/brain/awv134",25981958,"PMC4492412",,,,"N","R","basal ganglia connectivity, not necessarily involving thalamus"
-4785,"10.1016/j.nbd.2020.105017",32679312,"PMC7450246",,,,"N","R",
-1898,"10.1016/j.neuropsychologia.2004.11.007",15707905,,,,,"N","R",
-4545,"10.7554/elife.04499",25432022,"PMC4280551",,,,"N","D",
-6137,"10.1152/jn.01083.2015",26912601,"PMC4922451",,,,"N","D",
-2415,"10.1073/pnas.0610742104",17261798,"PMC1783903","N",,,"N","D",
-4600,"10.3389/fneur.2022.1042887",36479052,"PMC9720270",,,,"N","D",
-1182,"10.1152/jn.1991.66.3.879",1753292,,"N",,,"N","D","thalamus to cerebellum and pallidum"
-2349,"10.1371/journal.pcbi.1005519",28472057,"PMC5436894",,,,"N","D",
-2411,"10.1038/nrn1299",14708002,,,,,"N","D",
-2495,"10.1016/s0165-0270(97)00099-x",9350972,,,,,"N","D",
-3961,"10.1002/syn.20891",21132811,"PMC3107898","N",,,"N","D",
-9186,"10.1016/j.biopsych.2010.09.041",21111403,"PMC3058124",,,,"N","D",
-9687,"10.1371/journal.pone.0024589",21931767,"PMC3171456","N",,,"N","D",
-7347,"10.1523/jneurosci.3134-07.2007",17913900,"PMC6672811","Y","N","Y","N","D","Cebus monkeys; basal ganglia and cerebellar projections to two cortical areas; using retrograde transneuronal transport of neurotropic viruses"
-4831,"10.3389/fpsyg.2023.1027872",36993883,"PMC10040846",,,,"N","D",
-5577,"10.1093/neuonc/noaa222.042",,"PMC7715104",,,,"N","D",
-9839,"10.1016/j.alcohol.2014.01.005",24680665,"PMC4016177",,,,"N","D",
-7675,"10.1007/s13365-019-00768-5",31218522,"PMC7296988",,,,"N","D",
-10938,,2243840,"PMC525675",,,,"N","D",
-7787,"10.1093/nc/nix019",30042851,"PMC6007168",,,,"N","D",
-2814,"10.1016/0165-3806(88)90007-7",3378187,,,,,"N","D",
-10943,"10.1111/j.1476-5381.1970.tb08517.x",4984801,"PMC1702793",,,,"N","D",
-779,"10.1016/b978-0-08-042274-9.50019-5",,,"N",,,"N","D",
-1431,"10.1111/j.1444-0938.2012.00819.x",23186138,,"N",,,"N","D",
-8238,"10.1007/s00259-016-3544-9",27817159,"PMC5215309",,,,"N","D",
-5893,"10.3389/fncel.2020.00213",32765222,"PMC7380267",,,,"N","D",
-1430,"10.1016/s0925-4927(99)00029-3",10641578,,"N",,,"N","D","humans"
-592,"10.1002/cne.900640102",,,"N","Y",,"N","D/A/R","seems very likely relevant, but the PDF text is very vague, difficult to recognize the text. RB: Paper is from 1936, before tracing studies were conducted. ""We chose macaques because they are the cheapest..."" is not something you would say today."
-1871,"10.1038/nn.4183",26642088,"PMC4696889",,,,"N","D",
-5027,"10.7554/elife.82467",36810199,"PMC10005762",,,,"N","D",
-2837,"10.1016/0014-4886(71)90109-9",5000934,,,,,"N","D",
-7977,"10.1538/expanim.64suppl-s",26084300,"PMC5338214",,,,"N","D",
-5176,"10.1177/0271678x18797328",30149778,"PMC6282216",,,,"N","D",
-8104,"10.1080/02643294.2016.1188065",27386744,"PMC5398312",,,,"N","D",
-3635,"10.1016/s0896-6273(02)01143-1",12526769,,,,,"N","D",
-546,"10.1002/cne.23513",24288173,"PMC3984622","Y","Y","Y","Y","D","V4 to some thalamic neucli"
-8302,"10.3389/fnint.2012.00091",23087625,"PMC3472215",,,,"N","D",
-5631,"10.3389/fcell.2021.661759",33996819,"PMC8118648",,,,"N","D",
-4967,"10.1021/acschemneuro.8b00103",29792035,"PMC6371780",,,,"N","D",
-8448,"10.1038/nrneurol.2013.222",24217509,"PMC5549938",,,,"N","D",
-6896,"10.1007/s11307-014-0749-9",24865402,"PMC4404702",,,,"N","D",
-10693,"10.1016/b978-0-7020-5318-4.00007-3",,"PMC7811793",,,,"N","D",
-2289,"10.1097/00005072-199411000-00002",7964896,,,,,"N","D",
-465,"10.3389/fnsys.2013.00056",24101896,"PMC3787245","Y","Y","Y","Y","D/R","review; subcortico-thalamo-cortical pathways. RB: I'd like to count this review in, we can always decide to use the original articles"
-37,"10.1002/cne.902560202",3549796,,,,,"N","D",
-1752,"10.1523/jneurosci.4452-08.2009",19211885,"PMC2676894","N",,,"N","D","high-resolution functional magnetic resonance imaging; lateral geniculate nucleus (LGN) and the superior colliculus (SC)"
-8090,"10.1038/s41593-020-00786-1",33542524,"PMC7933108",,,,"N","D",
-10757,"10.1136/jnnp.s1-14.55.227",21610771,"PMC1038938",,,,"N","D",
-5091,"10.1016/j.neuroscience.2020.10.022",33212224,"PMC7770119","Y","Y","N","N","D",
-35,"10.1002/cne.902710402",2454970,,"Y","Y","N","N","D","TT; but seems cortex not involved"
-6597,"10.1016/j.neuron.2012.04.014",22681693,"PMC3372858",,,,"N","D",
-8550,"10.1371/journal.pone.0132075",26135580,"PMC4489868",,,,"N","D",
-1975,"10.1152/jn.00936.2017",30256740,"PMC6295541",,,,"N","D",
-8903,"10.1016/j.tins.2014.12.007",25583269,"PMC4352381",,,,"N","D",
-10306,"10.1002/bsl.862",19319834,"PMC2729461",,,,"N","D",
-147,"10.1016/s0361-9230(02)00857-2",12379444,,"Y","Y","Y","Y","D","posterior parietal cortex (PPC) to the ventral lateral thalamic nucleus (VL) and three thalamic association nuclei, mediodorsal (MD), lateral posterior (LP) and pulvinar"
-2638,"10.1016/j.brs.2016.10.005",27839724,"PMC5241168",,,,"N","D",
-8602,"10.1038/s41398-018-0278-4",30341278,"PMC6195525",,,,"N","D",
-4382,"10.1038/s42003-021-02623-y",34531520,"PMC8446038",,,,"N","D",
-5956,"10.3389/fnins.2018.00516",30108478,"PMC6079296",,,,"N","D",
-2234,"10.1111/j.1460-9568.2004.03743.x",15548215,,,,,"N","D",
-2562,"10.1016/s0370-4475(73)80023-1",4377891,,,,,"N","D",
-9213,"10.1371/journal.pone.0085539",24465593,"PMC3896409",,,,"N","D",
-5360,"10.1101/2023.01.20.524896",36711724,"PMC9882283",,,,"N","D",
-809,"10.1002/cne.901990205",7251940,,"Y","Y","N","N","D/A","corticostriate projections from temporal cortex; thalamus seems not involved"
-9669,"10.1007/s12021-017-9347-8",29297140,"PMC5797202",,,,"N","D",
-7082,"10.3389/fnagi.2021.632054",33927608,"PMC8078548",,,,"N","D",
-3772,"10.1152/jn.1966.29.6.1115",4961644,,,,,"N","D",
-268,"10.1007/978-1-349-11597-6_12",,,,,,"N","D/A","Thalamic Input to the Sensorimotor Cortex of the Macaque Monkey; but full text not available, seems not TT study by reading the abstract"
-1177,"10.1016/j.pscychresns.2010.09.009",21546223,,,,,"N","D",
-9685,"10.1002/syn.20977",21858872,"PMC3356922",,,,"N","D",
-9777,,13141060,"PMC1804478",,,,"N","D",
-4611,"10.7554/elife.47175",31689177,"PMC6831033",,,,"N","D",
-1667,"10.1016/s0306-4522(98)00527-2",10218781,,,,,"N","D",
-562,"10.1002/cne.903050104",1709648,,"Y","Y","Y","N","D/A","TT, projection from the central complex of the thalamus to the sensorimotor striatal territory in monkeys; seems cortex not involved"
-6928,"10.1152/jn.00845.2009",21106898,"PMC3059174",,,,"N","D",
-846,"10.1002/cne.902570106",3571519,,,,,"N","D/A","Golgi preparations"
-6203,"10.1146/annurev-vision-030320-041306",32580663,"PMC7501212",,,,"N","D","review about the V4 in macaque, not TT study"
-8584,"10.1016/j.fob.2014.10.001",25379384,"PMC4215120",,,,"N","D",
-1838,"10.1016/j.neures.2010.05.005",20561955,,,,,"N","D",
-8553,"10.1073/pnas.0913110107",20439733,"PMC2890438",,,,"N","D",
-10529,,13192017,"PMC1244675",,,,"N","D",
-6182,"10.1155/2017/6975841",29348737,"PMC5733838",,,,"N","D",
-10576,"10.1073/pnas.79.8.2695",6953423,"PMC346268",,,,"N","D",
-8753,"10.1177/2398212818772179",32166139,"PMC7058233",,,,"N","D",
-528,"10.1016/0006-8993(79)90485-2",116716,,"Y","N",,"N","D","autoradiographic and horseradish peroxidase procedures; Cortical connections within the occipital lobe in rhesus monkey"
-4808,"10.1002/hbm.23506",28054725,"PMC6866819",,,,"N","D",
-7149,"10.14802/jmd.19046",31556259,"PMC6763716",,,,"N","D",
-4655,"10.1038/s41386-021-01140-0",34408279,"PMC8617092",,,,"N","D",
-9320,"10.1002/hbm.20530",18219621,"PMC6870909",,,,"N","D",
-6289,"10.3389/fnana.2018.00070",30174592,"PMC6107687",,,,"N","D",
-4220,"10.7554/elife.77568",36205397,"PMC9545527",,,,"N","D",
-8625,"10.3389/fpsyg.2013.00600",24062704,"PMC3769680",,,,"N","D",
-8883,"10.1016/j.expneurol.2012.04.025",22579525,"PMC3367030",,,,"N","D",
-1809,"10.1002/(sici)1097-0193(1996)4:3<174::aid-hbm3>3.0.co;2-0",20408197,,,,,"N","D",
-9302,"10.3389/neuro.04.019.2009",19949461,"PMC2783723",,,,"N","D",
-823,"10.1016/s0006-8993(98)01182-2",9889315,,"Y","Y","N","N","D","thalamus not involved"
-322,"10.1523/jneurosci.1991-09.2009",19776262,"PMC2796834",,,,"N","D",
-3639,"10.1159/000123159",7194426,,,,,"N","D",
-7631,"10.3389/fnins.2019.00179",30894798,"PMC6414438",,,,"N","D",
-8651,"10.1002/hbm.21260",21416562,"PMC3812802",,,,"N","D",
-2250,"10.1023/a:1024161623560",12815240,,,,,"N","D",
-1013,"10.1016/s0006-3223(00)00826-x",10838062,,,,,"N","D",
-2069,"10.1111/j.1460-9568.1996.tb01219.x",8714706,,,,,"N","D",
-1330,"10.1002/cne.10113",11793354,,,,,"N","D","marmoset monkeys; Cortical and thalamic connections of the parietal ventral somatosensory area"
-4153,"10.3389/fnsys.2020.606345",33362482,"PMC7759542",,,,"N","D",
-2268,"10.1111/j.1460-9568.1996.tb01608.x",8758953,,,,,"N","D",
-4406,"10.1080/20008066.2022.2131969",36276555,"PMC9586666",,,,"N","D",
-5425,"10.1002/ame2.12166",34179718,"PMC8212819",,,,"N","D",
-2034,"10.1001/archneurol.2012.590",22566505,,,,,"N","D",
-41,"10.1002/cne.903440403",7523458,,"Y","Y","Y","Y","D","thalamic projections of primary olfactory (olfactory tubercle and prepiriform cortex) and transitional orbital (areas PAPP, Pro 13) and medial (areas 25, 24, 32) areas, and of eulaminate (areas 11, 12, 9) cortices"
-10572,,3612244,"PMC6568965",,,,"N","D",
-5632,"10.1038/s41593-020-0692-9",32807948,"PMC8015416",,,,"N","D",
-5998,"10.1002/ame2.12062",31392301,"PMC6600652",,,,"N","D",
-1152,"10.1016/0006-8993(91)90853-n",1718552,,"Y","Y","N","N","D","TT, but not on TC or CT but studies the cells of LCN in monkey"
-6591,"10.3389/fncel.2022.836116",35281300,"PMC8913896",,,,"N","D",
-5131,"10.1016/j.toxrep.2023.02.014",36923444,"PMC10009680",,,,"N","D",
-3255,"10.1002/ana.410150603",6742787,,,,,"N","D",
-10489,"10.1523/jneurosci.07-07-01969.1987",2886562,"PMC6568930",,,,"N","D",
-4320,"10.3389/fnana.2022.837527",35692259,"PMC9174433",,,,"N","D",
-6320,"10.3389/fnana.2019.00010",30809133,"PMC6380082",,,,"N","D",
-10958,"10.1128/br.17.suppl.339-448.1953",13115328,"PMC182568",,,,"N","D",
-3352,"10.1016/s0092-1157(77)80012-7",200628,,,,,"N","D",
-4101,"10.1093/cercor/bhy327",30668846,"PMC6418397",,,,"N","D",
-4272,"10.1093/cercor/bhz054",30927350,"PMC6918932",,,,"N","D",
-4828,"10.3389/fnins.2019.01099",31780878,"PMC6861303",,,,"N","D",
-5964,"10.1016/j.neuron.2014.01.017",24583023,"PMC4020629",,,,"N","D",
-572,"10.1016/0306-4522(84)90007-1",6483194,,"Y","Y","N","N","D","TT; Retinal ganglion cells project to the superior colliculus and pretectum in the macaque monkey; thalamus and cortex not involved"
-8371,"10.1371/journal.pbio.1000305",20126380,"PMC2814823",,,,"N","D",
-6838,"10.1101/2021.02.01.429141",,,,,,"N","D",
-3610,"10.1212/wnl.23.1.63",4631496,,,,,"N","D",
-1908,"10.1002/syn.1039",11304754,,,,,"N","D",
-8664,"10.1073/pnas.93.16.8683",8710931,"PMC38733","Y","Y","Y","N","D/A","TT; one of the output nuclei of the basal ganglia, the substantia nigra pars reticulata, projects via the thalamus to TE; not sure if certain thalamic neucli and cortical areas involved"
-3712,"10.1016/j.nbd.2018.08.002",30086388,,,,,"N","D",
-7215,"10.1002/hbm.23818",28960637,"PMC6866315",,,,"N","D",
-4455,"10.1002/hbm.25657",34528323,"PMC8596959",,,,"N","D",
-1594,"10.1016/j.pscychresns.2010.06.006",20832256,,,,,"N","D",
-4991,"10.1038/s41467-022-35658-8",36599827,"PMC9813152",,,,"N","D",
-5688,"10.1155/2021/6685204",34336113,"PMC8315852",,,,"N","D",
-8387,"10.1016/j.tins.2012.01.006",22402065,"PMC3348364",,,,"N","D",
-10940,,,"PMC503244",,,,"N","D",
-6947,"10.3389/fncom.2014.00044",24782752,"PMC3989587",,,,"N","D",
-4179,"10.1111/adb.13142",35470557,"PMC9444692",,,,"N","D",
-3734,"10.1002/cne.10689",12724841,,,,,"N","D",
-9376,"10.1016/j.cub.2012.01.011",22305753,"PMC3288404",,,,"N","D",
-8797,"10.1038/srep01138",23378897,"PMC3560357",,,,"N","D",
-8708,"10.1155/2012/304045",22779006,"PMC3384885",,,,"N","D",
-3147,"10.1002/cne.24494",30004587,"PMC6283693",,,,"N","D","lesion"
-1086,"10.3389/fnana.2016.00015",26941613,"PMC4761867",,,,"N","D",
-6509,"10.1093/neuros/nyz225",31264700,"PMC7156292",,,,"N","D",
-8212,"10.1038/npp.2017.264",,"PMC5719065",,,,"N","D",
-7875,"10.1371/journal.pone.0005527",19436733,"PMC2677457",,,,"N","D",
-5611,"10.1016/j.neuroimage.2018.10.006",30291974,"PMC6289683",,,,"N","D","human; corticocortical connection"
-9032,"10.1016/j.nbd.2007.04.016",17588764,"PMC2674779",,,,"N","D",
-6221,"10.1038/s41593-019-0406-3",31110324,"PMC6592747",,,,"N","D",
-6125,"10.1093/pm/pnab056",33565583,"PMC8502467",,,,"N","D",
-5670,"10.1016/j.neuroimage.2016.02.029",26899785,"PMC4851897",,,,"N","D",
-3552,"10.1523/jneurosci.20-16-06030.2000",10934252,"PMC6772595","N",,,"N","D","cat;"
-8689,"10.1002/ar.22451",22461313,"PMC3379817","Y","N",,"N","D","marmoset monkeys; cortical connections of auditory cortex"
-2079,"10.1038/jcbfm.1992.141",1328263,,,,,"N","D",
-10029,"10.1098/rstb.2000.0552",10703047,"PMC1692715",,,,"N","D","functional connectivity; primate cerebral cortex"
-5969,"10.1021/acschemneuro.7b00505",29470055,"PMC6119516",,,,"N","D",
-2427,"10.1007/bf00228509",1756835,,,,,"N","D",
-8058,"10.3389/fneur.2014.00054",24803911,"PMC4009446",,,,"N","D",
-2653,"10.1007/bf00237149",6628597,,,,,"N","D",
-7015,"10.1016/j.neuroimage.2010.03.015",20298794,"PMC2877377",,,,"N","D",
-7253,"10.1016/j.neuroscience.2012.12.032",23370320,"PMC4260774",,,,"N","D",
-6949,"10.1002/hbm.22366",24027207,"PMC6869822",,,,"N","D",
-2483,"10.1152/jn.00033.2003",12634274,,,,,"N","D",
-6393,"10.3389/fninf.2014.00083",25426062,"PMC4227511",,,,"N","D",
-9954,"10.1186/s40349-016-0079-2",,"PMC5374646",,,,"N","D",
-7896,"10.1371/journal.pone.0077377",24223120,"PMC3819360",,,,"N","D",
-5556,"10.3389/fpsyt.2015.00158",26617532,"PMC4639708",,,,"N","D",
-2127,"10.1046/j.1469-7580.2001.19840463.x",11327208,"PMC1468232","Y","N",,"N","D","TT; rat; The afferent connections of the posterior hypothalamic nucleus"
-2579,"10.1152/jn.1981.46.4.797",7288465,,,,,"N","D","primate spinothalamic tract neurons receiving viscerosomatic convergent inputs in T3-T5 segments"
-7183,"10.1152/jn.00278.2014",25505104,"PMC4346719",,,,"N","D",
-1535,,10213088,"PMC2453001",,,,"N","D",
-720,"10.1016/0006-8993(77)90417-6",407975,,"Y","Y","N","N","D","Intrahemispheric cortical afferents to Prefrontal granular cortex; rhesus monkey"
-5811,"10.2176/nmc.ra.2015-0172",26466888,"PMC4686449",,,,"N","D",
-365,"10.1002/cne.903620202",8576431,,"Y","Y","Y","N","D",
-7625,"10.3389/fneur.2018.01129",30687211,"PMC6335946",,,,"N","D",
-5019,"10.1523/jneurosci.2275-20.2021",33622780,"PMC8026344",,,,"N","D",
-10920,,17105102,"PMC1273703",,,,"N","D",
-4359,"10.3389/fvets.2022.889561",35782557,"PMC9244381",,,,"N","D",
-7710,"10.3390/ijms20102604",31137894,"PMC6567036",,,,"N","D",
-4931,"10.1038/s42003-023-05042-3",37353519,"PMC10290066",,,,"N","D",
-8013,"10.1016/j.neuroimage.2007.09.063",18024084,"PMC2275117",,,,"N","D",
-4590,"10.1371/journal.ppat.1010658",35759511,"PMC9269911",,,,"N","D",
-1156,"10.1097/00005072-199403000-00012",8120542,,,,,"N","D",
-8292,,16286422,"PMC7976217",,,,"N","D",
-8838,"10.3389/fnana.2014.00032",24904301,"PMC4034043",,,,"N","D",
-972,"10.1093/schbul/23.3.483",9327511,,,,,"N","D",
-3248,"10.1016/s0959-4388(02)00349-5",12139991,,,,,"N","D",
-7387,"10.1152/jn.00585.2007",17804579,"PMC2410032",,,,"N","D",
-3282,"10.1016/0006-8993(75)90534-x",809094,,,,,"N","D",
-1556,"10.1111/j.1749-6632.1999.tb09291.x",10415673,,,,,"N","D",
-5829,"10.1016/j.brs.2016.06.051",27401045,"PMC5143196",,,,"N","D",
-758,"10.1002/cne.10720",12761828,,"Y","Y","Y","Y","D","Thalamocortical and intracortical connections of monkey cingulate motor areas; Macaca fuscata"
-1514,"10.7554/elife.19103",27892854,"PMC5207773",,,,"N","D",
-7319,"10.1089/hum.2008.035",18576918,"PMC2748764",,,,"N","D",
-2070,"10.1002/hbm.21175",21259388,"PMC6870119",,,,"N","D",
-2298,"10.1002/(sici)1097-0185(19990801)255:4<396::aid-ar5>3.0.co;2-m",10409812,,,,,"N","D",
-9222,"10.1152/jn.00760.2014",25855697,"PMC4480625",,,,"N","D",
-7467,"10.1155/2012/250196",23213572,"PMC3504471",,,,"N","D",
-4795,"10.1016/j.tics.2017.03.002",28363681,"PMC5534266",,,,"N","D",
-6216,"10.1002/cne.23456",23983014,"PMC3945972",,,,"N","D",
-3694,"10.1016/0304-3940(81)90255-x",7322447,,,,,"N","D",
-9969,"10.1089/brain.2011.0033",22433046,"PMC3677805",,,,"N","D",
-6113,"10.1016/j.biopsych.2013.11.012",24342924,"PMC4022724",,,,"N","D",
-6424,"10.1016/j.neulet.2017.04.065",28473258,"PMC5665731",,,,"N","D",
-6104,"10.3389/fnana.2014.00081",25177277,"PMC4133926",,,,"N","D",
-7779,"10.1007/s00702-015-1475-4",26497023,"PMC4919383",,,,"N","D",
-330,"10.1002/cne.902800102",2465325,,"Y","Y","Y","Y","D","inferior parietal cortex (area 7) to the nucleus ventralis posterior inferior, the magnocellular part of the medial geniculate nucleus, and some intralaminar nuclei; macaca fascicularis"
-3787,"10.1007/s007020050042",9660091,,,,,"N","D",
-10715,,14406391,"PMC2537982",,,,"N","D",
-1188,"10.1523/jneurosci.1914-07.2007",17942723,"PMC2242856",,,,"N","D",
-8381,"10.1523/jneurosci.1937-09.2009",19710303,"PMC3311469",,,,"N","D",
-2865,"10.1089/aid.2014.0029",24697643,"PMC3976595",,,,"N","D",
-5409,"10.1162/netn_a_00098",31637337,"PMC6777980",,,,"N","D",
-10569,"10.1523/jneurosci.14-11-06336.1994",7965040,"PMC6577268",,,,"N","D",
-5305,"10.3389/fnhum.2022.981366",36158615,"PMC9494563",,,,"N","D",
-10096,"10.1016/j.neuroimage.2010.07.054",20691793,"PMC8015308",,,,"N","D",
-3636,"10.1038/srep36329",27874058,"PMC5118870",,,,"N","D",
-9239,"10.1523/jneurosci.0686-13.2014",24647934,"PMC3960459",,,,"N","D",
-4640,"10.1007/s00429-018-1811-1",30547311,"PMC6420469",,,,"N","D",
-3683,"10.1093/cercor/bht070",23529006,,"Y","Y","Y","Y","D/A","TT; macaque; seems focus on the axon diameter of the connection instead of connection between areas and count the FLN"
-2488,"10.1002/cne.903490108",7852621,,"Y","Y","N","N","D","TT; studies afferent and efferent connections of the pretectal nucleus of the optic tract (NOT)"
-3767,"10.1007/s002590050482",10552091,,,,,"N","D",
-6923,"10.3389/fnins.2011.00083",21734863,"PMC3124130",,,,"N","D",
-510,"10.1159/000100184",1981945,,,,,"N","D",
-10109,"10.1136/jnnp.41.4.374",650247,"PMC493033",,,,"N","D",
-9535,"10.1136/jnnp.65.2.155",9703164,"PMC2170218",,,,"N","D",
-717,"10.1016/j.nicl.2018.01.008",29387530,"PMC5790021",,,,"N","D",
-3989,"10.1038/s41467-023-38582-7",37291094,"PMC10250345",,,,"N","D",
-8385,"10.1136/jnnp.57.11.1395",7964818,"PMC1073193",,,,"N","D",
-5872,"10.1016/j.neuron.2011.02.040",21435553,"PMC3069934",,,,"N","D",
-9394,,,"PMC4049875",,,,"N","D",
-5983,"10.7554/elife.43019",30561328,"PMC6312400",,,,"N","D",
-4699,"10.1016/j.ymthe.2018.07.008",30057240,"PMC6171051",,,,"N","D",
-2004,"10.1177/0333102420963850",33040593,,,,,"N","D",
-5493,"10.1186/s12868-019-0538-0",31722661,"PMC6854655",,,,"N","D",
-5,"10.1038/372770a0",7695716,,"Y","Y","N","N","D","TT; anterograde tracing and single unit recordings to demonstrate that there is a distinct nucleus in the posterior thalamus of the macaque monkey that receives a dense, topographic input from spinothalamic lamina I neurons and in which almost all neurons are nociceptive- or thermoreceptive-specific"
-6071,"10.1162/netn_a_00088",31410379,"PMC6663318",,,,"N","D",
-10089,"10.1007/s00213-009-1562-z",19455309,"PMC2814770",,,,"N","D",
-4907,"10.1038/nature18637",27409810,"PMC5325728",,,,"N","D",
-2355,"10.1016/s0079-6123(08)60362-3",8493325,,,,,"N","D","book chapter; rabbit; functional organization; from superior colliculus to the lateral posterior nucleus"
-5703,"10.1126/sciadv.1600558",27679817,"PMC5031467",,,,"N","D",
-2974,"10.1016/0304-3940(79)96094-4",119193,,,,,"N","D",
-3133,"10.1016/0006-8993(71)90100-4",5002631,,,,,"N","D","lesion; corticofugal connections of area 8 (frontal eye field) in Macaca mulatta"
-7524,"10.3389/fnbeh.2018.00284",30524254,"PMC6256247",,,,"N","D",
-3761,"10.1016/j.nbd.2011.09.016",22001603,,,,,"N","D",
-5488,"10.1016/j.brainres.2008.09.013",18817759,"PMC2603251","Y","N",,"N","D","Very typical TT studies on TC and CT, but in rats not macaque"
-3933,"10.1016/0306-4522(88)90292-8",2905789,,,,,"N","D",
-755,"10.1016/0006-8993(77)90780-6",412567,,,,,"N","D",
-6833,"10.1016/j.biopsych.2012.05.001",22672928,"PMC3440537",,,,"N","D",
-9754,,,"PMC8331702",,,,"N","D",
-4445,"10.1073/pnas.2022097118",33723059,"PMC8000025",,,,"N","D",
-4975,"10.1038/s41467-021-27753-z",35013266,"PMC8748921",,,,"N","D",
-10303,"10.1136/jnnp.57.4.480",8164000,"PMC1072880",,,,"N","D",
-100,"10.1002/cne.24283",28685822,"PMC6370318","Y","Y","Y","Y","D","TT; Thalamic connections of the core auditory cortex and rostral supratemporal plane in the macaque monkey"
-5529,"10.3390/biomedicines9030314",33808538,"PMC8003204",,,,"N","D",
-2788,"10.1016/j.neulet.2008.05.047",18539394,,,,,"N","D",
-3495,"10.1017/s0952523813000382",24103417,"PMC4150219",,,,"N","D",
-6017,"10.1109/tbme.2015.2492921",26529747,"PMC4716872",,,,"N","D",
-337,"10.1007/bf00237085",407094,,,,,"Y","D",
-7600,"10.1186/s40478-017-0413-0",28148299,"PMC5289012",,,,"N","D",
-127,"10.1111/ejn.12389",24134130,"PMC4112842","Y","Y","Y","Y","D",
-6004,"10.1093/geroni/igaa057.1582",,"PMC7743032",,,,"N","D",
-6388,"10.3389/fnins.2016.00131",27147942,"PMC4834347",,,,"N","D",
-9957,,819404,"PMC1231801",,,,"N","D",
-3661,"10.1016/j.neuroimage.2005.11.033",16466679,,,,,"N","D",
-2742,"10.1126/science.146.3648.1184",14203683,,,,,"N","D",
-4373,"10.3389/fnhum.2021.749162",34650419,"PMC8507972",,,,"N","D",
-5417,"10.1177/01926233221101309",35658751,"PMC9284083",,,,"N","D",
-9622,"10.1128/jvi.78.22.12497-12507.2004",15507637,"PMC525070",,,,"N","D",
-476,"10.1017/s0952523801185068",11925008,,"Y","Y","Y","Y","D/A","TT; Cortical and subcortical afferents to the nucleus reticularis tegmenti pontis and basal pontine nuclei in the macaque monkey; seems thalamus not involved"
-8119,"10.1371/journal.pone.0030341",22279584,"PMC3261205",,,,"N","D",
-5134,"10.1016/j.neuron.2015.05.040",26087167,"PMC4534089",,,,"N","D",
-2220,"10.1016/j.molmet.2015.07.008",26500843,"PMC4588458",,,,"N","D",
-7506,"10.1523/jneurosci.1464-13.2013",23843520,"PMC3724553",,,,"N","D",
-10801,"10.1007/978-3-540-70995-4_2",,"PMC7122603",,,,"N","D",
-496,"10.1002/cne.902210206",6655080,,"Y","Y","N","N","D","intrinsic connectional organization; seems not involving thalamus"
-3930,"10.1002/cne.903290203",8384222,,"Y","Y","N","N","D","nocturnal prosimian bush babies (Galago crassicaudatus) and diurnal simian squirrel monkeys (Saimiri sciureus)"
-10484,"10.1136/jnnp.58.3.312",7897412,"PMC1073367",,,,"N","D",
-1913,"10.1016/s0166-4328(05)80018-x",1751004,,,,,"N","D",
-4302,"10.1016/j.isci.2021.102685",34195565,"PMC8233199",,,,"N","D",
-1582,"10.3389/fnana.2014.00010",24634646,"PMC3942891","Y","Y","N","N","D","TT; Projections from the dorsal and ventral cochlear nuclei to the medial geniculate body; cortex not involved; CN to the MG in guinea pigs, rats, chimpanzees, and perhaps, rhesus monkeys"
-1031,"10.1007/bf00231444",1712314,,,,,"N","D",
-7386,"10.1016/j.tics.2017.03.009",28483638,"PMC5497785",,,,"N","D",
-2252,"10.1016/s0006-8993(00)02044-8",10760495,,,,,"N","D",
-9664,"10.2903/j.efsa.2017.4691",32625422,"PMC7233269",,,,"N","D",
-9794,"10.1523/jneurosci.16-18-05854.1996",,"PMC6578972",,,,"N","D",
-8039,"10.3389/fneur.2011.00014",21516258,"PMC3080035",,,,"N","D",
-9756,"10.1523/jneurosci.3575-07.2007",17978017,"PMC3275424",,,,"N","D",
-3445,"10.1098/rstb.1984.0021",6142484,,,,,"N","D","cytoarchitectonic feature of monkey visual cortex"
-8476,"10.3389/neuro.06.002.2008",18958246,"PMC2526275",,,,"N","D",
-8124,"10.1002/hbm.22364",24038902,"PMC4791049",,,,"N","D",
-7437,"10.4172/2153-2435.1000357",26146587,"PMC4486668",,,,"N","D",
-7630,"10.1152/jn.90446.2008",18579658,"PMC2544461",,,,"N","D",
-9926,"10.1523/jneurosci.2583-04.2004",15537873,"PMC6730185",,,,"N","D",
-4783,"10.1038/s41386-022-01486-z",36456695,"PMC9714408",,,,"N","D",
-8465,"10.3389/fped.2014.00091",25225634,"PMC4150055",,,,"N","D",
-9087,"10.1038/jcbfm.2009.195",19773803,"PMC2949107",,,,"N","D",
-7129,"10.3389/fncom.2013.00189",24454286,"PMC3888935",,,,"N","D",
-9231,"10.1016/j.brainres.2008.06.007",18582447,"PMC2596929",,,,"N","D",
-1453,"10.1016/j.nucmedbio.2009.02.007",19520289,"PMC2696062",,,,"N","D",
-5938,"10.1073/pnas.1802356115",29588415,"PMC5899496",,,,"N","D",
-1284,"10.1016/0304-3940(96)13052-4",8905726,,"Y","Y","Y","Y","D","TT; direct projections from the dorsal lateral geniculate nucleus (dLGN) to visual cortical area TE in macaque monkeys not exists, other connections exist"
-2081,"10.1523/jneurosci.5077-06.2007",17344406,"PMC6672514",,,,"N","D",
-5121,"10.1016/j.neuroimage.2022.118989",35151851,"PMC8940652",,,,"N","D",
-6664,"10.1016/j.neuron.2018.05.020",29879384,"PMC6009852",,,,"N","D",
-4085,"10.7554/elife.77690",37166452,"PMC10174693",,,,"N","D",
-5489,"10.1098/rstb.2015.0180",26598734,"PMC4685590",,,,"N","D",
-628,"10.7554/elife.37325",29848447,"PMC6010338",,,,"N","D",
-2190,"10.1111/j.0953-816x.2004.03393.x",15182320,,,,,"N","D",
-4502,"10.1523/jneurosci.0860-20.2020",32989097,"PMC7577604",,,,"N","D",
-1713,"10.1016/j.neuroimage.2005.06.015",16027010,,,,,"N","D",
-4361,"10.1039/d2cc03785h",35943085,"PMC9618257",,,,"N","D",
-7522,"10.1152/jn.00812.2014",26936980,"PMC4922480",,,,"N","D","rats"
-8379,"10.1016/j.cell.2014.06.017",24998929,"PMC4136921",,,,"N","D",
-10206,"10.1371/journal.pcbi.0030017",17274684,"PMC1794324",,,,"N","D",
-7288,"10.1016/j.jhevol.2012.12.003",23466178,"PMC3756831",,,,"N","D",
-7230,"10.1523/jneurosci.2221-16.2017",28242799,"PMC6596923",,,,"N","D",
-5824,"10.1038/srep03730",24429495,"PMC3893648",,,,"N","D",
-4692,"10.3389/fnins.2021.773404",35280341,"PMC8914088",,,,"N","D",
-8087,,20011078,"PMC2791039",,,,"N","D",
-1664,"10.1093/cercor/12.11.1193",12379607,,,,,"N","D",
-1143,"10.3389/fncir.2015.00054",26500504,"PMC4597482",,,,"N","D","model"
-4809,"10.1073/pnas.1902279116",31871147,"PMC6936691",,,,"N","D",
-5272,"10.3389/fnagi.2023.1088829",36909943,"PMC9992546",,,,"N","D",
-6693,"10.3389/fnsyn.2020.567075",33408624,"PMC7779639",,,,"N","D",
-10964,,,"PMC1089904",,,,"N","D",
-6904,"10.1038/s41598-018-30001-y",30068995,"PMC6070473",,,,"N","D",
-6618,"10.1152/jn.00880.2017",30379631,"PMC6383655",,,,"N","D",
-114,"10.1002/cne.902770304",2461974,,"Y","Y","Y","Y","D/A","TT; macaque; basal forebrain efferents to the medial dorsal thalamic nucleus in the rhesus monkey; seems cortex not involved?"
-7285,"10.1016/j.neuroimage.2013.01.007",23333701,"PMC3756817",,,,"N","D",
-1827,"10.1111/j.1749-6632.1995.tb38127.x",8595019,,"Y","Y","Y","Y","D/R","This is a review, if possible use the original studies cited."
-4912,"10.1016/j.cub.2020.10.091",33278356,"PMC8018535",,,,"N","D",
-5135,"10.1007/s00702-017-1713-z",28324169,"PMC5608633",,,,"N","D","thalamostriatal projection; not TT"
-10013,"10.1152/jn.00848.2005",16339000,"PMC2365900",,,,"N","D",
-2961,"10.1126/science.7268423",7268423,,"Y","Y","N","N","D",
-2703,"10.1002/cne.902010107",7276252,,"Y","Y","Y","Y","D","Direct projection from the dorsal lateral geniculate nucleus to the prestriate cortex in macaque monkeys"
-4904,"10.1093/braincomms/fcaa232",33959707,"PMC8088816",,,,"N","D",
-6055,"10.7916/d89s37mv",30402338,"PMC6214818",,,,"N","D",
-1941,"10.1016/0042-6989(94)e0083-w",7839599,,,,,"N","D",
-1293,"10.1103/physreve.106.054304",36559437,,"N",,,"N","D",
-3284,,11726625,,,,,"N","D",
-7354,"10.1371/journal.pone.0143407",26599395,"PMC4658112",,,,"N","D",
-1362,"10.1152/jn.1995.74.4.1800",8989416,,"N",,,"N","D",
-8438,"10.2967/jnumed.109.065284",19837759,"PMC3065020",,,,"N","D",
-2753,"10.1523/jneurosci.08-05-01594.1988",3367212,"PMC6569196",,,,"N","D",
-4300,"10.1093/cercor/bhab285",34518890,"PMC9016287",,,,"N","D",
-8891,"10.1177/1073858414540216",24972604,"PMC4723268",,,,"N","D",
-1363,"10.1002/cne.903330206",8393892,,"Y","Y","Y","Y","D",
-8892,"10.1016/s0002-9440(10)65224-8",10514404,"PMC1867008",,,,"N","D",
-3095,"10.1007/bf00237664",4018198,,"N",,,"N","D","electrical responses from dLGN cells in three M. fascicniaris monkeys"
-7575,"10.1038/tp.2015.189",26645628,"PMC5068588",,,,"N","D",
-10717,,1458282,"PMC1907398",,,,"N","D",
-6441,"10.1152/jn.00559.2010",21613589,"PMC3154823",,,,"N","D",
-8178,"10.1523/jneurosci.0026-14.2014",25186756,"PMC4152609",,,,"N","D",
-1615,"10.1152/jn.1996.76.6.3633",8985863,,"Y","N",,"N","D","marmoset monkeys; "
-1193,"10.1093/cercor/bhq028",20211942,"PMC2978239","N",,,"N","D",
-1181,"10.1523/jneurosci.0071-22.2022",35953294,"PMC9480880","Y","Y","N","N","D","Crossed Corticostriatal Projections in the Macaque Brain"
-2196,"10.1371/journal.pone.0009302",20352085,"PMC2844408",,,,"N","D",
-4583,"10.3389/fnins.2013.00024",23658535,"PMC3647142",,,,"N","D","review; ultra-high resolution imaging; Functional mapping"
-2344,"10.1007/s00401-018-1904-1",30191402,"PMC6208731",,,,"N","D",
-7629,"10.1074/jbc.rev120.008207",33219130,"PMC7948403",,,,"N","D",
-5113,"10.3389/fnins.2018.00475",30061809,"PMC6054994",,,,"N","D",
-5368,"10.1111/ejn.15393",34273134,"PMC9291791",,,,"N","D",
-4429,"10.3346/jkms.2019.34.e66",30833883,"PMC6393759",,,,"N","D",
-4454,"10.1126/sciadv.adg2252",37418525,"PMC10328400",,,,"N","D",
-10645,,4606887,"PMC1129565",,,,"N","D",
-2784,"10.1126/science.282.5391.1062",9841454,,,,,"N","D",
-9972,,,"PMC6453219",,,,"N","D",
-10900,,,"PMC1583040",,,,"N","D",
-6817,"10.1523/jneurosci.0403-16.2016",27251623,"PMC4887566",,,,"N","D",
-7381,"10.1371/journal.pntd.0005296",28068342,"PMC5249252",,,,"N","D",
-323,"10.1006/nimg.2002.1178",12482073,,,,,"N","D",
-1707,"10.1016/j.cogbrainres.2004.01.005",15464352,,,,,"N","D",
-1513,"10.1523/jneurosci.16-03-01230.1996",8558251,"PMC6578812",,,,"N","D",
-8765,"10.1002/cne.20660",16052493,"PMC2474655","Y","Y","N","N","D","TT; Insular and Gustatory Inputs to the Caudal Ventral Striatum; not about TC or CT"
-7851,"10.1523/jneurosci.0848-14.2014",25339751,"PMC6608387",,,,"N","D",
-7321,"10.1111/nyas.14256",31617589,"PMC7154681",,,,"N","D",
-6870,"10.3389/fnins.2016.00310",27445678,"PMC4928151",,,,"N","D",
-10759,"10.1136/ard.54.9.757",7495351,"PMC1009995",,,,"N","D",
-10018,"10.1002/(sici)1097-0193(1999)8:4<209::aid-hbm5>3.0.co;2-0",10619415,"PMC6873313",,,,"N","D",
-4613,"10.1111/ejn.12844",25728177,"PMC4347938",,,,"N","D",
-4955,"10.1111/ejn.13726",28949036,"PMC5765455",,,,"N","D",
-7559,"10.1016/j.neuroimage.2013.05.079",23707587,"PMC3807588",,,,"N","D",
-7486,"10.1093/cercor/bhu154",25037923,"PMC4635915",,,,"N","D",
-6936,"10.1159/000367665",25721097,"PMC4540694",,,,"N","D",
-10916,,,"PMC2047647",,,,"N","D",
-9259,"10.1101/cshperspect.a019026",26801682,"PMC5008067",,,,"N","D",
-9143,"10.1523/jneurosci.0610-16.2016",27413161,"PMC4945670",,,,"N","D",
-1215,"10.1016/j.cortex.2008.03.005",18585697,,,,,"N","D",
-2681,"10.1016/0166-4328(88)90028-9",3166701,,,,,"N","D",
-6634,"10.3389/fncir.2013.00125",23908606,"PMC3725427",,,,"N","D",
-1764,"10.1016/s0304-3959(97)00138-3",9469535,,,,,"N","D",
-10066,"10.1523/jneurosci.14-04-02383.1994",8158275,"PMC6577113",,,,"N","D",
-4245,"10.1016/j.cccb.2023.100158",36703699,"PMC9871745",,,,"N","D",
-5392,"10.1016/j.yfrne.2018.05.002",29842887,"PMC6175608",,,,"N","D",
-3212,"10.1523/jneurosci.19-01-00220.1999",9870952,"PMC6782396",,,,"N","D",
-4495,"10.1111/ejn.15027",33113247,"PMC7902345","Y","Y","N","N","D",
-5225,"10.3389/fncir.2015.00015",25926774,"PMC4396532",,,,"N","D",
-1121,"10.11154/pain.33.275",,,,,,"N","D",
-7796,"10.1016/j.neuron.2018.08.008",30174117,"PMC6224163",,,,"N","D",
-3890,"10.1016/0969-8051(93)90038-v",8358354,,,,,"N","D",
-7918,"10.1002/hbm.20602",18465800,"PMC6871145",,,,"N","D",
-8217,"10.7554/elife.26106",28871959,"PMC5617635",,,,"N","D",
-4541,"10.1016/j.bpsc.2020.09.014",33309567,"PMC8005500",,,,"N","D",
-9971,"10.1523/jneurosci.1915-09.2009",19710305,"PMC2779138",,,,"N","D",
-8672,"10.1073/pnas.162342799",12163645,"PMC123273",,,,"N","D",
-8804,"10.1038/nrn2741",19904279,"PMC2895763",,,,"N","D",
-10654,"10.1016/j.jneuroim.2008.08.001",,"PMC7119863",,,,"N","D",
-9641,"10.1523/jneurosci.3907-11.2011",22131421,"PMC6623827",,,,"N","D",
-10088,"10.1523/jneurosci.01-11-01218.1981",6796657,"PMC6564226",,,,"N","D",
-3597,"10.1002/cne.901880404",118192,,"Y","Y","N","N","D","spinothalamic tract"
-7604,"10.3389/neuro.07.020.2009",19750199,"PMC2741294",,,,"N","D",
-939,"10.1016/s0940-9602(03)80051-1",12924469,,,,,"N","D",
-1160,"10.1002/cne.22740",21830220,"PMC3909929",,,,"N","D",
-7054,"10.1002/mrm.21574",18429024,"PMC2562422",,,,"N","D",
-7933,"10.1523/jneurosci.15-12-07821.1995",8613722,"PMC6577925",,,,"N","D",
-4755,"10.3389/fendo.2020.534343",33763023,"PMC7982876",,,,"N","D",
-9042,"10.1002/cne.902800208",2466877,"PMC9954487",,,,"N","D",
-5238,"10.1515/nf-2021-0031",35881644,"PMC8887907",,,,"N","D",
-2325,"10.1002/cne.25344",35603771,,,,,"N","D",
-4168,"10.3390/biomedicines11030696",36979674,"PMC10045296",,,,"N","D",
-2333,"10.1007/s00115-013-3897-2",24057066,,,,,"N","D",
-1973,"10.1016/j.neures.2017.10.009",29111135,,,,,"N","D",
-340,"10.1016/0006-8993(83)91020-x",6839157,,"Y","Y","Y","Y","D","connections between the pulvinar and visual area MT in the macaque monkey"
-10165,"10.1523/jneurosci.0009-08.2008",18509031,"PMC6670798",,,,"N","D",
-7324,"10.1073/pnas.1610077114",28074037,"PMC5278439",,,,"N","D",
-10331,"10.1093/schbul/sbq173",21355132,"PMC3044641",,,,"N","D",
-1777,"10.1016/j.nicl.2018.101628",30528957,"PMC6411779",,,,"N","D",
-712,"10.1152/jn.1999.82.4.1865",10515975,,,,,"N","D",
-2948,"10.1002/cne.901820108",100530,,"Y","Y","Y","Y","D","pathways between the dorsal lateral geniculate nucleus and visual cortex in old world and new world primates; Old World (Macaca, Papio, Erythrocebus, Cercopithecus) and New World (Saimiri, Cebus)"
-1878,"10.1097/00006231-200405000-00014",15100512,,,,,"N","D",
-5622,"10.1073/pnas.1809833115",30545910,"PMC6310791",,,,"N","D",
-7548,"10.1152/jn.00347.2019",31693445,"PMC6985854",,,,"N","D",
-8859,"10.1007/s00359-017-1224-2",29086012,"PMC5792365",,,,"N","D",
-4664,"10.1093/cercor/bhaa342",33279960,"PMC8248841",,,,"N","D",
-83,"10.1002/cne.21934",19085970,"PMC2646254","Y","Y","N","N","D","subcortical connection"
-1354,"10.1002/cne.903520205",7536756,,"Y","Y","Y","Y","D","Transient subcortical connections of inferior temporal areas TE and TEO in infant macaque monkeys"
-3981,"10.3389/neuro.07.003.2007",18958231,"PMC2526010","N",,,"N","D",
-1150,"10.1016/s0006-8993(97)00696-3",9313911,,,,,"N","D",
-1553,"10.1523/jneurosci.1575-14.2015",26156987,"PMC4495241",,,,"N","D",
-3513,"10.1007/bf00307092",4344661,,,,,"N","D",
-3120,"10.1016/0006-8993(71)90019-9",5001365,,,,,"N","D",
-354,,,,"Y","Y","Y","Y","D/R","review about thalamus. RB: I'd like to count it in because of its relevance. We can always decide to use the original articles instead."
-142,"10.1007/bf00230949",1385203,,"Y","Y","Y","Y","D","SMA receives strong indirect projections from the GPi via the thalamus; not sure if thalamic neucli are specified"
-8206,"10.1016/j.neubiorev.2017.04.016",28442402,"PMC5510539",,,,"N","D",
-2706,"10.1046/j.1460-9568.2002.02137.x",12372031,,,,,"N","D",
-514,,,,,,,"N","D",
-5934,"10.3389/fnana.2015.00090",26236200,"PMC4500960",,,,"N","D",
-1409,"10.1523/jneurosci.16-05-01791.1996",8774447,"PMC6578697",,,,"N","D",
-10521,"10.1523/jneurosci.01-02-00121.1981",6167690,"PMC6564146","Y","Y","N","N","D",
-388,"10.1093/cercor/10.2.109",10667980,,,,,"N","D",
-4817,"10.1186/s12868-018-0451-y",30373516,"PMC6205774",,,,"N","D",
-8442,"10.3389/fnhum.2012.00224",22866032,"PMC3406331",,,,"N","D",
-10002,"10.1093/cercor/bhl147",17218482,"PMC2896890",,,,"N","D",
-1597,"10.1523/jneurosci.13-07-02982.1993",7687283,"PMC6576695",,,,"N","D",
-3466,"10.1176/ajp.156.11.1709",10553733,,,,,"N","D",
-8044,"10.1371/journal.pcbi.1007481",31671090,"PMC6850560",,,,"N","D",
-349,"10.1017/s1472928803000189",,,"Y","Y","Y","Y","D","thalamocortical projections to motor area in the macaque monkey"
-3170,"10.1523/jneurosci.09-08-02931.1989",2769372,"PMC6569706",,,,"N","D",
-10072,"10.1136/bjo.78.11.875",7848987,"PMC504976",,,,"N","D",
-2156,"10.1113/jphysiol.2005.088047",15905213,"PMC1464718",,,,"N","D",
-3885,"10.1016/j.nucmedbio.2014.08.003",25858513,"PMC4441617",,,,"N","D",
-7669,"10.1523/jneurosci.3540-15.2016",27147659,"PMC4854969",,,,"N","D",
-4330,"10.1002/hipo.23167",31617622,"PMC6972576",,,,"N","D",
-9107,"10.1093/schbul/sbn156",19023123,"PMC2635893",,,,"N","D",
-4733,"10.1007/s00429-017-1504-1",28835999,"PMC5772150",,,,"N","D",
-4178,"10.1093/texcom/tgaa030",34296104,"PMC8152833","Y","N",,"N","D","cat"
-8751,"10.1371/journal.pone.0020912",21799730,"PMC3140472",,,,"N","D",
-3199,"10.1523/jneurosci.18-23-10090.1998",9822763,"PMC6793272",,,,"N","D",
-4402,"10.1016/j.isci.2020.101717",33196032,"PMC7645060",,,,"N","D",
-276,"10.1007/978-1-4899-0194-1_3",,,"Y","Y","Y","Y","D","Book chapter as review. RB: I'd like to count it in despite being a review article."
-8057,"10.1038/npp.2014.280",,"PMC4261147",,,,"N","D",
-5560,"10.7554/elife.51144",32091390,"PMC7080407",,,,"N","D",
-484,"10.1523/jneurosci.0953-10.2010",20573910,"PMC2905633",,,,"N","D",
-5795,"10.1002/cne.23203",22826174,"PMC3513524","Y","N",,"N","D","Otolemur garnettii"
-8821,"10.1523/jneurosci.5513-12.2013",23699519,"PMC6705035",,,,"N","D",
-8573,"10.1016/s0002-9440(10)63204-x",15039205,"PMC1615335",,,,"N","D",
-9854,"10.1016/j.neuroscience.2013.08.005",23954862,"PMC3795858",,,,"N","D",
-5567,"10.1097/wnr.0b013e32834ca58d",22009193,"PMC3208755",,,,"N","D",
-3027,"10.1016/j.neuron.2016.05.009",27263973,"PMC5573145","Y","Y","Y","Y","D","we injected retrograde tracers into four different face patches (PL, ML, AL, AM) ; We found that the patches are strongly and specifically connected to each other, and individual patches receive inputs from extrastriate cortex, the medial temporal lobe, and three subcortical structures (the pulvinar, claustrum, and amygdala). Inputs from prefrontal cortex were surprisingly weak"
-7576,"10.1186/1744-9081-6-71",21106078,"PMC3009948",,,,"N","D",
-33,"10.1016/0891-0618(95)00050-h",7545406,,"Y","Y","Y","Y","D",
-9580,"10.1002/hbm.20739",19241418,"PMC6871153",,,,"N","D",
-1494,"10.1016/j.neuroscience.2011.06.080",21782903,,"Y","Y","Y","Y","D",
-8872,"10.1093/nar/gkt567",23804753,"PMC3763550",,,,"N","D",
-9295,"10.1371/journal.pbio.1000061",19296722,"PMC2656551",,,,"N","D",
-9337,"10.1371/journal.pcbi.1002890",23408877,"PMC3567170",,,,"N","D",
-957,"10.1002/cne.20084",15067722,,,"N",,"N","D","cynomolgus monkeys"
-5835,"10.1016/j.neuroimage.2015.05.072",26037056,"PMC4512905",,,,"N","D",
-3258,"10.1093/brain/108.2.405",4005529,,,,,"N","D",
-5256,"10.3389/fnint.2011.00053",22065951,"PMC3207327",,,,"N","D",
-4431,"10.3389/fnana.2015.00061",26042001,"PMC4438223",,,,"N","D",
-10917,,17105094,"PMC1273360",,,,"N","D",
-6577,"10.1016/j.nbd.2010.05.025",20580929,"PMC2926181",,,,"N","D",
-1999,"10.1515/tnsci-2015-0025",28123808,"PMC4936633",,,,"N","D",
-7469,"10.1186/1742-2094-9-84",22554253,"PMC3495408",,,,"N","D",
-7760,"10.1016/j.bbr.2019.111921",31009645,"PMC6545140",,,,"N","D",
-5183,"10.3389/fnint.2022.856207",35391754,"PMC8979825",,,,"N","D",
-5034,"10.1016/j.heares.2016.05.014",27292113,"PMC5148730",,,,"N","D",
-2801,"10.1016/0306-4522(82)90088-4",6818491,,"Y","N",,"N","D","cat; cortical projections of the hippocampal formation in the cat"
-10709,"10.1136/jnnp.25.3.256",13890917,"PMC495452",,,,"N","D",
-4010,"10.3389/fncir.2021.632668",33603649,"PMC7884447","N",,,"N","D","not TT study"
-10275,"10.1186/s13244-019-0713-y",30806851,"PMC6396437",,,,"N","D",
-2875,"10.1016/s0042-6989(00)00210-8",11090662,,,,,"N","D",
-4336,"10.1002/dev.21963",32115695,"PMC7319905",,,,"N","D",
-8050,"10.3390/ijms19123953",30544839,"PMC6321004",,,,"N","D",
-4453,"10.1038/s41593-022-01197-0",36424430,"PMC10055353",,,,"N","D",
-6893,"10.1515/tnsci-2016-0016",28123829,"PMC5234525",,,,"N","D",
-7451,"10.1016/j.cub.2014.04.044",24881876,"PMC4698409",,,,"N","D",
-395,"10.2183/pjab1945.43.822",,,"N","Y","Y","N","D",
-8841,"10.1371/journal.pone.0035320",22563382,"PMC3338510",,,,"N","D",
-4480,"10.1111/epi.16089",31206636,"PMC6779127",,,,"N","D",
-3663,"10.1016/0042-6989(68)90050-3",4976817,,,,,"N","D",
-4717,"10.1016/j.ejphar.2021.174556",34627806,"PMC8605764",,,,"N","D",
-9727,"10.1186/1751-0759-1-22",18021398,"PMC2206036",,,,"N","D",
-2317,"10.1093/brain/120.1.75",9055799,,,,,"N","D",
-182,"10.1126/science.282.5391.1117",9804549,,"Y","Y","Y","Y","D","TT; macaque; but in four macaque monkeys with long-standing, accidental trauma to a forelimb"
-10659,,,"PMC1855305",,,,"N","D",
-6507,"10.1111/bph.13907",28613414,"PMC5610166",,,,"N","D",
-6068,"10.1016/j.neuroimage.2012.03.045",22465841,"PMC3376204",,,,"N","D",
-9587,"10.1002/hbm.20642",18726908,"PMC3034238",,,,"N","D",
-3292,"10.1016/0041-008x(89)90157-9",2749736,,,,,"N","D",
-5119,"10.3389/fnint.2019.00032",31396059,"PMC6664014",,,,"N","D",
-10815,"10.1080/13550280701739265",,"PMC7095058",,,,"N","D",
-9688,"10.1016/j.neuron.2011.12.035",22365554,"PMC3315591",,,,"N","D",
-4891,"10.3389/fnhum.2014.00777",25352796,"PMC4195275",,,,"N","D",
-4782,"10.1152/jn.00534.2020",33052766,"PMC7814907",,,,"N","D",
-4207,"10.3389/fcell.2021.737429",34692694,"PMC8529117",,,,"N","D",
-1572,"10.1016/0361-9230(90)90189-7",2289174,,"N",,,"N","D","Cebus apella; "
-334,"10.1016/0014-4886(70)90222-0",4987453,,,,,"N","D",
-2572,"10.1016/0042-6989(76)90033-x",821250,,,,,"N","D",
-9582,"10.1038/nrn3234",22814587,"PMC3478095",,,,"N","D",
-10466,"10.1523/jneurosci.09-04-01389.1989",2703882,"PMC6569851",,,,"N","D",
-9296,"10.2217/nmt-2016-0005",27230697,"PMC4976881",,,,"N","D",
-10338,"10.1136/jnnp.36.3.421",4714104,"PMC494342",,,,"N","D",
-5262,"10.1016/j.nucmedbio.2015.07.006",26320813,"PMC4658304",,,,"N","D",
-7992,"10.1073/pnas.1011284108",21690410,"PMC3131344",,,,"N","D",
-596,"10.1016/s0006-3223(01)01341-5",12007457,,,,,"N","D",
-4143,"10.7554/elife.76101",35441590,"PMC9159751",,,,"N","D",
-10232,"10.1523/jneurosci.1317-08.2008",18685037,"PMC2553276",,,,"N","D",
-49,"10.1007/s00429-021-02377-7",34524542,"PMC8541979","Y","Y","Y","Y","D","review; we will analyze their cortical and thalamic inputs thanks to retrograde neuronal tracers separately injected into the SPL areas V6, V6A, PEc, and PE. These areas receive visual and somatosensory information distributed in a caudorostral, visuosomatic trend, and some of them are directly connected with the dorsal premotor cortex"
-8635,"10.1016/j.cub.2009.08.010",19889376,"PMC3387539",,,,"N","D",
-10750,,13396253,"PMC1974286",,,,"N","D",
-6926,"10.3389/fnmol.2015.00036",26283910,"PMC4516891",,,,"N","D",
-3021,"10.1016/j.exer.2004.08.016",15652525,,,,,"N","D",
-9113,"10.1038/mt.2013.266",24419081,"PMC3918916",,,,"N","D",
-3768,"10.1002/syn.21514",22124971,,,,,"N","D",
-6589,"10.1111/j.1749-6632.2009.03866.x",19645877,"PMC3311467",,,,"N","D",
-9445,"10.1109/iembs.2010.5627350",21096637,"PMC4091736",,,,"N","D",
-10108,"10.1093/geroni/igab046",34926835,"PMC8679246",,,,"N","D",
-2318,"10.3109/01658109309037012",,,,,,"N","D",
-8799,,9284828,"PMC1857843",,,,"N","D",
-2704,"10.1002/9780470513545.ch4",3322720,,"Y","Y","Y","N","D","review"
-8642,"10.1523/jneurosci.2699-08.2008",18829955,"PMC2692971",,,,"N","D",
-4351,"10.1098/rstb.2020.0325",34420381,"PMC8380981",,,,"N","D",
-8211,"10.1002/hbm.22581",25044884,"PMC4797947",,,,"N","D",
-8725,"10.1073/pnas.95.13.7731",9636219,"PMC22740",,,,"N","D",
-10191,"10.1523/jneurosci.16-07-02261.1996",8601806,"PMC6578531",,,,"N","D",
-7117,"10.1007/s00213-010-1989-2",20809212,"PMC3045510",,,,"N","D",
-9360,"10.1152/jn.00600.2013",24671531,"PMC4044434",,,,"N","D",
-3261,"10.1176/appi.ajp.158.9.1411",11532725,,,,,"N","D",
-2764,"10.1152/jn.00995.2003",15140912,,"N",,,"N","D",
-10664,"10.1136/jnnp.40.9.932",599370,"PMC492869",,,,"N","D",
-3358,"10.1111/j.1460-9568.2008.06598.x",19175404,"PMC4430668",,,,"N","D",
-10703,"10.1007/978-0-387-77998-0_9",,"PMC7120231",,,,"N","D",
-7878,"10.1073/pnas.0901831106",19497858,"PMC2690605",,,,"N","D",
-9692,"10.1073/pnas.87.5.1932",2308954,"PMC53598",,,,"N","D",
-8549,"10.1073/pnas.1504723112",25825711,"PMC4403151",,,,"N","D",
-3596,"10.1016/0021-9975(69)90034-6",4975613,,,,,"N","D",
-7537,"10.1016/j.neuroimage.2012.07.014",22796992,"PMC3488432",,,,"N","D",
-561,"10.1080/08990229870772",9874520,,"N","Y","Y","N","D/R",
-6568,"10.1016/j.neuroscience.2017.08.049",28890048,"PMC6150928",,,,"N","D",
-9824,"10.1016/j.eplepsyres.2011.02.014",21459558,"PMC3376448",,,,"N","D",
-1868,"10.1152/jn.2001.85.5.1793",11352997,,,,,"N","D",
-5586,"10.1038/s41583-020-0262-x",32029928,"PMC7334830",,,,"N","D",
-6779,"10.1016/j.neuropharm.2008.07.017",18687346,"PMC5262474",,,,"N","D",
-1895,"10.1038/s41386-021-00976-w",33603137,"PMC8115308",,,,"N","D",
-2283,"10.1162/0898929042568587",15601525,,,,,"N","D",
-922,,8883918,,,,,"N","D",
-5483,"10.1016/j.cub.2012.10.020",23159599,"PMC3528834",,,,"N","D",
-3338,"10.1002/cne.902070106",7096639,,"Y","Y","N","N","D","thalamus seems not involved"
-8403,"10.1146/annurev-neuro-071013-013924",25032497,"PMC4148825",,,,"N","D",
-3844,"10.1016/j.neuropharm.2018.03.039",29608920,,,,,"N","D",
-6629,"10.1089/can.2017.0015",29082315,"PMC5627668",,,,"N","D",
-1596,"10.1006/nimg.2002.1204",12377152,,,,,"N","D",
-8989,"10.1136/adc.67.1_spec_no.15",1536580,"PMC1590322",,,,"N","D",
-5363,"10.1016/j.jneumeth.2015.08.030",26343530,"PMC4744568",,,,"N","D",
-6037,"10.1038/s41467-019-10248-3",31160561,"PMC6546784",,,,"N","D",
-3331,"10.1007/bf01148710",6672645,,,,,"N","D",
-9458,"10.1016/j.neuroimage.2014.02.014",24560717,"PMC4010223",,,,"N","D",
-1996,"10.1523/jneurosci.11-08-02383.1991",1869921,"PMC6575512",,,,"N","D",
-2028,"10.1097/00001756-200506210-00003",15931056,,,,,"N","D",
-2131,"10.1002/ana.20244",15449325,,,,,"N","D",
-571,"10.1007/978-1-4612-5902-2_8",,,"Y","Y","N","N","D/R","Book chapter; seems relevant, can’t decide based on the abstract. RB: I think cortex is not involved."
-5635,"10.1038/npp.2009.104",19693001,"PMC3055427",,,,"N","D",
-10323,"10.1136/jnnp.2003.018713",15201345,"PMC1739089",,,,"N","D",
-8326,"10.1371/journal.pone.0071741",23940784,"PMC3734303",,,,"N","D",
-7856,"10.1186/1471-2164-7-188",16869982,"PMC1550402",,,,"N","D",
-3238,"10.1002/1096-9861(20001120)427:3<362::aid-cne4>3.0.co;2-k",11054699,,,,,"N","D",
-9165,"10.1371/journal.pcbi.1001078",21390280,"PMC3044767",,,,"N","D",
-4751,"10.1038/s41380-021-01092-3",33875802,"PMC8523584",,,,"N","D",
-5576,"10.3390/ijms20184391",31500132,"PMC6769661",,,,"N","D",
-7012,"10.3389/fnins.2019.01283",31849591,"PMC6902035",,,,"N","D",
-10797,"10.1084/jem.92.6.571",14784538,"PMC2136002",,,,"N","D",
-3050,"10.1371/journal.pone.0114258",25479158,"PMC4257671",,,,"N","D",
-9329,"10.1093/cercor/bhu239",25316338,"PMC4677978",,,,"N","D",
-4339,"10.1098/rstb.2020.0523",34957852,"PMC8710882",,,,"N","D",
-4377,"10.1016/j.neuroimage.2021.117818",33548458,"PMC9947864","N","Y","Y","N","D","fMRI, basal nucleus of the amygdala to cortex, in macaque"
-10415,,5954784,"PMC1270739",,,,"N","D",
-7867,"10.1371/journal.pone.0039686",22761869,"PMC3386249",,,,"N","D",
-7264,"10.1371/journal.pone.0025194",21966452,"PMC3180379",,,,"N","D",
-4867,"10.1038/s41386-021-01131-1",34446831,"PMC8616908",,,,"N","D",
-2080,"10.1093/cercor/bhz247",31701117,"PMC7175000",,,,"N","D",
-1776,"10.3389/fpsyg.2014.01545",25642199,"PMC4295601",,,,"N","D",
-8922,"10.1093/cercor/bhq189",20940222,"PMC3114551",,,,"N","D",
-1815,"10.1093/cercor/10.3.206",10731217,,"Y","Y","Y","Y","D","Rats, Monkeys and Humans; looks like a review; RB: even though it might be a review, I'd count this one in."
-4584,"10.1177/0271678x20928149",32501157,"PMC7983506",,,,"N","D",
-10098,"10.1136/jnnp.50.9.1117",3668561,"PMC1032341",,,,"N","D",
-313,"10.1523/jneurosci.08-11-04049.1988",2846794,"PMC6569486","Y","Y","Y","Y","D","dorsolateral prefrontal and posterior parietal cortices to the anterior medial, medial dorsal, lateral dorsal, and medial pulvinar nuclei of the thalamus"
-4415,"10.1016/j.cub.2022.04.067",35584697,"PMC9233080",,,,"N","D",
-10663,"10.1523/jneurosci.11-04-00933.1991",2010816,"PMC6575363",,,,"N","D",
-9495,"10.1073/pnas.88.19.8372",1924297,"PMC52510",,,,"N","D",
-4852,"10.3758/s13415-016-0463-y",27905080,"PMC5272895","N",,,"N","D",
-6063,"10.1523/jneurosci.1852-07.2008",18337400,"PMC6670689",,,,"N","D",
-303,"10.1002/cne.1340",11596046,,"Y","Y","N","N","D/R","contains connections from pallidum to thalamus, seems cortex areas are not involved"
-9690,"10.1038/npp.2013.283",,"PMC6863401",,,,"N","D",
-5592,"10.1038/s41598-021-95987-4",34408203,"PMC8373898",,,,"N","D",
-10068,"10.1523/jneurosci.3250-09.2010",20203179,"PMC6634098","N",,,"N","D",
-5253,"10.7554/elife.05422",25525751,"PMC4290446","Y","N",,"N","D","TC but on mouse"
-3697,"10.1002/cne.902420407",2418081,,,,,"N","D",
-352,"10.1016/0361-9230(88)90063-9",2452673,,,,,"N","D","rat"
-6298,"10.1111/nyas.12271",24329486,"PMC3910152",,,,"N","D",
-7792,"10.1111/nyas.12666",25721480,"PMC4409448",,,,"N","D",
-1231,"10.1002/cne.20216",15269970,,"N",,,"N","D","Development of the human motor-related thalamic nuclei "
-2138,"10.1186/1866-1955-5-3",23406822,"PMC3599251",,,,"N","D",
-8071,"10.18632/aging.101069",27743512,"PMC5115902",,,,"N","D",
-4164,"10.1038/s41598-018-28766-3",30002419,"PMC6043584",,,,"N","D",
-1028,"10.1111/ejn.15958",36889675,,"N",,,"N","D","Functional connectivity between medial pulvinar and cortical networks, EEG"
-9612,"10.1523/jneurosci.4848-03.2004",15229247,"PMC6729228",,,,"N","D",
-1829,"10.1038/gt.2013.48",24067867,"PMC3855617",,,,"N","D",
-2977,"10.1016/0304-3959(94)90164-3",8022620,,,,,"N","D",
-5579,"10.3390/v11090807",31480472,"PMC6784384",,,,"N","D",
-7152,"10.1016/j.neuroimage.2021.118530",34464739,"PMC8863543","N",,,"N","D","Diffusion MRI, human, not experimental studies"
-2671,"10.1159/000144183",4208329,,"N","N","N","N","D/R",
-1586,"10.3389/fnsys.2017.00003",28228719,"PMC5296321","N","N","Y","N","D","review, pulvinar and visual associated cortex, might include articles of our interest"
-2460,"10.1002/cne.901680104",819469,,"N",,,"N","D","study on the neurons of centromedian-parafascicular complex of the monkey (Macaca mulatta)"
-6172,"10.1523/jneurosci.2399-18.2018",30626695,"PMC6407294",,,,"N","D",
-4292,"10.3390/ijms22105397",34065521,"PMC8160972",,,,"N","D",
-10847,,,"PMC1088110",,,,"N","D",
-10476,"10.1523/jneurosci.15-05-03284.1995",7538558,"PMC6578253","Y","N","N","N","D","TT study of corticospinal projections from the frontal lobe of macaques"
-8932,"10.1007/s12264-011-1737-6",22108813,"PMC5560386",,,,"N","D",
-434,"10.1523/jneurosci.2419-07.2007",17959800,"PMC6673207","Y","Y","N","N","D","Efferent Association Pathways from the Rostral Prefrontal Cortex, autoradiographic method, in the macaque monkey."
-9175,"10.1371/journal.pone.0003620",18974851,"PMC2575401",,,,"N","D",
-5316,"10.1016/j.neuron.2017.04.008",28426955,"PMC5881586",,,,"N","D",
-2812,"10.1007/bf00237671",4018190,,"Y","Y","Y","N","D","Studies Cerebello-cortical in monkeys (not macaque), seems involves the relay of thalamus, not sure if certain neuclei were mentioned"
-3497,"10.1002/ana.410070304",6775580,,,,,"N","D",
-6335,"10.1016/j.neuron.2015.07.026",26291164,"PMC4545497",,,,"N","D",
-5898,"10.3390/brainsci10120906",33255604,"PMC7760331",,,,"N","D",
-2774,"10.1002/cne.901490302",4123503,,"N",,,"N","D",
-5067,"10.1523/jneurosci.5271-12.2013",23761904,"PMC3682386",,,,"N","D","transgenic mouse, visualize corticogeniculate projections to examine the timing of cortical innervation in dLGN."
-10898,"10.1084/jem.97.1.69",13022863,"PMC2136187",,,,"N","D",
-9345,"10.1038/nrn2619",19352403,"PMC2771435",,,,"N","D",
-3838,"10.1007/s00213-015-4175-8",26660447,"PMC4761287",,,,"N","D",
-2824,"10.1016/0921-8696(88)90014-x",3231364,,"Y","Y","N","N","D","We recorded single units from the Lateral Geniculate Nucleus (LGN) of macaque monkeys (M. fascicularis or M. rnulatta), together with their retinal inputs, which manifest themselves in the LGN as synaptic (S) potentials."
-4114,"10.2139/ssrn.3689615",,,,,,"N","D",
-7835,"10.1016/j.nbd.2015.09.011",26409031,"PMC4915441",,,,"N","D",
-10353,"10.1523/jneurosci.17-16-06447.1997",9236252,"PMC6568360",,,,"N","D",
-225,"10.1515/revneuro.2007.18.6.417",18330211,"PMC2855189","N","Y","Y","N","D/R",
-5155,"10.1038/s41582-023-00809-y",37198436,"PMC10191412",,,,"N","D",
-1440,"10.1038/nature09179",20574422,"PMC2904843","N",,,"N","D","macaque, fMRI, not TT"
-10266,"10.1073/pnas.82.24.8780",3909155,"PMC391521",,,,"N","D",
-9798,"10.1093/schbul/sbm164",18263882,"PMC2632405",,,,"N","D",
-7997,"10.1152/jn.00458.2013",25298387,"PMC4294569","N",,,"N","D",
-1706,"10.1016/j.jchemneu.2003.08.002",14729130,,,,,"N","D",
-4553,"10.1038/s41598-021-83342-6",33580133,"PMC7881006",,,,"N","D",
-6401,"10.1073/pnas.1719666115",29358369,"PMC5819450",,,,"N","D",
-6631,"10.1016/j.bandl.2012.10.002",23295209,"PMC3886250",,,,"N","D",
-3908,"10.1016/j.celrep.2023.112844",37498741,,"N",,,"N","D","modeling of corticothalamic interactions"
-10597,"10.1128/aac.31.7.991",3662478,"PMC174858",,,,"N","D",
-4469,"10.1016/j.neuroimage.2023.119889",36681137,"PMC9999292",,,,"N","D",
-10282,"10.1093/schbul/sbv010",26305006,"PMC4364461",,,,"N","D",
-7282,"10.2174/1570159x16666180628165107",29956632,"PMC6520586",,,,"N","D",
-8046,"10.1523/jneurosci.5542-06.2006",16672656,"PMC6674161",,,,"N","D",
-8683,,3111109,"PMC2590100",,,,"N","D",
-5170,"10.1007/s00018-016-2264-4",27193323,"PMC5002041",,,,"N","D",
-8921,"10.1002/cne.20906",16506197,"PMC6503658","Y","Y","N","N","D","connections of premotor cortical areas, thalamus not involved"
-5085,"10.3389/fncir.2018.00047",29988373,"PMC6023998",,,,"N","D",
-1860,"10.1371/journal.pone.0046157",23071541,"PMC3465318",,,,"N","D",
-3371,"10.1002/cne.901820308",102662,,"Y","Y","N","N","D","Autoradiographic tracing procedures have been used to study the organization of retinogeniculate axons in seven primates, cortex seems not involved"
-113,"10.1111/ejn.14078",30022540,"PMC6519510","N",,,"N","D","lesion or damage of parvocellular mediodorsal thalamus of macaque, not TT"
-6990,"10.1523/jneurosci.1568-18.2018",30459226,"PMC6360286",,,,"N","D",
-5626,"10.3389/fnana.2019.00050",31191260,"PMC6540615","N",,,"N","D","thalamus not involved"
-626,"10.1016/0006-8993(68)90045-0",5652718,,"N",,,"N","D/R",
-9618,"10.3390/molecules191118781",25407719,"PMC6271458",,,,"N","D",
-1183,"10.1002/cne.1084",11447593,,,"N",,"N","D","cats"
-6963,"10.1016/j.cub.2007.01.046",17407750,"PMC7116514",,,,"N","D","review about the auditory cortex, including some information about connection between thalamus and auditory cortex, but it’s not a TT experimental study"
-5541,"10.1098/rstb.2015.0261",27269604,"PMC4901455",,,,"N","D",
-9603,"10.1016/j.dcn.2011.04.001",22436508,"PMC6987565",,,,"N","D",
-997,"10.1016/j.jocn.2008.03.018",19167229,,"N","Y",,"Y","D","cortical and subcortical connections; using PDT"
-1889,"10.1016/j.cortex.2017.10.011",29216478,,,,,"N","D",
-7919,"10.1073/pnas.0503998102",15967995,"PMC1166637",,,,"N","D",
-5786,"10.1038/s41593-021-00878-6",34183869,"PMC8338902",,,,"N","D",
-8471,"10.1016/j.celrep.2016.02.072",26997283,"PMC4814327",,,,"N","D",
-10781,"10.1901/jeab.1967.10-s607",,"PMC1338398",,,,"N","D",
+INDEX	DOI	PMID	PMCID	TT?(Y/N/MB/NA)	MACAQUE?(Y/N/MB/NA)	TC_OR_CT?(Y/N/MB/NA)	RELEVANT?(Y/N/MB/NA)	READ_BY(A/D/R)	COMMENT	REVIEW(Y/N)
+8563	10.1155/2016/9745315	27069486.0	PMC4812498				N	D		
+7378	10.1111/j.1749-6632.2011.06001.x	21599696.0	PMC3103088				N	D		
+9735		11797318.0	PMC1359021				N	D		
+2259	10.1093/cercor/3.1.49	7679939.0					N	D	cat	
+10784	10.1136/jnnp.32.5.404	5360048.0	PMC496549				N	D		
+6727	10.1093/brain/awv312	26490335.0	PMC4794619				N	D		
+10386	10.1523/jneurosci.4206-04.2005	15800201.0	PMC6724897				N	D		
+1103	10.1073/pnas.1913092116	31685634.0	PMC6876194				N	D		
+8771	10.1523/jneurosci.5208-12.2013	23595745.0	PMC6618877				N	D	Marmoset Monkeys; on receptive fields in the LGN and V1	
+5378	10.1002/cne.25432	36413612.0	PMC10100312				N	D		
+2783	10.1007/978-1-4684-3860-4_6	7315601.0					N	D		
+1931	10.1006/nimg.1997.0262	9345547.0					N	D		
+7641	10.3389/fnhum.2013.00887	24399951.0	PMC3870954				N	D		
+4525	10.1038/gt.2017.14	28300083.0	PMC5404203	Novel marker	Y	Y	Y	D/A	Species: Macaca fascicularis	
+625	10.1080/01616412.1985.11739692	2860583.0					N	D	not TT study, no specific cortical areas or thalamic neucli mentioned	
+10105	10.1152/jn.00274.2015	26609111.0	PMC4752305				N	D		
+7122	10.1007/s12264-018-0210-1	29430586.0	PMC5856726				N	D		
+605				Y	Y	N	N	R/D/A	seems a TT study on neurons in the basal forebrain of the monkey directly and without a thalamic relay to neocortex; R: Is a tracing study using HRP, but studies connections that bypass Thalamus	
+9785	10.1523/jneurosci.14-04-02236.1994	8158267.0	PMC6577120				N	D		
+1421	10.1001/archneur.1992.00530340048017	1417510.0					N	D		
+3532	10.1016/0006-8993(80)90758-1	6773619.0					N	R	R: Is a tracing study using HRP, but thalamus does not seem to be involved.; D: anterograde labeling of a prominent “prefrontal oculomotor bundle” which tranversed the medial subthalamic region at the diencephalic-mesencephalic junction to terminate directly in accessory and principal oculomotor nuclear groups	
+8077	10.1016/j.ntt.2009.09.005	19799996.0	PMC4436692				N	D		
+5758	10.1038/s41386-021-01237-6	34857905.0	PMC8637040				N	D		
+619				N	Y	Y	N	D/A		
+4780	10.1523/jneurosci.0221-20.2020	33037076.0	PMC7605414				N	D		
+3603	10.1016/s0306-4522(99)00409-1	10619469.0					N	D		
+428	10.1093/cercor/bhq201	21045004.0	PMC3097985	Y	Y	Y	Y	D/A		
+9826	10.1016/j.pharmthera.2009.04.001	19393691.0	PMC2724647				N	D		
+858	10.1152/jn.1952.15.6.449	13000471.0	PMC2956074				N	R	Not a tracing study, but very elaborate stimulation/recording experiments.	
+2040	10.1002/ar.a.20267	16411246.0					N	D		
+2771	10.1152/jn.1984.52.2.212	6481430.0					N	D		
+9579	10.1016/j.resp.2005.04.015	15927543.0	PMC1351146				N	D		
+2643	10.1002/cne.901740206	68041.0					N	D		
+10468	10.1523/jneurosci.02-09-01214.1982	7119874.0	PMC6564312				N	D		
+5158	10.1016/j.neuroscience.2017.06.052	28687313.0	PMC6063080	Y	Y	Y	N	D	RB: Not sure how much thalamus is involved	
+6500	10.3389/fnhum.2015.00606	26582984.0	PMC4631821				N	D		
+9576	10.3389/fpsyg.2011.00110	21713060.0	PMC3114071				N	D		
+695	10.1159/000103928	4163109.0					N	D		
+2229	10.1016/j.pneurobio.2006.02.004	16647799.0					N	D		
+9619	10.3389/fnhum.2013.00017	23378834.0	PMC3561664				N	D		
+10082	10.1073/pnas.0811168106	19188601.0	PMC2634800				N	D		
+9912	10.1098/rstb.1998.0289	9770228.0	PMC1692334				N	D		
+372	10.1098/rspb.1996.0138	8760494.0					N	D		
+220	10.1016/j.brainresbull.2008.09.013	18950692.0	PMC4459637	Y	Y	Y	Y	D/R	review, https://pubmed.ncbi.nlm.nih.gov/12223566/ 	
+3209	10.1523/jneurosci.2603-16.2016	27927956.0	PMC6601968				N	D	model; D: LGN inputs to V1, not original experiment report, https://pubmed.ncbi.nlm.nih.gov/14668866/, https://pubmed.ncbi.nlm.nih.gov/6747034/, https://pubmed.ncbi.nlm.nih.gov/1711175/, https://pubmed.ncbi.nlm.nih.gov/16871526/ 	
+3003	10.1016/0006-8993(81)90754-x	7306805.0					N	D		
+6306	10.1371/journal.pcbi.1009566	34843455.0	PMC8629393				N	D		
+4696	10.3389/fneur.2021.745159	34671313.0	PMC8521139				N	D		
+5851	10.1038/s41598-021-04684-9	35031628.0	PMC8760251				N	D		
+7782	10.1038/srep35809	27805010.0	PMC5090965				N	D		
+7303	10.1371/journal.pntd.0001567	22448291.0	PMC3308941				N	D		
+7380	10.1002/mds.25603	23852565.0	PMC3825839				N	D		
+6712	10.1371/journal.pcbi.1005785	29077710.0	PMC5678733				N	D		
+8810	10.1073/pnas.86.22.9015	2573073.0	PMC298423				N	D		
+9317	10.1152/jn.00749.2002	12574476.0	PMC2633106				N	D		
+1544	10.1002/syn.20382	17372973.0					N	D		
+3013	10.1016/j.nucmedbio.2008.03.002	18589296.0					N	D		
+3251	10.1093/brain/awn201	18772222.0		Y	Y	N	N	D	humans’ ipsilateral vestibulothalamic tract	
+10025	10.1523/jneurosci.04-11-02830.1984	6209365.0	PMC6564722	Y	Y	N	N	D	intrinsic connections in primary visual cortex in macaque, not TC or CT	
+10186	10.1128/jvi.23.3.811-815.1977	197272.0	PMC515892				N	D		
+582	10.1152/jn.1985.53.6.1387	4009225.0					N	D		
+2956	10.1002/cne.25168	33950555.0	PMC8568737				N	D		
+784	10.1002/cne.903630308	8847410.0		Y	Y	Y	Y	D/A	from visually related areas of the cerebral cortex to the pretectal nuclear complex, the terminal nuclei of the accessory optic system (AOS), and the superior colliculus (SC), anterograde tracer H-leucine 	
+6350	10.1007/s40473-018-0149-6	30013890.0	PMC6044438				N	D		
+3766	10.1093/cercor/bhn069	18477689.0					N	D		
+662	10.7554/elife.13588	27136677.0	PMC4887209				N	D		
+10450		7400036.0	PMC1233130				N	D		
+8907	10.1002/hbm.20670	19235876.0	PMC6870714				N	R		
+9086	10.3389/fncir.2012.00088	23189041.0	PMC3504312				N	R	study minicolumnar microcircuits	
+6867	10.1523/jneurosci.0762-14.2014	25143603.0	PMC4138334				N	R	population coding	
+7132		18702454.0	PMC2694714				N	R	viral pathogenesis study	
+4481	10.3390/brainsci11091112	34573134.0	PMC8471472				N	R	gene delivery	
+2387	10.1046/j.0953-816x.2001.01739.x	11703463.0					N	R	cat	
+5082	10.3389/fnbeh.2016.00090	27252631.0	PMC4877530				N	R	deep brain recording	
+8552	10.1177/1089253213495923	23859832.0	PMC3830670				N	R		
+3832	10.1016/0306-4522(89)90057-2	2725859.0					N	R	methods paper	
+7405	10.1523/jneurosci.1266-11.2011	21832191.0	PMC3163464				N	R	Study visual posterior sylvian area (VPS)	
+8365	10.1073/pnas.1102780108	21876148.0	PMC3174625				N	R	V1 and S1 responses during whisker tasks	
+4032	10.3389/fnsys.2022.921468	36203745.0	PMC9532056				N	R	variation of cortical columns across cortex	
+7842	10.1146/annurev-pharmtox-011613-135947	24160694.0	PMC3997216				N	R		
+674	10.1016/0013-4694(49)90212-6						N	R	atlasing paper	
+3502	10.1523/jneurosci.2268-11.2011	21880925.0	PMC3172870				N	R	Corticogeniculate neurons were identified by antidromic activation following electrical stimulation	
+2983	10.1523/jneurosci.0328-06.2006	16687510.0	PMC6674245				N	R	retina recordings	
+8587	10.3389/fnint.2012.00036	22754510.0	PMC3385506				N	R	predictability of  human behavior	
+5468	10.1038/s41467-020-17890-2	32792525.0	PMC7426815				N	R	neural progenitors in the developing mammalian hypothalamus	
+10657			PMC2169865				N	R		
+9549	10.1523/jneurosci.08-03-00892.1988	3346727.0	PMC6569229				N	R	Cat	
+7213	10.3201/eid1509.090253	19788803.0	PMC2819871				N	R		
+6694	10.3389/fnana.2018.00009	29503610.0	PMC5820353				N	R	human PFC	
+2756	10.1016/0006-8993(80)90328-5	6769540.0		Y	Y	N	N	R/D/A	projections to S1; seems ePhys not TT?	
+9245	10.1523/jneurosci.21-05-01580.2001	11222648.0	PMC6762964				N	R		
+5283	10.3390/foods10092034	34574144.0	PMC8466623				N	R		
+10270	10.1016/j.neuron.2005.05.020	15996553.0	PMC1564381				N	R		
+8053	10.1146/annurev-neuro-072116-031418	28471714.0	PMC5697758				N	R		
+2654	10.1016/0304-3959(91)90152-n	2038494.0					N	R		
+6057	10.1016/j.neuron.2022.05.011	35690063.0	PMC9616801				N	R		
+8321	10.1523/jneurosci.0828-12.2012	22875934.0	PMC3465728				N	R	Deals with Caudate Nucleus (striatum)	
+8079	10.1152/jn.90372.2008	18768645.0	PMC2585404				N	R	Deals with GPi and GPe (basal ganglia)	
+4142	10.2967/jnumed.122.263977	35710735.0	PMC9730915				N	R	Deals with radiotracer evaluation	
+2366	10.1023/a:1010990404833	11387548.0					N	R	Glutamate receptor distribution	
+8374	10.1038/nn.3541	24097039.0	PMC4191718				N	R	Origin of cortical interneurons	
+5044	10.3389/fpsyt.2022.832209	35463532.0	PMC9020768				N	R	D2 receptor occupancy in humans	
+1662	10.1002/(sici)1096-9861(19970512)381:3<320::aid-cne5>3.0.co;2-4	9133571.0					N	R	Deals with RAT	
+1154	10.1097/00001756-200111160-00012	11733686.0					N	R	Human thalamus	
+9712	10.1016/j.schres.2014.08.032	25306204.0	PMC4394607				N	R	Schizophrenia conference	
+394	10.1002/cne.902930210	19189717.0		Y	Y	N	N	R/A	Ventral striatum; striatum is not part of thalamus	
+5638	10.1523/jneurosci.2348-16.2016	27911752.0	PMC5125216				N	R	review about different frontal cortical areas directly project to the STN via so-called hyperdirect pathways	
+3520	10.1002/cne.901730105	403206.0		Y	N	N	N	R/A	Corticostriatal projections; striatum is not part of thalamus	
+9230	10.1016/j.schres.2006.10.004	17141476.0	PMC1868481				N	R	Antipsychotic drugs test	
+5047	10.1038/s41467-023-38675-3	37217510.0	PMC10203257				N	R	beta oscillations	
+2264	10.1016/j.heares.2009.06.018	19595755.0	PMC2989528	N			N	R	review; special issue of Hearing Research 	
+7770	10.1523/jneurosci.4089-08.2009	19176812.0	PMC6665141				N	R	insula responds to certain sounds	
+2247	10.1006/jmre.1998.1379	9571103.0					N	R	fMRI study in humans	
+8299	10.1073/pnas.96.10.5768	10318959.0	PMC21935				N	R	adult neurogenesis	
+4521	10.1007/s00429-020-02171-x	33180142.0	PMC7817566				N	R	review about Red Nucleus	
+8156	10.1016/j.neuroimage.2013.03.049	23558094.0	PMC4132879				N	R	Pavlovian fear conditioning	
+10055	10.3389/fncel.2014.00097	24772064.0	PMC3982075				N	R	neuroimmune mechanisms	
+891	10.1002/(sici)1096-9861(19980518)394:4<475::aid-cne6>3.0.co;2-z	9590556.0					N	R	Subdivisions of auditory cortex	
+644	10.1017/s0952523807070770	18093372.0					N	R	Spot on, but deals with Marmoset monkey	
+820		2411787.0		Y	Y	Y	Y	R	fronto-parietal operculum and the postcentral gyrus with the posterior ventral thalamic nucleus	
+8427	10.3389/fnana.2012.00012	22514523.0	PMC3322329				N	R	protein expression in LGN, squirrel	
+5789	10.1080/87565641.2017.1334783	28885046.0	PMC6232854				N	R	review on the function of cerebellum	
+2782	10.1046/j.1460-9568.2000.00999.x	10762334.0					N	R	we induced overactivity of the motor thalamus by injecting bicuculline 	
+7664	10.1039/c4md00240g	25584182.0	PMC4288033				N	R	opioid receptors in rat	
+5731	10.1038/s41593-018-0309-8	30643297.0	PMC6348027				N	R	stop signal task	
+1139	10.1016/j.irbm.2009.10.004						N	R	3d atlas of thalamus, could be of interest	
+10081	10.1111/j.1750-3639.1998.tb00133.x	9458165.0	PMC8098315				N	R	Borna disease rats	
+4947	10.1177/0271678x211061050	34905986.0	PMC8851538				N	R		
+2467	10.1007/s002210050293	9497146.0		N			N	R	single cell recordings, behavioral response	
+1462	10.1007/978-3-319-70046-5_1	29116442.0					N	R	pulvinar subdivisions	
+5521	10.3389/fnana.2014.00009	24672434.0	PMC3956368				N	R	movement of macromolecules	
+8545	10.1152/jn.00233.2014	26133796.0	PMC4725123				N	R	eye-hand coordination	
+3749	10.1016/0006-291x(91)91440-n	1704223.0					N	R	tissue specific expression of GLUT3	
+600	10.1016/0304-3959(81)90503-0						N	R		
+4425	10.1002/cne.25264	34636423.0	PMC8957504				N	R	tectopulvinar projections in the mouse	
+10427	10.1002/rth2.12393		PMC7419731				N	R		
+396	10.1109/tbme.2008.2005973	19224730.0	PMC5446893				N	R		
+8767	10.1007/s11571-008-9044-2	19003478.0	PMC2427063				N	R	resting state networks	
+4551	10.1002/cne.25087	33314077.0	PMC8053672				N	R	synapse types	
+2231	10.1371/journal.pone.0110432	25337714.0	PMC4206294				N	R		
+9173	10.1038/nature07721	19158677.0	PMC2700034				N	R		
+4506	10.1093/cercor/bhaa229	32844170.0	PMC7727342				N	R	population MRI atlas	
+7171	10.1155/2018/6323901	29983707.0	PMC6015683				N	R	gap junction proteins	
+3625	10.1523/jneurosci.22-07-02885.2002	11923453.0	PMC6758337	Y	Y	Y	Y	R	injection in LGN	
+8949	10.1523/jneurosci.14-11-06796.1994	7965080.0	PMC6577272				N	A	Squirrel monkey, not macaque	
+964	10.1002/hbm.23429	27739612.0	PMC6866740				N	A	human	
+3910	10.1016/s0306-4522(99)00344-9	10579225.0					N	A	they measure receptor types	
+1807	10.1111/j.1460-9568.1997.tb01509.x	9240412.0					N	A	Marmoset	
+4901	10.1093/braincomms/fcaa196	33364600.0	PMC7749795				N	A	Human	
+9207	10.1210/er.2011-1039	22402194.0	PMC3365851				N	A	Peptides in several animals	
+1217	10.1016/j.neulet.2018.05.003	29729357.0					N	A	Effects of AcH in food selection	
+851	10.1093/brain/60.1.126			N			N	A/D/A	Lesion to some cortical areas and checking the resulting atrophy level in the Pulvinar. The methods were likely cutting edge back in 1937; lesion instead of TT	
+5905	10.1523/jneurosci.0772-20.2020	32847963.0	PMC7511188	N	Y	Y	N	A/D/A	Focus on STN, local injections of AMPA, NMDA and GABA antagonists to see effects.	
+4077	10.1016/j.neuroimage.2022.119096	35304264.0	PMC9227740	Y	Y	N	N	A/D/A	Subiculum and BNST, which are not in the thalamus.	
+2627	10.1016/0304-3959(91)90015-p	1722895.0					N	A	NMDA and SN effect on spinothalamic neurons	
+223	10.1016/0304-3940(95)11273-y	7540266.0		Y	Y	N	N	A/D/A	Anterograde tracers to NRT, connections within thalamus instead of TC or CT	
+6658	10.1073/pnas.1305062110	23924609.0	PMC3752223	N			N	A/D	Cutting corpus callusum to compare functional and structural connectivity.	
+8502	10.1038/srep22427	26951756.0	PMC4782073				N	A	Pharmacology	
+10834	10.1155/np.2001.157	11783444.0	PMC2565376				N	A	Collection of abstracts from a conference, not enough information to draw any conclusions, also no indication of thalamus TT	
+3673	10.1016/0006-8993(89)90781-6	2478261.0					N	A	New world monkey	
+793	10.1016/s0306-4522(00)00585-6	11274781.0		Y	Y	Y	N	A/D/A	Very exhaustive study of the prefrontal cortex connections.	
+6979	10.1016/j.omtm.2021.01.011	33665228.0	PMC7895692				N	A	Retina	
+2406	10.1016/0168-0102(92)90002-t	1341196.0					N	A	Cat	
+1721	10.1016/j.nicl.2015.11.004	26693399.0	PMC4660379				N	A	Human	
+85		814157.0					N	A	Paper might not be available, maybe the library can provide it. The other work by the same author is also very relevant.	
+10817	10.1016/j.jneuroim.2012.10.001		PMC7119873				N	D		
+5799	10.3389/fpsyt.2019.00122	30923504.0	PMC6426783				N	D		
+941	10.1002/(sici)1096-9861(19970526)382:1<89::aid-cne6>3.0.co;2-g	9136813.0		Y	Y	Y	Y	A	Auditory cortex and Medial geniculate nucleus	
+6845	10.3389/fnins.2022.1010354	36340755.0	PMC9630591				N	A/D		
+10264	10.1093/schbul/sbt011	23620888.0	PMC3633127				N	A	abstract collection	
+4	10.1002/cne.903130106	1761756.0		Y	Y	Y	Y	A	Prefrontal and Mediodorsal nucleus	
+5725	10.1159/000357753	24776993.0	PMC4440552				N	A	Evolution of the cortex	
+377				Y	Y	Y	Y	A/D/R	Book review. RB: I'd like to count this review in, we can always decide to use the original articles. 	
+3081	10.1016/0361-9230(84)90017-0	6478263.0					N	A	Pharmacology	
+6792	10.1152/jn.00238.2010	21411564.0	PMC3295207				N	A	Marmoset	
+1869	10.1016/s0079-6123(03)43042-2	14653187.0					N	A	Perfect type of study, but in Cebus monkey	
+134	10.1002/cne.21674	18322920.0				N	N	A	Thalamus to Cerebellum connections	
+9436	10.1136/jnnp.68.3.381	10675227.0	PMC1736813				N	A	Stimulation of thalamus (STN) to treat parkinsons	
+10222		6469858.0	PMC1164442				N	A	human	
+1933	10.1016/j.psyneuen.2009.09.007	19782476.0					N	A	Human, testosterone, functional conn	
+3662	10.1016/0006-8993(70)90132-0	4995199.0					N	A		
+8976	10.1186/1471-2202-6-56	16135243.0	PMC1224856				N	A	Peripheral nervous system controling hands	
+1991	10.1007/s00429-019-02023-3	31925518.0					N	A	Review	
+8155	10.3389/fnana.2012.00034	22952459.0	PMC3429885				N	A	Human	
+3346	10.1016/j.bmc.2013.08.019	24012376.0					N	A	Study of markers for PET	
+5923	10.1016/j.neuron.2020.03.024	32315603.0	PMC7422923				N	A		
+5797	10.1002/cne.24202	28295315.0	PMC5686388				N	A	Single cell properties, no connectivity in results	
+9916	10.1016/j.expneurol.2007.06.003	17658516.0	PMC2042945				N	A	Rat, pharmacology	
+10661		3067448.0	PMC1026490				N	A	Interesting stuff about cocaine, irrelevant for us	
+8694	10.1007/s00213-008-1273-x	18709359.0	PMC2704616				N	A	Pharmacology	
+4986	10.3390/jcm12062255	36983254.0	PMC10054919				N	A	Aging	
+8417	10.1098/rspb.2004.2925	15875575.0	PMC1634937				N	A	reads like an opinion piece	
+5933	10.1093/cercor/bhy114	29788295.0	PMC6041950				N	A	Anesthesia and effects in functional conn	
+7136	10.1016/j.neuroimage.2009.10.081	19896540.0	PMC3073774				N	A	Human	
+1583	10.1016/j.visres.2014.12.021	25615840.0					N	A	Human	
+3980	10.1016/0022-4731(85)90184-0	4068701.0					N	A	Pharmacology	
+2225	10.1016/s0074-7742(09)87027-x	19682656.0					N	A	Book/review	
+10150	10.1038/nn.2470	20023651.0	PMC3412590				N	A	SC function, not structure	
+2217	10.1002/(sici)1096-9861(20000131)417:1<115::aid-cne9>3.0.co;2-b	10660892.0					N	A	Tracing in Chicken	
+2494	10.1152/jn.1991.66.2.485	1774583.0					N	A	Dynamics, not structure	
+4389	10.1016/j.nbd.2019.104489	31175984.0	PMC6689440				N	A	Pharmacology	
+229	10.1006/taap.1995.1193	7570604.0					N	A	Mercury toxicity for brain	
+9372	10.1089/brain.2012.0120	23442172.0	PMC3696923				N	A	Re-analysis of CoCoMac and others for TVB	
+3792	10.1002/(sici)1096-9861(19990816)411:1<56::aid-cne5>3.0.co;2-3	10404107.0					N	A	ISH locally, not connectivity	
+1356	10.1016/s0028-3932(00)00044-0	10869583.0					N	A	Human	
+4276	10.3389/fncel.2022.1006703	36545653.0	PMC9760692				N	D		
+7272	10.1371/journal.pone.0026709	22053202.0	PMC3203885				N	D		
+6169	10.1021/jm4012017	24147864.0	PMC3866693				N	D		
+691	10.1016/s0079-6123(08)63413-5	3088672.0		N			N	D	book chapter that reviews connectivity related to gaze control	
+5326	10.4103/1673-5374.314294	34380877.0	PMC8504395				N	D		
+1962	10.1023/a:1024169925377	12815244.0					N	D	looks at organization of incoming cortical projections into columns	
+2507	10.1007/bf00247291	3653318.0					N	D		
+1665	10.1523/eneuro.0173-17.2017	28840189.0	PMC5566798				N	D		
+3692	10.1212/wnl.32.10.1198	6889707.0					N	R	parietotemporal lesion	
+8072	10.1038/nrn2719	19763105.0	PMC2913577				N	R	cerebral neocortex during evolution	
+2405	10.1002/cne.10096	11793349.0					N	R	neuron types, not connectivity	
+4571	10.3389/fncel.2023.1125785	37091923.0	PMC10113633				N	R		
+3113	10.1523/jneurosci.22-14-06158.2002	12122075.0	PMC6757940				N	R	reverse correlation of a spike train	
+10505	10.1177/003591577306600616	4205631.0	PMC1644972				N	R		
+5915	10.1002/syn.20578	18925657.0	PMC2587077				N	R	methods paper	
+3451		10845600.0					N	R		
+1555	10.1016/j.neuroscience.2012.07.054	22864184.0	PMC3484682				N	R	recorded single neurons from both structures during vertical and horizontal rotation	
+9893	10.1068/p6100	19065857.0	PMC2801810				N	R		
+9819	10.1523/jneurosci.5563-09.2010	20685998.0	PMC2927820				N	R	lamination of the mammalian cortex	
+2980	10.1002/ajpa.1330380237	4632086.0					N	R	degeneration study, no tract tracing	
+3659	10.1073/pnas.110142097	10852945.0	PMC16584				N	R	What parts of a visual stimulus produce the greatest neural signal?	
+1964	10.1016/s0940-9602(11)80212-8	8297039.0		Y	Y	Y	Y	R/A/R	review article about somatosensory cortex. I have a copy (RB); not original TT but contains very informative contents about the connection between thalamus and somatosensory cortex	
+7108	10.1124/pr.115.011478	26841800.0	PMC4813425				N	R		
+5144	10.3389/fnbeh.2020.548856	33328917.0	PMC7732428				N	R		
+1147	10.1017/s0952523800001656	7516176.0		Y	Y	Y	Y	R	corticogeniculate => layer 6 of V1	
+10974			PMC1934315				N	R		
+4266	10.1016/j.jneumeth.2022.109530	35202614.0	PMC8940704				N	R	methods paper	
+4283	10.3390/brainsci12101273	36291207.0	PMC9599395				N	R	pharmacotherapy in aphasia	
+6818	10.1128/jvi.03441-13	24696472.0	PMC4054374				N	R		
+3302	10.1017/s0952523800002960	7918216.0					N	R	lesion study LGN	
+5016	10.1016/j.celrep.2021.110198	34986350.0	PMC9608360				N	R		
+1522	10.1093/cercor/bhh112	15217901.0					N	R	retinol-binding protein	
+7315	10.1007/s00429-017-1576-y	29181589.0	PMC5884919				N	R		
+8638	10.1371/journal.pcbi.1003548	24763382.0	PMC3998884				N	R	cortical motifs	
+7457	10.1016/j.neuropharm.2012.08.004	22921923.0	PMC3586788				N	R	effects of chronic cocaine exposure	
+9381	10.1523/jneurosci.21-12-04416.2001	11404428.0	PMC6762731				N	R	specifically studies new world monkeys, rather than macaques	
+3798	10.1152/jn.1984.51.3.450	6699675.0					N	R	midbrain stimulation	
+8141	10.3389/fncom.2015.00155	26834619.0	PMC4717295				N	R	simulated the responses of a biomimetic spiking neural network model of the visual cortex	
+1912	10.1152/jn.01156.2007	18684912.0	PMC2576217				N	R		
+2787	10.1152/jn.00198.2020	32965147.0	PMC8356778				N	R	thalamic deep brain stimulation	
+2622	10.1523/jneurosci.02-09-01275.1982	7119875.0	PMC6564315				N	R		
+825	10.1038/299439a0	7121580.0					N	R		
+479				Y	Y	N	N	R/D/A	SC Inputs to the P-Thalamus	
+2228	10.1016/s1053-8119(03)00148-4	12880805.0					N	R		
+2514	10.1016/0006-8993(87)90881-x	2446708.0					N	R	Distribution of neuropeptides	
+5127	10.1038/s42003-021-01804-z	33664430.0	PMC7933420				N	R	V1 lesion	
+9273	10.1111/eth.12236	25635152.0	PMC4285966				N	R	how did this slip through?	
+8335	10.1523/jneurosci.2825-10.2010	21084608.0	PMC2995693				N	R	A Functional Magnetic Resonance Imaging Effective Connectivity Study on humans	
+6636	10.1038/mp.2009.90	19721434.0	PMC2861147				N	R	effect of serotonine on behavior	
+9244	10.1038/mt.2012.44	22453766.0	PMC3412498				N	R	degradation of LGN after eye removall	
+5078	10.14802/jmd.16062	28122432.0	PMC5288669				N	R	interesting overview Fig 1 on gait control	
+2440	10.1113/jphysiol.1992.sp018909	1501128.0	PMC1179967	Y	Y	Y	N	R/D/A	reveals connections on the basis of cell recordings; seems not TT study	
+6814	10.3389/fnhum.2018.00337	30210323.0	PMC6119810				N	R		
+5390	10.1016/j.celrep.2021.110134	34936869.0	PMC8721284				N	R	mice	
+9648	10.1089/hum.2008.137	19203243.0	PMC2767387				N	R	gene therapy	
+4689	10.3389/fncir.2018.00067	30210306.0	PMC6121028				N	R	cholinergic neurons	
+659	10.1038/nn.3393	23666179.0					N	R	"cites relevant papers, like ""Topographic organization of medial pulvinar connections with the prefrontal cortex in the rhesus monkey"""	
+6362	10.1021/jm800817h	19067522.0	PMC2746395				N	R	pet ligands	
+4364	10.1007/s00429-021-02367-9	34518902.0	PMC8541938				N	R	Marmosets	
+9070	10.1111/nyas.12882	26348486.0	PMC4563817				N	R	nicotine addiction	
+8287	10.1371/journal.pcbi.1000239	19079571.0	PMC2585056				N	R	LFP	
+10396	10.4061/2010/859101	20953364.0	PMC2952897				N	R		
+5768	10.1016/j.jneumeth.2020.108965	33011185.0	PMC7744337				N	R		
+5284	10.1016/j.neuroimage.2021.118379	34252527.0	PMC8429261				N	R	"cites relevant papers, like ""Comparative Aspects of Amygdala Connectivity"""	
+3344	10.1523/jneurosci.22-08-03189.2002	11943820.0	PMC6757536				N	R	visual response timing	
+4005	10.3389/fmedt.2022.856412	35450154.0	PMC9016146	N			N	R	contains literature-derived LGN connectivity model	
+10001	10.1523/jneurosci.19-21-09480.1999	10531451.0	PMC6782891				N	R		
+8253	10.1002/cne.21018	16739196.0	PMC4139035				N	R	studies plasticity	
+3973	10.1016/0006-8993(75)90973-7	803392.0					N	R	lesion study in marmoset	
+108	10.1002/(sici)1096-9861(19960916)373:2<271::aid-cne9>3.0.co;2-0	8889927.0					N	R	focuses on very special type of neurons: Histamine-Immunoreactive Neurons	
+9804	10.1038/sj.npp.1301420	17443127.0	PMC2167630				N	R	psychostimulants	
+9852	10.1016/b978-0-12-809841-7.00022-8		PMC7170210				N	R		
+8343	10.1038/s41467-017-02791-8	29374153.0	PMC5785952				N	R		
+8181	10.1007/s00401-017-1670-5	28084518.0	PMC5250673				N	R		
+4119	10.1126/sciadv.abg4246	34162548.0	PMC8221616				N	R	PFC (dlPFC) to the dorsal caudate (dCD) and lateral mediodorsal thalamus (MDl)	
+8711	10.1002/jnr.23900	27557736.0	PMC5513674				N	R		
+5684	10.1016/j.stem.2016.03.003	27049876.0	PMC4826446				N	R		
+3709	10.1016/0006-8993(88)91283-8	3378164.0					N	R	tree shrew, not macaque	
+307	10.1016/s0306-4522(00)00368-7	11074162.0					N	R	lesion study	
+9123	10.1136/jnnp.2003.016782	15145996.0	PMC1739042				N	R		
+7375	10.1098/rstb.2013.0483	25267825.0	PMC4186236				N	R		
+4910	10.1007/s10827-021-00801-9	34931275.0	PMC8687879				N	R		
+9634	10.3389/neuro.01.034.2008	19225587.0	PMC2622758				N	R		
+763	10.1016/0304-3940(92)90750-2	1279485.0					N	R	rat thalamus	
+8975	10.1093/brain/awv134	25981958.0	PMC4492412				N	R	basal ganglia connectivity, not necessarily involving thalamus	
+4785	10.1016/j.nbd.2020.105017	32679312.0	PMC7450246				N	R		
+1898	10.1016/j.neuropsychologia.2004.11.007	15707905.0					N	R		
+4545	10.7554/elife.04499	25432022.0	PMC4280551				N	D		
+6137	10.1152/jn.01083.2015	26912601.0	PMC4922451				N	D		
+2415	10.1073/pnas.0610742104	17261798.0	PMC1783903	N			N	D		
+4600	10.3389/fneur.2022.1042887	36479052.0	PMC9720270				N	D		
+1182	10.1152/jn.1991.66.3.879	1753292.0		N			N	D	thalamus to cerebellum and pallidum	
+2349	10.1371/journal.pcbi.1005519	28472057.0	PMC5436894				N	D		
+2411	10.1038/nrn1299	14708002.0					N	D		
+2495	10.1016/s0165-0270(97)00099-x	9350972.0					N	D		
+3961	10.1002/syn.20891	21132811.0	PMC3107898	N			N	D		
+9186	10.1016/j.biopsych.2010.09.041	21111403.0	PMC3058124				N	D		
+9687	10.1371/journal.pone.0024589	21931767.0	PMC3171456	N			N	D		
+7347	10.1523/jneurosci.3134-07.2007	17913900.0	PMC6672811	Y	N	Y	N	D	Cebus monkeys; basal ganglia and cerebellar projections to two cortical areas; using retrograde transneuronal transport of neurotropic viruses	
+4831	10.3389/fpsyg.2023.1027872	36993883.0	PMC10040846				N	D		
+5577	10.1093/neuonc/noaa222.042		PMC7715104				N	D		
+9839	10.1016/j.alcohol.2014.01.005	24680665.0	PMC4016177				N	D		
+7675	10.1007/s13365-019-00768-5	31218522.0	PMC7296988				N	D		
+10938		2243840.0	PMC525675				N	D		
+7787	10.1093/nc/nix019	30042851.0	PMC6007168				N	D		
+2814	10.1016/0165-3806(88)90007-7	3378187.0					N	D		
+10943	10.1111/j.1476-5381.1970.tb08517.x	4984801.0	PMC1702793				N	D		
+779	10.1016/b978-0-08-042274-9.50019-5			N			N	D		
+1431	10.1111/j.1444-0938.2012.00819.x	23186138.0		N			N	D		
+8238	10.1007/s00259-016-3544-9	27817159.0	PMC5215309				N	D		
+5893	10.3389/fncel.2020.00213	32765222.0	PMC7380267				N	D		
+1430	10.1016/s0925-4927(99)00029-3	10641578.0		N			N	D	humans	
+592	10.1002/cne.900640102			N	Y		N	D/A/R	"seems very likely relevant, but the PDF text is very vague, difficult to recognize the text. RB: Paper is from 1936, before tracing studies were conducted. ""We chose macaques because they are the cheapest..."" is not something you would say today."	
+1871	10.1038/nn.4183	26642088.0	PMC4696889				N	D		
+5027	10.7554/elife.82467	36810199.0	PMC10005762				N	D		
+2837	10.1016/0014-4886(71)90109-9	5000934.0					N	D		
+7977	10.1538/expanim.64suppl-s	26084300.0	PMC5338214				N	D		
+5176	10.1177/0271678x18797328	30149778.0	PMC6282216				N	D		
+8104	10.1080/02643294.2016.1188065	27386744.0	PMC5398312				N	D		
+3635	10.1016/s0896-6273(02)01143-1	12526769.0					N	D		
+546	10.1002/cne.23513	24288173.0	PMC3984622	Y	Y	Y	Y	D	V4 to some thalamic neucli	
+8302	10.3389/fnint.2012.00091	23087625.0	PMC3472215				N	D		
+5631	10.3389/fcell.2021.661759	33996819.0	PMC8118648				N	D		
+4967	10.1021/acschemneuro.8b00103	29792035.0	PMC6371780				N	D		
+8448	10.1038/nrneurol.2013.222	24217509.0	PMC5549938				N	D		
+6896	10.1007/s11307-014-0749-9	24865402.0	PMC4404702				N	D		
+10693	10.1016/b978-0-7020-5318-4.00007-3		PMC7811793				N	D		
+2289	10.1097/00005072-199411000-00002	7964896.0					N	D		
+465	10.3389/fnsys.2013.00056	24101896.0	PMC3787245	Y	Y	Y	Y	D/R	review; subcortico-thalamo-cortical pathways. RB: I'd like to count this review in, we can always decide to use the original articles	
+37	10.1002/cne.902560202	3549796.0					N	D		
+1752	10.1523/jneurosci.4452-08.2009	19211885.0	PMC2676894	N			N	D	high-resolution functional magnetic resonance imaging; lateral geniculate nucleus (LGN) and the superior colliculus (SC)	
+8090	10.1038/s41593-020-00786-1	33542524.0	PMC7933108				N	D		
+10757	10.1136/jnnp.s1-14.55.227	21610771.0	PMC1038938				N	D		
+5091	10.1016/j.neuroscience.2020.10.022	33212224.0	PMC7770119	Y	Y	N	N	D		
+35	10.1002/cne.902710402	2454970.0		Y	Y	N	N	D	TT; but seems cortex not involved	
+6597	10.1016/j.neuron.2012.04.014	22681693.0	PMC3372858				N	D		
+8550	10.1371/journal.pone.0132075	26135580.0	PMC4489868				N	D		
+1975	10.1152/jn.00936.2017	30256740.0	PMC6295541				N	D		
+8903	10.1016/j.tins.2014.12.007	25583269.0	PMC4352381				N	D		
+10306	10.1002/bsl.862	19319834.0	PMC2729461				N	D		
+147	10.1016/s0361-9230(02)00857-2	12379444.0		Y	Y	Y	Y	D	posterior parietal cortex (PPC) to the ventral lateral thalamic nucleus (VL) and three thalamic association nuclei, mediodorsal (MD), lateral posterior (LP) and pulvinar	
+2638	10.1016/j.brs.2016.10.005	27839724.0	PMC5241168				N	D		
+8602	10.1038/s41398-018-0278-4	30341278.0	PMC6195525				N	D		
+4382	10.1038/s42003-021-02623-y	34531520.0	PMC8446038				N	D		
+5956	10.3389/fnins.2018.00516	30108478.0	PMC6079296				N	D		
+2234	10.1111/j.1460-9568.2004.03743.x	15548215.0					N	D		
+2562	10.1016/s0370-4475(73)80023-1	4377891.0					N	D		
+9213	10.1371/journal.pone.0085539	24465593.0	PMC3896409				N	D		
+5360	10.1101/2023.01.20.524896	36711724.0	PMC9882283				N	D		
+809	10.1002/cne.901990205	7251940.0		Y	Y	N	N	D/A	corticostriate projections from temporal cortex; thalamus seems not involved	
+9669	10.1007/s12021-017-9347-8	29297140.0	PMC5797202				N	D		
+7082	10.3389/fnagi.2021.632054	33927608.0	PMC8078548				N	D		
+3772	10.1152/jn.1966.29.6.1115	4961644.0					N	D		
+268	10.1007/978-1-349-11597-6_12						N	D/A	Thalamic Input to the Sensorimotor Cortex of the Macaque Monkey; but full text not available, seems not TT study by reading the abstract	
+1177	10.1016/j.pscychresns.2010.09.009	21546223.0					N	D		
+9685	10.1002/syn.20977	21858872.0	PMC3356922				N	D		
+9777		13141060.0	PMC1804478				N	D		
+4611	10.7554/elife.47175	31689177.0	PMC6831033				N	D		
+1667	10.1016/s0306-4522(98)00527-2	10218781.0					N	D		
+562	10.1002/cne.903050104	1709648.0		Y	Y	Y	N	D/A	TT, projection from the central complex of the thalamus to the sensorimotor striatal territory in monkeys; seems cortex not involved	
+6928	10.1152/jn.00845.2009	21106898.0	PMC3059174				N	D		
+846	10.1002/cne.902570106	3571519.0					N	D/A	Golgi preparations	
+6203	10.1146/annurev-vision-030320-041306	32580663.0	PMC7501212				N	D	review about the V4 in macaque, not TT study	
+8584	10.1016/j.fob.2014.10.001	25379384.0	PMC4215120				N	D		
+1838	10.1016/j.neures.2010.05.005	20561955.0					N	D		
+8553	10.1073/pnas.0913110107	20439733.0	PMC2890438				N	D		
+10529		13192017.0	PMC1244675				N	D		
+6182	10.1155/2017/6975841	29348737.0	PMC5733838				N	D		
+10576	10.1073/pnas.79.8.2695	6953423.0	PMC346268				N	D		
+8753	10.1177/2398212818772179	32166139.0	PMC7058233				N	D		
+528	10.1016/0006-8993(79)90485-2	116716.0		Y	N		N	D	autoradiographic and horseradish peroxidase procedures; Cortical connections within the occipital lobe in rhesus monkey	
+4808	10.1002/hbm.23506	28054725.0	PMC6866819				N	D		
+7149	10.14802/jmd.19046	31556259.0	PMC6763716				N	D		
+4655	10.1038/s41386-021-01140-0	34408279.0	PMC8617092				N	D		
+9320	10.1002/hbm.20530	18219621.0	PMC6870909				N	D		
+6289	10.3389/fnana.2018.00070	30174592.0	PMC6107687				N	D		
+4220	10.7554/elife.77568	36205397.0	PMC9545527				N	D		
+8625	10.3389/fpsyg.2013.00600	24062704.0	PMC3769680				N	D		
+8883	10.1016/j.expneurol.2012.04.025	22579525.0	PMC3367030				N	D		
+1809	10.1002/(sici)1097-0193(1996)4:3<174::aid-hbm3>3.0.co;2-0	20408197.0					N	D		
+9302	10.3389/neuro.04.019.2009	19949461.0	PMC2783723				N	D		
+823	10.1016/s0006-8993(98)01182-2	9889315.0		Y	Y	N	N	D	thalamus not involved	
+322	10.1523/jneurosci.1991-09.2009	19776262.0	PMC2796834				N	D		
+3639	10.1159/000123159	7194426.0					N	D		
+7631	10.3389/fnins.2019.00179	30894798.0	PMC6414438				N	D		
+8651	10.1002/hbm.21260	21416562.0	PMC3812802				N	D		
+2250	10.1023/a:1024161623560	12815240.0					N	D		
+1013	10.1016/s0006-3223(00)00826-x	10838062.0					N	D		
+2069	10.1111/j.1460-9568.1996.tb01219.x	8714706.0					N	D		
+1330	10.1002/cne.10113	11793354.0					N	D	marmoset monkeys; Cortical and thalamic connections of the parietal ventral somatosensory area	
+4153	10.3389/fnsys.2020.606345	33362482.0	PMC7759542				N	D		
+2268	10.1111/j.1460-9568.1996.tb01608.x	8758953.0					N	D		
+4406	10.1080/20008066.2022.2131969	36276555.0	PMC9586666				N	D		
+5425	10.1002/ame2.12166	34179718.0	PMC8212819				N	D		
+2034	10.1001/archneurol.2012.590	22566505.0					N	D		
+41	10.1002/cne.903440403	7523458.0		Y	Y	Y	Y	D	thalamic projections of primary olfactory (olfactory tubercle and prepiriform cortex) and transitional orbital (areas PAPP, Pro 13) and medial (areas 25, 24, 32) areas, and of eulaminate (areas 11, 12, 9) cortices	
+10572		3612244.0	PMC6568965				N	D		
+5632	10.1038/s41593-020-0692-9	32807948.0	PMC8015416				N	D		
+5998	10.1002/ame2.12062	31392301.0	PMC6600652				N	D		
+1152	10.1016/0006-8993(91)90853-n	1718552.0		Y	Y	N	N	D	TT, but not on TC or CT but studies the cells of LCN in monkey	
+6591	10.3389/fncel.2022.836116	35281300.0	PMC8913896				N	D		
+5131	10.1016/j.toxrep.2023.02.014	36923444.0	PMC10009680				N	D		
+3255	10.1002/ana.410150603	6742787.0					N	D		
+10489	10.1523/jneurosci.07-07-01969.1987	2886562.0	PMC6568930				N	D		
+4320	10.3389/fnana.2022.837527	35692259.0	PMC9174433				N	D		
+6320	10.3389/fnana.2019.00010	30809133.0	PMC6380082				N	D		
+10958	10.1128/br.17.suppl.339-448.1953	13115328.0	PMC182568				N	D		
+3352	10.1016/s0092-1157(77)80012-7	200628.0					N	D		
+4101	10.1093/cercor/bhy327	30668846.0	PMC6418397				N	D		
+4272	10.1093/cercor/bhz054	30927350.0	PMC6918932				N	D		
+4828	10.3389/fnins.2019.01099	31780878.0	PMC6861303				N	D		
+5964	10.1016/j.neuron.2014.01.017	24583023.0	PMC4020629				N	D		
+572	10.1016/0306-4522(84)90007-1	6483194.0		Y	Y	N	N	D	TT; Retinal ganglion cells project to the superior colliculus and pretectum in the macaque monkey; thalamus and cortex not involved	
+8371	10.1371/journal.pbio.1000305	20126380.0	PMC2814823				N	D		
+6838	10.1101/2021.02.01.429141						N	D		
+3610	10.1212/wnl.23.1.63	4631496.0					N	D		
+1908	10.1002/syn.1039	11304754.0					N	D		
+8664	10.1073/pnas.93.16.8683	8710931.0	PMC38733	Y	Y	Y	N	D/A	TT; one of the output nuclei of the basal ganglia, the substantia nigra pars reticulata, projects via the thalamus to TE; not sure if certain thalamic neucli and cortical areas involved	
+3712	10.1016/j.nbd.2018.08.002	30086388.0					N	D		
+7215	10.1002/hbm.23818	28960637.0	PMC6866315				N	D		
+4455	10.1002/hbm.25657	34528323.0	PMC8596959				N	D		
+1594	10.1016/j.pscychresns.2010.06.006	20832256.0					N	D		
+4991	10.1038/s41467-022-35658-8	36599827.0	PMC9813152				N	D		
+5688	10.1155/2021/6685204	34336113.0	PMC8315852				N	D		
+8387	10.1016/j.tins.2012.01.006	22402065.0	PMC3348364				N	D		
+10940			PMC503244				N	D		
+6947	10.3389/fncom.2014.00044	24782752.0	PMC3989587				N	D		
+4179	10.1111/adb.13142	35470557.0	PMC9444692				N	D		
+3734	10.1002/cne.10689	12724841.0					N	D		
+9376	10.1016/j.cub.2012.01.011	22305753.0	PMC3288404				N	D		
+8797	10.1038/srep01138	23378897.0	PMC3560357				N	D		
+8708	10.1155/2012/304045	22779006.0	PMC3384885				N	D		
+3147	10.1002/cne.24494	30004587.0	PMC6283693				N	D	lesion	
+1086	10.3389/fnana.2016.00015	26941613.0	PMC4761867				N	D		
+6509	10.1093/neuros/nyz225	31264700.0	PMC7156292				N	D		
+8212	10.1038/npp.2017.264		PMC5719065				N	D		
+7875	10.1371/journal.pone.0005527	19436733.0	PMC2677457				N	D		
+5611	10.1016/j.neuroimage.2018.10.006	30291974.0	PMC6289683				N	D	human; corticocortical connection	
+9032	10.1016/j.nbd.2007.04.016	17588764.0	PMC2674779				N	D		
+6221	10.1038/s41593-019-0406-3	31110324.0	PMC6592747				N	D		
+6125	10.1093/pm/pnab056	33565583.0	PMC8502467				N	D		
+5670	10.1016/j.neuroimage.2016.02.029	26899785.0	PMC4851897				N	D		
+3552	10.1523/jneurosci.20-16-06030.2000	10934252.0	PMC6772595	N			N	D	cat;	
+8689	10.1002/ar.22451	22461313.0	PMC3379817	Y	N		N	D	marmoset monkeys; cortical connections of auditory cortex	
+2079	10.1038/jcbfm.1992.141	1328263.0					N	D		
+10029	10.1098/rstb.2000.0552	10703047.0	PMC1692715				N	D	functional connectivity; primate cerebral cortex	
+5969	10.1021/acschemneuro.7b00505	29470055.0	PMC6119516				N	D		
+2427	10.1007/bf00228509	1756835.0					N	D		
+8058	10.3389/fneur.2014.00054	24803911.0	PMC4009446				N	D		
+2653	10.1007/bf00237149	6628597.0					N	D		
+7015	10.1016/j.neuroimage.2010.03.015	20298794.0	PMC2877377				N	D		
+7253	10.1016/j.neuroscience.2012.12.032	23370320.0	PMC4260774				N	D		
+6949	10.1002/hbm.22366	24027207.0	PMC6869822				N	D		
+2483	10.1152/jn.00033.2003	12634274.0					N	D		
+6393	10.3389/fninf.2014.00083	25426062.0	PMC4227511				N	D		
+9954	10.1186/s40349-016-0079-2		PMC5374646				N	D		
+7896	10.1371/journal.pone.0077377	24223120.0	PMC3819360				N	D		
+5556	10.3389/fpsyt.2015.00158	26617532.0	PMC4639708				N	D		
+2127	10.1046/j.1469-7580.2001.19840463.x	11327208.0	PMC1468232	Y	N		N	D	TT; rat; The afferent connections of the posterior hypothalamic nucleus	
+2579	10.1152/jn.1981.46.4.797	7288465.0					N	D	primate spinothalamic tract neurons receiving viscerosomatic convergent inputs in T3-T5 segments	
+7183	10.1152/jn.00278.2014	25505104.0	PMC4346719				N	D		
+1535		10213088.0	PMC2453001				N	D		
+720	10.1016/0006-8993(77)90417-6	407975.0		Y	Y	N	N	D	Intrahemispheric cortical afferents to Prefrontal granular cortex; rhesus monkey	
+5811	10.2176/nmc.ra.2015-0172	26466888.0	PMC4686449				N	D		
+365	10.1002/cne.903620202	8576431.0		Y	Y	Y	N	D		
+7625	10.3389/fneur.2018.01129	30687211.0	PMC6335946				N	D		
+5019	10.1523/jneurosci.2275-20.2021	33622780.0	PMC8026344				N	D		
+10920		17105102.0	PMC1273703				N	D		
+4359	10.3389/fvets.2022.889561	35782557.0	PMC9244381				N	D		
+7710	10.3390/ijms20102604	31137894.0	PMC6567036				N	D		
+4931	10.1038/s42003-023-05042-3	37353519.0	PMC10290066				N	D		
+8013	10.1016/j.neuroimage.2007.09.063	18024084.0	PMC2275117				N	D		
+4590	10.1371/journal.ppat.1010658	35759511.0	PMC9269911				N	D		
+1156	10.1097/00005072-199403000-00012	8120542.0					N	D		
+8292		16286422.0	PMC7976217				N	D		
+8838	10.3389/fnana.2014.00032	24904301.0	PMC4034043				N	D		
+972	10.1093/schbul/23.3.483	9327511.0					N	D		
+3248	10.1016/s0959-4388(02)00349-5	12139991.0					N	D		
+7387	10.1152/jn.00585.2007	17804579.0	PMC2410032				N	D		
+3282	10.1016/0006-8993(75)90534-x	809094.0					N	D		
+1556	10.1111/j.1749-6632.1999.tb09291.x	10415673.0					N	D		
+5829	10.1016/j.brs.2016.06.051	27401045.0	PMC5143196				N	D		
+758	10.1002/cne.10720	12761828.0		Y	Y	Y	Y	D	Thalamocortical and intracortical connections of monkey cingulate motor areas; Macaca fuscata	
+1514	10.7554/elife.19103	27892854.0	PMC5207773				N	D		
+7319	10.1089/hum.2008.035	18576918.0	PMC2748764				N	D		
+2070	10.1002/hbm.21175	21259388.0	PMC6870119				N	D		
+2298	10.1002/(sici)1097-0185(19990801)255:4<396::aid-ar5>3.0.co;2-m	10409812.0					N	D		
+9222	10.1152/jn.00760.2014	25855697.0	PMC4480625				N	D		
+7467	10.1155/2012/250196	23213572.0	PMC3504471				N	D		
+4795	10.1016/j.tics.2017.03.002	28363681.0	PMC5534266				N	D		
+6216	10.1002/cne.23456	23983014.0	PMC3945972				N	D		
+3694	10.1016/0304-3940(81)90255-x	7322447.0					N	D		
+9969	10.1089/brain.2011.0033	22433046.0	PMC3677805				N	D		
+6113	10.1016/j.biopsych.2013.11.012	24342924.0	PMC4022724				N	D		
+6424	10.1016/j.neulet.2017.04.065	28473258.0	PMC5665731				N	D		
+6104	10.3389/fnana.2014.00081	25177277.0	PMC4133926				N	D		
+7779	10.1007/s00702-015-1475-4	26497023.0	PMC4919383				N	D		
+330	10.1002/cne.902800102	2465325.0		Y	Y	Y	Y	D	inferior parietal cortex (area 7) to the nucleus ventralis posterior inferior, the magnocellular part of the medial geniculate nucleus, and some intralaminar nuclei; macaca fascicularis	
+3787	10.1007/s007020050042	9660091.0					N	D		
+10715		14406391.0	PMC2537982				N	D		
+1188	10.1523/jneurosci.1914-07.2007	17942723.0	PMC2242856				N	D		
+8381	10.1523/jneurosci.1937-09.2009	19710303.0	PMC3311469				N	D		
+2865	10.1089/aid.2014.0029	24697643.0	PMC3976595				N	D		
+5409	10.1162/netn_a_00098	31637337.0	PMC6777980				N	D		
+10569	10.1523/jneurosci.14-11-06336.1994	7965040.0	PMC6577268				N	D		
+5305	10.3389/fnhum.2022.981366	36158615.0	PMC9494563				N	D		
+10096	10.1016/j.neuroimage.2010.07.054	20691793.0	PMC8015308				N	D		
+3636	10.1038/srep36329	27874058.0	PMC5118870				N	D		
+9239	10.1523/jneurosci.0686-13.2014	24647934.0	PMC3960459				N	D		
+4640	10.1007/s00429-018-1811-1	30547311.0	PMC6420469				N	D		
+3683	10.1093/cercor/bht070	23529006.0		Y	Y	Y	Y	D/A	TT; macaque; seems focus on the axon diameter of the connection instead of connection between areas and count the FLN	
+2488	10.1002/cne.903490108	7852621.0		Y	Y	N	N	D	TT; studies afferent and efferent connections of the pretectal nucleus of the optic tract (NOT)	
+3767	10.1007/s002590050482	10552091.0					N	D		
+6923	10.3389/fnins.2011.00083	21734863.0	PMC3124130				N	D		
+510	10.1159/000100184	1981945.0					N	D		
+10109	10.1136/jnnp.41.4.374	650247.0	PMC493033				N	D		
+9535	10.1136/jnnp.65.2.155	9703164.0	PMC2170218				N	D		
+717	10.1016/j.nicl.2018.01.008	29387530.0	PMC5790021				N	D		
+3989	10.1038/s41467-023-38582-7	37291094.0	PMC10250345				N	D		
+8385	10.1136/jnnp.57.11.1395	7964818.0	PMC1073193				N	D		
+5872	10.1016/j.neuron.2011.02.040	21435553.0	PMC3069934				N	D		
+9394			PMC4049875				N	D		
+5983	10.7554/elife.43019	30561328.0	PMC6312400				N	D		
+4699	10.1016/j.ymthe.2018.07.008	30057240.0	PMC6171051				N	D		
+2004	10.1177/0333102420963850	33040593.0					N	D		
+5493	10.1186/s12868-019-0538-0	31722661.0	PMC6854655				N	D		
+5	10.1038/372770a0	7695716.0		Y	Y	N	N	D	TT; anterograde tracing and single unit recordings to demonstrate that there is a distinct nucleus in the posterior thalamus of the macaque monkey that receives a dense, topographic input from spinothalamic lamina I neurons and in which almost all neurons are nociceptive- or thermoreceptive-specific	
+6071	10.1162/netn_a_00088	31410379.0	PMC6663318				N	D		
+10089	10.1007/s00213-009-1562-z	19455309.0	PMC2814770				N	D		
+4907	10.1038/nature18637	27409810.0	PMC5325728				N	D		
+2355	10.1016/s0079-6123(08)60362-3	8493325.0					N	D	book chapter; rabbit; functional organization; from superior colliculus to the lateral posterior nucleus	
+5703	10.1126/sciadv.1600558	27679817.0	PMC5031467				N	D		
+2974	10.1016/0304-3940(79)96094-4	119193.0					N	D		
+3133	10.1016/0006-8993(71)90100-4	5002631.0					N	D	lesion; corticofugal connections of area 8 (frontal eye field) in Macaca mulatta	
+7524	10.3389/fnbeh.2018.00284	30524254.0	PMC6256247				N	D		
+3761	10.1016/j.nbd.2011.09.016	22001603.0					N	D		
+5488	10.1016/j.brainres.2008.09.013	18817759.0	PMC2603251	Y	N		N	D	Very typical TT studies on TC and CT, but in rats not macaque	
+3933	10.1016/0306-4522(88)90292-8	2905789.0					N	D		
+755	10.1016/0006-8993(77)90780-6	412567.0					N	D		
+6833	10.1016/j.biopsych.2012.05.001	22672928.0	PMC3440537				N	D		
+9754			PMC8331702				N	D		
+4445	10.1073/pnas.2022097118	33723059.0	PMC8000025				N	D		
+4975	10.1038/s41467-021-27753-z	35013266.0	PMC8748921				N	D		
+10303	10.1136/jnnp.57.4.480	8164000.0	PMC1072880				N	D		
+100	10.1002/cne.24283	28685822.0	PMC6370318	Y	Y	Y	Y	D	TT; Thalamic connections of the core auditory cortex and rostral supratemporal plane in the macaque monkey	
+5529	10.3390/biomedicines9030314	33808538.0	PMC8003204				N	D		
+2788	10.1016/j.neulet.2008.05.047	18539394.0					N	D		
+3495	10.1017/s0952523813000382	24103417.0	PMC4150219				N	D		
+6017	10.1109/tbme.2015.2492921	26529747.0	PMC4716872				N	D		
+337	10.1007/bf00237085	407094.0					Y	D		
+7600	10.1186/s40478-017-0413-0	28148299.0	PMC5289012				N	D		
+127	10.1111/ejn.12389	24134130.0	PMC4112842	Y	Y	Y	Y	D		
+6004	10.1093/geroni/igaa057.1582		PMC7743032				N	D		
+6388	10.3389/fnins.2016.00131	27147942.0	PMC4834347				N	D		
+9957		819404.0	PMC1231801				N	D		
+3661	10.1016/j.neuroimage.2005.11.033	16466679.0					N	D		
+2742	10.1126/science.146.3648.1184	14203683.0					N	D		
+4373	10.3389/fnhum.2021.749162	34650419.0	PMC8507972				N	D		
+5417	10.1177/01926233221101309	35658751.0	PMC9284083				N	D		
+9622	10.1128/jvi.78.22.12497-12507.2004	15507637.0	PMC525070				N	D		
+476	10.1017/s0952523801185068	11925008.0		Y	Y	Y	Y	D/A	TT; Cortical and subcortical afferents to the nucleus reticularis tegmenti pontis and basal pontine nuclei in the macaque monkey; seems thalamus not involved	
+8119	10.1371/journal.pone.0030341	22279584.0	PMC3261205				N	D		
+5134	10.1016/j.neuron.2015.05.040	26087167.0	PMC4534089				N	D		
+2220	10.1016/j.molmet.2015.07.008	26500843.0	PMC4588458				N	D		
+7506	10.1523/jneurosci.1464-13.2013	23843520.0	PMC3724553				N	D		
+10801	10.1007/978-3-540-70995-4_2		PMC7122603				N	D		
+496	10.1002/cne.902210206	6655080.0		Y	Y	N	N	D	intrinsic connectional organization; seems not involving thalamus	
+3930	10.1002/cne.903290203	8384222.0		Y	Y	N	N	D	nocturnal prosimian bush babies (Galago crassicaudatus) and diurnal simian squirrel monkeys (Saimiri sciureus)	
+10484	10.1136/jnnp.58.3.312	7897412.0	PMC1073367				N	D		
+1913	10.1016/s0166-4328(05)80018-x	1751004.0					N	D		
+4302	10.1016/j.isci.2021.102685	34195565.0	PMC8233199				N	D		
+1582	10.3389/fnana.2014.00010	24634646.0	PMC3942891	Y	Y	N	N	D	TT; Projections from the dorsal and ventral cochlear nuclei to the medial geniculate body; cortex not involved; CN to the MG in guinea pigs, rats, chimpanzees, and perhaps, rhesus monkeys	
+1031	10.1007/bf00231444	1712314.0					N	D		
+7386	10.1016/j.tics.2017.03.009	28483638.0	PMC5497785				N	D		
+2252	10.1016/s0006-8993(00)02044-8	10760495.0					N	D		
+9664	10.2903/j.efsa.2017.4691	32625422.0	PMC7233269				N	D		
+9794	10.1523/jneurosci.16-18-05854.1996		PMC6578972				N	D		
+8039	10.3389/fneur.2011.00014	21516258.0	PMC3080035				N	D		
+9756	10.1523/jneurosci.3575-07.2007	17978017.0	PMC3275424				N	D		
+3445	10.1098/rstb.1984.0021	6142484.0					N	D	cytoarchitectonic feature of monkey visual cortex	
+8476	10.3389/neuro.06.002.2008	18958246.0	PMC2526275				N	D		
+8124	10.1002/hbm.22364	24038902.0	PMC4791049				N	D		
+7437	10.4172/2153-2435.1000357	26146587.0	PMC4486668				N	D		
+7630	10.1152/jn.90446.2008	18579658.0	PMC2544461				N	D		
+9926	10.1523/jneurosci.2583-04.2004	15537873.0	PMC6730185				N	D		
+4783	10.1038/s41386-022-01486-z	36456695.0	PMC9714408				N	D		
+8465	10.3389/fped.2014.00091	25225634.0	PMC4150055				N	D		
+9087	10.1038/jcbfm.2009.195	19773803.0	PMC2949107				N	D		
+7129	10.3389/fncom.2013.00189	24454286.0	PMC3888935				N	D		
+9231	10.1016/j.brainres.2008.06.007	18582447.0	PMC2596929				N	D		
+1453	10.1016/j.nucmedbio.2009.02.007	19520289.0	PMC2696062				N	D		
+5938	10.1073/pnas.1802356115	29588415.0	PMC5899496				N	D		
+1284	10.1016/0304-3940(96)13052-4	8905726.0		Y	Y	Y	Y	D	TT; direct projections from the dorsal lateral geniculate nucleus (dLGN) to visual cortical area TE in macaque monkeys not exists, other connections exist	
+2081	10.1523/jneurosci.5077-06.2007	17344406.0	PMC6672514				N	D		
+5121	10.1016/j.neuroimage.2022.118989	35151851.0	PMC8940652				N	D		
+6664	10.1016/j.neuron.2018.05.020	29879384.0	PMC6009852				N	D		
+4085	10.7554/elife.77690	37166452.0	PMC10174693				N	D		
+5489	10.1098/rstb.2015.0180	26598734.0	PMC4685590				N	D		
+628	10.7554/elife.37325	29848447.0	PMC6010338				N	D		
+2190	10.1111/j.0953-816x.2004.03393.x	15182320.0					N	D		
+4502	10.1523/jneurosci.0860-20.2020	32989097.0	PMC7577604				N	D		
+1713	10.1016/j.neuroimage.2005.06.015	16027010.0					N	D		
+4361	10.1039/d2cc03785h	35943085.0	PMC9618257				N	D		
+7522	10.1152/jn.00812.2014	26936980.0	PMC4922480				N	D	rats	
+8379	10.1016/j.cell.2014.06.017	24998929.0	PMC4136921				N	D		
+10206	10.1371/journal.pcbi.0030017	17274684.0	PMC1794324				N	D		
+7288	10.1016/j.jhevol.2012.12.003	23466178.0	PMC3756831				N	D		
+7230	10.1523/jneurosci.2221-16.2017	28242799.0	PMC6596923				N	D		
+5824	10.1038/srep03730	24429495.0	PMC3893648				N	D		
+4692	10.3389/fnins.2021.773404	35280341.0	PMC8914088				N	D		
+8087		20011078.0	PMC2791039				N	D		
+1664	10.1093/cercor/12.11.1193	12379607.0					N	D		
+1143	10.3389/fncir.2015.00054	26500504.0	PMC4597482				N	D	model	
+4809	10.1073/pnas.1902279116	31871147.0	PMC6936691				N	D		
+5272	10.3389/fnagi.2023.1088829	36909943.0	PMC9992546				N	D		
+6693	10.3389/fnsyn.2020.567075	33408624.0	PMC7779639				N	D		
+10964			PMC1089904				N	D		
+6904	10.1038/s41598-018-30001-y	30068995.0	PMC6070473				N	D		
+6618	10.1152/jn.00880.2017	30379631.0	PMC6383655				N	D		
+114	10.1002/cne.902770304	2461974.0		Y	Y	Y	Y	D/A	TT; macaque; basal forebrain efferents to the medial dorsal thalamic nucleus in the rhesus monkey; seems cortex not involved?	
+7285	10.1016/j.neuroimage.2013.01.007	23333701.0	PMC3756817				N	D		
+1827	10.1111/j.1749-6632.1995.tb38127.x	8595019.0		Y	Y	Y	Y	D/R	This is a review, if possible use the original studies cited.	
+4912	10.1016/j.cub.2020.10.091	33278356.0	PMC8018535				N	D		
+5135	10.1007/s00702-017-1713-z	28324169.0	PMC5608633				N	D	thalamostriatal projection; not TT	
+10013	10.1152/jn.00848.2005	16339000.0	PMC2365900				N	D		
+2961	10.1126/science.7268423	7268423.0		Y	Y	N	N	D		
+2703	10.1002/cne.902010107	7276252.0		Y	Y	Y	Y	D	Direct projection from the dorsal lateral geniculate nucleus to the prestriate cortex in macaque monkeys	
+4904	10.1093/braincomms/fcaa232	33959707.0	PMC8088816				N	D		
+6055	10.7916/d89s37mv	30402338.0	PMC6214818				N	D		
+1941	10.1016/0042-6989(94)e0083-w	7839599.0					N	D		
+1293	10.1103/physreve.106.054304	36559437.0		N			N	D		
+3284		11726625.0					N	D		
+7354	10.1371/journal.pone.0143407	26599395.0	PMC4658112				N	D		
+1362	10.1152/jn.1995.74.4.1800	8989416.0		N			N	D		
+8438	10.2967/jnumed.109.065284	19837759.0	PMC3065020				N	D		
+2753	10.1523/jneurosci.08-05-01594.1988	3367212.0	PMC6569196				N	D		
+4300	10.1093/cercor/bhab285	34518890.0	PMC9016287				N	D		
+8891	10.1177/1073858414540216	24972604.0	PMC4723268				N	D		
+1363	10.1002/cne.903330206	8393892.0		Y	Y	Y	Y	D		
+8892	10.1016/s0002-9440(10)65224-8	10514404.0	PMC1867008				N	D		
+3095	10.1007/bf00237664	4018198.0		N			N	D	electrical responses from dLGN cells in three M. fascicniaris monkeys	
+7575	10.1038/tp.2015.189	26645628.0	PMC5068588				N	D		
+10717		1458282.0	PMC1907398				N	D		
+6441	10.1152/jn.00559.2010	21613589.0	PMC3154823				N	D		
+8178	10.1523/jneurosci.0026-14.2014	25186756.0	PMC4152609				N	D		
+1615	10.1152/jn.1996.76.6.3633	8985863.0		Y	N		N	D	marmoset monkeys; 	
+1193	10.1093/cercor/bhq028	20211942.0	PMC2978239	N			N	D		
+1181	10.1523/jneurosci.0071-22.2022	35953294.0	PMC9480880	Y	Y	N	N	D	Crossed Corticostriatal Projections in the Macaque Brain	
+2196	10.1371/journal.pone.0009302	20352085.0	PMC2844408				N	D		
+4583	10.3389/fnins.2013.00024	23658535.0	PMC3647142				N	D	review; ultra-high resolution imaging; Functional mapping	
+2344	10.1007/s00401-018-1904-1	30191402.0	PMC6208731				N	D		
+7629	10.1074/jbc.rev120.008207	33219130.0	PMC7948403				N	D		
+5113	10.3389/fnins.2018.00475	30061809.0	PMC6054994				N	D		
+5368	10.1111/ejn.15393	34273134.0	PMC9291791				N	D		
+4429	10.3346/jkms.2019.34.e66	30833883.0	PMC6393759				N	D		
+4454	10.1126/sciadv.adg2252	37418525.0	PMC10328400				N	D		
+10645		4606887.0	PMC1129565				N	D		
+2784	10.1126/science.282.5391.1062	9841454.0					N	D		
+9972			PMC6453219				N	D		
+10900			PMC1583040				N	D		
+6817	10.1523/jneurosci.0403-16.2016	27251623.0	PMC4887566				N	D		
+7381	10.1371/journal.pntd.0005296	28068342.0	PMC5249252				N	D		
+323	10.1006/nimg.2002.1178	12482073.0					N	D		
+1707	10.1016/j.cogbrainres.2004.01.005	15464352.0					N	D		
+1513	10.1523/jneurosci.16-03-01230.1996	8558251.0	PMC6578812				N	D		
+8765	10.1002/cne.20660	16052493.0	PMC2474655	Y	Y	N	N	D	TT; Insular and Gustatory Inputs to the Caudal Ventral Striatum; not about TC or CT	
+7851	10.1523/jneurosci.0848-14.2014	25339751.0	PMC6608387				N	D		
+7321	10.1111/nyas.14256	31617589.0	PMC7154681				N	D		
+6870	10.3389/fnins.2016.00310	27445678.0	PMC4928151				N	D		
+10759	10.1136/ard.54.9.757	7495351.0	PMC1009995				N	D		
+10018	10.1002/(sici)1097-0193(1999)8:4<209::aid-hbm5>3.0.co;2-0	10619415.0	PMC6873313				N	D		
+4613	10.1111/ejn.12844	25728177.0	PMC4347938				N	D		
+4955	10.1111/ejn.13726	28949036.0	PMC5765455				N	D		
+7559	10.1016/j.neuroimage.2013.05.079	23707587.0	PMC3807588				N	D		
+7486	10.1093/cercor/bhu154	25037923.0	PMC4635915				N	D		
+6936	10.1159/000367665	25721097.0	PMC4540694				N	D		
+10916			PMC2047647				N	D		
+9259	10.1101/cshperspect.a019026	26801682.0	PMC5008067				N	D		
+9143	10.1523/jneurosci.0610-16.2016	27413161.0	PMC4945670				N	D		
+1215	10.1016/j.cortex.2008.03.005	18585697.0					N	D		
+2681	10.1016/0166-4328(88)90028-9	3166701.0					N	D		
+6634	10.3389/fncir.2013.00125	23908606.0	PMC3725427				N	D		
+1764	10.1016/s0304-3959(97)00138-3	9469535.0					N	D		
+10066	10.1523/jneurosci.14-04-02383.1994	8158275.0	PMC6577113				N	D		
+4245	10.1016/j.cccb.2023.100158	36703699.0	PMC9871745				N	D		
+5392	10.1016/j.yfrne.2018.05.002	29842887.0	PMC6175608				N	D		
+3212	10.1523/jneurosci.19-01-00220.1999	9870952.0	PMC6782396				N	D		
+4495	10.1111/ejn.15027	33113247.0	PMC7902345	Y	Y	N	N	D		
+5225	10.3389/fncir.2015.00015	25926774.0	PMC4396532				N	D		
+1121	10.11154/pain.33.275						N	D		
+7796	10.1016/j.neuron.2018.08.008	30174117.0	PMC6224163				N	D		
+3890	10.1016/0969-8051(93)90038-v	8358354.0					N	D		
+7918	10.1002/hbm.20602	18465800.0	PMC6871145				N	D		
+8217	10.7554/elife.26106	28871959.0	PMC5617635				N	D		
+4541	10.1016/j.bpsc.2020.09.014	33309567.0	PMC8005500				N	D		
+9971	10.1523/jneurosci.1915-09.2009	19710305.0	PMC2779138				N	D		
+8672	10.1073/pnas.162342799	12163645.0	PMC123273				N	D		
+8804	10.1038/nrn2741	19904279.0	PMC2895763				N	D		
+10654	10.1016/j.jneuroim.2008.08.001		PMC7119863				N	D		
+9641	10.1523/jneurosci.3907-11.2011	22131421.0	PMC6623827				N	D		
+10088	10.1523/jneurosci.01-11-01218.1981	6796657.0	PMC6564226				N	D		
+3597	10.1002/cne.901880404	118192.0		Y	Y	N	N	D	spinothalamic tract	
+7604	10.3389/neuro.07.020.2009	19750199.0	PMC2741294				N	D		
+939	10.1016/s0940-9602(03)80051-1	12924469.0					N	D		
+1160	10.1002/cne.22740	21830220.0	PMC3909929				N	D		
+7054	10.1002/mrm.21574	18429024.0	PMC2562422				N	D		
+7933	10.1523/jneurosci.15-12-07821.1995	8613722.0	PMC6577925				N	D		
+4755	10.3389/fendo.2020.534343	33763023.0	PMC7982876				N	D		
+9042	10.1002/cne.902800208	2466877.0	PMC9954487				N	D		
+5238	10.1515/nf-2021-0031	35881644.0	PMC8887907				N	D		
+2325	10.1002/cne.25344	35603771.0					N	D		
+4168	10.3390/biomedicines11030696	36979674.0	PMC10045296				N	D		
+2333	10.1007/s00115-013-3897-2	24057066.0					N	D		
+1973	10.1016/j.neures.2017.10.009	29111135.0					N	D		
+340	10.1016/0006-8993(83)91020-x	6839157.0		Y	Y	Y	Y	D	connections between the pulvinar and visual area MT in the macaque monkey	
+10165	10.1523/jneurosci.0009-08.2008	18509031.0	PMC6670798				N	D		
+7324	10.1073/pnas.1610077114	28074037.0	PMC5278439				N	D		
+10331	10.1093/schbul/sbq173	21355132.0	PMC3044641				N	D		
+1777	10.1016/j.nicl.2018.101628	30528957.0	PMC6411779				N	D		
+712	10.1152/jn.1999.82.4.1865	10515975.0					N	D		
+2948	10.1002/cne.901820108	100530.0		Y	Y	Y	Y	D	pathways between the dorsal lateral geniculate nucleus and visual cortex in old world and new world primates; Old World (Macaca, Papio, Erythrocebus, Cercopithecus) and New World (Saimiri, Cebus)	
+1878	10.1097/00006231-200405000-00014	15100512.0					N	D		
+5622	10.1073/pnas.1809833115	30545910.0	PMC6310791				N	D		
+7548	10.1152/jn.00347.2019	31693445.0	PMC6985854				N	D		
+8859	10.1007/s00359-017-1224-2	29086012.0	PMC5792365				N	D		
+4664	10.1093/cercor/bhaa342	33279960.0	PMC8248841				N	D		
+83	10.1002/cne.21934	19085970.0	PMC2646254	Y	Y	N	N	D	subcortical connection	
+1354	10.1002/cne.903520205	7536756.0		Y	Y	Y	Y	D	Transient subcortical connections of inferior temporal areas TE and TEO in infant macaque monkeys	
+3981	10.3389/neuro.07.003.2007	18958231.0	PMC2526010	N			N	D		
+1150	10.1016/s0006-8993(97)00696-3	9313911.0					N	D		
+1553	10.1523/jneurosci.1575-14.2015	26156987.0	PMC4495241				N	D		
+3513	10.1007/bf00307092	4344661.0					N	D		
+3120	10.1016/0006-8993(71)90019-9	5001365.0					N	D		
+354				Y	Y	Y	Y	D/R	review about thalamus. RB: I'd like to count it in because of its relevance. We can always decide to use the original articles instead.	
+142	10.1007/bf00230949	1385203.0		Y	Y	Y	Y	D	SMA receives strong indirect projections from the GPi via the thalamus; not sure if thalamic neucli are specified	
+8206	10.1016/j.neubiorev.2017.04.016	28442402.0	PMC5510539				N	D		
+2706	10.1046/j.1460-9568.2002.02137.x	12372031.0					N	D		
+514							N	D		
+5934	10.3389/fnana.2015.00090	26236200.0	PMC4500960				N	D		
+1409	10.1523/jneurosci.16-05-01791.1996	8774447.0	PMC6578697				N	D		
+10521	10.1523/jneurosci.01-02-00121.1981	6167690.0	PMC6564146	Y	Y	N	N	D		
+388	10.1093/cercor/10.2.109	10667980.0					N	D		
+4817	10.1186/s12868-018-0451-y	30373516.0	PMC6205774				N	D		
+8442	10.3389/fnhum.2012.00224	22866032.0	PMC3406331				N	D		
+10002	10.1093/cercor/bhl147	17218482.0	PMC2896890				N	D		
+1597	10.1523/jneurosci.13-07-02982.1993	7687283.0	PMC6576695				N	D		
+3466	10.1176/ajp.156.11.1709	10553733.0					N	D		
+8044	10.1371/journal.pcbi.1007481	31671090.0	PMC6850560				N	D		
+349	10.1017/s1472928803000189			Y	Y	Y	Y	D	thalamocortical projections to motor area in the macaque monkey	
+3170	10.1523/jneurosci.09-08-02931.1989	2769372.0	PMC6569706				N	D		
+10072	10.1136/bjo.78.11.875	7848987.0	PMC504976				N	D		
+2156	10.1113/jphysiol.2005.088047	15905213.0	PMC1464718				N	D		
+3885	10.1016/j.nucmedbio.2014.08.003	25858513.0	PMC4441617				N	D		
+7669	10.1523/jneurosci.3540-15.2016	27147659.0	PMC4854969				N	D		
+4330	10.1002/hipo.23167	31617622.0	PMC6972576				N	D		
+9107	10.1093/schbul/sbn156	19023123.0	PMC2635893				N	D		
+4733	10.1007/s00429-017-1504-1	28835999.0	PMC5772150				N	D		
+4178	10.1093/texcom/tgaa030	34296104.0	PMC8152833	Y	N		N	D	cat	
+8751	10.1371/journal.pone.0020912	21799730.0	PMC3140472				N	D		
+3199	10.1523/jneurosci.18-23-10090.1998	9822763.0	PMC6793272				N	D		
+4402	10.1016/j.isci.2020.101717	33196032.0	PMC7645060				N	D		
+276	10.1007/978-1-4899-0194-1_3			Y	Y	Y	Y	D	Book chapter as review. RB: I'd like to count it in despite being a review article.	
+8057	10.1038/npp.2014.280		PMC4261147				N	D		
+5560	10.7554/elife.51144	32091390.0	PMC7080407				N	D		
+484	10.1523/jneurosci.0953-10.2010	20573910.0	PMC2905633				N	D		
+5795	10.1002/cne.23203	22826174.0	PMC3513524	Y	N		N	D	Otolemur garnettii	
+8821	10.1523/jneurosci.5513-12.2013	23699519.0	PMC6705035				N	D		
+8573	10.1016/s0002-9440(10)63204-x	15039205.0	PMC1615335				N	D		
+9854	10.1016/j.neuroscience.2013.08.005	23954862.0	PMC3795858				N	D		
+5567	10.1097/wnr.0b013e32834ca58d	22009193.0	PMC3208755				N	D		
+3027	10.1016/j.neuron.2016.05.009	27263973.0	PMC5573145	Y	Y	Y	Y	D	we injected retrograde tracers into four different face patches (PL, ML, AL, AM) ; We found that the patches are strongly and specifically connected to each other, and individual patches receive inputs from extrastriate cortex, the medial temporal lobe, and three subcortical structures (the pulvinar, claustrum, and amygdala). Inputs from prefrontal cortex were surprisingly weak	
+7576	10.1186/1744-9081-6-71	21106078.0	PMC3009948				N	D		
+33	10.1016/0891-0618(95)00050-h	7545406.0		Y	Y	Y	Y	D		
+9580	10.1002/hbm.20739	19241418.0	PMC6871153				N	D		
+1494	10.1016/j.neuroscience.2011.06.080	21782903.0		Y	Y	Y	Y	D		
+8872	10.1093/nar/gkt567	23804753.0	PMC3763550				N	D		
+9295	10.1371/journal.pbio.1000061	19296722.0	PMC2656551				N	D		
+9337	10.1371/journal.pcbi.1002890	23408877.0	PMC3567170				N	D		
+957	10.1002/cne.20084	15067722.0			N		N	D	cynomolgus monkeys	
+5835	10.1016/j.neuroimage.2015.05.072	26037056.0	PMC4512905				N	D		
+3258	10.1093/brain/108.2.405	4005529.0					N	D		
+5256	10.3389/fnint.2011.00053	22065951.0	PMC3207327				N	D		
+4431	10.3389/fnana.2015.00061	26042001.0	PMC4438223				N	D		
+10917		17105094.0	PMC1273360				N	D		
+6577	10.1016/j.nbd.2010.05.025	20580929.0	PMC2926181				N	D		
+1999	10.1515/tnsci-2015-0025	28123808.0	PMC4936633				N	D		
+7469	10.1186/1742-2094-9-84	22554253.0	PMC3495408				N	D		
+7760	10.1016/j.bbr.2019.111921	31009645.0	PMC6545140				N	D		
+5183	10.3389/fnint.2022.856207	35391754.0	PMC8979825				N	D		
+5034	10.1016/j.heares.2016.05.014	27292113.0	PMC5148730				N	D		
+2801	10.1016/0306-4522(82)90088-4	6818491.0		Y	N		N	D	cat; cortical projections of the hippocampal formation in the cat	
+10709	10.1136/jnnp.25.3.256	13890917.0	PMC495452				N	D		
+4010	10.3389/fncir.2021.632668	33603649.0	PMC7884447	N			N	D	not TT study	
+10275	10.1186/s13244-019-0713-y	30806851.0	PMC6396437				N	D		
+2875	10.1016/s0042-6989(00)00210-8	11090662.0					N	D		
+4336	10.1002/dev.21963	32115695.0	PMC7319905				N	D		
+8050	10.3390/ijms19123953	30544839.0	PMC6321004				N	D		
+4453	10.1038/s41593-022-01197-0	36424430.0	PMC10055353				N	D		
+6893	10.1515/tnsci-2016-0016	28123829.0	PMC5234525				N	D		
+7451	10.1016/j.cub.2014.04.044	24881876.0	PMC4698409				N	D		
+395	10.2183/pjab1945.43.822			N	Y	Y	N	D		
+8841	10.1371/journal.pone.0035320	22563382.0	PMC3338510				N	D		
+4480	10.1111/epi.16089	31206636.0	PMC6779127				N	D		
+3663	10.1016/0042-6989(68)90050-3	4976817.0					N	D		
+4717	10.1016/j.ejphar.2021.174556	34627806.0	PMC8605764				N	D		
+9727	10.1186/1751-0759-1-22	18021398.0	PMC2206036				N	D		
+2317	10.1093/brain/120.1.75	9055799.0					N	D		
+182	10.1126/science.282.5391.1117	9804549.0		Y	Y	Y	Y	D	TT; macaque; but in four macaque monkeys with long-standing, accidental trauma to a forelimb	
+10659			PMC1855305				N	D		
+6507	10.1111/bph.13907	28613414.0	PMC5610166				N	D		
+6068	10.1016/j.neuroimage.2012.03.045	22465841.0	PMC3376204				N	D		
+9587	10.1002/hbm.20642	18726908.0	PMC3034238				N	D		
+3292	10.1016/0041-008x(89)90157-9	2749736.0					N	D		
+5119	10.3389/fnint.2019.00032	31396059.0	PMC6664014				N	D		
+10815	10.1080/13550280701739265		PMC7095058				N	D		
+9688	10.1016/j.neuron.2011.12.035	22365554.0	PMC3315591				N	D		
+4891	10.3389/fnhum.2014.00777	25352796.0	PMC4195275				N	D		
+4782	10.1152/jn.00534.2020	33052766.0	PMC7814907				N	D		
+4207	10.3389/fcell.2021.737429	34692694.0	PMC8529117				N	D		
+1572	10.1016/0361-9230(90)90189-7	2289174.0		N			N	D	Cebus apella; 	
+334	10.1016/0014-4886(70)90222-0	4987453.0					N	D		
+2572	10.1016/0042-6989(76)90033-x	821250.0					N	D		
+9582	10.1038/nrn3234	22814587.0	PMC3478095				N	D		
+10466	10.1523/jneurosci.09-04-01389.1989	2703882.0	PMC6569851				N	D		
+9296	10.2217/nmt-2016-0005	27230697.0	PMC4976881				N	D		
+10338	10.1136/jnnp.36.3.421	4714104.0	PMC494342				N	D		
+5262	10.1016/j.nucmedbio.2015.07.006	26320813.0	PMC4658304				N	D		
+7992	10.1073/pnas.1011284108	21690410.0	PMC3131344				N	D		
+596	10.1016/s0006-3223(01)01341-5	12007457.0					N	D		
+4143	10.7554/elife.76101	35441590.0	PMC9159751				N	D		
+10232	10.1523/jneurosci.1317-08.2008	18685037.0	PMC2553276				N	D		
+49	10.1007/s00429-021-02377-7	34524542.0	PMC8541979	Y	Y	Y	Y	D	review; we will analyze their cortical and thalamic inputs thanks to retrograde neuronal tracers separately injected into the SPL areas V6, V6A, PEc, and PE. These areas receive visual and somatosensory information distributed in a caudorostral, visuosomatic trend, and some of them are directly connected with the dorsal premotor cortex	
+8635	10.1016/j.cub.2009.08.010	19889376.0	PMC3387539				N	D		
+10750		13396253.0	PMC1974286				N	D		
+6926	10.3389/fnmol.2015.00036	26283910.0	PMC4516891				N	D		
+3021	10.1016/j.exer.2004.08.016	15652525.0					N	D		
+9113	10.1038/mt.2013.266	24419081.0	PMC3918916				N	D		
+3768	10.1002/syn.21514	22124971.0					N	D		
+6589	10.1111/j.1749-6632.2009.03866.x	19645877.0	PMC3311467				N	D		
+9445	10.1109/iembs.2010.5627350	21096637.0	PMC4091736				N	D		
+10108	10.1093/geroni/igab046	34926835.0	PMC8679246				N	D		
+2318	10.3109/01658109309037012						N	D		
+8799		9284828.0	PMC1857843				N	D		
+2704	10.1002/9780470513545.ch4	3322720.0		Y	Y	Y	N	D	review	
+8642	10.1523/jneurosci.2699-08.2008	18829955.0	PMC2692971				N	D		
+4351	10.1098/rstb.2020.0325	34420381.0	PMC8380981				N	D		
+8211	10.1002/hbm.22581	25044884.0	PMC4797947				N	D		
+8725	10.1073/pnas.95.13.7731	9636219.0	PMC22740				N	D		
+10191	10.1523/jneurosci.16-07-02261.1996	8601806.0	PMC6578531				N	D		
+7117	10.1007/s00213-010-1989-2	20809212.0	PMC3045510				N	D		
+9360	10.1152/jn.00600.2013	24671531.0	PMC4044434				N	D		
+3261	10.1176/appi.ajp.158.9.1411	11532725.0					N	D		
+2764	10.1152/jn.00995.2003	15140912.0		N			N	D		
+10664	10.1136/jnnp.40.9.932	599370.0	PMC492869				N	D		
+3358	10.1111/j.1460-9568.2008.06598.x	19175404.0	PMC4430668				N	D		
+10703	10.1007/978-0-387-77998-0_9		PMC7120231				N	D		
+7878	10.1073/pnas.0901831106	19497858.0	PMC2690605				N	D		
+9692	10.1073/pnas.87.5.1932	2308954.0	PMC53598				N	D		
+8549	10.1073/pnas.1504723112	25825711.0	PMC4403151				N	D		
+3596	10.1016/0021-9975(69)90034-6	4975613.0					N	D		
+7537	10.1016/j.neuroimage.2012.07.014	22796992.0	PMC3488432				N	D		
+561	10.1080/08990229870772	9874520.0		N	Y	Y	N	D/R		
+6568	10.1016/j.neuroscience.2017.08.049	28890048.0	PMC6150928				N	D		
+9824	10.1016/j.eplepsyres.2011.02.014	21459558.0	PMC3376448				N	D		
+1868	10.1152/jn.2001.85.5.1793	11352997.0					N	D		
+5586	10.1038/s41583-020-0262-x	32029928.0	PMC7334830				N	D		
+6779	10.1016/j.neuropharm.2008.07.017	18687346.0	PMC5262474				N	D		
+1895	10.1038/s41386-021-00976-w	33603137.0	PMC8115308				N	D		
+2283	10.1162/0898929042568587	15601525.0					N	D		
+922		8883918.0					N	D		
+5483	10.1016/j.cub.2012.10.020	23159599.0	PMC3528834				N	D		
+3338	10.1002/cne.902070106	7096639.0		Y	Y	N	N	D	thalamus seems not involved	
+8403	10.1146/annurev-neuro-071013-013924	25032497.0	PMC4148825				N	D		
+3844	10.1016/j.neuropharm.2018.03.039	29608920.0					N	D		
+6629	10.1089/can.2017.0015	29082315.0	PMC5627668				N	D		
+1596	10.1006/nimg.2002.1204	12377152.0					N	D		
+8989	10.1136/adc.67.1_spec_no.15	1536580.0	PMC1590322				N	D		
+5363	10.1016/j.jneumeth.2015.08.030	26343530.0	PMC4744568				N	D		
+6037	10.1038/s41467-019-10248-3	31160561.0	PMC6546784				N	D		
+3331	10.1007/bf01148710	6672645.0					N	D		
+9458	10.1016/j.neuroimage.2014.02.014	24560717.0	PMC4010223				N	D		
+1996	10.1523/jneurosci.11-08-02383.1991	1869921.0	PMC6575512				N	D		
+2028	10.1097/00001756-200506210-00003	15931056.0					N	D		
+2131	10.1002/ana.20244	15449325.0					N	D		
+571	10.1007/978-1-4612-5902-2_8			Y	Y	N	N	D/R	Book chapter; seems relevant, can’t decide based on the abstract. RB: I think cortex is not involved.	
+5635	10.1038/npp.2009.104	19693001.0	PMC3055427				N	D		
+10323	10.1136/jnnp.2003.018713	15201345.0	PMC1739089				N	D		
+8326	10.1371/journal.pone.0071741	23940784.0	PMC3734303				N	D		
+7856	10.1186/1471-2164-7-188	16869982.0	PMC1550402				N	D		
+3238	10.1002/1096-9861(20001120)427:3<362::aid-cne4>3.0.co;2-k	11054699.0					N	D		
+9165	10.1371/journal.pcbi.1001078	21390280.0	PMC3044767				N	D		
+4751	10.1038/s41380-021-01092-3	33875802.0	PMC8523584				N	D		
+5576	10.3390/ijms20184391	31500132.0	PMC6769661				N	D		
+7012	10.3389/fnins.2019.01283	31849591.0	PMC6902035				N	D		
+10797	10.1084/jem.92.6.571	14784538.0	PMC2136002				N	D		
+3050	10.1371/journal.pone.0114258	25479158.0	PMC4257671				N	D		
+9329	10.1093/cercor/bhu239	25316338.0	PMC4677978				N	D		
+4339	10.1098/rstb.2020.0523	34957852.0	PMC8710882				N	D		
+4377	10.1016/j.neuroimage.2021.117818	33548458.0	PMC9947864	N	Y	Y	N	D	fMRI, basal nucleus of the amygdala to cortex, in macaque	
+10415		5954784.0	PMC1270739				N	D		
+7867	10.1371/journal.pone.0039686	22761869.0	PMC3386249				N	D		
+7264	10.1371/journal.pone.0025194	21966452.0	PMC3180379				N	D		
+4867	10.1038/s41386-021-01131-1	34446831.0	PMC8616908				N	D		
+2080	10.1093/cercor/bhz247	31701117.0	PMC7175000				N	D		
+1776	10.3389/fpsyg.2014.01545	25642199.0	PMC4295601				N	D		
+8922	10.1093/cercor/bhq189	20940222.0	PMC3114551				N	D		
+1815	10.1093/cercor/10.3.206	10731217.0		Y	Y	Y	Y	D	Rats, Monkeys and Humans; looks like a review; RB: even though it might be a review, I'd count this one in.	
+4584	10.1177/0271678x20928149	32501157.0	PMC7983506				N	D		
+10098	10.1136/jnnp.50.9.1117	3668561.0	PMC1032341				N	D		
+313	10.1523/jneurosci.08-11-04049.1988	2846794.0	PMC6569486	Y	Y	Y	Y	D	dorsolateral prefrontal and posterior parietal cortices to the anterior medial, medial dorsal, lateral dorsal, and medial pulvinar nuclei of the thalamus	
+4415	10.1016/j.cub.2022.04.067	35584697.0	PMC9233080				N	D		
+10663	10.1523/jneurosci.11-04-00933.1991	2010816.0	PMC6575363				N	D		
+9495	10.1073/pnas.88.19.8372	1924297.0	PMC52510				N	D		
+4852	10.3758/s13415-016-0463-y	27905080.0	PMC5272895	N			N	D		
+6063	10.1523/jneurosci.1852-07.2008	18337400.0	PMC6670689				N	D		
+303	10.1002/cne.1340	11596046.0		Y	Y	N	N	D/R	contains connections from pallidum to thalamus, seems cortex areas are not involved	
+9690	10.1038/npp.2013.283		PMC6863401				N	D		
+5592	10.1038/s41598-021-95987-4	34408203.0	PMC8373898				N	D		
+10068	10.1523/jneurosci.3250-09.2010	20203179.0	PMC6634098	N			N	D		
+5253	10.7554/elife.05422	25525751.0	PMC4290446	Y	N		N	D	TC but on mouse	
+3697	10.1002/cne.902420407	2418081.0					N	D		
+352	10.1016/0361-9230(88)90063-9	2452673.0					N	D	rat	
+6298	10.1111/nyas.12271	24329486.0	PMC3910152				N	D		
+7792	10.1111/nyas.12666	25721480.0	PMC4409448				N	D		
+1231	10.1002/cne.20216	15269970.0		N			N	D	Development of the human motor-related thalamic nuclei 	
+2138	10.1186/1866-1955-5-3	23406822.0	PMC3599251				N	D		
+8071	10.18632/aging.101069	27743512.0	PMC5115902				N	D		
+4164	10.1038/s41598-018-28766-3	30002419.0	PMC6043584				N	D		
+1028	10.1111/ejn.15958	36889675.0		N			N	D	Functional connectivity between medial pulvinar and cortical networks, EEG	
+9612	10.1523/jneurosci.4848-03.2004	15229247.0	PMC6729228				N	D		
+1829	10.1038/gt.2013.48	24067867.0	PMC3855617				N	D		
+2977	10.1016/0304-3959(94)90164-3	8022620.0					N	D		
+5579	10.3390/v11090807	31480472.0	PMC6784384				N	D		
+7152	10.1016/j.neuroimage.2021.118530	34464739.0	PMC8863543	N			N	D	Diffusion MRI, human, not experimental studies	
+2671	10.1159/000144183	4208329.0		N	N	N	N	D/R		
+1586	10.3389/fnsys.2017.00003	28228719.0	PMC5296321	N	N	Y	N	D	review, pulvinar and visual associated cortex, might include articles of our interest	
+2460	10.1002/cne.901680104	819469.0		N			N	D	study on the neurons of centromedian-parafascicular complex of the monkey (Macaca mulatta)	
+6172	10.1523/jneurosci.2399-18.2018	30626695.0	PMC6407294				N	D		
+4292	10.3390/ijms22105397	34065521.0	PMC8160972				N	D		
+10847			PMC1088110				N	D		
+10476	10.1523/jneurosci.15-05-03284.1995	7538558.0	PMC6578253	Y	N	N	N	D	TT study of corticospinal projections from the frontal lobe of macaques	
+8932	10.1007/s12264-011-1737-6	22108813.0	PMC5560386				N	D		
+434	10.1523/jneurosci.2419-07.2007	17959800.0	PMC6673207	Y	Y	N	N	D	Efferent Association Pathways from the Rostral Prefrontal Cortex, autoradiographic method, in the macaque monkey.	
+9175	10.1371/journal.pone.0003620	18974851.0	PMC2575401				N	D		
+5316	10.1016/j.neuron.2017.04.008	28426955.0	PMC5881586				N	D		
+2812	10.1007/bf00237671	4018190.0		Y	Y	Y	N	D	Studies Cerebello-cortical in monkeys (not macaque), seems involves the relay of thalamus, not sure if certain neuclei were mentioned	
+3497	10.1002/ana.410070304	6775580.0					N	D		
+6335	10.1016/j.neuron.2015.07.026	26291164.0	PMC4545497				N	D		
+5898	10.3390/brainsci10120906	33255604.0	PMC7760331				N	D		
+2774	10.1002/cne.901490302	4123503.0		N			N	D		
+5067	10.1523/jneurosci.5271-12.2013	23761904.0	PMC3682386				N	D	transgenic mouse, visualize corticogeniculate projections to examine the timing of cortical innervation in dLGN.	
+10898	10.1084/jem.97.1.69	13022863.0	PMC2136187				N	D		
+9345	10.1038/nrn2619	19352403.0	PMC2771435				N	D		
+3838	10.1007/s00213-015-4175-8	26660447.0	PMC4761287				N	D		
+2824	10.1016/0921-8696(88)90014-x	3231364.0		Y	Y	N	N	D	We recorded single units from the Lateral Geniculate Nucleus (LGN) of macaque monkeys (M. fascicularis or M. rnulatta), together with their retinal inputs, which manifest themselves in the LGN as synaptic (S) potentials.	
+4114	10.2139/ssrn.3689615						N	D		
+7835	10.1016/j.nbd.2015.09.011	26409031.0	PMC4915441				N	D		
+10353	10.1523/jneurosci.17-16-06447.1997	9236252.0	PMC6568360				N	D		
+225	10.1515/revneuro.2007.18.6.417	18330211.0	PMC2855189	N	Y	Y	N	D/R		
+5155	10.1038/s41582-023-00809-y	37198436.0	PMC10191412				N	D		
+1440	10.1038/nature09179	20574422.0	PMC2904843	N			N	D	macaque, fMRI, not TT	
+10266	10.1073/pnas.82.24.8780	3909155.0	PMC391521				N	D		
+9798	10.1093/schbul/sbm164	18263882.0	PMC2632405				N	D		
+7997	10.1152/jn.00458.2013	25298387.0	PMC4294569	N			N	D		
+1706	10.1016/j.jchemneu.2003.08.002	14729130.0					N	D		
+4553	10.1038/s41598-021-83342-6	33580133.0	PMC7881006				N	D		
+6401	10.1073/pnas.1719666115	29358369.0	PMC5819450				N	D		
+6631	10.1016/j.bandl.2012.10.002	23295209.0	PMC3886250				N	D		
+3908	10.1016/j.celrep.2023.112844	37498741.0		N			N	D	modeling of corticothalamic interactions	
+10597	10.1128/aac.31.7.991	3662478.0	PMC174858				N	D		
+4469	10.1016/j.neuroimage.2023.119889	36681137.0	PMC9999292				N	D		
+10282	10.1093/schbul/sbv010	26305006.0	PMC4364461				N	D		
+7282	10.2174/1570159x16666180628165107	29956632.0	PMC6520586				N	D		
+8046	10.1523/jneurosci.5542-06.2006	16672656.0	PMC6674161				N	D		
+8683		3111109.0	PMC2590100				N	D		
+5170	10.1007/s00018-016-2264-4	27193323.0	PMC5002041				N	D		
+8921	10.1002/cne.20906	16506197.0	PMC6503658	Y	Y	N	N	D	connections of premotor cortical areas, thalamus not involved	
+5085	10.3389/fncir.2018.00047	29988373.0	PMC6023998				N	D		
+1860	10.1371/journal.pone.0046157	23071541.0	PMC3465318				N	D		
+3371	10.1002/cne.901820308	102662.0		Y	Y	N	N	D	Autoradiographic tracing procedures have been used to study the organization of retinogeniculate axons in seven primates, cortex seems not involved	
+113	10.1111/ejn.14078	30022540.0	PMC6519510	N			N	D	lesion or damage of parvocellular mediodorsal thalamus of macaque, not TT	
+6990	10.1523/jneurosci.1568-18.2018	30459226.0	PMC6360286				N	D		
+5626	10.3389/fnana.2019.00050	31191260.0	PMC6540615	N			N	D	thalamus not involved	
+626	10.1016/0006-8993(68)90045-0	5652718.0		N			N	D/R		
+9618	10.3390/molecules191118781	25407719.0	PMC6271458				N	D		
+1183	10.1002/cne.1084	11447593.0			N		N	D	cats	
+6963	10.1016/j.cub.2007.01.046	17407750.0	PMC7116514				N	D	review about the auditory cortex, including some information about connection between thalamus and auditory cortex, but it’s not a TT experimental study	
+5541	10.1098/rstb.2015.0261	27269604.0	PMC4901455				N	D		
+9603	10.1016/j.dcn.2011.04.001	22436508.0	PMC6987565				N	D		
+997	10.1016/j.jocn.2008.03.018	19167229.0		N	Y		Y	D	cortical and subcortical connections; using PDT	
+1889	10.1016/j.cortex.2017.10.011	29216478.0					N	D		
+7919	10.1073/pnas.0503998102	15967995.0	PMC1166637				N	D		
+5786	10.1038/s41593-021-00878-6	34183869.0	PMC8338902				N	D		
+8471	10.1016/j.celrep.2016.02.072	26997283.0	PMC4814327				N	D		
+10781	10.1901/jeab.1967.10-s607		PMC1338398				N	D		
