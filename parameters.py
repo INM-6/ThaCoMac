@@ -31,27 +31,33 @@ ranking_kw_groups_weights = {
    }
 
 possible_macaque_group = [
-   'rhesus', 'macaque', 'macaca', 'primate'
+   'rhesus', 'macaque', 'macaca', 'primate', 'monkey'
 ]
 
 other_submonkey_species = [
-   'squirrel monkey', 'new World titi monkey', 'owl monkey', 'new world monkey', 'cebus monkey'
+   'squirrel monkey', 'new world titi monkey', 'owl monkey', 'new world monkey', 'cebus monkey'
 ]
 
 macaque_group = [
    'rhesus', 'macaque', 'macaca'
    ]
 other_spiecies_group = [
-   'cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'marmoset', 'human', 'humans', 'man', 'men',
+   'cat', 'cats', 'rat', 'rats', 'mouse', 'mice', 'marmoset monkey', 'marmoset', 'human', 'humans', 'man', 'men',
    'dog', 'dogs', 'rabbit', 'sheep', 'frog', 'frogs', 'squirrel monkey', 'saimiri sciureus',
    'hedgehog', 'erinaceus europaeus', 'callithrix jacchus', 'hamster', 'phodopus sungorus',
    'pig', 'pigs', 'minipig', 'cavia aperta', 'wallaby', 'macropus eugenii', 'bat', 'bats', 
-   'otolemur garnetti', 'new World titi monkey', 'callicebus moloch', 
+   'otolemur garnetti', 'new world titi monkey', 'callicebus moloch', 
    'owl monkey', 'aotus trivirgatus', 'new world monkey', 'ferret', 'ferrets', 'bush baby', 'galago',
    'galagos', 'rodent', 'rodents',
    'cebus apella', 'cebus monkey', 'chicken', 'possum', 'trichosurus vulpecula', 'prosimian',  
    'antrozous pallidus', 'shrew', 'shrews', 'suncus murinus', 'gerbil', 'gerbils', 'swine', 'swines'
    ]
+
+sub_monkey_not_macaque = [
+   'squirrel monkey', 'new world titi monkey', 'owl monkey', 'new world monkey', 'cebus monkey', 
+   'marmoset monkey'
+]
+
 tc_ct_group = [
    'thalamocortical', 'thalamo-cortical', 'corticothalamic', 'cortico-thalamic'
    ]
