@@ -82,6 +82,7 @@ poten_litera_db_ranked_by_full_text = os.path.join(potential_literature_database
 
 # manually_read_and_confirm_folder
 article_list_to_manually_read = os.path.join(manually_read_and_confirm_folder, "article_list_to_manually_read.txt")
+relevant_article_and_is_review = os.path.join(manually_read_and_confirm_folder, "relevant_article_and_is_review.txt")
 
 final_manually_read_csv = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv.csv")
 final_manually_read_csv_1 = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_1.csv")
