@@ -89,14 +89,18 @@ final_manually_read_csv_1 = os.path.join(manually_read_and_confirm_folder, "fina
 final_manually_read_csv_2 = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_2.csv")
 final_manually_read_csv_3 = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_3.csv")
 final_manually_read_csv_4 = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_4.csv")
-final_manually_read_csv_abstract_full_text_not_available = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_abstract_full_text_not_available.csv")
+# final_manually_read_csv_abstract_full_text_not_available = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_abstract_full_text_not_available.csv")
 
 final_manually_read_csv_1_labeled = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_1_labeled.csv")
 final_manually_read_csv_2_labeled = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_2_labeled.csv")
 final_manually_read_csv_3_labeled = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_3_labeled.csv")
 final_manually_read_csv_4_labeled = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_4_labeled.csv")
-final_manually_read_csv_abstract_full_text_not_available_labeled = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_abstract_full_text_not_available_labeled.csv")
+# final_manually_read_csv_abstract_full_text_not_available_labeled = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_abstract_full_text_not_available_labeled.csv")
 
 final_manually_read_csv_1_aitor = os.path.join(manually_read_and_confirm_folder, "final_manually_read_csv_1_aitor.csv")
 
 
+
+# final_confirm_article_list
+final_confirm_article_list = os.path.join(manually_read_and_confirm_folder, "final_confirm_article_list.csv")
+relevant_reviews_and_tak_not_avaialble = os.path.join(manually_read_and_confirm_folder, "relevant_reviews_and_tak_not_avaialble.csv")
