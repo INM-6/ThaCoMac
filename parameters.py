@@ -13,14 +13,14 @@
 
 text_length_to_extract = 500
 
-macaque_weights = 10
+macaque_weights = 5
 other_spiecies_weights = 0
 tc_ct_weights = 40
-thalam_weights = 20
+thalam_weights = 25
 cortex_weights = 5
-inject_weights = 0
+inject_weights = 10
 method_weights = 15
-connect_weights = 5
+connect_weights = 10
 
 # 6 groups of keywords and their weights
 ranking_kw_groups_weights = {
