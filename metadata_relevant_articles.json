@@ -1,73 +1,78 @@
 {
-    "Aiticle_IDENTIFIER": {
-        "DH_INDEX": "1",
-        "DOI": "10.1016/j.neuron.2019.01.014",
-        "PMID": "30737135",
-        "PMCID": "PMC6396545",
-        "Title": "Title"
-    },
-    "Article_Info": {
-        "URL": "https://www.sciencedirect.com/science/article/pii/S0896627319300433",
-        "Full_Text_URL": "https://www.sciencedirect.com/science/article/pii/S0896627319300433/pdfft?md5=8b9b9b5b4b4b4b4b4b4b4b4b4b4b4b4b&pid=1-s2.0-S0896627319300433-main.pdf",
-        "Journal": "Neuron",
-        "Publication_Year": "2022",
-        "First_Autor": "John Doe"
-    },
-    "Macaque_Species": {
-        "Macaque_Species_1": {
-            "Macaque_Species_ID": "Macaque Species 1",
-            "Macaque_Species_Full_Name": "Macaque Species 1"
+    "331":{
+        "Aiticle_IDENTIFIER": {
+            "DH_INDEX": "1",
+            "DOI": "10.1016/j.neuron.2019.01.014",
+            "PMID": "30737135",
+            "PMCID": "PMC6396545",
+            "Title": "Title"
         },
-        "Macaque_Species_2": {
-            "Macaque_Species_ID": "Macaque Species 1",
-            "Macaque_Species_Full_Name": "Macaque Species 1"
-        }
-    },
-    "Parcellation_Scheme_and_Nomenclature": {
-        "Atlas": "Allen Mouse Brain Atlas",
-        "Cortex_Pacellation_Scheme": "Paxinos",
-        "Thalamus_Parcellation_Scheme": "Paxinos"
-    },
-    "Injection_and_Label": {
-        "Injection_1": {
-            "Injection_ID": "Injection 1",
-            "TT_Substance": "Substance 1",
-            "TT_Direction": "Retrograde",
-            "Injection_Area": "Area 1",
-            "Labeled_Area": {
-                "Labeled_Area_1": {
-                    "Area_ID": "Area 2",
-                    "Area_Full_Name": "Area 2",
-                    "Area_Abbreviation": "Area 2",
-                    "FLN": "0.1"
-                },
-                "Labeled_Area_2": {
-                    "Area_ID": "Area 2",
-                    "Area_Full_Name": "Area 2",
-                    "Area_Abbreviation": "Area 2",
-                    "FLN": "0.1"
-                }
+        "Article_Info": {
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0896627319300433",
+            "Full_Text_URL": "https://www.sciencedirect.com/science/article/pii/S0896627319300433/pdfft?md5=8b9b9b5b4b4b4b4b4b4b4b4b4b4b4b4b&pid=1-s2.0-S0896627319300433-main.pdf",
+            "Journal": "Neuron",
+            "Publication_Year": "2022",
+            "First_Autor": "John Doe"
+        },
+        "Macaque_Species": {
+            "Macaque_Species_1": {
+                "Macaque_Species_ID": "Macaque Species 1",
+                "Macaque_Species_Full_Name": "Macaque Species 1"
+            },
+            "Macaque_Species_2": {
+                "Macaque_Species_ID": "Macaque Species 1",
+                "Macaque_Species_Full_Name": "Macaque Species 1"
             }
         },
-        "Injection_2": {
-            "Injection_ID": "Injection 1",
-            "TT_Substance": "Substance 1",
-            "TT_Direction": "Retrograde",
-            "Injection_Area": "Area 1",
-            "Labeled_Area": {
-                "Labeled_Area_1": {
-                    "Area_ID": "Area 2",
-                    "Area_Full_Name": "Area 2",
-                    "Area_Abbreviation": "Area 2",
-                    "FLN": "0.1"
-                },
-                "Labeled_Area_2": {
-                    "Area_ID": "Area 2",
-                    "Area_Full_Name": "Area 2",
-                    "Area_Abbreviation": "Area 2",
-                    "FLN": "0.1"
+        "Parcellation_Scheme_and_Nomenclature": {
+            "Atlas": "Allen Mouse Brain Atlas",
+            "Cortex_Pacellation_Scheme": "Paxinos",
+            "Thalamus_Parcellation_Scheme": "Paxinos"
+        },
+        "Injection_and_Label": {
+            "Injection_1": {
+                "Injection_ID": "Injection 1",
+                "TT_Substance": "Substance 1",
+                "TT_Direction": "Retrograde",
+                "Injection_Area": "Area 1",
+                "Labeled_Area": {
+                    "Labeled_Area_1": {
+                        "Area_ID": "Area 2",
+                        "Area_Full_Name": "Area 2",
+                        "Area_Abbreviation": "Area 2",
+                        "FLN": "0.1"
+                    },
+                    "Labeled_Area_2": {
+                        "Area_ID": "Area 2",
+                        "Area_Full_Name": "Area 2",
+                        "Area_Abbreviation": "Area 2",
+                        "FLN": "0.1"
+                    }
+                }
+            },
+            "Injection_2": {
+                "Injection_ID": "Injection 1",
+                "TT_Substance": "Substance 1",
+                "TT_Direction": "Retrograde",
+                "Injection_Area": "Area 1",
+                "Labeled_Area": {
+                    "Labeled_Area_1": {
+                        "Area_ID": "Area 2",
+                        "Area_Full_Name": "Area 2",
+                        "Area_Abbreviation": "Area 2",
+                        "FLN": "0.1"
+                    },
+                    "Labeled_Area_2": {
+                        "Area_ID": "Area 2",
+                        "Area_Full_Name": "Area 2",
+                        "Area_Abbreviation": "Area 2",
+                        "FLN": "0.1"
+                    }
                 }
             }
         }
+    },
+    "389":{
+
     }
 }
