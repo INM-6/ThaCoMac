@@ -1,0 +1,16 @@
+{
+    "IDENTIFIER": {
+        "DB_INDEX": "1",
+        "DOI": "10.1016/j.neuron.2019.01.014",
+        "PMID": "30737135",
+        "PMCID": "PMC6396545",
+        "Title": "Title"
+    },
+    "URL": "https://www.sciencedirect.com/science/article/pii/S0896627319300433",
+    "FULL_TEXT_URL": "https://www.sciencedirect.com/science/article/pii/S0896627319300433/pdfft?md5=8b9b9b5b4b4b4b4b4b4b4b4b4b4b4b4b&pid=1-s2.0-S0896627319300433-main.pdf",
+
+    "year": "2022",
+    "author": "John Doe",
+    "injection_area": "Area 1",
+    "labeled_area": "Area 2"
+}
