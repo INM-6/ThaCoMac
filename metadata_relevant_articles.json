@@ -12,9 +12,28 @@
     "Publication_Year": "2022",
     "First_Autor": "John Doe",
     
+    "Species": "Mus musculus",
     "Atlas": "Allen Mouse Brain Atlas",
     "Cortex_Pacellation_Scheme": "Paxinos",
     "Thalamus_Parcellation_Scheme": "Paxinos",
-    "injection_area": "Area 1",
-    "labeled_area": "Area 2"
+    "Injection": {
+        "Injection_ID": "Injection 1",
+        "TT_Substance": "Substance 1",
+        "TT_Direction": "Retrograde",
+        "Injection_Area": "Area 1",
+        "Labeled_Area": {
+            "Labeled_Area_1": {
+                "Area_ID": "Area 2",
+                "Area_Full_Name": "Area 2",
+                "Area_Abbreviation": "Area 2",
+                "FLN": "0.1"
+            },
+            "Labeled_Area_2": {
+                "Area_ID": "Area 2",
+                "Area_Full_Name": "Area 2",
+                "Area_Abbreviation": "Area 2",
+                "FLN": "0.1"
+            }
+        }
+    }
 }
