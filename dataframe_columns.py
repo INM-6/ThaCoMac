@@ -61,6 +61,6 @@ db_ranked_columns_with_2_new_columns = db_count_columns + ["NOT_TT", "NOT_MACAQU
 
 db_ranked_columns = db_ranked_columns_with_2_new_columns + relevance_index
 
-final_manually_read_df_columns = index + columns_to_fill + identifier  + url + tak + text_columns_to_add
+final_manually_read_df_columns = index + columns_to_fill + identifier + url + tak + text_columns_to_add
 
-final_confirm_df_columns = index + columns_to_fill + identifier  + url + tak
+final_confirm_df_columns = index + columns_to_fill + identifier + url + tak
