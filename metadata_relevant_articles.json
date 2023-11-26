@@ -34,18 +34,20 @@
                 "Injection_ID": "Injection 1",
                 "TT_Substance": "Substance 1",
                 "TT_Direction": "Retrograde",
-                "Injection_Area": "Area 1",
+                "Injection_Area_by_Author": "Area 1",
+                "Injection_Area_by_DH": "Area 1",
+                "Injection_Area_ID_by_DH": "V1",
                 "Labeled_Area": {
                     "Labeled_Area_1": {
-                        "Area_ID": "Area 2",
-                        "Area_Full_Name": "Area 2",
-                        "Area_Abbreviation": "Area 2",
+                        "Labeled_Area_by_Author": "LGN",
+                        "Labeled_Area_by_DH": "LGN",
+                        "Labeled_Area_ID_by_DH": "1",
                         "FLN": "0.1"
                     },
                     "Labeled_Area_2": {
-                        "Area_ID": "Area 2",
-                        "Area_Full_Name": "Area 2",
-                        "Area_Abbreviation": "Area 2",
+                        "Labeled_Area_by_Author": "LGN",
+                        "Labeled_Area_by_DH": "LGN",
+                        "Labeled_Area_ID_by_DH": "1",
                         "FLN": "0.1"
                     }
                 }
