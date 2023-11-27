@@ -25,7 +25,7 @@ for key in keys_list:
 # columns storing the counts of keywords for different texts
 count_columns_to_add = []
 for key in keys_list:
-    count_columns_to_add.append(key + "_COUNT_IN_TAK")
+    count_columns_to_add.append(key + "_COUNT_IN_TA")
     
 # for key in keys_list:
 #     count_columns_to_add.append(key + "_COUNT_IN_500")
