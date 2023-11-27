@@ -1,5 +1,5 @@
 {
-    "DOI_331":{
+    "DH331_DOI_PMID":{
         "Aiticle_IDENTIFIER": {
             "DH_INDEX": "1",
             "DOI": "10.1016/j.neuron.2019.01.014",
@@ -74,7 +74,7 @@
             }
         }
     },
-    "DOI_389":{
+    "DH389_DOI_PMID":{
 
     }
 }
