@@ -57,7 +57,7 @@ poten_litera_db = os.path.join(potential_literature_database_folder, "potential_
 # poten_litera_db_text_extract = os.path.join(literature_datasets_folder, "potential_related_literature_database_final.csv")
 
 poten_litera_pdf_not_available = os.path.join(potential_literature_database_folder, "potential_related_literature_pdf_not_available.csv")
-poten_litera_tak_not_available = os.path.join(potential_literature_database_folder, "poten_litera_tak_not_available.csv")
+poten_litera_ta_not_available = os.path.join(potential_literature_database_folder, "poten_litera_ta_not_available.csv")
 
 poten_litera_testing_set_300 = os.path.join(potential_literature_database_folder, "potential_related_literature_testing_set_300.csv")
 poten_litera_testing_set_300_read = os.path.join(potential_literature_database_folder, "potential_related_literature_testing_set_300_read.csv")
@@ -74,7 +74,7 @@ poten_litera_testing_set_1000_labeled_complete = os.path.join(potential_literatu
 poten_litera_db_kw_count = os.path.join(potential_literature_database_folder, "potential_related_literature_database_kw_count.csv")
 poten_litera_db_kw_count_with_2_new_columns = os.path.join(potential_literature_database_folder, "potential_related_literature_database_kw_count_with_2_new_columns.csv")
 poten_litera_db_relevance_index = os.path.join(potential_literature_database_folder, "potential_related_literature_database_relevance_index.csv")
-poten_litera_db_ranked_by_tak = os.path.join(potential_literature_database_folder, "potential_related_literature_database_ranked_by_tak.csv")
+poten_litera_db_ranked_by_ta = os.path.join(potential_literature_database_folder, "potential_related_literature_database_ranked_by_ta.csv")
 poten_litera_db_ranked_by_500 = os.path.join(potential_literature_database_folder, "potential_related_literature_database_ranked_by_500.csv")
 poten_litera_db_ranked_by_full_text = os.path.join(potential_literature_database_folder, "potential_related_literature_database_ranked_by_full_text.csv")
 
@@ -103,4 +103,4 @@ final_manually_read_csv_1_aitor = os.path.join(manually_read_and_confirm_folder,
 
 # final_confirm_article_list
 final_confirm_article_list = os.path.join(manually_read_and_confirm_folder, "final_confirm_article_list.csv")
-relevant_reviews_and_tak_not_avaialble = os.path.join(manually_read_and_confirm_folder, "relevant_reviews_and_tak_not_avaialble.csv")
+relevant_reviews_and_ta_not_avaialble = os.path.join(manually_read_and_confirm_folder, "relevant_reviews_and_ta_not_avaialble.csv")
