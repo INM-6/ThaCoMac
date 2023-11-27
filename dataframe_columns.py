@@ -27,11 +27,11 @@ count_columns_to_add = []
 for key in keys_list:
     count_columns_to_add.append(key + "_COUNT_IN_TAK")
     
-for key in keys_list:
-    count_columns_to_add.append(key + "_COUNT_IN_500")
+# for key in keys_list:
+#     count_columns_to_add.append(key + "_COUNT_IN_500")
 
-for key in keys_list:
-    count_columns_to_add.append(key + "_COUNT_IN_FULL_TEXT")
+# for key in keys_list:
+#     count_columns_to_add.append(key + "_COUNT_IN_FULL_TEXT")
 
 
 # columns storing the transformed counts of keywords for different texts
