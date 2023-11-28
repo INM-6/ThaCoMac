@@ -1,4 +1,4 @@
-{
+{   "Length_of_Text": 1000,
     "DH331_DOI_PMID":{
         "Aiticle_IDENTIFIER": {
             "DH_INDEX": "1",
@@ -30,8 +30,7 @@
             "Thalamus_Parcellation_Scheme": "Paxinos"
         },
         "Injection_and_Label": {
-            "Injection_1": {
-                "Injection_ID": "Injection 1",
+            "Injection_ID_...": {
                 "TT_Substance": "Substance 1",
                 "TT_Direction": "Retrograde",
                 "Injection_Area_by_Author": "Area 1",
@@ -43,13 +42,13 @@
                         "Labeled_Area_by_DH": "LGN",
                         "Labeled_Area_ID_by_DH": "1",
                         "FLN": "0.1"
-                    },
-                    "Labeled_Area_2": {
-                        "Labeled_Area_by_Author": "LGN",
-                        "Labeled_Area_by_DH": "LGN",
-                        "Labeled_Area_ID_by_DH": "1",
-                        "FLN": "0.1"
-                    }
+            },
+                "Labeled_Area_2": {
+                    "Labeled_Area_by_Author": "LGN",
+                    "Labeled_Area_by_DH": "LGN",
+                    "Labeled_Area_ID_by_DH": "1",
+                    "FLN": "0.1"
+                }
                 }
             },
             "Injection_2": {
