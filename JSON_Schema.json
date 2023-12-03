@@ -6,11 +6,7 @@
             "title": {
                 "type": "string",
                 "description": "This is generated automatically from the previous two fields",
-                "template": "{{DH_INDEX}}_{{DOI}}_{{PMID}}",
-                "watch": {
-                  "city": "location.city",
-                  "state": "location.state"
-                }
+                "template": "{{DH_INDEX}}_{{DOI}}_{{PMID}}"
             },
             "type": "object",
             "description": "..",
@@ -54,16 +50,20 @@
                         },
                         "Full_Text_URL": {
                             "type": "string",
-                            "description": "DOI"                        },
+                            "description": "DOI"                        
+                        },
                         "Journal": {
                             "type": "string",
-                            "description": "PMID"                        },
+                            "description": "PMID"                        
+                        },
                         "Publication_Year": {
                             "type": "string",
-                            "description": "PMCID"                        },
+                            "description": "PMCID"                        
+                        },
                         "First_Autor": {
                             "type": "string",
-                            "description": "Title"                        }
+                            "description": "Title"                        
+                        }
                     }
                 },
                 "Macaque_Species": {
