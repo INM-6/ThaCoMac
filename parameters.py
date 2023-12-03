@@ -51,6 +51,11 @@ other_spiecies_group = [
    'antrozous pallidus', 'shrew', 'shrews', 'suncus murinus', 'gerbil', 'gerbils', 
    'swine', 'swines'
    ]
+# prairie vole, microtus ochrogaster, capuchin monkey, vervet monkey, cercopithecus aethiops,
+# new world capuchin monkey, mustela putorius, pigeon, columba livia, albino green monkey,
+# cercopithecus aethiops, lamprey, marsupial phalanger, tadpole, porpoise, phocaena phocaena, tupaia minor,
+# sasmanian potoroo, potorous apicalis, lemurfulvus, brown lemur, microcebus murinus, mouse lemur, seal ,phoca vitulina,
+# chimpanzee, anthropopithecus troglodytes, myocastor coypus
 
 sub_monkey_not_macaque = [
    'squirrel monkey', 'new world titi monkey', 'owl monkey', 'new world monkey', 'cebus monkey', 
