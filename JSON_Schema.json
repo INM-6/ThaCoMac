@@ -1,0 +1,96 @@
+{
+  "title": "Literature Metadata",
+  "type": "object",
+  "properties": {
+    "DH331_DOI_PMID": {
+      "type": "object",
+      "description": "DH331_DOI_PMID",
+      "properties": {
+        "DH331_DOI": {
+          "type": "string",
+          "description": "DH331_DOI",
+          "default": "10.1016/j.jbi.2015.06.001"
+        },
+        "DH331_PMID": {
+          "type": "string",
+          "description": "DH331_PMID",
+          "default": "26072075"
+        }
+      }
+    },
+    "age": {
+      "type": "integer",
+      "default": 25,
+      "minimum": 18,
+      "maximum": 99
+    },
+    "favorite_color": {
+      "type": "string",
+      "format": "color",
+      "title": "favorite color",
+      "default": "#ffa500"
+    },
+    "gender": {
+      "type": "string",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "location": {
+      "type": "object",
+      "title": "Location",
+      "properties": {
+        "city": {
+          "type": "string",
+          "default": "San Francisco"
+        },
+        "state": {
+          "type": "string",
+          "default": "CA"
+        },
+        "citystate": {
+          "type": "string",
+          "description": "This is generated automatically from the previous two fields",
+          "template": "{{city}}, {{state}}",
+          "watch": {
+            "city": "location.city",
+            "state": "location.state"
+          }
+        }
+      }
+    },
+    "pets": {
+      "type": "array",
+      "format": "table",
+      "title": "Pets",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "title": "Pet",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "cat",
+              "dog",
+              "bird",
+              "reptile",
+              "other"
+            ],
+            "default": "dog"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "default": [
+        {
+          "type": "dog",
+          "name": "Walter"
+        }
+      ]
+    }
+  }
+}
