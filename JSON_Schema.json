@@ -1,96 +1,188 @@
 {
-  "title": "Literature Metadata",
-  "type": "object",
-  "properties": {
-    "DH331_DOI_PMID": {
-      "type": "object",
-      "description": "DH331_DOI_PMID",
-      "properties": {
-        "DH331_DOI": {
-          "type": "string",
-          "description": "DH331_DOI",
-          "default": "10.1016/j.jbi.2015.06.001"
-        },
-        "DH331_PMID": {
-          "type": "string",
-          "description": "DH331_PMID",
-          "default": "26072075"
+    "title": "Literature Metadata",
+    "type": "object",
+    "properties": {
+        "Article": {
+            "title": {
+                "type": "string",
+                "description": "This is generated automatically from the previous two fields",
+                "template": "{{DH_INDEX}}_{{DOI}}_{{PMID}}",
+                "watch": {
+                  "city": "location.city",
+                  "state": "location.state"
+                }
+            },
+            "type": "object",
+            "description": "..",
+            "properties": {
+                "Aiticle_IDENTIFIER": {
+                    "title": "Aiticle_IDENTIFIER",
+                    "type": "object",
+                    "description": "DH331_DOI",
+                    "properties":{
+                        "DH_INDEX": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 10799
+                        },
+                        "DOI": {
+                            "type": "string",
+                            "description": "DOI"
+                        },
+                        "PMID": {
+                            "type": "string",
+                            "description": "PMID"
+                        },
+                        "PMCID": {
+                            "type": "string",
+                            "description": "PMCID"
+                        },
+                        "Title": {
+                            "type": "string",
+                            "description": "Title"
+                        }
+                    }
+                },
+                "Article_Info": {
+                    "title": "Article_Info",
+                    "type": "object",
+                    "description": "Article_Info",
+                    "properties":{
+                        "URL": {
+                            "type": "string",
+                            "description": "DH_INDEX"
+                        },
+                        "Full_Text_URL": {
+                            "type": "string",
+                            "description": "DOI"                        },
+                        "Journal": {
+                            "type": "string",
+                            "description": "PMID"                        },
+                        "Publication_Year": {
+                            "type": "string",
+                            "description": "PMCID"                        },
+                        "First_Autor": {
+                            "type": "string",
+                            "description": "Title"                        }
+                    }
+                },
+                "Macaque_Species": {
+                    "type": "array",
+                    "format": "table",
+                    "title": "Macaque_Species",
+                    "uniqueItems": true,
+                    "items": {
+                        "type": "object",
+                        "title": "Macaque_Specie",
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "enum": [
+                                    "cat",
+                                    "dog",
+                                    "bird",
+                                    "reptile",
+                                    "other"
+                                ]                            
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "default": [
+                        {
+                            "type": "NA",
+                            "name": "Walter"
+                        }
+                    ]
+                },
+                "Parcellation_Scheme_and_Nomenclature": {
+                    "title": "Parcellation_Scheme_and_Nomenclature",
+                    "type": "object",
+                    "description": "Parcellation_Scheme_and_Nomenclature",
+                    "properties":{
+                        "Atlas": {
+                            "type": "string",
+                            "description": "Atlas"
+                        },
+                        "Cortex_Pacellation_Scheme": {
+                            "type": "string",
+                            "description": "Nomenclature"
+                        },
+                        "Thalamus_Parcellation_Scheme": {
+                            "type": "string",
+                            "description": "Parcellation_Scheme_and_Nomenclature"
+                        },
+                        "Nomenclature": {
+                            "type": "string",
+                            "description": "Nomenclature"
+                        }
+                    }
+                },
+                "Injection_and_Label": {
+                    "title": "Injection_and_Label",
+                    "type": "object",
+                    "description": "Injection_and_Label",
+                    "properties":{
+                        "Injection_ID": {
+                            "title": "Injection_ID",
+                            "type": "object",
+                            "description": "Injection_Method",
+                            "properties":{
+                                "TT_Substance": {
+                                    "type": "string",
+                                    "description": "Injection_Method",
+                                    "enum": [
+                                        "male",
+                                        "female"
+                                    ]
+                                },
+                                "TT_Direction": {
+                                    "type": "string",
+                                    "description": "Injection_Volume",
+                                    "enum": [
+                                        "antrograte",
+                                        "retrograte"
+                                    ]
+                                },
+                                "Injection_Area_by_Author": {
+                                    "type": "string",
+                                    "description": "Injection_Location"
+                                },
+                                "Injection_Area_ID_by_DD99": {
+                                    "type": "string",
+                                    "description": "Injection_Location"
+                                },
+                                "Labeled_Area": {
+                                    "type": "object",
+                                    "description": "Labeled_Area",
+                                    "properties":{
+                                        "Labeled_Area_ID": {
+                                            "type": "object",
+                                            "description": "Injection_Location",
+                                            "properties":{
+                                                "Labeled_Area_ID": {
+                                                    "type": "string",
+                                                    "description": "Injection_Location"
+                                                },
+                                                "Labeled_Area_ID_by_Author": {
+                                                    "type": "string",
+                                                    "description": "Injection_Location"
+                                                },
+                                                "Labeled_Area_ID_by_DD99": {
+                                                    "type": "string",
+                                                    "description": "Injection_Location"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
-      }
-    },
-    "age": {
-      "type": "integer",
-      "default": 25,
-      "minimum": 18,
-      "maximum": 99
-    },
-    "favorite_color": {
-      "type": "string",
-      "format": "color",
-      "title": "favorite color",
-      "default": "#ffa500"
-    },
-    "gender": {
-      "type": "string",
-      "enum": [
-        "male",
-        "female"
-      ]
-    },
-    "location": {
-      "type": "object",
-      "title": "Location",
-      "properties": {
-        "city": {
-          "type": "string",
-          "default": "San Francisco"
-        },
-        "state": {
-          "type": "string",
-          "default": "CA"
-        },
-        "citystate": {
-          "type": "string",
-          "description": "This is generated automatically from the previous two fields",
-          "template": "{{city}}, {{state}}",
-          "watch": {
-            "city": "location.city",
-            "state": "location.state"
-          }
-        }
-      }
-    },
-    "pets": {
-      "type": "array",
-      "format": "table",
-      "title": "Pets",
-      "uniqueItems": true,
-      "items": {
-        "type": "object",
-        "title": "Pet",
-        "properties": {
-          "type": {
-            "type": "string",
-            "enum": [
-              "cat",
-              "dog",
-              "bird",
-              "reptile",
-              "other"
-            ],
-            "default": "dog"
-          },
-          "name": {
-            "type": "string"
-          }
-        }
-      },
-      "default": [
-        {
-          "type": "dog",
-          "name": "Walter"
-        }
-      ]
     }
-  }
 }
