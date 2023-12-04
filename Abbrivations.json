@@ -1,0 +1,27 @@
+{
+    "Tracer_Substance": {
+        "biotinylated dextran amine": "BDA"
+
+    },
+    "Cortical_Areas": {
+        "primary visual cortex": "V1",
+        "primary auditory cortex": "A1",
+        "primary somatosensory cortex": "S1",
+        "primary motor cortex": "M1",
+        "primary gustatory cortex": "G1",
+        "primary olfactory cortex": "O1"
+    },
+    "Thalamic_Areas": {
+        "lateral geniculate nucleus": "LGN",
+        "medial geniculate nucleus": "MGN",
+        "ventral divisions of the medial geniculate body": "vMGB",
+        "dorsal divisions of the medial geniculate body": "dMGB",
+        "medial divisions of the medial geniculate body": "mMGB",
+        "ventral posterior nucleus": "VP",
+        "ventral anterior nucleus": "VA",
+        "ventral lateral nucleus": "VL",
+        "ventral posterolateral nucleus": "VPL",
+        "posterior thalamic nucleus": "PO",
+        "suprageniculate nucleus": "SG"
+    }
+}
