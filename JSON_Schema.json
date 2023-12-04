@@ -49,17 +49,6 @@
                     "default": "NA",
                     "minLength": 1                    
                 },
-                "Journal": {
-                    "type": "string",
-                    "title": "Journal:",
-                    "enum": [
-                        "Brain Research Reviews",
-                        "Brain Research Bulletin",
-                        "nature reviews neuroscience",
-                        "NA"
-                    ],            
-                    "default": "NA"                      
-                },
                 "Publication_Year": {
                     "type": "integer",
                     "title": "Publication Year:",
@@ -94,7 +83,7 @@
                     "minLength": 1
                 }
             },
-            "required": ["DH_INDEX", "DOI", "PMID", "PMCID", "Title", "URL", "Full_Text_URL", "Journal", "Publication_Year", "First_Autor", "Macaque_Species", "Comment_on_Article_Info"]
+            "required": ["DH_INDEX", "DOI", "PMID", "PMCID", "Title", "URL", "Full_Text_URL", "Publication_Year", "First_Autor", "Macaque_Species", "Comment_on_Article_Info"]
         },
         "Atlas_Parcellation_Scheme_and_Nomenclature": {
             "type": "object",
@@ -192,20 +181,20 @@
                                             "Cover_Entire_Region": {
                                                 "type": "string",
                                                 "title": "Injection covered the entire region?",
-                                                "enum": ["NA", "Y", "N"],
-                                                "default": "NA"
+                                                "enum": ["Click to select", "NA", "Y", "N"],
+                                                "default": "Click to select"
                                             },
                                             "Cover_Adjacent_Regions": {
                                                 "type": "string",
                                                 "title": "Injection covered adjacent regions?",
-                                                "enum": ["NA", "Y", "N"],
-                                                "default": "NA"
+                                                "enum": ["Click to select", "NA", "Y", "N"],
+                                                "default": "Click to select"
                                             },
                                             "Extend_into_White_Matter": {
                                                 "type": "string",
                                                 "title": "Injection extended into white matter?",
-                                                "enum": ["NA", "Y", "N"],
-                                                "default": "NA"
+                                                "enum": ["Click to select", "NA", "Y", "N"],
+                                                "default": "Click to select"
                                             }
                                         }
                                     },
@@ -275,18 +264,20 @@
                                     }
                                 }
                             }
-                        }
+                        },
+                        "required": ["Injection_Info", "Labeled_Sites"]
                     }
                 }
-            }
+            },
+            "required": ["Injections"]
         },
         "Form_of_Data_Provided": {
             "type": "string",
-            "title": "In which form were data provided?",
+            "title": "Data provided as text, figures or both?",
             "enum": [
-                "NA", "Only Text", "Only Figures", "Text and Figures"
+                "Click to select", "NA", "Only Text", "Only Figures", "Text and Figures"
             ],
-            "default": "NA"
+            "default": "Click to select"
         },
         "Comment_on_Article": {
             "type": "string",
@@ -298,7 +289,7 @@
     "required": [
         "Article_Info", 
         "Atlas_Parcellation_Scheme_and_Nomenclature", 
-        "Injection_and_Label", 
+        "Injection_and_Labeling", 
         "Form_of_Data_Provided",
         "Comment_on_Article"
     ]
