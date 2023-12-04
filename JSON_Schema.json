@@ -1,105 +1,109 @@
 {
+    "title": "DH331_DOI_PMID",
     "type": "object",
-    "title": {
-        "type": "string",
-        "template": "{{DH_INDEX}}_{{DOI}}_{{PMID}}"
-    },
     "properties": {
-        "DH_INDEX": {
-            "type": "integer",
-            "minimum": 0,
-            "maximum": 10979
-        },
-        "DOI": {
-            "type": "string",
-            "default": "NA"
-        },
-        "PMID": {
-            "type": "integer"
-        },
-        "PMCID": {
-            "type": "string",
-            "default": "NA",
-            "pattern": "PMC[0-9]+"
-        },
-        "Title": {
-            "type": "string",
-            "default": "NA"
-        },
-        "URL": {
-            "type": "string",
-            "default": "NA"
-        },
-        "Full_Text_URL": {
-            "type": "string",
-            "format": "url",
-            "default": "NA"                      
-        },
-        "Journal": {
-            "type": "string",
-            "enum": [
-                "cat",
-                "dog"
-            ],            
-            "default": "NA"                      
-        },
-        "Publication_Year": {
-            "type": "date",
-            "format": "date",
-            "default": "NA"
-        },
-        "First_Autor": {
-            "type": "string",
-            "format": "name",
-            "default": "NA"                
-        },
-        "Macaque_Species": {
-            "type": "array",
-            "format": "table",
-            "title": "Macaque_Species",
-            "uniqueItems": true,
-            "items": {
-                "type": "string",
-                "enum": [
-                    "Macaque mulatta"
-                ],
-                "default": "Macaque"      
-            },
-            "default": [
-                {
-                    "type": "string",
-                    "name": "Macaque monkey"
-                }
-            ]
-        },
-        "Parcellation_Scheme_and_Nomenclature": {
-            "title": "Parcellation_Scheme_and_Nomenclature",
+        "Article_Info": {
             "type": "object",
             "properties":{
-                "Atlas": {
+                "DH_INDEX": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 10979,
+                    "default": -1
+                },
+                "DOI": {
+                    "type": "string",
+                    "default": "NA"
+                },
+                "PMID": {
+                    "type": "integer",
+                    "default": -1
+                },
+                "PMCID": {
+                    "type": "string",
+                    "default": "NA",
+                    "pattern": "PMC[0-9]+"
+                },
+                "Title": {
+                    "type": "string",
+                    "default": "NA"
+                },
+                "URL": {
+                    "type": "string",
+                    "default": "NA"
+                },
+                "Full_Text_URL": {
+                    "type": "string",
+                    "default": "NA"                      
+                },
+                "Journal": {
                     "type": "string",
                     "enum": [
-                        "Atlas name 1", "Atlas name 2"
+                        "cat",
+                        "dog",
+                        "NA"
+                    ],            
+                    "default": "NA"                      
+                },
+                "Publication_Year": {
+                    "type": "integer",
+                    "minimum": 1936,
+                    "maximum": 2023,
+                    "default": "NA"
+                },
+                "First_Autor": {
+                    "type": "string",
+                    "format": "name",
+                    "default": "NA"                
+                },
+                "Macaque_Species": {
+                    "type": "array",
+                    "title": "Macaque_Species",
+                    "uniqueItems": true,
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "Macaque mulatta", "macaque 1", "macaque 2"
+                        ],
+                        "default": "Macaque"      
+                    },
+                    "default": [
+                        {
+                            "type": "string",
+                            "name": "Macaque monkey"
+                        }
                     ]
                 },
-                "Cortex_Pacellation_Scheme": {
-                    "type": "string",
-                    "enum": [
-                        "Cortex_Pacellation_Scheme name 1", "Cortex_Pacellation_Scheme name 2"
-                    ]
-                },
-                "Thalamus_Parcellation_Scheme": {
-                    "type": "string",
-                    "enum": [
-                        "Thalamus_Parcellation_Scheme name 1", "Thalamus_Parcellation_Scheme name 2"
-                    ]
-                },
-                "Nomenclature": {
-                    "type": "string",
-                    "enum": [
-                        "Nomenclature name 1",
-                        "Nomenclature name 2"
-                    ]
+                "Parcellation_Scheme_and_Nomenclature": {
+                    "title": "Parcellation_Scheme_and_Nomenclature",
+                    "type": "object",
+                    "properties":{
+                        "Atlas": {
+                            "type": "string",
+                            "enum": [
+                                "Atlas name 1", "Atlas name 2"
+                            ]
+                        },
+                        "Cortex_Pacellation_Scheme": {
+                            "type": "string",
+                            "enum": [
+                                "Cortex_Pacellation_Scheme name 1", "Cortex_Pacellation_Scheme name 2"
+                            ]
+                        },
+                        "Thalamus_Parcellation_Scheme": {
+                            "type": "string",
+                            "enum": [
+                                "Thalamus_Parcellation_Scheme name 1", "Thalamus_Parcellation_Scheme name 2"
+                            ]
+                        },
+                        "Nomenclature": {
+                            "type": "string",
+                            "enum": [
+                                "Nomenclature name 1",
+                                "Nomenclature name 2"
+                            ]
+                        }
+                    }
                 }
             }
         },
