@@ -1,7 +1,7 @@
 {
     "Tracer_Substance": {
-        "biotinylated dextran amine": "BDA"
-        
+        "biotinylated dextran amine": "BDA",
+        "horseradish peroxidase": "HRP"
     },
     "Cortical_Areas": {
         "primary visual cortex": "V1",

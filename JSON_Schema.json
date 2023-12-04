@@ -45,12 +45,6 @@
                     "default": "NA",
                     "minLength": 1
                 },
-                "Full_Text_URL": {
-                    "type": "string",
-                    "title": "Full Text URL:",
-                    "default": "NA",
-                    "minLength": 1                    
-                },
                 "Publication_Year": {
                     "type": "integer",
                     "title": "Publication Year:",
@@ -83,7 +77,7 @@
                     "title": "Comment on Article Information:"
                 }
             },
-            "required": ["DH_INDEX", "DOI", "PMID", "PMCID", "Title", "URL", "Full_Text_URL", "Publication_Year", "First_Autor", "Macaque_Species", "Comment_on_Article_Info"]
+            "required": ["DH_INDEX", "DOI", "PMID", "PMCID", "Title", "URL", "Publication_Year", "First_Autor", "Macaque_Species", "Comment_on_Article_Info"]
         },
         "Atlas_Parcellation_Scheme_and_Nomenclature": {
             "type": "object",
