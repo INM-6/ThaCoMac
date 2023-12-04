@@ -10,8 +10,7 @@
                     "type": "integer",
                     "title": "DH_INDEX:",
                     "minimum": 0,
-                    "maximum": 10979,
-                    "default": -1
+                    "maximum": 10979
                 },
                 "DOI": {
                     "type": "string",
@@ -23,13 +22,15 @@
                     "type": "string",
                     "title": "PMID:",
                     "pattern": "[0-9]{8}|NA",
-                    "default": "NA"
+                    "default": "NA",
+                    "minLength": 1
                 },
                 "PMCID": {
                     "type": "string",
                     "title": "PMCID:",
                     "pattern": "PMC[0-9]{7}|NA",
-                    "default": "NA"
+                    "default": "NA",
+                    "minLength": 1
                 },
                 "Title": {
                     "type": "string",
@@ -78,9 +79,7 @@
                 },
                 "Comment_on_Article_Info": {
                     "type": "string",
-                    "title": "Comment on Article Information:",
-                    "default": "NA",
-                    "minLength": 1
+                    "title": "Comment on Article Information:"
                 }
             },
             "required": ["DH_INDEX", "DOI", "PMID", "PMCID", "Title", "URL", "Full_Text_URL", "Publication_Year", "First_Autor", "Macaque_Species", "Comment_on_Article_Info"]
@@ -132,144 +131,133 @@
             }
         },
         "Injection_and_Labeling": {
-            "type": "object",
-            "title": "Injection and Labeling",
-            "properties": {
-                "Injections": {
-                    "type": "array",
-                    "title": "List of Injections:",
-                    "items": {
+            "type": "array",
+            "title": "Injection_and_Labeling",
+            "items": {
+                "type": "object",
+                "title": "Injection",
+                "properties": {
+                    "Injection_Info": {
                         "type": "object",
-                        "title": "Injection",
+                        "title": "Injection Information:",
                         "properties": {
-                            "Injection_Info": {
+                            "Injection_ID": {
+                                "type": "string",
+                                "title": "Injection ID:",
+                                "minLength": 1
+                            },
+                            "TT_Substance": {
+                                "type": "string",
+                                "title": "Tracer Substance:",
+                                "enum": ["Click to select", "HRP", "WGA", "AVV"],
+                                "default": "Click to select"
+                            },
+                            "TT_Direction": {
+                                "type": "string",
+                                "title": "Tracing Direction:",
+                                "enum": ["Click to select", "anterograde", "retrograde"],
+                                "default": "Click to select"
+                            },
+                            "Injection_Site_Name_by_Author": {
+                                "type": "string",
+                                "title": "Injection Site Name by Author:",
+                                "minLength": 1
+                            },
+                            "Injection_Site_ID_by_D99": {
+                                "type": "string",
+                                "title": "Injection Site ID by D99:",
+                                "enum": ["Click to select", "Area name 1", "Area name 2"],
+                                "default": "Click to select"
+                            },
+                            "Injection_Coverage": {
                                 "type": "object",
-                                "title": "Injection Information:",
+                                "title": "Injection Coverage:",
                                 "properties": {
-                                    "Injection_ID": {
+                                    "Cover_Entire_Region": {
                                         "type": "string",
-                                        "title": "Injection ID:",
-                                        "minLength": 1
-                                    },
-                                    "TT_Substance": {
-                                        "type": "string",
-                                        "title": "Tracer Substance:",
-                                        "enum": ["Click to select", "HRP", "WGA", "AVV"],
+                                        "title": "Injection covered the entire region?",
+                                        "enum": ["Click to select", "NA", "Y", "N"],
                                         "default": "Click to select"
                                     },
-                                    "TT_Direction": {
+                                    "Cover_Adjacent_Regions": {
                                         "type": "string",
-                                        "title": "Tracing Direction:",
-                                        "enum": ["Click to select", "anterograde", "retrograde"],
+                                        "title": "Injection covered adjacent regions?",
+                                        "enum": ["Click to select", "NA", "Y", "N"],
                                         "default": "Click to select"
                                     },
-                                    "Injection_Site_Name_by_Author": {
+                                    "Extend_into_White_Matter": {
                                         "type": "string",
-                                        "title": "Injection Site Name by Author:",
-                                        "minLength": 1
-                                    },
-                                    "Injection_Site_ID_by_D99": {
-                                        "type": "string",
-                                        "title": "Injection Site ID by D99:",
-                                        "enum": ["Click to select", "Area name 1", "Area name 2"],
+                                        "title": "Injection extended into white matter?",
+                                        "enum": ["Click to select", "NA", "Y", "N"],
                                         "default": "Click to select"
-                                    },
-                                    "Injection_Coverage": {
-                                        "type": "object",
-                                        "title": "Injection Coverage:",
-                                        "properties": {
-                                            "Cover_Entire_Region": {
-                                                "type": "string",
-                                                "title": "Injection covered the entire region?",
-                                                "enum": ["Click to select", "NA", "Y", "N"],
-                                                "default": "Click to select"
-                                            },
-                                            "Cover_Adjacent_Regions": {
-                                                "type": "string",
-                                                "title": "Injection covered adjacent regions?",
-                                                "enum": ["Click to select", "NA", "Y", "N"],
-                                                "default": "Click to select"
-                                            },
-                                            "Extend_into_White_Matter": {
-                                                "type": "string",
-                                                "title": "Injection extended into white matter?",
-                                                "enum": ["Click to select", "NA", "Y", "N"],
-                                                "default": "Click to select"
-                                            }
-                                        }
-                                    },
-                                    "Injection_Mapping_Confidence": {
-                                        "type": "string",
-                                        "title": "Mapping confidence of the injection site:",
-                                        "enum": ["Click to select", "High", "Medium", "Low"],
-                                        "default": "Click to select"
-                                    },
-                                    "Comment_on_Injection": {
-                                        "type": "string",
-                                        "title": "Comment on Injection",
-                                        "default": "NA",
-                                        "minLength": 1
                                     }
                                 }
                             },
-                            "Labeled_Sites": {
-                                "type": "array",
-                                "title": "List of Labeled Sites:",
-                                "items": {
-                                    "type": "object",
-                                    "title": "Labeled Site",
-                                    "properties": {
-                                        "Labeled_Site_Name_by_Author": {
-                                            "type": "string",
-                                            "title": "Labeled Site Name by Author:",
-                                            "minLength": 1
-                                        },
-                                        "Labeled_Area_ID_by_D99": {
-                                            "type": "string",
-                                            "title": "Labeled Area ID by D99:",
-                                            "enum": ["Click to select", "Area ID 1", "Area ID 2", "Area ID 3"],
-                                            "default": "Click to select"
-                                        },
-                                        "Coverage_of_Labeled_Site": {
-                                            "type": "string",
-                                            "title": "Coverage of Labeled Site:",
-                                            "enum": ["Click to select", "NA", "All over the specified region", "Concentrated in a unnamed subarea"],
-                                            "default": "Click to select"
-                                        },
-                                        "Qulitative_Strength_of_Labelling": {
-                                            "type": "string",
-                                            "title": "Strength of Labelling in Qulitative Terms:",
-                                            "enum": ["Click to select", "NA", "Strong", "Medium", "Weak"],
-                                            "default": "Click to select"
-                                        },
-                                        "FLN": {
-                                            "type": "float",
-                                            "title": "Fraction of Labeled Neurons (FLN):",
-                                            "minimum": 0.0,
-                                            "maximum": 1.0,
-                                            "default": -1
-                                        },
-                                        "Labeled_Site_Mapping_Confidence": {
-                                            "type": "string",
-                                            "title": "Mapping confidence of the labeled site:",
-                                            "enum": ["Click to select", "High", "Medium", "Low"],
-                                            "default": "Click to select"
-                                        },
-                                        "Comment_on_Labeled_Site": {
-                                            "type": "string",
-                                            "title": "Comment on Labeled Site:",
-                                            "default": "NA",
-                                            "minLength": 1
-                                        }
-                                    }
+                            "Injection_Mapping_Confidence": {
+                                "type": "string",
+                                "title": "Mapping confidence of the injection site:",
+                                "enum": ["Click to select", "High", "Medium", "Low"],
+                                "default": "Click to select"
+                            },
+                            "Comment_on_Injection": {
+                                "type": "string",
+                                "title": "Comment on Injection" 
+                            }
+                        }
+                    },
+                    "Labeled_Sites": {
+                        "type": "array",
+                        "title": "List of Labeled Sites:",
+                        "items": {
+                            "type": "object",
+                            "title": "Labeled Site",
+                            "properties": {
+                                "Labeled_Site_Name_by_Author": {
+                                    "type": "string",
+                                    "title": "Labeled Site Name by Author:",
+                                    "minLength": 1
+                                },
+                                "Labeled_Area_ID_by_D99": {
+                                    "type": "string",
+                                    "title": "Labeled Area ID by D99:",
+                                    "enum": ["Click to select", "Area ID 1", "Area ID 2", "Area ID 3"],
+                                    "default": "Click to select"
+                                },
+                                "Coverage_of_Labeled_Site": {
+                                    "type": "string",
+                                    "title": "Coverage of Labeled Site:",
+                                    "enum": ["Click to select", "NA", "All over the specified region", "Concentrated in a unnamed subarea"],
+                                    "default": "Click to select"
+                                },
+                                "Qualitative_Strength_of_Labelling": {
+                                    "type": "string",
+                                    "title": "Strength of Labelling in Qualitative Terms:",
+                                    "enum": ["Click to select", "NA", "Strong", "Medium", "Weak"],
+                                    "default": "Click to select"
+                                },
+                                "FLN": {
+                                    "type": "float",
+                                    "title": "Fraction of Labeled Neurons (FLN):",
+                                    "minimum": 0.0,
+                                    "maximum": 1.0,
+                                    "default": null
+                                },
+                                "Labeled_Site_Mapping_Confidence": {
+                                    "type": "string",
+                                    "title": "Mapping confidence of the labeled site:",
+                                    "enum": ["Click to select", "High", "Medium", "Low"],
+                                    "default": "Click to select"
+                                },
+                                "Comment_on_Labeled_Site": {
+                                    "type": "string",
+                                    "title": "Comment on Labeled Site:"
                                 }
                             }
-                        },
-                        "required": ["Injection_Info", "Labeled_Sites"]
+                        }
                     }
-                }
-            },
-            "required": ["Injections"]
+                },
+                "required": ["Injection_Info", "Labeled_Sites"]
+            }
         },
         "Form_of_Data_Provided": {
             "type": "string",
@@ -281,9 +269,7 @@
         },
         "Comment_on_Article": {
             "type": "string",
-            "title": "Comments on This Article:",
-            "default": "NA",
-            "minLength": 1
+            "title": "Comments on This Article:"
         }
     },
     "required": [
