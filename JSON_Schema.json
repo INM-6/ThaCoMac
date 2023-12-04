@@ -10,7 +10,8 @@
                     "type": "integer",
                     "title": "DH_INDEX:",
                     "minimum": 0,
-                    "maximum": 10979
+                    "maximum": 10979,
+                    "default": -1
                 },
                 "DOI": {
                     "type": "string",
@@ -132,7 +133,7 @@
         },
         "Injection_and_Labeling": {
             "type": "array",
-            "title": "Injection_and_Labeling",
+            "title": "Injection and Labeling",
             "items": {
                 "type": "object",
                 "title": "Injection",
@@ -229,18 +230,18 @@
                                     "enum": ["Click to select", "NA", "All over the specified region", "Concentrated in a unnamed subarea"],
                                     "default": "Click to select"
                                 },
-                                "Qualitative_Strength_of_Labelling": {
+                                "Qualitative_Strength_of_Labeling": {
                                     "type": "string",
-                                    "title": "Strength of Labelling in Qualitative Terms:",
+                                    "title": "Strength of Labeling in Qualitative Terms:",
                                     "enum": ["Click to select", "NA", "Strong", "Medium", "Weak"],
                                     "default": "Click to select"
                                 },
                                 "FLN": {
-                                    "type": "float",
+                                    "type": "number",
                                     "title": "Fraction of Labeled Neurons (FLN):",
-                                    "minimum": 0.0,
-                                    "maximum": 1.0,
-                                    "default": null
+                                    "minimum": 0,
+                                    "maximum": 1,
+                                    "default": -1
                                 },
                                 "Labeled_Site_Mapping_Confidence": {
                                     "type": "string",
@@ -252,16 +253,28 @@
                                     "type": "string",
                                     "title": "Comment on Labeled Site:"
                                 }
-                            }
+                            },
+                            "required": [
+                                "Labeled_Site_Name_by_Author", 
+                                "Labeled_Area_ID_by_D99", 
+                                "Coverage_of_Labeled_Site", 
+                                "Qualitative_Strength_of_Labeling", 
+                                "FLN", 
+                                "Labeled_Site_Mapping_Confidence", 
+                                "Comment_on_Labeled_Site"
+                            ]
                         }
                     }
                 },
-                "required": ["Injection_Info", "Labeled_Sites"]
+                "required": [
+                    "Injection_Info", 
+                    "Labeled_Sites"
+                ]
             }
         },
         "Form_of_Data_Provided": {
             "type": "string",
-            "title": "Data provided as text, figures or both?",
+            "title": "Form of Data Provided:",
             "enum": [
                 "Click to select", "NA", "Only Text", "Only Figures", "Text and Figures"
             ],
