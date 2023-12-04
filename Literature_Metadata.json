@@ -1,6 +1,28 @@
 {
     "DH331_DOI_PMID":{
-        
+        "Article_Info": {
+            "DH_INDEX": -1,
+            "DOI": "NA",
+            "PMID": -1,
+            "PMCID": "NA",
+            "Title": "NA",
+            "URL": "NA",
+            "Full_Text_URL": "NA",
+            "Journal": "NA",
+            "Publication_Year": 0,
+            "First_Autor": "NA",
+            "Macaque_Species": [],
+            "Parcellation_Scheme_and_Nomenclature": {
+              "Atlas": "Atlas name 1",
+              "Cortex_Pacellation_Scheme": "Cortex_Pacellation_Scheme name 1",
+              "Thalamus_Parcellation_Scheme": "Thalamus_Parcellation_Scheme name 1",
+              "Nomenclature": "Nomenclature name 1"
+            }
+          },
+          "Injection_and_Label": {
+            "Injections": []
+          },
+          "COMMENT_ON_ARTICLE": ""
     },
     "DH389_DOI_PMID":{
 
