@@ -150,13 +150,13 @@
                             "TT_Substance": {
                                 "type": "string",
                                 "title": "Tracer Substance:",
-                                "enum": ["Click to select", "HRP", "WGA", "AVV"],
+                                "enum": ["Click to select", "BDA", "HRP", "WGA", "AVV"],
                                 "default": "Click to select"
                             },
                             "TT_Direction": {
                                 "type": "string",
                                 "title": "Tracing Direction:",
-                                "enum": ["Click to select", "anterograde", "retrograde"],
+                                "enum": ["Click to select", "Anterograde", "Retrograde"],
                                 "default": "Click to select"
                             },
                             "Injection_Site_Name_by_Author": {
