@@ -142,13 +142,13 @@
                 }
             }
         },
-        "Injection_and_Label": {
+        "Injection_and_Labeling": {
             "type": "object",
-            "title": "Injection and Label",
+            "title": "Injection and Labeling",
             "properties": {
                 "Injections": {
                     "type": "array",
-                    "title": "Injections:",
+                    "title": "List of Injections:",
                     "items": {
                         "type": "object",
                         "title": "Injection",
@@ -174,15 +174,45 @@
                                         "enum": ["Click to select", "anterograde", "retrograde"],
                                         "default": "Click to select"
                                     },
-                                    "Injection_Area_Name_by_Author": {
+                                    "Injection_Site_Name_by_Author": {
                                         "type": "string",
-                                        "title": "Injection Area Name by Author:",
+                                        "title": "Injection Site Name by Author:",
                                         "minLength": 1
                                     },
-                                    "Injection_Area_ID_by_D99": {
+                                    "Injection_Site_ID_by_D99": {
                                         "type": "string",
-                                        "title": "Injection Area ID by D99:",
+                                        "title": "Injection Site ID by D99:",
                                         "enum": ["Click to select", "Area name 1", "Area name 2"],
+                                        "default": "Click to select"
+                                    },
+                                    "Injection_Coverage": {
+                                        "type": "object",
+                                        "title": "Injection Coverage:",
+                                        "properties": {
+                                            "Cover_Entire_Region": {
+                                                "type": "string",
+                                                "title": "Injection covered the entire region?",
+                                                "enum": ["NA", "Y", "N"],
+                                                "default": "NA"
+                                            },
+                                            "Cover_Adjacent_Regions": {
+                                                "type": "string",
+                                                "title": "Injection covered adjacent regions?",
+                                                "enum": ["NA", "Y", "N"],
+                                                "default": "NA"
+                                            },
+                                            "Extend_into_White_Matter": {
+                                                "type": "string",
+                                                "title": "Injection extended into white matter?",
+                                                "enum": ["NA", "Y", "N"],
+                                                "default": "NA"
+                                            }
+                                        }
+                                    },
+                                    "Injection_Mapping_Confidence": {
+                                        "type": "string",
+                                        "title": "Mapping confidence of the injection site:",
+                                        "enum": ["Click to select", "High", "Medium", "Low"],
                                         "default": "Click to select"
                                     },
                                     "Comment_on_Injection": {
@@ -193,16 +223,16 @@
                                     }
                                 }
                             },
-                            "Labeled_Areas": {
+                            "Labeled_Sites": {
                                 "type": "array",
-                                "title": "List of Labeled Areas:",
+                                "title": "List of Labeled Sites:",
                                 "items": {
                                     "type": "object",
-                                    "title": "Labeled Area",
+                                    "title": "Labeled Site",
                                     "properties": {
-                                        "Labeled_Area_Name_by_Author": {
+                                        "Labeled_Site_Name_by_Author": {
                                             "type": "string",
-                                            "title": "Labeled Area Name by Author:",
+                                            "title": "Labeled Site Name by Author:",
                                             "minLength": 1
                                         },
                                         "Labeled_Area_ID_by_D99": {
@@ -211,15 +241,34 @@
                                             "enum": ["Click to select", "Area ID 1", "Area ID 2", "Area ID 3"],
                                             "default": "Click to select"
                                         },
+                                        "Coverage_of_Labeled_Site": {
+                                            "type": "string",
+                                            "title": "Coverage of Labeled Site:",
+                                            "enum": ["Click to select", "NA", "All over the specified region", "Concentrated in a unnamed subarea"],
+                                            "default": "Click to select"
+                                        },
+                                        "Qulitative_Strength_of_Labelling": {
+                                            "type": "string",
+                                            "title": "Strength of Labelling in Qulitative Terms:",
+                                            "enum": ["Click to select", "NA", "Strong", "Medium", "Weak"],
+                                            "default": "Click to select"
+                                        },
                                         "FLN": {
-                                            "type": "integer",
+                                            "type": "float",
                                             "title": "Fraction of Labeled Neurons (FLN):",
-                                            "minimum": 0,
+                                            "minimum": 0.0,
+                                            "maximum": 1.0,
                                             "default": -1
                                         },
-                                        "Comment_on_Labeled_Area": {
+                                        "Labeled_Site_Mapping_Confidence": {
                                             "type": "string",
-                                            "title": "Comment on Labeled Area:",
+                                            "title": "Mapping confidence of the labeled site:",
+                                            "enum": ["Click to select", "High", "Medium", "Low"],
+                                            "default": "Click to select"
+                                        },
+                                        "Comment_on_Labeled_Site": {
+                                            "type": "string",
+                                            "title": "Comment on Labeled Site:",
                                             "default": "NA",
                                             "minLength": 1
                                         }
@@ -231,12 +280,26 @@
                 }
             }
         },
+        "Form_of_Data_Provided": {
+            "type": "string",
+            "title": "In which form were data provided?",
+            "enum": [
+                "NA", "Only Text", "Only Figures", "Text and Figures"
+            ],
+            "default": "NA"
+        },
         "Comment_on_Article": {
             "type": "string",
-            "title": "Comments on Article:",
+            "title": "Comments on This Article:",
             "default": "NA",
             "minLength": 1
         }
     },
-    "required": ["Article_Info", "Injection_and_Label", "Comment_on_Article"]
+    "required": [
+        "Article_Info", 
+        "Atlas_Parcellation_Scheme_and_Nomenclature", 
+        "Injection_and_Label", 
+        "Form_of_Data_Provided",
+        "Comment_on_Article"
+    ]
 }
