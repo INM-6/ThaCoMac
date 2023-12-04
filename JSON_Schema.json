@@ -1,163 +1,227 @@
 {
-    "title": "DH331_DOI_PMID",
+    "title": "Article ID",
     "type": "object",
     "properties": {
         "Article_Info": {
             "type": "object",
+            "title": "Article Information",
             "properties":{
                 "DH_INDEX": {
                     "type": "integer",
+                    "title": "DH_INDEX:",
                     "minimum": 0,
                     "maximum": 10979,
                     "default": -1
                 },
                 "DOI": {
                     "type": "string",
-                    "default": "NA"
+                    "title": "DOI:",
+                    "default": "NA",
+                    "minLength": 1
                 },
                 "PMID": {
-                    "type": "integer",
-                    "default": -1
+                    "type": "string",
+                    "title": "PMID:",
+                    "pattern": "[0-9]{8}|NA",
+                    "default": "NA"
                 },
                 "PMCID": {
                     "type": "string",
-                    "default": "NA",
-                    "pattern": "PMC[0-9]+"
+                    "title": "PMCID:",
+                    "pattern": "PMC[0-9]{7}|NA",
+                    "default": "NA"
                 },
                 "Title": {
                     "type": "string",
-                    "default": "NA"
+                    "title": "Article Title:",
+                    "default": "NA",
+                    "minLength": 1
                 },
                 "URL": {
                     "type": "string",
-                    "default": "NA"
+                    "title": "URL:",
+                    "default": "NA",
+                    "minLength": 1
                 },
                 "Full_Text_URL": {
                     "type": "string",
-                    "default": "NA"                      
+                    "title": "Full Text URL:",
+                    "default": "NA",
+                    "minLength": 1                    
                 },
                 "Journal": {
                     "type": "string",
+                    "title": "Journal:",
                     "enum": [
-                        "cat",
-                        "dog",
+                        "Brain Research Reviews",
+                        "Brain Research Bulletin",
+                        "nature reviews neuroscience",
                         "NA"
                     ],            
                     "default": "NA"                      
                 },
                 "Publication_Year": {
                     "type": "integer",
+                    "title": "Publication Year:",
                     "minimum": 1936,
                     "maximum": 2023,
-                    "default": "NA"
+                    "default": -1
                 },
                 "First_Autor": {
                     "type": "string",
-                    "format": "name",
-                    "default": "NA"                
+                    "title": "First Autor:",
+                    "default": "NA",
+                    "minLength": 1                
                 },
                 "Macaque_Species": {
                     "type": "array",
-                    "title": "Macaque_Species",
+                    "title": "Macaque Species used:",
                     "uniqueItems": true,
                     "items": {
                         "type": "string",
                         "enum": [
-                            "Macaque mulatta", "macaque 1", "macaque 2"
-                        ],
-                        "default": "Macaque"      
-                    },
-                    "default": [
-                        {
-                            "type": "string",
-                            "name": "Macaque monkey"
-                        }
-                    ]
-                },
-                "Parcellation_Scheme_and_Nomenclature": {
-                    "title": "Parcellation_Scheme_and_Nomenclature",
-                    "type": "object",
-                    "properties":{
-                        "Atlas": {
-                            "type": "string",
-                            "enum": [
-                                "Atlas name 1", "Atlas name 2"
-                            ]
-                        },
-                        "Cortex_Pacellation_Scheme": {
-                            "type": "string",
-                            "enum": [
-                                "Cortex_Pacellation_Scheme name 1", "Cortex_Pacellation_Scheme name 2"
-                            ]
-                        },
-                        "Thalamus_Parcellation_Scheme": {
-                            "type": "string",
-                            "enum": [
-                                "Thalamus_Parcellation_Scheme name 1", "Thalamus_Parcellation_Scheme name 2"
-                            ]
-                        },
-                        "Nomenclature": {
-                            "type": "string",
-                            "enum": [
-                                "Nomenclature name 1",
-                                "Nomenclature name 2"
-                            ]
-                        }
+                            "Macaque (not specified)", 
+                            "Macaque mulatta", 
+                            "macaque 1", 
+                            "macaque 2"
+                        ]
                     }
+                },
+                "Comment_on_Article_Info": {
+                    "type": "string",
+                    "title": "Comment on Article Information:",
+                    "default": "NA",
+                    "minLength": 1
+                }
+            },
+            "required": ["DH_INDEX", "DOI", "PMID", "PMCID", "Title", "URL", "Full_Text_URL", "Journal", "Publication_Year", "First_Autor", "Macaque_Species", "Comment_on_Article_Info"]
+        },
+        "Atlas_Parcellation_Scheme_and_Nomenclature": {
+            "type": "object",
+            "title": "Atlas, Parcellation Scheme and Nomenclature",
+            "properties":{
+                "Atlas": {
+                    "type": "string",
+                    "title": "Atlas:",
+                    "enum": [
+                        "NA", 
+                        "Atlas name 1", 
+                        "Atlas name 2"
+                    ],
+                    "default": "NA"
+                },
+                "Cortex_Pacellation_Scheme": {
+                    "type": "string",
+                    "title": "Cortical Pacellation Scheme:",
+                    "enum": [
+                        "NA", 
+                        "Cortex_Pacellation_Scheme name 1", 
+                        "Cortex_Pacellation_Scheme name 2"
+                    ],
+                    "default": "NA"
+                },
+                "Thalamus_Parcellation_Scheme": {
+                    "type": "string",
+                    "title": "Thalamic Parcellation Scheme:",
+                    "enum": [
+                        "NA", 
+                        "Thalamus_Parcellation_Scheme name 1", 
+                        "Thalamus_Parcellation_Scheme name 2"
+                    ],
+                    "default": "NA"
+                },
+                "Nomenclature": {
+                    "type": "string",
+                    "title": "Nomenclature:",
+                    "enum": [
+                        "NA",
+                        "Nomenclature name 1",
+                        "Nomenclature name 2"
+                    ],
+                    "default": "NA"
                 }
             }
         },
         "Injection_and_Label": {
             "type": "object",
+            "title": "Injection and Label",
             "properties": {
                 "Injections": {
                     "type": "array",
+                    "title": "Injections:",
                     "items": {
                         "type": "object",
+                        "title": "Injection",
                         "properties": {
-                            "TT_Substance": {
-                                "type": "string",
-                                "enum": ["HRP", "WGA", "AVV"]
-                            },
-                            "TT_Direction": {
-                                "type": "string",
-                                "enum": ["anterograde", "retrograde"]
-                            },
-                            "Injection_Area_by_Author": {
-                                "type": "string"
-                            },
-                            "Injection_Area_ID_by_DD99": {
-                                "type": "string",
-                                "enum": ["Area name 1", "Area name 2"]
-                            },
-                            "COMMENT_ARD_ON_INJECTION": {
-                                "type": "string",
-                                "pattern": "(?:A|R|D): [^:]+"
+                            "Injection_Info": {
+                                "type": "object",
+                                "title": "Injection Information:",
+                                "properties": {
+                                    "Injection_ID": {
+                                        "type": "string",
+                                        "title": "Injection ID:",
+                                        "minLength": 1
+                                    },
+                                    "TT_Substance": {
+                                        "type": "string",
+                                        "title": "Tracer Substance:",
+                                        "enum": ["Click to select", "HRP", "WGA", "AVV"],
+                                        "default": "Click to select"
+                                    },
+                                    "TT_Direction": {
+                                        "type": "string",
+                                        "title": "Tracing Direction:",
+                                        "enum": ["Click to select", "anterograde", "retrograde"],
+                                        "default": "Click to select"
+                                    },
+                                    "Injection_Area_Name_by_Author": {
+                                        "type": "string",
+                                        "title": "Injection Area Name by Author:",
+                                        "minLength": 1
+                                    },
+                                    "Injection_Area_ID_by_D99": {
+                                        "type": "string",
+                                        "title": "Injection Area ID by D99:",
+                                        "enum": ["Click to select", "Area name 1", "Area name 2"],
+                                        "default": "Click to select"
+                                    },
+                                    "Comment_on_Injection": {
+                                        "type": "string",
+                                        "title": "Comment on Injection",
+                                        "default": "NA",
+                                        "minLength": 1
+                                    }
+                                }
                             },
                             "Labeled_Areas": {
                                 "type": "array",
+                                "title": "List of Labeled Areas:",
                                 "items": {
                                     "type": "object",
+                                    "title": "Labeled Area",
                                     "properties": {
-                                        "Labeled_Area_by_Author": {
-                                            "type": "string"
-                                        },
-                                        "Labeled_Area_Name_by_DD99": {
+                                        "Labeled_Area_Name_by_Author": {
                                             "type": "string",
-                                            "enum": ["Area name 1", "Area name 2", "Area name 3"]
+                                            "title": "Labeled Area Name by Author:",
+                                            "minLength": 1
                                         },
-                                        "Labeled_Area_ID_by_DD99": {
+                                        "Labeled_Area_ID_by_D99": {
                                             "type": "string",
-                                            "enum": ["Area ID 1", "Area ID 2", "Area ID 3"]
+                                            "title": "Labeled Area ID by D99:",
+                                            "enum": ["Click to select", "Area ID 1", "Area ID 2", "Area ID 3"],
+                                            "default": "Click to select"
                                         },
                                         "FLN": {
                                             "type": "integer",
+                                            "title": "Fraction of Labeled Neurons (FLN):",
                                             "minimum": 0,
                                             "default": -1
                                         },
-                                        "COMMENT_ARD_ON_LABELED_AREA": {
+                                        "Comment_on_Labeled_Area": {
                                             "type": "string",
-                                            "pattern": "(?:A|R|D): [^:]+"
+                                            "title": "Comment on Labeled Area:",
+                                            "default": "NA",
+                                            "minLength": 1
                                         }
                                     }
                                 }
@@ -167,9 +231,12 @@
                 }
             }
         },
-        "COMMENT_ON_ARTICLE": {
+        "Comment_on_Article": {
             "type": "string",
-            "pattern": "(?:A|R|D): [^:]+"
+            "title": "Comments on Article:",
+            "default": "NA",
+            "minLength": 1
         }
-    }
+    },
+    "required": ["Article_Info", "Injection_and_Label", "Comment_on_Article"]
 }
