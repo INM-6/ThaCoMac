@@ -1,4 +1,3 @@
-Macaque Species used
-Cortical Pacellation Scheme
-Thalamic Parcellation Scheme
-Tracer Substance
+Pacellation Scheme
+Parcellation Scheme
+Tracer

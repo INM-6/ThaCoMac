@@ -1,27 +1,31 @@
 {
-    "Tracer_Substance": {
-        "biotinylated dextran amine": "BDA",
-        "horseradish peroxidase": "HRP"
+    "Tracer": {
+        "BDA": "biotinylated dextran amine",
+        "HRP": "horseradish peroxidase"
     },
     "Cortical_Areas": {
-        "primary visual cortex": "V1",
-        "primary auditory cortex": "A1",
-        "primary somatosensory cortex": "S1",
-        "primary motor cortex": "M1",
-        "primary gustatory cortex": "G1",
-        "primary olfactory cortex": "O1"
+        "V1": "primary visual cortex",
+        "A1": "primary auditory cortex",
+        "S1": "primary somatosensory cortex",
+        "M1": "primary motor cortex",
+        "G1": "primary gustatory cortex",
+        "O1": "primary olfactory cortex"
     },
     "Thalamic_Areas": {
-        "lateral geniculate nucleus": "LGN",
-        "medial geniculate nucleus": "MGN",
-        "ventral divisions of the medial geniculate body": "vMGB",
-        "dorsal divisions of the medial geniculate body": "dMGB",
-        "medial divisions of the medial geniculate body": "mMGB",
-        "ventral posterior nucleus": "VP",
-        "ventral anterior nucleus": "VA",
-        "ventral lateral nucleus": "VL",
-        "ventral posterolateral nucleus": "VPL",
-        "posterior thalamic nucleus": "PO",
-        "suprageniculate nucleus": "SG"
+        "LGN": "lateral geniculate nucleus",
+        "MGN": "medial geniculate nucleus",
+        "vMGB": "ventral divisions of the medial geniculate body",
+        "dMGB": "dorsal divisions of the medial geniculate body",
+        "mMGB": "medial divisions of the medial geniculate body",
+        "VP": "ventral posterior nucleus",
+        "VA": "ventral anterior nucleus",
+        "VL": "ventral lateral nucleus",
+        "VPL": "ventral posterolateral nucleus",
+        "PO": "posterior thalamic nucleus",
+        "SG": "suprageniculate nucleus"
+    },
+    "Parcellation_Scheme": {
+        "Paxinos_1999": "Paxinos, G., Huang, X. & Toga, A. W. (1999). The Rhesus Monkey Brain in Stereotaxic Coordinates. San Diego, USA: Academic Press.",
+        "Paxinos": "Paxinos"
     }
 }

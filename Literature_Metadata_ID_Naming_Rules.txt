@@ -1,8 +1,3 @@
 1. Article_ID
-Format: DH_INDEX_DOI_PMID (DH_INDEX + "_" + DOI + "_" + PMID)
-Example: 234_10.1016/j.jacc.2016.03.597_27151349
-
-2. Injection_ID (necessary?)
-Format: DH_INDEX_DOI_PMID_INJECTION_SITE_TT_SUBSTANCE_TT_DIRECTION (DH_INDEX + "_" + DOI + "_" + PMID + "_" + INJECTION_SITE + "_" + TT_SUBSTANCE + "_" + TT_DIRECTION)
-Example 1: 234_10.1016/j.jacc.2016.03.597_27151349_LGN_AVV_R
-Example 2: 33_10c.2016.03.597_23451349_dLGN_WGA_A
+Format: DOI
+Example: 10.1016/j.jacc.2016.03.597
