@@ -63,9 +63,19 @@
                     "title": "Comment on Article Information:"
                 }
             },
-            "required": ["DH_INDEX", "DOI", "PMID", "PMCID", "Title", "URL", "", "Publication_Year", "First_Autor", "Macaque_Species", "Comment_on_Article_Info"]
+            "required": [
+                "DH_INDEX", 
+                "DOI", 
+                "PMID", 
+                "PMCID", 
+                "Title", 
+                "URL", 
+                "Publication_Year", 
+                "First_Autor", 
+                "Comment_on_Article_Info"
+            ]
         },
-        "Parcellation_Schemes": {
+        "Parcellation_Scheme": {
             "type": "object",
             "title": "Parcellation Scheme",
             "properties":{
@@ -89,43 +99,57 @@
                     ],
                     "default": "NA"
                 },
-                "Parcellation_Scheme_for_Certain_Brainsites": {
+                "PS_for_Certain_Brainsites": {
                     "type": "array",
                     "title": "Parcellation Scheme for Certain Brainsites",
                     "items": {
                         "type": "object",
-                        "title": "Parcellation Scheme for Certain Brainsite",
+                        "title": "Case",
                         "properties": {
-                            "Parcellation_Scheme_for_Certain_Brainsite": {
+                            "Brainsite": {
                                 "type": "string",
-                                "title": "Parcellation Scheme for Certain Brainsite:",
+                                "title": "Brainsite:",
                                 "enum": [
-                                    "NA", 
-                                    "Parcellation_Scheme_for_Certain_Brainsite name 1", 
-                                    "Parcellation_Scheme_for_Certain_Brainsite name 2"
+                                    "Click to select",
+                                    "Brainsite name 1", 
+                                    "Brainsite name 2"
                                 ],
-                                "default": "NA"
+                                "default": "Click to select"
                             },
-                            "Comment_on_Parcellation_Scheme_for_Certain_Brainsite": {
+                            "Parcellation_Scheme": {
                                 "type": "string",
-                                "title": "Comment on Parcellation Scheme for Certain Brainsite:"
+                                "title": "Parcellation Scheme:",
+                                "enum": [
+                                    "Click to select", 
+                                    "Parcellation_Schem name 1", 
+                                    "Parcellation_Schem name 2"
+                                ],
+                                "default": "Click to select"
+                            },
+                            "Comment": {
+                                "type": "string",
+                                "title": "Comment:"
                             }
                         },
-                        "required": ["Parcellation_Scheme_for_Certain_Brainsite", "Comment_on_Parcellation_Scheme_for_Certain_Brainsite"]
+                        "required": ["Brainsite", "Parcellation_Scheme", "Comment"]
                     }
                 }
-            }
+            },
+            "required": [
+                "Cortex_Pacellation_Scheme", 
+                "Thalamus_Parcellation_Scheme"
+            ]
         },
         "TT_Experiments": {
             "type": "array",
-            "title": "Tract-tracing Experiments",
+            "title": "Tract-Tracing Experiments",
             "items": {
                 "type": "object",
-                "title": "Experiment",
+                "title": "Subject Experiment",
                 "properties": {
-                    "Experiment_Subject": {
+                    "Subject_Subspecies": {
                         "type": "string",
-                        "title": "Macaque species of the subject used:",
+                        "title": "Subspecies of The Subject:",
                         "enum": [
                             "Macaque (not specified)",
                             "Rhesus macaque (Macaca mulatta)",
@@ -145,14 +169,9 @@
                                     "type": "object",
                                     "title": "Injection Information:",
                                     "properties": {
-                                        "Injection_ID": {
+                                        "Tracer": {
                                             "type": "string",
-                                            "title": "Injection ID:",
-                                            "minLength": 1
-                                        },
-                                        "TT_Substance": {
-                                            "type": "string",
-                                            "title": "Tracer Substance:",
+                                            "title": "Tracer:",
                                             "enum": ["Click to select", "BDA", "HRP", "WGA", "AVV"],
                                             "default": "Click to select"
                                         },
@@ -162,12 +181,23 @@
                                             "enum": ["Click to select", "Anterograde", "Retrograde"],
                                             "default": "Click to select"
                                         },
-                                        "Injection_Site_Name_by_Author": {
+                                        "InjectionSite_Name_by_Author": {
                                             "type": "string",
-                                            "title": "Injection Site Name by Author:",
+                                            "title": "InjectionSite Name by Author:",
                                             "minLength": 1
                                         },
-                                        "Injection_Site_ID_by_D99": {
+                                        "InjectionSite_Info_Source_Text": {
+                                            "type": "string",
+                                            "title": "Text of Information Source:",
+                                            "minLength": 1
+                                        },
+                                        "InjectionSite_Info_Source_Figure": {
+                                            "type": "string",
+                                            "title": "Figure of Information Source:",
+                                            "default": "NA",
+                                            "minLength": 1
+                                        },
+                                        "InjectionSite_ID_by_D99": {
                                             "type": "string",
                                             "title": "Injection Site ID by D99:",
                                             "enum": ["Click to select", "Area name 1", "Area name 2"],
@@ -194,10 +224,20 @@
                                                     "title": "Injection extended into white matter?",
                                                     "enum": ["Click to select", "NA", "Y", "N"],
                                                     "default": "Click to select"
+                                                },
+                                                "Comment": {
+                                                    "type": "string",
+                                                    "title": "Comment:"
                                                 }
-                                            }
+                                            },
+                                            "required": [
+                                                "Cover_Entire_Region", 
+                                                "Cover_Adjacent_Regions", 
+                                                "Extend_into_White_Matter", 
+                                                "Comment"
+                                            ]
                                         },
-                                        "Injection_Mapping_Confidence": {
+                                        "InjectionSite_Mapping_Confidence": {
                                             "type": "string",
                                             "title": "Mapping confidence of the injection site:",
                                             "enum": ["Click to select", "High", "Medium", "Low"],
@@ -207,29 +247,51 @@
                                             "type": "string",
                                             "title": "Comment on Injection" 
                                         }
-                                    }
+                                    },
+                                    "required": [
+                                        "Tracer", 
+                                        "TT_Direction", 
+                                        "InjectionSite_Name_by_Author", 
+                                        "InjectionSite_Info_Source_Text", 
+                                        "InjectionSite_Info_Source_Figure", 
+                                        "InjectionSite_ID_by_D99", 
+                                        "Injection_Coverage", 
+                                        "InjectionSite_Mapping_Confidence", 
+                                        "Comment_on_Injection"
+                                    ]
                                 },
-                                "Labeled_Sites": {
+                                "LabeledSites": {
                                     "type": "array",
-                                    "title": "List of Labeled Sites:",
+                                    "title": "List of LabeledSites:",
                                     "items": {
                                         "type": "object",
-                                        "title": "Labeled Site",
+                                        "title": "LabeledSite",
                                         "properties": {
-                                            "Labeled_Site_Name_by_Author": {
+                                            "LabeledSite_Name_by_Author": {
                                                 "type": "string",
-                                                "title": "Labeled Site Name by Author:",
+                                                "title": "LabeledSite Name by Author:",
                                                 "minLength": 1
                                             },
-                                            "Labeled_Area_ID_by_D99": {
+                                            "LabeledSite_Info_Source_Text": {
                                                 "type": "string",
-                                                "title": "Labeled Area ID by D99:",
+                                                "title": "Text of Information Source:",
+                                                "minLength": 1
+                                            },
+                                            "LabeledSite_Info_Source_Figure": {
+                                                "type": "string",
+                                                "title": "Figure of Information Source:",
+                                                "default": "NA",
+                                                "minLength": 1
+                                            },
+                                            "LabeledSite_ID_by_D99": {
+                                                "type": "string",
+                                                "title": "LabeledSite ID by D99:",
                                                 "enum": ["Click to select", "Area ID 1", "Area ID 2", "Area ID 3"],
                                                 "default": "Click to select"
                                             },
-                                            "Coverage_of_Labeled_Site": {
+                                            "Coverage_of_LabeledSite": {
                                                 "type": "string",
-                                                "title": "Coverage of Labeled Site:",
+                                                "title": "Coverage of LabeledSite:",
                                                 "enum": ["Click to select", "NA", "All over the specified region", "Concentrated in a unnamed subarea"],
                                                 "default": "Click to select"
                                             },
@@ -246,41 +308,47 @@
                                                 "maximum": 1,
                                                 "default": -1
                                             },
-                                            "Labeled_Site_Mapping_Confidence": {
+                                            "LabeledSite_Mapping_Confidence": {
                                                 "type": "string",
                                                 "title": "Mapping confidence of the labeled site:",
                                                 "enum": ["Click to select", "High", "Medium", "Low"],
                                                 "default": "Click to select"
                                             },
-                                            "Comment_on_Labeled_Site": {
+                                            "Comment_on_LabeledSite": {
                                                 "type": "string",
-                                                "title": "Comment on Labeled Site:"
+                                                "title": "Comment on LabeledSite:"
                                             }
                                         },
                                         "required": [
-                                            "Labeled_Site_Name_by_Author", 
-                                            "Labeled_Area_ID_by_D99", 
-                                            "Coverage_of_Labeled_Site", 
+                                            "LabeledSite_Name_by_Author", 
+                                            "LabeledSite_Info_Source_Text", 
+                                            "LabeledSite_Info_Source_Figure", 
+                                            "LabeledSite_ID_by_D99", 
+                                            "Coverage_of_LabeledSite", 
                                             "Qualitative_Strength_of_Labeling", 
                                             "FLN", 
-                                            "Labeled_Site_Mapping_Confidence", 
-                                            "Comment_on_Labeled_Site"
+                                            "LabeledSite_Mapping_Confidence", 
+                                            "Comment_on_LabeledSite"
                                         ]
                                     }
                                 }
                             },
                             "required": [
                                 "Injection_Info", 
-                                "Labeled_Sites"
+                                "LabeledSites"
                             ]
                         }
                     }
-                }
+                },
+                "required": [
+                    "Subject_Subspecies", 
+                    "Injection_and_Labeling"
+                ]
             }
         },
-        "Form_of_Data_Provided": {
+        "Form_of_Data_in_General": {
             "type": "string",
-            "title": "Form of Data Provided:",
+            "title": "In which form are data provided in general:",
             "enum": [
                 "Click to select", "NA", "Only Text", "Text and Figures"
             ],
@@ -293,9 +361,9 @@
     },
     "required": [
         "Article_Info", 
-        "Atlas_Parcellation_Scheme_and_Nomenclature", 
-        "Injection_and_Labeling", 
-        "Form_of_Data_Provided",
+        "Parcellation_Scheme", 
+        "TT_Experiments", 
+        "Form_of_Data_in_General", 
         "Comment_on_Article"
     ]
 }
