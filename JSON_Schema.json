@@ -84,7 +84,7 @@
                     "title": "Cortical Pacellation Scheme:",
                     "enum": [
                         "NA", 
-                        "Cortex_Pacellation_Scheme name 1", 
+                        "Paxinos_1999", 
                         "Cortex_Pacellation_Scheme name 2"
                     ],
                     "default": "NA"
@@ -94,7 +94,7 @@
                     "title": "Thalamic Parcellation Scheme:",
                     "enum": [
                         "NA", 
-                        "Thalamus_Parcellation_Scheme name 1", 
+                        "Paxinos_1999", 
                         "Thalamus_Parcellation_Scheme name 2"
                     ],
                     "default": "NA"
@@ -121,7 +121,7 @@
                                 "title": "Parcellation Scheme:",
                                 "enum": [
                                     "Click to select", 
-                                    "Parcellation_Schem name 1", 
+                                    "Paxinos_1999", 
                                     "Parcellation_Schem name 2"
                                 ],
                                 "default": "Click to select"
@@ -131,7 +131,11 @@
                                 "title": "Comment:"
                             }
                         },
-                        "required": ["Brainsite", "Parcellation_Scheme", "Comment"]
+                        "required": [
+                            "Brainsite", 
+                            "Parcellation_Scheme", 
+                            "Comment"
+                        ]
                     }
                 }
             },
@@ -172,7 +176,28 @@
                                         "Tracer": {
                                             "type": "string",
                                             "title": "Tracer:",
-                                            "enum": ["Click to select", "BDA", "HRP", "WGA", "AVV"],
+                                            "enum": [
+                                                "Click to select", 
+                                                "Alexa Fluor",
+                                                "Amino Acid",
+                                                "AVV",
+                                                "BDA",
+                                                "BrdU",
+                                                "CTX",
+                                                "DY",
+                                                "FB",
+                                                "Fluorescent",
+                                                "Fucose",
+                                                "HRP",
+                                                "HRP-WGA",
+                                                "Leucine",
+                                                "LY",
+                                                "PHA",
+                                                "Proline",
+                                                "Thymidine",
+                                                "WGA",
+                                                "WGA-HRP"
+                                            ],
                                             "default": "Click to select"
                                         },
                                         "TT_Direction": {

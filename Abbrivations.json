@@ -1,7 +1,49 @@
 {
     "Tracer": {
-        "BDA": "biotinylated dextran amine",
-        "HRP": "horseradish peroxidase"
+        "Alexa Fluor": "Alexa Fluor",
+        "Amino Acid": "Amino acid",
+        "AVV": "Adeno-associated virus",
+        "BDA": "Biotinylated dextran amine",
+        "BrdU": "Bromodeoxyuridine",
+        "CTX": "Cholera toxin / Choleragen",
+        "DY": "Diamidino Yellow",
+        "FB": "Fast Blue",
+        "Fluorescent": "Fluorescent",
+        "Fucose": "Fucose",
+        "HRP": "Horseradish peroxidase",
+        "HRP-WGA": "Horseradish peroxidase - wheat germ agglutinin",
+        "Leucine": "Leucine",
+        "LY": "Lucifer yellow",
+        "PHA": "Phytohaemagglutinin",
+        "Proline": "Proline",
+        "Thymidine": "Thymidine analog / Deoxythymidine / Deoxyribosylthymine / Thymine deoxyriboside",
+        "WGA": "wheat germ agglutinin",
+        "WGA-HRP": "Wheat germ agglutinin conjugated to horseradish peroxidase",
+        
+        "Abbreviations": [
+            "Alexa Fluor",
+            "Amino Acid",
+            "AVV",
+            "BDA",
+            "BrdU",
+            "CTX",
+            "DY",
+            "FB",
+            "Fluorescent",
+            "Fucose",
+            "HRP",
+            "HRP-WGA",
+            "Leucine",
+            "LY",
+            "PHA",
+            "Proline",
+            "Thymidine",
+            "WGA",
+            "WGA-HRP"
+        ]
+    },
+    "Parcellation_Scheme": {
+        "Paxinos_1999": "Paxinos, G., Huang, X. & Toga, A. W. (1999). The Rhesus Monkey Brain in Stereotaxic Coordinates. San Diego, USA: Academic Press."
     },
     "Cortical_Areas": {
         "V1": "primary visual cortex",
@@ -23,9 +65,5 @@
         "VPL": "ventral posterolateral nucleus",
         "PO": "posterior thalamic nucleus",
         "SG": "suprageniculate nucleus"
-    },
-    "Parcellation_Scheme": {
-        "Paxinos_1999": "Paxinos, G., Huang, X. & Toga, A. W. (1999). The Rhesus Monkey Brain in Stereotaxic Coordinates. San Diego, USA: Academic Press.",
-        "Paxinos": "Paxinos"
     }
 }
