@@ -52,7 +52,7 @@
                     "maximum": 2023,
                     "default": -1
                 },
-                "First_Autor": {
+                "First_Author": {
                     "type": "string",
                     "title": "First Autor:",
                     "default": "NA",
@@ -71,7 +71,7 @@
                 "Title", 
                 "URL", 
                 "Publication_Year", 
-                "First_Autor", 
+                "First_Author", 
                 "Comment_on_Article_Info"
             ]
         },
@@ -268,9 +268,13 @@
                                             "enum": ["Click to select", "High", "Medium", "Low"],
                                             "default": "Click to select"
                                         },
+                                        "Comment_on_Injection_Mapping": {
+                                            "type": "string",
+                                            "title": "Comment on Injection Mapping:"
+                                        },
                                         "Comment_on_Injection": {
                                             "type": "string",
-                                            "title": "Comment on Injection" 
+                                            "title": "Comment on Injection:" 
                                         }
                                     },
                                     "required": [
@@ -281,7 +285,8 @@
                                         "InjectionSite_Info_Source_Figure", 
                                         "InjectionSite_ID_by_D99", 
                                         "Injection_Coverage", 
-                                        "InjectionSite_Mapping_Confidence", 
+                                        "InjectionSite_Mapping_Confidence",
+                                        "Comment_on_Injection_Mapping", 
                                         "Comment_on_Injection"
                                     ]
                                 },
@@ -339,6 +344,10 @@
                                                 "enum": ["Click to select", "High", "Medium", "Low"],
                                                 "default": "Click to select"
                                             },
+                                            "Comment_on_LabeledSite_Mapping": {
+                                                "type": "string",
+                                                "title": "Comment on LabeledSite Mapping:"
+                                            },
                                             "Comment_on_LabeledSite": {
                                                 "type": "string",
                                                 "title": "Comment on LabeledSite:"
@@ -352,7 +361,8 @@
                                             "Coverage_of_LabeledSite", 
                                             "Qualitative_Strength_of_Labeling", 
                                             "FLN", 
-                                            "LabeledSite_Mapping_Confidence", 
+                                            "LabeledSite_Mapping_Confidence",
+                                            "Comment_on_LabeledSite_Mapping",
                                             "Comment_on_LabeledSite"
                                         ]
                                     }
