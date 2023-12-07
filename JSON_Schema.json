@@ -89,6 +89,10 @@
                     ],
                     "default": "NA"
                 },
+                "Comment_on_CPS": {
+                    "type": "string",
+                    "title": "Comment on Cortical Pacellation Scheme:"
+                },
                 "Thalamus_Parcellation_Scheme": {
                     "type": "string",
                     "title": "Thalamic Parcellation Scheme:",
@@ -98,6 +102,10 @@
                         "Thalamus_Parcellation_Scheme name 2"
                     ],
                     "default": "NA"
+                },
+                "Comment_on_TPS": {
+                    "type": "string",
+                    "title": "Comment on Thalamic Parcellation Scheme:"
                 },
                 "PS_for_Certain_Brainsites": {
                     "type": "array",
@@ -141,7 +149,9 @@
             },
             "required": [
                 "Cortex_Pacellation_Scheme", 
-                "Thalamus_Parcellation_Scheme"
+                "Comment_on_CPS",
+                "Thalamus_Parcellation_Scheme",
+                "Comment_on_TPS"
             ]
         },
         "TT_Experiments": {

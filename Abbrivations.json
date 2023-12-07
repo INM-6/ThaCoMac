@@ -1,7 +1,14 @@
 {
+    "Macaque subspecies": [
+        "Macaque (not specified)",
+        "Rhesus macaque (Macaca mulatta)",
+        "Japanese macaque (Macaca fuscata)",
+        "Pig-tailed macaque (Macaca nemestrina)",
+        "Crab-eating macaque / Cynolomogus macaque (Macaca fascicularis)"
+    ],
     "Tracer": {
         "Alexa Fluor": "Alexa Fluor",
-        "Amino Acid": "Amino acid",
+        "AA": "Amino acid",
         "AVV": "Adeno-associated virus",
         "BDA": "Biotinylated dextran amine",
         "BrdU": "Bromodeoxyuridine",
@@ -9,7 +16,9 @@
         "DY": "Diamidino Yellow",
         "FB": "Fast Blue",
         "Fluorescent": "Fluorescent",
+        "FS": "Fluorescein",
         "Fucose": "Fucose",
+        "FR": "FluoroRuby",
         "HRP": "Horseradish peroxidase",
         "HRP-WGA": "Horseradish peroxidase - wheat germ agglutinin",
         "Leucine": "Leucine",
@@ -43,7 +52,12 @@
         ]
     },
     "Parcellation_Scheme": {
-        "Paxinos_1999": "Paxinos, G., Huang, X. & Toga, A. W. (1999). The Rhesus Monkey Brain in Stereotaxic Coordinates. San Diego, USA: Academic Press."
+        "Paxinos_1999": "Paxinos, G., Huang, X. & Toga, A. W. (1999). The Rhesus Monkey Brain in Stereotaxic Coordinates. San Diego, USA: Academic Press.",
+        "Brodmann_1903": "K. Brodmann: Beiträge zur histologischen Lokalisation der Großhirnrinde. II. Mitteilung: Der Calcarinatypus. Journ. f. Psychol. u. Neurol. 2 (4). 1903 (38)",
+        "Olszewski_1952": "Olzewski, J.. The Thalamus of the Macaca mulatta, an Atlas for Use with the Stereotaxic Instrument, S. Karger, Basel-New York, 1952.",
+        "Jones_1998b": "",
+        "Parent_1983": "",
+        "Kusama_1970": "Kusama T, Mabuchi M (1970) Stereotaxic atlas of the brain of macaca fuscata. University of Tokyo Press, Tokyo"
     },
     "Cortical_Areas": {
         "V1": "primary visual cortex",

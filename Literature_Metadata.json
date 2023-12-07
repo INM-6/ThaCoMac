@@ -1,36 +1,32 @@
 {
-    "331_DOI_PMID":{
-        "Article_Info": {
-            "DH_INDEX": -1,
-            "DOI": "NA",
-            "PMID": -1,
-            "PMCID": "NA",
-            "Title": "NA",
-            "URL": "NA",
-            "Full_Text_URL": "NA",
-            "Journal": "NA",
-            "Publication_Year": 0,
-            "First_Autor": "NA",
-            "Macaque_Species": [],
-            "Parcellation_Scheme_and_Nomenclature": {
-              "Atlas": "Atlas name 1",
-              "Cortex_Pacellation_Scheme": "Cortex_Pacellation_Scheme name 1",
-              "Thalamus_Parcellation_Scheme": "Thalamus_Parcellation_Scheme name 1",
-              "Nomenclature": "Nomenclature name 1"
-            }
-          },
-          "Injection_and_Label": {
-            "Injections": []
-          },
-          "COMMENT_ON_ARTICLE": ""
+    "10.1016/j.neulet.2004.01.008": {
+        
     },
-    "DH389_DOI_PMID":{
+    "10.1016/0006-8993(83)90698-4": {
 
     },
-    "DH390_DOI_PMID":{
+    "10.1523/JNEUROSCI.22-18-08117.2002": {
 
     },
-    "DH391_DOI_PMID":{
+    "10.1007/BF00230949": {
+
+    },
+    "10.1016/j.neuroscience.2007.02.033": {
+
+    },
+    "10.1002/cne.902570211": {
+
+    },
+    "10.1093/cercor/bhn229": {
+
+    },
+    "10.1523/JNEUROSCI.18-11-04216.1998": {
+
+    },
+    "10.1007/s004290050204": {
+
+    },
+    "10.1111/j.1460-9568.2005.03921.x": {
 
     }
 }
