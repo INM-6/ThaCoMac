@@ -32,7 +32,7 @@
         "GB": "Fluorescent green beads",
         "Proline": "Proline",
         "Thymidine": "Thymidine analog / Deoxythymidine / Deoxyribosylthymine / Thymine deoxyriboside",
-        "WGA": "wheat germ agglutinin",
+        "WGA": "Wheat germ agglutinin",
         "WGA-HRP": "Wheat germ agglutinin conjugated to horseradish peroxidase",
         
         "Abbreviations": [
@@ -67,7 +67,8 @@
         "Morel_1997": "Morel, A., Magnin, M. & Jeanmonod, D. (1997) Multiarchitectonic and stereotactic atlas of the human thalamus. J. Comp. Neurol., 387, 588–630. [Erratum: J. Comp. Neurol., 391, 545 (1998)].",
         "Kusama_1970": "Kusama T, Mabuchi M (1970) Stereotaxic atlas of the brain of macaca fuscata. University of Tokyo Press, Tokyo",
         "Walker_1940": "Walker, A.E. (1940) A cytoarchitectural study of the prefrontal area of the macaque monkey. J. Comp. Neurol. 73t59-86.",
-        "Asanuma_1983": "Asanuma C, Thach WT, Jones EG (1983) Distribution of cerebellar terminations and their relation to other afferent terminations in the ventral lateral thalamic region of the monkey. Brain Res Rev 286:237–265"
+        "Asanuma_1983": "Asanuma C, Thach WT, Jones EG (1983) Distribution of cerebellar terminations and their relation to other afferent terminations in the ventral lateral thalamic region of the monkey. Brain Res Rev 286:237–265",
+        "Schell_1984": "Schell, G.R., and P.L. Strick 11984) Origin of thalamic input to the arcuate premotor and supplementary motor areas. J. Neurosci 4:539-560."
     },
     "Cortical_Areas": {
         "V1": "primary visual cortex",
