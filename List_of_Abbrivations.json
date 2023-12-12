@@ -33,29 +33,7 @@
         "Proline": "Proline",
         "Thymidine": "Thymidine analog / Deoxythymidine / Deoxyribosylthymine / Thymine deoxyriboside",
         "WGA": "Wheat germ agglutinin",
-        "WGA-HRP": "Wheat germ agglutinin conjugated to horseradish peroxidase",
-        
-        "Abbreviations": [
-            "Alexa Fluor",
-            "Amino Acid",
-            "AVV",
-            "BDA",
-            "BrdU",
-            "CTX",
-            "DY",
-            "FB",
-            "Fluorescent",
-            "Fucose",
-            "HRP",
-            "HRP-WGA",
-            "Leucine",
-            "LY",
-            "PHA",
-            "Proline",
-            "Thymidine",
-            "WGA",
-            "WGA-HRP"
-        ]
+        "WGA-HRP": "Wheat germ agglutinin conjugated to horseradish peroxidase"
     },
     "Parcellation_Scheme": {
         "Paxinos_1999": "Paxinos, G., Huang, X. & Toga, A. W. (1999). The Rhesus Monkey Brain in Stereotaxic Coordinates. San Diego, USA: Academic Press.",
