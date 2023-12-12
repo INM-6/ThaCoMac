@@ -5,7 +5,7 @@
         "Japanese macaque (Macaca fuscata)",
         "Pig-tailed macaque (Macaca nemestrina)",
         "Bonnet macaque (Macaca radiata)",
-        "Crab-eating macaque / Cynomolgus macaque (Macaca fascicularis)"
+        "Crab-eating (cynomolgus) macaque (Macaca fascicularis)."
     ],
     "Tracer": {
         "Alexa Fluor": "Alexa Fluor",
@@ -23,7 +23,7 @@
         "Fucose": "Fucose",
         "FR": "FluoroRuby",
         "FG": "fluorogold",
-        "HRP": "Horseradish peroxidase",
+        "HRP": "horseradish peroxidase",
         "HRP-WGA": "Horseradish peroxidase - wheat germ agglutinin",
         "Leucine": "Leucine",
         "DY/NY": "Diamidino yellow combined with nuclear yellow",
@@ -38,7 +38,7 @@
     "Parcellation_Scheme": {
         "Paxinos_1999": "Paxinos, G., Huang, X. & Toga, A. W. (1999). The Rhesus Monkey Brain in Stereotaxic Coordinates. San Diego, USA: Academic Press.",
         "Brodmann_1903": "K. Brodmann: Beiträge zur histologischen Lokalisation der Großhirnrinde. II. Mitteilung: Der Calcarinatypus. Journ. f. Psychol. u. Neurol. 2 (4). 1903 (38)",
-        "Olszewski_1952": "Olzewski, J.. The Thalamus of the Macaca mulatta, an Atlas for Use with the Stereotaxic Instrument, S. Karger, Basel-New York, 1952.",
+        "Olszewski_1952": "Olszewski, J. (1952) The Thalamus of the Macaca nuluttu. An Atlas for Use With The Stereotaxic Instrument. Basel: Karger.",
         "Jones_1985": "Jones, E.G. (1985) The Thalamus. Plenum Press, New York.",
         "Jones_1990": "Jones, E.G. (1990) Correlation and revised nomenclature of ventral nuclei in the thalamus of human and monkey. Stereotact. Funct. Neurosurg., 54–55, 1–20.",
         "Jones_1989": "Jones, E.G. & Hendry, S.H.C. (1989) Differential calcium binding protein immunoreactivity distinguishes classes of relay neurons in monkey thalamic nuclei. Eur. J. Neurosci., 1, 222–246.",
