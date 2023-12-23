@@ -106,6 +106,6 @@ final_manually_read_csv_1_aitor = os.path.join(manually_read_and_confirm_folder,
 final_confirm_article_list = os.path.join(manually_read_and_confirm_folder, "final_confirm_article_list.csv")
 relevant_reviews_and_ta_not_avaialble = os.path.join(manually_read_and_confirm_folder, "relevant_reviews_and_ta_not_avaialble.csv")
 final_confirm_article_list_labeled = os.path.join(manually_read_and_confirm_folder, "final_confirm_article_list_labeled.csv")
-relevant_article_and_is_review_labeled = os.path.join(manually_read_and_confirm_folder, "relevant_article_and_is_review_labeled.csv")
+relevant_article_and_is_review_labeled = os.path.join(manually_read_and_confirm_folder, "relevant_reviews_and_ta_not_avaialble_labeled.csv")
 
 relevant_articles_YESES = os.path.join(manually_read_and_confirm_folder, "relevant_articles_YESES.csv")
