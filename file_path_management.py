@@ -2,6 +2,8 @@ from pathlib import Path
 import os
 from typing import final
 
+from scipy import datasets
+
 # device = "/Volumes/DIDIHOU/"
 device = "/media/hou/DIDIHOU/"
 
@@ -19,6 +21,7 @@ TT_text_folder = device + "TT_text"
 # project folder and the root folder of the repository
 project_folder = Path.cwd()
 # path to the datasets
+datasets_folder = os.path.join(project_folder, "datasets")
 literature_search_results_folder = os.path.join(project_folder, "datasets", "01_literature_search_results")
 data_processing_folder = os.path.join(project_folder, "datasets", "02_data_processing")
 potential_literature_database_folder = os.path.join(project_folder, "datasets", "03_potential_literature_database")
@@ -109,3 +112,5 @@ final_confirm_article_list_labeled = os.path.join(manually_read_and_confirm_fold
 relevant_article_and_is_review_labeled = os.path.join(manually_read_and_confirm_folder, "relevant_reviews_and_ta_not_avaialble_labeled.csv")
 
 relevant_articles_YESES = os.path.join(manually_read_and_confirm_folder, "relevant_articles_YESES.csv")
+relevant_articles_YESES_corrected = os.path.join(datasets_folder, "relevant_articles_YESES_corrected.csv")
+
