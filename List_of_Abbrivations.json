@@ -60,8 +60,7 @@
         "Schell_1984": "Schell, G.R., and P.L. Strick (1984) Origin of thalamic input to the arcuate premotor and supplementary motor areas. J. Neurosci 4:539-560.",
         "Woolsey_1952": "Woolsey, C.W., P.W. Settlage, D.R. Meyer, W.M. Spencer, T.P. Hamuy, and A.M. Travis (1952) Patterns of localization in precentral and “supplementary” motor areas and their relations to the concept of a premotor area. Res. Publ. Asaoc. Res. New. Ment. Dis. 30t238-264.",
         "Wise_1981": "Wise, S.P., and Tanji, J. (1981) Supplementary and precentral motor cortex: Contrast in responsiveness to peripheral input in the hindlimb area of the unanesthetized monkey. J. Comp. Neurol. 195433-451.",
-        "Muakkassa_1979": "Muakkassa, K.F., and P.L. Strick (1979) Frontal lobe inputs to primate motor cortex: Evidence for four somatopically organized 'premotor' areas. Brain Res. 177:176-182.",
-
+        "Muakkassa_1979": "Muakkassa, K.F., and P.L. Strick (1979) Frontal lobe inputs to primate motor cortex: Evidence for four somatopically organized 'premotor' areas. Brain Res. 177:176-182."
     },
     "Cortical_Areas": {
         "V1": "primary visual cortex",
@@ -74,14 +73,20 @@
     "Thalamic_Areas": {
         "LGN": "lateral geniculate nucleus",
         "MGN": "medial geniculate nucleus",
-        "vMGB": "ventral divisions of the medial geniculate body",
-        "dMGB": "dorsal divisions of the medial geniculate body",
-        "mMGB": "medial divisions of the medial geniculate body",
+        "MGB": "medial geniculate body",
+        "vMGB": "ventral division of the MGB",
+        "dMGB": "dorsal division of the MGB",
+        "mMGB": "medial division of the MGB",
         "VP": "ventral posterior nucleus",
         "VA": "ventral anterior nucleus",
         "VL": "ventral lateral nucleus",
         "VPL": "ventral posterolateral nucleus",
-        "PO": "posterior thalamic nucleus",
-        "SG": "suprageniculate nucleus"
+        "PO": "posterior nucleus of the thalamus",
+        "SG": "suprageniculate nucleus",
+        "Pul": "pulvinar nucleus"
+    },
+    "Other_Abbreviations": {
+        "CT": "corticothalamic",
+        "TC": "thalamocortical"
     }
 }
