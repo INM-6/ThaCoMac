@@ -1,6 +1,8 @@
-Macaque subspecies, subjects and Cases (if adult, if healthy)
+Macaque subspecies, subjects and Cases (record relevant info if not adult or not healthy)
 Tracer (antrograte, retrograde, or both)
 Parcellation Scheme
+
+
 
 InjectionSite, Coverage
 LabeledSites, Coverage
