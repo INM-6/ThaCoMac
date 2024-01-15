@@ -1,3 +1,0 @@
-1. Article_ID
-Format: LastNameOfTheFirstAuthor_PublishYear_DOI
-Example: Levelt_2016_10.1016/j.jacc.2016.03.597
