@@ -13,9 +13,9 @@
                     "maximum": 10979,
                     "default": -1
                 },
-                "DOI": {
+                "DOI-URL": {
                     "type": "string",
-                    "title": "DOI:",
+                    "title": "DOI-URL:",
                     "default": "NA",
                     "minLength": 1
                 },
@@ -39,11 +39,11 @@
                     "default": "NA",
                     "minLength": 1
                 },
-                "URL": {
+                "First_Author": {
                     "type": "string",
-                    "title": "URL:",
+                    "title": "First Autor (FirstName LastName):",
                     "default": "NA",
-                    "minLength": 1
+                    "minLength": 1                
                 },
                 "Publication_Year": {
                     "type": "integer",
@@ -52,12 +52,6 @@
                     "maximum": 2023,
                     "default": -1
                 },
-                "First_Author": {
-                    "type": "string",
-                    "title": "First Autor:",
-                    "default": "NA",
-                    "minLength": 1                
-                },
                 "Comment_on_Article_Info": {
                     "type": "string",
                     "title": "Comment on Article Information:"
@@ -65,13 +59,12 @@
             },
             "required": [
                 "DH_INDEX", 
-                "DOI", 
+                "DOI-URL", 
                 "PMID", 
                 "PMCID", 
                 "Title", 
-                "URL", 
-                "Publication_Year", 
                 "First_Author", 
+                "Publication_Year", 
                 "Comment_on_Article_Info"
             ]
         },
@@ -84,10 +77,42 @@
                     "title": "Cortical Pacellation Scheme:",
                     "enum": [
                         "NA", 
+                        "Olszewski_1952",
                         "Paxinos_1999", 
-                        "Cortex_Pacellation_Scheme name 2"
+                        "Paxinos_2000",
+                        "Pandya_1982",
+                        "Seltzer_1984",
+                        "Matelli_1998",
+                        "Brodmann_1903",
+                        "Jones_1985",
+                        "Jones_1989",
+                        "Jones_1990",
+                        "Jones_1998b",
+                        "Parent_1983",
+                        "Morel_1997",
+                        "Morel_2005",
+                        "Kusama_1970",
+                        "Walker_1940a",
+                        "Walker_1940b",
+                        "Asanuma_1983a",
+                        "Asanuma_1983b",
+                        "Schell_1984",
+                        "Woolsey_1952",
+                        "Wise_1981",
+                        "Muakkassa_1979",
+                        "Durif_2003",
+                        "Barbas_1989",
+                        "Matelli_1991",
+                        "Dum_1993",
+                        "Campbell_1989",
+                        "Tsang_2000",
+                        "Liu_2002",
+                        "Wannier_2005"
                     ],
-                    "default": "NA"
+                    "default": "NA",
+                    "uniqueItems": false,
+                    "minItems": 1,
+                    "minLength": 3
                 },
                 "Comment_on_CPS": {
                     "type": "string",
@@ -98,8 +123,37 @@
                     "title": "Thalamic Parcellation Scheme:",
                     "enum": [
                         "NA", 
+                        "Olszewski_1952",
                         "Paxinos_1999", 
-                        "Thalamus_Parcellation_Scheme name 2"
+                        "Paxinos_2000",
+                        "Pandya_1982",
+                        "Seltzer_1984",
+                        "Matelli_1998",
+                        "Brodmann_1903",
+                        "Jones_1985",
+                        "Jones_1989",
+                        "Jones_1990",
+                        "Jones_1998b",
+                        "Parent_1983",
+                        "Morel_1997",
+                        "Morel_2005",
+                        "Kusama_1970",
+                        "Walker_1940a",
+                        "Walker_1940b",
+                        "Asanuma_1983a",
+                        "Asanuma_1983b",
+                        "Schell_1984",
+                        "Woolsey_1952",
+                        "Wise_1981",
+                        "Muakkassa_1979",
+                        "Durif_2003",
+                        "Barbas_1989",
+                        "Matelli_1991",
+                        "Dum_1993",
+                        "Campbell_1989",
+                        "Tsang_2000",
+                        "Liu_2002",
+                        "Wannier_2005"
                     ],
                     "default": "NA"
                 },
@@ -116,21 +170,44 @@
                         "properties": {
                             "Brainsite": {
                                 "type": "string",
-                                "title": "Brainsite:",
-                                "enum": [
-                                    "Click to select",
-                                    "Brainsite name 1", 
-                                    "Brainsite name 2"
-                                ],
-                                "default": "Click to select"
+                                "title": "Brainsite:"
                             },
                             "Parcellation_Scheme": {
                                 "type": "string",
                                 "title": "Parcellation Scheme:",
                                 "enum": [
                                     "Click to select", 
+                                    "Olszewski_1952",
                                     "Paxinos_1999", 
-                                    "Parcellation_Schem name 2"
+                                    "Paxinos_2000",
+                                    "Pandya_1982",
+                                    "Seltzer_1984",
+                                    "Matelli_1998",
+                                    "Brodmann_1903",
+                                    "Jones_1985",
+                                    "Jones_1989",
+                                    "Jones_1990",
+                                    "Jones_1998b",
+                                    "Parent_1983",
+                                    "Morel_1997",
+                                    "Morel_2005",
+                                    "Kusama_1970",
+                                    "Walker_1940a",
+                                    "Walker_1940b",
+                                    "Asanuma_1983a",
+                                    "Asanuma_1983b",
+                                    "Schell_1984",
+                                    "Woolsey_1952",
+                                    "Wise_1981",
+                                    "Muakkassa_1979",
+                                    "Durif_2003",
+                                    "Barbas_1989",
+                                    "Matelli_1991",
+                                    "Dum_1993",
+                                    "Campbell_1989",
+                                    "Tsang_2000",
+                                    "Liu_2002",
+                                    "Wannier_2005"
                                 ],
                                 "default": "Click to select"
                             },
@@ -151,7 +228,8 @@
                 "Cortex_Pacellation_Scheme", 
                 "Comment_on_CPS",
                 "Thalamus_Parcellation_Scheme",
-                "Comment_on_TPS"
+                "Comment_on_TPS",
+                "PS_for_Certain_Brainsites"
             ]
         },
         "TT_Experiments": {
@@ -169,8 +247,14 @@
                             "Rhesus macaque (Macaca mulatta)",
                             "Japanese macaque (Macaca fuscata)",
                             "Pig-tailed macaque (Macaca nemestrina)",
-                            "Crab-eating macaque / Cynolomogus macaque (Macaca fascicularis)"
+                            "Bonnet macaque (Macaca radiata)",
+                            "Crab-eating (cynomolgus) macaque (Macaca fascicularis)"
                         ]
+                    },
+                    "Comment_on_Experimental_Subject": {
+                        "type": "string",
+                        "title": "Comment on This Experimental Subject:",
+                        "default": "NA"
                     },
                     "Injection_and_Labeling": {
                         "type": "array",
@@ -189,31 +273,36 @@
                                             "enum": [
                                                 "Click to select", 
                                                 "Alexa Fluor",
-                                                "Amino Acid",
+                                                "AA",
+                                                "Leucine",
+                                                "Proline",
                                                 "AVV",
                                                 "BDA",
                                                 "BrdU",
                                                 "CTX",
+                                                "CTB",
                                                 "DY",
+                                                "DR",
                                                 "FB",
                                                 "Fluorescent",
+                                                "FE",
+                                                "FS",
+                                                "PI",
                                                 "Fucose",
+                                                "FR",
+                                                "FR-dextran amine",
+                                                "FG",
                                                 "HRP",
                                                 "HRP-WGA",
-                                                "Leucine",
+                                                "NY",
+                                                "DY/NY",
                                                 "LY",
                                                 "PHA",
-                                                "Proline",
+                                                "GB",
                                                 "Thymidine",
                                                 "WGA",
                                                 "WGA-HRP"
                                             ],
-                                            "default": "Click to select"
-                                        },
-                                        "TT_Direction": {
-                                            "type": "string",
-                                            "title": "Tracing Direction:",
-                                            "enum": ["Click to select", "Anterograde", "Retrograde"],
                                             "default": "Click to select"
                                         },
                                         "InjectionSite_Name_by_Author": {
@@ -223,7 +312,7 @@
                                         },
                                         "InjectionSite_Info_Source_Text": {
                                             "type": "string",
-                                            "title": "Text of Information Source:",
+                                            "title": "Text about InjectionSite:",
                                             "minLength": 1
                                         },
                                         "InjectionSite_Info_Source_Figure": {
@@ -260,6 +349,11 @@
                                                     "enum": ["Click to select", "NA", "Y", "N"],
                                                     "default": "Click to select"
                                                 },
+                                                "Injection_Coverage_Info_Source_Text": {
+                                                    "type": "string",
+                                                    "title": "Text about Injection Coverage:",
+                                                    "minLength": 1
+                                                },
                                                 "Comment": {
                                                     "type": "string",
                                                     "title": "Comment:"
@@ -278,9 +372,9 @@
                                             "enum": ["Click to select", "High", "Medium", "Low"],
                                             "default": "Click to select"
                                         },
-                                        "Comment_on_Injection_Mapping": {
+                                        "Comment_on_InjectionSite_Mapping": {
                                             "type": "string",
-                                            "title": "Comment on Injection Mapping:"
+                                            "title": "Comment on InjectionSite Mapping:"
                                         },
                                         "Comment_on_Injection": {
                                             "type": "string",
@@ -289,14 +383,13 @@
                                     },
                                     "required": [
                                         "Tracer", 
-                                        "TT_Direction", 
                                         "InjectionSite_Name_by_Author", 
                                         "InjectionSite_Info_Source_Text", 
                                         "InjectionSite_Info_Source_Figure", 
                                         "InjectionSite_ID_by_D99", 
                                         "Injection_Coverage", 
-                                        "InjectionSite_Mapping_Confidence",
-                                        "Comment_on_Injection_Mapping", 
+                                        "InjectionSite_Mapping_Confidence", 
+                                        "Comment_on_InjectionSite_Mapping", 
                                         "Comment_on_Injection"
                                     ]
                                 },
@@ -307,6 +400,18 @@
                                         "type": "object",
                                         "title": "LabeledSite",
                                         "properties": {
+                                            "TT_Direction": {
+                                                "type": "string",
+                                                "title": "Tracing Direction:",
+                                                "enum": ["Click to select", "Anterograde", "Retrograde"],
+                                                "default": "Click to select"
+                                            },
+                                            "If_Ipsilateral": {
+                                                "type": "string",
+                                                "title": "If Ipsilateral?",
+                                                "enum": ["Y", "N"],
+                                                "default": "Y"
+                                            },
                                             "LabeledSite_Name_by_Author": {
                                                 "type": "string",
                                                 "title": "LabeledSite Name by Author:",
@@ -314,12 +419,12 @@
                                             },
                                             "LabeledSite_Info_Source_Text": {
                                                 "type": "string",
-                                                "title": "Text of Information Source:",
+                                                "title": "Text about LabeledSite:",
                                                 "minLength": 1
                                             },
                                             "LabeledSite_Info_Source_Figure": {
                                                 "type": "string",
-                                                "title": "Figure of Information Source:",
+                                                "title": "Figure of LabeledSite:",
                                                 "default": "NA",
                                                 "minLength": 1
                                             },
@@ -335,16 +440,26 @@
                                                 "enum": ["Click to select", "NA", "All over the specified region", "Concentrated in a unnamed subarea"],
                                                 "default": "Click to select"
                                             },
+                                            "LabeledSite_Coverage_Info_Source_Text": {
+                                                "type": "string",
+                                                "title": "Text about LabeledSite Coverage:",
+                                                "minLength": 1
+                                            },
                                             "Qualitative_Strength_of_Labeling": {
                                                 "type": "string",
                                                 "title": "Strength of Labeling in Qualitative Terms:",
                                                 "enum": ["Click to select", "NA", "Strong", "Medium", "Weak"],
                                                 "default": "Click to select"
                                             },
+                                            "Source_of_Connection_Strength": {
+                                                "type": "string",
+                                                "title": "Text about Connection Strength:",
+                                                "minLength": 1
+                                            },
                                             "FLN": {
                                                 "type": "number",
                                                 "title": "Fraction of Labeled Neurons (FLN):",
-                                                "minimum": 0,
+                                                "minimum": -1,
                                                 "maximum": 1,
                                                 "default": -1
                                             },
@@ -364,15 +479,18 @@
                                             }
                                         },
                                         "required": [
+                                            "TT_Direction", 
+                                            "If_Ipsilateral", 
                                             "LabeledSite_Name_by_Author", 
                                             "LabeledSite_Info_Source_Text", 
                                             "LabeledSite_Info_Source_Figure", 
                                             "LabeledSite_ID_by_D99", 
                                             "Coverage_of_LabeledSite", 
                                             "Qualitative_Strength_of_Labeling", 
+                                            "Source_of_Connection_Strength", 
                                             "FLN", 
-                                            "LabeledSite_Mapping_Confidence",
-                                            "Comment_on_LabeledSite_Mapping",
+                                            "LabeledSite_Mapping_Confidence", 
+                                            "Comment_on_LabeledSite_Mapping", 
                                             "Comment_on_LabeledSite"
                                         ]
                                     }
@@ -387,6 +505,7 @@
                 },
                 "required": [
                     "Subject_Subspecies", 
+                    "Comment_on_Experimental_Subject", 
                     "Injection_and_Labeling"
                 ]
             }
