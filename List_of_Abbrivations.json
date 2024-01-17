@@ -66,11 +66,7 @@
         "Durif_2003": "C. Durif, C. Jouffrais, E.M. Rouiller, Single unit responses in the auditory cortex of monkeys performing a conditional acoustico-motor task, Exp. Brain Res. 153 (2003) 614–627.",
         "Barbas_1989": "Barbas H, Pandya DN (1989) Architecture and intrinsic connections of the prefrontal cortex in the rhesus monkey. J Comp Neurol 286:353–375.",
         "Matelli_1991": "Matelli M, Luppino G, Rizzolatti G (1991) Architecture of superior and mesial area 6 and the adjacent cingulate cortex in the macaque monkey. J Comp Neurol 311:445–462.",
-        "Dum_1993": "Dum RP, Strick PL (1993) Cingulate motor areas. In: Neurobiology of cingulate cortex and limbic thalamus: a comprehensive treatise (Vogt BA, Gabriel M, eds), pp 415–441. Boston: Birkhauser.",
-        "Campbell_1989": "",
-        "Tsang_2000": "",
-        "Liu_2002": "",
-        "Wannier_2005": "",
+        "Dum_1993": "Dum RP, Strick PL (1993) Cingulate motor areas. In: Neurobiology of cingulate cortex and limbic thalamus: a comprehensive treatise (Vogt BA, Gabriel M, eds), pp 415–441. Boston: Birkhauser."
     },
     "Cortical_Areas": {
         "V1": "primary visual cortex",
@@ -100,7 +96,7 @@
         "PO": "posterior nucleus of the thalamus",
         "SG": "suprageniculate nucleus",
         "Pul": "pulvinar nucleus",
-        "R": "reticular nucleus",
+        "R": "reticular nucleus"
     },
     "Other_Abbreviations": {
         "CT": "corticothalamic",
