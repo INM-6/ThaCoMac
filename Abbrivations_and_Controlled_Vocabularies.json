@@ -1,12 +1,4 @@
 {
-    "Macaque subspecies": [
-        "Macaque (not specified)",
-        "Rhesus macaque (Macaca mulatta)",
-        "Japanese macaque (Macaca fuscata)",
-        "Pig-tailed macaque (Macaca nemestrina)",
-        "Bonnet macaque (Macaca radiata)",
-        "Crab-eating (cynomolgus) macaque (Macaca fascicularis)"
-    ],
     "Tracer": {
         "Alexa Fluor": "Alexa Fluor",
         "AA": "Tritiated Amino Acids",
@@ -101,5 +93,13 @@
     "Other_Abbreviations": {
         "CT": "corticothalamic",
         "TC": "thalamocortical"
-    }
+    },
+    "Macaque subspecies": [
+        "Macaque (not specified)",
+        "Rhesus macaque (Macaca mulatta)",
+        "Japanese macaque (Macaca fuscata)",
+        "Pig-tailed macaque (Macaca nemestrina)",
+        "Bonnet macaque (Macaca radiata)",
+        "Crab-eating (cynomolgus) macaque (Macaca fascicularis)"
+    ]
 }
