@@ -16,8 +16,8 @@
                 "DOI-URL": {
                     "type": "string",
                     "title": "DOI-URL:",
-                    "default": "NA",
-                    "minLength": 1
+                    "default": "https://doi.org/",
+                    "minLength": 16
                 },
                 "PMID": {
                     "type": "string",
