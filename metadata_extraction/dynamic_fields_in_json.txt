@@ -1,0 +1,11 @@
+Macaque subspecies,
+Experimental subjects,
+Tracer (antrograte, retrograde, bidirectional)
+Parcellation Scheme
+Conncetion strength (qualitative, quantitative description)
+
+
+
+InjectionSite, Injection Coverage
+LabeledSites, LabledSite Coverage
+
