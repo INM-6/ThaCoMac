@@ -1,5 +1,0 @@
-\beamer@sectionintoc {2}{First Section}{4}{0}{1}
-\beamer@subsectionintoc {2}{1}{Subsection Example}{4}{0}{1}
-\beamer@sectionintoc {3}{Section title}{5}{0}{2}
-\beamer@sectionintoc {4}{Second Section}{8}{0}{3}
-\beamer@sectionintoc {5}{Section title\newline Example of a two-line title}{14}{0}{4}
