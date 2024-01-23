@@ -2,6 +2,18 @@
     "title": "Article ID",
     "type": "object",
     "properties": {
+        "Comment_on_This_Article": {
+            "type": "string",
+            "title": "Comment on This Article:"
+        },
+        "Form_of_Data": {
+            "type": "string",
+            "title": "In which form are data provided in general?",
+            "enum": [
+                "To be recorded", "Only Text", "Text and Figures"
+            ],
+            "default": "To be recorded"
+        },
         "Article_Info": {
             "type": "object",
             "title": "Article Information",
@@ -172,16 +184,16 @@
                     "type": "string",
                     "title": "Comment on Thalamic Parcellation Scheme:"
                 },
-                "PS_for_Certain_Brainsites": {
+                "PS_for_Certain_Cortical_Sub-regions": {
                     "type": "array",
-                    "title": "Parcellation Scheme for Certain Brainsites:",
+                    "title": "Parcellation Scheme for Certain Cortical Sub-regions:",
                     "items": {
                         "type": "object",
                         "title": "Case",
                         "properties": {
-                            "Brainsite": {
+                            "Sub-region": {
                                 "type": "string",
-                                "title": "Brainsite:"
+                                "title": "Sub-region:"
                             },
                             "Parcellation_Scheme": {
                                 "type": "array",
@@ -235,7 +247,77 @@
                             }
                         },
                         "required": [
-                            "Brainsite", 
+                            "Sub-region", 
+                            "Parcellation_Scheme", 
+                            "Source_Text_of_PS", 
+                            "Comment"
+                        ]
+                    }
+                },
+                "PS_for_Certain_Thalamic_Sub-regions": {
+                    "type": "array",
+                    "title": "Parcellation Scheme for Certain Thalamic Sub-regions:",
+                    "items": {
+                        "type": "object",
+                        "title": "Case",
+                        "properties": {
+                            "Sub-region": {
+                                "type": "string",
+                                "title": "Sub-region:"
+                            },
+                            "Parcellation_Scheme": {
+                                "type": "array",
+                                "title": "Parcellation Scheme:",
+                                "items": {
+                                    "type": "string",
+                                    "enum": [
+                                        "Click to select", 
+                                        "Olszewski_1952",
+                                        "Paxinos_1999", 
+                                        "Paxinos_2000",
+                                        "Pandya_1982",
+                                        "Seltzer_1984",
+                                        "Matelli_1998",
+                                        "Brodmann_1903",
+                                        "Jones_1985",
+                                        "Jones_1989",
+                                        "Jones_1990",
+                                        "Jones_1998b",
+                                        "Parent_1983",
+                                        "Morel_1997",
+                                        "Morel_2005",
+                                        "Kusama_1970",
+                                        "Walker_1940a",
+                                        "Walker_1940b",
+                                        "Asanuma_1983a",
+                                        "Asanuma_1983b",
+                                        "Schell_1984",
+                                        "Woolsey_1952",
+                                        "Wise_1981",
+                                        "Muakkassa_1979",
+                                        "Durif_2003",
+                                        "Barbas_1989",
+                                        "Matelli_1991",
+                                        "Dum_1993",
+                                        "Campbell_1989",
+                                        "Tsang_2000",
+                                        "Liu_2002",
+                                        "Wannier_2005"
+                                    ],
+                                    "default": "Click to select"
+                                }
+                            },
+                            "Source_Text_of_PS": {
+                                "type": "string",
+                                "title": "Source Text of Pacellation Scheme:"
+                            },
+                            "Comment": {
+                                "type": "string",
+                                "title": "Comment:"
+                            }
+                        },
+                        "required": [
+                            "Sub-region", 
                             "Parcellation_Scheme", 
                             "Source_Text_of_PS", 
                             "Comment"
@@ -250,7 +332,8 @@
                 "Thalamus_Parcellation_Scheme", 
                 "Source_Text_of_TPS", 
                 "Comment_on_TPS", 
-                "PS_for_Certain_Brainsites"
+                "PS_for_Certain_Cortical_Sub-regions", 
+                "PS_for_Certain_Thalamic_Sub-regions"
             ]
         },
         "TT_Experiments": {
@@ -569,34 +652,13 @@
                     "Injection_and_Labeling"
                 ]
             }
-        },
-        "Form_of_Data_Provided_in_General": {
-            "type": "string",
-            "title": "In which form are data provided in general?",
-            "enum": [
-                "Click to select", "Only Text", "Text and Figures"
-            ],
-            "default": "Click to select"
-        },
-        "Level_of_Relevance_of_This_Article": {
-            "type": "string",
-            "title": "How relevant is this article?",
-            "enum": [
-                "Click to select", "High", "Medium", "Low"
-            ],
-            "default": "Click to select"
-        },
-        "Comment_on_This_Article": {
-            "type": "string",
-            "title": "Comment on This Article:"
         }
     },
     "required": [
         "Article_Info", 
         "Parcellation_Scheme", 
         "TT_Experiments", 
-        "Form_of_Data_Provided_in_General", 
-        "Level_of_Relevance_of_This_Article", 
+        "Form_of_Data", 
         "Comment_on_This_Article"
     ]
 }

@@ -1,11 +1,20 @@
 Macaque subspecies,
-Experimental subjects,
-Tracer (antrograte, retrograde, bidirectional)
-Parcellation Scheme
-Conncetion strength (qualitative, quantitative description)
+Cortical Parcellation Scheme,
+Thalamic Parcellation Scheme,
+Tracer,
+InjectionSite ID by D99 (Thalamus)
+InjectionSite ID by M132 (Cortex)
+
+InjectionSite: Injection Coverage
+LabeledSite: LabledSite Coverage
+
+
+Conncetion strength (qualitative, quantitative description) Take a look!
 
 
 
-InjectionSite, Injection Coverage
-LabeledSites, LabledSite Coverage
 
+
+
+LabeledSite ID by D99 (Thalamus) Not applicable
+LabeldSite ID by M132 (Cortex) Not applicable
