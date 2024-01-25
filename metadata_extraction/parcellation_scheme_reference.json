@@ -1,36 +1,4 @@
 {
-    "Tracer": {
-        "Alexa Fluor": "Alexa Fluor",
-        "AA": "Tritiated Amino Acids",
-        "Leucine": "leucine / [^3H]-leucine",
-        "Proline": "proline / [^3H]-proline",
-        "AVV": "Adeno-associated virus",
-        "BDA": "biotinylated dextran amine",
-        "BrdU": "Bromodeoxyuridine",
-        "CTX": "Cholera toxin / Choleragen",
-        "CTB": "Cholera Toxin B subunit / Cholera Toxin Subunit-B (CTB; 1%",
-        "DY": "Diamidino Yellow dihydrochloride",
-        "DR": "Dextran Red",
-        "FB": "Fast Blue",
-        "Fluorescent": "Fluorescent dyes",
-        "FE": "fluoroemerald",
-        "FS": "Fluorescein",
-        "PI": "Propidium Iodide",
-        "Fucose": "Fucose",
-        "FR": "FluoroRuby",
-        "FR-dextran amine": "FluoroRuby conjugated to dextran amine",
-        "FG": "fluorogold",
-        "HRP": "horseradish peroxidase",
-        "HRP-WGA": "Horseradish peroxidase - wheat germ agglutinin",
-        "NY": "nuclear yellow",
-        "DY/NY": "Diamidino yellow combined with nuclear yellow",
-        "LY": "Lucifer Yellow",
-        "PHA": "Phytohaemagglutinin",
-        "GB": "Fluorescent green beads",
-        "Thymidine": "Thymidine analog / Deoxythymidine / Deoxyribosylthymine / Thymine deoxyriboside",
-        "WGA": "wheat germ agglutinin",
-        "WGA-HRP": "Wheat germ agglutinin conjugated to horseradish peroxidase"
-    },
     "CPS": [
         
     ],
@@ -65,49 +33,5 @@
         "Barbas_1989": "Barbas H, Pandya DN (1989) Architecture and intrinsic connections of the prefrontal cortex in the rhesus monkey. J Comp Neurol 286:353–375.",
         "Matelli_1991": "Matelli M, Luppino G, Rizzolatti G (1991) Architecture of superior and mesial area 6 and the adjacent cingulate cortex in the macaque monkey. J Comp Neurol 311:445–462.",
         "Dum_1993": "Dum RP, Strick PL (1993) Cingulate motor areas. In: Neurobiology of cingulate cortex and limbic thalamus: a comprehensive treatise (Vogt BA, Gabriel M, eds), pp 415–441. Boston: Birkhauser."
-    },
-    "Cortical_Regions": {
-        "V1": "primary visual cortex",
-        "A1": "primary auditory cortex",
-        "S1": "primary somatosensory cortex",
-        "M1": "primary motor cortex",
-        "G1": "primary gustatory cortex",
-        "O1": "primary olfactory cortex"
-    },
-    "Thalamic_Regions": {
-        "LGN": "lateral geniculate nucleus",
-        "MGN": "medial geniculate nucleus",
-        "MGB": "medial geniculate body",
-        "vMGB": "ventral division of the MGB",
-        "dMGB": "dorsal division of the MGB",
-        "mMGB": "medial division of the MGB",
-        "VP": "ventral posterior nucleus",
-        "VA": "ventral anterior nucleus",
-        "AV": "anterior ventral / anteroventral nucleus",
-        "VL": "ventral lateral nucleus",
-        "CL": "central lateral nucleus",
-        "CM": "central medial nucleus",
-        "MD": "mediodorsal nucleus",
-        "AD": "anterior dorsal / anterodorsal nucleus",
-        "AM": "anterior medial / anteromedial nucleus",
-        "VPL": "ventral posterolateral nucleus",
-        "PO": "posterior nucleus of the thalamus",
-        "SG": "suprageniculate nucleus",
-        "Pul": "pulvinar nucleus",
-        "R": "reticular nucleus"
-    },
-    "Other_Abbreviations": {
-        "CT": "corticothalamic",
-        "TC": "thalamocortical",
-        "CPS": "cortical parcellation scheme",
-        "TPS": "thalamus parcellation scheme"
-    },
-    "Macaque_subspecies": {
-        "NS": "Macaque (not specified)",
-        "M. m.": "Rhesus macaque (Macaca mulatta)",
-        "M. fu": "Japanese macaque (Macaca fuscata)",
-        "M. n.": "Pig-tailed macaque (Macaca nemestrina)",
-        "M. r.": "Bonnet macaque (Macaca radiata)",
-        "M. fa.": "Crab-eating (cynomolgus) macaque (Macaca fascicularis)"
     }
 }

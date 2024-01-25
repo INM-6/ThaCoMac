@@ -3,6 +3,8 @@ Cortical Parcellation Scheme (CPS),
 Thalamic Parcellation Scheme (TPS),
 Tracer
 
+
+
 Hemisphere: NA, Left, Right, Both
 
 Injection Coverage (Does the injection cover adjacent areas? If yes, which ones?)

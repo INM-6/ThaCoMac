@@ -1,0 +1,82 @@
+{
+    "Tracer": {
+        "BDA": {},
+        "PHA-L": {},
+        "Neurobiotin": {},
+        "Biocytin": {},
+        "Tritiated amino acids": [
+            "[^3H]-leucine",
+            "[^3H]-proline"
+        ],
+        "Cobalt and nickel compounds": [
+            "Cobalt-lysine"
+        ],
+        "HRP": {},
+        "WGA": {},
+        "Fluorescent inorganic compounds": {},
+        "Fluorescent tracers / dyes": [
+            "FG",
+            "FB",
+            "DY",
+            "Alexa Fluor",
+            "The carbocyanines DiI and DiO"
+        ],
+        "CTB": {},
+        "Micro- and nanoparticles": {},
+        "dextran amines (DAs)": [
+            "biotinylated dextran amine (BDA)",
+    
+        ],
+        "Viral tracers": [
+            "Herpes simplex",
+            "Herpes simplex virus type 1 (HSV-1)",
+            "Pseudorabies",
+            "Rabies virus CVS strain",
+            "HIV",
+            "Adenovirus",
+            "AAV"
+        ],
+        "Multitracing_tracers": [
+            "WGA-HRP",
+            "CTB-HRP",
+            "FR-DA"
+        ]
+    },
+    "Abbriviations": {
+        "Alexa Fluor": "Alexa Fluor",
+        "Neurobiotin": "N-(2-aminoethyl)biotinamide derivative of biotin",
+        "AA": "Tritiated Amino Acids / [^3H]-amino acids",
+        "DA": "Dextran amine",
+        "Biocytin": "biotin conjugated to lysine",
+        "[^3H]-leucine": "[^3H]-leucine",
+        "[^3H]-proline": "[^3H]-proline",
+        "AVV": "Adeno-associated virus",
+        "HIV": "Human immunodeficiency virus",
+        "BDA": "biotinylated dextran amine",
+        "BrdU": "Bromodeoxyuridine",
+        "CTX": "Cholera toxin",
+        "CTB": "Cholera Toxin B subunit",
+        "DY": "Diamidino Yellow",
+        "DR": "Dextran Red",
+        "FB": "Fast Blue",
+        "Fluorescent": "Fluorescent tracers",
+        "FE": "Fluoroemerald",
+        "PY": "Procion yellow",
+        "FS": "Fluorescein",
+        "PI": "Propidium iodide",
+        "Fucose": "Fucose",
+        "FR": "FluoroRuby",
+        "FG": "Fluorogold",
+        "HRP": "Horseradish peroxidase",
+        "NY": "Nuclear yellow",
+        "LY": "Lucifer yellow",
+        "PHA-L": "Phaseolus vulgaris-leucoagglutinin",
+        "GB": "Fluorescent green beads",
+        "Thymidine": "Thymidine analog / Deoxythymidine / Deoxyribosylthymine / Thymine deoxyriboside",
+        "WGA": "Wheat germ agglutinin",
+        "FR-DA": "FR conjugated to DA",
+        "CTB-HRP": "CTB conjugated TO HRP",
+        "WGA-HRP": "WGA conjugated to HRP"
+    },
+    "Tracer_List": []
+}

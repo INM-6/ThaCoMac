@@ -1,0 +1,30 @@
+{
+    "Thalamic_Regions": {
+        "LGN": "lateral geniculate nucleus",
+        "MGN": "medial geniculate nucleus",
+        "MGB": "medial geniculate body",
+        "vMGB": "ventral division of the MGB",
+        "dMGB": "dorsal division of the MGB",
+        "mMGB": "medial division of the MGB",
+        "VP": "ventral posterior nucleus",
+        "VA": "ventral anterior nucleus",
+        "AV": "anterior ventral / anteroventral nucleus",
+        "VL": "ventral lateral nucleus",
+        "CL": "central lateral nucleus",
+        "CM": "central medial nucleus",
+        "MD": "mediodorsal nucleus",
+        "AD": "anterior dorsal / anterodorsal nucleus",
+        "AM": "anterior medial / anteromedial nucleus",
+        "VPL": "ventral posterolateral nucleus",
+        "PO": "posterior nucleus of the thalamus",
+        "SG": "suprageniculate nucleus",
+        "Pul": "pulvinar nucleus",
+        "R": "reticular nucleus"
+    },
+    "D99_v2": [
+
+    ],
+    "NMT_v2": [
+
+    ]
+}
