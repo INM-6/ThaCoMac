@@ -91,6 +91,7 @@
                     "title": "Cortical Pacellation Scheme:",
                     "items": {
                         "type": "string",
+                        "title": "Reference",
                         "enum": ["To be recorded", "And so on"],
                         "default": "To be recorded"
                     }
@@ -110,6 +111,7 @@
                     "title": "Thalamic Parcellation Scheme:",
                     "items": {
                         "type": "string",
+                        "title": "Reference",
                         "enum": ["To be recorded", "And so on"],
                         "default": "To be recorded"
                     }
@@ -142,6 +144,7 @@
                                 "title": "Parcellation Scheme:",
                                 "items": {
                                     "type": "string",
+                                    "title": "Reference",
                                     "enum": ["To be recorded", "And so on"],
                                     "default": "To be recorded"
                                 }
@@ -183,6 +186,7 @@
                                 "title": "Parcellation Scheme:",
                                 "items": {
                                     "type": "string",
+                                    "title": "Reference",
                                     "enum": ["To be recorded", "And so on"],
                                     "default": "To be recorded"
                                 }
@@ -298,13 +302,15 @@
                                     },
                                     "Adjacent_Regions_Covered": {
                                         "type": "string",
-                                        "title": "Adjacent regions named covered / NAp:",
-                                        "default": "To be recorded"
+                                        "title": "Adjacent regions named covered:",
+                                        "default": "To be recorded",
+                                        "minLength": 2
                                     },
                                     "Source_Description": {
                                         "type": "string",
                                         "title": "Source Description of Injection Coverage:",
-                                        "minLength": 1
+                                        "default": "To be recorded",
+                                        "minLength": 2
                                     },
                                     "Comment": {
                                         "type": "string",
@@ -314,7 +320,7 @@
                                 "required": [
                                     "Cover_Adjacent_Regions", 
                                     "Adjacent_Regions_Covered", 
-                                    "Source_Text_or_Figure", 
+                                    "Source_Description", 
                                     "Comment"
                                 ]
                             },
@@ -348,7 +354,7 @@
                         "required": [
                             "Tracer", 
                             "InjectionSite_by_Author", 
-                            "Source_Text_or_Figure_of_InjectionSite", 
+                            "Source_Description_of_InjectionSite", 
                             "Injection_Coverage_by_Author", 
                             "Comment_on_Injection", 
                             "InjectionSite_M132", 
@@ -418,9 +424,9 @@
                                             "enum": ["To be recorded", "NA", "Strong", "Medium", "Weak"],
                                             "default": "To be recorded"
                                         },
-                                        "Source_of_Qualitative_Connection_Strength": {
+                                        "Source_Description_of_Qualitative_Connection_Strength": {
                                             "type": "string",
-                                            "title": "Source of Qualitative Connection Strength:",
+                                            "title": "Source Description of Qualitative Connection Strength:",
                                             "default": "To be recorded",
                                             "minLength": 2
                                         },
@@ -430,9 +436,9 @@
                                             "default": "To be recorded",
                                             "minLength": 2
                                         },
-                                        "Source_of_Quantitative_Connection_Strength": {
+                                        "Source_Description_of_Quantitative_Connection_Strength": {
                                             "type": "string",
-                                            "title": "Source of Quantitative Connection Strength:",
+                                            "title": "Source Description of Quantitative Connection Strength:",
                                             "default": "To be recorded",
                                             "minLength": 2
                                         },
