@@ -25,8 +25,6 @@ import string
 # import internal modules
 import file_path_management as fpath
 import public_library as plib
-import extract_info as extra_info
-import parameters as params
 
 
 # setting headers and proxies

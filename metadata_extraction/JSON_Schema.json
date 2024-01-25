@@ -302,9 +302,9 @@
                                     },
                                     "Adjacent_Regions_Covered": {
                                         "type": "string",
-                                        "title": "Adjacent regions named covered:",
+                                        "title": "Adjacent regions covered:",
                                         "default": "To be recorded",
-                                        "minLength": 2
+                                        "minLength": 3
                                     },
                                     "Source_Description": {
                                         "type": "string",
@@ -449,9 +449,9 @@
                                     },
                                     "required": [
                                         "Qualitative_Connection_Strength", 
-                                        "Source_of_Qualitative_Connection_Strength", 
+                                        "Source_Description_of_Qualitative_Connection_Strength", 
                                         "Quantitative_Connection_Strength", 
-                                        "Source_of_Quantitative_Connection_Strength", 
+                                        "Source_Description_of_Quantitative_Connection_Strength", 
                                         "Comment_on_Connection_Strength"
                                     ]
                                 }

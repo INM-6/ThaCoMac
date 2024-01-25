@@ -1,20 +1,12 @@
 Macaque subspecies,
-Cortical Parcellation Scheme,
-Thalamic Parcellation Scheme,
-Tracer,
-InjectionSite ID by D99 (Thalamus)
-InjectionSite ID by M132 (Cortex)
+Cortical Parcellation Scheme (CPS),
+Thalamic Parcellation Scheme (TPS),
+Tracer
 
-InjectionSite: Injection Coverage
-LabeledSite: LabledSite Coverage
+Hemisphere: NA, Left, Right, Both
 
+Injection Coverage (Does the injection cover adjacent areas? If yes, which ones?)
+
+If contains contralateral conenctions? (Yes, No)
 
 Conncetion strength (qualitative, quantitative description) Take a look!
-
-
-
-
-
-
-LabeledSite ID by D99 (Thalamus) Not applicable
-LabeldSite ID by M132 (Cortex) Not applicable

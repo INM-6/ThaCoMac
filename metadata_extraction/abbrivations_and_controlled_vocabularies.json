@@ -31,7 +31,7 @@
         "WGA": "wheat germ agglutinin",
         "WGA-HRP": "Wheat germ agglutinin conjugated to horseradish peroxidase"
     },
-    "Parcellation_Scheme": {
+    "CPS": {
         "Paxinos_1999": "Paxinos, G., Huang, X. & Toga, A. W. (1999). The Rhesus Monkey Brain in Stereotaxic Coordinates. San Diego, USA: Academic Press.",
         "Paxinos_2000": "Paxinos G, Huang XF, Toga AW (2000) The rhesus monkey brain in stereotaxic coordinates. London: Academic Press.",
         "Pandya_1982": "Pandya DN, Seltzer B (1982) Intrinsic connections and architectonics of posterior parietal cortex in the rhesus monkey. J Comp Neurol 204:196–210.",
@@ -60,7 +60,36 @@
         "Matelli_1991": "Matelli M, Luppino G, Rizzolatti G (1991) Architecture of superior and mesial area 6 and the adjacent cingulate cortex in the macaque monkey. J Comp Neurol 311:445–462.",
         "Dum_1993": "Dum RP, Strick PL (1993) Cingulate motor areas. In: Neurobiology of cingulate cortex and limbic thalamus: a comprehensive treatise (Vogt BA, Gabriel M, eds), pp 415–441. Boston: Birkhauser."
     },
-    "Cortical_Areas": {
+    "TPS": {
+        "Paxinos_1999": "Paxinos, G., Huang, X. & Toga, A. W. (1999). The Rhesus Monkey Brain in Stereotaxic Coordinates. San Diego, USA: Academic Press.",
+        "Paxinos_2000": "Paxinos G, Huang XF, Toga AW (2000) The rhesus monkey brain in stereotaxic coordinates. London: Academic Press.",
+        "Pandya_1982": "Pandya DN, Seltzer B (1982) Intrinsic connections and architectonics of posterior parietal cortex in the rhesus monkey. J Comp Neurol 204:196–210.",
+        "Seltzer_1984": "Seltzer B, Pandya DN (1984) Further observations on parieto-temporal connections in the rhesus monkey. Exp Brain Res 55(2): 301–312",
+        "Matelli_1998": "Matelli M, Luppino G, Fogassi L, Rizzolatti G (1989) Thalamic input to inferior area 6 and area 4 in the macaque monkey. J Comp Neurol 280:468–488.",
+        "Brodmann_1903": "K. Brodmann: Beiträge zur histologischen Lokalisation der Großhirnrinde. II. Mitteilung: Der Calcarinatypus. Journ. f. Psychol. u. Neurol. 2 (4). 1903 (38)",
+        "Olszewski_1952": "Olszewski, J. (1952) The Thalamus of the Macaca nuluttu. An Atlas for Use With The Stereotaxic Instrument. Basel: Karger.",
+        "Jones_1985": "Jones, E.G. (1985) The Thalamus. Plenum Press, New York.",
+        "Jones_1990": "Jones, E.G. (1990) Correlation and revised nomenclature of ventral nuclei in the thalamus of human and monkey. Stereotact. Funct. Neurosurg., 54–55, 1–20.",
+        "Jones_1998b": "Jones EG (1998b) The thalamus of primates. In: The primate nervous system, Part II (Bloom FE, Bjo¨rklund A, Ho¨kfelt T, eds), pp 1–298. Amsterdam: Elsevier.",
+        "Parent_1983": "Parent A, Mackey A, De Bellefeuille L (1983) The subcortical afferents to caudate nucleus and putamen in primate: a fluorescence retrograde double labeling study. Neuroscience 10:1137–1150.",
+        "Jones_1989": "Jones, E.G. & Hendry, S.H.C. (1989) Differential calcium binding protein immunoreactivity distinguishes classes of relay neurons in monkey thalamic nuclei. Eur. J. Neurosci., 1, 222–246.",
+        "Morel_1997": "Morel, A., Magnin, M. & Jeanmonod, D. (1997) Multiarchitectonic and stereotactic atlas of the human thalamus. J. Comp. Neurol., 387, 588–630. [Erratum: J. Comp. Neurol., 391, 545 (1998)].",
+        "Morel_2005": "Morel A, Liu J, Wannier T, Jeanmonod D, Rouiller EM (2005) Divergence and convergence of thalamocortical projections to premotor and supplementary motor cortex: a multiple tracing study in macaque monkey. Eur J Neurosci 21(4):1007–1029.",
+        "Kusama_1970": "Kusama T, Mabuchi M (1970) Stereotaxic atlas of the brain of macaca fuscata. University of Tokyo Press, Tokyo",
+        "Walker_1940a": "Walker, A.E. (1940a) The medial thalamic nucleus. A comparative anatomical, physiological and clinical study of the nucleus medialis dorsalis thalami. J. Comp. Neurol. 7359-86.",
+        "Walker_1940b": "Walker, A.E. (1940b) A cytoarchitectural study of the prefrontal area of the macaque monkey. J. Comp. Neurol. 73:59-86.",
+        "Asanuma_1983a": "Asanuma. C.. W.T. Thach, and E.G. Jones (1983a) Cytoarchitectonic delineation of the ventral lateral thalamic region in the monkey. Brain Res. Rev. 5.219-235.",
+        "Asanuma_1983b": "Asanuma, C., W.T. Thach. and E.G. Jones (1983bJ Distribution of cerebellar terminations and their relation to other afferent terminations in the ventral lateral thalamic region of the monkey. Brain Res. Rev. 5.237-265.",
+        "Schell_1984": "Schell, G.R., and P.L. Strick (1984) Origin of thalamic input to the arcuate premotor and supplementary motor areas. J. Neurosci 4:539-560.",
+        "Woolsey_1952": "Woolsey, C.W., P.W. Settlage, D.R. Meyer, W.M. Spencer, T.P. Hamuy, and A.M. Travis (1952) Patterns of localization in precentral and “supplementary” motor areas and their relations to the concept of a premotor area. Res. Publ. Asaoc. Res. New. Ment. Dis. 30t238-264.",
+        "Wise_1981": "Wise, S.P., and Tanji, J. (1981) Supplementary and precentral motor cortex: Contrast in responsiveness to peripheral input in the hindlimb area of the unanesthetized monkey. J. Comp. Neurol. 195433-451.",
+        "Muakkassa_1979": "Muakkassa, K.F., and P.L. Strick (1979) Frontal lobe inputs to primate motor cortex: Evidence for four somatopically organized 'premotor' areas. Brain Res. 177:176-182.",
+        "Durif_2003": "C. Durif, C. Jouffrais, E.M. Rouiller, Single unit responses in the auditory cortex of monkeys performing a conditional acoustico-motor task, Exp. Brain Res. 153 (2003) 614–627.",
+        "Barbas_1989": "Barbas H, Pandya DN (1989) Architecture and intrinsic connections of the prefrontal cortex in the rhesus monkey. J Comp Neurol 286:353–375.",
+        "Matelli_1991": "Matelli M, Luppino G, Rizzolatti G (1991) Architecture of superior and mesial area 6 and the adjacent cingulate cortex in the macaque monkey. J Comp Neurol 311:445–462.",
+        "Dum_1993": "Dum RP, Strick PL (1993) Cingulate motor areas. In: Neurobiology of cingulate cortex and limbic thalamus: a comprehensive treatise (Vogt BA, Gabriel M, eds), pp 415–441. Boston: Birkhauser."
+    },
+    "Cortical_Regions": {
         "V1": "primary visual cortex",
         "A1": "primary auditory cortex",
         "S1": "primary somatosensory cortex",
@@ -68,7 +97,7 @@
         "G1": "primary gustatory cortex",
         "O1": "primary olfactory cortex"
     },
-    "Thalamic_Areas": {
+    "Thalamic_Regions": {
         "LGN": "lateral geniculate nucleus",
         "MGN": "medial geniculate nucleus",
         "MGB": "medial geniculate body",
@@ -92,7 +121,9 @@
     },
     "Other_Abbreviations": {
         "CT": "corticothalamic",
-        "TC": "thalamocortical"
+        "TC": "thalamocortical",
+        "CPS": "cortical parcellation scheme",
+        "TPS": "thalamus parcellation scheme"
     },
     "Macaque_subspecies": {
         "NS": "Macaque (not specified)",
