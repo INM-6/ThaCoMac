@@ -126,22 +126,22 @@
                     "type": "string",
                     "title": "Comment on Thalamic Parcellation Scheme:"
                 },
-                "PS_for_Certain_Cortical_Sub-regions": {
+                "PS_for_Certain_Cortical_Regions": {
                     "type": "array",
-                    "title": "Parcellation Scheme for Certain Cortical Sub-regions:",
+                    "title": "Parcellation Scheme for Certain Cortical Regions:",
                     "items": {
                         "type": "object",
                         "title": "Case",
                         "properties": {
-                            "Sub-region": {
+                            "Region_Name": {
                                 "type": "string",
-                                "title": "Sub-region:",
+                                "title": "Region Name:",
                                 "default": "To be recorded",
                                 "minLength": 3
                             },
-                            "Parcellation_Scheme": {
+                            "CPS": {
                                 "type": "array",
-                                "title": "Parcellation Scheme:",
+                                "title": "Cortical Parcellation Scheme:",
                                 "items": {
                                     "type": "string",
                                     "title": "Reference",
@@ -161,29 +161,29 @@
                             }
                         },
                         "required": [
-                            "Sub-region", 
-                            "Parcellation_Scheme", 
+                            "Region_Name", 
+                            "CPS", 
                             "Source_Description", 
                             "Comment"
                         ]
                     }
                 },
-                "PS_for_Certain_Thalamic_Sub-regions": {
+                "PS_for_Certain_Thalamic_Regions": {
                     "type": "array",
-                    "title": "Parcellation Scheme for Certain Thalamic Sub-regions:",
+                    "title": "Parcellation Scheme for Certain Thalamic Regions:",
                     "items": {
                         "type": "object",
                         "title": "Case",
                         "properties": {
-                            "Sub-region": {
+                            "Region_Name": {
                                 "type": "string",
-                                "title": "Sub-region:",
+                                "title": "Region_Name:",
                                 "default": "To be recorded",
                                 "minLength": 3
                             },
-                            "Parcellation_Scheme": {
+                            "TPS": {
                                 "type": "array",
-                                "title": "Parcellation Scheme:",
+                                "title": "Thalamic Parcellation Scheme:",
                                 "items": {
                                     "type": "string",
                                     "title": "Reference",
@@ -203,8 +203,8 @@
                             }
                         },
                         "required": [
-                            "Sub-region", 
-                            "Parcellation_Scheme", 
+                            "Region_Name", 
+                            "TPS", 
                             "Source_Description", 
                             "Comment"
                         ]
@@ -218,8 +218,8 @@
                 "Thalamic_Parcellation_Scheme", 
                 "Source_Description_of_TPS", 
                 "Comment_on_TPS", 
-                "PS_for_Certain_Cortical_Sub-regions", 
-                "PS_for_Certain_Thalamic_Sub-regions"
+                "PS_for_Certain_Cortical_Regions", 
+                "PS_for_Certain_Thalamic_Regions"
             ]
         },
         "Experimental_Subjects": {
