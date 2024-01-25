@@ -16,6 +16,16 @@
             ],
             "default": "To be recorded"
         },
+        "Contralateral_Connection_Reported": {
+            "type": "string",
+            "title": "Does this article report contralateral connections?",
+            "enum": [
+                "To be recorded",
+                "Yes",
+                "No"
+            ],
+            "default": "To be recorded"
+        },
         "Article_Info": {
             "type": "object",
             "title": "Article Information",
@@ -359,9 +369,19 @@
                         ]
                     }
                 },
-                "Source_Text_of_Experimental_Subjects": {
+                "Hemisphere": {
                     "type": "string",
-                    "title": "Source Text of Experimental Subjects:",
+                        "enum": [
+                            "To be recorded", 
+                            "NA",
+                            "Left",
+                            "Right"
+                        ],
+                        "default": "To be recorded"
+                },
+                "Descriptive_Text_of_Experimental_Subjects": {
+                    "type": "string",
+                    "title": "Descriptive Text of Experimental Subjects:",
                     "default": "To be recorded",
                     "minLength": 2
                 },
@@ -372,7 +392,8 @@
             },
             "required": [
                 "Subspecies",
-                "Source_Text_of_Experimental_Subjects",
+                "Hemisphere",
+                "Descriptive_Text_of_Experimental_Subjects",
                 "Comment_on_Experimental_Subjects"
             ]
         },
@@ -387,16 +408,6 @@
                         "type": "object",
                         "title": "Injection Information:",
                         "properties": {
-                            "Hemisphere": {
-                                "type": "string",
-                                    "enum": [
-                                        "To be recorded", 
-                                        "NA",
-                                        "Left",
-                                        "Right"
-                                    ],
-                                    "default": "To be recorded"
-                            },
                             "Tracer": {
                                 "type": "array",
                                 "title": "Tracer:",
@@ -438,9 +449,9 @@
                                     "default": "To be recorded"
                                 }
                             },
-                            "InjectionSite_Name_by_Author": {
+                            "InjectionSite_by_Author": {
                                 "type": "string",
-                                "title": "InjectionSite Name by Author:",
+                                "title": "InjectionSite by Author:",
                                 "minLength": 1
                             },
                             "Source_Text_of_InjectionSite": {
@@ -459,21 +470,9 @@
                                 "type": "object",
                                 "title": "Injection Coverage:",
                                 "properties": {
-                                    "Cover_Entire_Region": {
-                                        "type": "string",
-                                        "title": "Injection covered the entire region?",
-                                        "enum": ["To be recorded", "NA", "Y", "N"],
-                                        "default": "To be recorded"
-                                    },
                                     "Cover_Adjacent_Regions": {
                                         "type": "string",
                                         "title": "Injection covered adjacent regions?",
-                                        "enum": ["To be recorded", "NA", "Y", "N"],
-                                        "default": "To be recorded"
-                                    },
-                                    "Extend_into_White_Matter": {
-                                        "type": "string",
-                                        "title": "Injection extended into white matter?",
                                         "enum": ["To be recorded", "NA", "Y", "N"],
                                         "default": "To be recorded"
                                     },
@@ -482,22 +481,14 @@
                                         "title": "Source Text of Injection Coverage:",
                                         "minLength": 1
                                     },
-                                    "Source_Figure_of_Injection_Coverage": {
-                                        "type": "string",
-                                        "title": "Source Figure of Injection Coverage:",
-                                        "default": "NA"
-                                    },
                                     "Comment_on_Injection_Coverage": {
                                         "type": "string",
                                         "title": "Comment on Injection Coverage:"
                                     }
                                 },
                                 "required": [
-                                    "Cover_Entire_Region", 
                                     "Cover_Adjacent_Regions", 
-                                    "Extend_into_White_Matter", 
                                     "Source_Text_of_Injection_Coverage", 
-                                    "Source_Figure_of_Injection_Coverage", 
                                     "Comment_on_Injection_Coverage"
                                 ]
                             },
@@ -505,10 +496,16 @@
                                 "type": "string",
                                 "title": "Comment on Injection:" 
                             },
-                            "InjectionSite_ID_by_D99": {
+                            "InjectionSite_by_M132": {
                                 "type": "string",
-                                "title": "Injection Site ID by D99:",
-                                "enum": ["To be recorded", "Area name 1", "Area name 2"],
+                                "title": "Injection Site by M132 (Cortex):",
+                                "enum": ["To be recorded", "Not applicable", "Area name 1", "Area name 2"],
+                                "default": "To be recorded"
+                            },
+                            "InjectionSite_by_D99": {
+                                "type": "string",
+                                "title": "Injection Site by D99 (Thalamus):",
+                                "enum": ["To be recorded", "Not applicable", "Area name 1", "Area name 2"],
                                 "default": "To be recorded"
                             },
                             "InjectionSite_Mapping_Confidence": {
@@ -524,13 +521,13 @@
                         },
                         "required": [
                             "Tracer", 
-                            "Source_of_Tracer_Used", 
-                            "InjectionSite_Name_by_Author", 
+                            "InjectionSite_by_Author", 
                             "Source_Text_of_InjectionSite", 
                             "Source_Figure_of_InjectionSite", 
                             "Injection_Coverage_by_Author", 
                             "Comment_on_Injection", 
-                            "InjectionSite_ID_by_D99", 
+                            "InjectionSite_by_M132", 
+                            "InjectionSite_by_D99", 
                             "InjectionSite_Mapping_Confidence", 
                             "Comment_on_InjectionSite_Mapping"
                         ]
@@ -548,15 +545,9 @@
                                     "enum": ["To be recorded", "Anterograde", "Retrograde"],
                                     "default": "To be recorded"
                                 },
-                                "If_Ipsilateral": {
+                                "LabeledSite_by_Author": {
                                     "type": "string",
-                                    "title": "If Ipsilateral?",
-                                    "enum": ["Y", "N", "NA"],
-                                    "default": "Y"
-                                },
-                                "LabeledSite_Name_by_Author": {
-                                    "type": "string",
-                                    "title": "LabeledSite Name by Author:",
+                                    "title": "LabeledSite by Author:",
                                     "minLength": 1
                                 },
                                 "Source_Text_of_LabeledSite": {
@@ -571,56 +562,61 @@
                                     "default": "NA",
                                     "minLength": 2
                                 },
-                                "LabeledSite_Coverage_by_Author": {
-                                    "type": "string",
-                                    "title": "Coverage of LabeledSite by Author:",
-                                    "enum": ["To be recorded", "NA", "All over the specified region", "Concentrated in a unnamed subarea"],
-                                    "default": "To be recorded"
-                                },
-                                "Source_Text_of_LabeledSite_Coverage": {
-                                    "type": "string",
-                                    "title": "Source Text about LabeledSite Coverage:",
-                                    "default": "NA",
-                                    "minLength": 2
-                                },
-                                "Source_Figure_of_LabeledSite_Coverage": {
-                                    "type": "string",
-                                    "title": "Source Figure of LabeledSite Coverage:",
-                                    "default": "NA",
-                                    "minLength": 2
-                                },
                                 "Comment_on_LabeledSite": {
                                     "type": "string",
                                     "title": "Comment on LabeledSite:"
                                 },
-                                "LabeledSite_ID_by_D99": {
+                                "LabeledSite_by_M132": {
                                     "type": "string",
-                                    "title": "LabeledSite ID by D99:",
-                                    "enum": ["To be recorded", "Area ID 1", "Area ID 2", "Area ID 3"],
+                                    "title": "LabeledSite by M132 (Cortex):",
+                                    "enum": ["To be recorded", "Not applicable", "Area ID 1", "Area ID 2", "Area ID 3"],
                                     "default": "To be recorded"
                                 },
-                                "Qualitative_Connection_Strength": {
+                                "LabeledSite_by_D99": {
                                     "type": "string",
-                                    "title": "Connection Strength in Qualitative Terms:",
-                                    "enum": ["To be recorded", "NA", "Strong", "Medium", "Weak"],
+                                    "title": "LabeledSite by D99 (Thalamus):",
+                                    "enum": ["To be recorded", "Not applicable", "Area ID 1", "Area ID 2", "Area ID 3"],
                                     "default": "To be recorded"
                                 },
-                                "Source_of_Qualitative_Connection_Strength": {
-                                    "type": "string",
-                                    "title": "Source of Qualitative Connection Strength:",
-                                    "default": "NA",
-                                    "minLength": 2
-                                },
-                                "Quantitative_Connection_Strength": {
-                                    "type": "string",
-                                    "title": "Quantitative Connection Strength:",
-                                    "default": "To be recorded"
-                                },
-                                "Source_of_Quantitative_Connection_Strength": {
-                                    "type": "string",
-                                    "title": "Source of Quantitative Connection Strength:",
-                                    "default": "NA",
-                                    "minLength": 2
+                                "Connection_Strength": {
+                                    "type": "object",
+                                    "title": "Connection Strength:",
+                                    "properties": {
+                                        "Qualitative_Connection_Strength": {
+                                            "type": "string",
+                                            "title": "Connection Strength in Qualitative Terms:",
+                                            "enum": ["To be recorded", "NA", "Strong", "Medium", "Weak"],
+                                            "default": "To be recorded"
+                                        },
+                                        "Source_of_Qualitative_Connection_Strength": {
+                                            "type": "string",
+                                            "title": "Source of Qualitative Connection Strength:",
+                                            "default": "NA",
+                                            "minLength": 2
+                                        },
+                                        "Quantitative_Connection_Strength": {
+                                            "type": "string",
+                                            "title": "Quantitative Connection Strength:",
+                                            "default": "To be recorded"
+                                        },
+                                        "Source_of_Quantitative_Connection_Strength": {
+                                            "type": "string",
+                                            "title": "Source of Quantitative Connection Strength:",
+                                            "default": "NA",
+                                            "minLength": 2
+                                        },
+                                        "Comment_on_Connection_Strength": {
+                                            "type": "string",
+                                            "title": "Comment on Connection Strength:"
+                                        }
+                                    },
+                                    "required": [
+                                        "Qualitative_Connection_Strength", 
+                                        "Source_of_Qualitative_Connection_Strength", 
+                                        "Quantitative_Connection_Strength", 
+                                        "Source_of_Quantitative_Connection_Strength", 
+                                        "Comment_on_Connection_Strength"
+                                    ]
                                 },
                                 "LabeledSite_Mapping_Confidence": {
                                     "type": "string",
@@ -635,19 +631,13 @@
                             },
                             "required": [
                                 "TT_Direction", 
-                                "If_Ipsilateral", 
-                                "LabeledSite_Name_by_Author", 
+                                "LabeledSite_by_Author", 
                                 "Source_Text_of_LabeledSite", 
                                 "Source_Figure_of_LabeledSite", 
-                                "LabeledSite_Coverage_by_Author", 
-                                "Source_Text_of_LabeledSite_Coverage", 
-                                "Source_Figure_of_LabeledSite_Coverage", 
                                 "Comment_on_LabeledSite", 
-                                "LabeledSite_ID_by_D99", 
-                                "Qualitative_Connection_Strength", 
-                                "Source_of_Qualitative_Connection_Strength", 
-                                "Quantitative_Connection_Strength", 
-                                "Source_of_Quantitative_Connection_Strength", 
+                                "LabeledSite_by_M132", 
+                                "LabeledSite_by_D99", 
+                                "Connection_Strength", 
                                 "LabeledSite_Mapping_Confidence", 
                                 "Comment_on_LabeledSite_Mapping"
                             ]
@@ -659,332 +649,15 @@
                     "LabeledSites"
                 ]
             }
-        },
-        "TT_Experiments": {
-            "type": "array",
-            "title": "Tract-tracing Experiments",
-            "items": {
-                "type": "object",
-                "title": "Subject Experiment",
-                "properties": {
-                    "Subject_Subspecies": {
-                        "type": "string",
-                        "title": "Subspecies of The Subject:",
-                        "enum": [
-                            "Macaque (not specified)",
-                            "Rhesus macaque (Macaca mulatta)",
-                            "Japanese macaque (Macaca fuscata)",
-                            "Pig-tailed macaque (Macaca nemestrina)",
-                            "Bonnet macaque (Macaca radiata)",
-                            "Crab-eating (cynomolgus) macaque (Macaca fascicularis)"
-                        ]
-                    },
-                    "Source_Text_of_This_Experiemenal_Subject": {
-                        "type": "string",
-                        "title": "Source Text of This Experimental Subject:",
-                        "default": "NA",
-                        "minLength": "2"
-                    },
-                    "Comment_on_This_Experimental_Subject": {
-                        "type": "string",
-                        "title": "Comment on This Experimental Subject:"
-                    },
-                    "Injection_and_Labeling": {
-                        "type": "array",
-                        "title": "Injection and Labeling",
-                        "items": {
-                            "type": "object",
-                            "title": "Injection",
-                            "properties": {
-                                "Injection_Info": {
-                                    "type": "object",
-                                    "title": "Injection Information:",
-                                    "properties": {
-                                        "Tracer": {
-                                            "type": "array",
-                                            "title": "Tracer:",
-                                            "items": {
-                                                "type": "string",
-                                                "enum": [
-                                                    "To be recorded", 
-                                                    "Alexa Fluor",
-                                                    "AA",
-                                                    "Leucine",
-                                                    "Proline",
-                                                    "AVV",
-                                                    "BDA",
-                                                    "BrdU",
-                                                    "CTX",
-                                                    "CTB",
-                                                    "DY",
-                                                    "DR",
-                                                    "FB",
-                                                    "Fluorescent",
-                                                    "FE",
-                                                    "FS",
-                                                    "PI",
-                                                    "Fucose",
-                                                    "FR",
-                                                    "FR-dextran amine",
-                                                    "FG",
-                                                    "HRP",
-                                                    "HRP-WGA",
-                                                    "NY",
-                                                    "DY/NY",
-                                                    "LY",
-                                                    "PHA",
-                                                    "GB",
-                                                    "Thymidine",
-                                                    "WGA",
-                                                    "WGA-HRP"
-                                                ],
-                                                "default": "To be recorded"
-                                            }
-                                        },
-                                        "Source_of_Tracer_Used": {
-                                            "type": "string",
-                                            "title": "Source of Tracer Used:",
-                                            "minLength": 1
-                                        },
-                                        "InjectionSite_Name_by_Author": {
-                                            "type": "string",
-                                            "title": "InjectionSite Name by Author:",
-                                            "minLength": 1
-                                        },
-                                        "Source_Text_of_InjectionSite": {
-                                            "type": "string",
-                                            "title": "Source Text of InjectionSite:",
-                                            "default": "NA",
-                                            "minLength": 2
-                                        },
-                                        "Source_Figure_of_InjectionSite": {
-                                            "type": "string",
-                                            "title": "Source Figure of InjectionSite:",
-                                            "default": "NA",
-                                            "minLength": 2
-                                        },
-                                        "Injection_Coverage_by_Author": {
-                                            "type": "object",
-                                            "title": "Injection Coverage:",
-                                            "properties": {
-                                                "Cover_Entire_Region": {
-                                                    "type": "string",
-                                                    "title": "Injection covered the entire region?",
-                                                    "enum": ["To be recorded", "NA", "Y", "N"],
-                                                    "default": "To be recorded"
-                                                },
-                                                "Cover_Adjacent_Regions": {
-                                                    "type": "string",
-                                                    "title": "Injection covered adjacent regions?",
-                                                    "enum": ["To be recorded", "NA", "Y", "N"],
-                                                    "default": "To be recorded"
-                                                },
-                                                "Extend_into_White_Matter": {
-                                                    "type": "string",
-                                                    "title": "Injection extended into white matter?",
-                                                    "enum": ["To be recorded", "NA", "Y", "N"],
-                                                    "default": "To be recorded"
-                                                },
-                                                "Source_Text_of_Injection_Coverage": {
-                                                    "type": "string",
-                                                    "title": "Source Text of Injection Coverage:",
-                                                    "minLength": 1
-                                                },
-                                                "Source_Figure_of_Injection_Coverage": {
-                                                    "type": "string",
-                                                    "title": "Source Figure of Injection Coverage:",
-                                                    "default": "NA"
-                                                },
-                                                "Comment_on_Injection_Coverage": {
-                                                    "type": "string",
-                                                    "title": "Comment on Injection Coverage:"
-                                                }
-                                            },
-                                            "required": [
-                                                "Cover_Entire_Region", 
-                                                "Cover_Adjacent_Regions", 
-                                                "Extend_into_White_Matter", 
-                                                "Source_Text_of_Injection_Coverage", 
-                                                "Source_Figure_of_Injection_Coverage", 
-                                                "Comment_on_Injection_Coverage"
-                                            ]
-                                        },
-                                        "Comment_on_Injection": {
-                                            "type": "string",
-                                            "title": "Comment on Injection:" 
-                                        },
-                                        "InjectionSite_ID_by_D99": {
-                                            "type": "string",
-                                            "title": "Injection Site ID by D99:",
-                                            "enum": ["To be recorded", "Area name 1", "Area name 2"],
-                                            "default": "To be recorded"
-                                        },
-                                        "InjectionSite_Mapping_Confidence": {
-                                            "type": "string",
-                                            "title": "Mapping confidence of the injection site:",
-                                            "enum": ["To be recorded", "High", "Medium", "Low"],
-                                            "default": "To be recorded"
-                                        },
-                                        "Comment_on_InjectionSite_Mapping": {
-                                            "type": "string",
-                                            "title": "Comment on InjectionSite Mapping:"
-                                        }
-                                    },
-                                    "required": [
-                                        "Tracer", 
-                                        "Source_of_Tracer_Used", 
-                                        "InjectionSite_Name_by_Author", 
-                                        "Source_Text_of_InjectionSite", 
-                                        "Source_Figure_of_InjectionSite", 
-                                        "Injection_Coverage_by_Author", 
-                                        "Comment_on_Injection", 
-                                        "InjectionSite_ID_by_D99", 
-                                        "InjectionSite_Mapping_Confidence", 
-                                        "Comment_on_InjectionSite_Mapping"
-                                    ]
-                                },
-                                "LabeledSites": {
-                                    "type": "array",
-                                    "title": "List of LabeledSites:",
-                                    "items": {
-                                        "type": "object",
-                                        "title": "LabeledSite",
-                                        "properties": {
-                                            "TT_Direction": {
-                                                "type": "string",
-                                                "title": "Tracing Direction:",
-                                                "enum": ["To be recorded", "Anterograde", "Retrograde"],
-                                                "default": "To be recorded"
-                                            },
-                                            "If_Ipsilateral": {
-                                                "type": "string",
-                                                "title": "If Ipsilateral?",
-                                                "enum": ["Y", "N", "NA"],
-                                                "default": "Y"
-                                            },
-                                            "LabeledSite_Name_by_Author": {
-                                                "type": "string",
-                                                "title": "LabeledSite Name by Author:",
-                                                "minLength": 1
-                                            },
-                                            "Source_Text_of_LabeledSite": {
-                                                "type": "string",
-                                                "title": "Source Text about LabeledSite:",
-                                                "default": "NA",
-                                                "minLength": 2
-                                            },
-                                            "Source_Figure_of_LabeledSite": {
-                                                "type": "string",
-                                                "title": "Source Figure of LabeledSite:",
-                                                "default": "NA",
-                                                "minLength": 2
-                                            },
-                                            "LabeledSite_Coverage_by_Author": {
-                                                "type": "string",
-                                                "title": "Coverage of LabeledSite by Author:",
-                                                "enum": ["To be recorded", "NA", "All over the specified region", "Concentrated in a unnamed subarea"],
-                                                "default": "To be recorded"
-                                            },
-                                            "Source_Text_of_LabeledSite_Coverage": {
-                                                "type": "string",
-                                                "title": "Source Text about LabeledSite Coverage:",
-                                                "default": "NA",
-                                                "minLength": 2
-                                            },
-                                            "Source_Figure_of_LabeledSite_Coverage": {
-                                                "type": "string",
-                                                "title": "Source Figure of LabeledSite Coverage:",
-                                                "default": "NA",
-                                                "minLength": 2
-                                            },
-                                            "Comment_on_LabeledSite": {
-                                                "type": "string",
-                                                "title": "Comment on LabeledSite:"
-                                            },
-                                            "LabeledSite_ID_by_D99": {
-                                                "type": "string",
-                                                "title": "LabeledSite ID by D99:",
-                                                "enum": ["To be recorded", "Area ID 1", "Area ID 2", "Area ID 3"],
-                                                "default": "To be recorded"
-                                            },
-                                            "Qualitative_Connection_Strength": {
-                                                "type": "string",
-                                                "title": "Connection Strength in Qualitative Terms:",
-                                                "enum": ["To be recorded", "NA", "Strong", "Medium", "Weak"],
-                                                "default": "To be recorded"
-                                            },
-                                            "Source_of_Qualitative_Connection_Strength": {
-                                                "type": "string",
-                                                "title": "Source of Qualitative Connection Strength:",
-                                                "default": "NA",
-                                                "minLength": 2
-                                            },
-                                            "Quantitative_Connection_Strength": {
-                                                "type": "string",
-                                                "title": "Quantitative Connection Strength:",
-                                                "default": "To be recorded"
-                                            },
-                                            "Source_of_Quantitative_Connection_Strength": {
-                                                "type": "string",
-                                                "title": "Source of Quantitative Connection Strength:",
-                                                "default": "NA",
-                                                "minLength": 2
-                                            },
-                                            "LabeledSite_Mapping_Confidence": {
-                                                "type": "string",
-                                                "title": "Mapping confidence of the labeled site:",
-                                                "enum": ["To be recorded", "High", "Medium", "Low"],
-                                                "default": "To be recorded"
-                                            },
-                                            "Comment_on_LabeledSite_Mapping": {
-                                                "type": "string",
-                                                "title": "Comment on LabeledSite Mapping:"
-                                            }
-                                        },
-                                        "required": [
-                                            "TT_Direction", 
-                                            "If_Ipsilateral", 
-                                            "LabeledSite_Name_by_Author", 
-                                            "Source_Text_of_LabeledSite", 
-                                            "Source_Figure_of_LabeledSite", 
-                                            "LabeledSite_Coverage_by_Author", 
-                                            "Source_Text_of_LabeledSite_Coverage", 
-                                            "Source_Figure_of_LabeledSite_Coverage", 
-                                            "Comment_on_LabeledSite", 
-                                            "LabeledSite_ID_by_D99", 
-                                            "Qualitative_Connection_Strength", 
-                                            "Source_of_Qualitative_Connection_Strength", 
-                                            "Quantitative_Connection_Strength", 
-                                            "Source_of_Quantitative_Connection_Strength", 
-                                            "LabeledSite_Mapping_Confidence", 
-                                            "Comment_on_LabeledSite_Mapping"
-                                        ]
-                                    }
-                                }
-                            },
-                            "required": [
-                                "Injection_Info", 
-                                "LabeledSites"
-                            ]
-                        }
-                    }
-                },
-                "required": [
-                    "Subject_Subspecies", 
-                    "Source_Text_of_This_Experiemenal_Subject", 
-                    "Comment_on_This_Experimental_Subject", 
-                    "Injection_and_Labeling"
-                ]
-            }
         }
     },
     "required": [
         "Comment_on_This_Article", 
         "Form_of_Data_Provided", 
+        "Contralateral_Connection_Reported", 
         "Article_Info", 
         "Parcellation_Scheme", 
         "Experimental_Subjects", 
-        "Injection_and_Labeling", 
-        "TT_Experiments"
+        "Injection_and_Labeling"
     ]
 }
