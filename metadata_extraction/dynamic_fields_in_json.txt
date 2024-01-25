@@ -1,8 +1,7 @@
 Macaque subspecies,
+Tracer,
 Cortical Parcellation Scheme (CPS),
-Thalamic Parcellation Scheme (TPS),
-Tracer
-
+Thalamic Parcellation Scheme (TPS)
 
 
 Hemisphere: NA, Left, Right, Both
