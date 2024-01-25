@@ -6,16 +6,6 @@
             "type": "string",
             "title": "Comment on This Article:"
         },
-        "Form_of_Data_Provided": {
-            "type": "string",
-            "title": "In which form are data provided in general?",
-            "enum": [
-                "To be recorded",
-                "Only Text",
-                "Text and Figures"
-            ],
-            "default": "To be recorded"
-        },
         "Contralateral_Connection_Reported": {
             "type": "string",
             "title": "Does this article report contralateral connections?",
@@ -35,7 +25,7 @@
                     "title": "DH_INDEX:",
                     "minimum": 0,
                     "maximum": 10979,
-                    "default": -1
+                    "default": "-1"
                 },
                 "DOI-URL": {
                     "type": "string",
@@ -47,34 +37,34 @@
                     "type": "string",
                     "title": "PMID:",
                     "pattern": "[0-9]{8}|NA",
-                    "default": "NA",
+                    "default": "To be recorded",
                     "minLength": 2
                 },
                 "PMCID": {
                     "type": "string",
                     "title": "PMCID:",
                     "pattern": "PMC[0-9]{7}|NA",
-                    "default": "NA",
+                    "default": "To be recorded",
                     "minLength": 2
                 },
                 "Article_Title": {
                     "type": "string",
                     "title": "Article Title:",
-                    "default": "NA",
-                    "minLength": 3
+                    "default": "To be recorded",
+                    "minLength": 1
                 },
                 "First_Author": {
                     "type": "string",
                     "title": "First Autor (FirstName_LastName):",
-                    "default": "NA",
-                    "minLength": 3                
+                    "default": "To be recorded",
+                    "minLength": 1               
                 },
                 "Publication_Year": {
                     "type": "integer",
                     "title": "Publication Year:",
                     "minimum": 1936,
                     "maximum": 2024,
-                    "default": -1
+                    "default": "-1"
                 },
                 "Comment_on_Article_Info": {
                     "type": "string",
@@ -96,101 +86,39 @@
             "type": "object",
             "title": "Parcellation Scheme",
             "properties":{
-                "Cortex_Pacellation_Scheme": {
+                "Cortical_Pacellation_Scheme": {
                     "type": "array",
                     "title": "Cortical Pacellation Scheme:",
                     "items": {
                         "type": "string",
-                        "enum": [
-                            "To be recorded", 
-                            "Olszewski_1952",
-                            "Paxinos_1999", 
-                            "Paxinos_2000",
-                            "Pandya_1982",
-                            "Seltzer_1984",
-                            "Matelli_1998",
-                            "Brodmann_1903",
-                            "Jones_1985",
-                            "Jones_1989",
-                            "Jones_1990",
-                            "Jones_1998b",
-                            "Parent_1983",
-                            "Morel_1997",
-                            "Morel_2005",
-                            "Kusama_1970",
-                            "Walker_1940a",
-                            "Walker_1940b",
-                            "Asanuma_1983a",
-                            "Asanuma_1983b",
-                            "Schell_1984",
-                            "Woolsey_1952",
-                            "Wise_1981",
-                            "Muakkassa_1979",
-                            "Durif_2003",
-                            "Barbas_1989",
-                            "Matelli_1991",
-                            "Dum_1993",
-                            "Campbell_1989",
-                            "Tsang_2000",
-                            "Liu_2002",
-                            "Wannier_2005"
-                        ],
+                        "enum": ["To be recorded", "And so on"],
                         "default": "To be recorded"
                     }
                 },
-                "Source_Text_of_CPS": {
+                "Source_Description_of_CPS": {
                     "type": "string",
-                    "title": "Source Text of Cortical Pacellation Scheme:"
+                    "title": "Source Description of Cortical Pacellation Scheme:",
+                    "default": "To be recorded",
+                    "minLength": 2
                 },
                 "Comment_on_CPS": {
                     "type": "string",
                     "title": "Comment on Cortical Pacellation Scheme:"
                 },
-                "Thalamus_Parcellation_Scheme": {
+                "Thalamic_Parcellation_Scheme": {
                     "type": "array",
                     "title": "Thalamic Parcellation Scheme:",
                     "items": {
                         "type": "string",
-                        "enum": [
-                            "To be recorded", 
-                            "Olszewski_1952",
-                            "Paxinos_1999", 
-                            "Paxinos_2000",
-                            "Pandya_1982",
-                            "Seltzer_1984",
-                            "Matelli_1998",
-                            "Brodmann_1903",
-                            "Jones_1985",
-                            "Jones_1989",
-                            "Jones_1990",
-                            "Jones_1998b",
-                            "Parent_1983",
-                            "Morel_1997",
-                            "Morel_2005",
-                            "Kusama_1970",
-                            "Walker_1940a",
-                            "Walker_1940b",
-                            "Asanuma_1983a",
-                            "Asanuma_1983b",
-                            "Schell_1984",
-                            "Woolsey_1952",
-                            "Wise_1981",
-                            "Muakkassa_1979",
-                            "Durif_2003",
-                            "Barbas_1989",
-                            "Matelli_1991",
-                            "Dum_1993",
-                            "Campbell_1989",
-                            "Tsang_2000",
-                            "Liu_2002",
-                            "Wannier_2005"
-                        ],
+                        "enum": ["To be recorded", "And so on"],
                         "default": "To be recorded"
                     }
                 },
-                "Source_Text_of_TPS": {
+                "Source_Description_of_TPS": {
                     "type": "string",
-                    "title": "Source Text of Thalamic Pacellation Scheme:"
+                    "title": "Source Description of Thalamic Pacellation Scheme:",
+                    "default": "To be recorded",
+                    "minLength": 2
                 },
                 "Comment_on_TPS": {
                     "type": "string",
@@ -206,54 +134,23 @@
                             "Sub-region": {
                                 "type": "string",
                                 "title": "Sub-region:",
-                                "minLength": 1
+                                "default": "To be recorded",
+                                "minLength": 3
                             },
                             "Parcellation_Scheme": {
                                 "type": "array",
                                 "title": "Parcellation Scheme:",
                                 "items": {
                                     "type": "string",
-                                    "enum": [
-                                        "To be recorded", 
-                                        "Olszewski_1952",
-                                        "Paxinos_1999", 
-                                        "Paxinos_2000",
-                                        "Pandya_1982",
-                                        "Seltzer_1984",
-                                        "Matelli_1998",
-                                        "Brodmann_1903",
-                                        "Jones_1985",
-                                        "Jones_1989",
-                                        "Jones_1990",
-                                        "Jones_1998b",
-                                        "Parent_1983",
-                                        "Morel_1997",
-                                        "Morel_2005",
-                                        "Kusama_1970",
-                                        "Walker_1940a",
-                                        "Walker_1940b",
-                                        "Asanuma_1983a",
-                                        "Asanuma_1983b",
-                                        "Schell_1984",
-                                        "Woolsey_1952",
-                                        "Wise_1981",
-                                        "Muakkassa_1979",
-                                        "Durif_2003",
-                                        "Barbas_1989",
-                                        "Matelli_1991",
-                                        "Dum_1993",
-                                        "Campbell_1989",
-                                        "Tsang_2000",
-                                        "Liu_2002",
-                                        "Wannier_2005"
-                                    ],
+                                    "enum": ["To be recorded", "And so on"],
                                     "default": "To be recorded"
                                 }
                             },
-                            "Source_Text": {
+                            "Source_Description": {
                                 "type": "string",
-                                "title": "Source Text:",
-                                "minLength": 1
+                                "title": "Source Description:",
+                                "default": "To be recorded",
+                                "minLength": 3
                             },
                             "Comment": {
                                 "type": "string",
@@ -263,7 +160,7 @@
                         "required": [
                             "Sub-region", 
                             "Parcellation_Scheme", 
-                            "Source_Text", 
+                            "Source_Description", 
                             "Comment"
                         ]
                     }
@@ -277,53 +174,24 @@
                         "properties": {
                             "Sub-region": {
                                 "type": "string",
-                                "title": "Sub-region:"
+                                "title": "Sub-region:",
+                                "default": "To be recorded",
+                                "minLength": 3
                             },
                             "Parcellation_Scheme": {
                                 "type": "array",
                                 "title": "Parcellation Scheme:",
                                 "items": {
                                     "type": "string",
-                                    "enum": [
-                                        "To be recorded", 
-                                        "Olszewski_1952",
-                                        "Paxinos_1999", 
-                                        "Paxinos_2000",
-                                        "Pandya_1982",
-                                        "Seltzer_1984",
-                                        "Matelli_1998",
-                                        "Brodmann_1903",
-                                        "Jones_1985",
-                                        "Jones_1989",
-                                        "Jones_1990",
-                                        "Jones_1998b",
-                                        "Parent_1983",
-                                        "Morel_1997",
-                                        "Morel_2005",
-                                        "Kusama_1970",
-                                        "Walker_1940a",
-                                        "Walker_1940b",
-                                        "Asanuma_1983a",
-                                        "Asanuma_1983b",
-                                        "Schell_1984",
-                                        "Woolsey_1952",
-                                        "Wise_1981",
-                                        "Muakkassa_1979",
-                                        "Durif_2003",
-                                        "Barbas_1989",
-                                        "Matelli_1991",
-                                        "Dum_1993",
-                                        "Campbell_1989",
-                                        "Tsang_2000",
-                                        "Liu_2002",
-                                        "Wannier_2005"
-                                    ],
+                                    "enum": ["To be recorded", "And so on"],
                                     "default": "To be recorded"
                                 }
                             },
-                            "Source_Text": {
+                            "Source_Description": {
                                 "type": "string",
-                                "title": "Source Text:"
+                                "title": "Source Description:",
+                                "default": "To be recorded",
+                                "minLength": 3
                             },
                             "Comment": {
                                 "type": "string",
@@ -333,18 +201,18 @@
                         "required": [
                             "Sub-region", 
                             "Parcellation_Scheme", 
-                            "Source_Text", 
+                            "Source_Description", 
                             "Comment"
                         ]
                     }
                 }
             },
             "required": [
-                "Cortex_Pacellation_Scheme", 
-                "Source_Text_of_CPS", 
+                "Cortical_Pacellation_Scheme", 
+                "Source_Description_of_CPS", 
                 "Comment_on_CPS", 
-                "Thalamus_Parcellation_Scheme", 
-                "Source_Text_of_TPS", 
+                "Thalamic_Parcellation_Scheme", 
+                "Source_Description_of_TPS", 
                 "Comment_on_TPS", 
                 "PS_for_Certain_Cortical_Sub-regions", 
                 "PS_for_Certain_Thalamic_Sub-regions"
@@ -359,42 +227,31 @@
                     "title": "Subspecies:",
                     "items": {
                         "type": "string",
-                        "enum": [
-                            "Macaque (not specified)",
-                            "Rhesus macaque (Macaca mulatta)",
-                            "Japanese macaque (Macaca fuscata)",
-                            "Pig-tailed macaque (Macaca nemestrina)",
-                            "Bonnet macaque (Macaca radiata)",
-                            "Crab-eating (cynomolgus) macaque (Macaca fascicularis)"
-                        ]
+                        "enum": ["To be recorded", "NS", "M. m.", "M. fu", "M. n.", "M. r.", "M. fa."]
                     }
                 },
                 "Hemisphere": {
                     "type": "string",
-                        "enum": [
-                            "To be recorded", 
-                            "NA",
-                            "Left",
-                            "Right"
-                        ],
-                        "default": "To be recorded"
+                    "title": "Hemisphere(s) used:",
+                    "enum": ["To be recorded", "NA", "Left", "Right", "Both"],
+                    "default": "To be recorded"
                 },
-                "Descriptive_Text_of_Experimental_Subjects": {
+                "Source_Description": {
                     "type": "string",
-                    "title": "Descriptive Text of Experimental Subjects:",
+                    "title": "Source Description of Experimental Subjects:",
                     "default": "To be recorded",
                     "minLength": 2
                 },
-                "Comment_on_Experimental_Subjects": {
+                "Comment": {
                     "type": "string",
                     "title": "Comment on Experimental Subjects:"
                 }
             },
             "required": [
-                "Subspecies",
-                "Hemisphere",
-                "Descriptive_Text_of_Experimental_Subjects",
-                "Comment_on_Experimental_Subjects"
+                "Subspecies", 
+                "Hemisphere", 
+                "Source_Description", 
+                "Comment"
             ]
         },
         "Injection_and_Labeling": {
@@ -413,57 +270,20 @@
                                 "title": "Tracer:",
                                 "items": {
                                     "type": "string",
-                                    "enum": [
-                                        "To be recorded", 
-                                        "Alexa Fluor",
-                                        "AA",
-                                        "Leucine",
-                                        "Proline",
-                                        "AVV",
-                                        "BDA",
-                                        "BrdU",
-                                        "CTX",
-                                        "CTB",
-                                        "DY",
-                                        "DR",
-                                        "FB",
-                                        "Fluorescent",
-                                        "FE",
-                                        "FS",
-                                        "PI",
-                                        "Fucose",
-                                        "FR",
-                                        "FR-dextran amine",
-                                        "FG",
-                                        "HRP",
-                                        "HRP-WGA",
-                                        "NY",
-                                        "DY/NY",
-                                        "LY",
-                                        "PHA",
-                                        "GB",
-                                        "Thymidine",
-                                        "WGA",
-                                        "WGA-HRP"
-                                    ],
+                                    "enum": ["To be recorded", "And so on"],
                                     "default": "To be recorded"
                                 }
                             },
                             "InjectionSite_by_Author": {
                                 "type": "string",
                                 "title": "InjectionSite by Author:",
+                                "default": "To be recorded",
                                 "minLength": 1
                             },
-                            "Source_Text_of_InjectionSite": {
+                            "Source_Description_of_InjectionSite": {
                                 "type": "string",
-                                "title": "Source Text of InjectionSite:",
-                                "default": "NA",
-                                "minLength": 2
-                            },
-                            "Source_Figure_of_InjectionSite": {
-                                "type": "string",
-                                "title": "Source Figure of InjectionSite:",
-                                "default": "NA",
+                                "title": "Source Description of InjectionSite:",
+                                "default": "To be recorded",
                                 "minLength": 2
                             },
                             "Injection_Coverage_by_Author": {
@@ -476,36 +296,42 @@
                                         "enum": ["To be recorded", "NA", "Y", "N"],
                                         "default": "To be recorded"
                                     },
-                                    "Source_Text_of_Injection_Coverage": {
+                                    "Adjacent_Regions_Covered": {
                                         "type": "string",
-                                        "title": "Source Text of Injection Coverage:",
+                                        "title": "Adjacent regions named covered / NAp:",
+                                        "default": "To be recorded"
+                                    },
+                                    "Source_Description": {
+                                        "type": "string",
+                                        "title": "Source Description of Injection Coverage:",
                                         "minLength": 1
                                     },
-                                    "Comment_on_Injection_Coverage": {
+                                    "Comment": {
                                         "type": "string",
                                         "title": "Comment on Injection Coverage:"
                                     }
                                 },
                                 "required": [
                                     "Cover_Adjacent_Regions", 
-                                    "Source_Text_of_Injection_Coverage", 
-                                    "Comment_on_Injection_Coverage"
+                                    "Adjacent_Regions_Covered", 
+                                    "Source_Text_or_Figure", 
+                                    "Comment"
                                 ]
                             },
                             "Comment_on_Injection": {
                                 "type": "string",
                                 "title": "Comment on Injection:" 
                             },
-                            "InjectionSite_by_M132": {
+                            "InjectionSite_M132": {
                                 "type": "string",
-                                "title": "Injection Site by M132 (Cortex):",
-                                "enum": ["To be recorded", "Not applicable", "Area name 1", "Area name 2"],
+                                "title": "InjectionSite in M132 (Cortex):",
+                                "enum": ["To be recorded", "NAp", "Area name 1", "Area name 2"],
                                 "default": "To be recorded"
                             },
-                            "InjectionSite_by_D99": {
+                            "InjectionSite_D99": {
                                 "type": "string",
-                                "title": "Injection Site by D99 (Thalamus):",
-                                "enum": ["To be recorded", "Not applicable", "Area name 1", "Area name 2"],
+                                "title": "InjectionSite in D99 (Thalamus):",
+                                "enum": ["To be recorded", "NAp", "Area name 1", "Area name 2"],
                                 "default": "To be recorded"
                             },
                             "InjectionSite_Mapping_Confidence": {
@@ -522,12 +348,11 @@
                         "required": [
                             "Tracer", 
                             "InjectionSite_by_Author", 
-                            "Source_Text_of_InjectionSite", 
-                            "Source_Figure_of_InjectionSite", 
+                            "Source_Text_or_Figure_of_InjectionSite", 
                             "Injection_Coverage_by_Author", 
                             "Comment_on_Injection", 
-                            "InjectionSite_by_M132", 
-                            "InjectionSite_by_D99", 
+                            "InjectionSite_M132", 
+                            "InjectionSite_D99", 
                             "InjectionSite_Mapping_Confidence", 
                             "Comment_on_InjectionSite_Mapping"
                         ]
@@ -547,36 +372,41 @@
                                 },
                                 "LabeledSite_by_Author": {
                                     "type": "string",
-                                    "title": "LabeledSite by Author:",
+                                    "title": "LabeledSite Described by Author:",
+                                    "default": "To be recorded",
                                     "minLength": 1
                                 },
-                                "Source_Text_of_LabeledSite": {
+                                "Source_Description_of_LabeledSite": {
                                     "type": "string",
-                                    "title": "Source Text about LabeledSite:",
-                                    "default": "NA",
-                                    "minLength": 2
-                                },
-                                "Source_Figure_of_LabeledSite": {
-                                    "type": "string",
-                                    "title": "Source Figure of LabeledSite:",
-                                    "default": "NA",
+                                    "title": "Source Description of LabeledSite:",
+                                    "default": "To be recorded",
                                     "minLength": 2
                                 },
                                 "Comment_on_LabeledSite": {
                                     "type": "string",
                                     "title": "Comment on LabeledSite:"
                                 },
-                                "LabeledSite_by_M132": {
+                                "LabeledSite_M132": {
                                     "type": "string",
-                                    "title": "LabeledSite by M132 (Cortex):",
-                                    "enum": ["To be recorded", "Not applicable", "Area ID 1", "Area ID 2", "Area ID 3"],
+                                    "title": "LabeledSite in M132 (Cortex):",
+                                    "enum": ["To be recorded", "NAp", "Area ID 1", "Area ID 2", "Area ID 3"],
                                     "default": "To be recorded"
                                 },
-                                "LabeledSite_by_D99": {
+                                "LabeledSite_D99": {
                                     "type": "string",
-                                    "title": "LabeledSite by D99 (Thalamus):",
-                                    "enum": ["To be recorded", "Not applicable", "Area ID 1", "Area ID 2", "Area ID 3"],
+                                    "title": "LabeledSite in D99 (Thalamus):",
+                                    "enum": ["To be recorded", "NAp", "Area ID 1", "Area ID 2", "Area ID 3"],
                                     "default": "To be recorded"
+                                },
+                                "LabeledSite_Mapping_Confidence": {
+                                    "type": "string",
+                                    "title": "Mapping confidence of the labeled site:",
+                                    "enum": ["To be recorded", "High", "Medium", "Low"],
+                                    "default": "To be recorded"
+                                },
+                                "Comment_on_LabeledSite_Mapping": {
+                                    "type": "string",
+                                    "title": "Comment on LabeledSite Mapping:"
                                 },
                                 "Connection_Strength": {
                                     "type": "object",
@@ -591,18 +421,19 @@
                                         "Source_of_Qualitative_Connection_Strength": {
                                             "type": "string",
                                             "title": "Source of Qualitative Connection Strength:",
-                                            "default": "NA",
+                                            "default": "To be recorded",
                                             "minLength": 2
                                         },
                                         "Quantitative_Connection_Strength": {
                                             "type": "string",
                                             "title": "Quantitative Connection Strength:",
-                                            "default": "To be recorded"
+                                            "default": "To be recorded",
+                                            "minLength": 2
                                         },
                                         "Source_of_Quantitative_Connection_Strength": {
                                             "type": "string",
                                             "title": "Source of Quantitative Connection Strength:",
-                                            "default": "NA",
+                                            "default": "To be recorded",
                                             "minLength": 2
                                         },
                                         "Comment_on_Connection_Strength": {
@@ -617,29 +448,18 @@
                                         "Source_of_Quantitative_Connection_Strength", 
                                         "Comment_on_Connection_Strength"
                                     ]
-                                },
-                                "LabeledSite_Mapping_Confidence": {
-                                    "type": "string",
-                                    "title": "Mapping confidence of the labeled site:",
-                                    "enum": ["To be recorded", "High", "Medium", "Low"],
-                                    "default": "To be recorded"
-                                },
-                                "Comment_on_LabeledSite_Mapping": {
-                                    "type": "string",
-                                    "title": "Comment on LabeledSite Mapping:"
                                 }
                             },
                             "required": [
                                 "TT_Direction", 
                                 "LabeledSite_by_Author", 
-                                "Source_Text_of_LabeledSite", 
-                                "Source_Figure_of_LabeledSite", 
+                                "Source_Description_of_LabeledSite", 
                                 "Comment_on_LabeledSite", 
-                                "LabeledSite_by_M132", 
-                                "LabeledSite_by_D99", 
-                                "Connection_Strength", 
+                                "LabeledSite_M132", 
+                                "LabeledSite_D99", 
                                 "LabeledSite_Mapping_Confidence", 
-                                "Comment_on_LabeledSite_Mapping"
+                                "Comment_on_LabeledSite_Mapping", 
+                                "Connection_Strength"
                             ]
                         }
                     }
@@ -653,7 +473,6 @@
     },
     "required": [
         "Comment_on_This_Article", 
-        "Form_of_Data_Provided", 
         "Contralateral_Connection_Reported", 
         "Article_Info", 
         "Parcellation_Scheme", 
