@@ -234,12 +234,6 @@
                         "enum": ["To be recorded", "NS", "M. m.", "M. fu", "M. n.", "M. r.", "M. fa."]
                     }
                 },
-                "Hemisphere": {
-                    "type": "string",
-                    "title": "Hemisphere(s) used:",
-                    "enum": ["To be recorded", "NA", "Left", "Right", "Both"],
-                    "default": "To be recorded"
-                },
                 "Source_Description": {
                     "type": "string",
                     "title": "Source Description of Experimental Subjects:",
@@ -253,7 +247,6 @@
             },
             "required": [
                 "Subspecies", 
-                "Hemisphere", 
                 "Source_Description", 
                 "Comment"
             ]
@@ -342,7 +335,7 @@
                             },
                             "InjectionSite_Mapping_Confidence": {
                                 "type": "string",
-                                "title": "Mapping confidence of the injection site:",
+                                "title": "Mapping Confidence of InjectionSite:",
                                 "enum": ["To be recorded", "High", "Medium", "Low"],
                                 "default": "To be recorded"
                             },
@@ -406,7 +399,7 @@
                                 },
                                 "LabeledSite_Mapping_Confidence": {
                                     "type": "string",
-                                    "title": "Mapping confidence of the labeled site:",
+                                    "title": "Mapping Confidence of LabeledSite:",
                                     "enum": ["To be recorded", "High", "Medium", "Low"],
                                     "default": "To be recorded"
                                 },
