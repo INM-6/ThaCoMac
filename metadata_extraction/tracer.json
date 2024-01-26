@@ -16,7 +16,7 @@
         "CTB": "Cholera Toxin Subunit-B",
         "DY/NY": "Diamidino yellow combined with nuclear yellow",
         "WGA-HRP": "WGA conjugated to HRP",
-        "FR-DA": "FR conjugated to dextran amine",
+        "FR-DA": "FR conjugated to dextran amine"
     },
     "Abbriviations": {
         "Alexa Fluor": "Alexa Fluor",
@@ -28,19 +28,14 @@
         "HIV": "Human immunodeficiency virus",
         "BrdU": "Bromodeoxyuridine",
         "CTX": "Cholera toxin",
-        
         "DY": "Diamidino Yellow",
         "DR": "Dextran Red",
-        
         "Fluorescent": "Fluorescent tracers / dyes",
-        
         "PY": "Procion yellow",
         "PI": "Propidium iodide",
         "Fucose": "Fucose",
-        
         "NY": "Nuclear yellow",
         "PHA-L": "Phaseolus vulgaris-leucoagglutinin",
-        
         "Thymidine": "Thymidine analog / Deoxythymidine / Deoxyribosylthymine / Thymine deoxyriboside",
         "CTB-HRP": "CTB conjugated to HRP"
     }
