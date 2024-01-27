@@ -5,7 +5,7 @@ Thalamic Parcellation Scheme (TPS)
 
 
 
-Injection Coverage (Does the injection cover adjacent areas? If yes, which ones?)
+Injection Coverage (Does the injection cover adjacent areas? If yes, which ones?，source description)
 
 If contains contralateral conenctions? (Yes, No)
 
