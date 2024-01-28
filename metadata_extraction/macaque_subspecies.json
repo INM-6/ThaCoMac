@@ -1,10 +1,10 @@
 {
     "Macaque_subspecies": {
         "NS": "Macaque (not specified)",
-        "M. m.": "Rhesus macaque (Macaca mulatta)",
-        "M. fu": "Japanese macaque (Macaca fuscata)",
-        "M. n.": "Pig-tailed macaque (Macaca nemestrina)",
-        "M. r.": "Bonnet macaque (Macaca radiata)",
-        "M. fa.": "Crab-eating (cynomolgus) macaque (Macaca fascicularis)"
+        "M. mulatta": "Rhesus macaque (Macaca mulatta)",
+        "M. fuscata": "Japanese macaque (Macaca fuscata)",
+        "M. nemestrina": "Pig-tailed macaque (Macaca nemestrina)",
+        "M. radiata": "Bonnet macaque (Macaca radiata)",
+        "M. fascicularis": "Crab-eating macaque / Cynomolgus monkey (Macaca fascicularis)"
     }
 }
