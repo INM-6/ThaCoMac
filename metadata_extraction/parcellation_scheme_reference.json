@@ -6,7 +6,7 @@
     "TPS": [
     
     ],
-    "Parcellation_Scheme": {
+    "PS": {
         "Paxinos_1999": "Paxinos, G., Huang, X. & Toga, A. W. (1999). The Rhesus Monkey Brain in Stereotaxic Coordinates. San Diego, USA: Academic Press.",
         "Paxinos_2000": "Paxinos G, Huang XF, Toga AW (2000) The rhesus monkey brain in stereotaxic coordinates. London: Academic Press.",
         "Pandya_1982": "Pandya DN, Seltzer B (1982) Intrinsic connections and architectonics of posterior parietal cortex in the rhesus monkey. J Comp Neurol 204:196–210.",
