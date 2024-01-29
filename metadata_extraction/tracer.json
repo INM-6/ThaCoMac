@@ -3,8 +3,8 @@
         "BDA": "Biotinylated dextran amine",
         "HRP": "(free) Horseradish peroxidase",
         "TAA": "Tritiated amino acids / [^3H]-amino acids",
-        "[^3H]-Leucine": "Tritiated leucine / [^3H]-leucine includes L-[4,5-^3H]-Leucine, L-[4,5-^3H(N)] Leucine, L-[3,4,5-^3H] Leucine",
-        "[^3H]-Proline": "Tritiated proline / [^3H]-proline includes L-[5-^3H]-Proline, L-[2,3-^3H]-Proline, L-[2,3,4,5-^3H]-Proline",
+        "[^3H]-Leucine": "Tritiated leucine / [^3H]-leucine includes L-[4,5-^3H]-Leucine, L-[4,5-^3H(N)] Leucine, L-[3,4,5-^3H] Leucine and so on",
+        "[^3H]-Proline": "Tritiated proline / [^3H]-proline includes L-[5-^3H]-Proline, L-[2,3-^3H]-Proline, L-[2,3,4,5-^3H]-Proline and so on",
         "[^3H]-Lysine": "Tritiated lysine / [^3H]-lysine",
         "[^3H]-Fucose": "Tritiated fucose / [^3H]-fucose",
         "[(35)S]-Methionine": "The amino acid methionine that has been radioactively labeled with sulfur-35 (^35S)",
@@ -36,25 +36,25 @@
         "RGB": "Rhodamine green beads",
         "CTB": "Cholera toxin subunit-B",
         "CTB-gold": "Cholera toxin B subunit conjugated with colloidal gold",
-        "CTB-red": "Cholera toxin B subunit conjugated with Alexa fluor 594",
-        "CTB-green": "Cholera toxin B subunit conjugated with Alexa fluor 488",
+        "CTB-red": "Cholera toxin B subunit conjugated with alexa fluor 594",
+        "CTB-green": "Cholera toxin B subunit conjugated with alexa fluor 488",
         "DY/NY": "DY combined with nuclear yellow",
         "WGA-HRP": "WGA conjugated to HRP / HRP conjugated to WGA",
         "FR-DA": "FR conjugated to dextran amine",
         "FS-dextran": "FS conjugated to dextran",
-        "CVS strain": "'Challenge Virus Standard' strain of the Rabies virus",
+        "CVS strain": "'Challenge Virus Standard' strain of the rabies virus",
         "PHA-L": "Phaseolus vulgaris-leucoagglutinin"
     },
-    "Abbriviations": {
+    "Others": {
         "Alexa Fluor": "Alexa Fluor",
         "HSV": "Herpes simplex virus",
         "Neurobiotin": "N-(2-aminoethyl)biotinamide derivative of biotin",
         "HIV": "Human immunodeficiency virus",
         "BrdU": "Bromodeoxyuridine",
-        "DR": "Dextran Red",
+        "DR": "Dextran red",
         "PY": "Procion yellow",
         "Fucose": "Fucose",
         "CTB-HRP": "CTB conjugated to HRP",
-        "GB": "Granular Blue"
+        "GB": "Granular blue"
     }
 }
