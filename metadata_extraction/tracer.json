@@ -19,7 +19,6 @@
         "DT": "Dextran tetramethylrodamine",
         "LY": "Lucifer yellow",
         "LYD": "Lucifer yellow dextran",
-        "Fluorescent tracers": "Fluorescent tracers / dyes",
         "FS": "Fluorescein",
         "DY": "Diamidino yellow",
         "DY . 2HCl": "Diamidino yellow dihydrochloride",
@@ -54,6 +53,7 @@
         "DR": "Dextran red",
         "PY": "Procion yellow",
         "Fucose": "Fucose",
+        "Fluoro-tracer": "Fluorescent tracers / dyes",
         "CTB-HRP": "CTB conjugated to HRP",
         "GB": "Granular blue"
     }

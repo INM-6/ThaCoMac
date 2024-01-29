@@ -231,7 +231,7 @@
                     "title": "Subspecies:",
                     "items": {
                         "type": "string",
-                        "enum": ["To be recorded", "NS", "M. m.", "M. fu", "M. n.", "M. r.", "M. fa."]
+                        "enum": ["To be recorded", "NS", "M. mulatta", "M. fuscata", "M. nemestrina", "M. radiata", "M. arctoides", "M. fascicularis"]
                     }
                 },
                 "Source_Description": {
@@ -267,7 +267,7 @@
                                 "title": "Tracer:",
                                 "items": {
                                     "type": "string",
-                                    "enum": ["To be recorded", "And so on"],
+                                    "enum": ["To be recorded", "AAV", "BDA", "Biocytin", "Bis", "CTB", "CTB-gold", "CTB-green", "CTB-red", "CVS strain", "DG", "DR", "DT", "DY", "DY . 2HCl", "DY/NY", "EB", "FB", "FE", "FG", "FR", "FR-DA", "FS", "FS-dextran", "GLM", "HRP", "LY", "LYD", "NY", "PHA-L", "PI", "RB", "RGB", "RLM", "TAA", "TB", "WGA", "WGA-HRP", "[(35)S]-Methionine", "[^3H]-Fucose", "[^3H]-Leucine", "[^3H]-Lysine", "[^3H]-Proline", "[^3H]-WGA"],
                                     "default": "To be recorded"
                                 }
                             },
