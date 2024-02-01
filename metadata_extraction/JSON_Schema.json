@@ -82,13 +82,13 @@
                 "Comment_on_Article_Info"
             ]
         },
-        "Parcellation_Scheme": {
+        "PSR": {
             "type": "object",
-            "title": "Parcellation Scheme",
+            "title": "Parcellation Scheme Reference",
             "properties":{
-                "Cortical_Pacellation_Scheme": {
+                "Cortical_PSR": {
                     "type": "array",
-                    "title": "Cortical Pacellation Scheme:",
+                    "title": "Cortical Pacellation Scheme Reference:",
                     "items": {
                         "type": "string",
                         "title": "Reference",
@@ -96,19 +96,19 @@
                         "default": "To be recorded"
                     }
                 },
-                "Source_Description_of_CPS": {
+                "Source_Description_of_CPSR": {
                     "type": "string",
-                    "title": "Source Description of Cortical Pacellation Scheme:",
+                    "title": "Source Description of Cortical Pacellation Scheme Reference:",
                     "default": "To be recorded",
                     "minLength": 2
                 },
-                "Comment_on_CPS": {
+                "Comment_on_CPSR": {
                     "type": "string",
-                    "title": "Comment on Cortical Pacellation Scheme:"
+                    "title": "Comment on Cortical Pacellation Scheme Reference:"
                 },
-                "Thalamic_Parcellation_Scheme": {
+                "Thalamic_PSR": {
                     "type": "array",
-                    "title": "Thalamic Parcellation Scheme:",
+                    "title": "Thalamic Parcellation Scheme Reference:",
                     "items": {
                         "type": "string",
                         "title": "Reference",
@@ -116,17 +116,17 @@
                         "default": "To be recorded"
                     }
                 },
-                "Source_Description_of_TPS": {
+                "Source_Description_of_TPSR": {
                     "type": "string",
-                    "title": "Source Description of Thalamic Pacellation Scheme:",
+                    "title": "Source Description of Thalamic Pacellation Scheme Reference:",
                     "default": "To be recorded",
                     "minLength": 2
                 },
-                "Comment_on_TPS": {
+                "Comment_on_TPSR": {
                     "type": "string",
-                    "title": "Comment on Thalamic Parcellation Scheme:"
+                    "title": "Comment on Thalamic Parcellation Scheme Reference:"
                 },
-                "PS_for_Certain_Cortical_Regions": {
+                "PSR_for_Certain_Cortical_Regions": {
                     "type": "array",
                     "title": "Parcellation Scheme for Certain Cortical Regions:",
                     "items": {
@@ -139,9 +139,9 @@
                                 "default": "To be recorded",
                                 "minLength": 3
                             },
-                            "CPS": {
+                            "CPSR": {
                                 "type": "array",
-                                "title": "Cortical Parcellation Scheme:",
+                                "title": "Cortical Parcellation Scheme Reference:",
                                 "items": {
                                     "type": "string",
                                     "title": "Reference",
@@ -162,13 +162,13 @@
                         },
                         "required": [
                             "Region_Name", 
-                            "CPS", 
+                            "CPSR", 
                             "Source_Description", 
                             "Comment"
                         ]
                     }
                 },
-                "PS_for_Certain_Thalamic_Regions": {
+                "PSR_for_Certain_Thalamic_Regions": {
                     "type": "array",
                     "title": "Parcellation Scheme for Certain Thalamic Regions:",
                     "items": {
@@ -181,9 +181,9 @@
                                 "default": "To be recorded",
                                 "minLength": 3
                             },
-                            "TPS": {
+                            "TPSR": {
                                 "type": "array",
-                                "title": "Thalamic Parcellation Scheme:",
+                                "title": "Thalamic Parcellation Scheme Reference:",
                                 "items": {
                                     "type": "string",
                                     "title": "Reference",
@@ -204,7 +204,7 @@
                         },
                         "required": [
                             "Region_Name", 
-                            "TPS", 
+                            "TPSR", 
                             "Source_Description", 
                             "Comment"
                         ]
@@ -212,14 +212,14 @@
                 }
             },
             "required": [
-                "Cortical_Pacellation_Scheme", 
-                "Source_Description_of_CPS", 
-                "Comment_on_CPS", 
-                "Thalamic_Parcellation_Scheme", 
-                "Source_Description_of_TPS", 
-                "Comment_on_TPS", 
-                "PS_for_Certain_Cortical_Regions", 
-                "PS_for_Certain_Thalamic_Regions"
+                "Cortical_PSR", 
+                "Source_Description_of_CPSR", 
+                "Comment_on_CPSR", 
+                "Thalamic_PSR", 
+                "Source_Description_of_TPSR", 
+                "Comment_on_TPSR", 
+                "PSR_for_Certain_Cortical_Regions", 
+                "PSR_for_Certain_Thalamic_Regions"
             ]
         },
         "Experimental_Subjects": {
@@ -232,6 +232,30 @@
                     "items": {
                         "type": "string",
                         "enum": ["To be recorded", "NS", "M. mulatta", "M. fuscata", "M. nemestrina", "M. radiata", "M. arctoides", "M. fascicularis"]
+                    }
+                },
+                "Adulthood": {
+                    "type": "array",
+                    "title": "Adulthood:",
+                    "items": {
+                        "type": "string",
+                        "enum": ["To be recorded", "NS", "Only Adult", "Only juvenile", "Both"]
+                    }
+                },
+                "Health_Condition": {
+                    "type": "array",
+                    "title": "Health Condition:",
+                    "items": {
+                        "type": "string",
+                        "enum": ["To be recorded", "NS", "Only healthy subjects", "Only unhealthy subjects", "Both"]
+                    }
+                },
+                "Hemisphere": {
+                    "type": "array",
+                    "title": "Hemisphere(s) used:",
+                    "items": {
+                        "type": "string",
+                        "enum": ["To be recorded", "NS", "Only left", "Only right", "Both"]
                     }
                 },
                 "Source_Description": {
@@ -247,6 +271,9 @@
             },
             "required": [
                 "Subspecies", 
+                "Adulthood", 
+                "Health_Condition", 
+                "Hemisphere", 
                 "Source_Description", 
                 "Comment"
             ]
@@ -474,7 +501,7 @@
         "Comment_on_This_Article", 
         "Contralateral_Connection_Reported", 
         "Article_Info", 
-        "Parcellation_Scheme", 
+        "PSR", 
         "Experimental_Subjects", 
         "Injection_and_Labeling"
     ]
