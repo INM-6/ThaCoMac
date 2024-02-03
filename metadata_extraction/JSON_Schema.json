@@ -365,10 +365,6 @@
                                 "title": "Mapping Confidence of InjectionSite:",
                                 "enum": ["To be recorded", "High", "Medium", "Low"],
                                 "default": "To be recorded"
-                            },
-                            "Comment_on_InjectionSite_Mapping": {
-                                "type": "string",
-                                "title": "Comment on InjectionSite Mapping:"
                             }
                         },
                         "required": [
@@ -379,8 +375,7 @@
                             "Comment_on_Injection", 
                             "InjectionSite_M132", 
                             "InjectionSite_D99", 
-                            "InjectionSite_Mapping_Confidence", 
-                            "Comment_on_InjectionSite_Mapping"
+                            "InjectionSite_Mapping_Confidence"
                         ]
                     },
                     "LabeledSites": {
@@ -429,10 +424,6 @@
                                     "title": "Mapping Confidence of LabeledSite:",
                                     "enum": ["To be recorded", "High", "Medium", "Low"],
                                     "default": "To be recorded"
-                                },
-                                "Comment_on_LabeledSite_Mapping": {
-                                    "type": "string",
-                                    "title": "Comment on LabeledSite Mapping:"
                                 },
                                 "Connection_Strength": {
                                     "type": "object",
@@ -483,8 +474,7 @@
                                 "Comment_on_LabeledSite", 
                                 "LabeledSite_M132", 
                                 "LabeledSite_D99", 
-                                "LabeledSite_Mapping_Confidence", 
-                                "Comment_on_LabeledSite_Mapping", 
+                                "LabeledSite_Mapping_Confidence",
                                 "Connection_Strength"
                             ]
                         }
