@@ -1,8 +1,11 @@
 {
-    "areas": [
-
+    "nuclei": [
+        "AD", "AM", "AV", "LD"
     ],
     "index_of_abreviations": {
-        
+        "AD": "anterior dorsal nucleus",
+        "AM": "anterior medial nucleus",
+        "AV": "anterior ventral nucleus",
+        "LD": "lateral dorsal nucleus"
     }
 }
