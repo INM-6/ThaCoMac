@@ -45,7 +45,7 @@
                 },
                 "First_Author": {
                     "type": "string",
-                    "title": "First Autor (FirstName_LastName):",
+                    "title": "First Autor (RestOfTheName_LastName):",
                     "default": "To be recorded",
                     "minLength": 1               
                 },
