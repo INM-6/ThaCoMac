@@ -6,16 +6,6 @@
             "type": "string",
             "title": "Comment on This Article:"
         },
-        "Contralateral_Connection_Reported": {
-            "type": "string",
-            "title": "Does this article report contralateral connections?",
-            "enum": [
-                "To be recorded",
-                "Yes",
-                "No"
-            ],
-            "default": "To be recorded"
-        },
         "Article_Info": {
             "type": "object",
             "title": "Article Information",
@@ -66,7 +56,7 @@
                     "maximum": 2024,
                     "default": "-1"
                 },
-                "Comment_on_Article_Info": {
+                "Comment": {
                     "type": "string",
                     "title": "Comment on Article Information:"
                 }
@@ -79,7 +69,7 @@
                 "Article_Title", 
                 "First_Author", 
                 "Publication_Year", 
-                "Comment_on_Article_Info"
+                "Comment"
             ]
         },
         "PSR": {
@@ -177,7 +167,7 @@
                         "properties": {
                             "Region_Name": {
                                 "type": "string",
-                                "title": "Region_Name:",
+                                "title": "Region Name:",
                                 "default": "To be recorded",
                                 "minLength": 3
                             },
@@ -285,7 +275,7 @@
                 "type": "object",
                 "title": "Injection",
                 "properties": {
-                    "Injection_Info": {
+                    "Injection": {
                         "type": "object",
                         "title": "Injection Information:",
                         "properties": {
@@ -429,25 +419,25 @@
                                     "type": "object",
                                     "title": "Connection Strength:",
                                     "properties": {
-                                        "Qualitative_Connection_Strength": {
+                                        "Qual_CS": {
                                             "type": "string",
                                             "title": "Connection Strength in Qualitative Terms:",
                                             "enum": ["To be recorded", "NA", "Strong", "Medium", "Weak"],
                                             "default": "To be recorded"
                                         },
-                                        "Source_Description_of_Qualitative_Connection_Strength": {
+                                        "Source_Description_of_Qual_CS": {
                                             "type": "string",
                                             "title": "Source Description of Qualitative Connection Strength:",
                                             "default": "To be recorded",
                                             "minLength": 2
                                         },
-                                        "Quantitative_Connection_Strength": {
+                                        "Quan_CS": {
                                             "type": "string",
                                             "title": "Quantitative Connection Strength:",
                                             "default": "To be recorded",
                                             "minLength": 2
                                         },
-                                        "Source_Description_of_Quantitative_Connection_Strength": {
+                                        "Source_Description_of_Quan_CS": {
                                             "type": "string",
                                             "title": "Source Description of Quantitative Connection Strength:",
                                             "default": "To be recorded",
@@ -459,10 +449,10 @@
                                         }
                                     },
                                     "required": [
-                                        "Qualitative_Connection_Strength", 
-                                        "Source_Description_of_Qualitative_Connection_Strength", 
-                                        "Quantitative_Connection_Strength", 
-                                        "Source_Description_of_Quantitative_Connection_Strength", 
+                                        "Qual_CS", 
+                                        "Source_Description_of_Qual_CS", 
+                                        "Quan_CS", 
+                                        "Source_Description_of_Quan_CS", 
                                         "Comment_on_Connection_Strength"
                                     ]
                                 }
@@ -474,25 +464,35 @@
                                 "Comment_on_LabeledSite", 
                                 "LabeledSite_M132", 
                                 "LabeledSite_D99", 
-                                "LabeledSite_Mapping_Confidence",
+                                "LabeledSite_Mapping_Confidence", 
                                 "Connection_Strength"
                             ]
                         }
                     }
                 },
                 "required": [
-                    "Injection_Info", 
+                    "Injection", 
                     "LabeledSites"
                 ]
             }
+        },
+        "Contralateral_Connection_Reported": {
+            "type": "string",
+            "title": "Does this article report contralateral connections?",
+            "enum": [
+                "To be recorded",
+                "Y",
+                "N"
+            ],
+            "default": "To be recorded"
         }
     },
     "required": [
         "Comment_on_This_Article", 
-        "Contralateral_Connection_Reported", 
         "Article_Info", 
         "PSR", 
         "Experimental_Subjects", 
-        "Injection_and_Labeling"
+        "Injection_and_Labeling", 
+        "Contralateral_Connection_Reported"
     ]
 }
