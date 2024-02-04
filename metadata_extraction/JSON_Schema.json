@@ -225,28 +225,19 @@
                     }
                 },
                 "Adulthood": {
-                    "type": "array",
+                    "type": "string",
                     "title": "Adulthood:",
-                    "items": {
-                        "type": "string",
-                        "enum": ["To be recorded", "NS", "Only Adult", "Only juvenile", "Both"]
-                    }
+                    "enum": ["To be recorded", "NS", "Only Adult", "Only juvenile", "Both"]
                 },
                 "Health_Condition": {
-                    "type": "array",
+                    "type": "string",
                     "title": "Health Condition:",
-                    "items": {
-                        "type": "string",
-                        "enum": ["To be recorded", "NS", "Only healthy subjects", "Only unhealthy subjects", "Both"]
-                    }
+                    "enum": ["To be recorded", "NS", "Only healthy subjects", "Only unhealthy subjects", "Both"]
                 },
                 "Hemisphere": {
-                    "type": "array",
+                    "type": "string",
                     "title": "Hemisphere(s) used:",
-                    "items": {
-                        "type": "string",
-                        "enum": ["To be recorded", "NS", "Only left", "Only right", "Both"]
-                    }
+                    "enum": ["To be recorded", "NS", "Only left", "Only right", "Both"]
                 },
                 "Source_Description": {
                     "type": "string",
@@ -480,9 +471,7 @@
             "type": "string",
             "title": "Does this article report contralateral connections?",
             "enum": [
-                "To be recorded",
-                "Y",
-                "N"
+                "To be recorded", "Y", "N"
             ],
             "default": "To be recorded"
         }
