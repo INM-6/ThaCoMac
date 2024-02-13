@@ -1,6 +1,82 @@
 {
     "Rouiller_2004_https://doi.org/10.1016/j.neulet.2004.01.008": {
-        
+        "Comment_on_This_Article": "",
+        "Article_Info": {
+          "DH_INDEX": 120,
+          "DOI-URL": "https://doi.org/10.1016/j.neulet.2004.01.008",
+          "PMID": "15016432",
+          "PMCID": "NA",
+          "Article_Title": "The dual pattern of corticothalamic projection of the primary auditory cortex in macaque monkey",
+          "First_Author": "Eric M._Rouiller",
+          "Publication_Year": 2004,
+          "Comment": ""
+        },
+        "PSR": {
+          "Cortical_PSR": [
+            "And so on",
+            "And so on"
+          ],
+          "Source_Description_of_CPSR": "The skull was opened above the parietal lobe to reach the left auditory cortex by means of vertical electrode penetrations [4] and using stereotaxic coordinates [11].",
+          "Comment_on_CPSR": "",
+          "Thalamic_PSR": [
+            "And so on"
+          ],
+          "Source_Description_of_TPSR": "NA",
+          "Comment_on_TPSR": "",
+          "PSR_for_Certain_Cortical_Regions": [],
+          "PSR_for_Certain_Thalamic_Regions": []
+        },
+        "Experimental_Subjects": {
+          "Subspecies": [
+            "M. mulatta"
+          ],
+          "Adulthood": "NS",
+          "Health_Condition": "Only healthy subjects",
+          "Hemisphere": "Only left",
+          "Source_Description": "The reciprocal projections between A1 and the thalamus were assessed in a macaque monkey (Macaca mulatta; 8 kg body weight).",
+          "Comment": ""
+        },
+        "Injection_and_Labeling": [
+          {
+            "Injection": {
+              "Tracer": [
+                "BDA"
+              ],
+              "InjectionSite_by_Author": "A1",
+              "Source_Description_of_InjectionSite": "The BDA injection site in A1 is illustrated in Fig. 1",
+              "Injection_Coverage_by_Author": {
+                "Cover_Adjacent_Regions": "N",
+                "Adjacent_Regions_Covered": "NAp",
+                "Source_Description": "Transposed to the atlas of the monkey brain [11], the injection site extends between the stereotaxic rostrocaudal coordinates 6.3–9.5 mm, in the auditory koniocortex (areas AKL and AKM). The injection site is thus restricted to the area A1, located between the rostrocaudal coordinates 4 and 14 mm [5].",
+                "Comment": ""
+              },
+              "Comment_on_Injection": "",
+              "InjectionSite_M132": "Area name 1",
+              "InjectionSite_D99": "NAp",
+              "InjectionSite_Mapping_Confidence": "High"
+            },
+            "LabeledSites": [
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "vMGB",
+                "Source_Description_of_LabeledSite": "The main CT terminal field is located in vMGB and dMGB (Figs. 2A and 3) and, in",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "NAp",
+                "LabeledSite_D99": "Area ID 2",
+                "LabeledSite_Mapping_Confidence": "Medium",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              }
+            ]
+          }
+        ],
+        "Contralateral_Connection_Reported": "N",
+        "Laminar_Connections_Reported": "N"
     },
     "Miyata_1983_https://doi.org/10.1016/0006-8993(83)90698-4": {
 

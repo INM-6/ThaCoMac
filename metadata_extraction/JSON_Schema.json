@@ -224,21 +224,6 @@
                         "enum": ["To be recorded", "NS", "M. mulatta", "M. fuscata", "M. nemestrina", "M. radiata", "M. arctoides", "M. fascicularis"]
                     }
                 },
-                "Adulthood": {
-                    "type": "string",
-                    "title": "Adulthood:",
-                    "enum": ["To be recorded", "NS", "Only Adult", "Only juvenile", "Both"]
-                },
-                "Health_Condition": {
-                    "type": "string",
-                    "title": "Health Condition:",
-                    "enum": ["To be recorded", "NS", "Only healthy subjects", "Only unhealthy subjects", "Both"]
-                },
-                "Hemisphere": {
-                    "type": "string",
-                    "title": "Hemisphere(s) used:",
-                    "enum": ["To be recorded", "NS", "Only left", "Only right", "Both"]
-                },
                 "Source_Description": {
                     "type": "string",
                     "title": "Source Description of Experimental Subjects:",
@@ -252,9 +237,6 @@
             },
             "required": [
                 "Subspecies", 
-                "Adulthood", 
-                "Health_Condition", 
-                "Hemisphere", 
                 "Source_Description", 
                 "Comment"
             ]
@@ -285,9 +267,15 @@
                                 "default": "To be recorded",
                                 "minLength": 1
                             },
-                            "Source_Description_of_InjectionSite": {
+                            "Text_Description_of_InjectionSite": {
                                 "type": "string",
-                                "title": "Source Description of InjectionSite:",
+                                "title": "Text Description of InjectionSite:",
+                                "default": "To be recorded",
+                                "minLength": 2
+                            },
+                            "Figure_Description_of_InjectionSite": {
+                                "type": "string",
+                                "title": "Figure Description of InjectionSite:",
                                 "default": "To be recorded",
                                 "minLength": 2
                             },
@@ -307,9 +295,15 @@
                                         "default": "To be recorded",
                                         "minLength": 3
                                     },
-                                    "Source_Description": {
+                                    "Text_Description": {
                                         "type": "string",
-                                        "title": "Source Description of Injection Coverage:",
+                                        "title": "Text Description of Injection Coverage:",
+                                        "default": "To be recorded",
+                                        "minLength": 2
+                                    },
+                                    "Figure_Description": {
+                                        "type": "string",
+                                        "title": "Figure Description of Injection Coverage:",
                                         "default": "To be recorded",
                                         "minLength": 2
                                     },
@@ -321,7 +315,8 @@
                                 "required": [
                                     "Cover_Adjacent_Regions", 
                                     "Adjacent_Regions_Covered", 
-                                    "Source_Description", 
+                                    "Text_Description", 
+                                    "Figure_Description", 
                                     "Comment"
                                 ]
                             },
@@ -351,7 +346,8 @@
                         "required": [
                             "Tracer", 
                             "InjectionSite_by_Author", 
-                            "Source_Description_of_InjectionSite", 
+                            "Text_Description_of_InjectionSite", 
+                            "Figure_Description_of_InjectionSite", 
                             "Injection_Coverage_by_Author", 
                             "Comment_on_Injection", 
                             "InjectionSite_M132", 
@@ -378,9 +374,15 @@
                                     "default": "To be recorded",
                                     "minLength": 1
                                 },
-                                "Source_Description_of_LabeledSite": {
+                                "Text_Description_of_LabeledSite": {
                                     "type": "string",
-                                    "title": "Source Description of LabeledSite:",
+                                    "title": "Text Description of LabeledSite:",
+                                    "default": "To be recorded",
+                                    "minLength": 2
+                                },
+                                "Figure_Description_of_LabeledSite": {
+                                    "type": "string",
+                                    "title": "Figure Description of LabeledSite:",
                                     "default": "To be recorded",
                                     "minLength": 2
                                 },
@@ -451,7 +453,8 @@
                             "required": [
                                 "TT_Direction", 
                                 "LabeledSite_by_Author", 
-                                "Source_Description_of_LabeledSite", 
+                                "Text_Description_of_LabeledSite", 
+                                "Figure_Description_of_LabeledSite", 
                                 "Comment_on_LabeledSite", 
                                 "LabeledSite_M132", 
                                 "LabeledSite_D99", 
