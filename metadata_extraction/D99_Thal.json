@@ -1,5 +1,5 @@
 {
-    "nuclei": [
+    "subregions": [
         "AD", "AM", "AV", "Hl", "Hm", "LD", "LGN", "LP", "MDdc", 
         "MDmc", "MDmf", "MDpc", "MGad", "MGm", "MGpd", "MGv", "MGz", 
         "PI", "PL", "PM", "Pa", "Pf", "Pulo", "Re", "Sg", "VAmc", 

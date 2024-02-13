@@ -1,5 +1,5 @@
 {
-    "nuclei": [
+    "subregions": [
         "AD", "AM", "AThal", "AV", "Apul", "CL", "CM", "CMn", 
         "CMnL", "CMnM", "IAM", "IMD", "Ipul", "LDSF", "LDt", 
         "LThal", "Lpul", "MD", "MDC", "MDD", "MDL", "MDM", "MG", 

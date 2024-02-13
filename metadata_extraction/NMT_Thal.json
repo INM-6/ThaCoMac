@@ -1,5 +1,5 @@
 {
-    "nuclei": [
+    "subregions": [
         "A", "A+", "APul", "AR", "CL-PC", "CM", "CMn-PF", 
         "CbThal", "DLG", "GThal", "IAM", "ILThal", "IMD", 
         "IPul", "LD", "LP", "LPul", "Lim", "MD", "MG", 
