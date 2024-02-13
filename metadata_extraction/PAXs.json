@@ -1,6 +1,13 @@
 {
     "nuclei": [
-        "AD", "AM", "AV", "LD"
+        "AD", "AM", "AThal", "AV", "Apul", "CL", "CM", "CMn", 
+        "CMnL", "CMnM", "IAM", "IMD", "Ipul", "LDSF", "LDt", 
+        "LThal", "Lpul", "MD", "MDC", "MDD", "MDL", "MDM", "MG", 
+        "MGD", "MGM", "MGV", "MPul", "MThal", "MedLam", "PC", 
+        "PF", "PT", "PV", "PVA", "PVP", "Pul", "Re", "Rt", "SG", 
+        "SPF", "SPFPC", "Thal", "VA", "VAL", "VAL(VO)", "VAL(VO)+pal", 
+        "VAL(pal)", "VAM", "VAMC", "VL", "VLL", "VLM", "VPL", "VPM", 
+        "VPThal", "Xi", "eml", "iml", "ithp", "mt"
     ],
     "index_of_abreviations": {
         "Thal": "thalamus",

@@ -327,13 +327,52 @@
                             "InjectionSite_M132": {
                                 "type": "string",
                                 "title": "InjectionSite in M132 (Cortex):",
-                                "enum": ["To be recorded", "NAp", "Area name 1", "Area name 2"],
+                                "enum": [
+                                    "To be recorded", "NAp",
+                                    "1", "10", "11", "12", "13", "14", "2", "23", "24a", "24b", "24c", "24d", 
+                                    "25", "29/30", "3", "31", "32", "44", "45A", "45B", "46d", "46v", "5", 
+                                    "7A", "7B", "7m", "7op", "8B", "8l", "8m", "8r", "9", "9/46d", "9/46v", 
+                                    "AIP", "Core", "DP", "ENTO", "F1", "F2", "F3", "F4", "F5", "F6", "F7", 
+                                    "FST", "Gu", "INS", "IPa", "LB", "LIP", "MB", "MIP", "MST", "MT", "OPAI", 
+                                    "OPRO", "PBc", "PBr", "PERI", "PGa", "PIP", "PIR", "POLE", "Pi", "Pro. St.", 
+                                    "ProM", "SII", "STPc", "STPi", "STPr", "SUB", "TEO", "TEOm", "TEa/ma", 
+                                    "TEa/mp", "TEad", "TEav", "TEpd", "TEpv", "TH/TF", "TPt", "V1", "V2", "V3", 
+                                    "V3A", "V4", "V4t", "V6", "V6A", "VIP"
+                                ],
                                 "default": "To be recorded"
                             },
-                            "InjectionSite_D99": {
+                            "InjectionSite_D99s": {
                                 "type": "string",
-                                "title": "InjectionSite in D99 (Thalamus):",
-                                "enum": ["To be recorded", "NAp", "Area name 1", "Area name 2"],
+                                "title": "InjectionSite in D99s:",
+                                "enum": [
+                                    "To be recorded", "NAp", 
+                                    "Area ID 1", "Area ID 2", "Area ID 3"
+                                ],
+                                "default": "To be recorded"
+                            },
+                            "InjectionSite_NMTs": {
+                                "type": "string",
+                                "title": "InjectionSite in NMTs:",
+                                "enum": [
+                                    "To be recorded", "NAp", 
+                                    "Area ID 1", "Area ID 2", "Area ID 3"
+                                ],
+                                "default": "To be recorded"
+                            },
+                            "InjectionSite_PAXs": {
+                                "type": "string",
+                                "title": "InjectionSite in PAXs:",
+                                "enum": [
+                                    "To be recorded", "NAp", 
+                                    "AD", "AM", "AThal", "AV", "Apul", "CL", "CM", "CMn", 
+                                    "CMnL", "CMnM", "IAM", "IMD", "Ipul", "LDSF", "LDt", 
+                                    "LThal", "Lpul", "MD", "MDC", "MDD", "MDL", "MDM", "MG", 
+                                    "MGD", "MGM", "MGV", "MPul", "MThal", "MedLam", "PC", 
+                                    "PF", "PT", "PV", "PVA", "PVP", "Pul", "Re", "Rt", "SG", 
+                                    "SPF", "SPFPC", "Thal", "VA", "VAL", "VAL(VO)", "VAL(VO)+pal", 
+                                    "VAL(pal)", "VAM", "VAMC", "VL", "VLL", "VLM", "VPL", "VPM", 
+                                    "VPThal", "Xi", "eml", "iml", "ithp", "mt"
+                                ],
                                 "default": "To be recorded"
                             },
                             "InjectionSite_Mapping_Confidence": {
@@ -393,13 +432,52 @@
                                 "LabeledSite_M132": {
                                     "type": "string",
                                     "title": "LabeledSite in M132 (Cortex):",
-                                    "enum": ["To be recorded", "NAp", "Area ID 1", "Area ID 2", "Area ID 3"],
+                                    "enum": [
+                                        "To be recorded", "NAp",
+                                        "1", "10", "11", "12", "13", "14", "2", "23", "24a", "24b", "24c", "24d", 
+                                        "25", "29/30", "3", "31", "32", "44", "45A", "45B", "46d", "46v", "5", 
+                                        "7A", "7B", "7m", "7op", "8B", "8l", "8m", "8r", "9", "9/46d", "9/46v", 
+                                        "AIP", "Core", "DP", "ENTO", "F1", "F2", "F3", "F4", "F5", "F6", "F7", 
+                                        "FST", "Gu", "INS", "IPa", "LB", "LIP", "MB", "MIP", "MST", "MT", "OPAI", 
+                                        "OPRO", "PBc", "PBr", "PERI", "PGa", "PIP", "PIR", "POLE", "Pi", "Pro. St.", 
+                                        "ProM", "SII", "STPc", "STPi", "STPr", "SUB", "TEO", "TEOm", "TEa/ma", 
+                                        "TEa/mp", "TEad", "TEav", "TEpd", "TEpv", "TH/TF", "TPt", "V1", "V2", "V3", 
+                                        "V3A", "V4", "V4t", "V6", "V6A", "VIP"
+                                    ],
                                     "default": "To be recorded"
                                 },
-                                "LabeledSite_D99": {
+                                "LabeledSite_D99s": {
                                     "type": "string",
-                                    "title": "LabeledSite in D99 (Thalamus):",
-                                    "enum": ["To be recorded", "NAp", "Area ID 1", "Area ID 2", "Area ID 3"],
+                                    "title": "LabeledSite in D99s:",
+                                    "enum": [
+                                        "To be recorded", "NAp", 
+                                        "Area ID 1", "Area ID 2", "Area ID 3"
+                                    ],
+                                    "default": "To be recorded"
+                                },
+                                "LabeledSite_NMTs": {
+                                    "type": "string",
+                                    "title": "LabeledSite in NMTs:",
+                                    "enum": [
+                                        "To be recorded", "NAp", 
+                                        "Area ID 1", "Area ID 2", "Area ID 3"
+                                    ],
+                                    "default": "To be recorded"
+                                },
+                                "LabeledSite_PAXs": {
+                                    "type": "string",
+                                    "title": "LabeledSite in PAXs:",
+                                    "enum": [
+                                        "To be recorded", "NAp", 
+                                        "AD", "AM", "AThal", "AV", "Apul", "CL", "CM", "CMn", 
+                                        "CMnL", "CMnM", "IAM", "IMD", "Ipul", "LDSF", "LDt", 
+                                        "LThal", "Lpul", "MD", "MDC", "MDD", "MDL", "MDM", "MG", 
+                                        "MGD", "MGM", "MGV", "MPul", "MThal", "MedLam", "PC", 
+                                        "PF", "PT", "PV", "PVA", "PVP", "Pul", "Re", "Rt", "SG", 
+                                        "SPF", "SPFPC", "Thal", "VA", "VAL", "VAL(VO)", "VAL(VO)+pal", 
+                                        "VAL(pal)", "VAM", "VAMC", "VL", "VLL", "VLM", "VPL", "VPM", 
+                                        "VPThal", "Xi", "eml", "iml", "ithp", "mt"
+                                    ],
                                     "default": "To be recorded"
                                 },
                                 "LabeledSite_Mapping_Confidence": {
@@ -458,8 +536,7 @@
                                 "Comment_on_LabeledSite", 
                                 "LabeledSite_M132", 
                                 "LabeledSite_D99", 
-                                "LabeledSite_Mapping_Confidence", 
-                                "Connection_Strength"
+                                "LabeledSite_Mapping_Confidence"
                             ]
                         }
                     }
