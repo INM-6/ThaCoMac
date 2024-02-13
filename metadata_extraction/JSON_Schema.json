@@ -474,6 +474,14 @@
                 "To be recorded", "Y", "N"
             ],
             "default": "To be recorded"
+        },
+        "Laminar_Connections_Reported": {
+            "type": "string",
+            "title": "Does this article report laminar connections?",
+            "enum": [
+                "To be recorded", "Y", "N"
+            ],
+            "default": "To be recorded"
         }
     },
     "required": [
@@ -482,6 +490,7 @@
         "PSR", 
         "Experimental_Subjects", 
         "Injection_and_Labeling", 
-        "Contralateral_Connection_Reported"
+        "Contralateral_Connection_Reported", 
+        "Laminar_Connections_Reported"
     ]
 }
