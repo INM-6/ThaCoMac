@@ -1,6 +1,11 @@
 {
     "nuclei": [
-        "AD", "AM", "AV", "LD"
+        "AD", "AM", "AV", "Hl", "Hm", "LD", "LGN", "LP", "MDdc", 
+        "MDmc", "MDmf", "MDpc", "MGad", "MGm", "MGpd", "MGv", "MGz", 
+        "PI", "PL", "PM", "Pa", "Pf", "Pulo", "Re", "Sg", "VAmc", 
+        "VApc", "VLc", "VLo", "VLps", "VPI", "VPLc", "VPLo", "VPM", 
+        "VPMpc", "cdc", "cif", "cim", "cl", "clc", "cnMD", "csl", 
+        "pcn", "pt", "ptg", "r", "zic"
     ],
     "index_of_abreviations": {
         "AD": "anterior dorsal nucleus",
