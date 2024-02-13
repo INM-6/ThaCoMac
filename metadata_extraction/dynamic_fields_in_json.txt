@@ -1,7 +1,3 @@
-Macaque subspecies,
-Tracer,
-
-
 Cortical Parcellation Scheme (CPS),
 Thalamic Parcellation Scheme (TPS)
 

@@ -76,13 +76,16 @@
             "type": "object",
             "title": "Parcellation Scheme Reference",
             "properties":{
-                "Cortical_PSR": {
+                "CPSR": {
                     "type": "array",
                     "title": "Cortical Pacellation Scheme Reference:",
                     "items": {
                         "type": "string",
                         "title": "Reference",
-                        "enum": ["To be recorded", "And so on"],
+                        "enum": [
+                            "To be recorded", 
+                            "And so on"
+                        ],
                         "default": "To be recorded"
                     }
                 },
@@ -96,13 +99,16 @@
                     "type": "string",
                     "title": "Comment on Cortical Pacellation Scheme Reference:"
                 },
-                "Thalamic_PSR": {
+                "TPSR": {
                     "type": "array",
                     "title": "Thalamic Parcellation Scheme Reference:",
                     "items": {
                         "type": "string",
                         "title": "Reference",
-                        "enum": ["To be recorded", "And so on"],
+                        "enum": [
+                            "To be recorded", 
+                            "And so on"
+                        ],
                         "default": "To be recorded"
                     }
                 },
@@ -135,7 +141,10 @@
                                 "items": {
                                     "type": "string",
                                     "title": "Reference",
-                                    "enum": ["To be recorded", "And so on"],
+                                    "enum": [
+                                        "To be recorded", 
+                                        "And so on"
+                                    ],
                                     "default": "To be recorded"
                                 }
                             },
@@ -177,7 +186,10 @@
                                 "items": {
                                     "type": "string",
                                     "title": "Reference",
-                                    "enum": ["To be recorded", "And so on"],
+                                    "enum": [
+                                        "To be recorded", 
+                                        "And so on"
+                                    ],
                                     "default": "To be recorded"
                                 }
                             },
@@ -202,13 +214,13 @@
                 }
             },
             "required": [
-                "Cortical_PSR", 
+                "CPSR", 
                 "Source_Description_of_CPSR", 
                 "Comment_on_CPSR", 
-                "Thalamic_PSR", 
+                "TPSR", 
                 "Source_Description_of_TPSR", 
-                "Comment_on_TPSR", 
-                "PSR_for_Certain_Cortical_Regions", 
+                "Comment_on_TPSR",
+                "PSR_for_Certain_Cortical_Regions",
                 "PSR_for_Certain_Thalamic_Regions"
             ]
         },
@@ -346,7 +358,12 @@
                                 "title": "InjectionSite in D99s:",
                                 "enum": [
                                     "To be recorded", "NAp", 
-                                    "Area ID 1", "Area ID 2", "Area ID 3"
+                                    "AD", "AM", "AV", "Hl", "Hm", "LD", "LGN", "LP", "MDdc", 
+                                    "MDmc", "MDmf", "MDpc", "MGad", "MGm", "MGpd", "MGv", "MGz", 
+                                    "PI", "PL", "PM", "Pa", "Pf", "Pulo", "Re", "Sg", "VAmc", 
+                                    "VApc", "VLc", "VLo", "VLps", "VPI", "VPLc", "VPLo", "VPM", 
+                                    "VPMpc", "cdc", "cif", "cim", "cl", "clc", "cnMD", "csl", 
+                                    "pcn", "pt", "ptg", "r", "zic"
                                 ],
                                 "default": "To be recorded"
                             },
@@ -355,7 +372,14 @@
                                 "title": "InjectionSite in NMTs:",
                                 "enum": [
                                     "To be recorded", "NAp", 
-                                    "Area ID 1", "Area ID 2", "Area ID 3"
+                                    "A", "A+", "APul", "AR", "CL-PC", "CM", "CMn-PF", 
+                                    "CbThal", "DLG", "GThal", "IAM", "ILThal", "IMD", 
+                                    "IPul", "LD", "LP", "LPul", "Lim", "MD", "MG", 
+                                    "MLThal", "MPul", "MThal", "PNThal", "PT-PV-sm", 
+                                    "PThal", "PVA", "PVP", "Pul", "Re-Rh-Xi", "Rt", 
+                                    "SG", "SPFC", "SPFPC", "SpThal", "Thal", "VA", 
+                                    "VLA", "VLPD", "VLPV", "VLX", "VM", "VMPo-VMB", 
+                                    "VPI", "VPM-VPL", "VThal", "bsc", "cap"
                                 ],
                                 "default": "To be recorded"
                             },
@@ -451,7 +475,12 @@
                                     "title": "LabeledSite in D99s:",
                                     "enum": [
                                         "To be recorded", "NAp", 
-                                        "Area ID 1", "Area ID 2", "Area ID 3"
+                                        "AD", "AM", "AV", "Hl", "Hm", "LD", "LGN", "LP", "MDdc", 
+                                        "MDmc", "MDmf", "MDpc", "MGad", "MGm", "MGpd", "MGv", "MGz", 
+                                        "PI", "PL", "PM", "Pa", "Pf", "Pulo", "Re", "Sg", "VAmc", 
+                                        "VApc", "VLc", "VLo", "VLps", "VPI", "VPLc", "VPLo", "VPM", 
+                                        "VPMpc", "cdc", "cif", "cim", "cl", "clc", "cnMD", "csl", 
+                                        "pcn", "pt", "ptg", "r", "zic"
                                     ],
                                     "default": "To be recorded"
                                 },
@@ -460,7 +489,14 @@
                                     "title": "LabeledSite in NMTs:",
                                     "enum": [
                                         "To be recorded", "NAp", 
-                                        "Area ID 1", "Area ID 2", "Area ID 3"
+                                        "A", "A+", "APul", "AR", "CL-PC", "CM", "CMn-PF", 
+                                        "CbThal", "DLG", "GThal", "IAM", "ILThal", "IMD", 
+                                        "IPul", "LD", "LP", "LPul", "Lim", "MD", "MG", 
+                                        "MLThal", "MPul", "MThal", "PNThal", "PT-PV-sm", 
+                                        "PThal", "PVA", "PVP", "Pul", "Re-Rh-Xi", "Rt", 
+                                        "SG", "SPFC", "SPFPC", "SpThal", "Thal", "VA", 
+                                        "VLA", "VLPD", "VLPV", "VLX", "VM", "VMPo-VMB", 
+                                        "VPI", "VPM-VPL", "VThal", "bsc", "cap"
                                     ],
                                     "default": "To be recorded"
                                 },
@@ -536,7 +572,8 @@
                                 "Comment_on_LabeledSite", 
                                 "LabeledSite_M132", 
                                 "LabeledSite_D99", 
-                                "LabeledSite_Mapping_Confidence"
+                                "LabeledSite_Mapping_Confidence", 
+                                "Connection_Strength"
                             ]
                         }
                     }
