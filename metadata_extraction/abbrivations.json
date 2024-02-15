@@ -3,6 +3,16 @@
         "CT": "corticothalamic",
         "TC": "thalamocortical",
         "CPS": "cortical parcellation scheme",
-        "TPS": "thalamus parcellation scheme"
+        "TPS": "thalamus parcellation scheme",
+        "D": "dorsal",
+        "V": "ventral",
+        "L": "lateral",
+        "M": "medial",
+        "A": "anterior",
+        "P": "posterior",
+        "S": "superior",
+        "I": "inferior",
+        "R": "rostral",
+        "C": "caudal"
     }
 }

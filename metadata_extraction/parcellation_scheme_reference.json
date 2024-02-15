@@ -1,18 +1,12 @@
 {
-    "CPSR": [
-        "Paxinos_2000",
-        "Durif_2003"
-    ],
-    "TPSR": [
-        "Paxinos_2000",
-        "Durif_2003"
-    ],
     "PSR": {
-        "Paxinos_1999": "Paxinos, G., Huang, X. & Toga, A. W. (1999). The Rhesus Monkey Brain in Stereotaxic Coordinates. San Diego, USA: Academic Press.",
-        "Paxinos_2000": "Paxinos G, Huang XF, Toga AW (2000) The rhesus monkey brain in stereotaxic coordinates. London: Academic Press.",
+        "Paxinos_2000": "G. Paxinos, X.F. Huang, A.W. Toga, The Rhesus Monkey Brain in Stereotaxic Coordinates., Academic Press, London; San Diego, 2000, pp. 1–165.",
         "Pandya_1982": "Pandya DN, Seltzer B (1982) Intrinsic connections and architectonics of posterior parietal cortex in the rhesus monkey. J Comp Neurol 204:196–210.",
         "Seltzer_1984": "Seltzer B, Pandya DN (1984) Further observations on parieto-temporal connections in the rhesus monkey. Exp Brain Res 55(2): 301–312",
-        "Matelli_1998": "Matelli M, Luppino G, Fogassi L, Rizzolatti G (1989) Thalamic input to inferior area 6 and area 4 in the macaque monkey. J Comp Neurol 280:468–488.",
+        "Seltzer_1986": "Seltzer B, Pandya DN (1986) Posterior parietal projections to the intraparietal sulcus of the rhesus monkey. Exp Brain Res 62(3): 459–469.",
+        "Matelli_1991": "Matelli M, Luppino G, Rizzolatti G (1991) Architecture of superior and mesial area 6 and the adjacent cingulate cortex in the macaque monkey. J Comp Neurol 311:445–462.",
+        "Matelli_1989": "Matelli M, Luppino G, Fogassi L, Rizzolatti G (1989) Thalamic input to inferior area 6 and area 4 in the macaque monkey. J Comp Neurol 280:468–488.",
+        "Matelli_1998": "Matelli M, Govoni P, Galletti C, Kutz DF, Luppino G (1998) Superior area 6 afferents from the superior parietal lobule in the macaque monkey. J Comp Neurol 402:327–352.",
         "Brodmann_1903": "K. Brodmann: Beiträge zur histologischen Lokalisation der Großhirnrinde. II. Mitteilung: Der Calcarinatypus. Journ. f. Psychol. u. Neurol. 2 (4). 1903 (38)",
         "Olszewski_1952": "Olszewski, J. (1952) The Thalamus of the Macaca nuluttu. An Atlas for Use With The Stereotaxic Instrument. Basel: Karger.",
         "Jones_1985": "Jones, E.G. (1985) The Thalamus. Plenum Press, New York.",
@@ -33,7 +27,11 @@
         "Muakkassa_1979": "Muakkassa, K.F., and P.L. Strick (1979) Frontal lobe inputs to primate motor cortex: Evidence for four somatopically organized 'premotor' areas. Brain Res. 177:176-182.",
         "Durif_2003": "C. Durif, C. Jouffrais, E.M. Rouiller, Single unit responses in the auditory cortex of monkeys performing a conditional acoustico-motor task, Exp. Brain Res. 153 (2003) 614–627.",
         "Barbas_1989": "Barbas H, Pandya DN (1989) Architecture and intrinsic connections of the prefrontal cortex in the rhesus monkey. J Comp Neurol 286:353–375.",
-        "Matelli_1991": "Matelli M, Luppino G, Rizzolatti G (1991) Architecture of superior and mesial area 6 and the adjacent cingulate cortex in the macaque monkey. J Comp Neurol 311:445–462.",
-        "Dum_1993": "Dum RP, Strick PL (1993) Cingulate motor areas. In: Neurobiology of cingulate cortex and limbic thalamus: a comprehensive treatise (Vogt BA, Gabriel M, eds), pp 415–441. Boston: Birkhauser."
+        "Dum_1993": "Dum RP, Strick PL (1993) Cingulate motor areas. In: Neurobiology of cingulate cortex and limbic thalamus: a comprehensive treatise (Vogt BA, Gabriel M, eds), pp 415–441. Boston: Birkhauser.",
+        "Campbell_1989": "Campbell MJ, Morrison JH (1989) Monoclonal antibody to neurofilament protein (SMI-32) labels a subpopulation of pyramidal neurons in the human and monkey neocortex. J Comp Neurol 282(2):191–205.",
+        "Tsang_2000": "Tsang YM, Chiong F, Kuznetsov D, Kasarskis E, Geula C (2000) Motor neurons are rich in non-phosphorylated neurofilaments: cross-species comparison and alterations in ALS. Brain Res 861(1):45–58.",
+        "Liu_2002": "Liu J, Morel A, Wannier T, Rouiller EM (2002) Origins of callosal projections to the supplementary motor area (SMA): A direct comparison between pre-SMA and SMA-proper in macaque monkeys. J Comp Neurol 443:71–85.",
+        "Wannier_2005": "Wannier T, Schmidlin E, Bloch J, Rouiller EM (2005) A unilateral section of the corticospinal tract at cervical level in primate does not lead to measurable cell loss in motor cortex. J Neurotrauma 22(6):703–717.",
+        
     }
 }
