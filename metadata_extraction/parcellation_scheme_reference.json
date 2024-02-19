@@ -1,4 +1,17 @@
 {
+    "index_of_abreviations": [
+        "Asanuma_1983a", "Asanuma_1983b", "Barbas_1989", 
+        "Brodmann_1903", "Campbell_1989", "Dum_1993", 
+        "Durif_2003", "Jones_1985", "Jones_1989", 
+        "Jones_1990", "Jones_1998b", "Kusama_1970", 
+        "Liu_2002", "Matelli_1989", "Matelli_1991", 
+        "Matelli_1998", "Morel_1997", "Morel_2005", 
+        "Muakkassa_1979", "Olszewski_1952", "Pandya_1982", 
+        "Parent_1983", "Paxinos_2000", "Schell_1984", 
+        "Seltzer_1984", "Seltzer_1986", "Tsang_2000", 
+        "Walker_1940a", "Walker_1940b", "Wannier_2005", 
+        "Wise_1981", "Woolsey_1952"
+    ],
     "PSR": {
         "Paxinos_2000": "G. Paxinos, X.F. Huang, A.W. Toga, The Rhesus Monkey Brain in Stereotaxic Coordinates., Academic Press, London; San Diego, 2000, pp. 1–165.",
         "Pandya_1982": "Pandya DN, Seltzer B (1982) Intrinsic connections and architectonics of posterior parietal cortex in the rhesus monkey. J Comp Neurol 204:196–210.",
@@ -31,7 +44,6 @@
         "Campbell_1989": "Campbell MJ, Morrison JH (1989) Monoclonal antibody to neurofilament protein (SMI-32) labels a subpopulation of pyramidal neurons in the human and monkey neocortex. J Comp Neurol 282(2):191–205.",
         "Tsang_2000": "Tsang YM, Chiong F, Kuznetsov D, Kasarskis E, Geula C (2000) Motor neurons are rich in non-phosphorylated neurofilaments: cross-species comparison and alterations in ALS. Brain Res 861(1):45–58.",
         "Liu_2002": "Liu J, Morel A, Wannier T, Rouiller EM (2002) Origins of callosal projections to the supplementary motor area (SMA): A direct comparison between pre-SMA and SMA-proper in macaque monkeys. J Comp Neurol 443:71–85.",
-        "Wannier_2005": "Wannier T, Schmidlin E, Bloch J, Rouiller EM (2005) A unilateral section of the corticospinal tract at cervical level in primate does not lead to measurable cell loss in motor cortex. J Neurotrauma 22(6):703–717.",
-        
+        "Wannier_2005": "Wannier T, Schmidlin E, Bloch J, Rouiller EM (2005) A unilateral section of the corticospinal tract at cervical level in primate does not lead to measurable cell loss in motor cortex. J Neurotrauma 22(6):703–717."
     }
 }
