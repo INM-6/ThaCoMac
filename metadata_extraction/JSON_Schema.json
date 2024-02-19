@@ -186,7 +186,7 @@
                             },
                             "InjectionSite_M132": {
                                 "type": "string",
-                                "title": "InjectionSite in M132 (Cortex):",
+                                "title": "InjectionSite in M132:",
                                 "enum": [
                                     "To be recorded", "NAp",
                                     "1", "10", "11", "12", "13", "14", "2", "23", "24a", "24b", "24c", "24d", 
@@ -268,8 +268,10 @@
                             "Injection_Coverage_by_Author", 
                             "Comment_on_Injection", 
                             "InjectionSite_M132", 
-                            "InjectionSite_D99", 
-                            "InjectionSite_Mapping_Confidence",
+                            "InjectionSite_D99s",
+                            "InjectionSite_NMTs",
+                            "InjectionSite_PAXs",
+                            "InjectionSite_Mapping_Confidence", 
                             "All_Target_Regions_Examined"
                         ]
                     },
@@ -310,7 +312,7 @@
                                 },
                                 "LabeledSite_M132": {
                                     "type": "string",
-                                    "title": "LabeledSite in M132 (Cortex):",
+                                    "title": "LabeledSite in M132:",
                                     "enum": [
                                         "To be recorded", "NAp",
                                         "1", "10", "11", "12", "13", "14", "2", "23", "24a", "24b", "24c", "24d", 
@@ -426,7 +428,9 @@
                                 "Figure_Description_of_LabeledSite", 
                                 "Comment_on_LabeledSite", 
                                 "LabeledSite_M132", 
-                                "LabeledSite_D99", 
+                                "LabeledSite_D99s",
+                                "LabeledSite_NMTs",
+                                "LabeledSite_PAXs", 
                                 "LabeledSite_Mapping_Confidence", 
                                 "Connection_Strength"
                             ]
