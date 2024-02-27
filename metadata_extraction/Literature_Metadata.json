@@ -1,9 +1,1840 @@
 {
     "Rouiller_2004_https://doi.org/10.1016/j.neulet.2004.01.008": {
-        
+        "Comment_on_Article": "D: the thalamic parcellation reference is not explicitely specified in the article.",
+        "Contralateral_Connection": "N",
+        "Article_Info": {
+          "DH_INDEX": 120,
+          "DOI-URL": "https://doi.org/10.1016/j.neulet.2004.01.008",
+          "PMID": "15016432",
+          "PMCID": "NA",
+          "Title": "The dual pattern of corticothalamic projection of the primary auditory cortex in macaque monkey",
+          "First_Author": "Eric M._Rouiller",
+          "Pub_Year": 2004,
+          "Comment": ""
+        },
+        "Experimental_Subjects": {
+          "Subspecies": [
+            "M. mulatta"
+          ],
+          "Source_Description": "The reciprocal projections between A1 and the thalamus were assessed in a macaque monkey (Macaca mulatta; 8 kg body weight).",
+          "Comment": ""
+        },
+        "Injection_and_Labeling": [
+          {
+            "Injection": {
+              "Tracer": [
+                "BDA"
+              ],
+              "InjectionSite_by_Author": "A1",
+              "Text_Description_of_InjectionSite": "Using a syringe (Hamilton; 10 ml), a total volume of 2 ml of BDA (5% in saline) was injected in A1.",
+              "Figure_Description_of_InjectionSite": "Fig. 1.",
+              "Injection_Coverage_by_Author": {
+                "Cover_Adjacent_Regions": "N",
+                "Adjacent_Regions_Covered": "NAp",
+                "Text_Description": "Transposed to the atlas of the monkey brain [11], the injection site extends between the stereotaxic rostrocaudal coordinates 6.3–9.5 mm, in the auditory koniocortex (areas AKL and AKM). The injection site is thus restricted to the area A1, located between the rostrocaudal coordinates 4 and 14 mm [5].",
+                "Figure_Description": "Fig. 1.",
+                "Comment": ""
+              },
+              "Comment_on_Injection": "",
+              "InjectionSite_M132": "To be recorded",
+              "InjectionSite_D99s": "To be recorded",
+              "InjectionSite_NMTs": "To be recorded",
+              "InjectionSite_PAXs": "To be recorded",
+              "InjectionSite_Mapping_Confidence": "To be recorded",
+              "All_Target_Regions_Examined": "Y"
+            },
+            "LabeledSites": [
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "vMGB",
+                "Text_Description_of_LabeledSite": "Panel A shows the main and densest CT terminal field located in vMGB and dMGB (brown halo).",
+                "Figure_Description_of_LabeledSite": "Fig. 2., Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "dMGB",
+                "Text_Description_of_LabeledSite": "Panel A shows the main and densest CT terminal field located in vMGB and dMGB (brown halo).",
+                "Figure_Description_of_LabeledSite": "Fig. 2., Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "SG",
+                "Text_Description_of_LabeledSite": "in addition, spreads medially to the suprageniculate nucleus (SG) and the medial division of the medial geniculate body (mMGB)",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "mMGB",
+                "Text_Description_of_LabeledSite": "The main CT terminal field is located in vMGB and dMGB (Figs. 2A and 3) and, in addition, spreads medially to the suprageniculate nucleus (SG) and the medial division of the medial geniculate body (mMGB).",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "reticular nucleus of the thalamus",
+                "Text_Description_of_LabeledSite": "Much more numerous, the small endings were seen predominantly in vMGB, as well as in dMGB, SG, mMGB (Fig. 3) and the reticular nucleus of the thalamus.",
+                "Figure_Description_of_LabeledSite": "NA",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "PO",
+                "Text_Description_of_LabeledSite": "Panel C is a photomicrograph showing a small CT terminal field in PO, comprising both small endings (open arrows) and giant endings (arrows).",
+                "Figure_Description_of_LabeledSite": "Fig. 2., Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "MGB",
+                "Text_Description_of_LabeledSite": "Photomicrographs illustrating the BDA labeled CT terminal fields in the medial geniculate body (MGB).",
+                "Figure_Description_of_LabeledSite": "Fig. 2., Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "vMGB",
+                "Text_Description_of_LabeledSite": "Concerning the BDA retrograde labeling (Fig. 3), the majority of TC labeled neurons were in the main CT terminal field in vMGB and dMGB, but were also present in smaller CT terminal fields, in vMGB, mMGB and SG",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "dMGB",
+                "Text_Description_of_LabeledSite": "Concerning the BDA retrograde labeling (Fig. 3), the majority of TC labeled neurons were in the main CT terminal field in vMGB and dMGB, but were also present in smaller CT terminal fields, in vMGB, mMGB and SG",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "mMGB",
+                "Text_Description_of_LabeledSite": "Concerning the BDA retrograde labeling (Fig. 3), the majority of TC labeled neurons were in the main CT terminal field in vMGB and dMGB, but were also present in smaller CT terminal fields, in vMGB, mMGB and SG",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "SG",
+                "Text_Description_of_LabeledSite": "Concerning the BDA retrograde labeling (Fig. 3), the majority of TC labeled neurons were in the main CT terminal field in vMGB and dMGB, but were also present in smaller CT terminal fields, in vMGB, mMGB and SG",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              }
+            ]
+          }
+        ]
     },
     "Miyata_1983_https://doi.org/10.1016/0006-8993(83)90698-4": {
-
+        "Comment_on_Article": "",
+        "Contralateral_Connection": "NA",
+        "Article_Info": {
+          "DH_INDEX": 321,
+          "DOI-URL": "https://doi.org/10.1016/0006-8993(83)90698-4",
+          "PMID": "6626950",
+          "PMCID": "NA",
+          "Title": "HRP studies on thalamocortical neurons related to the cerebellocerebral projection in the monkey",
+          "First_Author": "Mayumi_Miyata",
+          "Pub_Year": 1983,
+          "Comment": ""
+        },
+        "Experimental_Subjects": {
+          "Subspecies": [
+            "M. fuscata",
+            "M. mulatta"
+          ],
+          "Source_Description": "This study was carried out in 7 monkeys (6 Macaca fuscata and 1 Macaca mulatta).",
+          "Comment": ""
+        },
+        "Injection_and_Labeling": [
+          {
+            "Injection": {
+              "Tracer": [
+                "HRP"
+              ],
+              "InjectionSite_by_Author": "the medial part of motor cortex (hindlimb area)",
+              "Text_Description_of_InjectionSite": "Fig. 1. Left uppermost diagram shows the injection site of HRP in the medial part of motor cortex (hindlimb area) in an upper view of the left hemisphere.",
+              "Figure_Description_of_InjectionSite": "Fig. 1.",
+              "Injection_Coverage_by_Author": {
+                "Cover_Adjacent_Regions": "N",
+                "Adjacent_Regions_Covered": "NAp",
+                "Text_Description": "In avoiding spread of HRP solution over other cortical areas, we injected in the middle part of each area. … In each injection site, HRP reaction products were abundant both in the cortex and in the immediately adjacent white matter. But HRP reaction products scarcely spread over other cortical areas, which was confirmed by making serial sections of the injection site.",
+                "Figure_Description": "NA",
+                "Comment": ""
+              },
+              "Comment_on_Injection": "",
+              "InjectionSite_M132": "To be recorded",
+              "InjectionSite_D99s": "To be recorded",
+              "InjectionSite_NMTs": "To be recorded",
+              "InjectionSite_PAXs": "To be recorded",
+              "InjectionSite_Mapping_Confidence": "To be recorded",
+              "All_Target_Regions_Examined": "Y"
+            },
+            "LabeledSites": [
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VLo",
+                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
+                "Figure_Description_of_LabeledSite": "Fig. 1.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VLc",
+                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
+                "Figure_Description_of_LabeledSite": "Fig. 1.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VPLo",
+                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
+                "Figure_Description_of_LabeledSite": "Fig. 1.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VLm",
+                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
+                "Figure_Description_of_LabeledSite": "Fig. 1.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "CI",
+                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
+                "Figure_Description_of_LabeledSite": "Fig. 1.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "MDmf",
+                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
+                "Figure_Description_of_LabeledSite": "Fig. 1.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "MDdc",
+                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
+                "Figure_Description_of_LabeledSite": "Fig. 1.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "MDpc",
+                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
+                "Figure_Description_of_LabeledSite": "Fig. 1.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "VLo",
+                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
+                "Figure_Description_of_LabeledSite": "Fig. 1.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "VPLo",
+                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
+                "Figure_Description_of_LabeledSite": "Fig. 1.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "MD",
+                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
+                "Figure_Description_of_LabeledSite": "Fig. 1.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              }
+            ]
+          },
+          {
+            "Injection": {
+              "Tracer": [
+                "HRP"
+              ],
+              "InjectionSite_by_Author": "5",
+              "Text_Description_of_InjectionSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+              "Figure_Description_of_InjectionSite": "Fig. 2.",
+              "Injection_Coverage_by_Author": {
+                "Cover_Adjacent_Regions": "N",
+                "Adjacent_Regions_Covered": "NAp",
+                "Text_Description": "In avoiding spread of HRP solution over other cortical areas, we injected in the middle part of each area. … In each injection site, HRP reaction products were abundant both in the cortex and in the immediately adjacent white matter. But HRP reaction products scarcely spread over other cortical areas, which was confirmed by making serial sections of the injection site.",
+                "Figure_Description": "NA",
+                "Comment": ""
+              },
+              "Comment_on_Injection": "",
+              "InjectionSite_M132": "To be recorded",
+              "InjectionSite_D99s": "To be recorded",
+              "InjectionSite_NMTs": "To be recorded",
+              "InjectionSite_PAXs": "To be recorded",
+              "InjectionSite_Mapping_Confidence": "To be recorded",
+              "All_Target_Regions_Examined": "Y"
+            },
+            "LabeledSites": [
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VLc",
+                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 2.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VPLo",
+                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 2.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VPLc",
+                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 2.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VLPs",
+                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 2.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "LP",
+                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 2.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "Pcn",
+                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 2.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "CI",
+                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 2.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "CM",
+                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 2.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "Csl",
+                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 2.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "MDdc",
+                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 2.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "Pulo",
+                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 2.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "Pulm",
+                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 2.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "VLc",
+                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 2.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "LP",
+                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 2.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "Pulo",
+                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 2.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "Pulm",
+                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 2.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              }
+            ]
+          },
+          {
+            "Injection": {
+              "Tracer": [
+                "HRP"
+              ],
+              "InjectionSite_by_Author": "the lateral part of precentral motor area (forelimb area)",
+              "Text_Description_of_InjectionSite": "Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
+              "Figure_Description_of_InjectionSite": "Fig. 3.",
+              "Injection_Coverage_by_Author": {
+                "Cover_Adjacent_Regions": "N",
+                "Adjacent_Regions_Covered": "NAp",
+                "Text_Description": "In avoiding spread of HRP solution over other cortical areas, we injected in the middle part of each area. … In each injection site, HRP reaction products were abundant both in the cortex and in the immediately adjacent white matter. But HRP reaction products scarcely spread over other cortical areas, which was confirmed by making serial sections of the injection site.",
+                "Figure_Description": "NA",
+                "Comment": ""
+              },
+              "Comment_on_Injection": "",
+              "InjectionSite_M132": "To be recorded",
+              "InjectionSite_D99s": "To be recorded",
+              "InjectionSite_NMTs": "To be recorded",
+              "InjectionSite_PAXs": "To be recorded",
+              "InjectionSite_Mapping_Confidence": "To be recorded",
+              "All_Target_Regions_Examined": "Y"
+            },
+            "LabeledSites": [
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VLo",
+                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VPLo",
+                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VLc",
+                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "CI",
+                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "MDmf",
+                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "MDdc",
+                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "CM",
+                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "CM",
+                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "CI",
+                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "MDpc",
+                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "MDmf",
+                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 3.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              }
+            ]
+          },
+          {
+            "Injection": {
+              "Tracer": [
+                "HRP"
+              ],
+              "InjectionSite_by_Author": "the lateral part of area 6",
+              "Text_Description_of_InjectionSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+              "Figure_Description_of_InjectionSite": "Fig. 4.",
+              "Injection_Coverage_by_Author": {
+                "Cover_Adjacent_Regions": "N",
+                "Adjacent_Regions_Covered": "NAp",
+                "Text_Description": "In avoiding spread of HRP solution over other cortical areas, we injected in the middle part of each area. … In each injection site, HRP reaction products were abundant both in the cortex and in the immediately adjacent white matter. But HRP reaction products scarcely spread over other cortical areas, which was confirmed by making serial sections of the injection site.",
+                "Figure_Description": "NA",
+                "Comment": ""
+              },
+              "Comment_on_Injection": "",
+              "InjectionSite_M132": "To be recorded",
+              "InjectionSite_D99s": "To be recorded",
+              "InjectionSite_NMTs": "To be recorded",
+              "InjectionSite_PAXs": "To be recorded",
+              "InjectionSite_Mapping_Confidence": "To be recorded",
+              "All_Target_Regions_Examined": "N"
+            },
+            "LabeledSites": [
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VA",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VLo",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VLc",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VLps",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "X",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "Pcn",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "CM",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "Cdc",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "Csl",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "MDpc",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "MDdc",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "Pcn",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "VA",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "VLc",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "X",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "VLp",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "MDpc",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "MDdc",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "Pf",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "LP",
+                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 4.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              }
+            ]
+          },
+          {
+            "Injection": {
+              "Tracer": [
+                "HRP"
+              ],
+              "InjectionSite_by_Author": "the border region of cortical areas 6 and 9",
+              "Text_Description_of_InjectionSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+              "Figure_Description_of_InjectionSite": "Fig. 5.",
+              "Injection_Coverage_by_Author": {
+                "Cover_Adjacent_Regions": "N",
+                "Adjacent_Regions_Covered": "NAp",
+                "Text_Description": "In avoiding spread of HRP solution over other cortical areas, we injected in the middle part of each area. … In each injection site, HRP reaction products were abundant both in the cortex and in the immediately adjacent white matter. But HRP reaction products scarcely spread over other cortical areas, which was confirmed by making serial sections of the injection site.",
+                "Figure_Description": "NA",
+                "Comment": ""
+              },
+              "Comment_on_Injection": "",
+              "InjectionSite_M132": "To be recorded",
+              "InjectionSite_D99s": "To be recorded",
+              "InjectionSite_NMTs": "To be recorded",
+              "InjectionSite_PAXs": "To be recorded",
+              "InjectionSite_Mapping_Confidence": "To be recorded",
+              "All_Target_Regions_Examined": "N"
+            },
+            "LabeledSites": [
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VLc",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VLps",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "X",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VAmc",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "AM",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "Pcn",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "Cdc",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "Csl",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "MDpc",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "MDmf",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "MDdc",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "Li",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "VLc",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "X",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "MD",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "MDpc",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "MDdc",
+                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
+                "Figure_Description_of_LabeledSite": "Fig. 5.",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              }
+            ]
+          }
+        ]
     },
     "McFarland_2002_https://doi.org/10.1523/JNEUROSCI.22-18-08117.2002": {
 

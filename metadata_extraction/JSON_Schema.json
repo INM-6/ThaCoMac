@@ -10,7 +10,7 @@
             "type": "string",
             "title": "Does this article report contralateral TC/CT connections?",
             "enum": [
-                "To be recorded", "Y", "N"
+                "To be recorded", "Y", "N", "NA"
             ],
             "default": "To be recorded"
         },
@@ -34,9 +34,8 @@
                 "PMID": {
                     "type": "string",
                     "title": "PMID:",
-                    "pattern": "[0-9]{8}|NA",
                     "default": "To be recorded",
-                    "minLength": 2
+                    "minLength": 3
                 },
                 "PMCID": {
                     "type": "string",
