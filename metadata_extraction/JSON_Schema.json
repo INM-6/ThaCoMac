@@ -6,6 +6,14 @@
             "type": "string",
             "title": "Comment on This Article:"
         },
+        "Contralateral_Connection_Reported": {
+            "type": "string",
+            "title": "Does this article report contralateral connections?",
+            "enum": [
+                "To be recorded", "Y", "N"
+            ],
+            "default": "To be recorded"
+        },
         "Article_Info": {
             "type": "object",
             "title": "Article Information",
@@ -81,7 +89,10 @@
                     "title": "Subspecies:",
                     "items": {
                         "type": "string",
-                        "enum": ["To be recorded", "NS", "M. mulatta", "M. fuscata", "M. nemestrina", "M. radiata", "M. arctoides", "M. fascicularis"]
+                        "enum": [
+                            "To be recorded", 
+                            "NS", "M. mulatta", "M. fuscata", "M. nemestrina", "M. radiata", "M. arctoides", "M. fascicularis"
+                        ]
                     }
                 },
                 "Source_Description": {
@@ -442,21 +453,13 @@
                     "LabeledSites"
                 ]
             }
-        },
-        "Contralateral_Connection_Reported": {
-            "type": "string",
-            "title": "Does this article report contralateral connections?",
-            "enum": [
-                "To be recorded", "Y", "N"
-            ],
-            "default": "To be recorded"
         }
     },
     "required": [
         "Comment_on_This_Article", 
+        "Contralateral_Connection_Reported", 
         "Article_Info", 
         "Experimental_Subjects", 
-        "Injection_and_Labeling", 
-        "Contralateral_Connection_Reported"
+        "Injection_and_Labeling"
     ]
 }
