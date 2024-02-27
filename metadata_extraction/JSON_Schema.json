@@ -2,13 +2,13 @@
     "title": "Article ID",
     "type": "object",
     "properties": {
-        "Comment_on_This_Article": {
+        "Comment_on_Article": {
             "type": "string",
             "title": "Comment on This Article:"
         },
-        "Contralateral_Connection_Reported": {
+        "Contralateral_Connection": {
             "type": "string",
-            "title": "Does this article report contralateral connections?",
+            "title": "Does this article report contralateral TC/CT connections?",
             "enum": [
                 "To be recorded", "Y", "N"
             ],
@@ -45,7 +45,7 @@
                     "default": "To be recorded",
                     "minLength": 2
                 },
-                "Article_Title": {
+                "Title": {
                     "type": "string",
                     "title": "Article Title:",
                     "default": "To be recorded",
@@ -57,7 +57,7 @@
                     "default": "To be recorded",
                     "minLength": 1               
                 },
-                "Publication_Year": {
+                "Pub_Year": {
                     "type": "integer",
                     "title": "Publication Year:",
                     "minimum": 1936,
@@ -74,9 +74,9 @@
                 "DOI-URL", 
                 "PMID", 
                 "PMCID", 
-                "Article_Title", 
+                "Title", 
                 "First_Author", 
-                "Publication_Year", 
+                "Pub_Year",
                 "Comment"
             ]
         },
@@ -128,7 +128,10 @@
                                 "title": "Tracer:",
                                 "items": {
                                     "type": "string",
-                                    "enum": ["To be recorded", "AAV", "BDA", "Biocytin", "Bis", "CTB", "CTB-gold", "CTB-green", "CTB-red", "CVS strain", "DG", "DR", "DT", "DY", "DY . 2HCl", "DY/NY", "EB", "FB", "FE", "FG", "FR", "FR-DA", "FS", "FS-dextran", "GLM", "HRP", "LY", "LYD", "NY", "PHA-L", "PI", "RB", "RGB", "RLM", "TAA", "TB", "WGA", "WGA-HRP", "[(35)S]-Methionine", "[^3H]-Fucose", "[^3H]-Leucine", "[^3H]-Lysine", "[^3H]-Proline", "[^3H]-WGA"],
+                                    "enum": [
+                                        "To be recorded", 
+                                        "AAV", "BDA", "Biocytin", "Bis", "CTB", "CTB-gold", "CTB-green", "CTB-red", "CVS strain", "DG", "DR", "DT", "DY", "DY . 2HCl", "DY/NY", "EB", "FB", "FE", "FG", "FR", "FR-DA", "FS", "FS-dextran", "GLM", "HRP", "LY", "LYD", "NY", "PHA-L", "PI", "RB", "RGB", "RLM", "TAA", "TB", "WGA", "WGA-HRP", "[(35)S]-Methionine", "[^3H]-Fucose", "[^3H]-Leucine", "[^3H]-Lysine", "[^3H]-Proline", "[^3H]-WGA"
+                                    ],
                                     "default": "To be recorded"
                                 }
                             },
@@ -156,7 +159,7 @@
                                 "properties": {
                                     "Cover_Adjacent_Regions": {
                                         "type": "string",
-                                        "title": "Injection covered adjacent regions?",
+                                        "title": "Does this injection cover adjacent regions?",
                                         "enum": ["To be recorded", "NA", "Y", "N"],
                                         "default": "To be recorded"
                                     },
@@ -281,7 +284,7 @@
                             "InjectionSite_M132", 
                             "InjectionSite_D99s",
                             "InjectionSite_NMTs",
-                            "InjectionSite_PAXs",
+                            "InjectionSite_PAXs", 
                             "InjectionSite_Mapping_Confidence", 
                             "All_Target_Regions_Examined"
                         ]
@@ -301,7 +304,7 @@
                                 },
                                 "LabeledSite_by_Author": {
                                     "type": "string",
-                                    "title": "LabeledSite Described by Author:",
+                                    "title": "LabeledSite by Author:",
                                     "default": "To be recorded",
                                     "minLength": 1
                                 },
@@ -456,8 +459,8 @@
         }
     },
     "required": [
-        "Comment_on_This_Article", 
-        "Contralateral_Connection_Reported", 
+        "Comment_on_Article", 
+        "Contralateral_Connection", 
         "Article_Info", 
         "Experimental_Subjects", 
         "Injection_and_Labeling"
