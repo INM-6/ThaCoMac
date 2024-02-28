@@ -1,7 +1,6 @@
 {
     "Rouiller_2004_https://doi.org/10.1016/j.neulet.2004.01.008": {
         "Comment_on_Article": "D: the thalamic parcellation reference is not explicitely specified in the article.",
-        "Contralateral_Connection": "N",
         "Article_Info": {
           "DH_INDEX": 120,
           "DOI-URL": "https://doi.org/10.1016/j.neulet.2004.01.008",
@@ -47,8 +46,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "vMGB",
-                "Text_Description_of_LabeledSite": "Panel A shows the main and densest CT terminal field located in vMGB and dMGB (brown halo).",
-                "Figure_Description_of_LabeledSite": "Fig. 2., Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -66,8 +63,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "dMGB",
-                "Text_Description_of_LabeledSite": "Panel A shows the main and densest CT terminal field located in vMGB and dMGB (brown halo).",
-                "Figure_Description_of_LabeledSite": "Fig. 2., Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -85,8 +80,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "SG",
-                "Text_Description_of_LabeledSite": "in addition, spreads medially to the suprageniculate nucleus (SG) and the medial division of the medial geniculate body (mMGB)",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -104,8 +97,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "mMGB",
-                "Text_Description_of_LabeledSite": "The main CT terminal field is located in vMGB and dMGB (Figs. 2A and 3) and, in addition, spreads medially to the suprageniculate nucleus (SG) and the medial division of the medial geniculate body (mMGB).",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -123,8 +114,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "reticular nucleus of the thalamus",
-                "Text_Description_of_LabeledSite": "Much more numerous, the small endings were seen predominantly in vMGB, as well as in dMGB, SG, mMGB (Fig. 3) and the reticular nucleus of the thalamus.",
-                "Figure_Description_of_LabeledSite": "NA",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -142,8 +131,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "PO",
-                "Text_Description_of_LabeledSite": "Panel C is a photomicrograph showing a small CT terminal field in PO, comprising both small endings (open arrows) and giant endings (arrows).",
-                "Figure_Description_of_LabeledSite": "Fig. 2., Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -161,8 +148,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "MGB",
-                "Text_Description_of_LabeledSite": "Photomicrographs illustrating the BDA labeled CT terminal fields in the medial geniculate body (MGB).",
-                "Figure_Description_of_LabeledSite": "Fig. 2., Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -180,8 +165,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "vMGB",
-                "Text_Description_of_LabeledSite": "Concerning the BDA retrograde labeling (Fig. 3), the majority of TC labeled neurons were in the main CT terminal field in vMGB and dMGB, but were also present in smaller CT terminal fields, in vMGB, mMGB and SG",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -199,8 +182,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "dMGB",
-                "Text_Description_of_LabeledSite": "Concerning the BDA retrograde labeling (Fig. 3), the majority of TC labeled neurons were in the main CT terminal field in vMGB and dMGB, but were also present in smaller CT terminal fields, in vMGB, mMGB and SG",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -218,8 +199,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "mMGB",
-                "Text_Description_of_LabeledSite": "Concerning the BDA retrograde labeling (Fig. 3), the majority of TC labeled neurons were in the main CT terminal field in vMGB and dMGB, but were also present in smaller CT terminal fields, in vMGB, mMGB and SG",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -237,8 +216,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "SG",
-                "Text_Description_of_LabeledSite": "Concerning the BDA retrograde labeling (Fig. 3), the majority of TC labeled neurons were in the main CT terminal field in vMGB and dMGB, but were also present in smaller CT terminal fields, in vMGB, mMGB and SG",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -259,7 +236,6 @@
     },
     "Miyata_1983_https://doi.org/10.1016/0006-8993(83)90698-4": {
         "Comment_on_Article": "",
-        "Contralateral_Connection": "NA",
         "Article_Info": {
           "DH_INDEX": 321,
           "DOI-URL": "https://doi.org/10.1016/0006-8993(83)90698-4",
@@ -306,8 +282,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VLo",
-                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
-                "Figure_Description_of_LabeledSite": "Fig. 1.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -325,8 +299,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VLc",
-                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
-                "Figure_Description_of_LabeledSite": "Fig. 1.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -344,8 +316,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VPLo",
-                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
-                "Figure_Description_of_LabeledSite": "Fig. 1.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -363,8 +333,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VLm",
-                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
-                "Figure_Description_of_LabeledSite": "Fig. 1.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -382,8 +350,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "CI",
-                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
-                "Figure_Description_of_LabeledSite": "Fig. 1.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -401,8 +367,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "MDmf",
-                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
-                "Figure_Description_of_LabeledSite": "Fig. 1.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -420,8 +384,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "MDdc",
-                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
-                "Figure_Description_of_LabeledSite": "Fig. 1.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -439,8 +401,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "MDpc",
-                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
-                "Figure_Description_of_LabeledSite": "Fig. 1.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -458,8 +418,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "VLo",
-                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
-                "Figure_Description_of_LabeledSite": "Fig. 1.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -477,8 +435,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "VPLo",
-                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
-                "Figure_Description_of_LabeledSite": "Fig. 1.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -496,8 +452,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "MD",
-                "Text_Description_of_LabeledSite": "Retrogradely labelled cells in the lateral parts of VLo, VLc, VPLo and VLm, and in CI, MDmf, MDdc and MDpc are illustrated by dots, and anterogradely labelled terminals in VLo, VPLo and MD by vertical lines,",
-                "Figure_Description_of_LabeledSite": "Fig. 1.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -541,8 +495,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VLc",
-                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 2.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -560,8 +512,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VPLo",
-                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 2.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -579,8 +529,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VPLc",
-                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 2.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -598,8 +546,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VLPs",
-                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 2.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -617,8 +563,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "LP",
-                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 2.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -636,8 +580,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "Pcn",
-                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 2.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -655,8 +597,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "CI",
-                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 2.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -674,8 +614,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "CM",
-                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 2.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -693,8 +631,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "Csl",
-                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 2.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -712,8 +648,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "MDdc",
-                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 2.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -731,8 +665,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "Pulo",
-                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 2.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -750,8 +682,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "Pulm",
-                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 2.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -769,8 +699,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "VLc",
-                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 2.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -788,8 +716,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "LP",
-                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 2.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -807,8 +733,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "Pulo",
-                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 2.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -826,8 +750,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "Pulm",
-                "Text_Description_of_LabeledSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 2.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -871,8 +793,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VLo",
-                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -890,8 +810,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VPLo",
-                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -909,8 +827,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VLc",
-                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -928,8 +844,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "CI",
-                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -947,8 +861,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "MDmf",
-                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -966,8 +878,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "MDdc",
-                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -985,8 +895,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "CM",
-                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1004,8 +912,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "CM",
-                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1023,8 +929,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "CI",
-                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1042,8 +946,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "MDpc",
-                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1061,8 +963,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "MDmf",
-                "Text_Description_of_LabeledSite": "Fig. 3. Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 3.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1106,8 +1006,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VA",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1125,8 +1023,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VLo",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1144,8 +1040,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VLc",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1163,8 +1057,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VLps",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1182,8 +1074,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "X",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1201,8 +1091,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "Pcn",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1220,8 +1108,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "CM",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1239,8 +1125,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "Cdc",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1258,8 +1142,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "Csl",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1277,8 +1159,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "MDpc",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1296,8 +1176,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "MDdc",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1315,8 +1193,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "Pcn",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1334,8 +1210,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "VA",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1353,8 +1227,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "VLc",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1372,8 +1244,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "X",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1391,8 +1261,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "VLp",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1410,8 +1278,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "MDpc",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1429,8 +1295,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "MDdc",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1448,8 +1312,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "Pf",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1467,8 +1329,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "LP",
-                "Text_Description_of_LabeledSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 4.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1512,8 +1372,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VLc",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1531,8 +1389,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VLps",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1550,8 +1406,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "X",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1569,8 +1423,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "VAmc",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1588,8 +1440,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "AM",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1607,8 +1457,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "Pcn",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1626,8 +1474,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "Cdc",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1645,8 +1491,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "Csl",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1664,8 +1508,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "MDpc",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1683,8 +1525,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "MDmf",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1702,8 +1542,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "MDdc",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1721,8 +1559,6 @@
               {
                 "TT_Direction": "Retrograde",
                 "LabeledSite_by_Author": "Li",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1740,8 +1576,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "VLc",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1759,8 +1593,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "X",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1778,8 +1610,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "MD",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1797,8 +1627,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "MDpc",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1816,8 +1644,6 @@
               {
                 "TT_Direction": "Anterograde",
                 "LabeledSite_by_Author": "MDdc",
-                "Text_Description_of_LabeledSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-                "Figure_Description_of_LabeledSite": "Fig. 5.",
                 "Comment_on_LabeledSite": "",
                 "LabeledSite_M132": "To be recorded",
                 "LabeledSite_D99s": "To be recorded",
@@ -1837,10 +1663,830 @@
         ]
     },
     "McFarland_2002_https://doi.org/10.1523/JNEUROSCI.22-18-08117.2002": {
-
+        "Comment_on_Article": "",
+        "Article_Info": {
+          "DH_INDEX": 329,
+          "DOI-URL": "https://doi.org/10.1523/JNEUROSCI.22-18-08117.2002",
+          "PMID": "12223566",
+          "PMCID": "PMC6758100",
+          "Title": "Thalamic Relay Nuclei of the Basal Ganglia Form Both Reciprocal and Nonreciprocal Cortical Connections, Linking Multiple Frontal Cortical Areas",
+          "First_Author": "Nikolaus R._McFarland",
+          "Pub_Year": 2002,
+          "Comment": ""
+        },
+        "Experimental_Subjects": {
+          "Subspecies": [
+            "M. nemestrina"
+          ],
+          "Source_Description": "Surgery and tissue preparation. Twenty adult macaque monkeys (Macaca nemestrina) were used for these tracing experiments.",
+          "Comment": ""
+        },
+        "Injection_and_Labeling": []
     },
     "Cappe_2007_https://doi.org/10.1016/j.neuroscience.2007.02.033": {
-
+        "Comment_on_Article": "",
+        "Article_Info": {
+          "DH_INDEX": 42,
+          "DOI-URL": "https://doi.org/10.1016/j.neuroscience.2007.02.033",
+          "PMID": "17395383",
+          "PMCID": "NA",
+          "Title": "Thalamocortical and the dual pattern of corticothalamic projections of the posterior parietal cortex in macaque monkeys",
+          "First_Author": "C._Cappe",
+          "Pub_Year": 2007,
+          "Comment": ""
+        },
+        "Experimental_Subjects": {
+          "Subspecies": [
+            "M. mulatta",
+            "M. fascicularis"
+          ],
+          "Source_Description": "The present study was conducted on two adult macaque monkeys (one Macaca mulatta and one Macaca fascicularis), 3 and 4 years old and weighing 3 and 4 kg.",
+          "Comment": ""
+        },
+        "Injection_and_Labeling": [
+          {
+            "Injection": {
+              "Tracer": [
+                "BDA"
+              ],
+              "InjectionSite_by_Author": "PE",
+              "Text_Description_of_InjectionSite": "After BDA injection in area PE (MK1, Fig. 3; Fig. 5G and H), the main CT projection formed by small endings terminated in lateral posterior nucleus (LP), VPL and PuM.",
+              "Figure_Description_of_InjectionSite": "Fig. 2",
+              "Injection_Coverage_by_Author": {
+                "Cover_Adjacent_Regions": "NA",
+                "Adjacent_Regions_Covered": "NAp",
+                "Text_Description": "NA",
+                "Figure_Description": "NA",
+                "Comment": ""
+              },
+              "Comment_on_Injection": "",
+              "InjectionSite_M132": "To be recorded",
+              "InjectionSite_D99s": "To be recorded",
+              "InjectionSite_NMTs": "To be recorded",
+              "InjectionSite_PAXs": "To be recorded",
+              "InjectionSite_Mapping_Confidence": "To be recorded",
+              "All_Target_Regions_Examined": "Y"
+            },
+            "LabeledSites": [
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "LP",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "VPL",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "PuM",
+                "Figure_Description_of_LabeledSite": "Fig. 3, Fig. 5",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "VLpd",
+                "Figure_Description_of_LabeledSite": "Fig. 3, Fig. 5",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "CL",
+                "Figure_Description_of_LabeledSite": "To be recorded",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "CM",
+                "Figure_Description_of_LabeledSite": "Fig. 3, Fig. 5",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "LP",
+                "Figure_Description_of_LabeledSite": "To be recorded",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "PuM",
+                "Figure_Description_of_LabeledSite": "To be recorded",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VPL",
+                "Figure_Description_of_LabeledSite": "To be recorded",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "CL",
+                "Figure_Description_of_LabeledSite": "To be recorded",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "MD",
+                "Figure_Description_of_LabeledSite": "To be recorded",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              }
+            ]
+          },
+          {
+            "Injection": {
+              "Tracer": [
+                "FR"
+              ],
+              "InjectionSite_by_Author": "PEa",
+              "Text_Description_of_InjectionSite": "Fig. 3. Distribution of anterograde (small and giant CT endings) and retrograde (TC neurons) labeling in the thalamus, after injections of BDA (open black circles) and FR (open red squares) in areas PE and PEa",
+              "Figure_Description_of_InjectionSite": "Fig. 2",
+              "Injection_Coverage_by_Author": {
+                "Cover_Adjacent_Regions": "NA",
+                "Adjacent_Regions_Covered": "NAp",
+                "Text_Description": "NA",
+                "Figure_Description": "NA",
+                "Comment": ""
+              },
+              "Comment_on_Injection": "",
+              "InjectionSite_M132": "To be recorded",
+              "InjectionSite_D99s": "To be recorded",
+              "InjectionSite_NMTs": "To be recorded",
+              "InjectionSite_PAXs": "To be recorded",
+              "InjectionSite_Mapping_Confidence": "To be recorded",
+              "All_Target_Regions_Examined": "N"
+            },
+            "LabeledSites": [
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "LP",
+                "Figure_Description_of_LabeledSite": "To be recorded",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "PuM",
+                "Figure_Description_of_LabeledSite": "To be recorded",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "PuL",
+                "Figure_Description_of_LabeledSite": "To be recorded",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "CL",
+                "Figure_Description_of_LabeledSite": "To be recorded",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "MD",
+                "Figure_Description_of_LabeledSite": "To be recorded",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VPL",
+                "Figure_Description_of_LabeledSite": "To be recorded",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              }
+            ]
+          },
+          {
+            "Injection": {
+              "Tracer": [
+                "BDA"
+              ],
+              "InjectionSite_by_Author": "PEa",
+              "Text_Description_of_InjectionSite": "Fig. 4. Distribution of anterograde (small and giant CT endings) and retrograde (TC neurons) labeling in MK2 in the thalamus after injections of WGA (open black circles) and BDA (open red squares) in areas PE and PEa, respectively.",
+              "Figure_Description_of_InjectionSite": "Fig. 2",
+              "Injection_Coverage_by_Author": {
+                "Cover_Adjacent_Regions": "NA",
+                "Adjacent_Regions_Covered": "NAp",
+                "Text_Description": "NA",
+                "Figure_Description": "NA",
+                "Comment": ""
+              },
+              "Comment_on_Injection": "",
+              "InjectionSite_M132": "To be recorded",
+              "InjectionSite_D99s": "To be recorded",
+              "InjectionSite_NMTs": "To be recorded",
+              "InjectionSite_PAXs": "To be recorded",
+              "InjectionSite_Mapping_Confidence": "To be recorded",
+              "All_Target_Regions_Examined": "Y"
+            },
+            "LabeledSites": [
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "LP",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "VPL",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "PuA",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "PuL",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "PuM",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "VPI",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "CL",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "MD",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Anterograde",
+                "LabeledSite_by_Author": "CM",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "LP",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "PuM",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "PuL",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VPL",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "CL",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              }
+            ]
+          },
+          {
+            "Injection": {
+              "Tracer": [
+                "WGA"
+              ],
+              "InjectionSite_by_Author": "PE",
+              "Text_Description_of_InjectionSite": "To be recorded",
+              "Figure_Description_of_InjectionSite": "To be recorded",
+              "Injection_Coverage_by_Author": {
+                "Cover_Adjacent_Regions": "NA",
+                "Adjacent_Regions_Covered": "NAp",
+                "Text_Description": "NA",
+                "Figure_Description": "NA",
+                "Comment": ""
+              },
+              "Comment_on_Injection": "",
+              "InjectionSite_M132": "To be recorded",
+              "InjectionSite_D99s": "To be recorded",
+              "InjectionSite_NMTs": "To be recorded",
+              "InjectionSite_PAXs": "To be recorded",
+              "InjectionSite_Mapping_Confidence": "To be recorded",
+              "All_Target_Regions_Examined": "Y"
+            },
+            "LabeledSites": [
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "LP",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "PuM",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VPL",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "MD",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "CL",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "CM",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "PuA",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              },
+              {
+                "TT_Direction": "Retrograde",
+                "LabeledSite_by_Author": "VPM",
+                "Comment_on_LabeledSite": "",
+                "LabeledSite_M132": "To be recorded",
+                "LabeledSite_D99s": "To be recorded",
+                "LabeledSite_NMTs": "To be recorded",
+                "LabeledSite_PAXs": "To be recorded",
+                "LabeledSite_Mapping_Confidence": "To be recorded",
+                "Connection_Strength": {
+                  "Qual_CS": "To be recorded",
+                  "Source_Description_of_Qual_CS": "To be recorded",
+                  "Quan_CS": "To be recorded",
+                  "Source_Description_of_Quan_CS": "To be recorded",
+                  "Comment_on_Connection_Strength": ""
+                }
+              }
+            ]
+          }
+        ]
     },
     "Padberg_2009_https://doi.org/10.1093/cercor/bhn229": {
 

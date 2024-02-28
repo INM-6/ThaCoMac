@@ -6,14 +6,6 @@
             "type": "string",
             "title": "Comment on This Article:"
         },
-        "Contralateral_Connection": {
-            "type": "string",
-            "title": "Does this article report contralateral TC/CT connections?",
-            "enum": [
-                "To be recorded", "Y", "N", "NA"
-            ],
-            "default": "To be recorded"
-        },
         "Article_Info": {
             "type": "object",
             "title": "Article Information",
@@ -307,18 +299,6 @@
                                     "default": "To be recorded",
                                     "minLength": 1
                                 },
-                                "Text_Description_of_LabeledSite": {
-                                    "type": "string",
-                                    "title": "Text Description of LabeledSite:",
-                                    "default": "To be recorded",
-                                    "minLength": 2
-                                },
-                                "Figure_Description_of_LabeledSite": {
-                                    "type": "string",
-                                    "title": "Figure Description of LabeledSite:",
-                                    "default": "To be recorded",
-                                    "minLength": 2
-                                },
                                 "Comment_on_LabeledSite": {
                                     "type": "string",
                                     "title": "Comment on LabeledSite:"
@@ -437,8 +417,6 @@
                             "required": [
                                 "TT_Direction", 
                                 "LabeledSite_by_Author", 
-                                "Text_Description_of_LabeledSite", 
-                                "Figure_Description_of_LabeledSite", 
                                 "Comment_on_LabeledSite", 
                                 "LabeledSite_M132", 
                                 "LabeledSite_D99s",
@@ -458,8 +436,7 @@
         }
     },
     "required": [
-        "Comment_on_Article", 
-        "Contralateral_Connection", 
+        "Comment_on_Article",  
         "Article_Info", 
         "Experimental_Subjects", 
         "Injection_and_Labeling"
