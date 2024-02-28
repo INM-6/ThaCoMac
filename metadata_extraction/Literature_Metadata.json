@@ -39,8 +39,7 @@
               "InjectionSite_D99s": "To be recorded",
               "InjectionSite_NMTs": "To be recorded",
               "InjectionSite_PAXs": "To be recorded",
-              "InjectionSite_Mapping_Confidence": "To be recorded",
-              "All_Target_Regions_Examined": "Y"
+              "InjectionSite_Mapping_Confidence": "To be recorded"
             },
             "LabeledSites": [
               {
@@ -275,8 +274,7 @@
               "InjectionSite_D99s": "To be recorded",
               "InjectionSite_NMTs": "To be recorded",
               "InjectionSite_PAXs": "To be recorded",
-              "InjectionSite_Mapping_Confidence": "To be recorded",
-              "All_Target_Regions_Examined": "Y"
+              "InjectionSite_Mapping_Confidence": "To be recorded"
             },
             "LabeledSites": [
               {
@@ -488,8 +486,7 @@
               "InjectionSite_D99s": "To be recorded",
               "InjectionSite_NMTs": "To be recorded",
               "InjectionSite_PAXs": "To be recorded",
-              "InjectionSite_Mapping_Confidence": "To be recorded",
-              "All_Target_Regions_Examined": "Y"
+              "InjectionSite_Mapping_Confidence": "To be recorded"
             },
             "LabeledSites": [
               {
@@ -786,8 +783,7 @@
               "InjectionSite_D99s": "To be recorded",
               "InjectionSite_NMTs": "To be recorded",
               "InjectionSite_PAXs": "To be recorded",
-              "InjectionSite_Mapping_Confidence": "To be recorded",
-              "All_Target_Regions_Examined": "Y"
+              "InjectionSite_Mapping_Confidence": "To be recorded"
             },
             "LabeledSites": [
               {
@@ -999,8 +995,7 @@
               "InjectionSite_D99s": "To be recorded",
               "InjectionSite_NMTs": "To be recorded",
               "InjectionSite_PAXs": "To be recorded",
-              "InjectionSite_Mapping_Confidence": "To be recorded",
-              "All_Target_Regions_Examined": "N"
+              "InjectionSite_Mapping_Confidence": "To be recorded"
             },
             "LabeledSites": [
               {
@@ -1365,8 +1360,7 @@
               "InjectionSite_D99s": "To be recorded",
               "InjectionSite_NMTs": "To be recorded",
               "InjectionSite_PAXs": "To be recorded",
-              "InjectionSite_Mapping_Confidence": "To be recorded",
-              "All_Target_Regions_Examined": "N"
+              "InjectionSite_Mapping_Confidence": "To be recorded"
             },
             "LabeledSites": [
               {
@@ -1724,8 +1718,7 @@
               "InjectionSite_D99s": "To be recorded",
               "InjectionSite_NMTs": "To be recorded",
               "InjectionSite_PAXs": "To be recorded",
-              "InjectionSite_Mapping_Confidence": "To be recorded",
-              "All_Target_Regions_Examined": "Y"
+              "InjectionSite_Mapping_Confidence": "To be recorded"
             },
             "LabeledSites": [
               {
@@ -1946,8 +1939,7 @@
               "InjectionSite_D99s": "To be recorded",
               "InjectionSite_NMTs": "To be recorded",
               "InjectionSite_PAXs": "To be recorded",
-              "InjectionSite_Mapping_Confidence": "To be recorded",
-              "All_Target_Regions_Examined": "N"
+              "InjectionSite_Mapping_Confidence": "To be recorded"
             },
             "LabeledSites": [
               {
@@ -2080,8 +2072,7 @@
               "InjectionSite_D99s": "To be recorded",
               "InjectionSite_NMTs": "To be recorded",
               "InjectionSite_PAXs": "To be recorded",
-              "InjectionSite_Mapping_Confidence": "To be recorded",
-              "All_Target_Regions_Examined": "Y"
+              "InjectionSite_Mapping_Confidence": "To be recorded"
             },
             "LabeledSites": [
               {
@@ -2344,8 +2335,7 @@
               "InjectionSite_D99s": "To be recorded",
               "InjectionSite_NMTs": "To be recorded",
               "InjectionSite_PAXs": "To be recorded",
-              "InjectionSite_Mapping_Confidence": "To be recorded",
-              "All_Target_Regions_Examined": "Y"
+              "InjectionSite_Mapping_Confidence": "To be recorded"
             },
             "LabeledSites": [
               {
@@ -2489,7 +2479,1590 @@
         ]
     },
     "Padberg_2009_https://doi.org/10.1093/cercor/bhn229": {
-
+      "Comment_on_Article": "",
+      "Article_Info": {
+        "DH_INDEX": 53,
+        "DOI-URL": "https://doi.org/10.1093/cercor/bhn229",
+        "PMID": "19221145",
+        "PMCID": "PMC2722424",
+        "Title": "Thalamocortical Connections of Parietal Somatosensory Cortical Fields in Macaque Monkeys are Highly Divergent and Convergent",
+        "First_Author": "Jeffrey_Padberg",
+        "Pub_Year": 2009,
+        "Comment": ""
+      },
+      "Experimental_Subjects": {
+        "Subspecies": [
+          "M. mulatta",
+          "M. radiata"
+        ],
+        "Source_Description": "Thalamocortical connections of areas 3a, 3b, 1, 2, and 5 were examined in 8 macaque monkeys (7 Macaca mulatta and 1 Macaca radiata)",
+        "Comment": ""
+      },
+      "Injection_and_Labeling": [
+        {
+          "Injection": {
+            "Tracer": [
+              "FB"
+            ],
+            "InjectionSite_by_Author": "the representation of glabrous middle D3 of 3b",
+            "Text_Description_of_InjectionSite": "The injection of FB was centered in the representation of glabrous middle D3",
+            "Figure_Description_of_InjectionSite": "Figure 8",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "The injection of FB was centered in the representation of glabrous middle D3",
+              "Figure_Description": "Figure 8",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPl",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPi",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPm",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "DY"
+            ],
+            "InjectionSite_by_Author": "the representation of the proximal glabrous thenar pad of 3b",
+            "Text_Description_of_InjectionSite": "the injection of DY was centered in the representation of the proximal glabrous thenar pad",
+            "Figure_Description_of_InjectionSite": "Figure 8",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "the injection of DY was centered in the representation of the proximal glabrous thenar pad",
+              "Figure_Description": "Figure 8",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPl",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FR"
+            ],
+            "InjectionSite_by_Author": "the representation of the dorsal digits 3-5 of 3b",
+            "Text_Description_of_InjectionSite": "and the injection of FR was centered in the representation of the dorsal digits 3-5",
+            "Figure_Description_of_InjectionSite": "Figure 8",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "and the injection of FR was centered in the representation of the dorsal digits 3--5",
+              "Figure_Description": "Figure 8",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "labeled VPm from FRinjection in the representation of the dorsal digits 3-5 of 3b is ignored due to scarcity",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPl",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPi",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FR"
+            ],
+            "InjectionSite_by_Author": "distal D3 and D4 in area 3a",
+            "Text_Description_of_InjectionSite": "Injections were centered in the representation of distal D4 in areas 3b and 1, and distal D3 and D4 in areas 3a and 2",
+            "Figure_Description_of_InjectionSite": "Figure 9",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "Injections were centered in the representation of distal D4 in areas 3b and 1, and distal D3 and D4 in areas 3a and 2",
+              "Figure_Description": "Figure 9",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPl",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VLp",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "GB"
+            ],
+            "InjectionSite_by_Author": "the representation of distal D4 in areas 3b",
+            "Text_Description_of_InjectionSite": "Injections were centered in the representation of distal D4 in areas 3b and 1, and distal D3 and D4 in areas 3a and 2",
+            "Figure_Description_of_InjectionSite": "Figure 9",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "Injections were centered in the representation of distal D4 in areas 3b and 1, and distal D3 and D4 in areas 3a and 2",
+              "Figure_Description": "Figure 9",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "labeled VPs from injection in 3b is ignored due to scarcity",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPl",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "Pla",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FB"
+            ],
+            "InjectionSite_by_Author": "the representation of distal D4 in area 1",
+            "Text_Description_of_InjectionSite": "Injections were centered in the representation of distal D4 in areas 3b and 1, and distal D3 and D4 in areas 3a and 2",
+            "Figure_Description_of_InjectionSite": "Figure 9",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "Injections were centered in the representation of distal D4 in areas 3b and 1, and distal D3 and D4 in areas 3a and 2",
+              "Figure_Description": "Figure 9",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPl",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPi",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VLp",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "Pla",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "DY"
+            ],
+            "InjectionSite_by_Author": "distal D3 and D4 in area 2",
+            "Text_Description_of_InjectionSite": "Injections were centered in the representation of distal D4 in areas 3b and 1, and distal D3 and D4 in areas 3a and 2",
+            "Figure_Description_of_InjectionSite": "Figure 9",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "Injections were centered in the representation of distal D4 in areas 3b and 1, and distal D3 and D4 in areas 3a and 2",
+              "Figure_Description": "Figure 9",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPl",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPi",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FB"
+            ],
+            "InjectionSite_by_Author": "D2-4 in area 3a",
+            "Text_Description_of_InjectionSite": "Injections were centered in the representation of distal D3 in areas 3b and 1, and in D2--4 in areas 3a and 2.",
+            "Figure_Description_of_InjectionSite": "Figure 10",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "Injections were centered in the representation of distal D3 in areas 3b and 1, and in D2--4 in areas 3a and 2.",
+              "Figure_Description": "Figure 10",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPl",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VLp",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "Pla",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "GB"
+            ],
+            "InjectionSite_by_Author": "the representation of distal D3 in area 3b",
+            "Text_Description_of_InjectionSite": "Injections were centered in the representation of distal D3 in areas 3b and 1, and in D2--4 in areas 3a and 2.",
+            "Figure_Description_of_InjectionSite": "Figure 10",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "Injections were centered in the representation of distal D3 in areas 3b and 1, and in D2--4 in areas 3a and 2.",
+              "Figure_Description": "Figure 10",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPl",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "Pla",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FR"
+            ],
+            "InjectionSite_by_Author": "the representation of distal D3 in area 1",
+            "Text_Description_of_InjectionSite": "Injections were centered in the representation of distal D3 in areas 3b and 1, and in D2--4 in areas 3a and 2.",
+            "Figure_Description_of_InjectionSite": "Figure 10",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "Injections were centered in the representation of distal D3 in areas 3b and 1, and in D2--4 in areas 3a and 2.",
+              "Figure_Description": "Figure 10",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPl",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "Pla",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPi",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FG"
+            ],
+            "InjectionSite_by_Author": "D2-4 in area 2",
+            "Text_Description_of_InjectionSite": "Injections were centered in the representation of distal D3 in areas 3b and 1, and in D2--4 in areas 3a and 2.",
+            "Figure_Description_of_InjectionSite": "Figure 10",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "Injections were centered in the representation of distal D3 in areas 3b and 1, and in D2--4 in areas 3a and 2.",
+              "Figure_Description": "Figure 10",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPl",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FR"
+            ],
+            "InjectionSite_by_Author": "the representation of glabrous digit 2 in area 2",
+            "Text_Description_of_InjectionSite": "Digital images of injections of FR (red) into the representation of glabrous digit 2 and FE (green) into the representation of glabrous digit 1 in area 2",
+            "Figure_Description_of_InjectionSite": "Figure 12",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "Figure 12",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "Pla",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPl",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPi",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FE"
+            ],
+            "InjectionSite_by_Author": "the representation of glabrous digit 1 in area 2",
+            "Text_Description_of_InjectionSite": "Digital images of injections of FR (red) into the representation of glabrous digit 2 and FE (green) into the representation of glabrous digit 1 in area 2",
+            "Figure_Description_of_InjectionSite": "Figure 12",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "Figure 12",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "Pla",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPl",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FE"
+            ],
+            "InjectionSite_by_Author": "the representation of glabrous distal digit 1 of area 2",
+            "Text_Description_of_InjectionSite": "Digital images of an injection of FE (green) placed in the representation of glabrous distal digit 1 of area 2 and an injection of FR (red) placed in the D1 representation of area 5",
+            "Figure_Description_of_InjectionSite": "Figure 14",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "Figure 14",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPl",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "Pla",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VLp",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FR"
+            ],
+            "InjectionSite_by_Author": "the D1 representation of area 5",
+            "Text_Description_of_InjectionSite": "Digital images of an injection of FE (green) placed in the representation of glabrous distal digit 1 of area 2 and an injection of FR (red) placed in the D1 representation of area 5",
+            "Figure_Description_of_InjectionSite": "Figure 14",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "Figure 14",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "Pla",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "LP",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "DY"
+            ],
+            "InjectionSite_by_Author": "the proximal palm representation of area 2",
+            "Text_Description_of_InjectionSite": "An injection of DY was centered in the proximal palm representation of area 2 and an injection of CTB was centered in radial hand, wrist and dorsal d1 of area 5",
+            "Figure_Description_of_InjectionSite": "Figure 15",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "An injection of DY was centered in the proximal palm representation of area 2 and an injection of CTB was centered in radial hand, wrist and dorsal d1 of area 5",
+              "Figure_Description": "Figure 15",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "CTB"
+            ],
+            "InjectionSite_by_Author": "radial hand, wrist and dorsal d1 of area 5",
+            "Text_Description_of_InjectionSite": "An injection of DY was centered in the proximal palm representation of area 2 and an injection of CTB was centered in radial hand, wrist and dorsal d1 of area 5",
+            "Figure_Description_of_InjectionSite": "Figure 15",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "An injection of DY was centered in the proximal palm representation of area 2 and an injection of CTB was centered in radial hand, wrist and dorsal d1 of area 5",
+              "Figure_Description": "Figure 15",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "Pla",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "LP",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VLp",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "CL",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "MD",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "DY"
+            ],
+            "InjectionSite_by_Author": "the representation of the tip of area 2",
+            "Text_Description_of_InjectionSite": "An injection of DY was centered in the representation of the tip of area 2 and an injection of CTB was centered in representation of the proximal hypothenar pad of area 5",
+            "Figure_Description_of_InjectionSite": "Figure 16",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "An injection of DY was centered in the representation of the tip of area 2 and an injection of CTB was centered in representation of the proximal hypothenar pad of area 5",
+              "Figure_Description": "Figure 16",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "Pla",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPl",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "CTB"
+            ],
+            "InjectionSite_by_Author": "representation of the proximal hypothenar pad of area 5",
+            "Text_Description_of_InjectionSite": "An injection of DY was centered in the representation of the tip of area 2 and an injection of CTB was centered in representation of the proximal hypothenar pad of area 5",
+            "Figure_Description_of_InjectionSite": "Figure 16",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "An injection of DY was centered in the representation of the tip of area 2 and an injection of CTB was centered in representation of the proximal hypothenar pad of area 5",
+              "Figure_Description": "Figure 16",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_D99s": "To be recorded",
+            "InjectionSite_NMTs": "To be recorded",
+            "InjectionSite_PAXs": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPs",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "Pla",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "LP",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VLp",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "CL",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "MD",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_D99s": "To be recorded",
+              "LabeledSite_NMTs": "To be recorded",
+              "LabeledSite_PAXs": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        }
+      ]
     },
     "Rausell_1998_https://doi.org/10.1523/JNEUROSCI.18-11-04216.1998": {
 

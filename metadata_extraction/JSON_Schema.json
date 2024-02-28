@@ -257,12 +257,6 @@
                                 "title": "Mapping Confidence of InjectionSite:",
                                 "enum": ["To be recorded", "High", "Medium", "Low"],
                                 "default": "To be recorded"
-                            },
-                            "All_Target_Regions_Examined": {
-                                "type": "string",
-                                "title": "Are all target regions examined?",
-                                "enum": ["To be recorded", "NA", "Y", "N"],
-                                "default": "To be recorded"
                             }
                         },
                         "required": [
@@ -276,8 +270,7 @@
                             "InjectionSite_D99s",
                             "InjectionSite_NMTs",
                             "InjectionSite_PAXs", 
-                            "InjectionSite_Mapping_Confidence", 
-                            "All_Target_Regions_Examined"
+                            "InjectionSite_Mapping_Confidence"                        
                         ]
                     },
                     "LabeledSites": {
