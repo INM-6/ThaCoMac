@@ -1,4 +1,5 @@
 {
+    "source": "http://cocomac.g-node.org/services/tracer_history.php",
     "tracers": [
         "AAV", "BDA", "Biocytin", "Bis", "CTB", "CTB-gold", "CTB-green", "CTB-red", "CVS strain", "DG", "DR", "DT", "DY", "DY . 2HCl", "DY/NY", "EB", "FB", "FE", "FG", "FR", "FR-DA", "FS", "FS-dextran", "GB", "GLM", "HRP", "LY", "LYD", "NY", "PHA-L", "PI", "RB", "RGB", "RLM", "TAA", "TB", "WGA", "WGA-HRP", "[(35)S]-Methionine", "[^3H]-Fucose", "[^3H]-Leucine", "[^3H]-Lysine", "[^3H]-Proline", "[^3H]-WGA"
     ],
