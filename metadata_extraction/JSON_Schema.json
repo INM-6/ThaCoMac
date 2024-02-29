@@ -156,7 +156,7 @@
                                     },
                                     "Adjacent_Regions_Covered": {
                                         "type": "string",
-                                        "title": "Adjacent regions covered:",
+                                        "title": "Adjacent regions covered (comma-delimited):",
                                         "default": "To be recorded",
                                         "minLength": 3
                                     },
@@ -206,36 +206,6 @@
                                 ],
                                 "default": "To be recorded"
                             },
-                            "InjectionSite_D99s": {
-                                "type": "string",
-                                "title": "InjectionSite in D99s:",
-                                "enum": [
-                                    "To be recorded", "NAp", 
-                                    "AD", "AM", "AV", "Hl", "Hm", "LD", "LGN", "LP", "MDdc", 
-                                    "MDmc", "MDmf", "MDpc", "MGad", "MGm", "MGpd", "MGv", "MGz", 
-                                    "PI", "PL", "PM", "Pa", "Pf", "Pulo", "Re", "Sg", "VAmc", 
-                                    "VApc", "VLc", "VLo", "VLps", "VPI", "VPLc", "VPLo", "VPM", 
-                                    "VPMpc", "cdc", "cif", "cim", "cl", "clc", "cnMD", "csl", 
-                                    "pcn", "pt", "ptg", "r", "zic"
-                                ],
-                                "default": "To be recorded"
-                            },
-                            "InjectionSite_NMTs": {
-                                "type": "string",
-                                "title": "InjectionSite in NMTs:",
-                                "enum": [
-                                    "To be recorded", "NAp", 
-                                    "A", "A+", "APul", "AR", "CL-PC", "CM", "CMn-PF", 
-                                    "CbThal", "DLG", "GThal", "IAM", "ILThal", "IMD", 
-                                    "IPul", "LD", "LP", "LPul", "Lim", "MD", "MG", 
-                                    "MLThal", "MPul", "MThal", "PNThal", "PT-PV-sm", 
-                                    "PThal", "PVA", "PVP", "Pul", "Re-Rh-Xi", "Rt", 
-                                    "SG", "SPFC", "SPFPC", "SpThal", "Thal", "VA", 
-                                    "VLA", "VLPD", "VLPV", "VLX", "VM", "VMPo-VMB", 
-                                    "VPI", "VPM-VPL", "VThal", "bsc", "cap"
-                                ],
-                                "default": "To be recorded"
-                            },
                             "InjectionSite_PAXs": {
                                 "type": "string",
                                 "title": "InjectionSite in PAXs:",
@@ -267,10 +237,8 @@
                             "Injection_Coverage_by_Author", 
                             "Comment_on_Injection", 
                             "InjectionSite_M132", 
-                            "InjectionSite_D99s",
-                            "InjectionSite_NMTs",
                             "InjectionSite_PAXs", 
-                            "InjectionSite_Mapping_Confidence"                        
+                            "InjectionSite_Mapping_Confidence"                       
                         ]
                     },
                     "LabeledSites": {
@@ -310,36 +278,6 @@
                                         "ProM", "SII", "STPc", "STPi", "STPr", "SUB", "TEO", "TEOm", "TEa/ma", 
                                         "TEa/mp", "TEad", "TEav", "TEpd", "TEpv", "TH/TF", "TPt", "V1", "V2", "V3", 
                                         "V3A", "V4", "V4t", "V6", "V6A", "VIP"
-                                    ],
-                                    "default": "To be recorded"
-                                },
-                                "LabeledSite_D99s": {
-                                    "type": "string",
-                                    "title": "LabeledSite in D99s:",
-                                    "enum": [
-                                        "To be recorded", "NAp", 
-                                        "AD", "AM", "AV", "Hl", "Hm", "LD", "LGN", "LP", "MDdc", 
-                                        "MDmc", "MDmf", "MDpc", "MGad", "MGm", "MGpd", "MGv", "MGz", 
-                                        "PI", "PL", "PM", "Pa", "Pf", "Pulo", "Re", "Sg", "VAmc", 
-                                        "VApc", "VLc", "VLo", "VLps", "VPI", "VPLc", "VPLo", "VPM", 
-                                        "VPMpc", "cdc", "cif", "cim", "cl", "clc", "cnMD", "csl", 
-                                        "pcn", "pt", "ptg", "r", "zic"
-                                    ],
-                                    "default": "To be recorded"
-                                },
-                                "LabeledSite_NMTs": {
-                                    "type": "string",
-                                    "title": "LabeledSite in NMTs:",
-                                    "enum": [
-                                        "To be recorded", "NAp", 
-                                        "A", "A+", "APul", "AR", "CL-PC", "CM", "CMn-PF", 
-                                        "CbThal", "DLG", "GThal", "IAM", "ILThal", "IMD", 
-                                        "IPul", "LD", "LP", "LPul", "Lim", "MD", "MG", 
-                                        "MLThal", "MPul", "MThal", "PNThal", "PT-PV-sm", 
-                                        "PThal", "PVA", "PVP", "Pul", "Re-Rh-Xi", "Rt", 
-                                        "SG", "SPFC", "SPFPC", "SpThal", "Thal", "VA", 
-                                        "VLA", "VLPD", "VLPV", "VLX", "VM", "VMPo-VMB", 
-                                        "VPI", "VPM-VPL", "VThal", "bsc", "cap"
                                     ],
                                     "default": "To be recorded"
                                 },
@@ -412,8 +350,6 @@
                                 "LabeledSite_by_Author", 
                                 "Comment_on_LabeledSite", 
                                 "LabeledSite_M132", 
-                                "LabeledSite_D99s",
-                                "LabeledSite_NMTs",
                                 "LabeledSite_PAXs", 
                                 "LabeledSite_Mapping_Confidence", 
                                 "Connection_Strength"
