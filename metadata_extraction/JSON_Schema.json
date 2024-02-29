@@ -120,7 +120,7 @@
                                     "type": "string",
                                     "enum": [
                                         "To be recorded",
-                                        "AAV", "BDA", "Biocytin", "Bis", "CTB", "CTB-gold", "CTB-green", "CTB-red", "CVS strain", "DG", "DR", "DT", "DY", "DY . 2HCl", "DY/NY", "EB", "FB", "FE", "FG", "FR", "FR-DA", "FS", "FS-dextran", "GB", "GLM", "HRP", "LY", "LYD", "NY", "PHA-L", "PI", "RB", "RGB", "RLM", "TAA", "TB", "WGA", "WGA-HRP", "[(35)S]-Methionine", "[^3H]-Fucose", "[^3H]-Leucine", "[^3H]-Lysine", "[^3H]-Proline", "[^3H]-WGA"
+                                        "322/60", "AAV", "BDA", "Bio", "Bis", "CTB", "CTB-A", "CTB-gold", "CTB-green", "CTB-red", "CVS strain", "DG", "DR", "DT", "DY", "DY . 2HCl", "DY/NY", "EB", "FB", "FD", "FE", "FG", "FR", "FR-DA", "FS", "FS-dextran", "GB", "GLM", "HRP", "LM", "LY", "LYD", "MR", "NY", "PHA-L", "PI", "RB", "RD", "RGB", "RLM", "Rh", "TAA", "TAA-HRP", "TB", "TR-DA", "WGA", "WGA-HRP", "[(35)S]-Methionine", "[3H]-Fucose", "[3H]-Leucine", "[3H]-Lysine", "[3H]-Proline", "[3H]-WGA", "UT", "UTa", "UTr"
                                     ],
                                     "default": "To be recorded"
                                 }
@@ -193,15 +193,7 @@
                                 "title": "InjectionSite in M132:",
                                 "enum": [
                                     "To be recorded", "NAp",
-                                    "1", "10", "11", "12", "13", "14", "2", "23", "24a", "24b", "24c", "24d", 
-                                    "25", "29/30", "3", "31", "32", "44", "45A", "45B", "46d", "46v", "5", 
-                                    "7A", "7B", "7m", "7op", "8B", "8l", "8m", "8r", "9", "9/46d", "9/46v", 
-                                    "AIP", "Core", "DP", "ENTO", "F1", "F2", "F3", "F4", "F5", "F6", "F7", 
-                                    "FST", "Gu", "INS", "IPa", "LB", "LIP", "MB", "MIP", "MST", "MT", "OPAI", 
-                                    "OPRO", "PBc", "PBr", "PERI", "PGa", "PIP", "PIR", "POLE", "Pi", "Pro. St.", 
-                                    "ProM", "SII", "STPc", "STPi", "STPr", "SUB", "TEO", "TEOm", "TEa/ma", 
-                                    "TEa/mp", "TEad", "TEav", "TEpd", "TEpv", "TH/TF", "TPt", "V1", "V2", "V3", 
-                                    "V3A", "V4", "V4t", "V6", "V6A", "VIP"
+                                    "1", "10", "11", "12", "13", "14", "2", "23", "24a", "24b", "24c", "24d", "25", "29/30", "3", "31", "32", "44", "45A", "45B", "46d", "46v", "5", "7A", "7B", "7m", "7op", "8B", "8l", "8m", "8r", "9", "9/46d", "9/46v", "AIP", "Core", "DP", "ENTO", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "FST", "Gu", "INS", "IPa", "LB", "LIP", "MB", "MIP", "MST", "MT", "OPAI", "OPRO", "PBc", "PBr", "PERI", "PGa", "PIP", "PIR", "POLE", "Pi", "Pro. St.", "ProM", "SII", "STPc", "STPi", "STPr", "SUB", "TEO", "TEOm", "TEa/ma", "TEa/mp", "TEad", "TEav", "TEpd", "TEpv", "TH/TF", "TPt", "V1", "V2", "V3", "V3A", "V4", "V4t", "V6", "V6A", "VIP"
                                 ],
                                 "default": "To be recorded"
                             },
@@ -268,15 +260,7 @@
                                     "title": "LabeledSite in M132:",
                                     "enum": [
                                         "To be recorded", "NAp",
-                                        "1", "10", "11", "12", "13", "14", "2", "23", "24a", "24b", "24c", "24d", 
-                                        "25", "29/30", "3", "31", "32", "44", "45A", "45B", "46d", "46v", "5", 
-                                        "7A", "7B", "7m", "7op", "8B", "8l", "8m", "8r", "9", "9/46d", "9/46v", 
-                                        "AIP", "Core", "DP", "ENTO", "F1", "F2", "F3", "F4", "F5", "F6", "F7", 
-                                        "FST", "Gu", "INS", "IPa", "LB", "LIP", "MB", "MIP", "MST", "MT", "OPAI", 
-                                        "OPRO", "PBc", "PBr", "PERI", "PGa", "PIP", "PIR", "POLE", "Pi", "Pro. St.", 
-                                        "ProM", "SII", "STPc", "STPi", "STPr", "SUB", "TEO", "TEOm", "TEa/ma", 
-                                        "TEa/mp", "TEad", "TEav", "TEpd", "TEpv", "TH/TF", "TPt", "V1", "V2", "V3", 
-                                        "V3A", "V4", "V4t", "V6", "V6A", "VIP"
+                                        "1", "10", "11", "12", "13", "14", "2", "23", "24a", "24b", "24c", "24d", "25", "29/30", "3", "31", "32", "44", "45A", "45B", "46d", "46v", "5", "7A", "7B", "7m", "7op", "8B", "8l", "8m", "8r", "9", "9/46d", "9/46v", "AIP", "Core", "DP", "ENTO", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "FST", "Gu", "INS", "IPa", "LB", "LIP", "MB", "MIP", "MST", "MT", "OPAI", "OPRO", "PBc", "PBr", "PERI", "PGa", "PIP", "PIR", "POLE", "Pi", "Pro. St.", "ProM", "SII", "STPc", "STPi", "STPr", "SUB", "TEO", "TEOm", "TEa/ma", "TEa/mp", "TEad", "TEav", "TEpd", "TEpv", "TH/TF", "TPt", "V1", "V2", "V3", "V3A", "V4", "V4t", "V6", "V6A", "VIP"
                                     ],
                                     "default": "To be recorded"
                                 },
