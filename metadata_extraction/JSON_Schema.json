@@ -32,7 +32,6 @@
                 "PMCID": {
                     "type": "string",
                     "title": "PMCID:",
-                    "pattern": "PMC[0-9]{7}|NA",
                     "default": "To be recorded",
                     "minLength": 2
                 },
