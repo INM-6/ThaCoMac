@@ -8,13 +8,15 @@
         "AD": "anterodorsal thalamic nucleus",
         "AM": "anteromedial thalamic nucleus",
         "AV": "anteroventral thalamic nucleus",
-        "IAM": "interanteromedial thalamic nucleus",
+        
         "CM": "central medial thalamic nucleus",
         "CL": "centrolateral thalamic nucleus",
         "CMn": "centromedian thalamic nucleus",
         "CMnL": "centromedian thalamic nucleus, lateral part",
         "CMnM": "centromedian thalamic nucleus, medial part",
         "Eth": "ethmoid thalamic nucleus",
+        "ithp": "inferior thalamic peduncle",
+        "IAM": "interanteromedial thalamic nucleus",
         "IMD": "intermediodorsal thalamic nucleus",
         "LDSF": "lateral dorsal thalamic nucleus, superficial part",
         "LP": "lateral post thalamic nucleus",
@@ -64,8 +66,6 @@
         "MGM": "medial geniculate nucleus, medial part",
         "MGV": "medial geniculate nucleus, ventral part",
         "Rt": "reticular thalamic nucleus",
-        "ithp": "inferior thalamic peduncle",
-        "MedLam": "medullary laminae of thalamus",
         "eml": "external medullary lamina",
         "iml": "internal medullary lamina",
         "mt": "mammillothalamic tract"
@@ -76,7 +76,8 @@
         "LThal": "lateral thalamic nuclei",
         "VPThal": "ventral posterior thalamic nucleus",
         "MThal": "medial thalamic nuclei",
-        "LDt": "laterodorsal thalamic nucleus"
+        "LDt": "laterodorsal thalamic nucleus",
+        "MedLam": "medullary laminae of thalamus"
     },
     "others": {
         "amt": "anterior middle temporal sulcus",
@@ -131,6 +132,8 @@
         "POa":"parieto-occipital associated area in the intraparietal sulcus",
         "POaE": "parieto-occipital associated area in the interparietal sulcus, external part",
         "POaI": "parieto-occipital associated area in the interparietal sulcus, internal part",
+        "Po": "posterior thalamic nuclear group",
+        "PoT": "posterior thalamic nuclear group, triangular part",
         "VAPC": "",
         "VLA": "",
         "VLX": "",
