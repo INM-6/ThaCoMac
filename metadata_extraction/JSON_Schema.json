@@ -202,14 +202,7 @@
                                 "title": "InjectionSite in PAXs:",
                                 "enum": [
                                     "To be recorded", "NAp", 
-                                    "AD", "AM", "AThal", "AV", "Apul", "CL", "CM", "CMn", 
-                                    "CMnL", "CMnM", "IAM", "IMD", "Ipul", "LDSF", "LDt", 
-                                    "LThal", "Lpul", "MD", "MDC", "MDD", "MDL", "MDM", "MG", 
-                                    "MGD", "MGM", "MGV", "MPul", "MThal", "MedLam", "PC", 
-                                    "PF", "PT", "PV", "PVA", "PVP", "Pul", "Re", "Rt", "SG", 
-                                    "SPF", "SPFPC", "Thal", "VA", "VAL", "VAL(VO)", "VAL(VO)+pal", 
-                                    "VAL(pal)", "VAM", "VAMC", "VL", "VLL", "VLM", "VPL", "VPM", 
-                                    "VPThal", "Xi", "eml", "iml", "ithp", "mt"
+                                    "AD", "AM", "AV", "Apul", "CL", "CM", "CMn", "CMnL", "CMnM", "DLG", "Eth", "IAM", "IMD", "Ipul", "LDSF", "LP", "Lim", "Lpul", "MD", "MDC", "MDD", "MDL", "MDM", "MG", "MGD", "MGM", "MGV", "MPul", "PC", "PF", "PIL", "PT", "PV", "PVA", "PVP", "Pul", "Re", "Rh", "Rt", "SG", "SPF", "SPFPC", "VA", "VAL", "VAL(VO)", "VAL(pal)", "VAM", "VAM(nigr)", "VAMC", "VL", "VLLa", "VLLa(V.im.e)", "VLLa(cb-mo)", "VLM", "VLM(V.im.i)", "VLM(cb)", "VPL", "VPM", "Xi", "eml", "iml", "ithp", "mt"
                                 ],
                                 "default": "To be recorded"
                             },
@@ -269,14 +262,7 @@
                                     "title": "LabeledSite in PAXs:",
                                     "enum": [
                                         "To be recorded", "NAp", 
-                                        "AD", "AM", "AThal", "AV", "Apul", "CL", "CM", "CMn", 
-                                        "CMnL", "CMnM", "IAM", "IMD", "Ipul", "LDSF", "LDt", 
-                                        "LThal", "Lpul", "MD", "MDC", "MDD", "MDL", "MDM", "MG", 
-                                        "MGD", "MGM", "MGV", "MPul", "MThal", "MedLam", "PC", 
-                                        "PF", "PT", "PV", "PVA", "PVP", "Pul", "Re", "Rt", "SG", 
-                                        "SPF", "SPFPC", "Thal", "VA", "VAL", "VAL(VO)", "VAL(VO)+pal", 
-                                        "VAL(pal)", "VAM", "VAMC", "VL", "VLL", "VLM", "VPL", "VPM", 
-                                        "VPThal", "Xi", "eml", "iml", "ithp", "mt"
+                                        "AD", "AM", "AV", "Apul", "CL", "CM", "CMn", "CMnL", "CMnM", "DLG", "Eth", "IAM", "IMD", "Ipul", "LDSF", "LP", "Lim", "Lpul", "MD", "MDC", "MDD", "MDL", "MDM", "MG", "MGD", "MGM", "MGV", "MPul", "PC", "PF", "PIL", "PT", "PV", "PVA", "PVP", "Pul", "Re", "Rh", "Rt", "SG", "SPF", "SPFPC", "VA", "VAL", "VAL(VO)", "VAL(pal)", "VAM", "VAM(nigr)", "VAMC", "VL", "VLLa", "VLLa(V.im.e)", "VLLa(cb-mo)", "VLM", "VLM(V.im.i)", "VLM(cb)", "VPL", "VPM", "Xi", "eml", "iml", "ithp", "mt"
                                     ],
                                     "default": "To be recorded"
                                 },
