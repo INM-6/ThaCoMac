@@ -1,14 +1,13 @@
 {
     "source": "'The Rhesus Monkey Brain in Stereotaxic Coordinates' by Paxinos et al. 2000",
-    "number of subregions": 64,
+    "number of subregions": 63,
     "subregions": [
-        "AD", "AM", "AV", "Apul", "CL", "CM", "CMn", "CMnL", "CMnM", "DLG", "Eth", "IAM", "IMD", "Ipul", "LDSF", "LP", "Lim", "Lpul", "MD", "MDC", "MDD", "MDL", "MDM", "MG", "MGD", "MGM", "MGV", "MPul", "MedLam", "PC", "PF", "PIL", "PT", "PV", "PVA", "PVP", "Pul", "Re", "Rh", "Rt", "SG", "SPF", "SPFPC", "VA", "VAL", "VAL(VO)", "VAL(pal)", "VAM", "VAM(nigr)", "VAMC", "VL", "VLLa", "VLLa(V.im.e)", "VLLa(cb-mo)", "VLM", "VLM(V.im.i)", "VLM(cb)", "VPL", "VPM", "Xi", "eml", "iml", "ithp", "mt"
+        "AD", "AM", "AV", "Apul", "CL", "CM", "CMn", "CMnL", "CMnM", "DLG", "Eth", "IAM", "IMD", "Ipul", "LDSF", "LP", "Lim", "Lpul", "MD", "MDC", "MDD", "MDL", "MDM", "MG", "MGD", "MGM", "MGV", "MPul", "PC", "PF", "PIL", "PT", "PV", "PVA", "PVP", "Pul", "Re", "Rh", "Rt", "SG", "SPF", "SPFPC", "VA", "VAL", "VAL(VO)", "VAL(pal)", "VAM", "VAM(nigr)", "VAMC", "VL", "VLLa", "VLLa(V.im.e)", "VLLa(cb-mo)", "VLM", "VLM(V.im.i)", "VLM(cb)", "VPL", "VPM", "Xi", "eml", "iml", "ithp", "mt"
     ],
     "index_of_abreviations": {
         "AD": "anterodorsal thalamic nucleus",
         "AM": "anteromedial thalamic nucleus",
         "AV": "anteroventral thalamic nucleus",
-        
         "CM": "central medial thalamic nucleus",
         "CL": "centrolateral thalamic nucleus",
         "CMn": "centromedian thalamic nucleus",
