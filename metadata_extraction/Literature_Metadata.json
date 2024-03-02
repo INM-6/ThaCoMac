@@ -3614,10 +3614,42 @@
       ]
     },
     "Rausell_1998_https://doi.org/10.1523/JNEUROSCI.18-11-04216.1998": {
-
+      "Comment_on_Article": "",
+      "Article_Info": {
+        "DH_INDEX": 1001,
+        "DOI-URL": "https://doi.org/10.1523/JNEUROSCI.18-11-04216.1998",
+        "PMID": "9592100",
+        "PMCID": "PMC6792802",
+        "Title": "Extensive Divergence and Convergence in the Thalamocortical Projection to Monkey Somatosensory Cortex",
+        "First_Author": "Estrella_Rausell",
+        "Pub_Year": 1998,
+        "Comment": ""
+      },
+      "Experimental_Subjects": {
+        "Subspecies": [],
+        "Source_Description": "To be recorded",
+        "Comment": ""
+      },
+      "Injection_and_Labeling": []
     },
     "Sakai_1999_https://doi.org/10.1007/s004290050204": {
-
+      "Comment_on_Article": "",
+      "Article_Info": {
+        "DH_INDEX": 89,
+        "DOI-URL": "https://doi.org/10.1007/s004290050204",
+        "PMID": "9924930",
+        "PMCID": "NA",
+        "Title": "Pallidal and cerebellar inputs to thalamocortical neurons projecting to the supplementary motor area in Macaca fuscata: a triple-labeling light microcopic study",
+        "First_Author": "S. T. Sakai",
+        "Pub_Year": 1999,
+        "Comment": ""
+      },
+      "Experimental_Subjects": {
+        "Subspecies": [],
+        "Source_Description": "To be recorded",
+        "Comment": ""
+      },
+      "Injection_and_Labeling": []
     },
     "Morel_2005_https://doi.org/10.1111/j.1460-9568.2005.03921.x": {
 
