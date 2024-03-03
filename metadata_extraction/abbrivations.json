@@ -13,6 +13,19 @@
         "S": "superior",
         "I": "inferior",
         "R": "rostral",
-        "C": "caudal"
+        "C": "caudal",
+
+        "M132": "cortical parcellation defined by Markov et al. 2012, https://doi.org/10.1093/cercor/bhs270",
+        "PAX": "the rhesus monkey brain atlas by Paxinos et al. 2000",
+        "PAXs": "subcortical part of the rhesus monkey brain atlas by Paxinos et al. 2000",
+        "NMT": "digital brain atlas by Reveley et al. 2017, https://doi.org/10.1093/cercor/bhw248",
+        "NMTs": "subcortical part of the digital template atlas by Reveley et al. 2017, https://doi.org/10.1093/cercor/bhw248",
+        "D99": "digital brain atlas by Saleem et al. 2021, https://doi.org/10.1016/j.neuroimage.2021.118759",
+        "D99s": "subcortical part of the digital brain atlas by Saleem et al. 2021, https://doi.org/10.1016/j.neuroimage.2021.118759",
+        "SARM": "subcortical atlas by Hartig et al. 2021, https://doi.org/10.1016/j.neuroimage.2021.117996",
+        "PRs": "parcellation references",
+        "CPRs": "cortical parcellation scheme references",
+        "TPRs": "thalamic parcellation references",
+        "n.": "nucleus"
     }
 }
