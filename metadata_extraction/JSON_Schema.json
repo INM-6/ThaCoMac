@@ -227,7 +227,7 @@
                             "Injection_Coverage_by_Author", 
                             "Comment_on_Injection", 
                             "InjectionSite_M132", 
-                            "InjectionSite_PAXs", 
+                            "InjectionSite_PAX", 
                             "InjectionSite_Mapping_Confidence"                       
                         ]
                     },
@@ -325,7 +325,7 @@
                                 "LabeledSite_by_Author", 
                                 "Comment_on_LabeledSite", 
                                 "LabeledSite_M132", 
-                                "LabeledSite_PAXs", 
+                                "LabeledSite_PAX", 
                                 "LabeledSite_Mapping_Confidence", 
                                 "Connection_Strength"
                             ]
