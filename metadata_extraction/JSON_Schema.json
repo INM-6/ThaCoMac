@@ -184,6 +184,12 @@
                                     "Comment"
                                 ]
                             },
+                            "All_LabeledSite_Examined": {
+                                "type": "string",
+                                "title": "Were all labeled sites examined and recorded?",
+                                "enum": ["To be recorded", "NA", "Y", "N"],
+                                "default": "To be recorded"
+                            },
                             "Comment_on_Injection": {
                                 "type": "string",
                                 "title": "Comment on Injection:" 
