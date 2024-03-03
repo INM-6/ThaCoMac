@@ -67,7 +67,8 @@
         "Rt": "reticular thalamic nucleus",
         "eml": "external medullary lamina",
         "iml": "internal medullary lamina",
-        "mt": "mammillothalamic tract"
+        "mt": "mammillothalamic tract",
+        "Po": "posterior thalamic nuclear group"
     },
     "thalamus_related": {
         "Thal": "thalamus",
@@ -124,26 +125,7 @@
         "PaXi": "paraxiphoid nucleus of thalamus",
         "bsc": "brachium of the superior colliculus",
         "sm": "stria medullaris",
-        "V6A": "parieto-occipital area",
-        "PO": "parieto-occipital area",
-        "PO(V6)": "parieto-occipital area", 
-        "PO(V6A)": "parieto-occipital area",
-        "POa":"parieto-occipital associated area in the intraparietal sulcus",
-        "POaE": "parieto-occipital associated area in the interparietal sulcus, external part",
-        "POaI": "parieto-occipital associated area in the interparietal sulcus, internal part",
-        "Po": "posterior thalamic nuclear group",
         "PoT": "posterior thalamic nuclear group, triangular part",
-        "SMT": "submammillothalamic nucleus", 
-        "VAPC": "",
-        "VLA": "",
-        "VLX": "",
-        "VLPV": "",
-        "VLPD": "",
-        "VPM-VPL": "",
-        "VMPo": "", 
-        "VMB": "",
-        "VPI": "",
-        "VM": "",
-        "LD": ""
+        "SMT": "submammillothalamic nucleus"
     }
 }
