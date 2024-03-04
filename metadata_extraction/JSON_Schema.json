@@ -9,7 +9,7 @@
         "CS_Reported": {
             "type": "string",
             "title": "Is there information about connection strength in this article?",
-            "enum": ["To be recorded", "Y", "N"],
+            "enum": ["To be recorded", "Only qualitative", "Only quantitative", "Both", "N"],
             "default": "To be recorded"
         },
         "Article_Info": {

@@ -1,7 +1,7 @@
 {
     "120_Rouiller_2004_https://doi.org/10.1016/j.neulet.2004.01.008": {
       "Comment_on_Article": "",
-      "CS_Reported": "To be recorded",
+      "CS_Reported": "Only qualitative",
       "Article_Info": {
         "DH_INDEX": 120,
         "DOI-URL": "https://doi.org/10.1016/j.neulet.2004.01.008",
@@ -45,7 +45,7 @@
             {
               "TT_Direction": "Anterograde",
               "LabeledSite_by_Author": "vMGB",
-              "LabeledSite_Reliable": "To be recorded",
+              "LabeledSite_Reliable": "Y",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -61,7 +61,7 @@
             {
               "TT_Direction": "Anterograde",
               "LabeledSite_by_Author": "dMGB",
-              "LabeledSite_Reliable": "To be recorded",
+              "LabeledSite_Reliable": "Y",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -77,7 +77,7 @@
             {
               "TT_Direction": "Anterograde",
               "LabeledSite_by_Author": "SG",
-              "LabeledSite_Reliable": "To be recorded",
+              "LabeledSite_Reliable": "Y",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -93,7 +93,7 @@
             {
               "TT_Direction": "Anterograde",
               "LabeledSite_by_Author": "mMGB",
-              "LabeledSite_Reliable": "To be recorded",
+              "LabeledSite_Reliable": "Y",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -109,7 +109,7 @@
             {
               "TT_Direction": "Anterograde",
               "LabeledSite_by_Author": "reticular nucleus of the thalamus",
-              "LabeledSite_Reliable": "To be recorded",
+              "LabeledSite_Reliable": "Y",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -125,7 +125,7 @@
             {
               "TT_Direction": "Anterograde",
               "LabeledSite_by_Author": "PO",
-              "LabeledSite_Reliable": "To be recorded",
+              "LabeledSite_Reliable": "Y",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -141,7 +141,7 @@
             {
               "TT_Direction": "Retrograde",
               "LabeledSite_by_Author": "vMGB",
-              "LabeledSite_Reliable": "To be recorded",
+              "LabeledSite_Reliable": "Y",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -157,7 +157,7 @@
             {
               "TT_Direction": "Retrograde",
               "LabeledSite_by_Author": "dMGB",
-              "LabeledSite_Reliable": "To be recorded",
+              "LabeledSite_Reliable": "Y",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -173,7 +173,7 @@
             {
               "TT_Direction": "Retrograde",
               "LabeledSite_by_Author": "mMGB",
-              "LabeledSite_Reliable": "To be recorded",
+              "LabeledSite_Reliable": "Y",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -189,7 +189,7 @@
             {
               "TT_Direction": "Retrograde",
               "LabeledSite_by_Author": "SG",
-              "LabeledSite_Reliable": "To be recorded",
+              "LabeledSite_Reliable": "Y",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
