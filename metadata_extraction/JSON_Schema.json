@@ -6,6 +6,12 @@
             "type": "string",
             "title": "Comment on This Article:"
         },
+        "CS_Reported": {
+            "type": "string",
+            "title": "Is there information about connection strength in this article?",
+            "enum": ["To be recorded", "Y", "N"],
+            "default": "To be recorded"
+        },
         "Article_Info": {
             "type": "object",
             "title": "Article Information",
@@ -250,6 +256,12 @@
                                     "default": "To be recorded",
                                     "minLength": 1
                                 },
+                                "LabeledSite_Reliable": {
+                                    "type": "string",
+                                    "title": "Is this labeled site reliable (there're at least 3 labeled neurons)?",
+                                    "enum": ["To be recorded", "Y", "N"],
+                                    "default": "To be recorded"
+                                },
                                 "Comment_on_LabeledSite": {
                                     "type": "string",
                                     "title": "Comment on LabeledSite:"
@@ -323,6 +335,7 @@
                             "required": [
                                 "TT_Direction", 
                                 "LabeledSite_by_Author", 
+                                "LabeledSite_Reliable", 
                                 "Comment_on_LabeledSite", 
                                 "LabeledSite_M132", 
                                 "LabeledSite_PAX", 
@@ -340,7 +353,8 @@
         }
     },
     "required": [
-        "Comment_on_Article",  
+        "Comment_on_Article", 
+        "CS_Reported", 
         "Article_Info", 
         "Experimental_Subjects", 
         "Injection_and_Labeling"
