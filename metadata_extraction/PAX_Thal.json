@@ -2,14 +2,14 @@
     "source": "'The Rhesus Monkey Brain in Stereotaxic Coordinates' by Paxinos et al. 2000",
     "number of subregions": 63,
     "subregions": [
-        "AD", "AM", "AV", "Apul", "CL", "CM", "CMn", "CMnL", "CMnM", "DLG", "Eth", "IAM", "IMD", "Ipul", "LDSF", "LP", "Lim", "Lpul", "MD", "MDC", "MDD", "MDL", "MDM", "MG", "MGD", "MGM", "MGV", "MPul", "PC", "PF", "PIL", "PT", "PV", "PVA", "PVP", "Po", "Pul", "Re", "Rh", "Rt", "SG", "SPF", "SPFPC", "VA", "VAL", "VAL(VO)", "VAL(pal)", "VAM", "VAM(nigr)", "VAMC", "VL", "VLLa", "VLLa(V.im.e)", "VLLa(cb-mo)", "VLM", "VLM(V.im.i)", "VLM(cb)", "VPL", "VPM", "Xi", "eml", "iml", "ithp", "mt"
+        "AD", "AM", "AV", "Apul", "CL", "CM", "CMn", "CMnL", "CMnM", "DLG", "Eth", "IAM", "IMD", "Ipul", "LDSF", "LP", "Lim", "Lpul", "MD", "MDC", "MDD", "MDL", "MDM", "MG", "MGD", "MGM", "MGV", "MPul", "PC", "PF", "PIL", "PT", "PV", "PVA", "PVP", "PaXi", "Po", "PoT", "Pul", "Re", "Rh", "Rt", "SG", "SPF", "SPFPC", "VA", "VAL", "VAL(VO)", "VAL(pal)", "VAM", "VAM(nigr)", "VAMC", "VL", "VLLa", "VLLa(V.im.e)", "VLLa(cb-mo)", "VLM", "VLM(V.im.i)", "VLM(cb)", "VPL", "VPM", "Xi", "bsc", "eml", "iml", "ithp", "mt", "sm"
     ],
     "index_of_abreviations": {
         "AD": "anterodorsal thalamic nucleus",
         "AM": "anteromedial thalamic nucleus",
         "AV": "anteroventral thalamic nucleus",
-        "CM": "central medial thalamic nucleus",
         "CL": "centrolateral thalamic nucleus",
+        "CM": "central medial thalamic nucleus",
         "CMn": "centromedian thalamic nucleus",
         "CMnL": "centromedian thalamic nucleus, lateral part",
         "CMnM": "centromedian thalamic nucleus, medial part",
@@ -68,7 +68,11 @@
         "eml": "external medullary lamina",
         "iml": "internal medullary lamina",
         "mt": "mammillothalamic tract",
-        "Po": "posterior thalamic nuclear group"
+        "Po": "posterior thalamic nuclear group",
+        "sm": "stria medullaris",
+        "PoT": "posterior thalamic nuclear group, triangular part",
+        "bsc": "brachium of the superior colliculus",
+        "PaXi": "paraxiphoid nucleus of thalamus"
     },
     "thalamus_related": {
         "Thal": "thalamus",
@@ -120,12 +124,5 @@
         "olfs": "olfactory sulcus"
     },
     "to_double_check": {
-        "VAL(VO)+pal": "ventral anterior thalamic nucleus, lateral part, ventralis oralis nucleus+pallidal territory of thalamus",
-        "VLL": "ventral nucleus of the lateral lemniscus",
-        "PaXi": "paraxiphoid nucleus of thalamus",
-        "bsc": "brachium of the superior colliculus",
-        "sm": "stria medullaris",
-        "PoT": "posterior thalamic nuclear group, triangular part",
-        "SMT": "submammillothalamic nucleus"
     }
 }
