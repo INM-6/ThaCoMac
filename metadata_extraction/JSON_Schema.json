@@ -137,18 +137,6 @@
                                 "default": "To be recorded",
                                 "minLength": 1
                             },
-                            "Text_Description_of_InjectionSite": {
-                                "type": "string",
-                                "title": "Text Description of InjectionSite:",
-                                "default": "To be recorded",
-                                "minLength": 2
-                            },
-                            "Figure_Description_of_InjectionSite": {
-                                "type": "string",
-                                "title": "Figure Description of InjectionSite:",
-                                "default": "To be recorded",
-                                "minLength": 2
-                            },
                             "Injection_Coverage_by_Author": {
                                 "type": "object",
                                 "title": "Injection Coverage:",
@@ -175,7 +163,7 @@
                                         "type": "string",
                                         "title": "Figure Description of Injection Coverage:",
                                         "default": "To be recorded",
-                                        "minLength": 2
+                                        "minLength": 1
                                     },
                                     "Comment": {
                                         "type": "string",
@@ -227,9 +215,7 @@
                         },
                         "required": [
                             "Tracer", 
-                            "InjectionSite_by_Author", 
-                            "Text_Description_of_InjectionSite", 
-                            "Figure_Description_of_InjectionSite", 
+                            "InjectionSite_by_Author",
                             "Injection_Coverage_by_Author", 
                             "Comment_on_Injection", 
                             "InjectionSite_M132", 

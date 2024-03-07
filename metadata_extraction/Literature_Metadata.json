@@ -26,13 +26,11 @@
               "BDA"
             ],
             "InjectionSite_by_Author": "A1",
-            "Text_Description_of_InjectionSite": "Using a syringe (Hamilton; 10 ml), a total volume of 2 ml of BDA (5% in saline) was injected in A1.",
-            "Figure_Description_of_InjectionSite": "Fig. 1",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "Transposed to the atlas of the monkey brain [11], the injection site extends between the stereotaxic rostrocaudal coordinates 6.3–9.5 mm, in the auditory koniocortex (areas AKL and AKM). The injection site is thus restricted to the area A1, located between the rostrocaudal coordinates 4 and 14 mm [5].",
-              "Figure_Description": "Fig. 1",
+              "Figure_Description": "1",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "Y",
@@ -234,8 +232,6 @@
               "HRP"
             ],
             "InjectionSite_by_Author": "the medial part of motor cortex (hindlimb area)",
-            "Text_Description_of_InjectionSite": "Fig. 1. Left uppermost diagram shows the injection site of HRP in the medial part of motor cortex (hindlimb area) in an upper view of the left hemisphere.",
-            "Figure_Description_of_InjectionSite": "Fig. 1",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -434,8 +430,6 @@
               "HRP"
             ],
             "InjectionSite_by_Author": "5",
-            "Text_Description_of_InjectionSite": "Fig. 2. Retrogradely labelled cells in VLc, VPLo, VPLc, VLPs and LP, and in Pcn, CI, CM, Csl, MDdc, Pulo and Pulm are illustrated by dots, and anterogradely labelled terminals in VLc, LP, Pulo and Pulm by vertical lines after HRP injection in the area 5 as marked in the left u~spermost diagram.",
-            "Figure_Description_of_InjectionSite": "Fig. 2",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -714,8 +708,6 @@
               "HRP"
             ],
             "InjectionSite_by_Author": "the lateral part of precentral motor area (forelimb area)",
-            "Text_Description_of_InjectionSite": "Retrogradely labelled cells in the intermediate segments of VLo, VPLo and VLc, and in CI, MDmf, MDdc and CM are illustrated by dots, and anterogradely labelled terminals in CM, CI, MDpc and MDmf by vertical lines after HRP injection in the lateral part of precentral motor area (forelimb area) as shown in the left uppermost diagram.",
-            "Figure_Description_of_InjectionSite": "Fig. 3",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -914,8 +906,6 @@
               "HRP"
             ],
             "InjectionSite_by_Author": "the lateral part of area 6",
-            "Text_Description_of_InjectionSite": "Fig. 4. Retrogradely labelled cells in VA, VLo, VLc and VLps, and in X, Pcn, CM, Cdc, Csl, MDpc and MDdc are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection in the lateral part of area 6 as • marked in the left uppermost diagram.",
-            "Figure_Description_of_InjectionSite": "Fig. 4",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -1258,8 +1248,6 @@
               "HRP"
             ],
             "InjectionSite_by_Author": "the border region of cortical areas 6 and 9",
-            "Text_Description_of_InjectionSite": "Fig. 5. Retrogradely labelled cells in VLc and VLps, and in X, VAmc, AM, Pcn, Cdc, Csl, MDpc, MDmf, MDdc and Li are illustrated by dots, and anterogradely labelled terminals in several thalamic areas by vertical lines after HRP injection into the border region of cortical areas 6 and 9 as illustrated in the left uppermost diagram.",
-            "Figure_Description_of_InjectionSite": "Fig. 5",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -1600,8 +1588,6 @@
               "BDA"
             ],
             "InjectionSite_by_Author": "PE",
-            "Text_Description_of_InjectionSite": "After BDA injection in area PE (MK1, Fig. 3; Fig. 5G and H), the main CT projection formed by small endings terminated in lateral posterior nucleus (LP), VPL and PuM.",
-            "Figure_Description_of_InjectionSite": "Fig. 2",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -1663,7 +1649,7 @@
                 "Source_Description_of_Quan_CS": "To be recorded",
                 "Comment_on_Connection_Strength": ""
               },
-              "Figure_Description_of_LabeledSite": "Fig. 3, Fig. 5"
+              "Figure_Description_of_LabeledSite": "3, 5"
             },
             {
               "TT_Direction": "Anterograde",
@@ -1680,7 +1666,7 @@
                 "Source_Description_of_Quan_CS": "To be recorded",
                 "Comment_on_Connection_Strength": ""
               },
-              "Figure_Description_of_LabeledSite": "Fig. 3, Fig. 5"
+              "Figure_Description_of_LabeledSite": "3, 5"
             },
             {
               "TT_Direction": "Anterograde",
@@ -1714,7 +1700,7 @@
                 "Source_Description_of_Quan_CS": "To be recorded",
                 "Comment_on_Connection_Strength": ""
               },
-              "Figure_Description_of_LabeledSite": "Fig. 3, Fig. 5"
+              "Figure_Description_of_LabeledSite": "3, 5"
             },
             {
               "TT_Direction": "Retrograde",
@@ -1809,8 +1795,6 @@
               "FR"
             ],
             "InjectionSite_by_Author": "PEa",
-            "Text_Description_of_InjectionSite": "Fig. 3. Distribution of anterograde (small and giant CT endings) and retrograde (TC neurons) labeling in the thalamus, after injections of BDA (open black circles) and FR (open red squares) in areas PE and PEa",
-            "Figure_Description_of_InjectionSite": "Fig. 2",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -1935,8 +1919,6 @@
               "BDA"
             ],
             "InjectionSite_by_Author": "PEa",
-            "Text_Description_of_InjectionSite": "Fig. 4. Distribution of anterograde (small and giant CT endings) and retrograde (TC neurons) labeling in MK2 in the thalamus after injections of WGA (open black circles) and BDA (open red squares) in areas PE and PEa, respectively.",
-            "Figure_Description_of_InjectionSite": "Fig. 2",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -2183,8 +2165,6 @@
               "WGA"
             ],
             "InjectionSite_by_Author": "PE",
-            "Text_Description_of_InjectionSite": "To be recorded",
-            "Figure_Description_of_InjectionSite": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -2359,13 +2339,11 @@
               "FB"
             ],
             "InjectionSite_by_Author": "the representation of glabrous middle D3 of 3b",
-            "Text_Description_of_InjectionSite": "The injection of FB was centered in the representation of glabrous middle D3",
-            "Figure_Description_of_InjectionSite": "Figure 8",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "The injection of FB was centered in the representation of glabrous middle D3",
-              "Figure_Description": "Figure 8",
+              "Figure_Description": "8",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -2447,13 +2425,11 @@
               "DY"
             ],
             "InjectionSite_by_Author": "the representation of the proximal glabrous thenar pad of 3b",
-            "Text_Description_of_InjectionSite": "the injection of DY was centered in the representation of the proximal glabrous thenar pad",
-            "Figure_Description_of_InjectionSite": "Figure 8",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "the injection of DY was centered in the representation of the proximal glabrous thenar pad",
-              "Figure_Description": "Figure 8",
+              "Figure_Description": "8",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -2503,13 +2479,11 @@
               "FR"
             ],
             "InjectionSite_by_Author": "the representation of the dorsal digits 3-5 of 3b",
-            "Text_Description_of_InjectionSite": "and the injection of FR was centered in the representation of the dorsal digits 3-5",
-            "Figure_Description_of_InjectionSite": "Figure 8",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "and the injection of FR was centered in the representation of the dorsal digits 3--5",
-              "Figure_Description": "Figure 8",
+              "Figure_Description": "8",
               "Comment": ""
             },
             "Comment_on_Injection": "labeled VPm from FRinjection in the representation of the dorsal digits 3-5 of 3b is ignored due to scarcity",
@@ -2574,13 +2548,11 @@
               "FR"
             ],
             "InjectionSite_by_Author": "distal D3 and D4 in area 3a",
-            "Text_Description_of_InjectionSite": "Injections were centered in the representation of distal D4 in areas 3b and 1, and distal D3 and D4 in areas 3a and 2",
-            "Figure_Description_of_InjectionSite": "Figure 9",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "Injections were centered in the representation of distal D4 in areas 3b and 1, and distal D3 and D4 in areas 3a and 2",
-              "Figure_Description": "Figure 9",
+              "Figure_Description": "9",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -2630,13 +2602,11 @@
               "GB"
             ],
             "InjectionSite_by_Author": "the representation of distal D4 in areas 3b",
-            "Text_Description_of_InjectionSite": "Injections were centered in the representation of distal D4 in areas 3b and 1, and distal D3 and D4 in areas 3a and 2",
-            "Figure_Description_of_InjectionSite": "Figure 9",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "Injections were centered in the representation of distal D4 in areas 3b and 1, and distal D3 and D4 in areas 3a and 2",
-              "Figure_Description": "Figure 9",
+              "Figure_Description": "9",
               "Comment": ""
             },
             "Comment_on_Injection": "labeled VPs from injection in 3b is ignored due to scarcity",
@@ -2685,13 +2655,11 @@
               "FB"
             ],
             "InjectionSite_by_Author": "the representation of distal D4 in area 1",
-            "Text_Description_of_InjectionSite": "Injections were centered in the representation of distal D4 in areas 3b and 1, and distal D3 and D4 in areas 3a and 2",
-            "Figure_Description_of_InjectionSite": "Figure 9",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "Injections were centered in the representation of distal D4 in areas 3b and 1, and distal D3 and D4 in areas 3a and 2",
-              "Figure_Description": "Figure 9",
+              "Figure_Description": "9",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -2789,13 +2757,11 @@
               "DY"
             ],
             "InjectionSite_by_Author": "distal D3 and D4 in area 2",
-            "Text_Description_of_InjectionSite": "Injections were centered in the representation of distal D4 in areas 3b and 1, and distal D3 and D4 in areas 3a and 2",
-            "Figure_Description_of_InjectionSite": "Figure 9",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "Injections were centered in the representation of distal D4 in areas 3b and 1, and distal D3 and D4 in areas 3a and 2",
-              "Figure_Description": "Figure 9",
+              "Figure_Description": "9",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -2861,13 +2827,11 @@
               "FB"
             ],
             "InjectionSite_by_Author": "D2-4 in area 3a",
-            "Text_Description_of_InjectionSite": "Injections were centered in the representation of distal D3 in areas 3b and 1, and in D2--4 in areas 3a and 2.",
-            "Figure_Description_of_InjectionSite": "Figure 10",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "Injections were centered in the representation of distal D3 in areas 3b and 1, and in D2--4 in areas 3a and 2.",
-              "Figure_Description": "Figure 10",
+              "Figure_Description": "10",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -2949,13 +2913,11 @@
               "GB"
             ],
             "InjectionSite_by_Author": "the representation of distal D3 in area 3b",
-            "Text_Description_of_InjectionSite": "Injections were centered in the representation of distal D3 in areas 3b and 1, and in D2--4 in areas 3a and 2.",
-            "Figure_Description_of_InjectionSite": "Figure 10",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "Injections were centered in the representation of distal D3 in areas 3b and 1, and in D2--4 in areas 3a and 2.",
-              "Figure_Description": "Figure 10",
+              "Figure_Description": "10",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -3021,13 +2983,11 @@
               "FR"
             ],
             "InjectionSite_by_Author": "the representation of distal D3 in area 1",
-            "Text_Description_of_InjectionSite": "Injections were centered in the representation of distal D3 in areas 3b and 1, and in D2--4 in areas 3a and 2.",
-            "Figure_Description_of_InjectionSite": "Figure 10",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "Injections were centered in the representation of distal D3 in areas 3b and 1, and in D2--4 in areas 3a and 2.",
-              "Figure_Description": "Figure 10",
+              "Figure_Description": "10",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -3109,13 +3069,11 @@
               "FG"
             ],
             "InjectionSite_by_Author": "D2-4 in area 2",
-            "Text_Description_of_InjectionSite": "Injections were centered in the representation of distal D3 in areas 3b and 1, and in D2--4 in areas 3a and 2.",
-            "Figure_Description_of_InjectionSite": "Figure 10",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "Injections were centered in the representation of distal D3 in areas 3b and 1, and in D2--4 in areas 3a and 2.",
-              "Figure_Description": "Figure 10",
+              "Figure_Description": "10",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -3165,13 +3123,11 @@
               "FR"
             ],
             "InjectionSite_by_Author": "the representation of glabrous digit 2 in area 2",
-            "Text_Description_of_InjectionSite": "Digital images of injections of FR (red) into the representation of glabrous digit 2 and FE (green) into the representation of glabrous digit 1 in area 2",
-            "Figure_Description_of_InjectionSite": "Figure 12",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "NA",
-              "Figure_Description": "Figure 12",
+              "Figure_Description": "12",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -3253,13 +3209,11 @@
               "FE"
             ],
             "InjectionSite_by_Author": "the representation of glabrous digit 1 in area 2",
-            "Text_Description_of_InjectionSite": "Digital images of injections of FR (red) into the representation of glabrous digit 2 and FE (green) into the representation of glabrous digit 1 in area 2",
-            "Figure_Description_of_InjectionSite": "Figure 12",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "NA",
-              "Figure_Description": "Figure 12",
+              "Figure_Description": "12",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -3325,13 +3279,11 @@
               "FE"
             ],
             "InjectionSite_by_Author": "the representation of glabrous distal digit 1 of area 2",
-            "Text_Description_of_InjectionSite": "Digital images of an injection of FE (green) placed in the representation of glabrous distal digit 1 of area 2 and an injection of FR (red) placed in the D1 representation of area 5",
-            "Figure_Description_of_InjectionSite": "Figure 14",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "NA",
-              "Figure_Description": "Figure 14",
+              "Figure_Description": "14",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -3413,13 +3365,11 @@
               "FR"
             ],
             "InjectionSite_by_Author": "the D1 representation of area 5",
-            "Text_Description_of_InjectionSite": "Digital images of an injection of FE (green) placed in the representation of glabrous distal digit 1 of area 2 and an injection of FR (red) placed in the D1 representation of area 5",
-            "Figure_Description_of_InjectionSite": "Figure 14",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "NA",
-              "Figure_Description": "Figure 14",
+              "Figure_Description": "14",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -3485,13 +3435,11 @@
               "DY"
             ],
             "InjectionSite_by_Author": "the proximal palm representation of area 2",
-            "Text_Description_of_InjectionSite": "An injection of DY was centered in the proximal palm representation of area 2 and an injection of CTB was centered in radial hand, wrist and dorsal d1 of area 5",
-            "Figure_Description_of_InjectionSite": "Figure 15",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "An injection of DY was centered in the proximal palm representation of area 2 and an injection of CTB was centered in radial hand, wrist and dorsal d1 of area 5",
-              "Figure_Description": "Figure 15",
+              "Figure_Description": "15",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -3525,13 +3473,11 @@
               "CTB"
             ],
             "InjectionSite_by_Author": "radial hand, wrist and dorsal d1 of area 5",
-            "Text_Description_of_InjectionSite": "An injection of DY was centered in the proximal palm representation of area 2 and an injection of CTB was centered in radial hand, wrist and dorsal d1 of area 5",
-            "Figure_Description_of_InjectionSite": "Figure 15",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "An injection of DY was centered in the proximal palm representation of area 2 and an injection of CTB was centered in radial hand, wrist and dorsal d1 of area 5",
-              "Figure_Description": "Figure 15",
+              "Figure_Description": "15",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -3645,13 +3591,11 @@
               "DY"
             ],
             "InjectionSite_by_Author": "the representation of the tip of area 2",
-            "Text_Description_of_InjectionSite": "An injection of DY was centered in the representation of the tip of area 2 and an injection of CTB was centered in representation of the proximal hypothenar pad of area 5",
-            "Figure_Description_of_InjectionSite": "Figure 16",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "An injection of DY was centered in the representation of the tip of area 2 and an injection of CTB was centered in representation of the proximal hypothenar pad of area 5",
-              "Figure_Description": "Figure 16",
+              "Figure_Description": "16",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -3717,13 +3661,11 @@
               "CTB"
             ],
             "InjectionSite_by_Author": "representation of the proximal hypothenar pad of area 5",
-            "Text_Description_of_InjectionSite": "An injection of DY was centered in the representation of the tip of area 2 and an injection of CTB was centered in representation of the proximal hypothenar pad of area 5",
-            "Figure_Description_of_InjectionSite": "Figure 16",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "An injection of DY was centered in the representation of the tip of area 2 and an injection of CTB was centered in representation of the proximal hypothenar pad of area 5",
-              "Figure_Description": "Figure 16",
+              "Figure_Description": "16",
               "Comment": ""
             },
             "All_LabeledSite_Examined": "To be recorded",
@@ -3943,7 +3885,712 @@
 
     },
     "636_Rausell_1995_https://doi.org/10.1523/JNEUROSCI.15-06-04270.1995": {
-
+      "Comment_on_Article": "",
+      "CS_Reported": "N",
+      "Article_Info": {
+        "DH_INDEX": 636,
+        "DOI-URL": "https://doi.org/10.1523/JNEUROSCI.15-06-04270.1995",
+        "PMID": "7540670",
+        "PMCID": "PMC6577703",
+        "Title": "Extent of intracortical arborization of thalamocortical axons as a determinant of representational plasticity in monkey somatic sensory cortex",
+        "First_Author": "E_Rausell",
+        "Pub_Year": 1995,
+        "Comment": ""
+      },
+      "Experimental_Subjects": {
+        "Subspecies": [
+          "M. fuscata",
+          "M. mulatta"
+        ],
+        "Source_Description": "Six normal adult monkeys (two Macaca fuscata and four Macaca mulattu) were used (Table 1).",
+        "Comment": ""
+      },
+      "Injection_and_Labeling": [
+        {
+          "Injection": {
+            "Tracer": [
+              "DY"
+            ],
+            "InjectionSite_by_Author": "receptive field of upper peroneal region at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPL",
+              "LabeledSite_Reliable": "Y",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FB"
+            ],
+            "InjectionSite_by_Author": "receptive field of upper peroneal region at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPL",
+              "LabeledSite_Reliable": "Y",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "DY"
+            ],
+            "InjectionSite_by_Author": "receptive field of zygomatic region at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "N",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPM",
+              "LabeledSite_Reliable": "Y",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FB"
+            ],
+            "InjectionSite_by_Author": "receptive field of zygomatic region at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPM",
+              "LabeledSite_Reliable": "Y",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "DY"
+            ],
+            "InjectionSite_by_Author": "receptive field of upper lip at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPM",
+              "LabeledSite_Reliable": "Y",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FB"
+            ],
+            "InjectionSite_by_Author": "receptive field of upper lip at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPM",
+              "LabeledSite_Reliable": "Y",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "DY"
+            ],
+            "InjectionSite_by_Author": "receptive field of medial aspect of the knee at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPL",
+              "LabeledSite_Reliable": "Y",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FB"
+            ],
+            "InjectionSite_by_Author": "receptive field of medial aspect of the knee at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPL",
+              "LabeledSite_Reliable": "Y",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "DY"
+            ],
+            "InjectionSite_by_Author": "receptive field of great toe at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPL",
+              "LabeledSite_Reliable": "Y",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FB"
+            ],
+            "InjectionSite_by_Author": "receptive field of lateral plantar digital pad at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPL",
+              "LabeledSite_Reliable": "Y",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "DY"
+            ],
+            "InjectionSite_by_Author": "receptive field of lateral inguinal region at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPL",
+              "LabeledSite_Reliable": "Y",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FB"
+            ],
+            "InjectionSite_by_Author": "receptive field of medial inguinal region at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPL",
+              "LabeledSite_Reliable": "Y",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "DY"
+            ],
+            "InjectionSite_by_Author": "receptive field of face at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPM",
+              "LabeledSite_Reliable": "Y",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FB"
+            ],
+            "InjectionSite_by_Author": "receptive field of face at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPM",
+              "LabeledSite_Reliable": "Y",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "DY"
+            ],
+            "InjectionSite_by_Author": "receptive field of face at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPM",
+              "LabeledSite_Reliable": "To be recorded",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FB"
+            ],
+            "InjectionSite_by_Author": "receptive field of face at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPM",
+              "LabeledSite_Reliable": "Y",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "DY"
+            ],
+            "InjectionSite_by_Author": "receptive field of upper lip at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPM",
+              "LabeledSite_Reliable": "To be recorded",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        },
+        {
+          "Injection": {
+            "Tracer": [
+              "FB"
+            ],
+            "InjectionSite_by_Author": "receptive field of upper lip at 3b",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "NA",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "NA",
+              "Comment": ""
+            },
+            "All_LabeledSite_Examined": "N",
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VPM",
+              "LabeledSite_Reliable": "Y",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        }
+      ]
     },
     "Xiao_2009_https://doi.org/10.1016/j.neuroscience.2009.04.034": {
 
