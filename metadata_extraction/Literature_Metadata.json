@@ -4593,7 +4593,24 @@
       ]
     },
     "232_Xiao_2009_https://doi.org/10.1016/j.neuroscience.2009.04.034": {
-
+      "Comment_on_Article": "",
+      "CS_Reported": "To be recorded",
+      "Article_Info": {
+        "DH_INDEX": 232,
+        "DOI-URL": "https://doi.org/10.1016/j.neuroscience.2009.04.034",
+        "PMID": "19376204",
+        "PMCID": "PMC2700123",
+        "Title": "Laminar and modular organization of prefrontal projections to multiple thalamic nuclei",
+        "First_Author": "D._Xiao",
+        "Pub_Year": 2009,
+        "Comment": ""
+      },
+      "Experimental_Subjects": {
+        "Subspecies": [],
+        "Source_Description": "To be recorded",
+        "Comment": ""
+      },
+      "Injection_and_Labeling": []
     },
     "Buckwalter_2008_https://doi.org/10.1002/cne.21647": {
 
