@@ -3988,10 +3988,27 @@
 
     },
     "Kultas-Ilinsky_2003_https://doi.org/10.1002/cne.10539": {
-
+      
     },
     "23_Friedman_1986_https://doi.org/10.1002/cne.902520305": {
-
+      "Comment_on_Article": "",
+      "CS_Reported": "To be recorded",
+      "Article_Info": {
+        "DH_INDEX": 23,
+        "DOI-URL": "https://doi.org/10.1002/cne.902520305",
+        "PMID": "3793981",
+        "PMCID": "NA",
+        "Title": "Thalamic connectivity of the second somatosensory area and neighboring somatosensory fields of the lateral sulcus of the macaque",
+        "First_Author": "David P._Friedman",
+        "Pub_Year": 1986,
+        "Comment": ""
+      },
+      "Experimental_Subjects": {
+        "Subspecies": [],
+        "Source_Description": "To be recorded",
+        "Comment": ""
+      },
+      "Injection_and_Labeling": []
     },
     "Hackett_1999_https://doi.org/10.1002/(SICI)1096-9861(19981019)400:2<271::AID-CNE8>3.0.CO;2-6": {
 
