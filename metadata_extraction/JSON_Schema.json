@@ -12,7 +12,7 @@
             "enum": ["To be recorded", "Only qualitative", "Only quantitative", "Both", "N"],
             "default": "To be recorded"
         },
-        "Laminar_Pattern": {
+        "Laminar_Pattern_Reported": {
             "type": "string",
             "title": "Is there information about laminar pattern of projections in this article?",
             "enum": ["To be recorded", "Y", "N"],
@@ -347,7 +347,7 @@
     "required": [
         "Comment_on_Article", 
         "CS_Reported", 
-        "Laminar_Pattern", 
+        "Laminar_Pattern_Reported", 
         "Article_Info", 
         "Experimental_Subjects", 
         "Injection_and_Labeling"
