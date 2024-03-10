@@ -2,7 +2,7 @@
     "120_Rouiller_2004_https://doi.org/10.1016/j.neulet.2004.01.008": {
       "Comment_on_Article": "",
       "CS_Reported": "Only qualitative",
-      "Laminar_Pattern": "To be recorded",
+      "Laminar_Pattern_Reported": "N",
       "Article_Info": {
         "DH_INDEX": 120,
         "DOI-URL": "https://doi.org/10.1016/j.neulet.2004.01.008",
@@ -198,7 +198,7 @@
     "321_Miyata_1983_https://doi.org/10.1016/0006-8993(83)90698-4": {
       "Comment_on_Article": "",
       "CS_Reported": "To be recorded",
-      "Laminar_Pattern": "To be recorded",
+      "Laminar_Pattern_Reported": "To be recorded",
       "Article_Info": {
         "DH_INDEX": 321,
         "DOI-URL": "https://doi.org/10.1016/0006-8993(83)90698-4",
@@ -1456,32 +1456,32 @@
       ]
     },
     "329_McFarland_2002_https://doi.org/10.1523/JNEUROSCI.22-18-08117.2002": {
-        "Comment_on_Article": "",
-        "CS_Reported": "To be recorded",
-        "Laminar_Pattern": "To be recorded",
-        "Article_Info": {
-          "DH_INDEX": 329,
-          "DOI-URL": "https://doi.org/10.1523/JNEUROSCI.22-18-08117.2002",
-          "PMID": "12223566",
-          "PMCID": "PMC6758100",
-          "Title": "Thalamic Relay Nuclei of the Basal Ganglia Form Both Reciprocal and Nonreciprocal Cortical Connections, Linking Multiple Frontal Cortical Areas",
-          "First_Author": "Nikolaus R._McFarland",
-          "Pub_Year": 2002,
-          "Comment": ""
-        },
-        "Experimental_Subjects": {
-          "Subspecies": [
-            "M. nemestrina"
-          ],
-          "Source_Description": "Surgery and tissue preparation. Twenty adult macaque monkeys (Macaca nemestrina) were used for these tracing experiments.",
-          "Comment": ""
-        },
-        "Injection_and_Labeling": []
+      "Comment_on_Article": "",
+      "CS_Reported": "To be recorded",
+      "Laminar_Pattern_Reported": "To be recorded",
+      "Article_Info": {
+        "DH_INDEX": 329,
+        "DOI-URL": "https://doi.org/10.1523/JNEUROSCI.22-18-08117.2002",
+        "PMID": "12223566",
+        "PMCID": "PMC6758100",
+        "Title": "Thalamic Relay Nuclei of the Basal Ganglia Form Both Reciprocal and Nonreciprocal Cortical Connections, Linking Multiple Frontal Cortical Areas",
+        "First_Author": "Nikolaus R._McFarland",
+        "Pub_Year": 2002,
+        "Comment": ""
+      },
+      "Experimental_Subjects": {
+        "Subspecies": [
+          "M. nemestrina"
+        ],
+        "Source_Description": "Surgery and tissue preparation. Twenty adult macaque monkeys (Macaca nemestrina) were used for these tracing experiments.",
+        "Comment": ""
+      },
+      "Injection_and_Labeling": []
     },
     "42_Cappe_2007_https://doi.org/10.1016/j.neuroscience.2007.02.033": {
       "Comment_on_Article": "D: since there're two injections of different tracers in both PE and PEa of two subjects, only labeled sites in both subjects are considered as reliable and recorded. Those labeled sites appeared in only one subject are ignored.",
       "CS_Reported": "To be recorded",
-      "Laminar_Pattern": "To be recorded",
+      "Laminar_Pattern_Reported": "To be recorded",
       "Article_Info": {
         "DH_INDEX": 42,
         "DOI-URL": "https://doi.org/10.1016/j.neuroscience.2007.02.033",
@@ -2194,7 +2194,7 @@
     "53_Padberg_2009_https://doi.org/10.1093/cercor/bhn229": {
       "Comment_on_Article": "",
       "CS_Reported": "To be recorded",
-      "Laminar_Pattern": "To be recorded",
+      "Laminar_Pattern_Reported": "To be recorded",
       "Article_Info": {
         "DH_INDEX": 53,
         "DOI-URL": "https://doi.org/10.1093/cercor/bhn229",
@@ -2354,6 +2354,7 @@
               "FR"
             ],
             "InjectionSite_by_Author": "the representation of the dorsal digits 3-5 of 3b",
+            "All_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -2472,6 +2473,7 @@
               "GB"
             ],
             "InjectionSite_by_Author": "the representation of distal D4 in areas 3b",
+            "All_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -3595,7 +3597,7 @@
     "1001_Rausell_1998_https://doi.org/10.1523/JNEUROSCI.18-11-04216.1998": {
       "Comment_on_Article": "",
       "CS_Reported": "To be recorded",
-      "Laminar_Pattern": "To be recorded",
+      "Laminar_Pattern_Reported": "To be recorded",
       "Article_Info": {
         "DH_INDEX": 1001,
         "DOI-URL": "https://doi.org/10.1523/JNEUROSCI.18-11-04216.1998",
@@ -3616,7 +3618,7 @@
     "89_Sakai_1999_https://doi.org/10.1007/s004290050204": {
       "Comment_on_Article": "",
       "CS_Reported": "To be recorded",
-      "Laminar_Pattern": "To be recorded",
+      "Laminar_Pattern_Reported": "To be recorded",
       "Article_Info": {
         "DH_INDEX": 89,
         "DOI-URL": "https://doi.org/10.1007/s004290050204",
@@ -3637,7 +3639,7 @@
     "76_Morel_2005_https://doi.org/10.1111/j.1460-9568.2005.03921.x": {
       "Comment_on_Article": "",
       "CS_Reported": "To be recorded",
-      "Laminar_Pattern": "To be recorded",
+      "Laminar_Pattern_Reported": "To be recorded",
       "Article_Info": {
         "DH_INDEX": 76,
         "DOI-URL": "https://doi.org/10.1111/j.1460-9568.2005.03921.x",
@@ -3658,7 +3660,7 @@
     "96_Inase_1996_https://doi.org/10.1016/0168-0102(96)01045-0": {
       "Comment_on_Article": "",
       "CS_Reported": "To be recorded",
-      "Laminar_Pattern": "To be recorded",
+      "Laminar_Pattern_Reported": "To be recorded",
       "Article_Info": {
         "DH_INDEX": 96,
         "DOI-URL": "https://doi.org/10.1016/0168-0102(96)01045-0",
@@ -3679,7 +3681,7 @@
     "2459_Burton_1984_https://doi.org/10.1016/0006-8993(84)90606-1": {
       "Comment_on_Article": "",
       "CS_Reported": "To be recorded",
-      "Laminar_Pattern": "To be recorded",
+      "Laminar_Pattern_Reported": "To be recorded",
       "Article_Info": {
         "DH_INDEX": 2459,
         "DOI-URL": "https://doi.org/10.1016/0006-8993(84)90606-1",
@@ -3784,7 +3786,7 @@
     "636_Rausell_1995_https://doi.org/10.1523/JNEUROSCI.15-06-04270.1995": {
       "Comment_on_Article": "",
       "CS_Reported": "N",
-      "Laminar_Pattern": "To be recorded",
+      "Laminar_Pattern_Reported": "To be recorded",
       "Article_Info": {
         "DH_INDEX": 636,
         "DOI-URL": "https://doi.org/10.1523/JNEUROSCI.15-06-04270.1995",
@@ -4475,7 +4477,7 @@
     "232_Xiao_2009_https://doi.org/10.1016/j.neuroscience.2009.04.034": {
       "Comment_on_Article": "",
       "CS_Reported": "To be recorded",
-      "Laminar_Pattern": "To be recorded",
+      "Laminar_Pattern_Reported": "To be recorded",
       "Article_Info": {
         "DH_INDEX": 232,
         "DOI-URL": "https://doi.org/10.1016/j.neuroscience.2009.04.034",
@@ -4496,7 +4498,7 @@
     "23_Friedman_1986_https://doi.org/10.1002/cne.902520305": {
       "Comment_on_Article": "",
       "CS_Reported": "To be recorded",
-      "Laminar_Pattern": "To be recorded",
+      "Laminar_Pattern_Reported": "To be recorded",
       "Article_Info": {
         "DH_INDEX": 23,
         "DOI-URL": "https://doi.org/10.1002/cne.902520305",
