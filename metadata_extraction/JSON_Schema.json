@@ -8,13 +8,13 @@
         },
         "CS_Reported": {
             "type": "string",
-            "title": "Is there information about connection strength in this article?",
+            "title": "Connection Strength reported in this article?",
             "enum": ["To be recorded", "Only qualitative", "Only quantitative", "Both", "N"],
             "default": "To be recorded"
         },
         "Laminar_Pattern_Reported": {
             "type": "string",
-            "title": "Is there information about laminar pattern of projections in this article?",
+            "title": "Laminar Pattern of Projections reported in this article?",
             "enum": ["To be recorded", "Y", "N"],
             "default": "To be recorded"
         },
@@ -143,6 +143,12 @@
                                 "default": "To be recorded",
                                 "minLength": 1
                             },
+                            "All_LabeledSite_Examined": {
+                                "type": "string",
+                                "title": "Were ALL LabeledSites from this injection examined and recorded?",
+                                "enum": ["To be recorded", "NA", "Y", "N"],
+                                "default": "To be recorded"
+                            },
                             "Injection_Coverage_by_Author": {
                                 "type": "object",
                                 "title": "Injection Coverage:",
@@ -184,12 +190,6 @@
                                     "Comment"
                                 ]
                             },
-                            "All_LabeledSite_Examined": {
-                                "type": "string",
-                                "title": "Were all labeled sites examined and recorded?",
-                                "enum": ["To be recorded", "NA", "Y", "N"],
-                                "default": "To be recorded"
-                            },
                             "Comment_on_Injection": {
                                 "type": "string",
                                 "title": "Comment on Injection:" 
@@ -222,6 +222,7 @@
                         "required": [
                             "Tracer", 
                             "InjectionSite_by_Author",
+                            "All_LabeledSite_Examined",
                             "Injection_Coverage_by_Author", 
                             "Comment_on_Injection", 
                             "InjectionSite_M132", 
@@ -247,12 +248,6 @@
                                     "title": "LabeledSite by Author:",
                                     "default": "To be recorded",
                                     "minLength": 1
-                                },
-                                "LabeledSite_Reliable": {
-                                    "type": "string",
-                                    "title": "Is this labeled site reliable (there're at least 3 labeled neurons)?",
-                                    "enum": ["To be recorded", "Y", "N"],
-                                    "default": "To be recorded"
                                 },
                                 "Comment_on_LabeledSite": {
                                     "type": "string",
@@ -326,8 +321,7 @@
                             },
                             "required": [
                                 "TT_Direction", 
-                                "LabeledSite_by_Author", 
-                                "LabeledSite_Reliable", 
+                                "LabeledSite_by_Author",
                                 "Comment_on_LabeledSite", 
                                 "LabeledSite_M132", 
                                 "LabeledSite_PAX", 
