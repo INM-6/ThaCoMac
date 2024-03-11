@@ -3597,7 +3597,7 @@
     "1001_Rausell_1998_https://doi.org/10.1523/JNEUROSCI.18-11-04216.1998": {
       "Comment_on_Article": "",
       "CS_Reported": "To be recorded",
-      "Laminar_Pattern_Reported": "To be recorded",
+      "Laminar_Pattern_Reported": "Y",
       "Article_Info": {
         "DH_INDEX": 1001,
         "DOI-URL": "https://doi.org/10.1523/JNEUROSCI.18-11-04216.1998",
@@ -3609,11 +3609,35 @@
         "Comment": ""
       },
       "Experimental_Subjects": {
-        "Subspecies": [],
-        "Source_Description": "To be recorded",
+        "Subspecies": [
+          "M. fuscata",
+          "M. mulatta",
+          "M. nemestrina"
+        ],
+        "Source_Description": "This work was performed on the brains of 13 macaque monkeys (three Macaca fuscata, six M. mulatta, and four M. nemestrina).",
         "Comment": ""
       },
-      "Injection_and_Labeling": []
+      "Injection_and_Labeling": [
+        {
+          "Injection": {
+            "Tracer": [],
+            "InjectionSite_by_Author": "To be recorded",
+            "All_LabeledSite_Examined": "To be recorded",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "To be recorded",
+              "Adjacent_Regions_Covered": "To be recorded",
+              "Text_Description": "To be recorded",
+              "Figure_Description": "To be recorded",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": []
+        }
+      ]
     },
     "89_Sakai_1999_https://doi.org/10.1007/s004290050204": {
       "Comment_on_Article": "",
@@ -3659,8 +3683,8 @@
     },
     "96_Inase_1996_https://doi.org/10.1016/0168-0102(96)01045-0": {
       "Comment_on_Article": "",
-      "CS_Reported": "To be recorded",
-      "Laminar_Pattern_Reported": "To be recorded",
+      "CS_Reported": "Only qualitative",
+      "Laminar_Pattern_Reported": "N",
       "Article_Info": {
         "DH_INDEX": 96,
         "DOI-URL": "https://doi.org/10.1016/0168-0102(96)01045-0",
@@ -3672,11 +3696,250 @@
         "Comment": ""
       },
       "Experimental_Subjects": {
-        "Subspecies": [],
-        "Source_Description": "To be recorded",
+        "Subspecies": [
+          "M. fuscata"
+        ],
+        "Source_Description": "Two adult female Japanese monkeys (Macaca fuscata) were used for this study.",
         "Comment": ""
       },
-      "Injection_and_Labeling": []
+      "Injection_and_Labeling": [
+        {
+          "Injection": {
+            "Tracer": [
+              "BDA"
+            ],
+            "InjectionSite_by_Author": "pre-SMA",
+            "All_LabeledSite_Examined": "Y",
+            "Injection_Coverage_by_Author": {
+              "Cover_Adjacent_Regions": "To be recorded",
+              "Adjacent_Regions_Covered": "NAp",
+              "Text_Description": "NA",
+              "Figure_Description": "1, 2",
+              "Comment": ""
+            },
+            "Comment_on_Injection": "",
+            "InjectionSite_M132": "To be recorded",
+            "InjectionSite_PAX": "To be recorded",
+            "InjectionSite_Mapping_Confidence": "To be recorded"
+          },
+          "LabeledSites": [
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VApc",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "rostralmost portion of VLo",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "dorsal portion of VLo",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              },
+              "Figure_Description_of_LabeledSite": null
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "X",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              },
+              "Figure_Description_of_LabeledSite": null
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "paralaminar zone of MD",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              },
+              "Figure_Description_of_LabeledSite": null
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VLm",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              },
+              "Figure_Description_of_LabeledSite": null
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VLc",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Anterograde",
+              "LabeledSite_by_Author": "VApc",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Anterograde",
+              "LabeledSite_by_Author": "rostralmost portion of VLo",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Anterograde",
+              "LabeledSite_by_Author": "dorsal portion of VLo",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Anterograde",
+              "LabeledSite_by_Author": "X",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Anterograde",
+              "LabeledSite_by_Author": "paralaminar zone of MD",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Anterograde",
+              "LabeledSite_by_Author": "VLm",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Anterograde",
+              "LabeledSite_by_Author": "VLc",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            }
+          ]
+        }
+      ]
     },
     "2459_Burton_1984_https://doi.org/10.1016/0006-8993(84)90606-1": {
       "Comment_on_Article": "",
