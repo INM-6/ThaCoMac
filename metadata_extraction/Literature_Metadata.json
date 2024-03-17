@@ -197,9 +197,9 @@
     },
     "321_Miyata_1983_https://doi.org/10.1016/0006-8993(83)90698-4": {
       "Comment_on_Article": "",
-      "Connection_Strength": "Only qualitative",
+      "Connection_Strength": "N",
       "Laminar_Pattern": "N",
-      "Intrathalamic_Connection": "To be recorded",
+      "Intrathalamic_Connection": "N",
       "Article_Info": {
         "DH_INDEX": 321,
         "DOI-URL": "https://doi.org/10.1016/0006-8993(83)90698-4",
@@ -471,7 +471,7 @@
             },
             {
               "TT_Direction": "Retrograde",
-              "LabeledSite_by_Author": "VLPs",
+              "LabeledSite_by_Author": "VLps",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
