@@ -1,7 +1,54 @@
-A1
-PO
-SG
-dMGB
-mMGB
-reticular nucleus of the thalamus
-vMGB
+central, lateral VLo
+ventromedial VLo
+caudal, dorsolateral VApc
+central, ventral VApc
+the rostral pole of VApc
+the dorsal, medial VAmc
+central, medial MD
+rostral SMA
+Pre-SMA/9
+9
+lateral area 9
+24
+14
+11l
+11m
+12
+12l
+12o
+13b
+13l
+13m
+23c
+24b
+25
+32
+45
+46
+CMAc
+CMAr
+CeM
+FEF
+M1
+MD
+MDmc
+MDmf
+MDpc
+PMdc
+PMdr
+PMvc
+PMvr
+Pc
+PrCO
+Pre-SMA
+R
+SMA
+VA
+VAmc
+VLc
+VLm
+VLo
+X
+caudal region of area 9
+medial parts of the VA
+the most caudal levels of area 9
