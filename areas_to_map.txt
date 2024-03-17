@@ -1,36 +1,7 @@
-the medial part of motor cortex (hindlimb area)
-5
-the lateral part of precentral motor area (forelimb area)
-the lateral part of area 6
-the border region of cortical areas 6 and 9
-AM
-CI
-CM
-Cdc
-Csl
-LP
-Li
-MD
-MDdc
-MDmf
-MDpc
-Pcn
-Pf
-Pulm
-Pulo
-VA
-VAmc
-VLc
-VLo
-VLp
-VLps
-VPLc
-VPLo
-X
-lateral part of VLc
-lateral part of VLm
-lateral part of VLo
-lateral part of VPLo
-the intermediate segment of VLc
-the intermediate segment of VLo
-the intermediate segment of VPLo
+A1
+PO
+SG
+dMGB
+mMGB
+reticular nucleus of the thalamus
+vMGB
