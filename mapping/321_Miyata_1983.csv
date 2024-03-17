@@ -1,0 +1,10 @@
+﻿"DOI_URL:"										
+"Title:"										
+										
+"General CPRs:"										
+"General TPRs:"										
+										
+"Area name"	"Area name explained"	"Area type (Injection site/Labeled site/Both sites)"	"Relation (part of/same as/sum of)"	"Mapped area name"	"Mapping confidence (high/medium/low)"	"Mapping references"	"Mapped by (D/R/A)"	"Comment"	"Figures"	"PRs"
+		"Injection site"	"part of"	"M132-"	"high"		"D"			
+		"Labeled site"	"same as"	"PAX-"	"medium"		"R"			
+		"Both sites"	"sum of"		"low"		"A"			
