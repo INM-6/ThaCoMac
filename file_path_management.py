@@ -17,7 +17,6 @@ TT_text_folder = device + "TT_text"
 # not_relevant_pdf_folder = device + "not_relevant_pdfs"
 
 
-
 # project folder and the root folder of the repository
 project_folder = Path.cwd()
 # path to the datasets
@@ -28,7 +27,8 @@ potential_literature_database_folder = os.path.join(project_folder, "datasets", 
 embedding_and_pca_folder = os.path.join(project_folder, "datasets", "04_embedding_and_pca")
 manually_read_and_confirm_folder = os.path.join(project_folder, "datasets", "05_manually_read_and_confirm")
 
-
+metadata_extraction = os.path.join(project_folder, "metadata_extraction")
+mapping = os.path.join(project_folder, "mapping")
 
 # literature_search_results_folder
 cocomac_literature_list = os.path.join(literature_search_results_folder, "cocomac_literature_list.csv")

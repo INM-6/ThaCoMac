@@ -1,10 +1,46 @@
-﻿"DOI_URL:"										
-"Title:"										
+DOI_URL:	https://doi.org/10.1016/0006-8993(83)90698-4									
+Title:	HRP studies on thalamocortical neurons related to the cerebellocerebral projection in the monkey									
 										
-"General CPRs:"										
-"General TPRs:"										
+General CPRs:										
+General TPRs:										
 										
-"Area name"	"Area name explained"	"Area type (Injection site/Labeled site/Both sites)"	"Relation (part of/same as/sum of)"	"Mapped area name"	"Mapping confidence (high/medium/low)"	"Mapping references"	"Mapped by (D/R/A)"	"Comment"	"Figures"	"PRs"
-		"Injection site"	"part of"	"M132-"	"high"		"D"			
-		"Labeled site"	"same as"	"PAX-"	"medium"		"R"			
-		"Both sites"	"sum of"		"low"		"A"			
+Area name	Area name explained	Area type (Injection site/Labeled site/Both sites)	Relation (part of/same as/sum of)	Mapped area name	Mapping confidence (high/medium/low)	Mapping references	Mapped by (D/R/A)	Comment	Figures	PRs
+		Injection site	part of	M132-	high		D			
+		Labeled site	same as	PAX-	medium		R			
+		Both sites	sum of		low		A			
+the medial part of motor cortex (hindlimb area)							D			
+5							D			
+the lateral part of precentral motor area (forelimb area)							D			
+the lateral part of area 6							D			
+the border region of cortical areas 6 and 9							D			
+AM							D			
+CI							D			
+CM							D			
+Cdc							D			
+Csl							D			
+LP							D			
+Li							D			
+MD							D			
+MDdc							D			
+MDmf							D			
+MDpc							D			
+Pcn							D			
+Pf							D			
+Pulm							D			
+Pulo							D			
+VA							D			
+VAmc							D			
+VLc							D			
+VLo							D			
+VLp							D			
+VLps							D			
+VPLc							D			
+VPLo							D			
+X							D			
+lateral part of VLc							D			
+lateral part of VLm							D			
+lateral part of VLo							D			
+lateral part of VPLo							D			
+the intermediate segment of VLc							D			
+the intermediate segment of VLo							D			
+the intermediate segment of VPLo							D			
