@@ -6,15 +6,21 @@
             "type": "string",
             "title": "Comment on This Article:"
         },
-        "CS_Reported": {
+        "Connection_Strength": {
             "type": "string",
             "title": "Connection Strength reported in this article?",
             "enum": ["To be recorded", "Only qualitative", "Only quantitative", "Both", "N"],
             "default": "To be recorded"
         },
-        "Laminar_Pattern_Reported": {
+        "Laminar_Pattern": {
             "type": "string",
             "title": "Laminar Pattern of Projections reported in this article?",
+            "enum": ["To be recorded", "Y", "N"],
+            "default": "To be recorded"
+        },
+        "Intrathalamic_Connection": {
+            "type": "string",
+            "title": "Intrathalamic Connections reported in this article?",
             "enum": ["To be recorded", "Y", "N"],
             "default": "To be recorded"
         },
@@ -339,11 +345,12 @@
         }
     },
     "required": [
-        "Comment_on_Article", 
-        "CS_Reported", 
-        "Laminar_Pattern_Reported", 
-        "Article_Info", 
-        "Experimental_Subjects", 
+        "Comment_on_Article",
+        "Connection_Strength",
+        "Laminar_Pattern",
+        "Intrathalamic_Connection",
+        "Article_Info",
+        "Experimental_Subjects",
         "Injection_and_Labeling"
     ]
 }
