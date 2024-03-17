@@ -149,10 +149,16 @@
                                 "default": "To be recorded",
                                 "minLength": 1
                             },
-                            "All_LabeledSite_Examined": {
+                            "All_Anterograde_LabeledSite_Examined": {
                                 "type": "string",
-                                "title": "Were ALL LabeledSites from this injection examined and recorded?",
-                                "enum": ["To be recorded", "NA", "Y", "N"],
+                                "title": "Were ALL Anterograde LabeledSites from this injection examined and recorded?",
+                                "enum": ["To be recorded", "NA", "NAp", "Y", "N"],
+                                "default": "To be recorded"
+                            },
+                            "All_Retrograde_LabeledSite_Examined": {
+                                "type": "string",
+                                "title": "Were ALL Retrograde LabeledSites from this injection examined and recorded?",
+                                "enum": ["To be recorded", "NA", "NAp", "Y", "N"],
                                 "default": "To be recorded"
                             },
                             "Injection_Coverage_by_Author": {
@@ -228,7 +234,8 @@
                         "required": [
                             "Tracer", 
                             "InjectionSite_by_Author",
-                            "All_LabeledSite_Examined",
+                            "All_Anterograde_LabeledSite_Examined",
+                            "All_Retrograde_LabeledSite_Examined",
                             "Injection_Coverage_by_Author", 
                             "Comment_on_Injection", 
                             "InjectionSite_M132", 

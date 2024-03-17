@@ -28,7 +28,8 @@
               "BDA"
             ],
             "InjectionSite_by_Author": "A1",
-            "All_LabeledSite_Examined": "Y",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -226,7 +227,8 @@
               "HRP"
             ],
             "InjectionSite_by_Author": "the medial part of motor cortex (hindlimb area)",
-            "All_LabeledSite_Examined": "Y",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -413,7 +415,8 @@
               "HRP"
             ],
             "InjectionSite_by_Author": "5",
-            "All_LabeledSite_Examined": "Y",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -675,7 +678,8 @@
               "HRP"
             ],
             "InjectionSite_by_Author": "the lateral part of precentral motor area (forelimb area)",
-            "All_LabeledSite_Examined": "Y",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -862,7 +866,8 @@
               "HRP"
             ],
             "InjectionSite_by_Author": "the lateral part of area 6",
-            "All_LabeledSite_Examined": "Y",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -1184,7 +1189,8 @@
               "HRP"
             ],
             "InjectionSite_by_Author": "the border region of cortical areas 6 and 9",
-            "All_LabeledSite_Examined": "Y",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -1486,7 +1492,8 @@
               "TAA"
             ],
             "InjectionSite_by_Author": "central, lateral VLo",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -1598,7 +1605,8 @@
               "FS"
             ],
             "InjectionSite_by_Author": "ventromedial VLo",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -1680,7 +1688,8 @@
               "TAA"
             ],
             "InjectionSite_by_Author": "caudal, dorsolateral VApc",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -1837,7 +1846,8 @@
               "TAA"
             ],
             "InjectionSite_by_Author": "central, ventral VApc",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -2009,7 +2019,8 @@
               "TAA"
             ],
             "InjectionSite_by_Author": "the rostral pole of VApc",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -2091,7 +2102,8 @@
               "FS"
             ],
             "InjectionSite_by_Author": "the dorsal, medial VAmc",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -2263,7 +2275,8 @@
               "WGA-HRP"
             ],
             "InjectionSite_by_Author": "central, medial MD",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -2525,7 +2538,8 @@
               "LY"
             ],
             "InjectionSite_by_Author": "rostral SMA",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -2727,7 +2741,8 @@
               "LY"
             ],
             "InjectionSite_by_Author": "Pre-SMA/9",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -2929,7 +2944,8 @@
               "LY"
             ],
             "InjectionSite_by_Author": "9",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -3116,7 +3132,8 @@
               "LY"
             ],
             "InjectionSite_by_Author": "lateral area 9",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -3348,7 +3365,8 @@
               "LY"
             ],
             "InjectionSite_by_Author": "24",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -3460,7 +3478,8 @@
               "LY"
             ],
             "InjectionSite_by_Author": "14",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -3583,7 +3602,8 @@
               "BDA"
             ],
             "InjectionSite_by_Author": "PE",
-            "All_LabeledSite_Examined": "Y",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -3974,7 +3994,8 @@
               "FR"
             ],
             "InjectionSite_by_Author": "PEa",
-            "All_LabeledSite_Examined": "Y",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -4287,7 +4308,8 @@
               "BDA"
             ],
             "InjectionSite_by_Author": "PEa",
-            "All_LabeledSite_Examined": "Y",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -4699,7 +4721,8 @@
               "WGA"
             ],
             "InjectionSite_by_Author": "PE",
-            "All_LabeledSite_Examined": "Y",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -5077,7 +5100,8 @@
               "FB"
             ],
             "InjectionSite_by_Author": "the representation of glabrous middle D3 of 3b",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -5159,7 +5183,8 @@
               "DY"
             ],
             "InjectionSite_by_Author": "the representation of the proximal glabrous thenar pad of 3b",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -5211,7 +5236,8 @@
               "FR"
             ],
             "InjectionSite_by_Author": "the representation of the dorsal digits 3-5 of 3b",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -5278,7 +5304,8 @@
               "FR"
             ],
             "InjectionSite_by_Author": "distal D3 and D4 in area 3a",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -5330,7 +5357,8 @@
               "GB"
             ],
             "InjectionSite_by_Author": "the representation of distal D4 in areas 3b",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -5382,7 +5410,8 @@
               "FB"
             ],
             "InjectionSite_by_Author": "the representation of distal D4 in area 1",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -5479,7 +5508,8 @@
               "DY"
             ],
             "InjectionSite_by_Author": "distal D3 and D4 in area 2",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -5546,7 +5576,8 @@
               "FB"
             ],
             "InjectionSite_by_Author": "D2-4 in area 3a",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -5628,7 +5659,8 @@
               "GB"
             ],
             "InjectionSite_by_Author": "the representation of distal D3 in area 3b",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -5695,7 +5727,8 @@
               "FR"
             ],
             "InjectionSite_by_Author": "the representation of distal D3 in area 1",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -5777,7 +5810,8 @@
               "FG"
             ],
             "InjectionSite_by_Author": "D2-4 in area 2",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -5829,7 +5863,8 @@
               "FR"
             ],
             "InjectionSite_by_Author": "the representation of glabrous digit 2 in area 2",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -5911,7 +5946,8 @@
               "FE"
             ],
             "InjectionSite_by_Author": "the representation of glabrous digit 1 in area 2",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -5978,7 +6014,8 @@
               "FE"
             ],
             "InjectionSite_by_Author": "the representation of glabrous distal digit 1 of area 2",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -6060,7 +6097,8 @@
               "FR"
             ],
             "InjectionSite_by_Author": "the D1 representation of area 5",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -6127,7 +6165,8 @@
               "DY"
             ],
             "InjectionSite_by_Author": "the proximal palm representation of area 2",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -6164,7 +6203,8 @@
               "CTB"
             ],
             "InjectionSite_by_Author": "radial hand, wrist and dorsal d1 of area 5",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -6276,7 +6316,8 @@
               "DY"
             ],
             "InjectionSite_by_Author": "the representation of the tip of area 2",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -6343,7 +6384,8 @@
               "CTB"
             ],
             "InjectionSite_by_Author": "representation of the proximal hypothenar pad of area 5",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -6480,7 +6522,8 @@
           "Injection": {
             "Tracer": [],
             "InjectionSite_by_Author": "To be recorded",
-            "All_LabeledSite_Examined": "To be recorded",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "To be recorded",
               "Adjacent_Regions_Covered": "To be recorded",
@@ -6570,7 +6613,8 @@
               "BDA"
             ],
             "InjectionSite_by_Author": "pre-SMA",
-            "All_LabeledSite_Examined": "Y",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "To be recorded",
               "Adjacent_Regions_Covered": "NAp",
@@ -6942,7 +6986,8 @@
               "DY"
             ],
             "InjectionSite_by_Author": "receptive field of upper peroneal region at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -6979,7 +7024,8 @@
               "FB"
             ],
             "InjectionSite_by_Author": "receptive field of upper peroneal region at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -7016,7 +7062,8 @@
               "DY"
             ],
             "InjectionSite_by_Author": "receptive field of zygomatic region at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
@@ -7053,7 +7100,8 @@
               "FB"
             ],
             "InjectionSite_by_Author": "receptive field of zygomatic region at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -7090,7 +7138,8 @@
               "DY"
             ],
             "InjectionSite_by_Author": "receptive field of upper lip at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -7127,7 +7176,8 @@
               "FB"
             ],
             "InjectionSite_by_Author": "receptive field of upper lip at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -7164,7 +7214,8 @@
               "DY"
             ],
             "InjectionSite_by_Author": "receptive field of medial aspect of the knee at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -7201,7 +7252,8 @@
               "FB"
             ],
             "InjectionSite_by_Author": "receptive field of medial aspect of the knee at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -7238,7 +7290,8 @@
               "DY"
             ],
             "InjectionSite_by_Author": "receptive field of great toe at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -7275,7 +7328,8 @@
               "FB"
             ],
             "InjectionSite_by_Author": "receptive field of lateral plantar digital pad at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -7312,7 +7366,8 @@
               "DY"
             ],
             "InjectionSite_by_Author": "receptive field of lateral inguinal region at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -7349,7 +7404,8 @@
               "FB"
             ],
             "InjectionSite_by_Author": "receptive field of medial inguinal region at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -7386,7 +7442,8 @@
               "DY"
             ],
             "InjectionSite_by_Author": "receptive field of face at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -7423,7 +7480,8 @@
               "FB"
             ],
             "InjectionSite_by_Author": "receptive field of face at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -7460,7 +7518,8 @@
               "DY"
             ],
             "InjectionSite_by_Author": "receptive field of face at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -7497,7 +7556,8 @@
               "FB"
             ],
             "InjectionSite_by_Author": "receptive field of face at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -7534,7 +7594,8 @@
               "DY"
             ],
             "InjectionSite_by_Author": "receptive field of upper lip at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
@@ -7571,7 +7632,8 @@
               "FB"
             ],
             "InjectionSite_by_Author": "receptive field of upper lip at 3b",
-            "All_LabeledSite_Examined": "N",
+            "All_Anterograde_LabeledSite_Examined": "To be recorded",
+            "All_Retrograde_LabeledSite_Examined": "To be recorded",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "NA",
               "Adjacent_Regions_Covered": "NAp",
