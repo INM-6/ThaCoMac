@@ -1580,7 +1580,7 @@
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "NA",
-              "Figure_Description": "1,3",
+              "Figure_Description": "1,3,11",
               "Comment": ""
             },
             "Comment_on_Injection": "",
@@ -1637,6 +1637,231 @@
             {
               "TT_Direction": "Anterograde",
               "LabeledSite_by_Author": "PMvc",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "Pre-SMA",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "CMAr",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "PMdr",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "FEF",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "PMvr",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "PrCO",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "12o",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "G",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "lapl",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "lapm",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "SMA",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "PMdc",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "CMAc",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "PMvc",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "M1",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -2069,7 +2294,7 @@
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "NA",
-              "Figure_Description": "1,7",
+              "Figure_Description": "1,7,11",
               "Comment": ""
             },
             "Comment_on_Injection": "",
@@ -2096,6 +2321,21 @@
             {
               "TT_Direction": "Anterograde",
               "LabeledSite_by_Author": "12",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Anterograde",
+              "LabeledSite_by_Author": "Pre-SMA",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -2141,6 +2381,21 @@
             {
               "TT_Direction": "Anterograde",
               "LabeledSite_by_Author": "CMAr",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Anterograde",
+              "LabeledSite_by_Author": "24c",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -2212,6 +2467,231 @@
                 "Source_Description_of_Quan_CS": "To be recorded",
                 "Comment_on_Connection_Strength": ""
               }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "9",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "24b",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "32",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "46",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "12",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "Pre-SMA",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "PMdr",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "FEF",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "24c",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "45",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "12l",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "12o",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "CMAr",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "24a",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "PMvr",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
             }
           ]
         },
@@ -2225,7 +2705,7 @@
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "NA",
-              "Figure_Description": "1,8",
+              "Figure_Description": "1,8,11",
               "Comment": ""
             },
             "Comment_on_Injection": "",
@@ -2446,7 +2926,337 @@
             },
             {
               "TT_Direction": "Anterograde",
-              "LabeledSite_by_Author": "25",
+              "LabeledSite_by_Author": "24b",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Anterograde",
+              "LabeledSite_by_Author": "13a",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "9",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "24b",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "32",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "14",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "46",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "11l",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "12l",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "11m",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "13b",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "13m",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "FEF",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "9v",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "45",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "12o",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "Pre-SMA",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "CMAr",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "24a",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "PMvr",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "PrCO",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "13a",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "la",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -2468,10 +3278,10 @@
             ],
             "InjectionSite_by_Author": "rostral SMA",
             "Injection_Coverage_by_Author": {
-              "Cover_Adjacent_Regions": "N",
-              "Adjacent_Regions_Covered": "NAp",
-              "Text_Description": "Although some injection sites extended into the adjacent cortical region, there was no overlap between the sites.",
-              "Figure_Description": "9",
+              "Cover_Adjacent_Regions": "To be recorded",
+              "Adjacent_Regions_Covered": "To be recorded",
+              "Text_Description": "To be recorded",
+              "Figure_Description": "1,9",
               "Comment": ""
             },
             "Comment_on_Injection": "",
@@ -2558,6 +3368,21 @@
             {
               "TT_Direction": "Anterograde",
               "LabeledSite_by_Author": "MDmf",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Anterograde",
+              "LabeledSite_by_Author": "MDpc",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -2667,12 +3492,12 @@
             "Tracer": [
               "LY"
             ],
-            "InjectionSite_by_Author": "Pre-SMA/9",
+            "InjectionSite_by_Author": "PreSMA/9",
             "Injection_Coverage_by_Author": {
-              "Cover_Adjacent_Regions": "N",
-              "Adjacent_Regions_Covered": "NAp",
-              "Text_Description": "Although some injection sites extended into the adjacent cortical region, there was no overlap between the sites.",
-              "Figure_Description": "9",
+              "Cover_Adjacent_Regions": "To be recorded",
+              "Adjacent_Regions_Covered": "To be recorded",
+              "Text_Description": "To be recorded",
+              "Figure_Description": "1,9",
               "Comment": ""
             },
             "Comment_on_Injection": "",
@@ -2848,6 +3673,21 @@
             },
             {
               "TT_Direction": "Retrograde",
+              "LabeledSite_by_Author": "VLc",
+              "Comment_on_LabeledSite": "",
+              "LabeledSite_M132": "To be recorded",
+              "LabeledSite_PAX": "To be recorded",
+              "LabeledSite_Mapping_Confidence": "To be recorded",
+              "Connection_Strength": {
+                "Qual_CS": "To be recorded",
+                "Source_Description_of_Qual_CS": "To be recorded",
+                "Quan_CS": "To be recorded",
+                "Source_Description_of_Quan_CS": "To be recorded",
+                "Comment_on_Connection_Strength": ""
+              }
+            },
+            {
+              "TT_Direction": "Retrograde",
               "LabeledSite_by_Author": "MD",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
@@ -2870,10 +3710,10 @@
             ],
             "InjectionSite_by_Author": "9",
             "Injection_Coverage_by_Author": {
-              "Cover_Adjacent_Regions": "N",
-              "Adjacent_Regions_Covered": "NAp",
-              "Text_Description": "Although some injection sites extended into the adjacent cortical region, there was no overlap between the sites.",
-              "Figure_Description": "9",
+              "Cover_Adjacent_Regions": "To be recorded",
+              "Adjacent_Regions_Covered": "To be recorded",
+              "Text_Description": "To be recorded",
+              "Figure_Description": "1,9",
               "Comment": ""
             },
             "Comment_on_Injection": "",
@@ -3056,10 +3896,10 @@
             ],
             "InjectionSite_by_Author": "lateral area 9",
             "Injection_Coverage_by_Author": {
-              "Cover_Adjacent_Regions": "N",
-              "Adjacent_Regions_Covered": "NAp",
-              "Text_Description": "Although some injection sites extended into the adjacent cortical region, there was no overlap between the sites.",
-              "Figure_Description": "10",
+              "Cover_Adjacent_Regions": "To be recorded",
+              "Adjacent_Regions_Covered": "To be recorded",
+              "Text_Description": "To be recorded",
+              "Figure_Description": "1,10",
               "Comment": ""
             },
             "Comment_on_Injection": "",
@@ -3131,21 +3971,6 @@
             {
               "TT_Direction": "Anterograde",
               "LabeledSite_by_Author": "Pc",
-              "Comment_on_LabeledSite": "",
-              "LabeledSite_M132": "To be recorded",
-              "LabeledSite_PAX": "To be recorded",
-              "LabeledSite_Mapping_Confidence": "To be recorded",
-              "Connection_Strength": {
-                "Qual_CS": "To be recorded",
-                "Source_Description_of_Qual_CS": "To be recorded",
-                "Quan_CS": "To be recorded",
-                "Source_Description_of_Quan_CS": "To be recorded",
-                "Comment_on_Connection_Strength": ""
-              }
-            },
-            {
-              "TT_Direction": "Anterograde",
-              "LabeledSite_by_Author": "CeM",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -3287,10 +4112,10 @@
             ],
             "InjectionSite_by_Author": "24",
             "Injection_Coverage_by_Author": {
-              "Cover_Adjacent_Regions": "N",
-              "Adjacent_Regions_Covered": "NAp",
-              "Text_Description": "Although some injection sites extended into the adjacent cortical region, there was no overlap between the sites.",
-              "Figure_Description": "10",
+              "Cover_Adjacent_Regions": "To be recorded",
+              "Adjacent_Regions_Covered": "To be recorded",
+              "Text_Description": "To be recorded",
+              "Figure_Description": "1,10",
               "Comment": ""
             },
             "Comment_on_Injection": "",
@@ -3398,10 +4223,10 @@
             ],
             "InjectionSite_by_Author": "14",
             "Injection_Coverage_by_Author": {
-              "Cover_Adjacent_Regions": "N",
-              "Adjacent_Regions_Covered": "NAp",
-              "Text_Description": "Although some injection sites extended into the adjacent cortical region, there was no overlap between the sites.",
-              "Figure_Description": "10",
+              "Cover_Adjacent_Regions": "To be recorded",
+              "Adjacent_Regions_Covered": "To be recorded",
+              "Text_Description": "To be recorded",
+              "Figure_Description": "1,10",
               "Comment": ""
             },
             "Comment_on_Injection": "",
