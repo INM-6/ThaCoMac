@@ -4,9 +4,9 @@ caudal, dorsolateral VApc
 central, ventral VApc
 the rostral pole of VApc
 the dorsal, medial VAmc
-central, medial MD
+the central MD nucleus
 rostral SMA
-Pre-SMA/9
+PreSMA/9
 9
 lateral area 9
 24
@@ -16,19 +16,21 @@ lateral area 9
 12
 12l
 12o
+13a
 13b
 13l
 13m
-23c
+24a
 24b
-25
+24c
 32
 45
 46
+9v
 CMAc
 CMAr
-CeM
 FEF
+G
 M1
 MD
 MDmc
@@ -50,5 +52,11 @@ VLm
 VLo
 X
 caudal region of area 9
+la
+lapl
+lapm
 medial parts of the VA
 the most caudal levels of area 9
+the rostral M1
+the rostral half of M1
+the rostral part of SMA proper
