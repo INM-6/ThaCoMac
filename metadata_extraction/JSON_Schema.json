@@ -163,7 +163,7 @@
                                         "type": "string",
                                         "title": "Adjacent regions covered (comma-delimited):",
                                         "default": "To be recorded",
-                                        "minLength": 3
+                                        "minLength": 1
                                     },
                                     "Text_Description": {
                                         "type": "string",

@@ -1455,7 +1455,7 @@
       "Comment_on_Article": "",
       "Connection_Strength": "Only qualitative",
       "Laminar_Pattern": "Y",
-      "Intrathalamic_Connection": "To be recorded",
+      "Intrathalamic_Connection": "N",
       "Article_Info": {
         "DH_INDEX": 329,
         "DOI-URL": "https://doi.org/10.1523/JNEUROSCI.22-18-08117.2002",
@@ -1481,10 +1481,10 @@
             ],
             "InjectionSite_by_Author": "central, lateral VLo",
             "Injection_Coverage_by_Author": {
-              "Cover_Adjacent_Regions": "N",
-              "Adjacent_Regions_Covered": "NAp",
+              "Cover_Adjacent_Regions": "Y",
+              "Adjacent_Regions_Covered": "R",
               "Text_Description": "NA",
-              "Figure_Description": "2",
+              "Figure_Description": "1,2",
               "Comment": ""
             },
             "Comment_on_Injection": "",
@@ -1495,7 +1495,7 @@
           "LabeledSites": [
             {
               "TT_Direction": "Anterograde",
-              "LabeledSite_by_Author": "M1",
+              "LabeledSite_by_Author": "the rostral half of M1",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -1567,21 +1567,6 @@
                 "Source_Description_of_Quan_CS": "To be recorded",
                 "Comment_on_Connection_Strength": ""
               }
-            },
-            {
-              "TT_Direction": "Anterograde",
-              "LabeledSite_by_Author": "23c",
-              "Comment_on_LabeledSite": "",
-              "LabeledSite_M132": "To be recorded",
-              "LabeledSite_PAX": "To be recorded",
-              "LabeledSite_Mapping_Confidence": "To be recorded",
-              "Connection_Strength": {
-                "Qual_CS": "To be recorded",
-                "Source_Description_of_Qual_CS": "To be recorded",
-                "Quan_CS": "To be recorded",
-                "Source_Description_of_Quan_CS": "To be recorded",
-                "Comment_on_Connection_Strength": ""
-              }
             }
           ]
         },
@@ -1595,7 +1580,7 @@
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "NA",
-              "Figure_Description": "3",
+              "Figure_Description": "1,3",
               "Comment": ""
             },
             "Comment_on_Injection": "",
@@ -1606,7 +1591,7 @@
           "LabeledSites": [
             {
               "TT_Direction": "Anterograde",
-              "LabeledSite_by_Author": "M1",
+              "LabeledSite_by_Author": "the rostral M1",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -1676,7 +1661,7 @@
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "NA",
-              "Figure_Description": "4",
+              "Figure_Description": "1,4",
               "Comment": ""
             },
             "Comment_on_Injection": "",
@@ -1832,7 +1817,7 @@
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "NA",
-              "Figure_Description": "5",
+              "Figure_Description": "1,5",
               "Comment": ""
             },
             "Comment_on_Injection": "",
@@ -1903,7 +1888,7 @@
             },
             {
               "TT_Direction": "Anterograde",
-              "LabeledSite_by_Author": "SMA",
+              "LabeledSite_by_Author": "the rostral part of SMA proper",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -2003,7 +1988,7 @@
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "NA",
-              "Figure_Description": "6",
+              "Figure_Description": "1,6",
               "Comment": ""
             },
             "Comment_on_Injection": "",
@@ -2084,7 +2069,7 @@
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "NA",
-              "Figure_Description": "7",
+              "Figure_Description": "1,7",
               "Comment": ""
             },
             "Comment_on_Injection": "",
@@ -2111,21 +2096,6 @@
             {
               "TT_Direction": "Anterograde",
               "LabeledSite_by_Author": "12",
-              "Comment_on_LabeledSite": "",
-              "LabeledSite_M132": "To be recorded",
-              "LabeledSite_PAX": "To be recorded",
-              "LabeledSite_Mapping_Confidence": "To be recorded",
-              "Connection_Strength": {
-                "Qual_CS": "To be recorded",
-                "Source_Description_of_Qual_CS": "To be recorded",
-                "Quan_CS": "To be recorded",
-                "Source_Description_of_Quan_CS": "To be recorded",
-                "Comment_on_Connection_Strength": ""
-              }
-            },
-            {
-              "TT_Direction": "Anterograde",
-              "LabeledSite_by_Author": "Pre-SMA",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",
@@ -2250,12 +2220,12 @@
             "Tracer": [
               "WGA-HRP"
             ],
-            "InjectionSite_by_Author": "central, medial MD",
+            "InjectionSite_by_Author": "the central MD nucleus",
             "Injection_Coverage_by_Author": {
               "Cover_Adjacent_Regions": "N",
               "Adjacent_Regions_Covered": "NAp",
               "Text_Description": "NA",
-              "Figure_Description": "8",
+              "Figure_Description": "1,8",
               "Comment": ""
             },
             "Comment_on_Injection": "",
@@ -2267,21 +2237,6 @@
             {
               "TT_Direction": "Anterograde",
               "LabeledSite_by_Author": "9",
-              "Comment_on_LabeledSite": "",
-              "LabeledSite_M132": "To be recorded",
-              "LabeledSite_PAX": "To be recorded",
-              "LabeledSite_Mapping_Confidence": "To be recorded",
-              "Connection_Strength": {
-                "Qual_CS": "To be recorded",
-                "Source_Description_of_Qual_CS": "To be recorded",
-                "Quan_CS": "To be recorded",
-                "Source_Description_of_Quan_CS": "To be recorded",
-                "Comment_on_Connection_Strength": ""
-              }
-            },
-            {
-              "TT_Direction": "Anterograde",
-              "LabeledSite_by_Author": "24b",
               "Comment_on_LabeledSite": "",
               "LabeledSite_M132": "To be recorded",
               "LabeledSite_PAX": "To be recorded",

@@ -1,28 +1,54 @@
-PE
-PEa
-AM
-AV
-CL
-CM
+central, lateral VLo
+ventromedial VLo
+caudal, dorsolateral VApc
+central, ventral VApc
+the rostral pole of VApc
+the dorsal, medial VAmc
+central, medial MD
+rostral SMA
+Pre-SMA/9
+9
+lateral area 9
+24
+14
+11l
+11m
+12
+12l
+12o
+13b
+13l
+13m
+23c
+24b
+25
+32
+45
+46
+CMAc
+CMAr
 CeM
-Hb
-LD
-LP
-Li
+FEF
+M1
 MD
-MGN
-Pf
-Po
-PuA
-PuL
-PuM
-Rh
+MDmc
+MDmf
+MDpc
+PMdc
+PMdr
+PMvc
+PMvr
+Pc
+PrCO
+Pre-SMA
+R
+SMA
 VA
-VLa
-VLpd
-VLpv
-VM
-VPI
-VPL
-VPM
+VAmc
+VLc
+VLm
+VLo
 X
+caudal region of area 9
+medial parts of the VA
+the most caudal levels of area 9
