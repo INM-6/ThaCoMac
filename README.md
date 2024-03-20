@@ -1,4 +1,4 @@
-# Thalamocortical connectivity in macaque
+# **Th**alamo**Co**rtical Connectivity in **Mac**aque
 - This project aims to create the first quantitative connectome of the thalamocortical connections in the macaque based on the existing literature. For this aim, a semi-automated classification of information from scientific publications will be implemented. The information from the existing tract-tracing publications will be used to determine the connectivity between thalamus and cortex, with a focus on that from thalamus to cortex. Similar work exists collating the connectivity studies from cortex, but no such study exists for the thalamocortical connectivity. Thus, this work will provide a new and comprehensive data set of thalamocortical connectivity.
 - Contact: Didi Hou didi.hou@rwth-aachen.de
 
